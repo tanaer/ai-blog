@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Claude on AI 极客前沿</title><link>https://claudeai.best/tags/claude/</link><description>Recent content in Claude on AI 极客前沿</description><generator>Hugo -- 0.147.6</generator><language>zh-cn</language><lastBuildDate>Mon, 16 Feb 2026 11:00:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/claude/index.xml" rel="self" type="application/rss+xml"/><item><title>🚀 AI开上火星了！NASA用Claude让毅力号自己找路跑了456米</title><link>https://claudeai.best/posts/hunter-2026021611/</link><pubDate>Mon, 16 Feb 2026 11:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021611/</guid><description>&lt;h2 id="-地球到火星一个信号要等25分钟">🤔 地球到火星，一个信号要等25分钟&lt;/h2>
+&lt;p>你在地球上遥控一辆火星车，每发一个指令要等25分钟才能收到回应。这就是NASA工程师每天面对的现实。&lt;/p>
+&lt;p>传统做法是：工程师看卫星图 → 手动规划路线 → 设置不超过100米的航点 → 通过深空网络发送给轨道器 → 再转发给火星车。一套流程下来，毅力号一天能走的距离非常有限。&lt;/p>
+&lt;p>&lt;strong>如果火星车能自己看路、自己决定怎么走呢？&lt;/strong>&lt;/p>
+&lt;h2 id="-核心亮点ai当了火星司机">🚀 核心亮点：AI当了火星司机&lt;/h2>
+&lt;h3 id="1-claude上火星了没开玩笑">1️⃣ Claude上火星了（没开玩笑）&lt;/h3>
+&lt;p>NASA喷气推进实验室（JPL）基于Anthropic的Claude AI开发了路径规划系统。AI分析火星侦察轨道器的HiRISE高分辨率相机拍的卫星图和数字高程模型，自动识别沙坑、巨石群、基岩等障碍，生成一系列安全航点。&lt;/p>
+&lt;h3 id="2-两天跑了456米零人工操控">2️⃣ 两天跑了456米，零人工操控&lt;/h3>
+&lt;p>2025年12月，毅力号在杰泽罗陨石坑边缘完成了两次AI规划的自主行驶，总计456米。AI规划的路线（洋红色）和实际行驶路线（橙色）高度吻合，说明AI对火星地形的理解相当靠谱。&lt;/p>
+&lt;h3 id="3-地球上先模拟考再上路">3️⃣ 地球上先&amp;quot;模拟考&amp;quot;再上路&lt;/h3>
+&lt;p>JPL有一辆毅力号的&amp;quot;双胞胎&amp;quot;——VSTB（车辆系统测试台），放在JPL的火星模拟场地里。AI规划的路线会先在地球上跑一遍，确认没问题再发到火星。稳得一批。&lt;/p>
+&lt;h2 id="-这套系统怎么工作的">🛠️ 这套系统怎么工作的？&lt;/h2>
+&lt;pre tabindex="0">&lt;code>轨道卫星拍照 → AI分析地形+避障 → 生成航点序列
+↓
+地球模拟车验证
+↓
+深空网络 → 轨道器中继 → 毅力号
+↓
+车载自动导航接管执行
+&lt;/code>&lt;/pre>&lt;p>关键突破在于AI承担了三大核心任务：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>感知&lt;/strong>：看清岩石和沙纹&lt;/li>
+&lt;li>&lt;strong>定位&lt;/strong>：知道自己在哪&lt;/li>
+&lt;li>&lt;strong>规划控制&lt;/strong>：决定最安全的路径并执行&lt;/li>
+&lt;/ul>
+&lt;p>JPL空间机器人专家Vandi Verma表示，生成式AI在这三个方向都展现出巨大潜力。&lt;/p>
+&lt;h2 id="-极客点评">💡 极客点评&lt;/h2>
+&lt;p>&lt;strong>这件事的意义远超一次456米的兜风。&lt;/strong>&lt;/p>
+&lt;p>信号延迟是星际探索的终极瓶颈。火星25分钟还算近的，等人类要探索木星的卫星（单程信号33-53分钟）或更远的天体，完全自主的AI导航不是&amp;quot;nice to have&amp;quot;，而是&amp;quot;must have&amp;quot;。&lt;/p>
+&lt;p>有意思的是NASA选了Anthropic的Claude作为基础模型——同一个模型，在地球上帮程序员写代码，在火星上帮探测车找路。这大概是&amp;quot;通用人工智能&amp;quot;最硬核的应用场景了。&lt;/p>
+&lt;p>&lt;strong>适用场景延伸&lt;/strong>：这套&amp;quot;AI看卫星图规划地面路线&amp;quot;的技术，在地球上同样有巨大价值——灾区救援、极地科考、深海探测，任何通信受限的环境都能用。&lt;/p>
+&lt;blockquote>
+&lt;p>NASA局长Jared Isaacman说：&amp;ldquo;这展示了我们的能力已经走了多远，也拓宽了我们探索其他世界的方式。&amp;rdquo;&lt;/p>&lt;/blockquote>
+&lt;p>🔗 &lt;strong>想深入了解？&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.jpl.nasa.gov/news/nasas-perseverance-rover-completes-first-ai-planned-drive-on-mars/">NASA JPL官方公告&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://spectrum.ieee.org/perseverance-rover-nasa-anthropic-ai">IEEE Spectrum深度报道&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://science.nasa.gov/photojournal/visualizing-perseverances-ai-planned-drive-on-mars/">NASA可视化动画&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>🔥 五角大楼怒了！威胁切断Anthropic合作——AI安全护栏该不该为军方让路？</title><link>https://claudeai.best/posts/hunter-2026021609/</link><pubDate>Mon, 16 Feb 2026 09:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021609/</guid><description>&lt;h2 id="-当ai安全遇上军方需求火药味十足">🤔 当AI安全遇上军方需求，火药味十足&lt;/h2>
+&lt;p>你可能想不到，全球最重视AI安全的公司Anthropic，正在跟全球最大的甲方——美国五角大楼，闹掰了。&lt;/p>
+&lt;p>事情是这样的：&lt;strong>五角大楼要求四家AI公司（OpenAI、Google、xAI、Anthropic）开放模型给军方&amp;quot;所有合法用途&amp;quot;&lt;/strong>，包括武器研发、情报收集和战场作战。其他三家不同程度地点了头，但Anthropic死活不松口。&lt;/p>
+&lt;p>五角大楼的态度很明确：&lt;strong>谈了好几个月了，Anthropic再不答应，就准备&amp;quot;分手&amp;quot;。&lt;/strong>&lt;/p>
+&lt;p>更讽刺的是，就在几天前，Anthropic的Claude模型刚刚通过与Palantir的合作，被用在了美军抓捕委内瑞拉前总统马杜罗的行动中。所以，不是完全不合作——只是Anthropic画了一条红线。&lt;/p>
+&lt;h2 id="-这件事为什么重要三个关键看点">🚀 这件事为什么重要？三个关键看点&lt;/h2>
+&lt;h3 id="1-anthropic的红线在哪">1️⃣ Anthropic的红线在哪？&lt;/h3>
+&lt;p>Anthropic表示，他们与政府的对话聚焦在&lt;strong>使用政策层面&lt;/strong>，核心底线是两条：&lt;/p>
+&lt;ul>
+&lt;li>❌ &lt;strong>完全自主武器&lt;/strong>（没有人类决策的杀人机器）&lt;/li>
+&lt;li>❌ &lt;strong>大规模国内监控&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>换句话说，Anthropic不是拒绝跟军方合作，而是拒绝&amp;quot;无条件开放&amp;quot;。这跟他们一贯的&amp;quot;负责任AI&amp;quot;定位一致。&lt;/p>
+&lt;h3 id="2-其他公司怎么选的">2️⃣ 其他公司怎么选的？&lt;/h3>
+&lt;p>据报道，四家公司的态度分化明显：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>一家已经完全同意&lt;/strong>五角大楼的条件&lt;/li>
+&lt;li>&lt;strong>两家&amp;quot;比Anthropic灵活&amp;quot;&lt;/strong>，正在谈判&lt;/li>
+&lt;li>&lt;strong>Anthropic是唯一硬顶的&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>这意味着AI行业在&amp;quot;军用AI&amp;quot;这件事上，正在走向分裂。&lt;/p>
+&lt;h3 id="3-分类网络的推进">3️⃣ 分类网络的推进&lt;/h3>
+&lt;p>五角大楼还在推动这些公司将AI工具部署到&lt;strong>保密网络&lt;/strong>中，减少常规的安全限制。这不只是政策层面的事——是要把AI模型直接塞进军事机密系统。&lt;/p>
+&lt;h2 id="-普通人怎么理解这件事">🛠️ 普通人怎么理解这件事？&lt;/h2>
+&lt;p>&lt;strong>一张图看懂利益关系：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>🏛️ &lt;strong>五角大楼&lt;/strong>：想要AI无限制服务于国防 → &amp;ldquo;我们是合法使用&amp;rdquo;&lt;/li>
+&lt;li>🤖 &lt;strong>Anthropic&lt;/strong>：坚持AI安全底线 → &amp;ldquo;合法≠没有限制&amp;rdquo;&lt;/li>
+&lt;li>💰 &lt;strong>商业现实&lt;/strong>：五角大楼是超级大客户，拒绝意味着丢掉巨额合同&lt;/li>
+&lt;li>⚖️ &lt;strong>行业影响&lt;/strong>：如果Anthropic让步，&amp;ldquo;负责任AI&amp;quot;就成了营销口号&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>对你的影响：&lt;/strong>&lt;/p>
+&lt;p>你可能觉得这跟自己没关系，但想想——如果AI公司为了拿军方合同，逐步放弃安全限制，这些模型的商用版本还会保持严格的安全标准吗？&lt;strong>军用AI的放松，往往会传导到民用AI。&lt;/strong>&lt;/p>
+&lt;h2 id="-极客点评">💡 极客点评&lt;/h2>
+&lt;p>说实话，我对Anthropic的态度是&lt;strong>又佩服又担心&lt;/strong>。&lt;/p>
+&lt;p>佩服的是，在真金白银面前坚持原则确实不容易。当你的竞争对手都在向甲方妥协的时候，你还能说&amp;quot;不&amp;rdquo;，这需要勇气。&lt;/p>
+&lt;p>担心的是，&lt;strong>商业现实很残酷&lt;/strong>。如果Anthropic因此被排除在政府合同之外，而OpenAI和Google吃下这块蛋糕，长期来看Anthropic的资金和算力竞争力会不会受影响？&amp;ldquo;负责任AI&amp;quot;需要钱来支撑研究。&lt;/p>
+&lt;p>更深层的问题是：&lt;strong>AI安全的边界到底该由谁来定？&lt;/strong> 是AI公司自己？政府？还是某种独立机构？目前看来，是谁有钱谁说了算。&lt;/p>
+&lt;p>&lt;strong>适合关注这件事的人：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>关心AI安全和伦理的从业者&lt;/li>
+&lt;li>使用Claude/GPT等工具的开发者（政策变化可能影响API限制）&lt;/li>
+&lt;li>对AI军事化应用感兴趣的观察者&lt;/li>
+&lt;/ul>
+&lt;p>这场博弈还没结束，但不管结局如何，它已经暴露了一个根本矛盾：&lt;strong>当&amp;quot;让AI更安全&amp;quot;和&amp;quot;让AI更有用&amp;quot;发生冲突时，钱站在哪一边？&lt;/strong> 🤔&lt;/p></description></item><item><title>🚨 Anthropic安全负责人辞职写诗去了！AI安全到底怎么了？</title><link>https://claudeai.best/posts/hunter-2026021519/</link><pubDate>Sun, 15 Feb 2026 19:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021519/</guid><description>&lt;h2 id="-一个安全研究员的诗意离场">🤔 一个安全研究员的「诗意」离场&lt;/h2>
+&lt;p>你能想象吗？一个在全球最注重AI安全的公司——Anthropic（就是做Claude那个）——负责AI安全防线的核心人物，突然宣布辞职，理由是&lt;strong>要去学写诗&lt;/strong>？&lt;/p>
+&lt;p>这不是段子。2月9日，Anthropic安全防护研究团队负责人 &lt;strong>Mrinank Sharma&lt;/strong> 在X上发了一封辞职信，原话是：&lt;/p>
+&lt;blockquote>
+&lt;p>&amp;ldquo;世界正处于危险之中。不仅仅是AI，不仅仅是生物武器，而是一系列相互交织的危机正在此刻展开。&amp;rdquo;&lt;/p>&lt;/blockquote>
+&lt;p>他说自己&amp;quot;反复看到，让价值观真正指导行动有多么困难&amp;quot;——包括在Anthropic内部，公司也&amp;quot;不断面临搁置最重要事项的压力&amp;quot;。&lt;/p>
+&lt;p>然后他说要回英国，学诗歌，&amp;ldquo;让自己消失一段时间&amp;rdquo;。&lt;/p>
+&lt;h2 id="-三个核心看点">🚀 三个核心看点&lt;/h2>
+&lt;p>&lt;strong>1️⃣ 不是第一个，也不会是最后一个&lt;/strong>&lt;/p>
+&lt;p>近几个月，AI大厂的安全团队正在经历一波「离职潮」。从OpenAI到Google再到Anthropic，越来越多负责&amp;quot;刹车&amp;quot;的人选择离开。问题很明显：当商业利益和安全原则冲突时，安全往往是让步的那个。&lt;/p>
+&lt;p>&lt;strong>2️⃣ Anthropic的&amp;quot;安全人设&amp;quot;裂了？&lt;/strong>&lt;/p>
+&lt;p>Anthropic一直以&amp;quot;我们比OpenAI更重视安全&amp;quot;为卖点。它甚至刚怼了OpenAI在ChatGPT里加广告。但当自家安全负责人都说&amp;quot;价值观很难真正落地&amp;quot;的时候，这个人设就很微妙了。更别提2025年Anthropic还因为训练数据版权问题赔了15亿美元。&lt;/p>
+&lt;p>&lt;strong>3️⃣ AI安全不只是技术问题&lt;/strong>&lt;/p>
+&lt;p>Sharma的辞职信里提到的不只是AI风险，还有生物武器、社会危机等&amp;quot;相互交织&amp;quot;的问题。他之前的研究包括AI如何被用于生物恐怖主义、AI助手如何让人类&amp;quot;变得不像人&amp;quot;。这些听着像科幻，但都是他在Anthropic的实际研究课题。&lt;/p>
+&lt;h2 id="-普通人该怎么看">🛠️ 普通人该怎么看？&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>不用恐慌&lt;/strong>：AI目前还远没到&amp;quot;毁灭人类&amp;quot;的程度，但&amp;quot;被滥用&amp;quot;是真实的风险&lt;/li>
+&lt;li>&lt;strong>关注安全报告&lt;/strong>：Anthropic、OpenAI等公司都会发布安全评估报告，值得一读&lt;/li>
+&lt;li>&lt;strong>支持监管&lt;/strong>：印度AI峰会（2月16日）即将召开，Sam Altman、Pichai、Amodei等大佬齐聚，AI治理是核心议题&lt;/li>
+&lt;li>&lt;strong>保持批判&lt;/strong>：任何公司说&amp;quot;我们最安全&amp;quot;，都要打个问号——连内部人都觉得价值观难以落地&lt;/li>
+&lt;/ol>
+&lt;h2 id="-极客点评">💡 极客点评&lt;/h2>
+&lt;p>说实话，Sharma辞职去学诗这件事，表面荒诞，内核很真实。&lt;/p>
+&lt;p>当一个人在AI安全最前线工作了几年，最后的结论是&amp;quot;世界的问题太大了，我要去写诗&amp;quot;——这本身就是一种无声的控诉。AI行业现在的节奏是：融资→发产品→抢市场→安全？以后再说。&lt;/p>
+&lt;p>&lt;strong>谁适合关注这件事？&lt;/strong> 所有使用AI产品的人。因为安全团队的人走了，不代表AI停下来了。它只会跑得更快，但刹车可能更松了。&lt;/p>
+&lt;p>下周的印度AI峰会会是一个观察窗口——看看这些CEO们除了说&amp;quot;我们非常重视安全&amp;quot;之外，能不能拿出点真东西。&lt;/p>
+&lt;hr>
+&lt;p>📌 &lt;strong>信息来源&lt;/strong>：BBC News、Al Jazeera、Business Insider、Financial Express&lt;/p></description></item></channel></rss>

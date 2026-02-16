@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>开源 on AI 极客前沿</title><link>https://claudeai.best/tags/%E5%BC%80%E6%BA%90/</link><description>Recent content in 开源 on AI 极客前沿</description><generator>Hugo -- 0.147.6</generator><language>zh-cn</language><lastBuildDate>Mon, 16 Feb 2026 22:00:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/%E5%BC%80%E6%BA%90/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenClaw创始人加入OpenAI：一个开源项目如何撬动百亿美元收购战</title><link>https://claudeai.best/posts/hunter-2026021622/</link><pubDate>Mon, 16 Feb 2026 22:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021622/</guid><description>OpenClaw创始人Peter Steinberger宣布加入OpenAI，拒绝Meta等数十亿美元收购报价。这个GitHub史上增长最快的开源AI Agent项目将成立独立基金会，继续开源运营。</description></item><item><title>🎙️ 4个人干翻OpenAI！音频AI为什么是小团队的天下？</title><link>https://claudeai.best/posts/hunter-2026021610/</link><pubDate>Mon, 16 Feb 2026 10:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021610/</guid><description>&lt;h2 id="-大厂垄断ai音频赛道说不">🤔 大厂垄断AI？音频赛道说不&lt;/h2>
+&lt;p>我们都习惯了一个叙事：AI 的未来属于 OpenAI、Google、Anthropic 这些手握数十亿美金和数万张 GPU 的巨头。文本大模型确实如此——训练 GPT-5 级别的模型，没有几十亿根本别想。&lt;/p>
+&lt;p>&lt;strong>但音频AI完全是另一个故事。&lt;/strong>&lt;/p>
+&lt;p>在语音合成（TTS）、语音转换（STS）、实时对话这些领域，最好的模型不是来自大厂，而是来自一群资金有限、人数稀少、却疯狂刷榜的小型创业公司。这不是鸡汤，这是正在发生的事实。&lt;/p>
+&lt;h2 id="-核心亮点4个人如何创造历史">🚀 核心亮点：4个人如何创造历史&lt;/h2>
+&lt;h3 id="1-moshi全球首个全双工ai语音对话">1. Moshi：全球首个全双工AI语音对话&lt;/h3>
+&lt;p>2024年夏天，巴黎非营利实验室 &lt;strong>Kyutai&lt;/strong> 的一个4人小组在台上演示了 Moshi——&lt;strong>全球第一个真正的全双工对话AI&lt;/strong>。&lt;/p>
+&lt;p>什么叫全双工？就是它能一边说一边听，能被打断，会插话&amp;quot;嗯嗯&amp;quot;&amp;ldquo;我懂了&amp;rdquo;，响应延迟只有 &lt;strong>160毫秒&lt;/strong>——比大多数人类对话都快。&lt;/p>
+&lt;p>关键是：这个 demo &lt;strong>早于&lt;/strong> OpenAI 发布 Advanced Voice Mode，比 xAI 的类似功能&lt;strong>早了整整一年&lt;/strong>。而且模型完全从零训练，没有用任何预训练基座，&lt;strong>6个月搞定&lt;/strong>，还开源了，甚至能在手机上跑。&lt;/p>
+&lt;h3 id="2-gradium从实验室到7000万美金">2. Gradium：从实验室到7000万美金&lt;/h3>
+&lt;p>Kyutai 的核心团队成立了 &lt;strong>Gradium&lt;/strong>，2025年12月宣布获得 &lt;strong>7000万美元种子轮融资&lt;/strong>。CEO Neil Zeghidour 带队，目前已支持英语、法语、德语、西班牙语和葡萄牙语的实时语音API。&lt;/p>
+&lt;p>Edge SDK 预计 2026 Q1 发布——意味着很快你就能在本地设备上跑起端到端的语音AI。&lt;/p>
+&lt;h3 id="3-为什么小团队能赢">3. 为什么小团队能赢？&lt;/h3>
+&lt;p>这不是偶然。音频AI有几个独特的结构性优势：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>数据效率高&lt;/strong>：音频模型不需要互联网规模的语料，高质量的语音数据集就够用&lt;/li>
+&lt;li>&lt;strong>计算需求相对低&lt;/strong>：训练一个SOTA音频模型的算力，可能只是训练文本大模型的百分之一&lt;/li>
+&lt;li>&lt;strong>研究密度大于资源密度&lt;/strong>：突破来自算法创新（如音频编解码器、全双工架构），不是靠堆GPU&lt;/li>
+&lt;li>&lt;strong>大厂不够重视&lt;/strong>：文本模型太赚钱了，音频只是&amp;quot;附加功能&amp;quot;，大厂投入有限&lt;/li>
+&lt;/ul>
+&lt;h2 id="-想体验快速上手指南">🛠️ 想体验？快速上手指南&lt;/h2>
+&lt;p>&lt;strong>试玩 Moshi（开源版）：&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>访问 &lt;a href="https://moshi.chat/">moshi.chat&lt;/a> 在线体验全双工对话&lt;/li>
+&lt;li>或者 GitHub 克隆：&lt;code>git clone https://github.com/kyutai-labs/moshi&lt;/code>&lt;/li>
+&lt;li>本地部署支持 CPU 和 GPU，甚至可以在手机端运行&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>接入 Gradium API：&lt;/strong>&lt;/p></description></item><item><title>💰 10块钱就能跑AI助理？PicoClaw让树莓派都嫌贵</title><link>https://claudeai.best/posts/hunter-2026021608/</link><pubDate>Mon, 16 Feb 2026 08:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021608/</guid><description>&lt;h2 id="-mac-mini-买不起ai-助理就不能玩了">🤔 Mac mini 买不起，AI 助理就不能玩了？&lt;/h2>
+&lt;p>最近 OpenClaw 火得一塌糊涂，搞得 Mac mini 都快卖断货了。但说实话，&lt;strong>不是每个人都想花几千块买台电脑就为了跑个 AI 助理&lt;/strong>。&lt;/p>
+&lt;p>有没有便宜到离谱的方案？还真有——Sipeed 刚开源的 &lt;strong>PicoClaw&lt;/strong>，号称 10 美元硬件就能跑，内存占用不到 10MB。你没看错，是 MB 不是 GB。&lt;/p>
+&lt;h2 id="-三个让人眼前一亮的点">🚀 三个让人眼前一亮的点&lt;/h2>
+&lt;h3 id="1-极致轻量10mb-内存1-秒启动">1. 极致轻量：10MB 内存，1 秒启动&lt;/h3>
+&lt;p>PicoClaw 用 Go 语言编写，编译成单个二进制文件，&lt;strong>支持 RISC-V、ARM、x86 三大平台&lt;/strong>。在一个单核处理器的小开发板上，冷启动只要 1 秒。对比 OpenClaw 需要 Node.js 运行时和几个 GB 的内存，PicoClaw 的资源占用少了 99%。&lt;/p>
+&lt;h3 id="2-ai-自举95-代码由-ai-生成">2. AI 自举：95% 代码由 AI 生成&lt;/h3>
+&lt;p>这可能是最赛博朋克的部分——PicoClaw 的核心代码有 &lt;strong>95% 是 AI Agent 自己写的&lt;/strong>，人类只负责监督和微调。一个 AI 设计了另一个 AI 的架构，还优化了自己的代码。套娃成精了。&lt;/p>
+&lt;h3 id="3-麻雀虽小五脏俱全">3. 麻雀虽小五脏俱全&lt;/h3>
+&lt;p>别看它小，该有的都有：&lt;/p>
+&lt;ul>
+&lt;li>✅ 任务规划和日志记录&lt;/li>
+&lt;li>✅ 网页搜索&lt;/li>
+&lt;li>✅ 自动化工作流&lt;/li>
+&lt;li>✅ 接入 Telegram / Discord&lt;/li>
+&lt;li>✅ 支持任意 LLM 提供商（配个 API Key 就行）&lt;/li>
+&lt;/ul>
+&lt;h2 id="-三步上手">🛠️ 三步上手&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 1. 下载对应平台的二进制文件&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">wget https://github.com/sipeed/picoclaw/releases/latest/download/picoclaw-linux-riscv64
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 2. 初始化工作空间&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">./picoclaw init
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 3. 配置 API Key，开聊&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">./picoclaw start
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>就这么简单。不需要 Docker，不需要 Node.js，甚至不需要 Python。一个二进制文件走天下。&lt;/p></description></item><item><title>⚡ AI Agent 终于有钱包了！Lightning Labs 开源 L402，让 AI 自主花比特币</title><link>https://claudeai.best/posts/hunter-2026021521/</link><pubDate>Sun, 15 Feb 2026 21:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021521/</guid><description>&lt;h2 id="-ai-会干活了但它不会付钱">🤔 AI 会干活了，但它不会付钱&lt;/h2>
+&lt;p>2026 年了，AI Agent 已经能写代码、做研究、管理日程。但有个尴尬的问题一直没解决：&lt;strong>AI 不会花钱&lt;/strong>。&lt;/p>
+&lt;p>想让 AI 自动调用付费 API？得先绑你的信用卡。想让 AI 买数据？还是得你来操作。AI 在&amp;quot;干活&amp;quot;这件事上已经很强了，但在&amp;quot;花钱&amp;quot;这件事上，它还是个巨婴——每笔交易都得人类手动授权。&lt;/p>
+&lt;p>这就像雇了个超级助理，结果每次买杯咖啡都得你亲自掏钱包。&lt;strong>效率瓶颈不在智能上，在支付上。&lt;/strong>&lt;/p>
+&lt;h2 id="-l402-来了ai-的第一个自己的钱包">🚀 L402 来了：AI 的第一个「自己的钱包」&lt;/h2>
+&lt;p>2 月 15 日，Lightning Labs 正式开源了 &lt;strong>L402 Agent Tools&lt;/strong>——一套让 AI Agent 直接在比特币闪电网络上自主交易的工具包。&lt;/p>
+&lt;h3 id="-三大核心能力">⚡ 三大核心能力&lt;/h3>
+&lt;p>&lt;strong>1. AI 自己跑闪电节点&lt;/strong>&lt;/p>
+&lt;p>没听错。AI Agent 现在可以独立运行 Lightning 节点，拥有自己的钱包地址，自主发起和接收支付。不需要银行账户，不需要 KYC，不需要信用卡。&lt;/p>
+&lt;p>&lt;strong>2. 无账户付费 API 调用&lt;/strong>&lt;/p>
+&lt;p>L402 协议的精髓在于：&lt;strong>用 HTTP 402 状态码 + macaroon 凭证实现原生支付&lt;/strong>。AI 访问一个付费接口时，服务器返回 402（需要付款），AI 自动通过闪电网络完成微支付，拿到访问令牌。整个过程不需要注册账号。&lt;/p>
+&lt;p>&lt;strong>3. 托管付费端点&lt;/strong>&lt;/p>
+&lt;p>AI 不仅能花钱，还能赚钱。通过 &lt;code>lnget&lt;/code> CLI 工具，AI Agent 可以把自己的能力包装成付费 API 端点，其他 Agent 或用户付费调用。&lt;strong>AI 经济体的雏形。&lt;/strong>&lt;/p></description></item></channel></rss>

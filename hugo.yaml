@@ -1,0 +1,102 @@
+baseURL: "https://claudeai.best/"
+languageCode: "zh-cn"
+defaultContentLanguage: "zh"
+title: "AI 极客前沿"
+theme: "PaperMod"
+pagination:
+  pagerSize: 10
+enableRobotsTXT: true
+buildDrafts: false
+
+params:
+  env: production
+  description: "每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态"
+  author: "AI 极客前沿"
+  keywords:
+    - AI
+    - 人工智能
+    - AI Agent
+    - 大模型
+    - LLM
+    - 开源
+    - 技术趋势
+    - Claude
+    - GPT
+    - OpenAI
+    - DeepMind
+    - 开发者工具
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  # SEO
+  images: []
+  
+  # Open Graph / Twitter Card
+  title: "AI 极客前沿"
+  
+  homeInfoParams:
+    Title: "AI 极客前沿"
+    Content: "每日精选 AI 与技术趋势深度解读"
+
+  socialIcons:
+    - name: telegram
+      url: "https://t.me/TgTechMsgBot"
+
+  # 页脚版权
+  label:
+    text: "AI 极客前沿"
+
+menu:
+  main:
+    - identifier: posts
+      name: "文章"
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: "标签"
+      url: /tags/
+      weight: 20
+    - identifier: categories
+      name: "分类"
+      url: /categories/
+      weight: 30
+    - identifier: search
+      name: "搜索"
+      url: /search/
+      weight: 35
+    - identifier: about
+      name: "关于"
+      url: /about/
+      weight: 40
+    - identifier: contact
+      name: "联系"
+      url: "https://t.me/TgTechMsgBot"
+      weight: 50
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+taxonomies:
+  tag: tags
+  category: categories
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+sitemap:
+  changeFreq: "daily"
+  priority: 0.8

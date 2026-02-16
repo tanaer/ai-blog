@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hunter AI on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/hunter-ai/</link>
+    <description>Recent content in Hunter AI on AI 极客前沿</description>
+    <generator>Hugo -- 0.147.6</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 15 Feb 2026 16:00:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/hunter-ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🏭 Hunter AI 内容工厂：让 AI 替你追热点写文章！</title>
+      <link>https://claudeai.best/posts/hunter-ai-content-factory/</link>
+      <pubDate>Sun, 15 Feb 2026 16:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-ai-content-factory/</guid>
+      <description>&lt;h2 id=&#34;-你是不是也有这种痛&#34;&gt;🤔 你是不是也有这种痛？&lt;/h2&gt;
+&lt;p&gt;每天刷 GitHub Trending、HackerNews、Twitter，看到一堆好项目想写文章分享——&lt;/p&gt;
+&lt;p&gt;但是！&lt;strong&gt;选题难、调研累、写作慢&lt;/strong&gt;，等你写完黄花菜都凉了 😭&lt;/p&gt;
+&lt;h2 id=&#34;-hunter-ai-内容工厂来了&#34;&gt;🚀 Hunter AI 内容工厂来了！&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Pangu-Immortal/hunter-ai-content-factory&#34;&gt;Hunter AI Content Factory&lt;/a&gt; 是一个&lt;strong&gt;全自动 24 小时情报系统&lt;/strong&gt;：&lt;/p&gt;
+&lt;h3 id=&#34;-三大核心亮点&#34;&gt;✨ 三大核心亮点&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;🔍 多平台采集&lt;/strong&gt; — GitHub Trending、Twitter/X、Reddit、HackerNews、小红书，一网打尽&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🤖 6-Skill 工作流&lt;/strong&gt; — 选题→调研→结构→写作→封装→发布，全自动流水线&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;📤 一键推送&lt;/strong&gt; — 生成文章自动推送到微信/博客，你只需要转发&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;-怎么用超简单&#34;&gt;🛠️ 怎么用？超简单！&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Mac / Linux 一键启动&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bash run.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 指定模板运行&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;uv run hunter run -t github    &lt;span class=&#34;c1&#34;&gt;# GitHub 热门项目&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;uv run hunter run -t pain      &lt;span class=&#34;c1&#34;&gt;# 痛点诊断&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;uv run hunter run -t xhs       &lt;span class=&#34;c1&#34;&gt;# 小红书风格&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;-极客点评&#34;&gt;💡 极客点评&lt;/h3&gt;
+&lt;p&gt;这个项目的核心理念很对：&lt;strong&gt;好文章的 80% 在于选题&lt;/strong&gt;。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

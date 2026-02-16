@@ -1,0 +1,178 @@
+{{- define "main" }}
+
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title entry-hint-parent">
+      {{ .Title }}
+      {{- if .Draft }}
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+      {{- end }}
+    </h1>
+    {{- if .Description }}
+    <div class="post-description">
+      {{ .Description }}
+    </div>
+    {{- end }}
+    {{- if not (.Param "hideMeta") }}
+    <div class="post-meta">
+      {{- partial "post_meta.html" . -}}
+      {{- partial "translation_list.html" . -}}
+      {{- partial "edit_post.html" . -}}
+      {{- partial "post_canonical.html" . -}}
+    </div>
+    {{- end }}
+  </header>
+
+  {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
+  {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
+
+  <!-- ✂️ 一键操作栏（文章顶部） -->
+  <div style="margin: 0 0 24px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08);">
+    <div style="display: flex; gap: 8px; padding: 14px 16px; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); flex-wrap: wrap; align-items: center;">
+      <span style="color: #fff; font-weight: 700; font-size: 14px; margin-right: 4px;">⚡ 快捷操作</span>
+      <button onclick="copyFullArticle()" id="copy-full-btn" style="padding: 7px 16px; background: #16a34a; color: white; border: none; border-radius: 20px; cursor: pointer; font-size: 13px; font-weight: 600;">📄 复制全文</button>
+      <button onclick="copyFullWithLink()" id="copy-full-link-btn" style="padding: 7px 16px; background: #7c3aed; color: white; border: none; border-radius: 20px; cursor: pointer; font-size: 13px; font-weight: 600;">🔗 全文+链接</button>
+      <button onclick="copyTweet()" id="copy-tweet-btn" style="padding: 7px 16px; background: #1DA1F2; color: white; border: none; border-radius: 20px; cursor: pointer; font-size: 13px; font-weight: 600;">🐦 复制推文</button>
+      <a id="post-to-x-link" href="" target="_blank" style="padding: 7px 16px; background: #000; color: white; border-radius: 20px; font-size: 13px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center;">🚀 发到 X</a>
+    </div>
+    <div id="copy-status" style="display:none; padding: 8px 16px; background: #ecfdf5; color: #16a34a; font-size: 13px; font-weight: 600;"></div>
+  </div>
+
+  <!-- 隐藏的推文文本 -->
+  <textarea id="x-tweet-text" style="position:absolute;left:-9999px;">{{ with .Params.tweet }}{{ . }}{{ else }}🔥 {{ .Title }}
+
+📖 全文：{{ .Permalink }}
+
+#AI #Tech #OpenSource{{ end }}</textarea>
+
+  {{- if (.Param "ShowToc") }}
+  {{- partial "toc.html" . }}
+  {{- end }}
+
+  {{- if .Content }}
+  <div class="post-content" id="article-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+  {{- end }}
+
+  <!-- 底部再放一组按钮 -->
+  <div style="margin: 30px 0 20px 0; padding: 16px; border-radius: 10px; background: #f8fafc; border: 1px solid #e2e8f0; text-align: center;">
+    <span style="font-size: 13px; color: #64748b; margin-right: 8px;">读完了？</span>
+    <button onclick="copyFullArticle()" style="padding: 7px 16px; background: #16a34a; color: white; border: none; border-radius: 20px; cursor: pointer; font-size: 13px; font-weight: 600;">📄 复制全文</button>
+    <button onclick="copyFullWithLink()" style="padding: 7px 16px; background: #7c3aed; color: white; border: none; border-radius: 20px; cursor: pointer; font-size: 13px; font-weight: 600; margin-left: 6px;">🔗 全文+链接</button>
+    <a id="post-to-x-link-2" href="" target="_blank" style="padding: 7px 16px; background: #000; color: white; border-radius: 20px; font-size: 13px; font-weight: 600; text-decoration: none; display: inline-block; margin-left: 6px;">🚀 发到 X</a>
+  </div>
+
+  <script>
+    // 兼容 HTTP 和 HTTPS 的复制方法
+    function safeCopy(text, successCb) {
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(successCb).catch(function() {
+          fallbackCopy(text, successCb);
+        });
+      } else {
+        fallbackCopy(text, successCb);
+      }
+    }
+
+    function fallbackCopy(text, successCb) {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.left = '-9999px';
+      ta.style.top = '-9999px';
+      document.body.appendChild(ta);
+      ta.focus();
+      ta.select();
+      try {
+        document.execCommand('copy');
+        if (successCb) successCb();
+      } catch (e) {
+        alert('复制失败，请手动选择文本复制');
+      }
+      document.body.removeChild(ta);
+    }
+
+    function showStatus(msg) {
+      var el = document.getElementById('copy-status');
+      el.style.display = 'block';
+      el.innerHTML = msg;
+      setTimeout(function() { el.style.display = 'none'; }, 3000);
+    }
+
+    function flashBtn(btn, origText, origBg) {
+      btn.textContent = '✅ 已复制';
+      btn.style.background = '#059669';
+      setTimeout(function() {
+        btn.textContent = origText;
+        btn.style.background = origBg;
+      }, 2000);
+    }
+
+    function getArticleText() {
+      var el = document.getElementById('article-content');
+      var text = el.innerText || el.textContent;
+      text = text.replace(/\n{3,}/g, '\n\n').trim();
+      return {{ .Title | jsonify }} + '\n\n' + text;
+    }
+
+    function copyFullArticle() {
+      var text = getArticleText();
+      safeCopy(text, function() {
+        flashBtn(document.getElementById('copy-full-btn'), '📄 复制全文', '#16a34a');
+        showStatus('✅ 全文已复制到剪贴板！直接去 X 粘贴发布');
+      });
+    }
+
+    function copyFullWithLink() {
+      var text = getArticleText() + '\n\n🔗 原文：' + {{ .Permalink | jsonify }};
+      safeCopy(text, function() {
+        flashBtn(document.getElementById('copy-full-link-btn'), '🔗 全文+链接', '#7c3aed');
+        showStatus('✅ 全文+链接已复制！');
+      });
+    }
+
+    function copyTweet() {
+      var text = document.getElementById('x-tweet-text').value;
+      safeCopy(text, function() {
+        flashBtn(document.getElementById('copy-tweet-btn'), '🐦 复制推文', '#1DA1F2');
+        showStatus('✅ 推文已复制！');
+      });
+    }
+
+    // 设置 X 发布链接
+    var tweetText = document.getElementById('x-tweet-text').value;
+    var xUrl = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(tweetText);
+    document.getElementById('post-to-x-link').href = xUrl;
+    var link2 = document.getElementById('post-to-x-link-2');
+    if (link2) link2.href = xUrl;
+  </script>
+
+  <footer class="post-footer">
+    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+    <ul class="post-tags">
+      {{- range ($.GetTerms $tags) }}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
+    </ul>
+    {{- if (.Param "ShowPostNavLinks") }}
+    {{- partial "post_nav_links.html" . }}
+    {{- end }}
+    {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
+    {{- partial "share_icons.html" . -}}
+    {{- end }}
+  </footer>
+
+  {{- if (.Param "comments") }}
+  {{- partial "comments.html" . }}
+  {{- end }}
+</article>
+
+{{- end }}{{/* end main */}}

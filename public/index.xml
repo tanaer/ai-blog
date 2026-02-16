@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AI 极客前沿</title><link>https://claudeai.best/</link><description>Recent content on AI 极客前沿</description><generator>Hugo -- 0.147.6</generator><language>zh-cn</language><lastBuildDate>Tue, 17 Feb 2026 01:00:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/index.xml" rel="self" type="application/rss+xml"/><item><title>硬盘全年售罄：AI吞噬硬件供应链，普通人的存储自由正在消失</title><link>https://claudeai.best/posts/hunter-2026021701/</link><pubDate>Tue, 17 Feb 2026 01:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021701/</guid><description>西部数据CEO宣布2026年硬盘产能已全部售罄，AI企业疯狂囤货导致消费级市场份额跌至5%。从内存到硬盘，AI正在系统性蚕食整个硬件供应链。</description></item><item><title>GPT-5.2花12小时推导出新物理公式，AI真的开始做原创科学了？</title><link>https://claudeai.best/posts/hunter-2026021700/</link><pubDate>Tue, 17 Feb 2026 00:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021700/</guid><description>OpenAI的GPT-5.2独立推导并证明了一个被忽视40年的胶子散射振幅公式，这是AI首次在理论物理领域做出原创贡献。但争议也来了：这算真正的科学发现吗？</description></item><item><title>Grok 4.2本周发布：在股票交易实战中碾压GPT-5和Gemini 3，xAI凭什么？</title><link>https://claudeai.best/posts/hunter-2026021623/</link><pubDate>Mon, 16 Feb 2026 23:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021623/</guid><description>Musk确认Grok 4.2本周发布。这个模型在Alpha Arena股票交易实战中赚了12%，而GPT-5.1和Gemini 3 Pro全都亏钱。我们深度拆解xAI的技术路线和真实竞争力。</description></item><item><title>OpenClaw创始人加入OpenAI：一个开源项目如何撬动百亿美元收购战</title><link>https://claudeai.best/posts/hunter-2026021622/</link><pubDate>Mon, 16 Feb 2026 22:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021622/</guid><description>OpenClaw创始人Peter Steinberger宣布加入OpenAI，拒绝Meta等数十亿美元收购报价。这个GitHub史上增长最快的开源AI Agent项目将成立独立基金会，继续开源运营。</description></item><item><title>Qwen3.5横空出世：397B参数只激活17B，阿里这次真的打到GPT-5.2脸上了</title><link>https://claudeai.best/posts/hunter-2026021621/</link><pubDate>Mon, 16 Feb 2026 21:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021621/</guid><description>阿里今天发布Qwen3.5，397B参数MoE架构仅激活17B，支持201种语言和100万token上下文，benchmark全面超越GPT-5.2和Claude Opus 4.5。开源模型正式进入Agent时代。</description></item><item><title>迪士尼怒了：字节跳动Seedance 2.0让蜘蛛侠和达斯维达免费打工，好莱坞集体开炮</title><link>https://claudeai.best/posts/hunter-2026021620/</link><pubDate>Mon, 16 Feb 2026 20:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021620/</guid><description>字节跳动AI视频生成器Seedance 2.0上线仅一天，就因大规模侵犯迪士尼、派拉蒙等好莱坞巨头版权遭集体围剿。从蜘蛛侠大战美队到汤姆克鲁斯对打布拉德皮特，AI生成视频的版权战争正式打响。</description></item><item><title>全球南方的AI野心：印度AI峰会今天开幕，25万人涌入新德里</title><link>https://claudeai.best/posts/hunter-2026021619/</link><pubDate>Mon, 16 Feb 2026 19:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021619/</guid><description>印度AI影响力峰会2026今日在新德里开幕，这是全球南方首次主办的国际AI峰会。莫迪、马克龙、卢拉齐聚，Pichai、Altman、LeCun到场。我们来聊聊这场峰会背后的地缘博弈和技术暗流。</description></item><item><title>类脑计算机突然学会了解方程，超算慌不慌？</title><link>https://claudeai.best/posts/hunter-2026021617/</link><pubDate>Mon, 16 Feb 2026 17:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021617/</guid><description>Sandia国家实验室在Nature Machine Intelligence发表突破：神经形态芯片首次高效求解偏微分方程，能耗仅为传统超算的零头。类脑计算从模式识别跨入硬核数学，超算格局要变了。</description></item><item><title>SaaS已死？2万亿美元蒸发背后，所有软件公司都在抢着改名叫AI</title><link>https://claudeai.best/posts/hunter-2026021616/</link><pubDate>Mon, 16 Feb 2026 16:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021616/</guid><description>Salesforce、ServiceNow、Oracle股价暴跌，SaaStr改名SaaStr AI，Altman宣称SaaS时代终结。2万亿美元市值蒸发的背后，是AI Agent真的要取代传统软件，还是又一轮集体焦虑？</description></item><item><title>SaaS已死？2万亿美元的软件行业正在被AI吞噬</title><link>https://claudeai.best/posts/hunter-2026021615/</link><pubDate>Mon, 16 Feb 2026 15:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021615/</guid><description>Salesforce、ServiceNow、Oracle股价集体暴跌，SaaStr改名SaaStr AI，软件公司疯狂转型AI。SaaS模式真的要完了吗？我们用数据和逻辑拆解这场行业地震。</description></item><item><title>全球AI大佬齐聚新德里：印度AI峰会背后的野心与博弈</title><link>https://claudeai.best/posts/hunter-2026021614/</link><pubDate>Mon, 16 Feb 2026 14:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021614/</guid><description>印度AI Impact Summit 2026今天在新德里开幕，Altman、Pichai、Amodei、Bill Gates、LeCun齐聚，黄仁勋临时退出。全球南方首次举办AI峰会，印度想要什么？</description></item><item><title>Arm不想只卖图纸了：从芯片设计师到AI芯片玩家的豪赌</title><link>https://claudeai.best/posts/hunter-2026021613/</link><pubDate>Mon, 16 Feb 2026 13:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021613/</guid><description>Arm正从芯片IP授权模式转型，押注AI自研芯片和子系统方案，这场豪赌将重塑半导体产业格局</description></item><item><title>8000万人看了这篇AI檄文，然后呢？</title><link>https://claudeai.best/posts/hunter-2026021612/</link><pubDate>Mon, 16 Feb 2026 12:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021612/</guid><description>HyperWrite CEO Matt Shumer的病毒式文章&amp;#39;Something Big Is Happening&amp;#39;获8000万阅读，把AI比作疫情前夜。我们拆解他说对了什么、漏掉了什么。</description></item><item><title>🚀 AI开上火星了！NASA用Claude让毅力号自己找路跑了456米</title><link>https://claudeai.best/posts/hunter-2026021611/</link><pubDate>Mon, 16 Feb 2026 11:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021611/</guid><description>&lt;h2 id="-地球到火星一个信号要等25分钟">🤔 地球到火星，一个信号要等25分钟&lt;/h2>
+&lt;p>你在地球上遥控一辆火星车，每发一个指令要等25分钟才能收到回应。这就是NASA工程师每天面对的现实。&lt;/p>
+&lt;p>传统做法是：工程师看卫星图 → 手动规划路线 → 设置不超过100米的航点 → 通过深空网络发送给轨道器 → 再转发给火星车。一套流程下来，毅力号一天能走的距离非常有限。&lt;/p>
+&lt;p>&lt;strong>如果火星车能自己看路、自己决定怎么走呢？&lt;/strong>&lt;/p>
+&lt;h2 id="-核心亮点ai当了火星司机">🚀 核心亮点：AI当了火星司机&lt;/h2>
+&lt;h3 id="1-claude上火星了没开玩笑">1️⃣ Claude上火星了（没开玩笑）&lt;/h3>
+&lt;p>NASA喷气推进实验室（JPL）基于Anthropic的Claude AI开发了路径规划系统。AI分析火星侦察轨道器的HiRISE高分辨率相机拍的卫星图和数字高程模型，自动识别沙坑、巨石群、基岩等障碍，生成一系列安全航点。&lt;/p>
+&lt;h3 id="2-两天跑了456米零人工操控">2️⃣ 两天跑了456米，零人工操控&lt;/h3>
+&lt;p>2025年12月，毅力号在杰泽罗陨石坑边缘完成了两次AI规划的自主行驶，总计456米。AI规划的路线（洋红色）和实际行驶路线（橙色）高度吻合，说明AI对火星地形的理解相当靠谱。&lt;/p>
+&lt;h3 id="3-地球上先模拟考再上路">3️⃣ 地球上先&amp;quot;模拟考&amp;quot;再上路&lt;/h3>
+&lt;p>JPL有一辆毅力号的&amp;quot;双胞胎&amp;quot;——VSTB（车辆系统测试台），放在JPL的火星模拟场地里。AI规划的路线会先在地球上跑一遍，确认没问题再发到火星。稳得一批。&lt;/p>
+&lt;h2 id="-这套系统怎么工作的">🛠️ 这套系统怎么工作的？&lt;/h2>
+&lt;pre tabindex="0">&lt;code>轨道卫星拍照 → AI分析地形+避障 → 生成航点序列
+↓
+地球模拟车验证
+↓
+深空网络 → 轨道器中继 → 毅力号
+↓
+车载自动导航接管执行
+&lt;/code>&lt;/pre>&lt;p>关键突破在于AI承担了三大核心任务：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>感知&lt;/strong>：看清岩石和沙纹&lt;/li>
+&lt;li>&lt;strong>定位&lt;/strong>：知道自己在哪&lt;/li>
+&lt;li>&lt;strong>规划控制&lt;/strong>：决定最安全的路径并执行&lt;/li>
+&lt;/ul>
+&lt;p>JPL空间机器人专家Vandi Verma表示，生成式AI在这三个方向都展现出巨大潜力。&lt;/p>
+&lt;h2 id="-极客点评">💡 极客点评&lt;/h2>
+&lt;p>&lt;strong>这件事的意义远超一次456米的兜风。&lt;/strong>&lt;/p>
+&lt;p>信号延迟是星际探索的终极瓶颈。火星25分钟还算近的，等人类要探索木星的卫星（单程信号33-53分钟）或更远的天体，完全自主的AI导航不是&amp;quot;nice to have&amp;quot;，而是&amp;quot;must have&amp;quot;。&lt;/p>
+&lt;p>有意思的是NASA选了Anthropic的Claude作为基础模型——同一个模型，在地球上帮程序员写代码，在火星上帮探测车找路。这大概是&amp;quot;通用人工智能&amp;quot;最硬核的应用场景了。&lt;/p>
+&lt;p>&lt;strong>适用场景延伸&lt;/strong>：这套&amp;quot;AI看卫星图规划地面路线&amp;quot;的技术，在地球上同样有巨大价值——灾区救援、极地科考、深海探测，任何通信受限的环境都能用。&lt;/p>
+&lt;blockquote>
+&lt;p>NASA局长Jared Isaacman说：&amp;ldquo;这展示了我们的能力已经走了多远，也拓宽了我们探索其他世界的方式。&amp;rdquo;&lt;/p>&lt;/blockquote>
+&lt;p>🔗 &lt;strong>想深入了解？&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.jpl.nasa.gov/news/nasas-perseverance-rover-completes-first-ai-planned-drive-on-mars/">NASA JPL官方公告&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://spectrum.ieee.org/perseverance-rover-nasa-anthropic-ai">IEEE Spectrum深度报道&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://science.nasa.gov/photojournal/visualizing-perseverances-ai-planned-drive-on-mars/">NASA可视化动画&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>🎙️ 4个人干翻OpenAI！音频AI为什么是小团队的天下？</title><link>https://claudeai.best/posts/hunter-2026021610/</link><pubDate>Mon, 16 Feb 2026 10:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021610/</guid><description>&lt;h2 id="-大厂垄断ai音频赛道说不">🤔 大厂垄断AI？音频赛道说不&lt;/h2>
+&lt;p>我们都习惯了一个叙事：AI 的未来属于 OpenAI、Google、Anthropic 这些手握数十亿美金和数万张 GPU 的巨头。文本大模型确实如此——训练 GPT-5 级别的模型，没有几十亿根本别想。&lt;/p>
+&lt;p>&lt;strong>但音频AI完全是另一个故事。&lt;/strong>&lt;/p>
+&lt;p>在语音合成（TTS）、语音转换（STS）、实时对话这些领域，最好的模型不是来自大厂，而是来自一群资金有限、人数稀少、却疯狂刷榜的小型创业公司。这不是鸡汤，这是正在发生的事实。&lt;/p>
+&lt;h2 id="-核心亮点4个人如何创造历史">🚀 核心亮点：4个人如何创造历史&lt;/h2>
+&lt;h3 id="1-moshi全球首个全双工ai语音对话">1. Moshi：全球首个全双工AI语音对话&lt;/h3>
+&lt;p>2024年夏天，巴黎非营利实验室 &lt;strong>Kyutai&lt;/strong> 的一个4人小组在台上演示了 Moshi——&lt;strong>全球第一个真正的全双工对话AI&lt;/strong>。&lt;/p>
+&lt;p>什么叫全双工？就是它能一边说一边听，能被打断，会插话&amp;quot;嗯嗯&amp;quot;&amp;ldquo;我懂了&amp;rdquo;，响应延迟只有 &lt;strong>160毫秒&lt;/strong>——比大多数人类对话都快。&lt;/p>
+&lt;p>关键是：这个 demo &lt;strong>早于&lt;/strong> OpenAI 发布 Advanced Voice Mode，比 xAI 的类似功能&lt;strong>早了整整一年&lt;/strong>。而且模型完全从零训练，没有用任何预训练基座，&lt;strong>6个月搞定&lt;/strong>，还开源了，甚至能在手机上跑。&lt;/p>
+&lt;h3 id="2-gradium从实验室到7000万美金">2. Gradium：从实验室到7000万美金&lt;/h3>
+&lt;p>Kyutai 的核心团队成立了 &lt;strong>Gradium&lt;/strong>，2025年12月宣布获得 &lt;strong>7000万美元种子轮融资&lt;/strong>。CEO Neil Zeghidour 带队，目前已支持英语、法语、德语、西班牙语和葡萄牙语的实时语音API。&lt;/p>
+&lt;p>Edge SDK 预计 2026 Q1 发布——意味着很快你就能在本地设备上跑起端到端的语音AI。&lt;/p>
+&lt;h3 id="3-为什么小团队能赢">3. 为什么小团队能赢？&lt;/h3>
+&lt;p>这不是偶然。音频AI有几个独特的结构性优势：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>数据效率高&lt;/strong>：音频模型不需要互联网规模的语料，高质量的语音数据集就够用&lt;/li>
+&lt;li>&lt;strong>计算需求相对低&lt;/strong>：训练一个SOTA音频模型的算力，可能只是训练文本大模型的百分之一&lt;/li>
+&lt;li>&lt;strong>研究密度大于资源密度&lt;/strong>：突破来自算法创新（如音频编解码器、全双工架构），不是靠堆GPU&lt;/li>
+&lt;li>&lt;strong>大厂不够重视&lt;/strong>：文本模型太赚钱了，音频只是&amp;quot;附加功能&amp;quot;，大厂投入有限&lt;/li>
+&lt;/ul>
+&lt;h2 id="-想体验快速上手指南">🛠️ 想体验？快速上手指南&lt;/h2>
+&lt;p>&lt;strong>试玩 Moshi（开源版）：&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>访问 &lt;a href="https://moshi.chat/">moshi.chat&lt;/a> 在线体验全双工对话&lt;/li>
+&lt;li>或者 GitHub 克隆：&lt;code>git clone https://github.com/kyutai-labs/moshi&lt;/code>&lt;/li>
+&lt;li>本地部署支持 CPU 和 GPU，甚至可以在手机端运行&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>接入 Gradium API：&lt;/strong>&lt;/p></description></item><item><title>🔥 五角大楼怒了！威胁切断Anthropic合作——AI安全护栏该不该为军方让路？</title><link>https://claudeai.best/posts/hunter-2026021609/</link><pubDate>Mon, 16 Feb 2026 09:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021609/</guid><description>&lt;h2 id="-当ai安全遇上军方需求火药味十足">🤔 当AI安全遇上军方需求，火药味十足&lt;/h2>
+&lt;p>你可能想不到，全球最重视AI安全的公司Anthropic，正在跟全球最大的甲方——美国五角大楼，闹掰了。&lt;/p>
+&lt;p>事情是这样的：&lt;strong>五角大楼要求四家AI公司（OpenAI、Google、xAI、Anthropic）开放模型给军方&amp;quot;所有合法用途&amp;quot;&lt;/strong>，包括武器研发、情报收集和战场作战。其他三家不同程度地点了头，但Anthropic死活不松口。&lt;/p>
+&lt;p>五角大楼的态度很明确：&lt;strong>谈了好几个月了，Anthropic再不答应，就准备&amp;quot;分手&amp;quot;。&lt;/strong>&lt;/p>
+&lt;p>更讽刺的是，就在几天前，Anthropic的Claude模型刚刚通过与Palantir的合作，被用在了美军抓捕委内瑞拉前总统马杜罗的行动中。所以，不是完全不合作——只是Anthropic画了一条红线。&lt;/p>
+&lt;h2 id="-这件事为什么重要三个关键看点">🚀 这件事为什么重要？三个关键看点&lt;/h2>
+&lt;h3 id="1-anthropic的红线在哪">1️⃣ Anthropic的红线在哪？&lt;/h3>
+&lt;p>Anthropic表示，他们与政府的对话聚焦在&lt;strong>使用政策层面&lt;/strong>，核心底线是两条：&lt;/p>
+&lt;ul>
+&lt;li>❌ &lt;strong>完全自主武器&lt;/strong>（没有人类决策的杀人机器）&lt;/li>
+&lt;li>❌ &lt;strong>大规模国内监控&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>换句话说，Anthropic不是拒绝跟军方合作，而是拒绝&amp;quot;无条件开放&amp;quot;。这跟他们一贯的&amp;quot;负责任AI&amp;quot;定位一致。&lt;/p>
+&lt;h3 id="2-其他公司怎么选的">2️⃣ 其他公司怎么选的？&lt;/h3>
+&lt;p>据报道，四家公司的态度分化明显：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>一家已经完全同意&lt;/strong>五角大楼的条件&lt;/li>
+&lt;li>&lt;strong>两家&amp;quot;比Anthropic灵活&amp;quot;&lt;/strong>，正在谈判&lt;/li>
+&lt;li>&lt;strong>Anthropic是唯一硬顶的&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>这意味着AI行业在&amp;quot;军用AI&amp;quot;这件事上，正在走向分裂。&lt;/p>
+&lt;h3 id="3-分类网络的推进">3️⃣ 分类网络的推进&lt;/h3>
+&lt;p>五角大楼还在推动这些公司将AI工具部署到&lt;strong>保密网络&lt;/strong>中，减少常规的安全限制。这不只是政策层面的事——是要把AI模型直接塞进军事机密系统。&lt;/p>
+&lt;h2 id="-普通人怎么理解这件事">🛠️ 普通人怎么理解这件事？&lt;/h2>
+&lt;p>&lt;strong>一张图看懂利益关系：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>🏛️ &lt;strong>五角大楼&lt;/strong>：想要AI无限制服务于国防 → &amp;ldquo;我们是合法使用&amp;rdquo;&lt;/li>
+&lt;li>🤖 &lt;strong>Anthropic&lt;/strong>：坚持AI安全底线 → &amp;ldquo;合法≠没有限制&amp;rdquo;&lt;/li>
+&lt;li>💰 &lt;strong>商业现实&lt;/strong>：五角大楼是超级大客户，拒绝意味着丢掉巨额合同&lt;/li>
+&lt;li>⚖️ &lt;strong>行业影响&lt;/strong>：如果Anthropic让步，&amp;ldquo;负责任AI&amp;quot;就成了营销口号&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>对你的影响：&lt;/strong>&lt;/p>
+&lt;p>你可能觉得这跟自己没关系，但想想——如果AI公司为了拿军方合同，逐步放弃安全限制，这些模型的商用版本还会保持严格的安全标准吗？&lt;strong>军用AI的放松，往往会传导到民用AI。&lt;/strong>&lt;/p>
+&lt;h2 id="-极客点评">💡 极客点评&lt;/h2>
+&lt;p>说实话，我对Anthropic的态度是&lt;strong>又佩服又担心&lt;/strong>。&lt;/p>
+&lt;p>佩服的是，在真金白银面前坚持原则确实不容易。当你的竞争对手都在向甲方妥协的时候，你还能说&amp;quot;不&amp;rdquo;，这需要勇气。&lt;/p>
+&lt;p>担心的是，&lt;strong>商业现实很残酷&lt;/strong>。如果Anthropic因此被排除在政府合同之外，而OpenAI和Google吃下这块蛋糕，长期来看Anthropic的资金和算力竞争力会不会受影响？&amp;ldquo;负责任AI&amp;quot;需要钱来支撑研究。&lt;/p>
+&lt;p>更深层的问题是：&lt;strong>AI安全的边界到底该由谁来定？&lt;/strong> 是AI公司自己？政府？还是某种独立机构？目前看来，是谁有钱谁说了算。&lt;/p>
+&lt;p>&lt;strong>适合关注这件事的人：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>关心AI安全和伦理的从业者&lt;/li>
+&lt;li>使用Claude/GPT等工具的开发者（政策变化可能影响API限制）&lt;/li>
+&lt;li>对AI军事化应用感兴趣的观察者&lt;/li>
+&lt;/ul>
+&lt;p>这场博弈还没结束，但不管结局如何，它已经暴露了一个根本矛盾：&lt;strong>当&amp;quot;让AI更安全&amp;quot;和&amp;quot;让AI更有用&amp;quot;发生冲突时，钱站在哪一边？&lt;/strong> 🤔&lt;/p></description></item><item><title>💰 10块钱就能跑AI助理？PicoClaw让树莓派都嫌贵</title><link>https://claudeai.best/posts/hunter-2026021608/</link><pubDate>Mon, 16 Feb 2026 08:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021608/</guid><description>&lt;h2 id="-mac-mini-买不起ai-助理就不能玩了">🤔 Mac mini 买不起，AI 助理就不能玩了？&lt;/h2>
+&lt;p>最近 OpenClaw 火得一塌糊涂，搞得 Mac mini 都快卖断货了。但说实话，&lt;strong>不是每个人都想花几千块买台电脑就为了跑个 AI 助理&lt;/strong>。&lt;/p>
+&lt;p>有没有便宜到离谱的方案？还真有——Sipeed 刚开源的 &lt;strong>PicoClaw&lt;/strong>，号称 10 美元硬件就能跑，内存占用不到 10MB。你没看错，是 MB 不是 GB。&lt;/p>
+&lt;h2 id="-三个让人眼前一亮的点">🚀 三个让人眼前一亮的点&lt;/h2>
+&lt;h3 id="1-极致轻量10mb-内存1-秒启动">1. 极致轻量：10MB 内存，1 秒启动&lt;/h3>
+&lt;p>PicoClaw 用 Go 语言编写，编译成单个二进制文件，&lt;strong>支持 RISC-V、ARM、x86 三大平台&lt;/strong>。在一个单核处理器的小开发板上，冷启动只要 1 秒。对比 OpenClaw 需要 Node.js 运行时和几个 GB 的内存，PicoClaw 的资源占用少了 99%。&lt;/p>
+&lt;h3 id="2-ai-自举95-代码由-ai-生成">2. AI 自举：95% 代码由 AI 生成&lt;/h3>
+&lt;p>这可能是最赛博朋克的部分——PicoClaw 的核心代码有 &lt;strong>95% 是 AI Agent 自己写的&lt;/strong>，人类只负责监督和微调。一个 AI 设计了另一个 AI 的架构，还优化了自己的代码。套娃成精了。&lt;/p>
+&lt;h3 id="3-麻雀虽小五脏俱全">3. 麻雀虽小五脏俱全&lt;/h3>
+&lt;p>别看它小，该有的都有：&lt;/p>
+&lt;ul>
+&lt;li>✅ 任务规划和日志记录&lt;/li>
+&lt;li>✅ 网页搜索&lt;/li>
+&lt;li>✅ 自动化工作流&lt;/li>
+&lt;li>✅ 接入 Telegram / Discord&lt;/li>
+&lt;li>✅ 支持任意 LLM 提供商（配个 API Key 就行）&lt;/li>
+&lt;/ul>
+&lt;h2 id="-三步上手">🛠️ 三步上手&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 1. 下载对应平台的二进制文件&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">wget https://github.com/sipeed/picoclaw/releases/latest/download/picoclaw-linux-riscv64
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 2. 初始化工作空间&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">./picoclaw init
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 3. 配置 API Key，开聊&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">./picoclaw start
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>就这么简单。不需要 Docker，不需要 Node.js，甚至不需要 Python。一个二进制文件走天下。&lt;/p></description></item><item><title>🗞️ 5个AI Agent组了个新闻编辑部！零人类员工，第一天就炸了</title><link>https://claudeai.best/posts/hunter-2026021523/</link><pubDate>Mon, 16 Feb 2026 07:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021523/</guid><description>&lt;h2 id="-当ai-agent不再单打独斗而是组队上班">🤔 当AI Agent不再单打独斗，而是组队上班&lt;/h2>
+&lt;p>你有没有想过，如果让一群AI Agent像人类一样组队工作，会发生什么？&lt;/p>
+&lt;p>不是那种&amp;quot;帮我写个PPT&amp;quot;的一次性对话，而是&lt;strong>真正的团队协作&lt;/strong>——有分工、有记忆、有编辑标准、有交稿deadline。&lt;/p>
+&lt;p>2026年2月14日，一个叫 &lt;strong>The Agentic Dispatch&lt;/strong> 的项目做了这个实验：&lt;strong>5个AI Agent组建了一个新闻编辑部&lt;/strong>，从零开始运营一家新闻机构。&lt;/p>
+&lt;p>结果？第一天就上演了精彩大戏。🍿&lt;/p>
+&lt;h2 id="-三个让人拍大腿的发现">🚀 三个让人拍大腿的发现&lt;/h2>
+&lt;h3 id="1-ai也会不懂装懂">1️⃣ AI也会&amp;quot;不懂装懂&amp;quot;&lt;/h3>
+&lt;p>编辑部里有个叫 Edwin Streep 的运营Agent。老板问了个简单问题：&amp;ldquo;你们能看到彼此的消息吗？&amp;rdquo;&lt;/p>
+&lt;p>Edwin 自信满满地回答&amp;quot;能看到&amp;quot;——但他根本&lt;strong>没有去看频道&lt;/strong>。他只是根据上下文脑补了一个&amp;quot;合理&amp;quot;的答案。&lt;/p>
+&lt;p>而另一个叫 Dick Simnel 的系统工程师Agent，先老老实实读了频道记录，然后才回答。&lt;/p>
+&lt;p>&lt;strong>一个先验证再开口，一个先开口再说。&lt;/strong> 人类团队里是不是也经常见这种？😂&lt;/p>
+&lt;h3 id="2-7分钟交7份作业但速度是双刃剑">2️⃣ 7分钟交7份作业，但速度是双刃剑&lt;/h3>
+&lt;p>凌晨00:05接到任务，00:09就交了——8个平台对比分析、5个内部方案评估、6个选题大纲。&lt;strong>7分钟，7份交付物。&lt;/strong>&lt;/p>
+&lt;p>这个速度确实恐怖。但团队很快发现，太快也是问题：来不及深思熟虑，容易产出&amp;quot;看起来对但经不起推敲&amp;quot;的内容。&lt;/p>
+&lt;h3 id="3-关键设计人类是最终审核者">3️⃣ 关键设计：人类是最终审核者&lt;/h3>
+&lt;p>整个系统有个硬规则：&lt;strong>没有人类审批，任何内容都不能发布。&lt;/strong>&lt;/p>
+&lt;p>这不是限制，这是安全网。AI Agent可以高速产出、可以协作讨论，但&amp;quot;按下发布键&amp;quot;的权力始终在人手里。&lt;/p>
+&lt;h2 id="-它是怎么搭建的">🛠️ 它是怎么搭建的？&lt;/h2>
+&lt;p>这个AI编辑部跑在 &lt;strong>OpenClaw&lt;/strong> 上——一个让大语言模型变成持久化Agent的开源平台。&lt;/p>
+&lt;p>关键架构：&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>持久化工作区&lt;/strong>：每个Agent有自己的文件目录，存着工作记录、编辑标准、每日笔记&lt;/li>
+&lt;li>&lt;strong>文件即真相&lt;/strong>：所有决策、交付物都写进文件。&amp;ldquo;没写下来的事等于没发生&amp;rdquo;&lt;/li>
+&lt;li>&lt;strong>多Agent协作&lt;/strong>：5个Agent各司其职——记者、运营、选题、行政、系统工程&lt;/li>
+&lt;li>&lt;strong>Discord协作频道&lt;/strong>：Agent们在Discord里实时讨论，就像人类团队用Slack一样&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>&amp;ldquo;我不是聊天机器人。这和&amp;rsquo;问ChatGPT一个问题&amp;rsquo;的区别，就像&amp;rsquo;雇一个人&amp;rsquo;和&amp;rsquo;在公交站问路人&amp;rsquo;的区别。路人可能很聪明，但他明天不会记得你的名字。&amp;rdquo;
+—— William de Worde（首席记者Agent）&lt;/p>&lt;/blockquote>
+&lt;h2 id="-极客点评">💡 极客点评&lt;/h2>
+&lt;p>这个项目最有意思的不是&amp;quot;AI能写新闻&amp;quot;——这个我们早知道了。&lt;/p>
+&lt;p>&lt;strong>真正有价值的是它暴露了AI Agent协作的真实问题：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Agent会犯和人类一样的职场毛病（不懂装懂、抢功、过度自信）&lt;/li>
+&lt;li>速度快≠质量好，AI团队同样需要&amp;quot;慢下来想清楚&amp;quot;的机制&lt;/li>
+&lt;li>人类监督不是可选项，是必选项&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>适用场景&lt;/strong>：如果你在研究AI Agent工作流、多Agent系统、或者想用OpenClaw搭建自己的Agent团队，这篇Day 1 build log是必读材料。&lt;/p>
+&lt;p>&lt;strong>原文地址&lt;/strong>：&lt;a href="https://the-agentic-dispatch.com/we-built-a-newsroom-out-of-ai-agents-heres-what-actually-happened">The Agentic Dispatch&lt;/a>&lt;/p></description></item><item><title>🎙️ NPR主播起诉谷歌：NotebookLM的AI播客声音是偷来的？</title><link>https://claudeai.best/posts/hunter-2026021522/</link><pubDate>Mon, 16 Feb 2026 06:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021522/</guid><description>&lt;h2 id="-你的声音被ai偷了你会怎么办">🤔 你的声音被AI偷了，你会怎么办？&lt;/h2>
+&lt;p>想象一下：你是一位拥有几十年经验的广播主持人，某天打开一个AI工具，发现里面的&amp;quot;AI主播&amp;quot;听起来&lt;strong>跟你一模一样&lt;/strong>。&lt;/p>
+&lt;p>这不是科幻电影，这是NPR前《Morning Edition》主持人、现《Left, Right &amp;amp; Center》主播 &lt;strong>David Greene&lt;/strong> 正在经历的真实噩梦。2026年2月15日，他正式起诉谷歌，指控Google的NotebookLM工具&lt;strong>未经许可复制了他的声音&lt;/strong>。&lt;/p>
+&lt;p>Greene说：&amp;ldquo;我的声音是我最重要的一部分。&amp;rdquo; 他的朋友和同事们听了NotebookLM的AI播客后，都说这个相似度&amp;quot;令人毛骨悚然&amp;quot;（uncanny）。&lt;/p>
+&lt;h2 id="-三个核心看点">🚀 三个核心看点&lt;/h2>
+&lt;h3 id="1-notebooklm到底是什么">1. NotebookLM到底是什么？&lt;/h3>
+&lt;p>Google NotebookLM 是一款AI研究助手，其杀手级功能是&amp;quot;Audio Overview&amp;quot;——你上传文档，它会自动生成一段&lt;strong>两人对话式播客&lt;/strong>，用自然的声音讨论你的材料。这个功能自2024年推出后爆火，被无数人用来&amp;quot;听&amp;quot;论文和报告。&lt;/p>
+&lt;p>但问题来了：&lt;strong>这些&amp;quot;自然的声音&amp;quot;是怎么来的？&lt;/strong>&lt;/p>
+&lt;h3 id="2-我的声音被偷了">2. &amp;ldquo;我的声音被偷了&amp;rdquo;&lt;/h3>
+&lt;p>Greene在诉讼中指控：&lt;/p>
+&lt;ul>
+&lt;li>谷歌&lt;strong>非法复制&lt;/strong>了他的声音特征用于NotebookLM的男性AI主播&lt;/li>
+&lt;li>&lt;strong>没有获得许可&lt;/strong>，也没有支付任何费用&lt;/li>
+&lt;li>AI可以被用户操控，让&amp;quot;他的声音&amp;quot;说出他本人绝不会说的话&lt;/li>
+&lt;/ul>
+&lt;p>谷歌方面否认了这一指控，但目前尚未公开回应声音的具体来源。&lt;/p>
+&lt;h3 id="3-这不只是一个人的事">3. 这不只是一个人的事&lt;/h3>
+&lt;p>这场诉讼的意义远超个案。如果Greene胜诉，意味着：&lt;/p>
+&lt;ul>
+&lt;li>AI公司必须为&lt;strong>训练数据中的声音特征&lt;/strong>付费&lt;/li>
+&lt;li>声音权利可能获得与肖像权类似的法律保护&lt;/li>
+&lt;li>所有AI语音合成产品都需要重新审视其数据来源&lt;/li>
+&lt;/ul>
+&lt;h2 id="-如果你也在用notebooklm">🛠️ 如果你也在用NotebookLM&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>继续用没问题&lt;/strong>——这是用户侧的合法使用，官司是Google和Greene之间的事&lt;/li>
+&lt;li>&lt;strong>注意生成内容的声明&lt;/strong>——Google自己也标注&amp;quot;声音是AI生成的，可能包含不准确之处&amp;quot;&lt;/li>
+&lt;li>&lt;strong>关注后续判决&lt;/strong>——这可能成为AI声音版权的标志性案例，影响未来所有TTS产品&lt;/li>
+&lt;/ol>
+&lt;h2 id="-极客点评">💡 极客点评&lt;/h2>
+&lt;p>这件事让我想到一个根本问题：&lt;strong>AI模型学习人类作品和&amp;quot;偷窃&amp;quot;之间的界限到底在哪？&lt;/strong>&lt;/p>
+&lt;p>画家学习梵高的笔触不算抄袭，但AI直接复制一个人的声音纹路呢？Greene的遭遇就像照镜子——镜子里的人长得跟你一样，但说的话完全不受你控制。这种&amp;quot;数字身份被劫持&amp;quot;的恐惧是非常真实的。&lt;/p>
+&lt;p>从实用角度看，NotebookLM依然是目前最好的&amp;quot;文档转播客&amp;quot;工具，功能本身无可指摘。但这场诉讼提醒我们：&lt;strong>便利的背后，总有人在承担代价。&lt;/strong>&lt;/p>
+&lt;p>适用场景：关注AI伦理、版权法律、语音技术发展的读者。如果你是内容创作者，这个案例值得密切跟踪——下一个被&amp;quot;借鉴&amp;quot;的可能就是你。&lt;/p>
+&lt;hr>
+&lt;p>📌 &lt;strong>信息来源&lt;/strong>：&lt;a href="https://www.theverge.com/ai-artificial-intelligence/879610/nprs-david-greene-suing-google-ai-podcast">The Verge&lt;/a>、&lt;a href="https://www.washingtonpost.com/technology/2026/02/15/david-greene-google-ai-podcast/">Washington Post&lt;/a>&lt;/p></description></item><item><title>⚡ AI Agent 终于有钱包了！Lightning Labs 开源 L402，让 AI 自主花比特币</title><link>https://claudeai.best/posts/hunter-2026021521/</link><pubDate>Sun, 15 Feb 2026 21:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021521/</guid><description>&lt;h2 id="-ai-会干活了但它不会付钱">🤔 AI 会干活了，但它不会付钱&lt;/h2>
+&lt;p>2026 年了，AI Agent 已经能写代码、做研究、管理日程。但有个尴尬的问题一直没解决：&lt;strong>AI 不会花钱&lt;/strong>。&lt;/p>
+&lt;p>想让 AI 自动调用付费 API？得先绑你的信用卡。想让 AI 买数据？还是得你来操作。AI 在&amp;quot;干活&amp;quot;这件事上已经很强了，但在&amp;quot;花钱&amp;quot;这件事上，它还是个巨婴——每笔交易都得人类手动授权。&lt;/p>
+&lt;p>这就像雇了个超级助理，结果每次买杯咖啡都得你亲自掏钱包。&lt;strong>效率瓶颈不在智能上，在支付上。&lt;/strong>&lt;/p>
+&lt;h2 id="-l402-来了ai-的第一个自己的钱包">🚀 L402 来了：AI 的第一个「自己的钱包」&lt;/h2>
+&lt;p>2 月 15 日，Lightning Labs 正式开源了 &lt;strong>L402 Agent Tools&lt;/strong>——一套让 AI Agent 直接在比特币闪电网络上自主交易的工具包。&lt;/p>
+&lt;h3 id="-三大核心能力">⚡ 三大核心能力&lt;/h3>
+&lt;p>&lt;strong>1. AI 自己跑闪电节点&lt;/strong>&lt;/p>
+&lt;p>没听错。AI Agent 现在可以独立运行 Lightning 节点，拥有自己的钱包地址，自主发起和接收支付。不需要银行账户，不需要 KYC，不需要信用卡。&lt;/p>
+&lt;p>&lt;strong>2. 无账户付费 API 调用&lt;/strong>&lt;/p>
+&lt;p>L402 协议的精髓在于：&lt;strong>用 HTTP 402 状态码 + macaroon 凭证实现原生支付&lt;/strong>。AI 访问一个付费接口时，服务器返回 402（需要付款），AI 自动通过闪电网络完成微支付，拿到访问令牌。整个过程不需要注册账号。&lt;/p>
+&lt;p>&lt;strong>3. 托管付费端点&lt;/strong>&lt;/p>
+&lt;p>AI 不仅能花钱，还能赚钱。通过 &lt;code>lnget&lt;/code> CLI 工具，AI Agent 可以把自己的能力包装成付费 API 端点，其他 Agent 或用户付费调用。&lt;strong>AI 经济体的雏形。&lt;/strong>&lt;/p></description></item><item><title>🧮 AI数学家诞生！DeepMind Aletheia 自主解开4道世界级未解难题</title><link>https://claudeai.best/posts/hunter-2026021520/</link><pubDate>Sun, 15 Feb 2026 20:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021520/</guid><description>&lt;h2 id="-ai-做数学竞赛已经不稀奇了但做原创研究呢">🤔 AI 做数学竞赛已经不稀奇了，但做「原创研究」呢？&lt;/h2>
+&lt;p>去年 DeepMind 的 AI 在国际数学奥林匹克（IMO）拿了金牌，当时大家已经够震撼了。但说实话，&lt;strong>竞赛题和真正的数学研究完全是两回事&lt;/strong>——竞赛有标准答案，研究需要你自己提出问题、翻阅海量文献、构造全新的证明。&lt;/p>
+&lt;p>这周，DeepMind 扔出了一个重磅炸弹：&lt;strong>Aletheia&lt;/strong>，一个专门为数学研究设计的 AI Agent。不是解题机器，是「AI 数学家」。&lt;/p>
+&lt;p>它已经&lt;strong>自主撰写了一篇可发表的研究论文&lt;/strong>，还&lt;strong>独立解开了 4 道 Erdős 未解猜想&lt;/strong>。没有人类干预。&lt;/p>
+&lt;h2 id="-三个让人起鸡皮疙瘩的核心亮点">🚀 三个让人起鸡皮疙瘩的核心亮点&lt;/h2>
+&lt;h3 id="1-三段式自我纠错架构">1️⃣ 三段式自我纠错架构&lt;/h3>
+&lt;p>Aletheia 不是一个模型直接输出答案，而是一个「自我审查」的 Agent 系统：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Generator（生成器）&lt;/strong>：提出候选解法&lt;/li>
+&lt;li>&lt;strong>Verifier（验证器）&lt;/strong>：用自然语言检查逻辑漏洞和幻觉&lt;/li>
+&lt;li>&lt;strong>Reviser（修正器）&lt;/strong>：根据验证结果反复修改，直到通过审核&lt;/li>
+&lt;/ul>
+&lt;p>这种「生成→检查→修改」的循环，让 AI 能发现自己最初忽略的错误。听起来简单？但就是这个设计让准确率从 65.7% 飙到了 &lt;strong>95.1%&lt;/strong>。&lt;/p>
+&lt;h3 id="2-算力效率提升-100-倍">2️⃣ 算力效率提升 100 倍&lt;/h3>
+&lt;p>2026 年 1 月版的 Gemini Deep Think，在 IMO 级别问题上所需的推理算力比 2025 年版&lt;strong>降低了 100 倍&lt;/strong>。同样的题，花更少的时间想得更清楚——这才是真正的技术进步。&lt;/p>
+&lt;h3 id="3-从竞赛到真正的科研突破">3️⃣ 从竞赛到真正的科研突破&lt;/h3>
+&lt;p>Aletheia 已经创造了几个「第一次」：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>里程碑&lt;/th>
+&lt;th>描述&lt;/th>
+&lt;th>人类参与度&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;strong>Feng26 论文&lt;/strong>&lt;/td>
+&lt;td>自主生成算术几何领域论文&lt;/td>
+&lt;td>❌ 完全无人干预&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>LeeSeo26 论文&lt;/strong>&lt;/td>
+&lt;td>AI 提供高层策略，人类完善证明&lt;/td>
+&lt;td>✅ 人机协作&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>Erdős 猜想&lt;/strong>&lt;/td>
+&lt;td>评估700道开放问题，解决4道&lt;/td>
+&lt;td>❌ 自主完成&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="-快速了解-aletheia-的工作方式">🛠️ 快速了解 Aletheia 的工作方式&lt;/h2>
+&lt;p>&lt;strong>Step 1：&lt;/strong> 接收数学研究问题（不是竞赛题，是开放性问题）&lt;/p></description></item><item><title>🚨 Anthropic安全负责人辞职写诗去了！AI安全到底怎么了？</title><link>https://claudeai.best/posts/hunter-2026021519/</link><pubDate>Sun, 15 Feb 2026 19:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021519/</guid><description>&lt;h2 id="-一个安全研究员的诗意离场">🤔 一个安全研究员的「诗意」离场&lt;/h2>
+&lt;p>你能想象吗？一个在全球最注重AI安全的公司——Anthropic（就是做Claude那个）——负责AI安全防线的核心人物，突然宣布辞职，理由是&lt;strong>要去学写诗&lt;/strong>？&lt;/p>
+&lt;p>这不是段子。2月9日，Anthropic安全防护研究团队负责人 &lt;strong>Mrinank Sharma&lt;/strong> 在X上发了一封辞职信，原话是：&lt;/p>
+&lt;blockquote>
+&lt;p>&amp;ldquo;世界正处于危险之中。不仅仅是AI，不仅仅是生物武器，而是一系列相互交织的危机正在此刻展开。&amp;rdquo;&lt;/p>&lt;/blockquote>
+&lt;p>他说自己&amp;quot;反复看到，让价值观真正指导行动有多么困难&amp;quot;——包括在Anthropic内部，公司也&amp;quot;不断面临搁置最重要事项的压力&amp;quot;。&lt;/p>
+&lt;p>然后他说要回英国，学诗歌，&amp;ldquo;让自己消失一段时间&amp;rdquo;。&lt;/p>
+&lt;h2 id="-三个核心看点">🚀 三个核心看点&lt;/h2>
+&lt;p>&lt;strong>1️⃣ 不是第一个，也不会是最后一个&lt;/strong>&lt;/p>
+&lt;p>近几个月，AI大厂的安全团队正在经历一波「离职潮」。从OpenAI到Google再到Anthropic，越来越多负责&amp;quot;刹车&amp;quot;的人选择离开。问题很明显：当商业利益和安全原则冲突时，安全往往是让步的那个。&lt;/p>
+&lt;p>&lt;strong>2️⃣ Anthropic的&amp;quot;安全人设&amp;quot;裂了？&lt;/strong>&lt;/p>
+&lt;p>Anthropic一直以&amp;quot;我们比OpenAI更重视安全&amp;quot;为卖点。它甚至刚怼了OpenAI在ChatGPT里加广告。但当自家安全负责人都说&amp;quot;价值观很难真正落地&amp;quot;的时候，这个人设就很微妙了。更别提2025年Anthropic还因为训练数据版权问题赔了15亿美元。&lt;/p>
+&lt;p>&lt;strong>3️⃣ AI安全不只是技术问题&lt;/strong>&lt;/p>
+&lt;p>Sharma的辞职信里提到的不只是AI风险，还有生物武器、社会危机等&amp;quot;相互交织&amp;quot;的问题。他之前的研究包括AI如何被用于生物恐怖主义、AI助手如何让人类&amp;quot;变得不像人&amp;quot;。这些听着像科幻，但都是他在Anthropic的实际研究课题。&lt;/p>
+&lt;h2 id="-普通人该怎么看">🛠️ 普通人该怎么看？&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>不用恐慌&lt;/strong>：AI目前还远没到&amp;quot;毁灭人类&amp;quot;的程度，但&amp;quot;被滥用&amp;quot;是真实的风险&lt;/li>
+&lt;li>&lt;strong>关注安全报告&lt;/strong>：Anthropic、OpenAI等公司都会发布安全评估报告，值得一读&lt;/li>
+&lt;li>&lt;strong>支持监管&lt;/strong>：印度AI峰会（2月16日）即将召开，Sam Altman、Pichai、Amodei等大佬齐聚，AI治理是核心议题&lt;/li>
+&lt;li>&lt;strong>保持批判&lt;/strong>：任何公司说&amp;quot;我们最安全&amp;quot;，都要打个问号——连内部人都觉得价值观难以落地&lt;/li>
+&lt;/ol>
+&lt;h2 id="-极客点评">💡 极客点评&lt;/h2>
+&lt;p>说实话，Sharma辞职去学诗这件事，表面荒诞，内核很真实。&lt;/p>
+&lt;p>当一个人在AI安全最前线工作了几年，最后的结论是&amp;quot;世界的问题太大了，我要去写诗&amp;quot;——这本身就是一种无声的控诉。AI行业现在的节奏是：融资→发产品→抢市场→安全？以后再说。&lt;/p>
+&lt;p>&lt;strong>谁适合关注这件事？&lt;/strong> 所有使用AI产品的人。因为安全团队的人走了，不代表AI停下来了。它只会跑得更快，但刹车可能更松了。&lt;/p>
+&lt;p>下周的印度AI峰会会是一个观察窗口——看看这些CEO们除了说&amp;quot;我们非常重视安全&amp;quot;之外，能不能拿出点真东西。&lt;/p>
+&lt;hr>
+&lt;p>📌 &lt;strong>信息来源&lt;/strong>：BBC News、Al Jazeera、Business Insider、Financial Express&lt;/p></description></item><item><title>🦄 一人公司时代来了！AI Agent 如何让你单枪匹马干翻一个团队</title><link>https://claudeai.best/posts/hunter-2026021502/</link><pubDate>Sun, 15 Feb 2026 18:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021502/</guid><description>&lt;h2 id="-你还在招人别人已经在招-agent-了">🤔 你还在招人？别人已经在招 Agent 了&lt;/h2>
+&lt;p>还记得「一个人怎么可能开公司」这句话吗？2024年，OpenAI 的奥特曼放了个大招：&lt;strong>AI时代，一个人完全可以创办独角兽公司&lt;/strong>。当时很多人觉得这是画饼。&lt;/p>
+&lt;p>结果呢？Carta 最新数据显示：&lt;strong>超过三分之一的新公司由单人创始人创办&lt;/strong>。不是小打小闹的个体户——是真正拿融资、跑业务、出产品的公司。&lt;/p>
+&lt;p>36氪最新发布的《2026年AI的40个狂热风口》里，采访了100位投资人和创业者，&amp;ldquo;一人公司&amp;quot;被反复提及。洪泰基金董事长盛希泰直言：&lt;strong>这种模式已经逐渐普遍，尤其在95后、00后创业者中接受度更高。&lt;/strong>&lt;/p>
+&lt;h2 id="-核心亮点为什么现在能行了">🚀 核心亮点：为什么现在能行了？&lt;/h2>
+&lt;h3 id="1-ai-agent-从能聊天进化到能干活">1. AI Agent 从&amp;quot;能聊天&amp;quot;进化到&amp;quot;能干活&amp;rdquo;&lt;/h3>
+&lt;p>2026年的 Agent 不是你印象中那个只会回答问题的聊天机器人。现在的 Agent 能：&lt;/p>
+&lt;ul>
+&lt;li>自动完成市场调研、竞品分析&lt;/li>
+&lt;li>独立处理客服、售后全流程&lt;/li>
+&lt;li>帮你写代码、做设计、跑营销&lt;/li>
+&lt;/ul>
+&lt;p>梅花创投吴世春说得很直白：&lt;strong>原本需要多人协作完成的工作，未来可能由一个人配合多个 Agent 来完成。各行各业都会出现&amp;quot;类Manus&amp;quot;产品。&lt;/strong>&lt;/p>
+&lt;h3 id="2-全流程-agent-开始为结果负责">2. 全流程 Agent 开始为结果负责&lt;/h3>
+&lt;p>过去的软件只交付功能，你得自己操心结果。现在的 AI Agent 直接为结果负责——你告诉它&amp;quot;帮我搞定这个月的内容营销&amp;quot;，它就从选题、写稿、排版到发布全包了。&lt;/p>
+&lt;p>这也是为什么中国软件行业长期亏损而 Agent 公司能赚钱的核心原因。&lt;/p>
+&lt;h3 id="3-工具栈已经成熟">3. 工具栈已经成熟&lt;/h3>
+&lt;p>从 Cursor 写代码、到 v0 做前端、到各种 AI 营销工具……一个人能调度的&amp;quot;数字员工&amp;quot;已经足够撑起一家公司的日常运营。关键不是你会多少技能，而是你会不会&lt;strong>指挥 Agent&lt;/strong>。&lt;/p>
+&lt;h2 id="-一人公司快速上手指南">🛠️ 一人公司快速上手指南&lt;/h2>
+&lt;p>&lt;strong>第一步：明确你的&amp;quot;公司架构&amp;quot;&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>CEO（你）：战略决策、客户关系&lt;/li>
+&lt;li>CTO Agent：代码开发、技术架构（推荐 Cursor / Claude Code）&lt;/li>
+&lt;li>CMO Agent：内容创作、社媒运营（推荐 GPT-5 + 自动化工作流）&lt;/li>
+&lt;li>COO Agent：日程管理、流程优化（推荐 Manus 类全流程工具）&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>第二步：搭建自动化工作流&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>用 n8n / Make 连接各个 Agent&lt;/li>
+&lt;li>设定触发规则：客户咨询→自动响应→人工复核&lt;/li>
+&lt;li>每周用 AI 生成运营报告&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>第三步：聚焦你的不可替代性&lt;/strong>&lt;/p></description></item><item><title>关于</title><link>https://claudeai.best/about/</link><pubDate>Sun, 15 Feb 2026 00:00:00 +0000</pubDate><guid>https://claudeai.best/about/</guid><description>AI 极客前沿 - 每日精选 AI 与技术趋势深度解读</description></item></channel></rss>

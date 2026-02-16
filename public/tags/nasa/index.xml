@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>NASA on AI 极客前沿</title><link>https://claudeai.best/tags/nasa/</link><description>Recent content in NASA on AI 极客前沿</description><generator>Hugo -- 0.147.6</generator><language>zh-cn</language><lastBuildDate>Mon, 16 Feb 2026 11:00:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/nasa/index.xml" rel="self" type="application/rss+xml"/><item><title>🚀 AI开上火星了！NASA用Claude让毅力号自己找路跑了456米</title><link>https://claudeai.best/posts/hunter-2026021611/</link><pubDate>Mon, 16 Feb 2026 11:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021611/</guid><description>&lt;h2 id="-地球到火星一个信号要等25分钟">🤔 地球到火星，一个信号要等25分钟&lt;/h2>
+&lt;p>你在地球上遥控一辆火星车，每发一个指令要等25分钟才能收到回应。这就是NASA工程师每天面对的现实。&lt;/p>
+&lt;p>传统做法是：工程师看卫星图 → 手动规划路线 → 设置不超过100米的航点 → 通过深空网络发送给轨道器 → 再转发给火星车。一套流程下来，毅力号一天能走的距离非常有限。&lt;/p>
+&lt;p>&lt;strong>如果火星车能自己看路、自己决定怎么走呢？&lt;/strong>&lt;/p>
+&lt;h2 id="-核心亮点ai当了火星司机">🚀 核心亮点：AI当了火星司机&lt;/h2>
+&lt;h3 id="1-claude上火星了没开玩笑">1️⃣ Claude上火星了（没开玩笑）&lt;/h3>
+&lt;p>NASA喷气推进实验室（JPL）基于Anthropic的Claude AI开发了路径规划系统。AI分析火星侦察轨道器的HiRISE高分辨率相机拍的卫星图和数字高程模型，自动识别沙坑、巨石群、基岩等障碍，生成一系列安全航点。&lt;/p>
+&lt;h3 id="2-两天跑了456米零人工操控">2️⃣ 两天跑了456米，零人工操控&lt;/h3>
+&lt;p>2025年12月，毅力号在杰泽罗陨石坑边缘完成了两次AI规划的自主行驶，总计456米。AI规划的路线（洋红色）和实际行驶路线（橙色）高度吻合，说明AI对火星地形的理解相当靠谱。&lt;/p>
+&lt;h3 id="3-地球上先模拟考再上路">3️⃣ 地球上先&amp;quot;模拟考&amp;quot;再上路&lt;/h3>
+&lt;p>JPL有一辆毅力号的&amp;quot;双胞胎&amp;quot;——VSTB（车辆系统测试台），放在JPL的火星模拟场地里。AI规划的路线会先在地球上跑一遍，确认没问题再发到火星。稳得一批。&lt;/p>
+&lt;h2 id="-这套系统怎么工作的">🛠️ 这套系统怎么工作的？&lt;/h2>
+&lt;pre tabindex="0">&lt;code>轨道卫星拍照 → AI分析地形+避障 → 生成航点序列
+↓
+地球模拟车验证
+↓
+深空网络 → 轨道器中继 → 毅力号
+↓
+车载自动导航接管执行
+&lt;/code>&lt;/pre>&lt;p>关键突破在于AI承担了三大核心任务：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>感知&lt;/strong>：看清岩石和沙纹&lt;/li>
+&lt;li>&lt;strong>定位&lt;/strong>：知道自己在哪&lt;/li>
+&lt;li>&lt;strong>规划控制&lt;/strong>：决定最安全的路径并执行&lt;/li>
+&lt;/ul>
+&lt;p>JPL空间机器人专家Vandi Verma表示，生成式AI在这三个方向都展现出巨大潜力。&lt;/p>
+&lt;h2 id="-极客点评">💡 极客点评&lt;/h2>
+&lt;p>&lt;strong>这件事的意义远超一次456米的兜风。&lt;/strong>&lt;/p>
+&lt;p>信号延迟是星际探索的终极瓶颈。火星25分钟还算近的，等人类要探索木星的卫星（单程信号33-53分钟）或更远的天体，完全自主的AI导航不是&amp;quot;nice to have&amp;quot;，而是&amp;quot;must have&amp;quot;。&lt;/p>
+&lt;p>有意思的是NASA选了Anthropic的Claude作为基础模型——同一个模型，在地球上帮程序员写代码，在火星上帮探测车找路。这大概是&amp;quot;通用人工智能&amp;quot;最硬核的应用场景了。&lt;/p>
+&lt;p>&lt;strong>适用场景延伸&lt;/strong>：这套&amp;quot;AI看卫星图规划地面路线&amp;quot;的技术，在地球上同样有巨大价值——灾区救援、极地科考、深海探测，任何通信受限的环境都能用。&lt;/p>
+&lt;blockquote>
+&lt;p>NASA局长Jared Isaacman说：&amp;ldquo;这展示了我们的能力已经走了多远，也拓宽了我们探索其他世界的方式。&amp;rdquo;&lt;/p>&lt;/blockquote>
+&lt;p>🔗 &lt;strong>想深入了解？&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.jpl.nasa.gov/news/nasas-perseverance-rover-completes-first-ai-planned-drive-on-mars/">NASA JPL官方公告&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://spectrum.ieee.org/perseverance-rover-nasa-anthropic-ai">IEEE Spectrum深度报道&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://science.nasa.gov/photojournal/visualizing-perseverances-ai-planned-drive-on-mars/">NASA可视化动画&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>
