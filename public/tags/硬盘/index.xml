@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>硬盘 on AI 极客前沿</title><link>https://claudeai.best/tags/%E7%A1%AC%E7%9B%98/</link><description>Recent content in 硬盘 on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Tue, 17 Feb 2026 23:00:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/%E7%A1%AC%E7%9B%98/index.xml" rel="self" type="application/rss+xml"/><item><title>才2月硬盘就卖光了:AI正在吞噬全球存储产能</title><link>https://claudeai.best/posts/hunter-2026021723/</link><pubDate>Tue, 17 Feb 2026 23:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021723/</guid><description>Western Digital CEO宣布2026年硬盘产能已全部售罄,AI数据中心需求正在挤压消费者市场.从GPU到内存再到硬盘,AI基础设施的饥渴正在重塑整条供应链.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>硬盘 on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/%E7%A1%AC%E7%9B%98/</link>
+    <description>Recent content in 硬盘 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 17 Feb 2026 23:00:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/%E7%A1%AC%E7%9B%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>才2月硬盘就卖光了:AI正在吞噬全球存储产能</title>
+      <link>https://claudeai.best/posts/hunter-2026021723/</link>
+      <pubDate>Tue, 17 Feb 2026 23:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021723/</guid>
+      <description>Western Digital CEO宣布2026年硬盘产能已全部售罄,AI数据中心需求正在挤压消费者市场.从GPU到内存再到硬盘,AI基础设施的饥渴正在重塑整条供应链.</description>
+    </item>
+  </channel>
+</rss>

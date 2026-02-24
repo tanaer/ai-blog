@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Vibe Coding on AI 极客前沿</title><link>https://claudeai.best/tags/vibe-coding/</link><description>Recent content in Vibe Coding on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Wed, 18 Feb 2026 01:00:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/vibe-coding/index.xml" rel="self" type="application/rss+xml"/><item><title>Grok 4.20 Beta炸场:8个AI Agent并行写代码,xAI要把Cursor们逼到墙角</title><link>https://claudeai.best/posts/hunter-2026021801/</link><pubDate>Wed, 18 Feb 2026 01:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021801/</guid><description>xAI发布Grok 4.20 Beta,首次引入多Agent并行编程和竞技场模式.8个Agent同时写代码,自动评分择优,配合X平台6800万条推文实时数据流,Grok正在从聊天机器人进化为全栈AI开发平台.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Vibe Coding on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/vibe-coding/</link>
+    <description>Recent content in Vibe Coding on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 18 Feb 2026 01:00:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/vibe-coding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Grok 4.20 Beta炸场:8个AI Agent并行写代码,xAI要把Cursor们逼到墙角</title>
+      <link>https://claudeai.best/posts/hunter-2026021801/</link>
+      <pubDate>Wed, 18 Feb 2026 01:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021801/</guid>
+      <description>xAI发布Grok 4.20 Beta,首次引入多Agent并行编程和竞技场模式.8个Agent同时写代码,自动评分择优,配合X平台6800万条推文实时数据流,Grok正在从聊天机器人进化为全栈AI开发平台.</description>
+    </item>
+  </channel>
+</rss>
