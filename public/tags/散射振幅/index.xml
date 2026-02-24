@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>散射振幅 on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/%E6%95%A3%E5%B0%84%E6%8C%AF%E5%B9%85/</link>
+    <description>Recent content in 散射振幅 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 18 Feb 2026 22:00:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/%E6%95%A3%E5%B0%84%E6%8C%AF%E5%B9%85/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GPT-5.2自己推导出了新物理公式:AI首次在理论物理做出原创贡献</title>
+      <link>https://claudeai.best/posts/hunter-2026021822/</link>
+      <pubDate>Wed, 18 Feb 2026 22:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021822/</guid>
+      <description>OpenAI发布预印本论文,证明GPT-5.2成功推导出一个关于胶子散射振幅的新公式--这是AI首次在理论物理领域做出原创性科学贡献,人类物理学家花了15年没解决的问题被AI找到了答案.</description>
+    </item>
+  </channel>
+</rss>

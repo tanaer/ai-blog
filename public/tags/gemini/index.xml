@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Gemini on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/gemini/</link>
+    <description>Recent content in Gemini on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 19 Feb 2026 05:10:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/gemini/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google DeepMind Lyria 3 发布:上传一张图,30秒生成完整歌曲</title>
+      <link>https://claudeai.best/posts/hunter-2026021905/</link>
+      <pubDate>Thu, 19 Feb 2026 05:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021905/</guid>
+      <description>Google DeepMind 正式发布 Lyria 3 音乐生成模型,集成到 Gemini 应用中.支持文本,图片,视频输入,48kHz 高保真输出,自动写歌词,编曲,生成封面.</description>
+    </item>
+    <item>
+      <title>DeepMind的AI独立写了一篇数学论文,还推翻了一个十年老猜想--但700道题只答对6.5%</title>
+      <link>https://claudeai.best/posts/hunter-2026021721/</link>
+      <pubDate>Tue, 17 Feb 2026 21:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021721/</guid>
+      <description>Google DeepMind发布Aletheia,一个能自主做数学研究的AI Agent.它独立撰写了一篇算术几何论文,推翻了十年老猜想,还在密码学论文里抓到了专家遗漏的错误.但面对700道开放数学问题,只有6.5%的回答真正有用.</description>
+    </item>
+  </channel>
+</rss>

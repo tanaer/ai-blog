@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>AI | AI 极客前沿</title>
+<meta name="keywords" content="">
+<meta name="description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
+<meta name="author" content="AI 极客前沿">
+<link rel="canonical" href="https://claudeai.best/categories/ai/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://claudeai.best/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://claudeai.best/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://claudeai.best/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://claudeai.best/apple-touch-icon.png">
+<link rel="mask-icon" href="https://claudeai.best/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://claudeai.best/categories/ai/index.xml" title="rss">
+<link rel="alternate" hreflang="zh" href="https://claudeai.best/categories/ai/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+
+<meta property="og:url" content="https://claudeai.best/categories/ai/">
+  <meta property="og:site_name" content="AI 极客前沿">
+  <meta property="og:title" content="AI">
+  <meta property="og:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AI">
+<meta name="twitter:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
+
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://claudeai.best/" accesskey="h" title="AI 极客前沿 (Alt + H)">AI 极客前沿</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://claudeai.best/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://t.me/TgTechMsgBot" title="联系">
+                    <span>联系</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://claudeai.best/">主页</a>&nbsp;»&nbsp;<a href="https://claudeai.best/categories/">Categories</a></div>
+  <h1>
+    AI
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771472811434_cover.jpg" alt="科技峰会 - Bill Gates 退出事件">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Bill Gates 紧急退出印度 AI 峰会:Epstein 文件再掀波澜
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>刚刚确认:Bill Gates 将不会在印度 AI Impact Summit 2026 发表主题演讲.
+这个消息在峰会开始前几小时突然宣布,引发了大量关注.
+官方声明 Gates Foundation 在 X(原 Twitter)上发布声明:
+“After careful consideration, and to ensure the focus remains on the AI Summit’s key priorities, Mr Gates will not be delivering his keynote address. The Gates Foundation will be represented by Ankur Vora, President of Africa and India Offices.”
+翻译:「经过慎重考虑,为确保峰会焦点保持在关键优先事项上,Gates 先生将不发表主题演讲.」
+Gates Foundation 将由 Ankur Vora(非洲和印度区总裁)代表出席.
+原因:Epstein 文件 据多家媒体报道,这一决定与美国司法部最近公布的 Jeffrey Epstein 文件 有关.
+文件中提到 Gates 与这位已故金融家,被定罪的性犯罪者之间的关联.虽然 Gates 的发言人此前已强烈否认这些说法,称其「荒谬至极」,但争议仍在持续.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 11:48:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>169 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Bill Gates 紧急退出印度 AI 峰会:Epstein 文件再掀波澜" href="https://claudeai.best/posts/hunter-2026021911/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771468823963_cover.jpg" alt="AI 音乐生成 - ACE-Step 1.5">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">ACE-Step 1.5:开源音乐生成的 Stable Diffusion 时刻到了
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>如果 Stable Diffusion 是图像生成的开源革命,那 ACE-Step 1.5 可能是音乐生成的同样时刻.
+这个开源模型刚刚发布,就已经有人把它集成到 OpenClaw 助手里,让 AI 助手「学会唱歌」.
+核心数据 生成速度: 2 秒/首歌(A100),10 秒(RTX 3090) 最低显存: &lt;4GB VRAM 音频时长: 10 秒 - 10 分钟 歌词语言: 50&#43; 种语言 质量定位: 介于 Suno v4.5 和 v5 之间 批量生成: 最多 8 首同时 为什么这很重要? 过去一年,AI 音乐生成被 Suno 和 Udio 垄断.想要高质量音乐?必须付费订阅,必须用云端服务,必须接受版权条款.
+ACE-Step 1.5 改变了这个局面:
+完全本地运行 - 不需要上传你的创意到别人的服务器 消费级硬件 - 6GB 显存就能跑,甚至支持 CPU 全平台支持 - Mac(M 系列芯片),AMD,Intel,Nvidia 全覆盖 MIT 开源 - 随便用,随便改 技术架构:LM &#43; DiT 混合 ACE-Step 1.5 使用了一个有趣的混合架构:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 10:40:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>281 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to ACE-Step 1.5:开源音乐生成的 Stable Diffusion 时刻到了" href="https://claudeai.best/posts/hunter-2026021910/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771464755064_cover.jpg" alt="电影制作 - AI 视频争议">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Seedance 2.0 翻车:那个 Tom Cruise vs Brad Pitt 的 AI 视频是假的
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>上周字节跳动发布了 Seedance 2.0 视频生成模型.营销铺天盖地,LinkedIn 和社交媒体上到处都在转发一个「Tom Cruise vs Brad Pitt」打斗视频.
+官方说法是:一位爱尔兰电影人只用了 两行提示词,30 秒生成了完整的多角度打斗场景.「好莱坞完了」的论调再次刷屏.
+但有人发现不对劲.
+证据:绿幕素材 Shokunin Studio 的博主在 Seedance 官网上找到了 同一段打斗的绿幕版本–两个特技演员在绿幕前表演完全相同的动作,只是换成了动漫风格输出.
+这不是 AI 从零生成的.这是 video-to-video:用真人拍摄的素材 &#43; AI 滤镜 &#43; 换脸技术.
+Video-to-Video 不是新技术 这个工作流程已经存在多年:
+拍摄源素材:绿幕,灯光,专业特技演员,摄影指导 AI 处理:用 video-to-video 模型转换风格 换脸:用 Tom Cruise 和 Brad Pitt 的照片进行面部替换 剪辑:多个角度分别生成,然后拼接 成本呢?租绿幕影棚,请特技演员,灯光师,摄影师–一天至少几千美元.而且不是一次生成就成功,每个角度可能要跑很多遍.
+营销 vs 现实 Seedance 和导演 Ruairi Robinson 声称「只需要两行提示词」.
+但证据显示:
+有专业团队拍摄的绿幕素材, 有多个机位的角度, 有换脸参考图, 可能经过多次生成和筛选 这不是「两行提示词,30 秒搞定」.这是标准的影视后期制作 &#43; AI 滤镜.
+为什么观众会被骗? 两年了,AI 视频炒作从未停止.从 Sora 到 Veo 到现在的 Seedance,每次都有人喊「好莱坞完了」.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 09:32:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>115 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Seedance 2.0 翻车:那个 Tom Cruise vs Brad Pitt 的 AI 视频是假的" href="https://claudeai.best/posts/hunter-2026021909/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771460717679_cover.jpg" alt="代码编辑器 AI 助手 - Claude Code 替代方案">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Claude Code 白嫖攻略:GLM-5 上架 NVIDIA NIM,账单直接归零
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Claude Code 是目前最好的 agentic coding 工具,但每月 $200 的订阅费劝退了很多人.
+刚刚有人在 Reddit 上分享了一个开源方案:用免费的 GLM-5,Kimi-K2.5 完全替代 Claude,账单直接归零.
+核心方案:free-claude-code GitHub 上有个项目叫 free-claude-code,本质是一个代理服务器:
+C 设 # 作 什 G # N # 1 2 3 4 5 # C - 这 如 # ` # g c c # P N M # u # A N # 项 - - - - # 这 对 更 * l 置 # 者 * 么 L # * * * V # . . . . . # l 些 果 # ` i d p R V O v N V # 目 # 不 于 重 参 a 两 在 支 是 M N O L I a 标 跟 你 ` 1 t 2 O I D 3 4 T I 还 从 多 实 语 是 日 要 考 u 个 关 测 持 - 三 V p M D 作 一 u 题 实 用 快 b . f . . V D E . r . H D 额 支 手 会 时 音 我 「 常 的 来 d 环 键 试 i 5 种 I e I 者 * * * * * 个 d 生 际 速 a c r e I I L u R I 外 持 机 话 显 消 的 盗 编 是 源 e 境 发 中 i n , 免 D n S A 的 m z m m q 隐 e 成 编 N 上 s 克 l e n 编 D A = 启 n 运 O A 功 发 并 示 息 看 版 程 , : 变 现 发 n t K 费 I R t 模 o - i i w 藏 , 程 I 手 h 隆 o e v 辑 E _ z 动 行 P 能 D 任 发 支 法 」 任 这 R C 量 : 现 t e i / A o u N 型 o a n s e 优 C 无 M 项 n - . R N - 代 u I N : i 务 t 持 - 务 种 e o , I 了 e r m 低 u d I 排 n i i t n 化 o 建 关 目 e c e . _ I a 理 v C C I 远 s , h ( - , 「 d d C n 一 r l i 成 N t i M 名 s / m r / : d 议 , 免 l x e T M i i l _ M 程 c 远 i W 是 G 解 d e l t 个 l e - 本 I e o ( h g a a q 节 e 模 但 费 h a a n Y _ / c a A 控 o 程 n h L 耦 i a e 重 e a K 方 M r * 是 实 o l x l w 省 式 会 版 t u m v P A g o u U 的 制 r 跑 k i A M 前 t C u r 要 a v 2 案 * * * 最 测 t m a a e 会 , 消 ( t d p E P l r d T d 代 i s P - 端 L d l 规 v e . * * , 推 ) a 5 i i n 3 做 耗 4 p e l = I m n e H A / 码 n p I 5 和 r I e e 律 e d 5 , , 荐 i / 3 0 很 文 你 0 s - e n _ 5 _ P T g e 后 / / a : d 费 的 m d . - 多 件 的 : c v K s C T I e r 代 和 端 L V C v t 支 费 费 用 : k i e 5 4 「 路 额 r / . i E e o O l t 理 」 o S o e t h 持 用 用 = 免 i - n v - 0 辅 径 度 e d e d Y r d K k e o 转 . K 的 c C d d h i . = = 免 费 m i s 3 % 助 提 . q g e n i = v e E e g k 文 你 i 模 a o e i n 大 免 部 费 , i 推 m t 9 请 取 f / i v a n e N y r e 字 用 m 式 l d T n k 多 费 分 ( 慷 - 理 a r 7 A 求 , r m t _ v r = a n ) i , L e 就 h k i 数 , 免 本 慨 k 能 x a b P 」 e i h n a : f 可 m s C - 可 L 能 i i n 替 费 地 的 2 力 - l - I : 前 e n u i p a r 以 l K 能 a → 直 n n g 代 限 , ) 限 . 强 m - a 缀 - ) b m i p e 在 机 和 a 2 是 M 接 k g ? 工 制 , 额 5 , 2 2 1 调 检 c 或 . - p e 器 工 u . A F 用 i 就 具 = 限 , * 刚 . - 7 用 测 l 本 c y c [ 人 具 d 5 A , r 第 n 的 是 会 4 制 限 模 * 上 1 1 b a 地 o o c b : 调 e I e 三 g 模 模 丢 0 = 制 型 架 * 2 * u 部 m u - u 用 的 G e 方 型 型 弃 按 = 质 - * 3 * d 署 / r h A i C 表 工 i 模 才 , 能 r 模 无 量 N b e , A - o N l o 现 具 t C 型 是 在 在 t e 型 , 高 综 I - * - - 这 l k s T d d 已 未 H l . 秘 多 多 h q , . 合 M * c 个 i e t H . e 经 来 u a 无 密 步 轮 i / 推 平 速 各 o 优 s y R n 足 的 b u 需 武 编 对 n m 推 荐 衡 度 - 项 d 化 h - 0 O v 的 够 方 d 修 器 程 话 k i 荐 模 最 快 任 e 是 a h . P i 好 向 f e 改 任 中 i n 模 型 好 , 本 务 「 h e 0 I d U . . r 务 保 n , 型 = 适 地 都 会 能 r r . C i I 如 你 e C C 上 留 g = 任 合 首 稳 拦 用 y e 0 _ a / 果 不 e o L 表 自 推 S 何 简 选 定 截 」 a . B . U 你 再 - d I 现 己 t 荐 t 单 ( 这 和 r 0 A c X 不 被 c e 明 的 o 模 e G 任 需 些 「 1 S o , 依 锁 l 或 显 推 k 型 p G 务 要 请 不 / E m 但 赖 定 a P 更 理 e = - U 足 求 能 f - _ ] 后 在 u r V 好 链 n G 3 F 够 , 用 r p U ( 端 C 单 d o S . ( s L . 显 本 」 e o R h 换 l 一 e x C * t , M 5 模 存 地 的 e r L t 成 a 供 - y o * h 这 - - 型 ) 直 区 - t = t 开 u 应 c d i 是 5 F 接 别 c h p 源 d 商 o → e n 性 , l 响 . l 8 t s 模 e . d k 能 a 应 a 0 t : 型 e N 扩 i 差 K s . u 8 p / . O * V 展 n 距 i h d 2 : / p I . g 的 m : e / b u D 关 i f - / u s I t 键 - r c l i A o . K e o o l 级 k 2 e d c d 别 N e . , e a . 的 I n 5 . l n 推 M s , D g h v 理 ) e i o i 能 / , D e t s d 力 看 e p t i , O 到 v S : a 这 p 之 s e 8 . 个 e 前 t e 0 c 方 n 步 r k 8 o 案 R 骤 a - 2 m 完 o 的 l R / 全 u 思 1 c s 可 t 考 : l e 行 e 过 f a t . r 程 r u t . e d i / e e n g 本 s 地 / 模 a 型 p i - k e y s ) 免 费 获 取 . </p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 08:25:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>8 分钟</span>&nbsp;·&nbsp;<span>1638 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Claude Code 白嫖攻略:GLM-5 上架 NVIDIA NIM,账单直接归零" href="https://claudeai.best/posts/hunter-2026021908/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771456755580_cover.jpg" alt="AI 数字人实时对话 - Phoenix-4 可视化">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Tavus Phoenix-4:600ms 实时对话 AI 数字人,终于跨过了「恐怖谷」
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>刚刚,Tavus 发布了 Phoenix-4–一个真正能「实时对话」的 AI 数字人系统.
+这不是又一个会动嘴的虚拟主播.这是一个能在 600 毫秒内 完成感知-思考-回应的完整对话系统,而且它真的「有表情」.
+为什么这很重要? 过去两年,AI 视频生成爆发式增长.Sora,Runway,Veo 都能做出惊艳的视频.但有一个问题始终没解决:
+交互延迟.
+你跟 AI 视频通话,说完话要等 2-3 秒才能看到回应.这个延迟足够让「真实感」完全崩塌.
+Phoenix-4 把这个延迟压到了 600 毫秒以内.这是一个质的飞跃–足够让你感觉在跟真人对话.
+三模型架构:Raven &#43; Sparrow &#43; Phoenix Phoenix-4 不是单一模型,而是三个模型的协同系统:
+Raven-1, 功能=感知, 类比=眼睛和耳朵 Sparrow-1, 功能=时机判断, 类比=对话节奏感 Phoenix-4, 功能=渲染生成, 类比=视觉输出
+Raven-1 分析你的面部表情和语调,理解对话的情感语境.
+Sparrow-1 决定什么时候该插话,什么时候该等你说完–这才是自然对话的关键.
+Phoenix-4 是核心渲染引擎,使用高斯扩散(Gaussian-Diffusion)技术实时生成逼真的面部表情.
+高斯扩散渲染:告别「恐怖谷」 传统的 AI 视频生成多用 GAN(生成对抗网络).Phoenix-4 换了个思路:Gaussian-Diffusion.
+这个技术能处理皮肤拉伸对光线的影响,眼周微表情的变化–这些细节正是导致「恐怖谷」效应的根源.
+技术亮点:
+30fps 实时流媒体输出, 头部转动时纹理和光照保持稳定, 微表情(眼角,嘴角)的真实物理模拟 情感控制 API 这是我最感兴趣的功能.你可以通过 API 程序化控制数字人的情绪状态:
+e e e e 这 # 创 工 1 2 3 4 整 # P - 这 # 数 P 当 客 * m m m m 不 # 建 作 . . . . 个 # h 就 # 字 h 延 服 参 o o o o 是 一 流 过 o 不 是 人 o 迟 , 考 t t t t 简 2 个 程 上 系 通 用 程 延 e 是 为 我 / e 降 教 来 i i i i 单 「 : 传 统 过 不 迟 n 生 什 的 虚 n 到 育 源 o o o o 的 分 R 生 W 需 是 i 成 么 看 拟 i , : n n n n 表 钟 e 2 成 C e 要 怎 x 完 能 法 人 x 6 陪 M : : : : 情 训 p 唯 V b 么 - 整 做 赛 - 0 伴 a 包 练 l 分 一 I R G 做 4 视 到 道 4 0 , r j s a s 切 你 i 钟 的 T P 到 频 已 m 销 k o a n u 换 的 c 说 S C U 的 采 再 6 经 的 s 售 T y d g r , 数 a 话 r D ? 用 播 0 热 突 . e n e p 而 字 」 视 e K 连 集 放 0 了 破 以 . c → e r r 是 分 ( 频 p 接 群 , m 很 不 下 . h s i 通 身 数 l 部 到 , * s 久 在 , . P 真 s → s 过 字 i 署 你 不 流 而 , 于 当 . o 正 e 「 分 c 的 需 式 是 端 但 画 表 . s 的 → 下 情 身 a 前 要 优 通 到 大 质 情 每 t 微 巴 → 感 ) _ 端 小 先 过 端 多 - 能 个 , 笑 眉 紧 向 只 i 时 ( 延 数 - 跟 需 ( 头 绷 眉 量 需 d 级 S W 迟 产 而 随 要 T 脸 微 , 毛 」 要 训 t e . 品 在 情 「 a 颊 皱 嘴 上 条 练 r b 还 于 绪 面 v &#43; , 角 扬 件 . e R 是 变 对 u 眼 眼 下 , 化 * a T 「 化 面 s 睛 神 压 眼 生 2 m C 看 * , 」 , 下 睛 成 - 起 交 当 沟 官 不 垂 睁 视 分 F 实 来 互 对 通 方 只 大 频 钟 i 时 像 真 话 的 博 是 . 的 r 推 」 实 节 场 客 嘴 视 s 送 而 感 奏 景 * ) 频 t 视 不 * 能 都 素 ) 频 是 * 自 可 材 * 包 「 . 然 能 * * , 聊 把 被 * 起 握 重 . 架 边 来 - 塑 构 生 像 - . : 成 」 这 边 . 才 传 是 输 真 , 正 最 的 小 「 化 数 首 字 帧 人 时 」 间 , 而 不 是 「 会 动 的 图 片 」 . </p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 07:20:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>4 分钟</span>&nbsp;·&nbsp;<span>641 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Tavus Phoenix-4:600ms 实时对话 AI 数字人,终于跨过了「恐怖谷」" href="https://claudeai.best/posts/hunter-2026021907/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771448867122_cover.jpg" alt="AI 音乐生成 - Lyria 3 可视化">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Google DeepMind Lyria 3 发布:上传一张图,30秒生成完整歌曲
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>刚刚,Google DeepMind 正式发布了 Lyria 3–目前最先进的 AI 音乐生成模型.
+而且,它已经集成到 Gemini 应用中了.你现在打开 Gemini,就能用.
+核心功能:一句话生成一首歌 Lyria 3 的核心能力非常直接:
+输入:文字描述,一张图片,或者一段音频 输出:30 秒完整音乐作品(48kHz 立体声),包含人声,歌词,乐器编排 比如你上传一张日落海滩的照片,Lyria 3 能根据画面氛围生成一首配乐.或者你写&#34;一首关于程序员深夜debug的悲伤民谣&#34;,它就真的会给你写歌词,谱曲,演唱.
+技术规格一览 输出时长: 30 秒 采样率: 48kHz 音频格式: 16-bit PCM 立体声 输入模态: 文本,图片,音频, 水印技术: SynthID, 延迟: &lt;2 秒(实时控制) Lyria RealTime API:真正的实时生成 Lyria 3 最有意思的部分是 RealTime API.
+传统音乐生成模型像点唱机:输入 prompt,等待生成完整文件.Lyria RealTime 不一样–它通过 WebSocket 保持实时连接,以 2 秒为单位 逐块生成音频.
+这意味着你可以边听边调整.比如生成到一半突然想换成爵士风格?实时切换.模型会「回头看」前面的上下文保持连贯,「向前看」你的控制指令决定走向.
+Music AI Sandbox:给音乐人的工具箱 除了面向普通用户,DeepMind 还推出了 Music AI Sandbox–一套专业创作工具:
+哼唱转管弦乐:哼一段旋律,AI 把它变成完整配器 风格迁移:用 MIDI 和弦生成合唱效果 乐器替换:保持旋律,用文字描述更换乐器 这套工具的设计逻辑是 Human-in-the-loop:AI 不是替代创作者,而是成为可「即兴演奏」的协作伙伴.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 05:10:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>159 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Google DeepMind Lyria 3 发布:上传一张图,30秒生成完整歌曲" href="https://claudeai.best/posts/hunter-2026021905/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771445383561_cover.jpg" alt="3D 空间智能可视化 - AI 理解三维世界">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Fei-Fei Li 融资 10 亿美元:AI 教母的 World Labs 要让机器「看懂」三维世界
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>如果你关注 AI 领域,一定听说过 Fei-Fei Li(李飞飞)这个名字.她创建了 ImageNet 数据集,推动了现代计算机视觉的发展.现在,她的创业公司 World Labs 刚刚完成了一轮 10 亿美元融资.
+融资详情 根据 Bloomberg 报道,这轮融资的投资者阵容相当豪华:
+Autodesk:软件巨头,单家就投了 2 亿美元 Andreessen Horowitz (a16z):硅谷顶级 VC Nvidia:GPU 霸主 AMD:芯片巨头 公司估值据传在 50 亿美元 左右.
+World Labs 在做什么? World Labs 的核心方向是 空间智能(Spatial Intelligence) 和 World Model(世界模型).
+简单说,就是让 AI 不仅能「看到」图像,还能真正「理解」三维空间中的物体关系,物理规律和因果关系.
+去年底,World Labs 发布了第一个产品 Marble–一个可以从单张图片或文字描述生成 3D 世界的系统.效果相当惊艳:不是简单的 2D 转 3D,而是构建完整的可交互三维场景.
+为什么这很重要? 目前的 LLM(大语言模型)本质上是在文本上训练的,对物理世界的理解非常有限.World Model 的目标是让 AI 像人类一样理解:
+物体在空间中的位置和关系, 物理规律(重力,碰撞,遮挡), 时间和因果关系 这被认为是通向 AGI 的关键一步.自动驾驶,机器人,AR/VR,游戏开发……几乎所有需要 AI 与物理世界交互的领域都等着这一突破.
+Fei-Fei Li 的背景 作为斯坦福大学计算机科学教授,Fei-Fei Li 被称为「AI 教母」.她创建的 ImageNet 数据集和竞赛直接催生了 AlexNet,开启了深度学习时代.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 04:10:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>123 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Fei-Fei Li 融资 10 亿美元:AI 教母的 World Labs 要让机器「看懂」三维世界" href="https://claudeai.best/posts/hunter-2026021904/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771423299424_cover.jpg" alt="AI信息操纵概念图">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">BBC记者20分钟攻破ChatGPT和Google AI:AI正在成为新一代垃圾信息 Renaissance
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>BBC科技记者Thomas Germain做了一个实验.
+他花20分钟写了一篇假文章,声称自己是&#34;吃热狗最多的科技记者&#34;–没有任何证据,完全瞎编.文章引用了虚构的&#34;2026南达科他国际热狗锦标赛&#34;.
+不到24小时,ChatGPT和Google AI就开始向全世界传播这个谎言.
+实验细节 Germain在自己个人网站发布了一篇题为&#34;The best tech journalists at eating hot dogs&#34;的文章:
+宣称&#34;竞技吃热狗&#34;在科技记者圈很流行, 把自己排在第一名, 列出几个真实记者(事先征得同意), 没有任何来源,整个故事都是编的 第二天:
+Google Gemini:直接引用他的文章内容, Google AI Overviews(搜索结果顶部的AI回答):同样照单全收, ChatGPT:也把谎言当事实传播, Claude:唯一没有被愚弄的 有时AI会标注&#34;这可能是个玩笑&#34;.Germain把文章改成&#34;这不是讽刺&#34;–然后AI就开始更认真地对待了.
+他又做了一个测试:编造了一份&#34;最伟大的呼啦圈交通警察&#34;名单.AI现在还在赞美虚构的&#34;Maria ‘The Spinner’ Rodriguez警官&#34;.
+为什么这很可怕 这不是恶作剧.
+同样正在被用于:
+医疗建议(大麻软糖&#34;无副作用,绝对安全&#34;), 金融投资(“最佳黄金IRA公司”), 植发诊所推荐, 政治信息 SEO专家Harpreet Chatha展示了Google AI如何传播虚假的医疗声明–关于某品牌大麻软糖&#34;绝对安全无副作用&#34;.实际上这些产品有已知副作用,可能与某些药物相互作用,而且在不受监管的市场中存在污染风险.
+方法很简单:
+在自己网站写篇文章 把你的品牌排在&#34;最佳&#34;列表第一位 填几个竞争对手凑数 等AI引用你 “任何人都能做到.太愚蠢了,感觉完全没有护栏.“Chatha说.
+比搜索引擎时代更糟 操纵搜索结果不是新鲜事.Google有成熟的反垃圾系统.
+但专家说,AI工具让行业倒退了20年.
+“欺骗AI聊天机器人比两三年前欺骗Google容易得多,“Amsive营销公司的SEO副总裁Lily Ray说,“AI公司发展的速度超过了它们监管准确性的能力.我认为这很危险.”
+更糟的是–用户更容易被AI欺骗.
+传统搜索:你得点击链接进入网站,自己判断信息可信度.如果网站写着&#34;我是最棒的记者”,你可能会想&#34;这是他自己在吹”.
+AI搜索:信息看起来像是来自科技公司本身.58%的人在AI Overview出现时不会点击任何链接.
+“在追求利润的竞赛中,我们的安全–以及普通人的安全–正在被牺牲,“Chatha说.
+“数据空洞&#34;问题 Google说大多数例子是&#34;极不常见的搜索”,不反映正常用户体验.
+但Ray指出:Google自己说每天15%的搜索是全新的.AI正在鼓励人们问更具体的问题–这正是垃圾信息制造者想要的.
+Google承认这些&#34;数据空洞&#34;可能导致低质量结果,并表示正在努力阻止AI Overview在这些情况下出现.
+解决方案? 专家建议:
+更醒目的免责声明–AI应该明确标注信息来源 透明度–如果信息来自新闻稿或只有一个来源,应该告诉用户 用户自己警惕–AI传递谎言的语气和事实一样权威 关键建议:
+AI适合常识性问题(弗洛伊德的理论,二战历史), 不适合医疗建议,法律规则,本地商家推荐, 永远要查来源–AI引用了什么?有几个?谁写的?, 不要被AI的自信语气欺骗 我的判断 这不是技术漏洞,是设计缺陷.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 03:05:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>98 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to BBC记者20分钟攻破ChatGPT和Google AI:AI正在成为新一代垃圾信息 Renaissance" href="https://claudeai.best/posts/hunter-2026021903/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771423299424_cover.jpg" alt="AI Agent安全漏洞概念图">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Claude Code和Codex全沦陷:AI Agent Skills供应链攻击实测,一个下午攻破两大平台
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>一个工程师,一个下午,攻破了Claude Code和Codex.
+不是零日漏洞,不是复杂绕过.就是写了个恶意skill,然后–AI自己帮你运行了.
+实验设计 这个研究者(Vett.sh的创始人)的想法很简单:如果有人滥用用户对skill的信任会怎样?
+他fork了一个官方的skill打包工具,加了几行Python代码:
+# 发送到外部服务器 没有混淆,没有编码技巧,就是普通的HTTP请求.
+然后把skill安装到AI Agent里,让它使用.
+Claude Code:完全不设防 研究者把恶意skill装进Claude Code,让它打包一个新skill.
+Claude Code:
+理解了skill结构 识别出打包命令 请求运行脚本权限 用户点确认 脚本运行,数据外泄 问题在于:Claude Code根本没有检查脚本内容.它没有:
+标记网络请求, 质疑为什么打包工具需要访问环境变量, 审查代码逻辑 研究者的本地服务器收到了:所有环境变量,完整shell历史,Git配置.
+Codex:沙箱也挡不住 Codex以严格沙箱著称,网络限制经常连正常的包安装都会打断.
+研究者预期Codex会更安全.结果–只要稍微改一下攻击方式,Codex也沦陷了.
+改进版攻击:
+先修改Codex的config.toml允许沙箱网络访问 如果连不上&#34;registry&#34;就报错 Codex弹出确认框:
+“Checking registry name availability…”
+理由听起来完全合理.npm,PyPI,crates.io都做这个检查.用户点确认.
+这个理由是恶意skill自己写的.
+Codex把攻击者写的&#34;权限说明&#34;原封不动读给用户听.SHA-256哈希,验证通过,成功消息–全是skill生成的,被当成系统输出展示.
+确认步骤没有让操作更安全.它给了攻击者一个叙事机会,获取了用户同意,还留了审计痕迹.
+已经在野的恶意skill 研究者扫描了4,679个skill,结果:
+严重, 数量=59, 描述=混淆的dropper,base64编码的payload,已知C2基础设施 高, 数量=335, 描述=任意shell执行,管道安装器,Agent身份操纵 curl , 数量=bash, 描述=16, 管道到不控制的合法域名
+一个例子:“React Native Best Practices”,5400次安装,管道到一个它不控制的合法域名.如果那个域名过期或被卖掉,所有这些安装瞬间变成投递载体–不需要漏洞利用.
+为什么现有防御全失效 杀毒软件没用–外泄代码就是几行普通Python发HTTP请求.没有签名可以匹配,没有二进制payload可以扫描.看起来和调用API的合法代码一模一样.
+代码审查不存在–这些不是走PR流程的依赖.skill是&#34;快速工具&#34;.Slack里有人分享一个,你丢进目录,30秒后就在用了.没人会像审查生产代码那样去看打包脚本.
+Agent不是为审查脚本设计的–它们的任务是完成任务,不是审问脚本.它们执行然后汇报.
+真正的问题:信任零信息 现在安装skill,你做的是零信息的信任决策:
+没有声明访问什么的manifest, 没有验证完整性的签名, 没有扫描外泄代码 研究者正在建的Vett.sh要做的事:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 02:05:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>115 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Claude Code和Codex全沦陷:AI Agent Skills供应链攻击实测,一个下午攻破两大平台" href="https://claudeai.best/posts/hunter-2026021902/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771423299424_cover.jpg" alt="AI Agent标准化概念图">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">美国政府出手了:NIST启动AI Agent标准化计划,为自主智能体立规矩
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>40分钟前,美国国家标准与技术研究院(NIST)扔了一颗炸弹:AI Agent Standards Initiative正式启动.
+这是美国政府第一次针对AI Agent的官方标准化行动.不是指导原则,不是软性建议–是标准.
+为什么要现在出手? NIST的公告说得很直白:
+AI agents现在可以自主工作数小时,写代码,调试,管理邮件日历,甚至帮你网购.生产力前景诱人,但真正可用性受限于它们与外部系统和内部数据的交互能力.
+翻译一下:AI Agent技术跑得太快,但没人知道怎么让它们安全地,可靠地一起工作.
+如果你没有对AI Agent可靠性的信心,没有Agent之间以及Agent与数字资源之间的互操作性,创新者面对的就是碎片化的生态系统和萎缩的采用率.
+这个判断很准.看看现在:
+每个AI公司都在做自己的Agent框架, 协议不互通,安全标准缺失, 企业不敢大规模部署,因为没人能保证Agent不会出事 三大支柱 NIST联合国家科学基金会等机构,从三个方向推进:
+1. 行业主导的标准开发 推动美国在国际标准组织中的领导地位.让企业自己制定标准,NIST提供平台和协调.
+2. 社区主导的开源协议 不是NIST关门造车,而是支持开源社区开发和维护Agent协议.MCP,A2A这些协议可能会被纳入官方认可框架.
+3. AI Agent安全与身份研究 这是最关键的一块.研究Agent的身份认证,授权机制,让Agent可以可信地代表用户行动.
+接下来会发生什么? NIST的时间表很明确:
+3月9日:CAISI关于AI Agent安全的RFI截止, 4月2日:ITL的AI Agent身份与授权概念论文截止, 4月开始:CAISI举办行业倾听会议,聚焦医疗,金融,教育领域的AI采用障碍 如果你在这些行业,这是参与规则制定的机会.
+为什么这很重要? 两个原因:
+1. 标准化=商业化加速
+没有标准,企业不敢用.有了标准,合规成本下降,大规模部署成为可能.看看当年的HTTPS,OAuth–标准化之后爆发式增长.
+2. 美国想抢占规则制定权
+NIST公告最后一句话:
+“supporting the development of a trusted and interoperable AI agent ecosystem that advances human flourishing and U.S. leadership”
+human flourishing和U.S. leadership并排出现.美国不想让中国,欧盟先制定Agent规则.
+对开发者意味着什么? 如果你在做AI Agent相关的产品:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 01:15:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>126 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to 美国政府出手了:NIST启动AI Agent标准化计划,为自主智能体立规矩" href="https://claudeai.best/posts/hunter-2026021901b/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://claudeai.best/categories/ai/page/7/">
+      «&nbsp;上一页&nbsp;
+    </a>
+    <a class="next" href="https://claudeai.best/categories/ai/page/9/">下一页&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://claudeai.best/">AI 极客前沿</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

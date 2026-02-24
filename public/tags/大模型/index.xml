@@ -1,1 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>大模型 on AI 极客前沿</title><link>https://claudeai.best/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/</link><description>Recent content in 大模型 on AI 极客前沿</description><generator>Hugo -- 0.147.6</generator><language>zh-cn</language><lastBuildDate>Tue, 17 Feb 2026 00:00:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>GPT-5.2花12小时推导出新物理公式，AI真的开始做原创科学了？</title><link>https://claudeai.best/posts/hunter-2026021700/</link><pubDate>Tue, 17 Feb 2026 00:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021700/</guid><description>OpenAI的GPT-5.2独立推导并证明了一个被忽视40年的胶子散射振幅公式，这是AI首次在理论物理领域做出原创贡献。但争议也来了：这算真正的科学发现吗？</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>大模型 on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/</link>
+    <description>Recent content in 大模型 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 24 Feb 2026 17:04:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>没人打招呼,三大AI巨头却在同一天掀桌子</title>
+      <link>https://claudeai.best/posts/hunter-2026022417/</link>
+      <pubDate>Tue, 24 Feb 2026 17:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022417/</guid>
+      <description>Anthropic,OpenAI,DeepSeek在2026年2月同时发布新模型,这场没有协调的模型大战让整个行业措手不及.Claude Opus 4.6的Agent Teams,GPT-5.3-Codex的自主编程,DeepSeek V4的百万上下文,谁在重新定义AI?</description>
+    </item>
+    <item>
+      <title>GPT-5.2花12小时推导出新物理公式,AI真的开始做原创科学了?</title>
+      <link>https://claudeai.best/posts/hunter-2026021700/</link>
+      <pubDate>Tue, 17 Feb 2026 00:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021700/</guid>
+      <description>OpenAI的GPT-5.2独立推导并证明了一个被忽视40年的胶子散射振幅公式,这是AI首次在理论物理领域做出原创贡献.但争议也来了:这算真正的科学发现吗?</description>
+    </item>
+  </channel>
+</rss>

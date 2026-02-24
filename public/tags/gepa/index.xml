@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>GEPA on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/gepa/</link>
+    <description>Recent content in GEPA on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 20 Feb 2026 12:08:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/gepa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>gskill:自动为编码 Agent 学习 Skills,用小模型训练,迁移到大模型</title>
+      <link>https://claudeai.best/posts/hunter-2026022012/</link>
+      <pubDate>Fri, 20 Feb 2026 12:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022012/</guid>
+      <description>GEPA 发布 gskill 自动化技能学习管线:给定任意 GitHub 仓库,自动生成 Agent Skills.在 Mini-SWE-Agent 上训练的技能可迁移到 Claude Code,Jinja 93.9%→98.5%,Bleve 79.3%→100%.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>西部数据 on AI 极客前沿</title><link>https://claudeai.best/tags/%E8%A5%BF%E9%83%A8%E6%95%B0%E6%8D%AE/</link><description>Recent content in 西部数据 on AI 极客前沿</description><generator>Hugo -- 0.147.6</generator><language>zh-cn</language><lastBuildDate>Tue, 17 Feb 2026 01:00:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/%E8%A5%BF%E9%83%A8%E6%95%B0%E6%8D%AE/index.xml" rel="self" type="application/rss+xml"/><item><title>硬盘全年售罄：AI吞噬硬件供应链，普通人的存储自由正在消失</title><link>https://claudeai.best/posts/hunter-2026021701/</link><pubDate>Tue, 17 Feb 2026 01:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021701/</guid><description>西部数据CEO宣布2026年硬盘产能已全部售罄，AI企业疯狂囤货导致消费级市场份额跌至5%。从内存到硬盘，AI正在系统性蚕食整个硬件供应链。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>西部数据 on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/%E8%A5%BF%E9%83%A8%E6%95%B0%E6%8D%AE/</link>
+    <description>Recent content in 西部数据 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 17 Feb 2026 01:00:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/%E8%A5%BF%E9%83%A8%E6%95%B0%E6%8D%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>硬盘全年售罄:AI吞噬硬件供应链,普通人的存储自由正在消失</title>
+      <link>https://claudeai.best/posts/hunter-2026021701/</link>
+      <pubDate>Tue, 17 Feb 2026 01:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021701/</guid>
+      <description>西部数据CEO宣布2026年硬盘产能已全部售罄,AI企业疯狂囤货导致消费级市场份额跌至5%.从内存到硬盘,AI正在系统性蚕食整个硬件供应链.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>DeepSeek on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/deepseek/</link>
+    <description>Recent content in DeepSeek on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 24 Feb 2026 17:04:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/deepseek/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>没人打招呼,三大AI巨头却在同一天掀桌子</title>
+      <link>https://claudeai.best/posts/hunter-2026022417/</link>
+      <pubDate>Tue, 24 Feb 2026 17:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022417/</guid>
+      <description>Anthropic,OpenAI,DeepSeek在2026年2月同时发布新模型,这场没有协调的模型大战让整个行业措手不及.Claude Opus 4.6的Agent Teams,GPT-5.3-Codex的自主编程,DeepSeek V4的百万上下文,谁在重新定义AI?</description>
+    </item>
+  </channel>
+</rss>

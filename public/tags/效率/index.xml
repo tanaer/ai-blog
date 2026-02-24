@@ -1,33 +1,56 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>效率 on AI 极客前沿</title><link>https://claudeai.best/tags/%E6%95%88%E7%8E%87/</link><description>Recent content in 效率 on AI 极客前沿</description><generator>Hugo -- 0.147.6</generator><language>zh-cn</language><lastBuildDate>Sun, 15 Feb 2026 18:00:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/%E6%95%88%E7%8E%87/index.xml" rel="self" type="application/rss+xml"/><item><title>🦄 一人公司时代来了！AI Agent 如何让你单枪匹马干翻一个团队</title><link>https://claudeai.best/posts/hunter-2026021502/</link><pubDate>Sun, 15 Feb 2026 18:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021502/</guid><description>&lt;h2 id="-你还在招人别人已经在招-agent-了">🤔 你还在招人？别人已经在招 Agent 了&lt;/h2>
-&lt;p>还记得「一个人怎么可能开公司」这句话吗？2024年，OpenAI 的奥特曼放了个大招：&lt;strong>AI时代，一个人完全可以创办独角兽公司&lt;/strong>。当时很多人觉得这是画饼。&lt;/p>
-&lt;p>结果呢？Carta 最新数据显示：&lt;strong>超过三分之一的新公司由单人创始人创办&lt;/strong>。不是小打小闹的个体户——是真正拿融资、跑业务、出产品的公司。&lt;/p>
-&lt;p>36氪最新发布的《2026年AI的40个狂热风口》里，采访了100位投资人和创业者，&amp;ldquo;一人公司&amp;quot;被反复提及。洪泰基金董事长盛希泰直言：&lt;strong>这种模式已经逐渐普遍，尤其在95后、00后创业者中接受度更高。&lt;/strong>&lt;/p>
-&lt;h2 id="-核心亮点为什么现在能行了">🚀 核心亮点：为什么现在能行了？&lt;/h2>
-&lt;h3 id="1-ai-agent-从能聊天进化到能干活">1. AI Agent 从&amp;quot;能聊天&amp;quot;进化到&amp;quot;能干活&amp;rdquo;&lt;/h3>
-&lt;p>2026年的 Agent 不是你印象中那个只会回答问题的聊天机器人。现在的 Agent 能：&lt;/p>
-&lt;ul>
-&lt;li>自动完成市场调研、竞品分析&lt;/li>
-&lt;li>独立处理客服、售后全流程&lt;/li>
-&lt;li>帮你写代码、做设计、跑营销&lt;/li>
-&lt;/ul>
-&lt;p>梅花创投吴世春说得很直白：&lt;strong>原本需要多人协作完成的工作，未来可能由一个人配合多个 Agent 来完成。各行各业都会出现&amp;quot;类Manus&amp;quot;产品。&lt;/strong>&lt;/p>
-&lt;h3 id="2-全流程-agent-开始为结果负责">2. 全流程 Agent 开始为结果负责&lt;/h3>
-&lt;p>过去的软件只交付功能，你得自己操心结果。现在的 AI Agent 直接为结果负责——你告诉它&amp;quot;帮我搞定这个月的内容营销&amp;quot;，它就从选题、写稿、排版到发布全包了。&lt;/p>
-&lt;p>这也是为什么中国软件行业长期亏损而 Agent 公司能赚钱的核心原因。&lt;/p>
-&lt;h3 id="3-工具栈已经成熟">3. 工具栈已经成熟&lt;/h3>
-&lt;p>从 Cursor 写代码、到 v0 做前端、到各种 AI 营销工具……一个人能调度的&amp;quot;数字员工&amp;quot;已经足够撑起一家公司的日常运营。关键不是你会多少技能，而是你会不会&lt;strong>指挥 Agent&lt;/strong>。&lt;/p>
-&lt;h2 id="-一人公司快速上手指南">🛠️ 一人公司快速上手指南&lt;/h2>
-&lt;p>&lt;strong>第一步：明确你的&amp;quot;公司架构&amp;quot;&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>CEO（你）：战略决策、客户关系&lt;/li>
-&lt;li>CTO Agent：代码开发、技术架构（推荐 Cursor / Claude Code）&lt;/li>
-&lt;li>CMO Agent：内容创作、社媒运营（推荐 GPT-5 + 自动化工作流）&lt;/li>
-&lt;li>COO Agent：日程管理、流程优化（推荐 Manus 类全流程工具）&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>第二步：搭建自动化工作流&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>用 n8n / Make 连接各个 Agent&lt;/li>
-&lt;li>设定触发规则：客户咨询→自动响应→人工复核&lt;/li>
-&lt;li>每周用 AI 生成运营报告&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>第三步：聚焦你的不可替代性&lt;/strong>&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>效率 on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/%E6%95%88%E7%8E%87/</link>
+    <description>Recent content in 效率 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 19 Feb 2026 18:35:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/%E6%95%88%E7%8E%87/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spackle:Mac 全局 AI 重写快捷键,选中文字按一下就改好</title>
+      <link>https://claudeai.best/posts/hunter-2026021918/</link>
+      <pubDate>Thu, 19 Feb 2026 18:35:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021918/</guid>
+      <description>Spackle 是 macOS 菜单栏应用,在任意 App 中选中文字按快捷键,AI 直接替换原文.支持 OpenAI,Anthropic,OpenRouter,BYO API Key.</description>
+    </item>
+    <item>
+      <title> 一人公司时代来了!AI Agent 如何让你单枪匹马干翻一个团队</title>
+      <link>https://claudeai.best/posts/hunter-2026021502/</link>
+      <pubDate>Sun, 15 Feb 2026 18:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021502/</guid>
+      <description>&lt;h2 id=&#34;你还在招人别人已经在招-agent-了&#34;&gt;你还在招人?别人已经在招 Agent 了&lt;/h2&gt;
+&lt;p&gt;还记得「一个人怎么可能开公司」这句话吗?2024年,OpenAI 的奥特曼放了个大招:&lt;strong&gt;AI时代,一个人完全可以创办独角兽公司&lt;/strong&gt;.当时很多人觉得这是画饼.&lt;/p&gt;
+&lt;p&gt;结果呢?Carta 最新数据显示:&lt;strong&gt;超过三分之一的新公司由单人创始人创办&lt;/strong&gt;.不是小打小闹的个体户&amp;ndash;是真正拿融资,跑业务,出产品的公司.&lt;/p&gt;
+&lt;p&gt;36氪最新发布的《2026年AI的40个狂热风口》里,采访了100位投资人和创业者,&amp;ldquo;一人公司&amp;quot;被反复提及.洪泰基金董事长盛希泰直言:&lt;strong&gt;这种模式已经逐渐普遍,尤其在95后,00后创业者中接受度更高.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;核心亮点为什么现在能行了&#34;&gt;核心亮点:为什么现在能行了?&lt;/h2&gt;
+&lt;h3 id=&#34;1-ai-agent-从能聊天进化到能干活&#34;&gt;1. AI Agent 从&amp;quot;能聊天&amp;quot;进化到&amp;quot;能干活&amp;rdquo;&lt;/h3&gt;
+&lt;p&gt;2026年的 Agent 不是你印象中那个只会回答问题的聊天机器人.现在的 Agent 能:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;自动完成市场调研,竞品分析, 独立处理客服,售后全流程, 帮你写代码,做设计,跑营销&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;梅花创投吴世春说得很直白:&lt;strong&gt;原本需要多人协作完成的工作,未来可能由一个人配合多个 Agent 来完成.各行各业都会出现&amp;quot;类Manus&amp;quot;产品.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2-全流程-agent-开始为结果负责&#34;&gt;2. 全流程 Agent 开始为结果负责&lt;/h3&gt;
+&lt;p&gt;过去的软件只交付功能,你得自己操心结果.现在的 AI Agent 直接为结果负责&amp;ndash;你告诉它&amp;quot;帮我搞定这个月的内容营销&amp;quot;,它就从选题,写稿,排版到发布全包了.&lt;/p&gt;
+&lt;p&gt;这也是为什么中国软件行业长期亏损而 Agent 公司能赚钱的核心原因.&lt;/p&gt;
+&lt;h3 id=&#34;3-工具栈已经成熟&#34;&gt;3. 工具栈已经成熟&lt;/h3&gt;
+&lt;p&gt;从 Cursor 写代码,到 v0 做前端,到各种 AI 营销工具&amp;hellip;&amp;hellip;一个人能调度的&amp;quot;数字员工&amp;quot;已经足够撑起一家公司的日常运营.关键不是你会多少技能,而是你会不会&lt;strong&gt;指挥 Agent&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;-一人公司快速上手指南&#34;&gt;️ 一人公司快速上手指南&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;第一步:明确你的&amp;quot;公司架构&amp;quot;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CEO(你):战略决策,客户关系&lt;/li&gt;
+&lt;li&gt;CTO Agent:代码开发,技术架构(推荐 Cursor / Claude Code)&lt;/li&gt;
+&lt;li&gt;CMO Agent:内容创作,社媒运营(推荐 GPT-5 + 自动化工作流)&lt;/li&gt;
+&lt;li&gt;COO Agent:日程管理,流程优化(推荐 Manus 类全流程工具)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;第二步:搭建自动化工作流&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;用 n8n / Make 连接各个 Agent&lt;/li&gt;
+&lt;li&gt;设定触发规则:客户咨询→自动响应→人工复核&lt;/li&gt;
+&lt;li&gt;每周用 AI 生成运营报告&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;第三步:聚焦你的不可替代性&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

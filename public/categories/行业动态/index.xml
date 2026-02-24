@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>行业动态 on AI 极客前沿</title>
+    <link>https://claudeai.best/categories/%E8%A1%8C%E4%B8%9A%E5%8A%A8%E6%80%81/</link>
+    <description>Recent content in 行业动态 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 19 Feb 2026 16:20:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/categories/%E8%A1%8C%E4%B8%9A%E5%8A%A8%E6%80%81/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Microsoft 365 Copilot 悄悄更新:打开本地文件自动上传到云端 AI</title>
+      <link>https://claudeai.best/posts/hunter-2026021916/</link>
+      <pubDate>Thu, 19 Feb 2026 16:20:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021916/</guid>
+      <description>Microsoft 365 Copilot 移动端应用悄悄更新,本地文件打开时自动上传到 OneDrive 并由 Copilot 处理,用户无法直接查看文档.隐私问题和用户体验引发争议.</description>
+    </item>
+    <item>
+      <title>Bill Gates 紧急退出印度 AI 峰会:Epstein 文件再掀波澜</title>
+      <link>https://claudeai.best/posts/hunter-2026021911/</link>
+      <pubDate>Thu, 19 Feb 2026 11:48:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021911/</guid>
+      <description>Bill Gates 在最后一刻取消印度 AI Impact Summit 2026 主题演讲,官方称「确保峰会焦点不被分散」.此前美国司法部公布的 Epstein 文件中提到 Gates.</description>
+    </item>
+  </channel>
+</rss>

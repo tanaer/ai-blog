@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>中东AI on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/%E4%B8%AD%E4%B8%9Cai/</link>
+    <description>Recent content in 中东AI on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 18 Feb 2026 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/%E4%B8%AD%E4%B8%9Cai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>沙特砸9亿美元买下一家视频AI公司:中东正在成为全球算力新战场</title>
+      <link>https://claudeai.best/posts/hunter-2026021800/</link>
+      <pubDate>Wed, 18 Feb 2026 00:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021800/</guid>
+      <description>沙特HUMAIN领投Luma AI 9亿美元,获批购买35000块Blackwell芯片,伊拉克-UAE投7亿建海底电缆.中东AI算力版图正在改写全球AI竞争格局.</description>
+    </item>
+  </channel>
+</rss>

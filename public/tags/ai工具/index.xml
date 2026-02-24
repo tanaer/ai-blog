@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AI工具 on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/ai%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in AI工具 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 22 Feb 2026 09:10:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/ai%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>emacs-gravity:给 Claude Code 装个 magit 风格的驾驶舱</title>
+      <link>https://claudeai.best/posts/hunter-2026022209/</link>
+      <pubDate>Sun, 22 Feb 2026 09:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022209/</guid>
+      <description>emacs-gravity 是 Claude Code 的原生 Emacs UI,magit-section 风格的结构化视图,支持多会话管理,Agent 树形追踪,Plan 审核,权限管理.</description>
+    </item>
+    <item>
+      <title>Memed-in:把 LinkedIn 信息流变成表情包,专治职场凡尔赛</title>
+      <link>https://claudeai.best/posts/hunter-2026022120/</link>
+      <pubDate>Sat, 21 Feb 2026 20:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022120/</guid>
+      <description>Memed-in 是一个 Chrome 扩展,用 AI 把 LinkedIn 帖子总结成诚实的潜台词,把职场凡尔赛变成表情包,让你的 LinkedIn 信息流瞬间轻松起来.</description>
+    </item>
+    <item>
+      <title>Script Snap:从视频里自动提取代码,99% 技术术语准确</title>
+      <link>https://claudeai.best/posts/hunter-2026022113/</link>
+      <pubDate>Sat, 21 Feb 2026 13:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022113/</guid>
+      <description>Script Snap 是一个 AI 视频转博客引擎,专为技术内容优化,能从视频中提取代码并保持 99% 技术术语准确率,支持 Kubernetes,LLM,Vercel 等现代技术栈.</description>
+    </item>
+  </channel>
+</rss>

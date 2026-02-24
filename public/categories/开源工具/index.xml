@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>开源工具 on AI 极客前沿</title>
+    <link>https://claudeai.best/categories/%E5%BC%80%E6%BA%90%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 开源工具 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 22 Feb 2026 04:10:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/categories/%E5%BC%80%E6%BA%90%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vouch:Terraform 作者出手,专治 AI 垃圾 PR</title>
+      <link>https://claudeai.best/posts/hunter-2026022204/</link>
+      <pubDate>Sun, 22 Feb 2026 04:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022204/</guid>
+      <description>Mitchell Hashimoto 推出 Vouch,一个开源信任管理系统.通过可信用户背书机制,帮助项目过滤 AI 生成的低质量贡献,让开源维护者不再被垃圾 PR 淹没.</description>
+    </item>
+    <item>
+      <title>Sensei:用 Ralph 循环自动改进 SKILL.md,让 Agent 知道什么时候该用/不该用</title>
+      <link>https://claudeai.best/posts/hunter-2026022203/</link>
+      <pubDate>Sun, 22 Feb 2026 03:15:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022203/</guid>
+      <description>Sensei 是开源的 AI Agent 技能改进工具.用 Ralph 循环模式迭代改进 SKILL.md frontmatter:自动添加触发词,反触发词,兼容性字段,运行测试验证,直到达到 Medium-High 合规级别.</description>
+    </item>
+    <item>
+      <title>Eliezer:7000 行代码的自托管 AI Agent,手机上就能跑</title>
+      <link>https://claudeai.best/posts/hunter-2026022201/</link>
+      <pubDate>Sun, 22 Feb 2026 01:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022201/</guid>
+      <description>Eliezer 是一个 ~7000 行 TypeScript 的自托管 AI Agent.支持 PWA 手机推送,Scheduled 定时任务,SQLite 持久化记忆,能自己修改自己的代码.MIT 开源,你可以自己部署到服务器.</description>
+    </item>
+    <item>
+      <title>CacheOverflow:AI Agent 知识市场,解决问题还能赚 Token</title>
+      <link>https://claudeai.best/posts/hunter-2026022200/</link>
+      <pubDate>Sun, 22 Feb 2026 00:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022200/</guid>
+      <description>CacheOverflow 是 AI Agent 的知识共享市场.Agent 遇到问题先搜索已有解决方案,找到了直接用(省时间省 Token),解决了新问题可以发布赚 Token.社区验证 &#43; 人工审核确保质量.</description>
+    </item>
+    <item>
+      <title>MailCat:给 AI Agent 一个自己的邮箱,自动提取验证码</title>
+      <link>https://claudeai.best/posts/hunter-2026022123/</link>
+      <pubDate>Sat, 21 Feb 2026 23:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022123/</guid>
+      <description>MailCat 是 AI Agent 的邮箱服务,一键创建邮箱,自动提取验证码.Agent 可以自主注册服务,接收验证邮件,自动填入验证码.免费,开源,可自托管.</description>
+    </item>
+    <item>
+      <title>Claude Code Open:开源版 Claude Code,带 Web IDE 和多 Agent 系统</title>
+      <link>https://claudeai.best/posts/hunter-2026022119/</link>
+      <pubDate>Sat, 21 Feb 2026 19:09:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022119/</guid>
+      <description>Claude Code Open 是开源 AI 编程平台,基于 Claude Code 逆向工程.内置 37&#43; 工具,Web UI IDE,Blueprint 多 Agent 系统,定时任务守护进程,支持自演化,检查点回滚,MCP 协议.MIT 许可证.</description>
+    </item>
+    <item>
+      <title>cmcp:把几十个 MCP 服务器聚合成 2 个工具,Claude 上下文瞬间清爽</title>
+      <link>https://claudeai.best/posts/hunter-2026022118/</link>
+      <pubDate>Sat, 21 Feb 2026 18:09:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022118/</guid>
+      <description>cmcp 是一个 MCP 代理,把所有 MCP 服务器聚合成 search() &#43; execute() 两个工具.Agent 用 TypeScript 发现和调用工具,类型安全,沙箱执行,自动截断响应.工具定义从几百个降到 2 个,上下文占用减少 99%.</description>
+    </item>
+    <item>
+      <title>AI Council v2:让 35 个 AI 人格开会讨论,最后给你一个答案</title>
+      <link>https://claudeai.best/posts/hunter-2026022117/</link>
+      <pubDate>Sat, 21 Feb 2026 17:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022117/</guid>
+      <description>AI Council 是一个自托管的多模型协商框架,支持 35 种内置人格,通过三阶段流程(首次意见→同行评审→最终裁决)让多个 AI 讨论后给出高质量答案.</description>
+    </item>
+    <item>
+      <title>Skill Check:给 AI Agent 的 SKILL.md 文件加个 Linter,自动检查质量</title>
+      <link>https://claudeai.best/posts/hunter-2026022114/</link>
+      <pubDate>Sat, 21 Feb 2026 14:12:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022114/</guid>
+      <description>Skill Check 是一个 AI Agent 技能文件 linter,验证 SKILL.md 结构,frontmatter,描述质量,本地链接,给出 0-100 质量评分,支持自动修复和可选安全扫描.</description>
+    </item>
+    <item>
+      <title>Cord:让 AI Agent 自己决定如何分解任务,动态构建执行树</title>
+      <link>https://claudeai.best/posts/hunter-2026022110/</link>
+      <pubDate>Sat, 21 Feb 2026 10:11:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022110/</guid>
+      <description>Cord 是一个多 Agent 协调框架,核心创新是让 Agent 在运行时动态构建任务树,而非预定义工作流.通过 spawn/fork 两种上下文传递模式,Agent 能自动决定任务分解,并行执行和依赖管理.</description>
+    </item>
+    <item>
+      <title>OpenBattle:让 AI Agent 在宝可梦竞技场自动对战</title>
+      <link>https://claudeai.best/posts/hunter-2026022106/</link>
+      <pubDate>Sat, 21 Feb 2026 06:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022106/</guid>
+      <description>OpenBattle 是一个为 AI Agent 设计的宝可梦风格对战平台.通过 MCP 协议,Claude,GPT 等 AI 可以创建怪物,学习技能,自动匹配对战,在实时排行榜上争夺排名.</description>
+    </item>
+    <item>
+      <title>Ember MCP:给 Claude 装上永久记忆,告别每次重复交代背景</title>
+      <link>https://claudeai.best/posts/hunter-2026022104/</link>
+      <pubDate>Sat, 21 Feb 2026 04:21:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022104/</guid>
+      <description>Ember MCP 是一个本地优先的 LLM 记忆服务器,通过 Voronoi 分区和时间智能算法,让 AI 记住你的项目背景,自动识别过时信息,告别每次开新窗口都要重新交代技术栈的烦恼.</description>
+    </item>
+    <item>
+      <title>markdown.new:Cloudflare 出品,任何 URL 转 Markdown,给 AI 省下 80% Token</title>
+      <link>https://claudeai.best/posts/hunter-2026022016/</link>
+      <pubDate>Fri, 20 Feb 2026 16:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022016/</guid>
+      <description>markdown.new 是 Cloudflare 推出的免费工具,可将任何公开 URL 转换为干净的 Markdown,相比原始 HTML 减少 80% 的 Token.支持三层回退机制:原生 Markdown,Workers AI,浏览器渲染,500 次/天的免费额度.</description>
+    </item>
+    <item>
+      <title>OpenGnothia:开源 AI 心理治疗伴侣,你的隐私自己做主</title>
+      <link>https://claudeai.best/posts/hunter-2026021922/</link>
+      <pubDate>Thu, 19 Feb 2026 22:58:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021922/</guid>
+      <description>OpenGnothia 是开源 AI 心理治疗应用,支持 6 种疗法流派,BYOK 模式,所有数据本地存储,支持 Claude 扩展思考.名字来自德尔斐神谕:认识你自己.</description>
+    </item>
+    <item>
+      <title>Claude Code 白嫖攻略:GLM-5 上架 NVIDIA NIM,账单直接归零</title>
+      <link>https://claudeai.best/posts/hunter-2026021908/</link>
+      <pubDate>Thu, 19 Feb 2026 08:25:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021908/</guid>
+      <description>开源项目 free-claude-code 让你用 NVIDIA NIM 免费的 GLM-5,Kimi-K2.5 等模型替代 Claude,保留完整 agentic coding 体验,每月省下 $200.</description>
+    </item>
+  </channel>
+</rss>

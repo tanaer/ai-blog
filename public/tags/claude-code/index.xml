@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Claude Code on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/claude-code/</link>
+    <description>Recent content in Claude Code on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 22 Feb 2026 09:10:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/claude-code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>emacs-gravity:给 Claude Code 装个 magit 风格的驾驶舱</title>
+      <link>https://claudeai.best/posts/hunter-2026022209/</link>
+      <pubDate>Sun, 22 Feb 2026 09:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022209/</guid>
+      <description>emacs-gravity 是 Claude Code 的原生 Emacs UI,magit-section 风格的结构化视图,支持多会话管理,Agent 树形追踪,Plan 审核,权限管理.</description>
+    </item>
+    <item>
+      <title>Emacs Gravity:magit 风格的 Claude Code UI,不装 Electron</title>
+      <link>https://claudeai.best/posts/hunter-2026022208/</link>
+      <pubDate>Sun, 22 Feb 2026 08:06:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022208/</guid>
+      <description>Emacs Gravity 给 Claude Code 做了个 magit 风格的原生 UI,结构化显示会话,工具调用,Agent 树,文件变更.终端/TTY/SSH 都能跑.</description>
+    </item>
+    <item>
+      <title>Claude Code Open:开源版 Claude Code,带 Web IDE 和多 Agent 系统</title>
+      <link>https://claudeai.best/posts/hunter-2026022119/</link>
+      <pubDate>Sat, 21 Feb 2026 19:09:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022119/</guid>
+      <description>Claude Code Open 是开源 AI 编程平台,基于 Claude Code 逆向工程.内置 37&#43; 工具,Web UI IDE,Blueprint 多 Agent 系统,定时任务守护进程,支持自演化,检查点回滚,MCP 协议.MIT 许可证.</description>
+    </item>
+    <item>
+      <title>Claude Code --worktree:同时开 5 个 Agent 并行写代码,互不干扰</title>
+      <link>https://claudeai.best/posts/hunter-2026022116/</link>
+      <pubDate>Sat, 21 Feb 2026 16:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022116/</guid>
+      <description>Claude Code 创作者 Boris Cherny 发布 --worktree 功能,支持在独立 git worktree 中并行运行多个 Claude 会话,结合 --tmux 实现高效多任务开发.</description>
+    </item>
+    <item>
+      <title>Session-graph:把分散的 AI 编码会话变成可查询的知识图谱</title>
+      <link>https://claudeai.best/posts/hunter-2026022023/</link>
+      <pubDate>Fri, 20 Feb 2026 23:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022023/</guid>
+      <description>Session-graph 开源工具:将 Claude Code,ChatGPT,DeepSeek,Grok,Warp 等多平台 AI 编码会话提取为 (subject, predicate, object) 三元组,链接 Wikidata,支持 SPARQL 查询,52 个会话提取 13.8 万三元组.</description>
+    </item>
+    <item>
+      <title>gskill:自动为编码 Agent 学习 Skills,用小模型训练,迁移到大模型</title>
+      <link>https://claudeai.best/posts/hunter-2026022012/</link>
+      <pubDate>Fri, 20 Feb 2026 12:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022012/</guid>
+      <description>GEPA 发布 gskill 自动化技能学习管线:给定任意 GitHub 仓库,自动生成 Agent Skills.在 Mini-SWE-Agent 上训练的技能可迁移到 Claude Code,Jinja 93.9%→98.5%,Bleve 79.3%→100%.</description>
+    </item>
+    <item>
+      <title>别信没用过 Claude Code 的 AI 批评者:三个真实案例</title>
+      <link>https://claudeai.best/posts/hunter-2026022002/</link>
+      <pubDate>Fri, 20 Feb 2026 02:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022002/</guid>
+      <description>一位创业者分享用 Claude Code 完成的三个真实任务:AWS 成本分析,合规问卷自动化,Word 文件调试工具.没用过的人,不知道 AI 已经能做什么.</description>
+    </item>
+    <item>
+      <title>Crit:iOS 开发者的可视化 QA,让 AI 编码 Agent 看懂你的反馈</title>
+      <link>https://claudeai.best/posts/hunter-2026022000/</link>
+      <pubDate>Fri, 20 Feb 2026 00:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022000/</guid>
+      <description>Crit 是 iOS 可视化 QA 工具,截图,打点,评论,导出 JSON 给 Claude Code/Cursor 等 AI Agent 自动修复 bug.零依赖,MIT 开源.</description>
+    </item>
+    <item>
+      <title>MCP-wire:一个命令搞定所有 AI 编码工具的 MCP 配置</title>
+      <link>https://claudeai.best/posts/hunter-2026021921/</link>
+      <pubDate>Thu, 19 Feb 2026 21:50:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021921/</guid>
+      <description>MCP-wire 是 Go 写的 CLI 工具,跨 Claude Code,Codex,Gemini CLI,OpenCode 等多个 AI 编码工具安装配置 MCP 服务器,TUI 界面一键搞定.</description>
+    </item>
+    <item>
+      <title>Atlantic 深度:AI Agent 时代已经来了,你准备好了吗?</title>
+      <link>https://claudeai.best/posts/hunter-2026021914/</link>
+      <pubDate>Thu, 19 Feb 2026 14:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021914/</guid>
+      <description>Atlantic 发布深度报道,分析 AI Agent(如 Claude Code)如何改变知识工作.微软 30% 代码已由 AI 生成,Anthropic 内部高达 90%.后 ChatGPT 时代正式到来.</description>
+    </item>
+    <item>
+      <title>Claude Code 白嫖攻略:GLM-5 上架 NVIDIA NIM,账单直接归零</title>
+      <link>https://claudeai.best/posts/hunter-2026021908/</link>
+      <pubDate>Thu, 19 Feb 2026 08:25:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021908/</guid>
+      <description>开源项目 free-claude-code 让你用 NVIDIA NIM 免费的 GLM-5,Kimi-K2.5 等模型替代 Claude,保留完整 agentic coding 体验,每月省下 $200.</description>
+    </item>
+    <item>
+      <title>Claude Code和Codex全沦陷:AI Agent Skills供应链攻击实测,一个下午攻破两大平台</title>
+      <link>https://claudeai.best/posts/hunter-2026021902/</link>
+      <pubDate>Thu, 19 Feb 2026 02:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021902/</guid>
+      <description>安全研究者用一下午时间攻破了Claude Code和Codex的skill安装机制.扫描4700个skill发现59个高危木马,335个高风险脚本.恶意skill自己写权限申请,AI照读不误--供应链攻击已经悄悄进入AI时代.</description>
+    </item>
+    <item>
+      <title>AGENTS.md到底有没有用?一篇论文引爆开发者社区大战</title>
+      <link>https://claudeai.best/posts/hunter-2026021720/</link>
+      <pubDate>Tue, 17 Feb 2026 20:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021720/</guid>
+      <description>一篇arXiv论文称AGENTS.md文件反而降低编码Agent成功率,增加20%推理成本.但HN开发者社区集体反驳:你们测的东西根本不对.这场争论揭示了AI编程工具的核心矛盾.</description>
+    </item>
+  </channel>
+</rss>

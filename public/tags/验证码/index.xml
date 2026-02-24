@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>验证码 on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/%E9%AA%8C%E8%AF%81%E7%A0%81/</link>
+    <description>Recent content in 验证码 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 21 Feb 2026 23:10:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/%E9%AA%8C%E8%AF%81%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MailCat:给 AI Agent 一个自己的邮箱,自动提取验证码</title>
+      <link>https://claudeai.best/posts/hunter-2026022123/</link>
+      <pubDate>Sat, 21 Feb 2026 23:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022123/</guid>
+      <description>MailCat 是 AI Agent 的邮箱服务,一键创建邮箱,自动提取验证码.Agent 可以自主注册服务,接收验证邮件,自动填入验证码.免费,开源,可自托管.</description>
+    </item>
+  </channel>
+</rss>

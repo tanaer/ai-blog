@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>MacOS on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/macos/</link>
+    <description>Recent content in MacOS on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 21 Feb 2026 12:10:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TabType:能自动识别项目的 macOS 文本扩展,;; 就能补全分支名</title>
+      <link>https://claudeai.best/posts/hunter-2026022112/</link>
+      <pubDate>Sat, 21 Feb 2026 12:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022112/</guid>
+      <description>TabType 是 macOS 文本扩展工具,能自动发现项目上下文(git 分支,文件路径,npm 脚本),在任何应用里用 ;; 触发补全.一次买断 $9.99,完全本地运行.</description>
+    </item>
+    <item>
+      <title>Spackle:Mac 全局 AI 重写快捷键,选中文字按一下就改好</title>
+      <link>https://claudeai.best/posts/hunter-2026021918/</link>
+      <pubDate>Thu, 19 Feb 2026 18:35:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021918/</guid>
+      <description>Spackle 是 macOS 菜单栏应用,在任意 App 中选中文字按快捷键,AI 直接替换原文.支持 OpenAI,Anthropic,OpenRouter,BYO API Key.</description>
+    </item>
+  </channel>
+</rss>

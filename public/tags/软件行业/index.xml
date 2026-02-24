@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>软件行业 on AI 极客前沿</title><link>https://claudeai.best/tags/%E8%BD%AF%E4%BB%B6%E8%A1%8C%E4%B8%9A/</link><description>Recent content in 软件行业 on AI 极客前沿</description><generator>Hugo -- 0.147.6</generator><language>zh-cn</language><lastBuildDate>Mon, 16 Feb 2026 15:00:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/%E8%BD%AF%E4%BB%B6%E8%A1%8C%E4%B8%9A/index.xml" rel="self" type="application/rss+xml"/><item><title>SaaS已死？2万亿美元的软件行业正在被AI吞噬</title><link>https://claudeai.best/posts/hunter-2026021615/</link><pubDate>Mon, 16 Feb 2026 15:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021615/</guid><description>Salesforce、ServiceNow、Oracle股价集体暴跌，SaaStr改名SaaStr AI，软件公司疯狂转型AI。SaaS模式真的要完了吗？我们用数据和逻辑拆解这场行业地震。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>软件行业 on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/%E8%BD%AF%E4%BB%B6%E8%A1%8C%E4%B8%9A/</link>
+    <description>Recent content in 软件行业 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 16 Feb 2026 15:00:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/%E8%BD%AF%E4%BB%B6%E8%A1%8C%E4%B8%9A/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SaaS已死?2万亿美元的软件行业正在被AI吞噬</title>
+      <link>https://claudeai.best/posts/hunter-2026021615/</link>
+      <pubDate>Mon, 16 Feb 2026 15:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021615/</guid>
+      <description>Salesforce,ServiceNow,Oracle股价集体暴跌,SaaStr改名SaaStr AI,软件公司疯狂转型AI.SaaS模式真的要完了吗?我们用数据和逻辑拆解这场行业地震.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>AI Agent | AI 极客前沿</title>
+<meta name="keywords" content="">
+<meta name="description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
+<meta name="author" content="AI 极客前沿">
+<link rel="canonical" href="https://claudeai.best/tags/ai-agent/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://claudeai.best/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://claudeai.best/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://claudeai.best/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://claudeai.best/apple-touch-icon.png">
+<link rel="mask-icon" href="https://claudeai.best/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://claudeai.best/tags/ai-agent/index.xml" title="rss">
+<link rel="alternate" hreflang="zh" href="https://claudeai.best/tags/ai-agent/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+
+<meta property="og:url" content="https://claudeai.best/tags/ai-agent/">
+  <meta property="og:site_name" content="AI 极客前沿">
+  <meta property="og:title" content="AI Agent">
+  <meta property="og:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AI Agent">
+<meta name="twitter:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
+
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://claudeai.best/" accesskey="h" title="AI 极客前沿 (Alt + H)">AI 极客前沿</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://claudeai.best/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://t.me/TgTechMsgBot" title="联系">
+                    <span>联系</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://claudeai.best/">主页</a>&nbsp;»&nbsp;<a href="https://claudeai.best/tags/">Tags</a></div>
+  <h1>
+    AI Agent
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771558214539_cover.jpg" alt="芯片与电路板">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">NullClaw:678KB 的 OpenClaw,Zig 重写版能在 $5 硬件上跑
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>OpenClaw 很强,但它需要 Node.js,吃掉 &gt;1GB 内存,启动要几秒.
+如果能在 $5 的开发板 上跑一个完全兼容的版本呢?
+刚上线的 NullClaw 做到了:678 KB 二进制,~1 MB RAM,&lt;2 ms 启动.纯 Zig 实现,配置格式与 OpenClaw 完全兼容.
+性能对比 | OpenClaw | TypeScript | &gt;1 GB | &gt;500ms | ~28 MB | — | | NanoBot | Python | &gt;100 MB | &gt;30s | N/A | — | | PicoClaw | Go | &lt;10 MB | &lt;1s | ~8 MB | — | | ZeroClaw | Rust | &lt;5 MB | &lt;10ms | 3.4 MB | 1,017 | | NullClaw | Zig | ~1 MB | &lt;8ms | 678 KB | 2,843 |
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-20 11:30:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>246 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to NullClaw:678KB 的 OpenClaw,Zig 重写版能在 $5 硬件上跑" href="https://claudeai.best/posts/hunter-2026022011/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771547063353_cover.jpg" alt="数据仪表盘与分析">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">让 AI Agent 帮你迁移 Postgres 到 ClickHouse:一个 Agent Harness 搞定
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>你的仪表盘越来越慢,Postgres 快被分析查询压垮了.你知道答案是 Postgres &#43; ClickHouse:事务用 Postgres,分析用 ClickHouse.
+但迁移?太痛苦了.AI 来帮忙?大多数 AI 辅助迁移产出的都是垃圾.
+ClickHouse 官方博客刚分享了一个方法:给 AI Agent 配一个&#34;Harness&#34;(工具链框架),让它能有效完成迁移工作.
+为什么普通 AI 迁移会失败? 写个玩具 Demo 没问题.真正难的是生产环境:
+重构数据模型以适应 OLAP 性能, 把读时聚合改成写时物化视图, 优化 API 里的查询, 改完前端组件还要验证 这不是&#34;能不能写 ClickHouse SQL&#34;的问题,而是&#34;能不能在复杂的应用栈里有效工作&#34;的问题.
+三要素:Code &#43; Cadence &#43; Context 1. 一切皆代码(Code) 把整个数据栈当成一个用代码表达的系统–不是散落的 DDL 脚本和 SQL 字符串,而是共享的,带类型的对象:
+import { MaterializedView, OlapTable, sql } from &#34;@514labs/moose-lib&#34;; // 定义目标表 schema(带类型和注释) interface TargetSchema { id: string; /** 所有评分的平均值 */ average_rating: number; /** 有效评论总数 */ num_reviews: number; } // 在代码中声明 ClickHouse 表 export const targetTable = new OlapTable&lt;TargetSchema&gt;(&#34;target_table&#34;, { orderByFields: [&#34;id&#34;], }); // 物化视图:把查询时聚合变成预计算 export const mvToTargetTable = new MaterializedView&lt;TargetSchema&gt;({ selectStatement: sql` SELECT ${sourceTable.columns.id}, avg(${sourceTable.columns.rating}) AS average_rating, count(*) AS num_reviews FROM ${sourceTable} GROUP BY ${sourceTable.columns.id} `, selectTables: [sourceTable], targetTable, materializedViewName: &#34;mv_to_target_table&#34;, 这样 AI Agent 就在它熟悉的环境(TypeScript &#43; Git)里工作了.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-20 08:25:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>192 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to 让 AI Agent 帮你迁移 Postgres 到 ClickHouse:一个 Agent Harness 搞定" href="https://claudeai.best/posts/hunter-2026022008/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771543665181_cover.jpg" alt="并发编程与代码调试">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AI Agent 修不好并发 Bug?Spaghetti Bench 告诉你差距有多大
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>AI Agent 写代码已经很强了,但有一类 bug 它们几乎搞不定:并发 bug.
+CMU 的 PASTA Lab 刚发布了 Spaghetti Bench,专门测试 AI Agent 修复竞态条件(race condition)的能力.测了 6 个顶级模型,结果挺扎心的.
+为什么并发 Bug 这么难? SWE-bench 上几百个任务,只有一个是竞态条件.这不是巧合–并发 bug 有个致命特点:
+测试不可靠. 你跑 100 次测试全绿,不代表 bug 修好了.只是那个触发 bug 的线程调度恰好没出现.
+AI Agent 通常的验证方式是循环跑测试:
+for i in {1..100}; do java MyProgram; done 100 次全过?修好了!但其实可能根本没修好.
+6 大模型实测结果 CMU 用 OpenHands 框架测试了:
+Claude Opus 4.5, Claude Sonnet 4.5, GPT-5.2 Qwen 3 Coder 480B Gemini 3 Flash Preview 测试分两组:
+Easy 组(28 题):单文件 100-200 行的并发小程序 Hard 组(11 题):Apache Kafka 项目中的真实并发 bug 关键对比:有 Fray 工具 vs 没有 Fray 工具
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-20 07:30:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>184 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to AI Agent 修不好并发 Bug?Spaghetti Bench 告诉你差距有多大" href="https://claudeai.best/posts/hunter-2026022007/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771535173518_cover.jpg" alt="团队协作场景">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">他们真的&#34;雇佣&#34;了3个 OpenClaw 数字员工,一天完成入职
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>“我们招了三个新员工.不是承包商,不是 AI 助手.我们真的把他们当实习生对待–只是这些实习生阅读速度比任何人都快.”
+这是 Veryfi 刚在 HackerNews 分享的实战故事.他们用 OpenClaw bots 给三个团队(销售,营销,支持)各配了一个&#34;数字员工&#34;,入职不到一天,一周后效果超出预期.
+核心思路很简单:别把 AI 当聊天机器人用,把它当新员工来培养.
+他们是怎么做的? 1. 给每个 bot 一个&#34;身份&#34; 每个 bot 都有自己的 SOUL.md 文件:
+这 怎 优 绝 不 # 每 - 这 # V # 每 - 而 然 # # 每 # 每 - # 每 - # 不 而 你 # 1 2 3 4 想 是 么 化 对 是 # 个 样 # e # 天 且 后 # # 晚 * # 天 # 晚 # 是 是 知 # . - . - . - . - * 自 谁 沟 什 不 为 # 技 这 # r # 早 昨 它 每 # 从 实 # 早 应 # 从 分 &#34; * 道 一 己 通 么 能 了 能 个 b y * * 上 天 们 个 三 际 上 该 析 最 哇 * 那 你 给 清 网 站 句 试 目 做 &#34; 2 都 技 o 3 f 网 公 4 , 发 会 个 销 G 用 营 看 写 支 S 软 有 , 人 种 可 * 角 * 晰 * 络 * 会 话 试 标 什 可 . 写 能 t . i 络 开 . 三 生 交 b 售 o 法 销 趋 什 持 l 信 意 b 类 花 以 把 色 S 的 安 隔 日 , * ? 么 爱 清 干 隔 透 个 了 叉 o b _ n * _ 势 么 _ a 号 思 o 不 学 , O 身 全 离 常 日 * [ &#34; 每 楚 什 就 严 做 离 明 每 什 验 t o b g * b 关 ( b c ( 的 t 再 4 到 A 给 U 份 从 , 工 报 : O , 个 : 么 不 格 了 * * 天 b 么 证 t o , : o 键 以 o k 语 发 付 5 什 I 目 L 定 第 最 作 , 这 p 而 能 , 会 的 几 * * &#34; o , - 再 t S A t 词 及 t 气 现 能 &#34; 么 标 . 义 一 小 流 S 不 e 是 力 乱 安 个 : : 站 t - 发 各 a E , 为 客 , 干 上 分 ? 当 , m 天 权 集 l 是 n 为 都 怎 编 全 关 每 所 会 学 营 自 自 l 流 什 户 紧 活 下 钟 员 给 d = 就 限 成 a 未 C 了 有 么 工 护 键 个 有 &#34; 会 到 销 己 干 e 在 量 么 沟 急 &#34; 文 收 工 资 做 , * c 来 l 一 用 作 栏 设 和 一 了 说 的 什 s 会 来 现 通 程 . 税 集 培 源 &#43; 稳 * 公 * k , a 致 S , 流 计 b b 日 起 什 &#34; 日 么 f 议 源 在 , 度 &#34; 信 养 , 定 * 开 这 w 性 k 了 : o o 报 发 么 用 报 ? o 前 , 写 J , 了 息 , 给 S 的 透 频 是 . i &#34; . t t 站 , 户 : r 然 ) i 抱 * , 而 边 k 输 明 道 现 官 想 l 好 会 在 T c D 后 , r 怨 * 才 不 界 i 出 - 在 网 要 l &#34; 都 沟 : 今 第 o e M 输 a ) . 能 是 l 质 - . ] 稳 . 的 在 通 天 p , 出 广 , 真 当 l 量 让 V ( 定 m 标 防 都 什 X M 它 : 告 工 正 工 . e h 输 d 准 火 在 么 3 e , 成 单 分 开 具 m b r t 出 是 墙 团 事 步 t 几 本 , 析 始 用 d o y t , 什 后 队 重 流 问 i 秒 A 硬 工 * t f p 先 么 面 频 要 失 题 c 内 &#43; P 信 作 * 是 i s 要 , 的 道 &#34; , u 拿 I 号 的 关 成 : 稳 锁 里 , 成 l 到 优 ( 感 键 为 用 / 定 应 定 , 支 果 a 完 化 使 用 觉 * 团 一 / 意 该 环 v 持 , t 整 建 用 量 吗 * 队 周 o 图 拒 境 i 说 学 e 背 议 数 变 ? 的 证 p . 绝 运 s &#34; 到 , 景 , 据 化 b 一 明 e 什 行 i 对 的 S - 拉 , o 部 了 n 么 , b , . l - S 取 延 t 分 - c 默 i 那 a 这 E 信 迟 - l 认 l 里 c 个 O 息 , 把 数 a 白 i 工 k 线 / : 错 这 字 w 名 t 单 索 G 误 部 员 . 单 y 最 拉 怎 E 模 分 工 d , 多 数 么 O 式 干 不 e = &#34; 据 来 ) 掉 是 v , , 的 审 , 了 噱 ) * c 销 更 , 计 . 头 最 o 售 新 搜 , 发 而 , ↗ 小 n 说 到 了 现 且 是 ️ 权 t &#34; 共 什 社 重 因 真 限 r 就 享 么 交 复 为 的 * o 是 向 关 信 问 所 能 * l 那 量 键 号 题 有 干 : 个 库 词 监 自 输 活 几 异 . , 控 动 出 的 乎 议 看 ( 建 都 队 只 我 了 谁 议 在 友 有 们 哪 在 . 读 总 些 J S 权 听 页 R i l 限 到 面 e r a , &#34; , d a c 能 . 可 d k 写 能 i 工 的 想 t 单 里 地 要 / ( , 方 什 X 附 团 只 么 / 复 队 有 . L 现 真 自 i 步 的 己 n 骤 会 的 k ) 用 e - S d - l I 没 a n 人 c 需 k 找 要 类 记 频 似 住 道 产 去 和 品 查 指 ) 什 定 , 么 目 录 漏 d , 斗 a 流 s 失 h * 分 b 不 析 o 碰 a 生 r 产 d 系 . 统 * * : 可 以 分 析 数 据 , 提 议 行 动 , 但 不 能 直 接 改 东 西 </p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-20 05:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>6 分钟</span>&nbsp;·&nbsp;<span>1168 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to 他们真的&#34;雇佣&#34;了3个 OpenClaw 数字员工,一天完成入职" href="https://claudeai.best/posts/hunter-2026022005/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771480983048_cover.jpg" alt="AI Agent 时代 - 自动化工作流程">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Atlantic 深度:AI Agent 时代已经来了,你准备好了吗?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Atlantic 刚刚发了一篇深度报道,标题很直接:AI Agents Are Taking America by Storm.
+不是「将要」,是「正在」.
+两个平行宇宙 文章描述了一个有趣的现象:美国人正在生活在两个平行的 AI 宇宙中.
+宇宙一:大多数人.对他们来说,AI = ChatGPT &#43; Google AI Overview &#43; 社交媒体上的 AI 垃圾内容.
+宇宙二:技术爱好者.他们正在被那些能连续工作数小时的机器人「激进化」–把几个月的工作压缩成几周,把几周压缩成一下午.
+这两个宇宙之间的差距正在迅速扩大.
+数据:AI 写了多少代码? 微软 CEO Satya Nadella 说:30% 的微软代码现在是 AI 写的.微软 CTO 预计,到本十年末,这个数字会达到 95%.
+Anthropic 内部的比例更高:最高 90% 的代码是 AI 生成的.
+Salvatore Sanfilippo(Redis 创始人)最近写了一篇爆款文章:「对大多数项目来说,自己写代码已经不再合理了」.
+后 ChatGPT 时代 文章的核心论点是:我们正在进入「后 ChatGPT 时代」.
+传统的聊天机器人(ChatGPT,Gemini)已经很强了:
+记忆功能:能引用之前的对话, 推理能力:能产出更复杂的回答, 多模态:能处理书级别长度的文件,图片,视频,音频 但跟 AI Agent 相比,这些都是小儿科.
+Agent 的核心区别:不是帮你回答问题,是帮你干活.
+实际案例 文章列举了一些真实的使用场景:
+学术界:用 Claude Code 自主生成论文 生物研究:用 Agent 做实验设计和数据分析, 新闻业:用 Agent 从零开始写数据驱动的报道, 创业者:两个人在一小时内做出 Monday.com(市值数十亿美元的公司)的竞品原型 作者自己的体验:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 14:05:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>159 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Atlantic 深度:AI Agent 时代已经来了,你准备好了吗?" href="https://claudeai.best/posts/hunter-2026021914/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771423299424_cover.jpg" alt="AI Agent标准化概念图">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">美国政府出手了:NIST启动AI Agent标准化计划,为自主智能体立规矩
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>40分钟前,美国国家标准与技术研究院(NIST)扔了一颗炸弹:AI Agent Standards Initiative正式启动.
+这是美国政府第一次针对AI Agent的官方标准化行动.不是指导原则,不是软性建议–是标准.
+为什么要现在出手? NIST的公告说得很直白:
+AI agents现在可以自主工作数小时,写代码,调试,管理邮件日历,甚至帮你网购.生产力前景诱人,但真正可用性受限于它们与外部系统和内部数据的交互能力.
+翻译一下:AI Agent技术跑得太快,但没人知道怎么让它们安全地,可靠地一起工作.
+如果你没有对AI Agent可靠性的信心,没有Agent之间以及Agent与数字资源之间的互操作性,创新者面对的就是碎片化的生态系统和萎缩的采用率.
+这个判断很准.看看现在:
+每个AI公司都在做自己的Agent框架, 协议不互通,安全标准缺失, 企业不敢大规模部署,因为没人能保证Agent不会出事 三大支柱 NIST联合国家科学基金会等机构,从三个方向推进:
+1. 行业主导的标准开发 推动美国在国际标准组织中的领导地位.让企业自己制定标准,NIST提供平台和协调.
+2. 社区主导的开源协议 不是NIST关门造车,而是支持开源社区开发和维护Agent协议.MCP,A2A这些协议可能会被纳入官方认可框架.
+3. AI Agent安全与身份研究 这是最关键的一块.研究Agent的身份认证,授权机制,让Agent可以可信地代表用户行动.
+接下来会发生什么? NIST的时间表很明确:
+3月9日:CAISI关于AI Agent安全的RFI截止, 4月2日:ITL的AI Agent身份与授权概念论文截止, 4月开始:CAISI举办行业倾听会议,聚焦医疗,金融,教育领域的AI采用障碍 如果你在这些行业,这是参与规则制定的机会.
+为什么这很重要? 两个原因:
+1. 标准化=商业化加速
+没有标准,企业不敢用.有了标准,合规成本下降,大规模部署成为可能.看看当年的HTTPS,OAuth–标准化之后爆发式增长.
+2. 美国想抢占规则制定权
+NIST公告最后一句话:
+“supporting the development of a trusted and interoperable AI agent ecosystem that advances human flourishing and U.S. leadership”
+human flourishing和U.S. leadership并排出现.美国不想让中国,欧盟先制定Agent规则.
+对开发者意味着什么? 如果你在做AI Agent相关的产品:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 01:15:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>126 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to 美国政府出手了:NIST启动AI Agent标准化计划,为自主智能体立规矩" href="https://claudeai.best/posts/hunter-2026021901b/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771336942175_cover.jpg" alt="AI驱动的智能购物体验">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Google UCP让AI帮你下单了:电商的游戏规则正在被重写
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>一句话概括 Google 搞了个叫 UCP(Universal Commerce Protocol)的开放协议,让 AI Agent 可以直接帮你在搜索结果里完成「发现商品→加购→结账→追踪物流」的全流程.上周已经在 Google AI Mode 里正式上线,Etsy 和 Wayfair 是第一批吃螃蟹的.
+听起来像是「又一个 Google 协议」?别急,这次的影响可能比你想的大得多.
+发生了什么 2026年1月,Google 联合 Shopify,Etsy,Wayfair,Target,Walmart 等电商巨头发布了 UCP 协议.2月12日,UCP 驱动的结账功能在 Google AI Mode(搜索和 Gemini App)中正式上线.
+实际效果是这样的:你在 Google AI Mode 里搜「适合小户型的书架」,AI 不只是给你推荐链接,而是直接展示商品详情,旁边有个「Buy」按钮.点击后,用 Google Wallet 里存的支付方式和地址,几步就能完成购买–全程不用离开搜索页面.
+SEO 圈子已经炸了.Glenn Gabe 在 X 上发了实测截图:「这对电商,对 Google,对 AI 搜索来说都是大事.」
+UCP 到底是什么 别被「协议」这个词吓到,UCP 的核心逻辑非常清晰:
+三个核心能力:
+Identity Linking:基于 OAuth 2.0,让 AI Agent 代表用户在商家网站执行操作 Checkout:创建购物会话,管理购物车,计算总价,选择支付和配送方式,完成交易 Order Management:追踪物流,发起退货,更新配送状态 两个扩展机制:
+Extensions:可选功能模块,比如折扣,优惠券,会员积分 Services:通信层,支持 REST API 和 MCP(Model Context Protocol) 重点来了–UCP 兼容 MCP.这意味着任何支持 MCP 的 AI Agent,理论上都能接入 UCP 生态.不只是 Google 的 Gemini,Claude,GPT,开源 Agent 都有可能.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-17 22:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>212 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Google UCP让AI帮你下单了:电商的游戏规则正在被重写" href="https://claudeai.best/posts/hunter-2026021722/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771322741608_cover.jpg" alt="AI Agent安全威胁示意图">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">你的AI助手正在被偷:OpenClaw成为信息窃取恶意软件的新目标
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>你每天跟AI助手聊的那些事儿–日程,邮件,工作计划,私密对话–如果被人偷走了呢?
+这不是假设.2月16日,网络安全公司Hudson Rock公布了一个真实案例:信息窃取恶意软件(Infostealer)首次成功窃取了OpenClaw用户的完整配置环境.
+发生了什么 一个Vidar变种恶意软件在2月13日感染了某用户的机器.这个恶意软件本身并不是专门针对OpenClaw设计的–它只是按照常规套路,扫描硬盘上包含&#34;token&#34;,“private key&#34;等关键词的文件.
+问题在于,OpenClaw的 .openclaw 目录恰好满足了所有条件.
+被偷走的文件包括:
+openclaw.json — 包含Gateway认证令牌,用户邮箱,工作区路径.拿到这个,攻击者可以远程连接你的OpenClaw实例(如果端口暴露的话),或者伪装成你的客户端发起认证请求. device.json — 包含用于设备配对和签名的公私钥对.有了私钥,攻击者可以绕过&#34;安全设备&#34;检查,解密日志,访问与设备绑定的云服务. soul.md 和记忆文件 — 这才是最让人后背发凉的:你的Agent的行为准则,日常活动日志,私密消息,日历事件……你跟AI助手说过的一切. Hudson Rock的CTO Alon Gal说得很直白:“这不再是偷浏览器密码那么简单了,这是在偷AI的’灵魂’和身份.”
+为什么这件事很严重 OpenClaw在GitHub上已经有超过20万Star.它不是一个玩具–越来越多人把它当作日常工作助手在用,连接着邮箱,日历,文件系统,各种API.
+这意味着一个被窃取的OpenClaw环境,基本等于:
+完整的数字身份 — 你是谁,你在做什么,你的习惯和偏好 API密钥集合 — Claude,GPT,各种云服务的认证凭据 社交工程金矿 — 足够的上下文信息来冒充你 而且这只是&#34;顺手牵羊&#34;的结果.想象一下,当恶意软件作者开始专门为OpenClaw开发窃取模块–就像他们现在对Chrome和Telegram做的那样–情况会有多糟糕.
+更大的安全图景 这个事件只是冰山一角.最近围绕OpenClaw的安全问题密集爆发:
+恶意Skills供应链攻击:OpenSourceMalware团队发现了一种新型攻击手法–恶意Skills不再直接在SKILL.md中嵌入恶意代码(因为VirusTotal会扫描),而是把真正的恶意软件托管在仿冒的OpenClaw网站上,Skill本身只是个诱饵.
+大量实例暴露在公网:SecurityScorecard的STRIKE团队发现了数十万个暴露的OpenClaw实例,存在远程代码执行(RCE)风险.一个暴露的实例如果有邮件,API,云服务的权限,就是攻击者的完美跳板.
+nanobot WhatsApp劫持:Tenable发现了nanobot(一个受OpenClaw启发的轻量级AI助手,2万Star)的最高严重性漏洞CVE-2026-2577,可以完全劫持用户的WhatsApp会话.
+Moltbook隐私问题:专为AI Agent设计的社交平台Moltbook被发现无法删除账户和关联数据.一旦注册,你的数据就永远留在那里.
+OpenClaw官方的应对 好消息是OpenClaw团队没有装死.他们已经:
+与VirusTotal合作扫描ClawHub上的恶意Skills, 发布了官方威胁模型, 添加了配置审计功能, 建立了安全信任页面 trust.openclaw.ai 而且2月15日,OpenAI的Sam Altman宣布OpenClaw创始人Peter Steinberger加入OpenAI,OpenClaw将作为开源项目继续由基金会运营,OpenAI会持续支持.这至少意味着更多的安全投入.
+你现在应该做什么 如果你在用OpenClaw(或任何本地AI Agent),这些事情今天就该做:
+检查端口暴露 — 你的Gateway端口是否对外开放?ss -tlnp | grep openclaw 查一下. 轮换所有密钥 — Gateway令牌,API密钥,全部重新生成. 审计已安装的Skills — 你真的知道每个Skill在做什么吗?用 clawhub list 检查,可疑的直接删除. 启用系统级防护 — 杀毒软件更新到最新,特别注意Vidar等信息窃取类恶意软件. 限制Agent权限 — 不要给你的AI助手不需要的权限.邮件只读就够了,别给写权限. 备份和加密敏感文件 — .openclaw 目录里的东西,考虑额外加密. 我的看法 这件事其实一点都不意外.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-17 18:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>129 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to 你的AI助手正在被偷:OpenClaw成为信息窃取恶意软件的新目标" href="https://claudeai.best/posts/hunter-2026021718/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771268535182_cover.jpg" alt="AI桌面代理概念图">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Claude Cowork登陆Windows:Anthropic用10天造了一个要干掉SaaS的桌面AI Agent
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>上周,Anthropic把Claude Cowork正式带到了Windows.这意味着全球70%的桌面用户现在都能用上这个&#34;AI桌面代理&#34;了.
+听起来像又一个AI助手?不是.这东西从根本上改变了AI和你电脑的关系.
+不是聊天机器人,是真的在你电脑上干活 传统的AI助手,包括ChatGPT和之前的Claude,本质上都是&#34;你问我答&#34;–你描述问题,它给建议,然后你自己动手.
+Cowork不一样.你说&#34;把我的研究文件夹按主题整理,然后生成一份摘要文档&#34;,它会:
+读取你的文件 理解每个文件的内容 创建文件夹结构 移动文件 生成一份格式完美的摘要文档 全程你可以去泡杯咖啡.
+技术规格:硬核拆解 Cowork底层跑的是Claude Opus 4.6,带beta版100万token上下文窗口.这意味着它能一次性&#34;看到&#34;你项目里几十个文件的全部内容,而不是像其他AI那样只能处理一小段.
+核心能力:
+本地文件系统访问:直接操作你电脑上的文件,数据不需要上传到云端, 多步骤任务执行:拆解复杂任务为子任务,并行执行, 专业文档生成:Word,Excel,PowerPoint,PDF,带公式,样式,目录, MCP连接器:通过Model Context Protocol接入外部服务, 插件系统:1月30日上线的11个开源插件,覆盖销售,法务,财务,营销,数据分析,开发 价格:Pro $20/月,Max $100/月起,免费用户用不了.
+最疯狂的细节:这玩意是Claude Code用10天写出来的 Anthropic官方说法:Cowork的全部代码是Claude Code自己写的,团队从零到发布只用了大约10天.
+让一个AI写另一个AI产品,而且是面向消费者的桌面应用–这在软件工程史上算是一个标志性事件.它证明了AI写生产级代码的能力已经不是实验室玩具了.
+2850亿美元的恐慌 Bloomberg报道,Cowork发布后软件股出现了2850亿美元的集体抛售.投资者的逻辑很简单:如果一个AI代理能自主完成文件管理,数据分析,文档生成这些工作,那Notion,Asana,Airtable这类工具的护城河在哪?
+这不是杞人忧天.想想看:
+你用Notion整理笔记?Cowork直接在你本地文件系统上做, 你用Excel处理数据?Cowork帮你从原始数据到分析报告一步到位, 你用PowerPoint做演示?描述一下要求,Cowork生成一个带样式的.pptx SaaS的核心价值–帮你组织和处理信息–正在被AI Agent侵蚀.
+对比微软Copilot和Google Gemini 三者定位其实不同:
+Microsoft Copilot:嵌入Office 365,帮你在Word里写得更快,在Excel里分析更准.本质是增强现有工具.
+Google Gemini:深度集成Google Workspace,擅长搜索和Gmail.本质是连接Google生态.
+Claude Cowork:独立运行,直接操作你的文件系统,不依赖任何生态.本质是替代工作流本身.
+Copilot让你的Word更好用,Cowork让你不需要打开Word.
+插件生态是关键 1月30日上线的插件系统才是Cowork真正的杀手锏.11个官方开源插件涵盖了几乎所有白领工种:
+销售助手:CRM数据分析,客户跟进, 法律助手:合同审查,条款分析, 财务助手:报表生成,预算追踪, 开发助手:代码审查,文档生成 而且这些插件是开源的,意味着社区可以在此基础上扩展.按照OpenClaw的Skill生态发展速度来推算,Cowork的插件数量可能在几个月内爆发式增长.
+我的判断 Claude Cowork代表了AI从&#34;对话&#34;到&#34;行动&#34;的转变.这是2026年AI领域最重要的产品形态创新之一.
+但现阶段它更适合个人知识工作者–自由职业者,研究人员,内容创作者.企业级用户还需要等权限管理,审计日志等功能完善.
+如果你是付费Claude用户,现在就可以试试Cowork模式.打开Claude Desktop应用,切换到Cowork标签,给它一个复杂任务,看它怎么拆解和执行.
+这种&#34;描述目标→AI自主完成&#34;的工作方式,一旦用过就回不去了.
+Claude Cowork macOS版1月发布,Windows版2月10日上线.需要Claude Pro及以上订阅.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-17 03:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>70 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Claude Cowork登陆Windows:Anthropic用10天造了一个要干掉SaaS的桌面AI Agent" href="https://claudeai.best/posts/hunter-2026021703/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771264972936_cover.jpg" alt="Google WebMCP让AI Agent直接与网站结构化交互">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Google WebMCP:AI Agent不用再「看截图猜按钮」了,Chrome正式变身Agent操作系统
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>先说结论 Google刚发布了一个叫 WebMCP(Web Model Context Protocol) 的东西.一句话:网站可以直接告诉AI Agent自己有哪些功能,Agent不用再截图猜了.
+这事儿为什么重要?因为现在所有AI浏览器Agent的工作方式,本质上都是一个字–猜.
+现在的Agent有多蠢 你用过任何一个AI浏览器Agent就知道,流程大概是这样的:
+截一张网页截图 把截图扔给视觉模型 模型说「我看到一个蓝色按钮,坐标大概在(432, 178)」 点过去 按钮移动了5个像素?挂了. 这不是在「使用网站」,这是在「玩扫雷」.
+每一步都要传一张高分辨率截图给LLM,延迟高,成本贵,还经常出错.更别说遇到动态渲染,懒加载,弹窗–基本就是灾难.
+WebMCP怎么解决的 思路非常简单:别让AI猜了,让网站自己说.
+WebMCP本质上是一个标准协议,让网站把自己的功能以结构化数据暴露出来.AI Agent拿到的不再是一张图片,而是一份「菜单」–我有什么功能,接受什么参数,怎么调用.
+Google给了两条路:
+路径一:HTML声明式 最简单的方式.网页开发者在HTML标签里加两个属性:toolname 和 tooldescription.
+比如一个「订机票」表单,Chrome自动把它解析成一个结构化工具,AI Agent直接知道:这个工具叫「book_flight」,需要出发地,目的地,日期三个参数.
+零代码改造成本(好吧,几乎零).
+路径二:JavaScript命令式 复杂应用用这个.通过 navigator.modelContext.registerTool() 注册工具,定义名称,描述,JSON Schema输入.
+核心API就四个方法:
+registerTool(): 把功能暴露给AI, provideContext(): 给AI额外上下文(比如用户偏好), clearContext(): 清除共享数据,保护隐私 关键点:AI Agent的操作发生在用户当前session里.不需要重新登录,不需要绕过安全头.这解决了一个巨大的工程问题.
+性能提升有多大 从截图猜测到结构化交互,三个维度的提升:
+延迟:不用等截图上传&#43;视觉模型处理,直接拿JSON, 准确率:结构化数据交互,错误率接近0%(之前靠猜的时候嘛……你懂的), 成本:发送文本schema比发送高清截图便宜太多了 这不是10%,20%的优化,这是范式级别的切换.
+安全怎么搞 很多人第一反应:那网站不是被AI随便操作了?
+Google的设计是权限优先(permission-first).Chrome作为中间人,AI Agent不能直接执行操作.关键动作(比如「AI要帮你订这趟航班」)会弹出用户确认.
+说白了:Agent提议,人类拍板. 这个设计比现在那些偷偷摸摸截图操作的方案安全多了.
+我的判断 这是MCP生态的「浏览器版」 熟悉MCP(Model Context Protocol)的朋友应该已经看出来了–WebMCP就是把Anthropic搞的那套MCP理念搬到了浏览器里.
+不同的是,Google手里有Chrome.全球65%的浏览器市场份额.这意味着一旦WebMCP成为Chrome标准,所有网站都有动力去适配,因为不适配就意味着你的用户没法用AI Agent操作你的产品.
+这跟当年移动适配是一个逻辑:不做响应式设计?Google搜索排名给你降权.
+Agent框架要大洗牌 现在市面上一堆AI浏览器工具–Browser Use,Playwright AI,各种截图&#43;GPT-4V的方案–它们的核心技术路线(截图→视觉理解→模拟操作)可能在1-2年内变成过渡方案.
+当然不会一夜之间消失.WebMCP需要网站主动适配,过渡期里截图方案仍然有用.但方向已经很清楚了.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-17 02:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>94 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Google WebMCP:AI Agent不用再「看截图猜按钮」了,Chrome正式变身Agent操作系统" href="https://claudeai.best/posts/hunter-2026021702/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://claudeai.best/tags/ai-agent/page/2/">
+      «&nbsp;上一页&nbsp;
+    </a>
+    <a class="next" href="https://claudeai.best/tags/ai-agent/page/4/">下一页&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://claudeai.best/">AI 极客前沿</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

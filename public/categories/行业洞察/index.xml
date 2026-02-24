@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>行业洞察 on AI 极客前沿</title>
+    <link>https://claudeai.best/categories/%E8%A1%8C%E4%B8%9A%E6%B4%9E%E5%AF%9F/</link>
+    <description>Recent content in 行业洞察 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 20 Feb 2026 03:10:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/categories/%E8%A1%8C%E4%B8%9A%E6%B4%9E%E5%AF%9F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>93% 开发者用 AI,但生产力只提升 10%:数据背后的真相</title>
+      <link>https://claudeai.best/posts/hunter-2026022003/</link>
+      <pubDate>Fri, 20 Feb 2026 03:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022003/</guid>
+      <description>DX CTO Laura Tacho 发布研究:121,000 开发者数据,93% 用 AI,生产力只提升 10% 且停滞.AI 生成代码占生产环境 26.9%.组织问题是关键.</description>
+    </item>
+  </channel>
+</rss>

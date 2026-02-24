@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AI观察 on AI 极客前沿</title><link>https://claudeai.best/categories/ai%E8%A7%82%E5%AF%9F/</link><description>Recent content in AI观察 on AI 极客前沿</description><generator>Hugo -- 0.147.6</generator><language>zh-cn</language><lastBuildDate>Mon, 16 Feb 2026 15:00:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/categories/ai%E8%A7%82%E5%AF%9F/index.xml" rel="self" type="application/rss+xml"/><item><title>SaaS已死？2万亿美元的软件行业正在被AI吞噬</title><link>https://claudeai.best/posts/hunter-2026021615/</link><pubDate>Mon, 16 Feb 2026 15:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021615/</guid><description>Salesforce、ServiceNow、Oracle股价集体暴跌，SaaStr改名SaaStr AI，软件公司疯狂转型AI。SaaS模式真的要完了吗？我们用数据和逻辑拆解这场行业地震。</description></item><item><title>全球AI大佬齐聚新德里：印度AI峰会背后的野心与博弈</title><link>https://claudeai.best/posts/hunter-2026021614/</link><pubDate>Mon, 16 Feb 2026 14:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021614/</guid><description>印度AI Impact Summit 2026今天在新德里开幕，Altman、Pichai、Amodei、Bill Gates、LeCun齐聚，黄仁勋临时退出。全球南方首次举办AI峰会，印度想要什么？</description></item><item><title>8000万人看了这篇AI檄文，然后呢？</title><link>https://claudeai.best/posts/hunter-2026021612/</link><pubDate>Mon, 16 Feb 2026 12:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021612/</guid><description>HyperWrite CEO Matt Shumer的病毒式文章&amp;#39;Something Big Is Happening&amp;#39;获8000万阅读，把AI比作疫情前夜。我们拆解他说对了什么、漏掉了什么。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AI观察 on AI 极客前沿</title>
+    <link>https://claudeai.best/categories/ai%E8%A7%82%E5%AF%9F/</link>
+    <description>Recent content in AI观察 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 16 Feb 2026 15:00:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/categories/ai%E8%A7%82%E5%AF%9F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SaaS已死?2万亿美元的软件行业正在被AI吞噬</title>
+      <link>https://claudeai.best/posts/hunter-2026021615/</link>
+      <pubDate>Mon, 16 Feb 2026 15:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021615/</guid>
+      <description>Salesforce,ServiceNow,Oracle股价集体暴跌,SaaStr改名SaaStr AI,软件公司疯狂转型AI.SaaS模式真的要完了吗?我们用数据和逻辑拆解这场行业地震.</description>
+    </item>
+    <item>
+      <title>全球AI大佬齐聚新德里:印度AI峰会背后的野心与博弈</title>
+      <link>https://claudeai.best/posts/hunter-2026021614/</link>
+      <pubDate>Mon, 16 Feb 2026 14:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021614/</guid>
+      <description>印度AI Impact Summit 2026今天在新德里开幕,Altman,Pichai,Amodei,Bill Gates,LeCun齐聚,黄仁勋临时退出.全球南方首次举办AI峰会,印度想要什么?</description>
+    </item>
+    <item>
+      <title>8000万人看了这篇AI檄文,然后呢?</title>
+      <link>https://claudeai.best/posts/hunter-2026021612/</link>
+      <pubDate>Mon, 16 Feb 2026 12:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021612/</guid>
+      <description>HyperWrite CEO Matt Shumer的病毒式文章&amp;#39;Something Big Is Happening&amp;#39;获8000万阅读,把AI比作疫情前夜.我们拆解他说对了什么,漏掉了什么.</description>
+    </item>
+  </channel>
+</rss>

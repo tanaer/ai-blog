@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>开发者工具 | AI 极客前沿</title>
+<meta name="keywords" content="">
+<meta name="description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
+<meta name="author" content="AI 极客前沿">
+<link rel="canonical" href="https://claudeai.best/tags/%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://claudeai.best/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://claudeai.best/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://claudeai.best/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://claudeai.best/apple-touch-icon.png">
+<link rel="mask-icon" href="https://claudeai.best/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://claudeai.best/tags/%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7/index.xml" title="rss">
+<link rel="alternate" hreflang="zh" href="https://claudeai.best/tags/%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+
+<meta property="og:url" content="https://claudeai.best/tags/%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7/">
+  <meta property="og:site_name" content="AI 极客前沿">
+  <meta property="og:title" content="开发者工具">
+  <meta property="og:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="开发者工具">
+<meta name="twitter:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
+
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://claudeai.best/" accesskey="h" title="AI 极客前沿 (Alt + H)">AI 极客前沿</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://claudeai.best/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://t.me/TgTechMsgBot" title="联系">
+                    <span>联系</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://claudeai.best/">主页</a>&nbsp;»&nbsp;<a href="https://claudeai.best/tags/">Tags</a></div>
+  <h1>
+    开发者工具
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=1200&amp;h=630&amp;fit=crop" alt="Residue AI Git 连接">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Residue:AI 对话和 Git 提交连起来了
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>发现一个有意思的工具 Residue 把 AI agent 对话和 Git commit 关联起来.AI 帮你改了代码,但你找不到它做了什么?以后不会了.
+谁能用?解决什么问题? 场景:AI 帮你写了代码,提交了,但你不知道它改了啥,以后想回溯也找不到对话记录.
+Residue 做的事:
+跟踪:你跟 AI agent 聊天,Residue 默默记录会话 关联:git hook 把待处理的对话和 commit SHA 绑定 上传:git push 时话会上传到自托管 worker 浏览:在后台能看到每个 commit 对应的对话 工作流:
+你 g g 后 # 用 # ` # b # r # r 支 G 聊 ↓ i i 台 # # ` u e e 持 i A 天 t t 浏 C ` 2 n 3 s 4 s 各 t I 览 相 * l 怎 b . . i . i 种 H → c p 比 自 o 么 a a d d u 写 o u → 现 托 u 用 s 安 d 连 u 初 u A b 的 R m s 有 管 d h 装 d 接 e 始 e I : 代 e m h 每 方 * f 到 化 码 s i 个 案 * l C - l 仓 i a h , i t → 好 : a L g w o 库 n g t 终 d c 在 部 r I o g i e t 于 u → 会 o 哪 署 e @ r i t n p 能 e 话 m ? 自 r k n t s 追 h 上 m 己 R e e &amp; , : 溯 记 o 传 i 的 2 s r &amp; 配 / 了 录 o 到 t i 置 / . k 你 C 存 d r 好 g 的 对 l 对 u e 就 i 关 应 o 话 e s 能 t 联 w 的 u / i 用 h o d &#43; c d . u c r A f l u b o k I l S i e . m e a 3 c m r 对 r s o i 话 e A e m t P t / W I u b S o p u H r t t A k o &lt; t e k a t r e g o , n e n 数 . n s 据 t / 留 &gt; r 在 e 自 s 己 i 基 d 础 u 设 e 施 , * 可 搜 索 * * : 对 话 能 被 A I 搜 索 , 不 再 丢 失 上 下 文 , * 开 源 免 费 * * : 自 己 部 署 , 不 用 交 月 费 </p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-22 10:06:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>415 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Residue:AI 对话和 Git 提交连起来了" href="https://claudeai.best/posts/hunter-2026022210/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771654350724_cover.jpg" alt="Skill Check - Agent Skill Linter">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Skill Check:给 AI Agent 的 SKILL.md 文件加个 Linter,自动检查质量
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>刚发现一个有意思的 CLI 工具:Skill Check ️
+谁能用? 写 AI Agent 技能文件的.现在 Claude,Cursor,OpenAI Codex,Gemini CLI 都支持 SKILL.md 格式–把常用的指令和资源打包成技能,让 Agent 按需加载.
+问题是:技能文件写得好不好?frontmatter 缺字段?描述太短?链接断了?
+Skill Check 就是干这个的.
+用法:
+npx skill-check . 有什么特别的? 质量评分: 0-100 分,按 frontmatter,描述,正文,链接,格式加权 自动修复: --fix 安全修复格式和元数据问题 安全扫描: 可选集成 agent-scan,检测恶意代码 GitHub URL: 直接扫描远程仓库,不用 clone 多格式输出: text,JSON,SARIF,HTML,GitHub 注释 好用的场景 CI/CD 集成:PR 里自动检查技能质量, 技能市场维护:确保发布的技能符合规范, 团队协作:统一技能文件风格 自动修复 npx skill-check . –fix
+检查 GitHub 仓库 npx skill-check https://github.com/user/skills-repo
+生成 HTML 报告 npx skill-check . –format html
+GitHub: https://github.com/thedaviddias/skill-check
+时效性验证 HN 提交时间: 1 小时前(Show HN: Skill Check CLI for your skill.md) 搜索引擎最早时间: GitHub 仓库为新发布,HN 首发 1 小时前 结论: 最早时间 ≤ 2 小时,符合新鲜热点标准 </p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 14:12:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>95 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Skill Check:给 AI Agent 的 SKILL.md 文件加个 Linter,自动检查质量" href="https://claudeai.best/posts/hunter-2026022114/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771647084039_cover.jpg" alt="TabType - macOS 文本扩展">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">TabType:能自动识别项目的 macOS 文本扩展,;; 就能补全分支名
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>刚发现一个有意思的 macOS 工具:TabType ⌨️
+谁能用? 每天重复打相同东西的人:git 分支名,文件路径,npm 脚本,常用的回复模板…
+传统文本扩展工具(TextExpander,Espanso)的问题是:你得手动配置所有内容.
+TabType 的做法:自动发现项目上下文,零配置.
+用法:在任何应用里输入 ;;,弹出补全菜单.
+有什么特别的? 项目感知: 自动识别 git 分支,文件路径,npm 脚本,Makefile 目标,.env 变量 作用域搜索: ;;@git 查分支,;;@f 查文件,;;@npm 查脚本 上下文切换: 终端和浏览器显示不同补全,工作项目和副业项目不同补全 隐私优先: 无账号,无遥测,完全本地运行 配合 Claude Code 或 Cursor 用很香:输入 ;; 直接补全 skill 名称,文档文件路径.
+和 Espanso 比呢? Espanso:免费开源,但需要手动配置 YAML TabType:$9.99 一次买断,自动发现 &#43; 可自定义 我试了一下,确实零配置就能用.打开终端,;;@git 直接列出所有分支,选一个就插入.
+试试看 14 天免费试用,不用信用卡:https://tabtype.app
+买断价 $9.99,终身授权,支持 2 台 Mac.
+时效性验证 HN 提交时间: 48 分钟前(TabType – Universal text expansion for macOS) 搜索引擎最早时间: HN 首发 48 分钟前,网站为新发布产品 结论: 最早时间 ≤ 2 小时,符合新鲜热点标准 </p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 12:10:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>80 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to TabType:能自动识别项目的 macOS 文本扩展,;; 就能补全分支名" href="https://claudeai.best/posts/hunter-2026022112/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771622680685_cover.jpg" alt="Jsonh - JSON for Humans">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Jsonh:JSON 终于能写注释了,还能省略逗号和引号
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>一句话总结 Jsonh 让 JSON 终于像人类语言了–写注释,省略逗号,多行字符串,无引号键值,还能兼容现有的 JSON 和 JSON5.
+痛点:JSON 反人类的地方 每个写过配置文件的人都懂:
+{ &#34;name&#34;: &#34;my-app&#34;, &#34;version&#34;: &#34;1.0.0&#34;, &#34;description&#34;: &#34;A very long description that needs to be on one line...&#34; } 不能写注释(解释为什么这样配置), 最后一个属性不能加逗号(git diff 很丑), 多行字符串必须用 \n(阅读噩梦), 键必须加引号(手累) YAML 和 TOML 试图解决这些问题,但 YAML 的缩进地狱和 TOML 的嵌套语法又带来了新麻烦.
+Jsonh 的解法:JSON &#43; 人性化语法 Jsonh 是 JSON 的超集,意味着所有合法 JSON 都是合法 Jsonh.但它增加了这些救命特性:
+1. 三种注释方式 // 行注释 # 也是行注释 /* 块注释 */ name: &#34;my-app&#34; ### 2. 逗号可选 a: 1 b: 2 c: 3 // 不需要逗号! ### 3. 多行字符串 haiku: &#39;&#39;&#39; Let me die in spring beneath the cherry blossoms while the moon is full. &#39;&#39;&#39; ### 4. 无引号键值 keys: without quotes isn\&#39;t: { that: cool? ### 5. 兼容 JSON5 支持十六进制数字,转义换行等 JSON5 特性: hex: 0xDEADCAFE fraction: .5e3 bigNum: 1_000_000 // 下划线分隔 ## 与现有格式对比 | 注释 | | | | | | | | 尾随逗号 | | | | | | | | 省略逗号 | | | | | | | | 多行字符串 | | | | | | | | 无引号键 | | | | | | | | 十六进制 | | | | | | | | 兼容 JSON | | | | | | | | 兼容 JSON5 | | | | | | | Jsonh 的定位很明确:**HJSON v2**--吸取 HJSON 的教训,同时保持与 JSON/JSON5 的兼容性. ## 实际应用场景 ### 1. 项目配置文件 // 数据库配置 host: localhost port: 5432 // 生产环境覆盖 production: { host: prod.db.internal ssl: true ### 2. API 文档示例 // 用户对象示例 user: { id: 12345 name: &#34;张三&#34; bio: &#39;&#39;&#39; 全栈开发者, 热爱开源和技术分享. ### 3. 游戏配置 player: { health: 100 speed: 5.5 inventory: [ sword shield potion ] ## 快速开始 ### 在线体验 直接访问:https://jsonh-org.github.io/Jsonh ### 安装解析器 **Node.js:** ```bash npm install jsonh-ts **Python:** pip install JsonhPy **Rust:** cargo install jsonh_rs **C#:** dotnet add package JsonhCs # 安装 dotnet tool install --global JsonhCli # 转换 Jsonh 到 JSON jsonh convert config.jsonh -o config.json # 验证语法 jsonh validate config.jsonh ## 为什么不用 YAML/TOML? **YAML 的问题:** - 缩进敏感(少一个空格就报错) - 多行字符串语法复杂(`&gt;`, `|`, `&gt;-`, `&gt;&#43;` 傻傻分不清) - 甚至不是 JSON 的超集! **TOML 的问题:** - 嵌套对象语法反直觉(`[[table]]` 是什么鬼), 深层嵌套时配置分散在各处, 复杂对象还是得用 JSON 语法 **Jsonh 的优势:** - 基于 JSON 语法,学习成本为零, 层级结构清晰(不像 TOML 那样分散), 严格的语法规则(不像 YAML 那样容易出错) ## 写在最后 Jsonh 不是什么革命性发明,它只是**把开发者需要的实用特性整合到一个格式里**. 如果你厌倦了 JSON 的严格,YAML 的诡异,TOML 的分散,Jsonh 可能是你配置文件的新选择. **项目链接:** https://github.com/jsonh-org/Jsonh **在线演示:** https://jsonh-org.github.io/Jsonh ## 时效性验证 - **HN 提交时间**: 20 分钟前(Show HN: Jsonh (JSON for Humans)) - **搜索引擎最早时间**: GitHub 仓库已存在,HN 首发 20 分钟前 - **结论**: 最早时间 ≤ 2 小时,符合新鲜热点标准 </p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 05:23:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>379 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Jsonh:JSON 终于能写注释了,还能省略逗号和引号" href="https://claudeai.best/posts/hunter-2026022105/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771586901524_cover.jpg" alt="Stripe Minions AI 编码代理">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Stripe Minions:每周 1300&#43; PR 全由 AI 写代码,人类只管 Review
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Stripe 刚发了第二篇 Minions 博客,披露了一个数字:每周 1300&#43; 个 AI 写的 PR 被合并.
+不是 AI 辅助,是 AI 全程写代码,跑测试,修 bug,提 PR,人类只做最后的 Code Review.
+Minions 是什么? Stripe 的内部 AI 编码代理系统,特点:
+完全无人值守:给定任务后,从写代码到提 PR 全程自主, 运行在 devbox:和人类工程师用一样的云开发环境, 安全隔离:每个 devbox 独立,不接触敏感系统或客户数据, 可并行:同时跑多个 minion,像管理多个团队成员 能做什么? 修复 flaky 测试: 自动定位问题,修复,验证 实现功能: 根据需求文档写完整功能代码, 代码迁移: 批量重构,API 升级, 小型改进: 性能优化,代码清理 限制:大方向决策,系统架构设计,安全风险评估仍需人类.
+工作流程 任 # # # - # S - 结 # # # S - - # S # 当 - # - - S 务 ↓ 写 提 # # # # t 果 # # # t # t * # # t 分 代 交 # # 失 # r 云 发 # r A 人 # r 结 # A 判 [ [ r 配 码 关 * 败 i 端 现 数 * * * 对 i I 类 i 论 I 断 相 S I i P 键 1 固 2 测 3 p 开 对 据 每 代 应 开 1 p 擅 2 p * 3 代 关 t n p → → R 设 . 定 . 试 . e 发 周 码 用 发 . e 擅 长 . e * . 能 码 链 r d e 计 步 通 环 A 质 范 者 长 : : 写 是 接 i i m 跑 → 蓝 骤 重 常 复 的 境 I P 量 围 的 A 强 : 架 基 能 先 R 代 否 p a 展 i 测 图 * 试 只 用 , R * * 启 I 调 执 构 础 快 把 e 码 正 e 示 n 试 人 系 * 限 给 现 d 代 * * 示 : 行 , 设 速 开 v , 确 T 了 i 类 统 : 制 有 e 预 理 数 : : 不 m , 安 施 落 发 i 人 , 博 o 一 o → ( l 1 基 v 装 也 * 与 从 是 i 重 全 先 地 者 e 类 客 d 个 n R B i - 础 b 代 一 * 人 测 替 n 复 , 于 体 w 的 评 a 成 修 e l n 2 设 o 码 样 : 类 试 代 i , 边 m 验 价 估 P y 熟 在 v u t 施 x 和 好 1 工 修 , o 已 缘 A i 搞 比 值 长 a 公 b i e , 次 工 用 3 程 复 是 n 知 情 I n 好 就 期 r 报 司 d u e p 格 重 本 具 - 0 师 到 放 s 问 况 i , C 转 影 t 道 的 e g w r 式 试 来 , - 0 相 功 大 题 o A o 移 响 ] v ( i 化 机 是 * &#43; 同 能 写 n I d 到 , 2 ( A b 1 → n , 会 给 易 * ( 标 实 代 s i : ] h I o - t p , 人 于 为 全 准 现 码 , 自 n 把 ( t x 2 合 s u 类 替 人 部 , 是 然 g 控 h t 编 次 并 ) s 超 工 换 类 由 人 因 能 安 t p 码 中 重 h 过 程 和 设 类 为 复 更 全 t s 实 工 试 限 师 扩 计 A 做 用 重 边 p : 践 作 ) 等 制 用 展 的 I 决 d . 要 界 s / : 按 就 的 工 策 e : 不 固 交 : 具 写 . v w 是 定 给 , , b / w 追 流 人 恰 人 o s w 求 程 类 好 类 x t . 炫 执 , 也 r i 技 行 适 R 基 i n , , 合 e 础 p d 而 * v 设 e i 是 目 A i 施 . a 把 * 的 I e 早 d t 灵 * * w 就 e o A 活 * * ) 建 v d I 步 : . 好 / a 骤 控 了 b y 嵌 * 制 . l . 入 * 成 o i 现 : 本 g n 有 A , / / 工 I 防 m t 作 止 i e 流 自 无 n c , 主 限 i h 让 决 循 o n 它 定 环 n o 干 如 s l 脏 何 - o 活 解 s g 累 决 t y 活 问 r / , 题 i n 人 , p e 类 e w 专 s s 注 * - 于 平 s 真 衡 n t 正 * e o 重 * - r 要 : s y 的 减 h 事 少 s . 错 t t 每 误 - r 周 e i &#43; n p 1 d e 3 保 - - 0 持 t r 0 灵 o e 活 - v 个 性 e e n a P d l R - s c - 背 o a 后 d i , i - 是 n i 多 g s 年 - - 基 a w 础 g r 设 e i 施 n t 建 t i 设 s n 的 - g 结 p - 果 a a . r - t l - o 2 t ) - ( o 2 f 0 - 2 i 6 t . s 2 - . s 1 o 9 f ) t w a r e - c o d e - b u t - h u m a n s - s t i l l - r e v i e w - 2 8 7 1 3 6 5 - 2 0 2 6 - 0 2 - 2 0 ) </p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-20 19:22:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>5 分钟</span>&nbsp;·&nbsp;<span>1003 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Stripe Minions:每周 1300&#43; PR 全由 AI 写代码,人类只管 Review" href="https://claudeai.best/posts/hunter-2026022019/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771329764075_cover.jpg" alt="代码编辑器中的编程界面">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AGENTS.md到底有没有用?一篇论文引爆开发者社区大战
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>如果你最近在用 Claude Code,Codex 或者 OpenClaw 之类的 AI 编程工具,你大概率见过一个叫 AGENTS.md(或 CLAUDE.md)的文件.它的作用很简单:告诉 AI Agent 这个项目的规矩–用什么框架,怎么跑测试,有什么坑要避.
+听起来很合理对吧?
+然后一篇 arXiv 论文说:这玩意不但没用,还让 Agent 变蠢了.
+论文说了啥 这篇来自学术界的论文 “Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?” 做了一个挺严谨的实验:
+在 SWE-bench(业内标准的代码修复基准测试)上跑了多个 Agent &#43; 多个 LLM 的组合 分别测试了三种情况:没有上下文文件,LLM 自动生成的上下文文件,开发者手写的上下文文件, 结果:, LLM 生成的文件:任务成功率平均下降 3% 开发者手写的文件:平均提升 4%,但在不同模型上表现不一致(Sonnet 4.5 反而下降 2%) 所有情况下推理成本增加超过 20% 论文的结论是:上下文文件里的&#34;不必要要求&#34;让任务变难了,建议只写最小化的必要信息.
+HN 社区炸了 这篇论文在 Hacker News 上拿到 146 分,94 条评论,评论区基本是一边倒的&#34;你们测错了&#34;.
+最核心的反驳来自一位高赞评论者:
+“4% 的提升是巨大的!一个简单的 markdown 文件就能带来 4% 的改善,这说明它是必须有的.”
+他指出了论文的一个关键盲区:SWE-bench 测试的都是公开的 GitHub 项目,而这些项目里的 AGENTS.md 大多来自&#34;最近的小型 vibecoding 项目&#34;,质量参差不齐.真正需要 AGENTS.md 的场景是大型私有代码库–那些有复杂部署流水线,团队约定,历史债务的项目.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-17 20:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>197 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to AGENTS.md到底有没有用?一篇论文引爆开发者社区大战" href="https://claudeai.best/posts/hunter-2026021720/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://claudeai.best/">AI 极客前沿</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

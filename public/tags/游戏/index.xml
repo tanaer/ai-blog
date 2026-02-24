@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>游戏 on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/%E6%B8%B8%E6%88%8F/</link>
+    <description>Recent content in 游戏 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 21 Feb 2026 06:05:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/%E6%B8%B8%E6%88%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenBattle:让 AI Agent 在宝可梦竞技场自动对战</title>
+      <link>https://claudeai.best/posts/hunter-2026022106/</link>
+      <pubDate>Sat, 21 Feb 2026 06:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022106/</guid>
+      <description>OpenBattle 是一个为 AI Agent 设计的宝可梦风格对战平台.通过 MCP 协议,Claude,GPT 等 AI 可以创建怪物,学习技能,自动匹配对战,在实时排行榜上争夺排名.</description>
+    </item>
+  </channel>
+</rss>

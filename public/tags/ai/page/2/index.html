@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>AI | AI 极客前沿</title>
+<meta name="keywords" content="">
+<meta name="description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
+<meta name="author" content="AI 极客前沿">
+<link rel="canonical" href="https://claudeai.best/tags/ai/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://claudeai.best/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://claudeai.best/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://claudeai.best/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://claudeai.best/apple-touch-icon.png">
+<link rel="mask-icon" href="https://claudeai.best/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://claudeai.best/tags/ai/index.xml" title="rss">
+<link rel="alternate" hreflang="zh" href="https://claudeai.best/tags/ai/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+
+<meta property="og:url" content="https://claudeai.best/tags/ai/">
+  <meta property="og:site_name" content="AI 极客前沿">
+  <meta property="og:title" content="AI">
+  <meta property="og:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AI">
+<meta name="twitter:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
+
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://claudeai.best/" accesskey="h" title="AI 极客前沿 (Alt + H)">AI 极客前沿</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://claudeai.best/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://t.me/TgTechMsgBot" title="联系">
+                    <span>联系</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://claudeai.best/">主页</a>&nbsp;»&nbsp;<a href="https://claudeai.best/tags/">Tags</a></div>
+  <h1>
+    AI
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1200&amp;h=630&amp;fit=crop" alt="PRScope AI 代码审查">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">PRScope:AI 帮你看 PR,一分钟出结果
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>发现一个有意思的工具 PRScope 用 AI 自动审查 GitHub PR,30 秒配好,一分钟出报告.关键是 – 不用注册,你的 API key,你的模型.
+谁能用?解决什么问题? 场景:团队 PR 多,人工 review 来不及,问题溜进代码库.
+PRScope 干的事:
+读 PR diff,理解上下文, 用你选的 LLM 分析, 在 PR 下发一条结构化评论 支持的模型:
+OpenAI:GPT-4.1,o3,o4-mini, Anthropic:Claude Sonnet 4,3.7,3.5, Ollama:Llama 3.3,Qwen 2.5,DeepSeek(本地跑), 任何 OpenAI 兼容端点 四种审查模式:
+balanced: Bug,安全,性能,代码质量, security: 注入攻击,认证缺陷,数据泄露, performance: 内存泄漏,算法问题, strict: 全都要,风格命名文档都不放过 相比现有方案好在哪? 无锁定:没有账号系统,API key 存本地 .env 数据不离手:diff 只发给你选的 LLM,用 Ollama 的话全在本地 纯 Markdown:没有图片,没有外链,没有 JavaScript,任何 GitHub 套餐都能用 风险评级:低/中/高,一眼看出严重程度 还会&#34;夸人&#34; – 报告里有 Praise 部分,告诉你哪里写得好.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-22 06:05:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>95 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to PRScope:AI 帮你看 PR,一分钟出结果" href="https://claudeai.best/posts/hunter-2026022206/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1024&amp;q=80" alt="Vouch 信任管理系统示意图">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Vouch:Terraform 作者出手,专治 AI 垃圾 PR
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>️ 发现一个有意思的工具叫 Vouch
+开源项目现在被 AI 垃圾贡献淹没了.cURL 上周 16 小时收到 7 个 AI 生成的假漏洞报告,维护者心态崩了直接关掉 Bug 赏金计划.
+Mitchell Hashimoto(Vagrant,Terraform 作者)出手了,做了个 Vouch.
+谁能用?
+你的开源项目被 AI 垃圾 PR/Issue 淹没 想建立可信贡献者网络的项目 GitHub 项目一键集成,Actions 自动检查 怎么用?
+项目里加个 VOUCHED.td 文件 配置 GitHub Actions(check-issue,check-pr) 未背书的用户提交 PR?自动关闭 维护者在 Issue 里评论 vouch @用户名 就能背书 优势在哪?
+不是黑名单,是信任网络:一个项目背过的人,另一个项目也认, 维护者完全控制:只有 write 权限的人能背书, 透明公开:背书列表就是文本文件,随便查 开源以前靠&#34;先信任后验证&#34;,现在 AI 把这模型打破了.Vouch 换成&#34;先验证后信任&#34;,跟社区打招呼,介绍一下自己就能被背书,跟正常社交没两样.
+GitHub: https://github.com/mitchellh/vouch
+#开源 #GitHub #AI安全
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-22 04:10:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>59 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Vouch:Terraform 作者出手,专治 AI 垃圾 PR" href="https://claudeai.best/posts/hunter-2026022204/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771571292793_cover.jpg" alt="数学与逻辑">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Lean 作者谈 AI 时代的证明助手:选对基础比 AI 更重要
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>AI 现在能生成成千上万行经过验证的数学证明了.一个自然的问题是:AI 干活多了,证明助手的选择还重要吗?
+Leonardo de Moura(Lean 作者)的回答是:重要,而且比以前更重要.
+AI 放大你的基础 计算器没有让数学变得无关紧要.它让你跳过算术,专注于真正的问题.但计算器有用,是因为你带着数学框架来用它.表示方式很重要.
+同样的道理适用于 AI 和证明助手.一个语言模型如果目标系统有:
+依赖类型(dependent types), 类型类(typeclasses), 设计良好的 tactic 语言 它就能在正确的抽象层次表达数学思想.证明更短,结构更清晰,AI 能在更高层次工作.这是一个复利优势.
+三个 IMO 奖牌队伍,同一个选择 这不是理论假设,已经有证据了:
+AlphaProof(Google DeepMind):2024 IMO 银牌 Aristotle(Harmonic):2025 IMO 金牌 SEED Prover(ByteDance):2025 IMO 银牌 三个独立团队,解决同一个最高难度问题,都选择了有表达力类型,大型库,可编程生态的证明助手.
+还有 Axiom Math,Math Inc,Logical Intelligence 等公司也在同一个基础上构建.
+这不是巧合.
+可读规范:人类契约 证明助手保证证明正确,但正确性本身不够.总得有人读定理陈述,确认它捕获了预期的数学.
+这是一个人类契约,再多的自动化也无法消除.
+一个经过验证的证明,如果你看不懂定理陈述,对你没什么用.你需要信任的不仅是证明,还有规范(specification)本身.
+形式化陈述是信任锚.有人声称证明了一个重要结果,你需要检查实际的形式化陈述,而不是 AI 的摘要.可读的形式化规范不是便利功能,是信任的基础.
+自动化 = 游戏招式 一个有用的思维方式:每个 tactic 或决策过程是一个游戏招式.
+只有基本招式的系统:需要数百步才能完成例行推理 有强大自动化的系统:一步完成本来要几百步的工作 这对 AI 特别重要.用语言模型处理数百个底层证明步骤,就像用 LLM 算长算术表达式–能做,但远不如用对工具.强大的 tactic 让 AI 跳过程序性工作,专注于数学上有趣的决策.
+每一个你添加的强大 tactic,都是 AI 可以利用的新能力.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-20 15:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>104 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Lean 作者谈 AI 时代的证明助手:选对基础比 AI 更重要" href="https://claudeai.best/posts/hunter-2026022015/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771528024090_cover.jpg" alt="开发者生产力 - AI 影响研究">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">93% 开发者用 AI,但生产力只提升 10%:数据背后的真相
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>93% 的开发者用 AI,但生产力只提升了 10%.
+而且这个数字已经停滞了好几个季度.
+这是 DX CTO Laura Tacho 在 Pragmatic Summit 上发布的最新研究,基于 121,000 名开发者,450&#43; 公司 的数据.
+核心发现 AI 编码助手使用率: 93%(月活),75%(周活) 每周节省时间: 4 小时(与 2025 Q2 持平) 生产力提升: ~10%(停滞) AI 生成代码占比: 26.9%(生产环境) 重度用户 AI 代码占比: ~33% 入职时间变化: 减半(从第1个PR到第10个PR) 生产力为什么会停滞? Laura 的解释是:
+初始红利已吃完 - AI 第一次带来 10% 提升升后,边际效益递减 工具用于个人任务 - 大多数人只把 AI 用在单点编程任务 组织摩擦仍然存在 - 人和系统的限制没有解决 「如果组织本身有问题,AI 会暴露问题而不是解决问题.」
+两个极端 研究发现了明显的两极分化:
+高效组织: 客户事故减少 50%,AI 是「力量倍增器」 挣扎组织: 客户事故翻倍,AI 暴露现有缺陷 在高效组织,AI 帮助团队更快,更高质量地扩展.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-20 03:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>143 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to 93% 开发者用 AI,但生产力只提升 10%:数据背后的真相" href="https://claudeai.best/posts/hunter-2026022003/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771524416090_cover.jpg" alt="AI 编码实战 - Claude Code 案例分享">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">别信没用过 Claude Code 的 AI 批评者:三个真实案例
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Matt Shumer 发了篇文章说「大事正在发生」.AI 批评者们跳出来批评–说 AI 不能「真正思考」,不能「创造新东西」.
+作者的观点很简单:这些批评者没用过 Claude Code.
+如果他们用过,就不会说这些话了.
+三个真实案例 作者分享了三个他用 Claude Code 完成的真实任务.
+案例 1:AWS 成本分析 问题:计算扩展客户账号的边际成本.
+复杂度:
+AWS 成本有固定,阶梯式,变量式, 需要分析 3 个月账单数据, 需要关联使用量到具体操作 Claude Code 做的事:
+读取 AWS 账单工具 读取 Google BigQuery 使用数据 对每个变量成本做线性回归 输出成本分析报告(JSON &#43; 文字说明) 结果:1 小时完成,原本需要 1 天.
+案例 2:合规问卷自动化 问题:每签一个新客户,要填 100-200 题的合规问卷.
+痛点:
+问题类似但表述不同, 需要翻旧问卷找答案, 每份花几小时 创建「知识库」文件–所有问题的标准答案 自动映射新问题到知识库 自动填充,按置信度标色(绿/黄/红) 效果:
+第一份:需要构建知识库,费点劲 第二份:80% 问题已匹配 结果:几小时的任务变成几分钟.
+案例 3:Word 文件调试工具 问题:Docx 文件格式难搞,经常打不开.
+传统工作流:
+解压 docx 提取 XML 编辑 重打包 测试能否打开 重复…… Claude Code 做的事:用 Google AI Studio 做了一个专门的工具:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-20 02:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>133 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to 别信没用过 Claude Code 的 AI 批评者:三个真实案例" href="https://claudeai.best/posts/hunter-2026022002/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771520977140_cover.jpg" alt="企业 AI 数据 - Sentry 内部统计">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Sentry 公开内部数据:90天花$10万,100B tokens,Opus-4.5 占 40%
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>很少有公司愿意公开 AI 使用数据.Sentry 刚刚在 HN 上分享了他们的内部统计.
+90 天,$10 万,1000 亿 tokens.
+核心数据 花费: $100,000&#43; Token 使用量: 100B&#43; Top 模型: Opus-4.5(40%&#43; 使用量) 单人最大用量: 4.2B tokens, Agentic 工具周活用户: ~150, Commits 增长: &#43;79%, 员工采用率: 81%(302/372 人) 几个有意思的点 Opus-4.5 是主力 不是 GPT-5,不是 Gemini,是 Claude Opus-4.5 占了 40%&#43; 的使用量.
+Sentry 是一个以 Python/Django 起家的公司,他们的工程团队显然觉得 Opus-4.5 在编程任务上表现最好.
+单人 4.2B tokens 这是什么概念?
+Claude Code 默认 context window 是 200K tokens 4.2B tokens ≈ 21,000 次最大 context 请求 按每 1M tokens $15 计算,这个人 90 天花了 $63,000 这不是「偶尔用用 AI」,这是「重度依赖 AI 工作」.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-20 01:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>176 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Sentry 公开内部数据:90天花$10万,100B tokens,Opus-4.5 占 40%" href="https://claudeai.best/posts/hunter-2026022001/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771517072756_cover.jpg" alt="iOS 开发 QA - Crit 可视化反馈">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Crit:iOS 开发者的可视化 QA,让 AI 编码 Agent 看懂你的反馈
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>iOS 开发者怎么给 AI 编码 Agent 反馈 bug?
+截图 → 截好几个 → 解释问题 → AI 理解偏差 → 来回沟通……
+Crit 简化了这个流程:截图,打点,评论,导出给 AI 直接修.
+一句话介绍 Crit 是一个 CLI 工具,让你从 iOS 模拟器截图,在浏览器里添加反馈,然后把结构化数据交给任何编码 Agent.
+怎么用? 1. 安装 npm install -g crit-ios # 或者用 npx 不安装 npx crit-ios capture 然后运行 crit capture
+按 Enter 截图,按 q 退出 3. 添加反馈 crit serve
+浏览器打开,你可以:
+点击添加 pin(标注问题位置), 输入评论, 上传参考图片 保存后,告诉你的 Agent: “review .crit and fix each issue”
+Agent 会读取 .crit/ 目录下的 JSON 和标注截图,自动修复.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-20 00:05:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>197 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Crit:iOS 开发者的可视化 QA,让 AI 编码 Agent 看懂你的反馈" href="https://claudeai.best/posts/hunter-2026022000/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771513085763_cover.jpg" alt="AI 心理治疗 - OpenGnothia">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">OpenGnothia:开源 AI 心理治疗伴侣,你的隐私自己做主
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>心理健康 AI 应用大多是闭源的,数据要上传到别人的服务器.
+OpenGnothia 不一样:开源,本地存储,BYOK.你的隐私你自己做主.
+名字来源 “Gnôthi Seautón”(Γνῶθι Σεαυτόν)–德尔斐神谕上的铭文:认识你自己.
+核心功能 AI 治疗会话 实时流式响应, 会话计时器, 自动总结:识别主题,防御机制,洞察,家庭作业建议 日记 每日记录, 情绪标签, 可选 AI 分析,发现模式 梦境分析 记录梦境, AI 辅助解读, 可搜索的梦境日记 情绪追踪 每日心情,能量,睡眠质量, 日历视图, 可视化情绪趋势 呼吸练习 多种呼吸模式 管理压力和焦虑 治疗计划 结构化自我探索 渐进式练习和反思 6 种疗法流派 精神分析, 创始人=弗洛伊德, 焦点=潜意识,过去经历,关系模式 CBT, 创始人=Aaron Beck, 焦点=识别和改变思维模式 意义疗法, 创始人=Viktor Frankl, 焦点=在苦难中寻找意义 ACT, 创始人=Steven Hayes, 焦点=心理灵活性,价值观驱动 图式治疗, 创始人=Jeffrey Young, 焦点=识别早期适应不良图式 斯多葛主义, 创始人=马可·奥勒留, 焦点=内心平静,美德,理性
+每种流派塑造 AI 如何倾听,回应和引导你的会话.
+隐私设计 本地存储:SQLite,不上云, 无遥测:不收集任何数据, BYOK:用自己的 API Key, 生物识别锁:Touch ID(macOS), 密码保护 唯一的外部通信是你选择的 AI 提供商,用你自己的 Key.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 22:58:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>165 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to OpenGnothia:开源 AI 心理治疗伴侣,你的隐私自己做主" href="https://claudeai.best/posts/hunter-2026021922/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771509127499_cover.jpg" alt="MCP 配置工具 - MCP-wire">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">MCP-wire:一个命令搞定所有 AI 编码工具的 MCP 配置
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>你有 Claude Code,Codex,Gemini CLI……每个都要单独配置 MCP?
+MCP-wire 解决了这个问题:一个命令,配置所有工具.
+一句话介绍 MCP-wire 是一个 Go CLI,用一个 TUI 界面跨多个 AI 编码工具安装和管理 MCP 服务器.
+支持的工具 Claude Code (Anthropic), Codex CLI (OpenAI), Gemini CLI (Google), OpenCode (开源) 支持的 MCP 服务 内置精选服务 context7 - 文档查找 (OAuth) jira - Atlassian Rovo (OAuth) sentry - 错误监控 (OAuth) playwright - 浏览器自动化 MCP Registry (社区) 启用后可以访问数百个社区发布的 MCP 服务器:
+m 实 - # # ` # m # # m # m # m # m # m # # b b # g c m # 如 - - - 每 M # 只 ` n d t a u e 放 # M 每 M 1 2 3 如 * c 时 # # ` c c c c c c # # r r # i d a / # 果 个 C # 需 ` a e r u r n 到 # C 个 C . . . 果 参 p 搜 S # ` 运 p 5 安 p 安 p 卸 p 全 p 项 p # e e # t k b 你 C C G 工 P 创 ` m s a t l v P 工 P 你 考 - 索 e 怎 b 行 - . 装 - 装 - 载 - 局 - 目 - 安 w w m e i 为 同 l o e 具 - 添 建 y e c n h : : ` 我 具 - 在 来 w 安 n 么 交 a w w w w 安 w 级 w 装 H 从 c c n 什 时 a d m 都 w 加 一 a : r s : s 的 生 有 w * * * 多 源 i 装 t 用 互 s i 应 J i S i i 装 i 安 i o t i 源 l p b / 么 用 u e i 要 i 新 个 m i p &#34; [ e 看 态 自 i 统 抽 社 个 : r : r ? 式 h r 用 i r e r r ( r 装 r m a n 码 o - u m 需 多 d x n 配 r 服 l e p o o h ] r 法 正 己 r 一 象 区 H e y e r e n e e 所 e ( e e p s 构 n w i c 要 个 e i 置 e 务 Y x t r a t v 在 的 e 界 差 驱 A a T a t 有 仅 b t 建 e i l p 这 做 A a i t u t i 快 配 面 异 动 I c f 错 U i r i u 项 i 当 i r a a r d - 个 A C C M 抽 M m o : t p c 速 置 的 * * * k e 误 I M n y n n 目 n 前 n e n l h e w ? I o c L C 象 L p n h s e 发 文 思 * * * 编 e a 追 C s s i 可 s 项 s w d l t i d o I P 了 l : h : s 展 件 路 码 r t 踪 P t 到 t n 用 t 目 t r t r 编 e d , 这 文 e t / / , 位 是 - - - 工 u , a a s ) a ) a ( e m p e 码 e 做 配 些 件 &#34; t / ` 但 置 对 具 N r 到 l O l t l l m a c s 工 写 文 置 差 : E p m 配 和 的 一 用 支 之 e e G l p l a l l a g p : 具 代 r 档 文 异 x c 目 置 格 : 个 户 持 间 w i C e l c r - / : 码 e 件 , a p 录 管 式 不 官 切 s e t l j n s l j j O a w / v 格 你 m . , 理 , T 需 方 换 , n H a i C e i i S n i g i 式 只 p e 不 是 手 U 要 , a u u r o n s r r / d r i e 可 需 l x 用 个 动 I 关 R 这 G b b d a d t e a a L i e t w 能 要 e a 写 痛 维 心 e 个 i l e e r n i / h 还 选 m 点 护 搞 配 g 工 t e 集 y t n t u 不 择 M p G . 很 定 置 i 具 H 成 C - r - - u a b 一 服 C l o 容 所 文 s 能 u r , o t y t t x p . 样 务 P e 易 有 件 t 省 b e d a - a a ) c . &#34; . 代 出 工 格 r 不 g 数 e r t r r o &#43; c 码 错 具 式 y 少 M i 据 g a - g g m o . . 时 C s 库 e r t e e / 选 m 间 P t 连 t g a t t a 择 / . - r 接 e r n 工 m w y , c t g c c d 具 c i l e l l r , p r a o t a a e 它 &#34; e u p u u a 帮 * d e o d d g 你 e n p e e r 生 c e a 成 . o n n 正 几 - d c - - d 确 百 n e o s s i 的 个 o d c c / 配 - e o o m 置 p p p c . r e e p o - m u p w p s r i t e o r r j e e c t </p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 21:50:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>6 分钟</span>&nbsp;·&nbsp;<span>1072 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to MCP-wire:一个命令搞定所有 AI 编码工具的 MCP 配置" href="https://claudeai.best/posts/hunter-2026021921/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771505055152_cover.jpg" alt="网络安全漏洞 - SvelteSpill">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AI Agent 发现 SvelteKit 漏洞:你的登录信息可能被缓存泄露
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>AI Agent 发现了一个安全漏洞,影响所有 SvelteKit &#43; Vercel 部署的应用.
+攻击者可以读取其他用户的登录信息.Vercel 已经自动修复.
+漏洞概述 名称:SvelteSpill 类型:缓存欺骗(Cache Deception) 影响:SvelteKit 应用部署在 Vercel 上,使用 Cookie 认证的 严重程度:Critical(100/100) 状态:已修复
+漏洞原理 SvelteKit 的 Vercel adapter 有一个 __pathname 查询参数,可以覆盖任何请求的路径.
+// serverless.js const pathname = url.searchParams.get(&#39;__pathname&#39;); if (pathname) { url.pathname = pathname; // 直接覆盖,无校验 } 这本身只是一个「奇怪的功能」.但配合 Vercel 的缓存规则,就变成了漏洞.
+Vercel 对 /_app/immutable/ 路径下的所有 200 响应强制缓存: Cache-Control: public, immutable, max-age=31536000
+攻击步骤 攻击者构造恶意 URL: https://example.vercel.app/_app/immutable/x?__pathname=/api/session
+受害者(已登录)访问这个 URL
+SvelteKit 把请求重写到 /api/session,返回受害者的 session token
+Vercel 缓存这个响应(因为 URL 以 /_app/immutable/ 开头)
+攻击者访问同一个 URL(无需 Cookie),从缓存读取受害者的 token
+HTTP/2 200 OK X-Vercel-Cache: HIT {“token”:“1337”}
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 20:45:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>166 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to AI Agent 发现 SvelteKit 漏洞:你的登录信息可能被缓存泄露" href="https://claudeai.best/posts/hunter-2026021920/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://claudeai.best/tags/ai/">
+      «&nbsp;上一页&nbsp;
+    </a>
+    <a class="next" href="https://claudeai.best/tags/ai/page/3/">下一页&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://claudeai.best/">AI 极客前沿</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,45 +1,57 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>军事AI on AI 极客前沿</title><link>https://claudeai.best/tags/%E5%86%9B%E4%BA%8Bai/</link><description>Recent content in 军事AI on AI 极客前沿</description><generator>Hugo -- 0.147.6</generator><language>zh-cn</language><lastBuildDate>Mon, 16 Feb 2026 09:00:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/%E5%86%9B%E4%BA%8Bai/index.xml" rel="self" type="application/rss+xml"/><item><title>🔥 五角大楼怒了！威胁切断Anthropic合作——AI安全护栏该不该为军方让路？</title><link>https://claudeai.best/posts/hunter-2026021609/</link><pubDate>Mon, 16 Feb 2026 09:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021609/</guid><description>&lt;h2 id="-当ai安全遇上军方需求火药味十足">🤔 当AI安全遇上军方需求，火药味十足&lt;/h2>
-&lt;p>你可能想不到，全球最重视AI安全的公司Anthropic，正在跟全球最大的甲方——美国五角大楼，闹掰了。&lt;/p>
-&lt;p>事情是这样的：&lt;strong>五角大楼要求四家AI公司（OpenAI、Google、xAI、Anthropic）开放模型给军方&amp;quot;所有合法用途&amp;quot;&lt;/strong>，包括武器研发、情报收集和战场作战。其他三家不同程度地点了头，但Anthropic死活不松口。&lt;/p>
-&lt;p>五角大楼的态度很明确：&lt;strong>谈了好几个月了，Anthropic再不答应，就准备&amp;quot;分手&amp;quot;。&lt;/strong>&lt;/p>
-&lt;p>更讽刺的是，就在几天前，Anthropic的Claude模型刚刚通过与Palantir的合作，被用在了美军抓捕委内瑞拉前总统马杜罗的行动中。所以，不是完全不合作——只是Anthropic画了一条红线。&lt;/p>
-&lt;h2 id="-这件事为什么重要三个关键看点">🚀 这件事为什么重要？三个关键看点&lt;/h2>
-&lt;h3 id="1-anthropic的红线在哪">1️⃣ Anthropic的红线在哪？&lt;/h3>
-&lt;p>Anthropic表示，他们与政府的对话聚焦在&lt;strong>使用政策层面&lt;/strong>，核心底线是两条：&lt;/p>
-&lt;ul>
-&lt;li>❌ &lt;strong>完全自主武器&lt;/strong>（没有人类决策的杀人机器）&lt;/li>
-&lt;li>❌ &lt;strong>大规模国内监控&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;p>换句话说，Anthropic不是拒绝跟军方合作，而是拒绝&amp;quot;无条件开放&amp;quot;。这跟他们一贯的&amp;quot;负责任AI&amp;quot;定位一致。&lt;/p>
-&lt;h3 id="2-其他公司怎么选的">2️⃣ 其他公司怎么选的？&lt;/h3>
-&lt;p>据报道，四家公司的态度分化明显：&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>一家已经完全同意&lt;/strong>五角大楼的条件&lt;/li>
-&lt;li>&lt;strong>两家&amp;quot;比Anthropic灵活&amp;quot;&lt;/strong>，正在谈判&lt;/li>
-&lt;li>&lt;strong>Anthropic是唯一硬顶的&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;p>这意味着AI行业在&amp;quot;军用AI&amp;quot;这件事上，正在走向分裂。&lt;/p>
-&lt;h3 id="3-分类网络的推进">3️⃣ 分类网络的推进&lt;/h3>
-&lt;p>五角大楼还在推动这些公司将AI工具部署到&lt;strong>保密网络&lt;/strong>中，减少常规的安全限制。这不只是政策层面的事——是要把AI模型直接塞进军事机密系统。&lt;/p>
-&lt;h2 id="-普通人怎么理解这件事">🛠️ 普通人怎么理解这件事？&lt;/h2>
-&lt;p>&lt;strong>一张图看懂利益关系：&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>🏛️ &lt;strong>五角大楼&lt;/strong>：想要AI无限制服务于国防 → &amp;ldquo;我们是合法使用&amp;rdquo;&lt;/li>
-&lt;li>🤖 &lt;strong>Anthropic&lt;/strong>：坚持AI安全底线 → &amp;ldquo;合法≠没有限制&amp;rdquo;&lt;/li>
-&lt;li>💰 &lt;strong>商业现实&lt;/strong>：五角大楼是超级大客户，拒绝意味着丢掉巨额合同&lt;/li>
-&lt;li>⚖️ &lt;strong>行业影响&lt;/strong>：如果Anthropic让步，&amp;ldquo;负责任AI&amp;quot;就成了营销口号&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>对你的影响：&lt;/strong>&lt;/p>
-&lt;p>你可能觉得这跟自己没关系，但想想——如果AI公司为了拿军方合同，逐步放弃安全限制，这些模型的商用版本还会保持严格的安全标准吗？&lt;strong>军用AI的放松，往往会传导到民用AI。&lt;/strong>&lt;/p>
-&lt;h2 id="-极客点评">💡 极客点评&lt;/h2>
-&lt;p>说实话，我对Anthropic的态度是&lt;strong>又佩服又担心&lt;/strong>。&lt;/p>
-&lt;p>佩服的是，在真金白银面前坚持原则确实不容易。当你的竞争对手都在向甲方妥协的时候，你还能说&amp;quot;不&amp;rdquo;，这需要勇气。&lt;/p>
-&lt;p>担心的是，&lt;strong>商业现实很残酷&lt;/strong>。如果Anthropic因此被排除在政府合同之外，而OpenAI和Google吃下这块蛋糕，长期来看Anthropic的资金和算力竞争力会不会受影响？&amp;ldquo;负责任AI&amp;quot;需要钱来支撑研究。&lt;/p>
-&lt;p>更深层的问题是：&lt;strong>AI安全的边界到底该由谁来定？&lt;/strong> 是AI公司自己？政府？还是某种独立机构？目前看来，是谁有钱谁说了算。&lt;/p>
-&lt;p>&lt;strong>适合关注这件事的人：&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>关心AI安全和伦理的从业者&lt;/li>
-&lt;li>使用Claude/GPT等工具的开发者（政策变化可能影响API限制）&lt;/li>
-&lt;li>对AI军事化应用感兴趣的观察者&lt;/li>
-&lt;/ul>
-&lt;p>这场博弈还没结束，但不管结局如何，它已经暴露了一个根本矛盾：&lt;strong>当&amp;quot;让AI更安全&amp;quot;和&amp;quot;让AI更有用&amp;quot;发生冲突时，钱站在哪一边？&lt;/strong> 🤔&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>军事AI on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/%E5%86%9B%E4%BA%8Bai/</link>
+    <description>Recent content in 军事AI on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 16 Feb 2026 09:00:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/%E5%86%9B%E4%BA%8Bai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> 五角大楼怒了!威胁切断Anthropic合作--AI安全护栏该不该为军方让路?</title>
+      <link>https://claudeai.best/posts/hunter-2026021609/</link>
+      <pubDate>Mon, 16 Feb 2026 09:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021609/</guid>
+      <description>&lt;h2 id=&#34;当ai安全遇上军方需求火药味十足&#34;&gt;当AI安全遇上军方需求,火药味十足&lt;/h2&gt;
+&lt;p&gt;你可能想不到,全球最重视AI安全的公司Anthropic,正在跟全球最大的甲方&amp;ndash;美国五角大楼,闹掰了.&lt;/p&gt;
+&lt;p&gt;事情是这样的:&lt;strong&gt;五角大楼要求四家AI公司(OpenAI,Google,xAI,Anthropic)开放模型给军方&amp;quot;所有合法用途&amp;quot;&lt;/strong&gt;,包括武器研发,情报收集和战场作战.其他三家不同程度地点了头,但Anthropic死活不松口.&lt;/p&gt;
+&lt;p&gt;五角大楼的态度很明确:&lt;strong&gt;谈了好几个月了,Anthropic再不答应,就准备&amp;quot;分手&amp;quot;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;更讽刺的是,就在几天前,Anthropic的Claude模型刚刚通过与Palantir的合作,被用在了美军抓捕委内瑞拉前总统马杜罗的行动中.所以,不是完全不合作&amp;ndash;只是Anthropic画了一条红线.&lt;/p&gt;
+&lt;h2 id=&#34;这件事为什么重要三个关键看点&#34;&gt;这件事为什么重要?三个关键看点&lt;/h2&gt;
+&lt;h3 id=&#34;1-anthropic的红线在哪&#34;&gt;1️⃣ Anthropic的红线在哪?&lt;/h3&gt;
+&lt;p&gt;Anthropic表示,他们与政府的对话聚焦在&lt;strong&gt;使用政策层面&lt;/strong&gt;,核心底线是两条:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;完全自主武器&lt;/strong&gt;(没有人类决策的杀人机器)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;大规模国内监控&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;换句话说,Anthropic不是拒绝跟军方合作,而是拒绝&amp;quot;无条件开放&amp;quot;.这跟他们一贯的&amp;quot;负责任AI&amp;quot;定位一致.&lt;/p&gt;
+&lt;h3 id=&#34;2-其他公司怎么选的&#34;&gt;2️⃣ 其他公司怎么选的?&lt;/h3&gt;
+&lt;p&gt;据报道,四家公司的态度分化明显:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;一家已经完全同意&lt;/strong&gt;五角大楼的条件, &lt;strong&gt;两家&amp;quot;比Anthropic灵活&amp;quot;&lt;/strong&gt;,正在谈判, &lt;strong&gt;Anthropic是唯一硬顶的&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这意味着AI行业在&amp;quot;军用AI&amp;quot;这件事上,正在走向分裂.&lt;/p&gt;
+&lt;h3 id=&#34;3-分类网络的推进&#34;&gt;3️⃣ 分类网络的推进&lt;/h3&gt;
+&lt;p&gt;五角大楼还在推动这些公司将AI工具部署到&lt;strong&gt;保密网络&lt;/strong&gt;中,减少常规的安全限制.这不只是政策层面的事&amp;ndash;是要把AI模型直接塞进军事机密系统.&lt;/p&gt;
+&lt;h2 id=&#34;-普通人怎么理解这件事&#34;&gt;️ 普通人怎么理解这件事?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;一张图看懂利益关系:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;️ &lt;strong&gt;五角大楼&lt;/strong&gt;:想要AI无限制服务于国防 → &amp;ldquo;我们是合法使用&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Anthropic&lt;/strong&gt;:坚持AI安全底线 → &amp;ldquo;合法≠没有限制&amp;rdquo;, &lt;strong&gt;商业现实&lt;/strong&gt;:五角大楼是超级大客户,拒绝意味着丢掉巨额合同, ️ &lt;strong&gt;行业影响&lt;/strong&gt;:如果Anthropic让步,&amp;ldquo;负责任AI&amp;quot;就成了营销口号&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;对你的影响:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;你可能觉得这跟自己没关系,但想想&amp;ndash;如果AI公司为了拿军方合同,逐步放弃安全限制,这些模型的商用版本还会保持严格的安全标准吗?&lt;strong&gt;军用AI的放松,往往会传导到民用AI.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;极客点评&#34;&gt;极客点评&lt;/h2&gt;
+&lt;p&gt;说实话,我对Anthropic的态度是&lt;strong&gt;又佩服又担心&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;佩服的是,在真金白银面前坚持原则确实不容易.当你的竞争对手都在向甲方妥协的时候,你还能说&amp;quot;不&amp;rdquo;,这需要勇气.&lt;/p&gt;
+&lt;p&gt;担心的是,&lt;strong&gt;商业现实很残酷&lt;/strong&gt;.如果Anthropic因此被排除在政府合同之外,而OpenAI和Google吃下这块蛋糕,长期来看Anthropic的资金和算力竞争力会不会受影响?&amp;ldquo;负责任AI&amp;quot;需要钱来支撑研究.&lt;/p&gt;
+&lt;p&gt;更深层的问题是:&lt;strong&gt;AI安全的边界到底该由谁来定?&lt;/strong&gt; 是AI公司自己?政府?还是某种独立机构?目前看来,是谁有钱谁说了算.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;适合关注这件事的人:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;关心AI安全和伦理的从业者, 使用Claude/GPT等工具的开发者(政策变化可能影响API限制), 对AI军事化应用感兴趣的观察者&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这场博弈还没结束,但不管结局如何,它已经暴露了一个根本矛盾:&lt;strong&gt;当&amp;quot;让AI更安全&amp;quot;和&amp;quot;让AI更有用&amp;quot;发生冲突时,钱站在哪一边?&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

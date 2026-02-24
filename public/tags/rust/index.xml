@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Rust on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/rust/</link>
+    <description>Recent content in Rust on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 24 Feb 2026 14:18:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI 两周搞定浏览器引擎重写，这事儿有点意思</title>
+      <link>https://claudeai.best/posts/2026-02-24-ladybird-rust-ai/</link>
+      <pubDate>Tue, 24 Feb 2026 14:18:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/2026-02-24-ladybird-rust-ai/</guid>
+      <description>&lt;p&gt;说实话，看到这个标题我第一反应是&amp;quot;又来个 AI 吹牛逼的&amp;quot;。&lt;/p&gt;
+&lt;p&gt;结果仔细一看，还真不是那么回事。&lt;/p&gt;
+&lt;p&gt;Ladybird 这个独立浏览器项目，用 AI 辅助把 JavaScript 引擎从 C++ 翻译成了 Rust。不是让 AI 自动写代码，是人工主导翻译——人类决定翻什么、怎么翻，AI 负责干脏活累活。&lt;/p&gt;
+&lt;p&gt;效果呢？25000 行 Rust 代码，2 周搞定。同样的工作人工做估计得几个月。&lt;/p&gt;
+&lt;p&gt;关键是没有翻车。test262 的 52898 个测试，Ladybird 自己的 12461 个回归测试，全部通过，零错误。还做了字节级验证，确保 Rust 和 C++ 编译器输出完全一致。&lt;/p&gt;
+&lt;p&gt;这事儿最有意思的不是&amp;quot;AI 能写代码&amp;quot;，而是展示了一种新的技术债清理方式。传统重写基本等于重做一遍，现在可以让人机协作：人类把控架构和方向，AI 处理机械翻译。&lt;/p&gt;
+&lt;p&gt;当然，代码还带着浓浓的&amp;quot;C++ 味儿&amp;quot;，不是地道的 Rust。但人家说了，第一要务是兼容性，后续慢慢优化。这思路挺务实的。&lt;/p&gt;
+&lt;p&gt;独立浏览器本来就难，选择 Rust 本身就说明对安全性的重视。现在再加上 AI 辅助，感觉这个项目可以走得更远了。&lt;/p&gt;
+&lt;p&gt;说实话，这种&amp;quot;人工 + AI&amp;quot;的协作模式，比那些&amp;quot;AI 自动生成一切&amp;quot;的噱头实在多了。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Grove:多 Agent 并行写代码,提前知道谁会冲突</title>
+      <link>https://claudeai.best/posts/hunter-2026022205/</link>
+      <pubDate>Sun, 22 Feb 2026 05:06:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022205/</guid>
+      <description>Grove 监控 git worktrees,在合并前检测文件/函数/依赖冲突.支持 Claude Code hook,让 Agent 写代码时自动避开冲突.Rust 写的,单二进制.</description>
+    </item>
+    <item>
+      <title>Aegis.rs:Rust 写的 LLM 安全代理,1ms 延迟零代码改动</title>
+      <link>https://claudeai.best/posts/hunter-2026021919/</link>
+      <pubDate>Thu, 19 Feb 2026 19:40:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021919/</guid>
+      <description>Aegis.rs 是首个开源 Rust LLM 安全代理,透明拦截请求,150&#43; 启发式规则 &#43; AI 审判,零代码改动,本地运行,1ms 延迟.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>决策 on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/%E5%86%B3%E7%AD%96/</link>
+    <description>Recent content in 决策 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 22 Feb 2026 20:08:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/%E5%86%B3%E7%AD%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Persona AI:不跟你聊天,直接告诉你 YES 还是 NO</title>
+      <link>https://claudeai.best/posts/hunter-2026022220/</link>
+      <pubDate>Sun, 22 Feb 2026 20:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022220/</guid>
+      <description>Persona AI 不是聊天机器人.输入你的困境,它给你一个二元判决:YES 或 NO,带置信度和 Kill Signal.</description>
+    </item>
+  </channel>
+</rss>

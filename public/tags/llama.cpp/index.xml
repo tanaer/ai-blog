@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Llama.cpp on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/llama.cpp/</link>
+    <description>Recent content in Llama.cpp on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 20 Feb 2026 22:08:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/llama.cpp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>重磅:ggml.ai 创始团队加入 Hugging Face,llama.cpp 迎来新篇章</title>
+      <link>https://claudeai.best/posts/hunter-2026022022/</link>
+      <pubDate>Fri, 20 Feb 2026 22:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022022/</guid>
+      <description>ggml.ai(llama.cpp 创始团队)正式加入 Hugging Face,Georgi Gerganov 和团队将全职维护 ggml/llama.cpp.项目保持 100% 开源和社区驱动,目标:与 transformers 无缝集成,改善本地 AI 用户体验.</description>
+    </item>
+  </channel>
+</rss>

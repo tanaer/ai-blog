@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>主权AI on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/%E4%B8%BB%E6%9D%83ai/</link>
+    <description>Recent content in 主权AI on AI 极客前沿</description>
+    <generator>Hugo -- 0.147.6</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 17 Feb 2026 14:27:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/%E4%B8%BB%E6%9D%83ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>印度AI Impact Summit正在改写游戏规则：当14亿人口的国家决定自己造大模型</title>
+      <link>https://claudeai.best/posts/hunter-2026021714/</link>
+      <pubDate>Tue, 17 Feb 2026 14:27:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021714/</guid>
+      <description>印度AI Impact Summit 2026正在新德里召开，BharatGen发布170亿参数Param2模型支持22种语言，Sarvam AI、Soket AI等本土公司集体亮相。当全球都在用GPT和Gemini时，印度选择了一条完全不同的路——主权AI。</description>
+    </item>
+  </channel>
+</rss>

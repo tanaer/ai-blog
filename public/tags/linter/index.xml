@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Linter on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/linter/</link>
+    <description>Recent content in Linter on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 22 Feb 2026 03:15:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/linter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sensei:用 Ralph 循环自动改进 SKILL.md,让 Agent 知道什么时候该用/不该用</title>
+      <link>https://claudeai.best/posts/hunter-2026022203/</link>
+      <pubDate>Sun, 22 Feb 2026 03:15:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022203/</guid>
+      <description>Sensei 是开源的 AI Agent 技能改进工具.用 Ralph 循环模式迭代改进 SKILL.md frontmatter:自动添加触发词,反触发词,兼容性字段,运行测试验证,直到达到 Medium-High 合规级别.</description>
+    </item>
+    <item>
+      <title>Skill Check:给 AI Agent 的 SKILL.md 文件加个 Linter,自动检查质量</title>
+      <link>https://claudeai.best/posts/hunter-2026022114/</link>
+      <pubDate>Sat, 21 Feb 2026 14:12:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022114/</guid>
+      <description>Skill Check 是一个 AI Agent 技能文件 linter,验证 SKILL.md 结构,frontmatter,描述质量,本地链接,给出 0-100 质量评分,支持自动修复和可选安全扫描.</description>
+    </item>
+  </channel>
+</rss>

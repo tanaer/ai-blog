@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Stripe Minions:每周 1300&#43; PR 全由 AI 写代码,人类只管 Review | AI 极客前沿</title>
+<meta name="keywords" content="Stripe, AI Agent, 编码代理, 开发者工具">
+<meta name="description" content="Stripe 公布内部 AI 编码代理 Minions 细节:每周自动生成并合并 1300&#43; 个 PR,完全无人干预地写代码,跑测试,修复问题.人类只负责最终 Review,AI 负责从需求到 PR 的全流程.">
+<meta name="author" content="AI 极客前沿">
+<link rel="canonical" href="https://claudeai.best/posts/hunter-2026022019/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://claudeai.best/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://claudeai.best/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://claudeai.best/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://claudeai.best/apple-touch-icon.png">
+<link rel="mask-icon" href="https://claudeai.best/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="https://claudeai.best/posts/hunter-2026022019/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Stripe Minions:每周 1300\u002b PR 全由 AI 写代码,人类只管 Review",
+  "description": "Stripe 公布内部 AI 编码代理 Minions 细节:每周自动生成并合并 1300\u002b 个 PR,完全无人干预地写代码,跑测试,修复问题.人类只负责最终 Review,AI 负责从需求到 PR 的全流程.",
+  "datePublished": "2026-02-20T19:22:00\u002b08:00",
+  "dateModified": "2026-02-20T19:22:00\u002b08:00",
+  "author": {
+    "@type": "Person",
+    "name": "AI 极客前沿"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AI 极客前沿"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https:\/\/claudeai.best\/posts\/hunter-2026022019\/"
+  },
+  "image": "https:\/\/cfpic.890214.net\/file\/1771586901524_cover.jpg"
+}
+</script>
+
+
+<meta property="og:url" content="https://claudeai.best/posts/hunter-2026022019/">
+  <meta property="og:site_name" content="AI 极客前沿">
+  <meta property="og:title" content="Stripe Minions:每周 1300&#43; PR 全由 AI 写代码,人类只管 Review">
+  <meta property="og:description" content="Stripe 公布内部 AI 编码代理 Minions 细节:每周自动生成并合并 1300&#43; 个 PR,完全无人干预地写代码,跑测试,修复问题.人类只负责最终 Review,AI 负责从需求到 PR 的全流程.">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-02-20T19:22:00+08:00">
+    <meta property="article:modified_time" content="2026-02-20T19:22:00+08:00">
+    <meta property="article:tag" content="Stripe">
+    <meta property="article:tag" content="AI Agent">
+    <meta property="article:tag" content="编码代理">
+    <meta property="article:tag" content="开发者工具">
+    <meta property="og:image" content="https://cfpic.890214.net/file/1771586901524_cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cfpic.890214.net/file/1771586901524_cover.jpg">
+<meta name="twitter:title" content="Stripe Minions:每周 1300&#43; PR 全由 AI 写代码,人类只管 Review">
+<meta name="twitter:description" content="Stripe 公布内部 AI 编码代理 Minions 细节:每周自动生成并合并 1300&#43; 个 PR,完全无人干预地写代码,跑测试,修复问题.人类只负责最终 Review,AI 负责从需求到 PR 的全流程.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://claudeai.best/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Stripe Minions:每周 1300+ PR 全由 AI 写代码,人类只管 Review",
+      "item": "https://claudeai.best/posts/hunter-2026022019/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Stripe Minions:每周 1300+ PR 全由 AI 写代码,人类只管 Review",
+  "name": "Stripe Minions:每周 1300\u002b PR 全由 AI 写代码,人类只管 Review",
+  "description": "Stripe 公布内部 AI 编码代理 Minions 细节:每周自动生成并合并 1300+ 个 PR,完全无人干预地写代码,跑测试,修复问题.人类只负责最终 Review,AI 负责从需求到 PR 的全流程.",
+  "keywords": [
+    "Stripe", "AI Agent", "编码代理", "开发者工具"
+  ],
+  "articleBody": "Stripe 刚发了第二篇 Minions 博客,披露了一个数字:每周 1300+ 个 AI 写的 PR 被合并.\n不是 AI 辅助,是 AI 全程写代码,跑测试,修 bug,提 PR,人类只做最后的 Code Review.\nMinions 是什么? Stripe 的内部 AI 编码代理系统,特点:\n完全无人值守:给定任务后,从写代码到提 PR 全程自主, 运行在 devbox:和人类工程师用一样的云开发环境, 安全隔离:每个 devbox 独立,不接触敏感系统或客户数据, 可并行:同时跑多个 minion,像管理多个团队成员 能做什么? 修复 flaky 测试: 自动定位问题,修复,验证 实现功能: 根据需求文档写完整功能代码, 代码迁移: 批量重构,API 升级, 小型改进: 性能优化,代码清理 限制:大方向决策,系统架构设计,安全风险评估仍需人类.\n工作流程 任 # # # - # S - 结 # # # S - - # S # 当 - # - - S 务 ↓ 写 提 # # # # t 果 # # # t # t * # # t 分 代 交 # # 失 # r 云 发 # r A 人 # r 结 # A 判 [ [ r 配 码 关 * 败 i 端 现 数 * * * 对 i I 类 i 论 I 断 相 S I i P 键 1 固 2 测 3 p 开 对 据 每 代 应 开 1 p 擅 2 p * 3 代 关 t n p → → R 设 . 定 . 试 . e 发 周 码 用 发 . e 擅 长 . e * . 能 码 链 r d e 计 步 通 环 A 质 范 者 长 : : 写 是 接 i i m 跑 → 蓝 骤 重 常 复 的 境 I P 量 围 的 A 强 : 架 基 能 先 R 代 否 p a 展 i 测 图 * 试 只 用 , R * * 启 I 调 执 构 础 快 把 e 码 正 e 示 n 试 人 系 * 限 给 现 d 代 * * 示 : 行 , 设 速 开 v , 确 T 了 i 类 统 : 制 有 e 预 理 数 : : 不 m , 安 施 落 发 i 人 , 博 o 一 o → ( l 1 基 v 装 也 * 与 从 是 i 重 全 先 地 者 e 类 客 d 个 n R B i - 础 b 代 一 * 人 测 替 n 复 , 于 体 w 的 评 a 成 修 e l n 2 设 o 码 样 : 类 试 代 i , 边 m 验 价 估 P y 熟 在 v u t 施 x 和 好 1 工 修 , o 已 缘 A i 搞 比 值 长 a 公 b i e , 次 工 用 3 程 复 是 n 知 情 I n 好 就 期 r 报 司 d u e p 格 重 本 具 - 0 师 到 放 s 问 况 i , C 转 影 t 道 的 e g w r 式 试 来 , - 0 相 功 大 题 o A o 移 响 ] v ( i 化 机 是 * + 同 能 写 n I d 到 , 2 ( A b 1 → n , 会 给 易 * ( 标 实 代 s i : ] h I o - t p , 人 于 为 全 准 现 码 , 自 n 把 ( t x 2 合 s u 类 替 人 部 , 是 然 g 控 h t 编 次 并 ) s 超 工 换 类 由 人 因 能 安 t p 码 中 重 h 过 程 和 设 类 为 复 更 全 t s 实 工 试 限 师 扩 计 A 做 用 重 边 p : 践 作 ) 等 制 用 展 的 I 决 d . 要 界 s / : 按 就 的 工 策 e : 不 固 交 : 具 写 . v w 是 定 给 , , b / w 追 流 人 恰 人 o s w 求 程 类 好 类 x t . 炫 执 , 也 r i 技 行 适 R 基 i n , , 合 e 础 p d 而 * v 设 e i 是 目 A i 施 . a 把 * 的 I e 早 d t 灵 * * w 就 e o A 活 * * ) 建 v d I 步 : . 好 / a 骤 控 了 b y 嵌 * 制 . l . 入 * 成 o i 现 : 本 g n 有 A , / / 工 I 防 m t 作 止 i e 流 自 无 n c , 主 限 i h 让 决 循 o n 它 定 环 n o 干 如 s l 脏 何 - o 活 解 s g 累 决 t y 活 问 r / , 题 i n 人 , p e 类 e w 专 s s 注 * - 于 平 s 真 衡 n t 正 * e o 重 * - r 要 : s y 的 减 h 事 少 s . 错 t t 每 误 - r 周 e i + n p 1 d e 3 保 - - 0 持 t r 0 灵 o e 活 - v 个 性 e e n a P d l R - s c - 背 o a 后 d i , i - 是 n i 多 g s 年 - - 基 a w 础 g r 设 e i 施 n t 建 t i 设 s n 的 - g 结 p - 果 a a . r - t l - o 2 t ) - ( o 2 f 0 - 2 i 6 t . s 2 - . s 1 o 9 f ) t w a r e - c o d e - b u t - h u m a n s - s t i l l - r e v i e w - 2 8 7 1 3 6 5 - 2 0 2 6 - 0 2 - 2 0 ) ",
+  "wordCount" : "1003",
+  "inLanguage": "zh",
+  "image":"https://cfpic.890214.net/file/1771586901524_cover.jpg","datePublished": "2026-02-20T19:22:00+08:00",
+  "dateModified": "2026-02-20T19:22:00+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "AI 极客前沿"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://claudeai.best/posts/hunter-2026022019/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AI 极客前沿",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://claudeai.best/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://claudeai.best/" accesskey="h" title="AI 极客前沿 (Alt + H)">AI 极客前沿</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://claudeai.best/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://t.me/TgTechMsgBot" title="联系">
+                    <span>联系</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://claudeai.best/">主页</a>&nbsp;»&nbsp;<a href="https://claudeai.best/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Stripe Minions:每周 1300&#43; PR 全由 AI 写代码,人类只管 Review
+    </h1>
+    <div class="post-description">
+      Stripe 公布内部 AI 编码代理 Minions 细节:每周自动生成并合并 1300&#43; 个 PR,完全无人干预地写代码,跑测试,修复问题.人类只负责最终 Review,AI 负责从需求到 PR 的全流程.
+    </div>
+    <div class="post-meta"><span title='2026-02-20 19:22:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>5 分钟</span>&nbsp;·&nbsp;<span>1003 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span>
+
+</div>
+  </header> 
+<figure class="entry-cover">
+        <img loading="eager" src="https://cfpic.890214.net/file/1771586901524_cover.jpg" alt="Stripe Minions AI 编码代理">
+        
+</figure>
+
+  
+  <div style="margin: 0 0 24px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08);">
+    <div style="display: flex; gap: 8px; padding: 14px 16px; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); flex-wrap: wrap; align-items: center;">
+      <span style="color: #fff; font-weight: 700; font-size: 14px; margin-right: 4px;">⚡ 快捷操作</span>
+      <button onclick="copyFullArticle()" id="copy-full-btn" style="padding: 7px 16px; background: #16a34a; color: white; border: none; border-radius: 20px; cursor: pointer; font-size: 13px; font-weight: 600;">📄 复制全文</button>
+      <button onclick="copyFullWithLink()" id="copy-full-link-btn" style="padding: 7px 16px; background: #7c3aed; color: white; border: none; border-radius: 20px; cursor: pointer; font-size: 13px; font-weight: 600;">🔗 全文+链接</button>
+      <button onclick="copyTweet()" id="copy-tweet-btn" style="padding: 7px 16px; background: #1DA1F2; color: white; border: none; border-radius: 20px; cursor: pointer; font-size: 13px; font-weight: 600;">🐦 复制推文</button>
+      <a id="post-to-x-link" href="" target="_blank" style="padding: 7px 16px; background: #000; color: white; border-radius: 20px; font-size: 13px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center;">🚀 发到 X</a>
+    </div>
+    <div id="copy-status" style="display:none; padding: 8px 16px; background: #ecfdf5; color: #16a34a; font-size: 13px; font-weight: 600;"></div>
+  </div>
+
+  
+  <textarea id="x-tweet-text" style="position:absolute;left:-9999px;">🔥 Stripe Minions:每周 1300&#43; PR 全由 AI 写代码,人类只管 Review
+
+📖 全文：https://claudeai.best/posts/hunter-2026022019/
+
+#AI #Tech #OpenSource</textarea>
+  <div class="post-content" id="article-content"><p>Stripe 刚发了第二篇 Minions 博客,披露了一个数字:<strong>每周 1300+ 个 AI 写的 PR 被合并</strong>.</p>
+<p>不是 AI 辅助,是 <strong>AI 全程写代码,跑测试,修 bug,提 PR</strong>,人类只做最后的 Code Review.</p>
+<h2 id="minions-是什么">Minions 是什么?<a hidden class="anchor" aria-hidden="true" href="#minions-是什么">#</a></h2>
+<p>Stripe 的内部 AI 编码代理系统,特点:</p>
+<ul>
+<li><strong>完全无人值守</strong>:给定任务后,从写代码到提 PR 全程自主, <strong>运行在 devbox</strong>:和人类工程师用一样的云开发环境, <strong>安全隔离</strong>:每个 devbox 独立,不接触敏感系统或客户数据, <strong>可并行</strong>:同时跑多个 minion,像管理多个团队成员</li>
+</ul>
+<h2 id="能做什么">能做什么?<a hidden class="anchor" aria-hidden="true" href="#能做什么">#</a></h2>
+<ul>
+<li>修复 flaky 测试: 自动定位问题,修复,验证</li>
+<li>实现功能: 根据需求文档写完整功能代码, 代码迁移: 批量重构,API 升级, 小型改进: 性能优化,代码清理</li>
+</ul>
+<p><strong>限制</strong>:大方向决策,系统架构设计,安全风险评估仍需人类.</p>
+<h2 id="工作流程">工作流程<a hidden class="anchor" aria-hidden="true" href="#工作流程">#</a></h2>
+
+
+
+<div class="goat svg-container ">
+  
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      font-family="Menlo,Lucida Console,monospace"
+      
+        viewBox="0 0 1336 713"
+      >
+      <g transform='translate(8,16)'>
+<path d='M 0,128 L 8,128' fill='none' stroke='currentColor'></path>
+<path d='M 0,320 L 8,320' fill='none' stroke='currentColor'></path>
+<path d='M 0,336 L 8,336' fill='none' stroke='currentColor'></path>
+<path d='M 0,352 L 8,352' fill='none' stroke='currentColor'></path>
+<path d='M 208,656 L 216,640' fill='none' stroke='currentColor'></path>
+<path d='M 480,656 L 488,640' fill='none' stroke='currentColor'></path>
+<path d='M 528,656 L 536,640' fill='none' stroke='currentColor'></path>
+<circle cx='0' cy='528' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='16' cy='128' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='16' cy='320' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='16' cy='336' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='16' cy='352' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='264' cy='176' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='280' cy='128' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='472' cy='128' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='488' cy='640' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='536' cy='640' r='6' stroke='currentColor' fill='#fff'></circle>
+<text text-anchor='middle' x='0' y='4' fill='currentColor' style='font-size:1em'>任</text>
+<text text-anchor='middle' x='0' y='84' fill='currentColor' style='font-size:1em'>#</text>
+<text text-anchor='middle' x='0' y='116' fill='currentColor' style='font-size:1em'>#</text>
+<text text-anchor='middle' x='0' y='164' fill='currentColor' style='font-size:1em'>#</text>
+<text text-anchor='middle' x='0' y='180' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='0' y='212' fill='currentColor' style='font-size:1em'>#</text>
+<text text-anchor='middle' x='0' y='228' fill='currentColor' style='font-size:1em'>S</text>
+<text text-anchor='middle' x='0' y='244' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='0' y='276' fill='currentColor' style='font-size:1em'>结</text>
+<text text-anchor='middle' x='0' y='308' fill='currentColor' style='font-size:1em'>#</text>
+<text text-anchor='middle' x='0' y='388' fill='currentColor' style='font-size:1em'>#</text>
+<text text-anchor='middle' x='0' y='420' fill='currentColor' style='font-size:1em'>#</text>
+<text text-anchor='middle' x='0' y='436' fill='currentColor' style='font-size:1em'>S</text>
+<text text-anchor='middle' x='0' y='452' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='0' y='468' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='0' y='500' fill='currentColor' style='font-size:1em'>#</text>
+<text text-anchor='middle' x='0' y='516' fill='currentColor' style='font-size:1em'>S</text>
+<text text-anchor='middle' x='0' y='564' fill='currentColor' style='font-size:1em'>#</text>
+<text text-anchor='middle' x='0' y='580' fill='currentColor' style='font-size:1em'>当</text>
+<text text-anchor='middle' x='0' y='596' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='0' y='628' fill='currentColor' style='font-size:1em'>#</text>
+<text text-anchor='middle' x='0' y='644' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='0' y='660' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='0' y='692' fill='currentColor' style='font-size:1em'>S</text>
+<text text-anchor='middle' x='8' y='4' fill='currentColor' style='font-size:1em'>务</text>
+<text text-anchor='middle' x='8' y='20' fill='currentColor' style='font-size:1em'>↓</text>
+<text text-anchor='middle' x='8' y='36' fill='currentColor' style='font-size:1em'>写</text>
+<text text-anchor='middle' x='8' y='52' fill='currentColor' style='font-size:1em'>提</text>
+<text text-anchor='middle' x='8' y='84' fill='currentColor' style='font-size:1em'>#</text>
+<text text-anchor='middle' x='8' y='116' fill='currentColor' style='font-size:1em'>#</text>
+<text text-anchor='middle' x='8' y='164' fill='currentColor' style='font-size:1em'>#</text>
+<text text-anchor='middle' x='8' y='212' fill='currentColor' style='font-size:1em'>#</text>
+<text text-anchor='middle' x='8' y='228' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='8' y='276' fill='currentColor' style='font-size:1em'>果</text>
+<text text-anchor='middle' x='8' y='308' fill='currentColor' style='font-size:1em'>#</text>
+<text text-anchor='middle' x='8' y='388' fill='currentColor' style='font-size:1em'>#</text>
+<text text-anchor='middle' x='8' y='420' fill='currentColor' style='font-size:1em'>#</text>
+<text text-anchor='middle' x='8' y='436' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='8' y='500' fill='currentColor' style='font-size:1em'>#</text>
+<text text-anchor='middle' x='8' y='516' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='8' y='532' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='8' y='564' fill='currentColor' style='font-size:1em'>#</text>
+<text text-anchor='middle' x='8' y='628' fill='currentColor' style='font-size:1em'>#</text>
+<text text-anchor='middle' x='8' y='692' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='16' y='4' fill='currentColor' style='font-size:1em'>分</text>
+<text text-anchor='middle' x='16' y='36' fill='currentColor' style='font-size:1em'>代</text>
+<text text-anchor='middle' x='16' y='52' fill='currentColor' style='font-size:1em'>交</text>
+<text text-anchor='middle' x='16' y='116' fill='currentColor' style='font-size:1em'>#</text>
+<text text-anchor='middle' x='16' y='164' fill='currentColor' style='font-size:1em'>#</text>
+<text text-anchor='middle' x='16' y='180' fill='currentColor' style='font-size:1em'>失</text>
+<text text-anchor='middle' x='16' y='212' fill='currentColor' style='font-size:1em'>#</text>
+<text text-anchor='middle' x='16' y='228' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='16' y='244' fill='currentColor' style='font-size:1em'>云</text>
+<text text-anchor='middle' x='16' y='276' fill='currentColor' style='font-size:1em'>发</text>
+<text text-anchor='middle' x='16' y='420' fill='currentColor' style='font-size:1em'>#</text>
+<text text-anchor='middle' x='16' y='436' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='16' y='452' fill='currentColor' style='font-size:1em'>A</text>
+<text text-anchor='middle' x='16' y='468' fill='currentColor' style='font-size:1em'>人</text>
+<text text-anchor='middle' x='16' y='500' fill='currentColor' style='font-size:1em'>#</text>
+<text text-anchor='middle' x='16' y='516' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='16' y='532' fill='currentColor' style='font-size:1em'>结</text>
+<text text-anchor='middle' x='16' y='564' fill='currentColor' style='font-size:1em'>#</text>
+<text text-anchor='middle' x='16' y='580' fill='currentColor' style='font-size:1em'>A</text>
+<text text-anchor='middle' x='16' y='596' fill='currentColor' style='font-size:1em'>判</text>
+<text text-anchor='middle' x='16' y='644' fill='currentColor' style='font-size:1em'>[</text>
+<text text-anchor='middle' x='16' y='660' fill='currentColor' style='font-size:1em'>[</text>
+<text text-anchor='middle' x='16' y='692' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='24' y='4' fill='currentColor' style='font-size:1em'>配</text>
+<text text-anchor='middle' x='24' y='36' fill='currentColor' style='font-size:1em'>码</text>
+<text text-anchor='middle' x='24' y='84' fill='currentColor' style='font-size:1em'>关</text>
+<text text-anchor='middle' x='24' y='132' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='24' y='180' fill='currentColor' style='font-size:1em'>败</text>
+<text text-anchor='middle' x='24' y='228' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='24' y='244' fill='currentColor' style='font-size:1em'>端</text>
+<text text-anchor='middle' x='24' y='276' fill='currentColor' style='font-size:1em'>现</text>
+<text text-anchor='middle' x='24' y='308' fill='currentColor' style='font-size:1em'>数</text>
+<text text-anchor='middle' x='24' y='324' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='24' y='340' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='24' y='356' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='24' y='388' fill='currentColor' style='font-size:1em'>对</text>
+<text text-anchor='middle' x='24' y='436' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='24' y='452' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='24' y='468' fill='currentColor' style='font-size:1em'>类</text>
+<text text-anchor='middle' x='24' y='516' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='24' y='532' fill='currentColor' style='font-size:1em'>论</text>
+<text text-anchor='middle' x='24' y='580' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='24' y='596' fill='currentColor' style='font-size:1em'>断</text>
+<text text-anchor='middle' x='24' y='628' fill='currentColor' style='font-size:1em'>相</text>
+<text text-anchor='middle' x='24' y='644' fill='currentColor' style='font-size:1em'>S</text>
+<text text-anchor='middle' x='24' y='660' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='24' y='692' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='32' y='52' fill='currentColor' style='font-size:1em'>P</text>
+<text text-anchor='middle' x='32' y='84' fill='currentColor' style='font-size:1em'>键</text>
+<text text-anchor='middle' x='32' y='116' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='32' y='132' fill='currentColor' style='font-size:1em'>固</text>
+<text text-anchor='middle' x='32' y='164' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='32' y='180' fill='currentColor' style='font-size:1em'>测</text>
+<text text-anchor='middle' x='32' y='212' fill='currentColor' style='font-size:1em'>3</text>
+<text text-anchor='middle' x='32' y='228' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='32' y='244' fill='currentColor' style='font-size:1em'>开</text>
+<text text-anchor='middle' x='32' y='276' fill='currentColor' style='font-size:1em'>对</text>
+<text text-anchor='middle' x='32' y='308' fill='currentColor' style='font-size:1em'>据</text>
+<text text-anchor='middle' x='32' y='324' fill='currentColor' style='font-size:1em'>每</text>
+<text text-anchor='middle' x='32' y='340' fill='currentColor' style='font-size:1em'>代</text>
+<text text-anchor='middle' x='32' y='356' fill='currentColor' style='font-size:1em'>应</text>
+<text text-anchor='middle' x='32' y='388' fill='currentColor' style='font-size:1em'>开</text>
+<text text-anchor='middle' x='32' y='420' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='32' y='436' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='32' y='468' fill='currentColor' style='font-size:1em'>擅</text>
+<text text-anchor='middle' x='32' y='500' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='32' y='516' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='32' y='532' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='32' y='564' fill='currentColor' style='font-size:1em'>3</text>
+<text text-anchor='middle' x='32' y='596' fill='currentColor' style='font-size:1em'>代</text>
+<text text-anchor='middle' x='32' y='628' fill='currentColor' style='font-size:1em'>关</text>
+<text text-anchor='middle' x='32' y='644' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='32' y='660' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='32' y='692' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='40' y='4' fill='currentColor' style='font-size:1em'>→</text>
+<text text-anchor='middle' x='40' y='36' fill='currentColor' style='font-size:1em'>→</text>
+<text text-anchor='middle' x='40' y='52' fill='currentColor' style='font-size:1em'>R</text>
+<text text-anchor='middle' x='40' y='84' fill='currentColor' style='font-size:1em'>设</text>
+<text text-anchor='middle' x='40' y='116' fill='currentColor' style='font-size:1em'>.</text>
+<text text-anchor='middle' x='40' y='132' fill='currentColor' style='font-size:1em'>定</text>
+<text text-anchor='middle' x='40' y='164' fill='currentColor' style='font-size:1em'>.</text>
+<text text-anchor='middle' x='40' y='180' fill='currentColor' style='font-size:1em'>试</text>
+<text text-anchor='middle' x='40' y='212' fill='currentColor' style='font-size:1em'>.</text>
+<text text-anchor='middle' x='40' y='228' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='40' y='244' fill='currentColor' style='font-size:1em'>发</text>
+<text text-anchor='middle' x='40' y='324' fill='currentColor' style='font-size:1em'>周</text>
+<text text-anchor='middle' x='40' y='340' fill='currentColor' style='font-size:1em'>码</text>
+<text text-anchor='middle' x='40' y='356' fill='currentColor' style='font-size:1em'>用</text>
+<text text-anchor='middle' x='40' y='388' fill='currentColor' style='font-size:1em'>发</text>
+<text text-anchor='middle' x='40' y='420' fill='currentColor' style='font-size:1em'>.</text>
+<text text-anchor='middle' x='40' y='436' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='40' y='452' fill='currentColor' style='font-size:1em'>擅</text>
+<text text-anchor='middle' x='40' y='468' fill='currentColor' style='font-size:1em'>长</text>
+<text text-anchor='middle' x='40' y='500' fill='currentColor' style='font-size:1em'>.</text>
+<text text-anchor='middle' x='40' y='516' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='40' y='532' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='40' y='564' fill='currentColor' style='font-size:1em'>.</text>
+<text text-anchor='middle' x='40' y='580' fill='currentColor' style='font-size:1em'>能</text>
+<text text-anchor='middle' x='40' y='596' fill='currentColor' style='font-size:1em'>码</text>
+<text text-anchor='middle' x='40' y='628' fill='currentColor' style='font-size:1em'>链</text>
+<text text-anchor='middle' x='40' y='644' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='40' y='660' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='40' y='692' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='48' y='84' fill='currentColor' style='font-size:1em'>计</text>
+<text text-anchor='middle' x='48' y='132' fill='currentColor' style='font-size:1em'>步</text>
+<text text-anchor='middle' x='48' y='180' fill='currentColor' style='font-size:1em'>通</text>
+<text text-anchor='middle' x='48' y='244' fill='currentColor' style='font-size:1em'>环</text>
+<text text-anchor='middle' x='48' y='276' fill='currentColor' style='font-size:1em'>A</text>
+<text text-anchor='middle' x='48' y='340' fill='currentColor' style='font-size:1em'>质</text>
+<text text-anchor='middle' x='48' y='356' fill='currentColor' style='font-size:1em'>范</text>
+<text text-anchor='middle' x='48' y='388' fill='currentColor' style='font-size:1em'>者</text>
+<text text-anchor='middle' x='48' y='452' fill='currentColor' style='font-size:1em'>长</text>
+<text text-anchor='middle' x='48' y='468' fill='currentColor' style='font-size:1em'>:</text>
+<text text-anchor='middle' x='48' y='532' fill='currentColor' style='font-size:1em'>:</text>
+<text text-anchor='middle' x='48' y='580' fill='currentColor' style='font-size:1em'>写</text>
+<text text-anchor='middle' x='48' y='596' fill='currentColor' style='font-size:1em'>是</text>
+<text text-anchor='middle' x='48' y='628' fill='currentColor' style='font-size:1em'>接</text>
+<text text-anchor='middle' x='48' y='644' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='48' y='660' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='56' y='4' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='56' y='36' fill='currentColor' style='font-size:1em'>跑</text>
+<text text-anchor='middle' x='56' y='52' fill='currentColor' style='font-size:1em'>→</text>
+<text text-anchor='middle' x='56' y='116' fill='currentColor' style='font-size:1em'>蓝</text>
+<text text-anchor='middle' x='56' y='132' fill='currentColor' style='font-size:1em'>骤</text>
+<text text-anchor='middle' x='56' y='164' fill='currentColor' style='font-size:1em'>重</text>
+<text text-anchor='middle' x='56' y='180' fill='currentColor' style='font-size:1em'>常</text>
+<text text-anchor='middle' x='56' y='212' fill='currentColor' style='font-size:1em'>复</text>
+<text text-anchor='middle' x='56' y='228' fill='currentColor' style='font-size:1em'>的</text>
+<text text-anchor='middle' x='56' y='244' fill='currentColor' style='font-size:1em'>境</text>
+<text text-anchor='middle' x='56' y='276' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='56' y='324' fill='currentColor' style='font-size:1em'>P</text>
+<text text-anchor='middle' x='56' y='340' fill='currentColor' style='font-size:1em'>量</text>
+<text text-anchor='middle' x='56' y='356' fill='currentColor' style='font-size:1em'>围</text>
+<text text-anchor='middle' x='56' y='388' fill='currentColor' style='font-size:1em'>的</text>
+<text text-anchor='middle' x='56' y='420' fill='currentColor' style='font-size:1em'>A</text>
+<text text-anchor='middle' x='56' y='436' fill='currentColor' style='font-size:1em'>强</text>
+<text text-anchor='middle' x='56' y='452' fill='currentColor' style='font-size:1em'>:</text>
+<text text-anchor='middle' x='56' y='468' fill='currentColor' style='font-size:1em'>架</text>
+<text text-anchor='middle' x='56' y='500' fill='currentColor' style='font-size:1em'>基</text>
+<text text-anchor='middle' x='56' y='516' fill='currentColor' style='font-size:1em'>能</text>
+<text text-anchor='middle' x='56' y='532' fill='currentColor' style='font-size:1em'>先</text>
+<text text-anchor='middle' x='56' y='564' fill='currentColor' style='font-size:1em'>R</text>
+<text text-anchor='middle' x='56' y='580' fill='currentColor' style='font-size:1em'>代</text>
+<text text-anchor='middle' x='56' y='596' fill='currentColor' style='font-size:1em'>否</text>
+<text text-anchor='middle' x='56' y='644' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='56' y='660' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='56' y='692' fill='currentColor' style='font-size:1em'>展</text>
+<text text-anchor='middle' x='64' y='4' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='64' y='36' fill='currentColor' style='font-size:1em'>测</text>
+<text text-anchor='middle' x='64' y='116' fill='currentColor' style='font-size:1em'>图</text>
+<text text-anchor='middle' x='64' y='132' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='64' y='164' fill='currentColor' style='font-size:1em'>试</text>
+<text text-anchor='middle' x='64' y='180' fill='currentColor' style='font-size:1em'>只</text>
+<text text-anchor='middle' x='64' y='212' fill='currentColor' style='font-size:1em'>用</text>
+<text text-anchor='middle' x='64' y='244' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='64' y='324' fill='currentColor' style='font-size:1em'>R</text>
+<text text-anchor='middle' x='64' y='340' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='64' y='356' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='64' y='388' fill='currentColor' style='font-size:1em'>启</text>
+<text text-anchor='middle' x='64' y='420' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='64' y='436' fill='currentColor' style='font-size:1em'>调</text>
+<text text-anchor='middle' x='64' y='452' fill='currentColor' style='font-size:1em'>执</text>
+<text text-anchor='middle' x='64' y='468' fill='currentColor' style='font-size:1em'>构</text>
+<text text-anchor='middle' x='64' y='500' fill='currentColor' style='font-size:1em'>础</text>
+<text text-anchor='middle' x='64' y='516' fill='currentColor' style='font-size:1em'>快</text>
+<text text-anchor='middle' x='64' y='532' fill='currentColor' style='font-size:1em'>把</text>
+<text text-anchor='middle' x='64' y='564' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='64' y='580' fill='currentColor' style='font-size:1em'>码</text>
+<text text-anchor='middle' x='64' y='596' fill='currentColor' style='font-size:1em'>正</text>
+<text text-anchor='middle' x='64' y='644' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='64' y='692' fill='currentColor' style='font-size:1em'>示</text>
+<text text-anchor='middle' x='72' y='4' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='72' y='36' fill='currentColor' style='font-size:1em'>试</text>
+<text text-anchor='middle' x='72' y='52' fill='currentColor' style='font-size:1em'>人</text>
+<text text-anchor='middle' x='72' y='116' fill='currentColor' style='font-size:1em'>系</text>
+<text text-anchor='middle' x='72' y='132' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='72' y='164' fill='currentColor' style='font-size:1em'>限</text>
+<text text-anchor='middle' x='72' y='180' fill='currentColor' style='font-size:1em'>给</text>
+<text text-anchor='middle' x='72' y='212' fill='currentColor' style='font-size:1em'>现</text>
+<text text-anchor='middle' x='72' y='228' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='72' y='276' fill='currentColor' style='font-size:1em'>代</text>
+<text text-anchor='middle' x='72' y='340' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='72' y='356' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='72' y='388' fill='currentColor' style='font-size:1em'>示</text>
+<text text-anchor='middle' x='72' y='436' fill='currentColor' style='font-size:1em'>:</text>
+<text text-anchor='middle' x='72' y='452' fill='currentColor' style='font-size:1em'>行</text>
+<text text-anchor='middle' x='72' y='468' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='72' y='500' fill='currentColor' style='font-size:1em'>设</text>
+<text text-anchor='middle' x='72' y='516' fill='currentColor' style='font-size:1em'>速</text>
+<text text-anchor='middle' x='72' y='532' fill='currentColor' style='font-size:1em'>开</text>
+<text text-anchor='middle' x='72' y='564' fill='currentColor' style='font-size:1em'>v</text>
+<text text-anchor='middle' x='72' y='580' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='72' y='596' fill='currentColor' style='font-size:1em'>确</text>
+<text text-anchor='middle' x='72' y='660' fill='currentColor' style='font-size:1em'>T</text>
+<text text-anchor='middle' x='72' y='692' fill='currentColor' style='font-size:1em'>了</text>
+<text text-anchor='middle' x='80' y='4' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='80' y='52' fill='currentColor' style='font-size:1em'>类</text>
+<text text-anchor='middle' x='80' y='116' fill='currentColor' style='font-size:1em'>统</text>
+<text text-anchor='middle' x='80' y='132' fill='currentColor' style='font-size:1em'>:</text>
+<text text-anchor='middle' x='80' y='164' fill='currentColor' style='font-size:1em'>制</text>
+<text text-anchor='middle' x='80' y='212' fill='currentColor' style='font-size:1em'>有</text>
+<text text-anchor='middle' x='80' y='228' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='80' y='244' fill='currentColor' style='font-size:1em'>预</text>
+<text text-anchor='middle' x='80' y='276' fill='currentColor' style='font-size:1em'>理</text>
+<text text-anchor='middle' x='80' y='324' fill='currentColor' style='font-size:1em'>数</text>
+<text text-anchor='middle' x='80' y='340' fill='currentColor' style='font-size:1em'>:</text>
+<text text-anchor='middle' x='80' y='356' fill='currentColor' style='font-size:1em'>:</text>
+<text text-anchor='middle' x='80' y='420' fill='currentColor' style='font-size:1em'>不</text>
+<text text-anchor='middle' x='80' y='436' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='80' y='452' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='80' y='468' fill='currentColor' style='font-size:1em'>安</text>
+<text text-anchor='middle' x='80' y='500' fill='currentColor' style='font-size:1em'>施</text>
+<text text-anchor='middle' x='80' y='516' fill='currentColor' style='font-size:1em'>落</text>
+<text text-anchor='middle' x='80' y='532' fill='currentColor' style='font-size:1em'>发</text>
+<text text-anchor='middle' x='80' y='564' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='80' y='580' fill='currentColor' style='font-size:1em'>人</text>
+<text text-anchor='middle' x='80' y='596' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='80' y='644' fill='currentColor' style='font-size:1em'>博</text>
+<text text-anchor='middle' x='80' y='660' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='80' y='692' fill='currentColor' style='font-size:1em'>一</text>
+<text text-anchor='middle' x='88' y='4' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='88' y='36' fill='currentColor' style='font-size:1em'>→</text>
+<text text-anchor='middle' x='88' y='116' fill='currentColor' style='font-size:1em'>(</text>
+<text text-anchor='middle' x='88' y='132' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='88' y='180' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='88' y='212' fill='currentColor' style='font-size:1em'>基</text>
+<text text-anchor='middle' x='88' y='228' fill='currentColor' style='font-size:1em'>v</text>
+<text text-anchor='middle' x='88' y='244' fill='currentColor' style='font-size:1em'>装</text>
+<text text-anchor='middle' x='88' y='276' fill='currentColor' style='font-size:1em'>也</text>
+<text text-anchor='middle' x='88' y='324' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='88' y='340' fill='currentColor' style='font-size:1em'>与</text>
+<text text-anchor='middle' x='88' y='356' fill='currentColor' style='font-size:1em'>从</text>
+<text text-anchor='middle' x='88' y='420' fill='currentColor' style='font-size:1em'>是</text>
+<text text-anchor='middle' x='88' y='436' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='88' y='452' fill='currentColor' style='font-size:1em'>重</text>
+<text text-anchor='middle' x='88' y='468' fill='currentColor' style='font-size:1em'>全</text>
+<text text-anchor='middle' x='88' y='500' fill='currentColor' style='font-size:1em'>先</text>
+<text text-anchor='middle' x='88' y='516' fill='currentColor' style='font-size:1em'>地</text>
+<text text-anchor='middle' x='88' y='532' fill='currentColor' style='font-size:1em'>者</text>
+<text text-anchor='middle' x='88' y='564' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='88' y='580' fill='currentColor' style='font-size:1em'>类</text>
+<text text-anchor='middle' x='88' y='644' fill='currentColor' style='font-size:1em'>客</text>
+<text text-anchor='middle' x='88' y='660' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='88' y='692' fill='currentColor' style='font-size:1em'>个</text>
+<text text-anchor='middle' x='96' y='4' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='96' y='52' fill='currentColor' style='font-size:1em'>R</text>
+<text text-anchor='middle' x='96' y='116' fill='currentColor' style='font-size:1em'>B</text>
+<text text-anchor='middle' x='96' y='132' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='96' y='180' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='96' y='212' fill='currentColor' style='font-size:1em'>础</text>
+<text text-anchor='middle' x='96' y='228' fill='currentColor' style='font-size:1em'>b</text>
+<text text-anchor='middle' x='96' y='244' fill='currentColor' style='font-size:1em'>代</text>
+<text text-anchor='middle' x='96' y='276' fill='currentColor' style='font-size:1em'>一</text>
+<text text-anchor='middle' x='96' y='324' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='96' y='340' fill='currentColor' style='font-size:1em'>人</text>
+<text text-anchor='middle' x='96' y='356' fill='currentColor' style='font-size:1em'>测</text>
+<text text-anchor='middle' x='96' y='420' fill='currentColor' style='font-size:1em'>替</text>
+<text text-anchor='middle' x='96' y='436' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='96' y='452' fill='currentColor' style='font-size:1em'>复</text>
+<text text-anchor='middle' x='96' y='468' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='96' y='500' fill='currentColor' style='font-size:1em'>于</text>
+<text text-anchor='middle' x='96' y='532' fill='currentColor' style='font-size:1em'>体</text>
+<text text-anchor='middle' x='96' y='564' fill='currentColor' style='font-size:1em'>w</text>
+<text text-anchor='middle' x='96' y='580' fill='currentColor' style='font-size:1em'>的</text>
+<text text-anchor='middle' x='96' y='596' fill='currentColor' style='font-size:1em'>评</text>
+<text text-anchor='middle' x='96' y='660' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='96' y='692' fill='currentColor' style='font-size:1em'>成</text>
+<text text-anchor='middle' x='104' y='36' fill='currentColor' style='font-size:1em'>修</text>
+<text text-anchor='middle' x='104' y='52' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='104' y='116' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='104' y='132' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='104' y='180' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='104' y='212' fill='currentColor' style='font-size:1em'>设</text>
+<text text-anchor='middle' x='104' y='228' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='104' y='244' fill='currentColor' style='font-size:1em'>码</text>
+<text text-anchor='middle' x='104' y='276' fill='currentColor' style='font-size:1em'>样</text>
+<text text-anchor='middle' x='104' y='324' fill='currentColor' style='font-size:1em'>:</text>
+<text text-anchor='middle' x='104' y='340' fill='currentColor' style='font-size:1em'>类</text>
+<text text-anchor='middle' x='104' y='356' fill='currentColor' style='font-size:1em'>试</text>
+<text text-anchor='middle' x='104' y='420' fill='currentColor' style='font-size:1em'>代</text>
+<text text-anchor='middle' x='104' y='436' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='104' y='452' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='104' y='468' fill='currentColor' style='font-size:1em'>边</text>
+<text text-anchor='middle' x='104' y='516' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='104' y='532' fill='currentColor' style='font-size:1em'>验</text>
+<text text-anchor='middle' x='104' y='580' fill='currentColor' style='font-size:1em'>价</text>
+<text text-anchor='middle' x='104' y='596' fill='currentColor' style='font-size:1em'>估</text>
+<text text-anchor='middle' x='104' y='644' fill='currentColor' style='font-size:1em'>P</text>
+<text text-anchor='middle' x='104' y='660' fill='currentColor' style='font-size:1em'>y</text>
+<text text-anchor='middle' x='104' y='692' fill='currentColor' style='font-size:1em'>熟</text>
+<text text-anchor='middle' x='112' y='4' fill='currentColor' style='font-size:1em'>在</text>
+<text text-anchor='middle' x='112' y='52' fill='currentColor' style='font-size:1em'>v</text>
+<text text-anchor='middle' x='112' y='116' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='112' y='132' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='112' y='212' fill='currentColor' style='font-size:1em'>施</text>
+<text text-anchor='middle' x='112' y='228' fill='currentColor' style='font-size:1em'>x</text>
+<text text-anchor='middle' x='112' y='244' fill='currentColor' style='font-size:1em'>和</text>
+<text text-anchor='middle' x='112' y='276' fill='currentColor' style='font-size:1em'>好</text>
+<text text-anchor='middle' x='112' y='324' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='112' y='340' fill='currentColor' style='font-size:1em'>工</text>
+<text text-anchor='middle' x='112' y='356' fill='currentColor' style='font-size:1em'>修</text>
+<text text-anchor='middle' x='112' y='420' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='112' y='436' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='112' y='452' fill='currentColor' style='font-size:1em'>已</text>
+<text text-anchor='middle' x='112' y='468' fill='currentColor' style='font-size:1em'>缘</text>
+<text text-anchor='middle' x='112' y='500' fill='currentColor' style='font-size:1em'>A</text>
+<text text-anchor='middle' x='112' y='516' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='112' y='532' fill='currentColor' style='font-size:1em'>搞</text>
+<text text-anchor='middle' x='112' y='564' fill='currentColor' style='font-size:1em'>比</text>
+<text text-anchor='middle' x='112' y='580' fill='currentColor' style='font-size:1em'>值</text>
+<text text-anchor='middle' x='112' y='596' fill='currentColor' style='font-size:1em'>长</text>
+<text text-anchor='middle' x='112' y='644' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='112' y='692' fill='currentColor' style='font-size:1em'>公</text>
+<text text-anchor='middle' x='120' y='36' fill='currentColor' style='font-size:1em'>b</text>
+<text text-anchor='middle' x='120' y='52' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='120' y='116' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='120' y='132' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='120' y='180' fill='currentColor' style='font-size:1em'>次</text>
+<text text-anchor='middle' x='120' y='244' fill='currentColor' style='font-size:1em'>工</text>
+<text text-anchor='middle' x='120' y='276' fill='currentColor' style='font-size:1em'>用</text>
+<text text-anchor='middle' x='120' y='324' fill='currentColor' style='font-size:1em'>3</text>
+<text text-anchor='middle' x='120' y='340' fill='currentColor' style='font-size:1em'>程</text>
+<text text-anchor='middle' x='120' y='356' fill='currentColor' style='font-size:1em'>复</text>
+<text text-anchor='middle' x='120' y='420' fill='currentColor' style='font-size:1em'>是</text>
+<text text-anchor='middle' x='120' y='436' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='120' y='452' fill='currentColor' style='font-size:1em'>知</text>
+<text text-anchor='middle' x='120' y='468' fill='currentColor' style='font-size:1em'>情</text>
+<text text-anchor='middle' x='120' y='500' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='120' y='516' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='120' y='532' fill='currentColor' style='font-size:1em'>好</text>
+<text text-anchor='middle' x='120' y='580' fill='currentColor' style='font-size:1em'>就</text>
+<text text-anchor='middle' x='120' y='596' fill='currentColor' style='font-size:1em'>期</text>
+<text text-anchor='middle' x='120' y='644' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='120' y='660' fill='currentColor' style='font-size:1em'>报</text>
+<text text-anchor='middle' x='120' y='692' fill='currentColor' style='font-size:1em'>司</text>
+<text text-anchor='middle' x='128' y='4' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='128' y='36' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='128' y='52' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='128' y='116' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='128' y='132' fill='currentColor' style='font-size:1em'>格</text>
+<text text-anchor='middle' x='128' y='180' fill='currentColor' style='font-size:1em'>重</text>
+<text text-anchor='middle' x='128' y='228' fill='currentColor' style='font-size:1em'>本</text>
+<text text-anchor='middle' x='128' y='244' fill='currentColor' style='font-size:1em'>具</text>
+<text text-anchor='middle' x='128' y='276' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='128' y='324' fill='currentColor' style='font-size:1em'>0</text>
+<text text-anchor='middle' x='128' y='340' fill='currentColor' style='font-size:1em'>师</text>
+<text text-anchor='middle' x='128' y='356' fill='currentColor' style='font-size:1em'>到</text>
+<text text-anchor='middle' x='128' y='420' fill='currentColor' style='font-size:1em'>放</text>
+<text text-anchor='middle' x='128' y='436' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='128' y='452' fill='currentColor' style='font-size:1em'>问</text>
+<text text-anchor='middle' x='128' y='468' fill='currentColor' style='font-size:1em'>况</text>
+<text text-anchor='middle' x='128' y='516' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='128' y='532' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='128' y='564' fill='currentColor' style='font-size:1em'>C</text>
+<text text-anchor='middle' x='128' y='580' fill='currentColor' style='font-size:1em'>转</text>
+<text text-anchor='middle' x='128' y='596' fill='currentColor' style='font-size:1em'>影</text>
+<text text-anchor='middle' x='128' y='644' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='128' y='660' fill='currentColor' style='font-size:1em'>道</text>
+<text text-anchor='middle' x='128' y='692' fill='currentColor' style='font-size:1em'>的</text>
+<text text-anchor='middle' x='136' y='4' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='136' y='36' fill='currentColor' style='font-size:1em'>g</text>
+<text text-anchor='middle' x='136' y='52' fill='currentColor' style='font-size:1em'>w</text>
+<text text-anchor='middle' x='136' y='116' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='136' y='132' fill='currentColor' style='font-size:1em'>式</text>
+<text text-anchor='middle' x='136' y='180' fill='currentColor' style='font-size:1em'>试</text>
+<text text-anchor='middle' x='136' y='228' fill='currentColor' style='font-size:1em'>来</text>
+<text text-anchor='middle' x='136' y='244' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='136' y='276' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='136' y='324' fill='currentColor' style='font-size:1em'>0</text>
+<text text-anchor='middle' x='136' y='340' fill='currentColor' style='font-size:1em'>相</text>
+<text text-anchor='middle' x='136' y='356' fill='currentColor' style='font-size:1em'>功</text>
+<text text-anchor='middle' x='136' y='420' fill='currentColor' style='font-size:1em'>大</text>
+<text text-anchor='middle' x='136' y='452' fill='currentColor' style='font-size:1em'>题</text>
+<text text-anchor='middle' x='136' y='516' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='136' y='532' fill='currentColor' style='font-size:1em'>A</text>
+<text text-anchor='middle' x='136' y='564' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='136' y='580' fill='currentColor' style='font-size:1em'>移</text>
+<text text-anchor='middle' x='136' y='596' fill='currentColor' style='font-size:1em'>响</text>
+<text text-anchor='middle' x='136' y='660' fill='currentColor' style='font-size:1em'>]</text>
+<text text-anchor='middle' x='144' y='4' fill='currentColor' style='font-size:1em'>v</text>
+<text text-anchor='middle' x='144' y='36' fill='currentColor' style='font-size:1em'>(</text>
+<text text-anchor='middle' x='144' y='116' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='144' y='132' fill='currentColor' style='font-size:1em'>化</text>
+<text text-anchor='middle' x='144' y='180' fill='currentColor' style='font-size:1em'>机</text>
+<text text-anchor='middle' x='144' y='228' fill='currentColor' style='font-size:1em'>是</text>
+<text text-anchor='middle' x='144' y='276' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='144' y='324' fill='currentColor' style='font-size:1em'>+</text>
+<text text-anchor='middle' x='144' y='340' fill='currentColor' style='font-size:1em'>同</text>
+<text text-anchor='middle' x='144' y='356' fill='currentColor' style='font-size:1em'>能</text>
+<text text-anchor='middle' x='144' y='436' fill='currentColor' style='font-size:1em'>写</text>
+<text text-anchor='middle' x='144' y='516' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='144' y='532' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='144' y='564' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='144' y='580' fill='currentColor' style='font-size:1em'>到</text>
+<text text-anchor='middle' x='144' y='596' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='144' y='644' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='144' y='660' fill='currentColor' style='font-size:1em'>(</text>
+<text text-anchor='middle' x='144' y='692' fill='currentColor' style='font-size:1em'>A</text>
+<text text-anchor='middle' x='152' y='4' fill='currentColor' style='font-size:1em'>b</text>
+<text text-anchor='middle' x='152' y='36' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='152' y='52' fill='currentColor' style='font-size:1em'>→</text>
+<text text-anchor='middle' x='152' y='116' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='152' y='132' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='152' y='180' fill='currentColor' style='font-size:1em'>会</text>
+<text text-anchor='middle' x='152' y='228' fill='currentColor' style='font-size:1em'>给</text>
+<text text-anchor='middle' x='152' y='244' fill='currentColor' style='font-size:1em'>易</text>
+<text text-anchor='middle' x='152' y='276' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='152' y='324' fill='currentColor' style='font-size:1em'>(</text>
+<text text-anchor='middle' x='152' y='340' fill='currentColor' style='font-size:1em'>标</text>
+<text text-anchor='middle' x='152' y='356' fill='currentColor' style='font-size:1em'>实</text>
+<text text-anchor='middle' x='152' y='436' fill='currentColor' style='font-size:1em'>代</text>
+<text text-anchor='middle' x='152' y='516' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='152' y='564' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='152' y='580' fill='currentColor' style='font-size:1em'>:</text>
+<text text-anchor='middle' x='152' y='644' fill='currentColor' style='font-size:1em'>]</text>
+<text text-anchor='middle' x='152' y='660' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='152' y='692' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='160' y='4' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='160' y='36' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='160' y='116' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='160' y='132' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='160' y='180' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='160' y='228' fill='currentColor' style='font-size:1em'>人</text>
+<text text-anchor='middle' x='160' y='244' fill='currentColor' style='font-size:1em'>于</text>
+<text text-anchor='middle' x='160' y='276' fill='currentColor' style='font-size:1em'>为</text>
+<text text-anchor='middle' x='160' y='324' fill='currentColor' style='font-size:1em'>全</text>
+<text text-anchor='middle' x='160' y='340' fill='currentColor' style='font-size:1em'>准</text>
+<text text-anchor='middle' x='160' y='356' fill='currentColor' style='font-size:1em'>现</text>
+<text text-anchor='middle' x='160' y='436' fill='currentColor' style='font-size:1em'>码</text>
+<text text-anchor='middle' x='160' y='516' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='160' y='532' fill='currentColor' style='font-size:1em'>自</text>
+<text text-anchor='middle' x='160' y='564' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='160' y='596' fill='currentColor' style='font-size:1em'>把</text>
+<text text-anchor='middle' x='160' y='644' fill='currentColor' style='font-size:1em'>(</text>
+<text text-anchor='middle' x='160' y='660' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='168' y='4' fill='currentColor' style='font-size:1em'>x</text>
+<text text-anchor='middle' x='168' y='36' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='168' y='52' fill='currentColor' style='font-size:1em'>合</text>
+<text text-anchor='middle' x='168' y='116' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='168' y='132' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='168' y='228' fill='currentColor' style='font-size:1em'>类</text>
+<text text-anchor='middle' x='168' y='244' fill='currentColor' style='font-size:1em'>替</text>
+<text text-anchor='middle' x='168' y='276' fill='currentColor' style='font-size:1em'>人</text>
+<text text-anchor='middle' x='168' y='324' fill='currentColor' style='font-size:1em'>部</text>
+<text text-anchor='middle' x='168' y='436' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='168' y='516' fill='currentColor' style='font-size:1em'>是</text>
+<text text-anchor='middle' x='168' y='532' fill='currentColor' style='font-size:1em'>然</text>
+<text text-anchor='middle' x='168' y='564' fill='currentColor' style='font-size:1em'>g</text>
+<text text-anchor='middle' x='168' y='596' fill='currentColor' style='font-size:1em'>控</text>
+<text text-anchor='middle' x='168' y='644' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='168' y='660' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='168' y='692' fill='currentColor' style='font-size:1em'>编</text>
+<text text-anchor='middle' x='176' y='36' fill='currentColor' style='font-size:1em'>次</text>
+<text text-anchor='middle' x='176' y='52' fill='currentColor' style='font-size:1em'>并</text>
+<text text-anchor='middle' x='176' y='116' fill='currentColor' style='font-size:1em'>)</text>
+<text text-anchor='middle' x='176' y='132' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='176' y='180' fill='currentColor' style='font-size:1em'>超</text>
+<text text-anchor='middle' x='176' y='228' fill='currentColor' style='font-size:1em'>工</text>
+<text text-anchor='middle' x='176' y='244' fill='currentColor' style='font-size:1em'>换</text>
+<text text-anchor='middle' x='176' y='276' fill='currentColor' style='font-size:1em'>类</text>
+<text text-anchor='middle' x='176' y='324' fill='currentColor' style='font-size:1em'>由</text>
+<text text-anchor='middle' x='176' y='436' fill='currentColor' style='font-size:1em'>人</text>
+<text text-anchor='middle' x='176' y='516' fill='currentColor' style='font-size:1em'>因</text>
+<text text-anchor='middle' x='176' y='532' fill='currentColor' style='font-size:1em'>能</text>
+<text text-anchor='middle' x='176' y='596' fill='currentColor' style='font-size:1em'>安</text>
+<text text-anchor='middle' x='176' y='644' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='176' y='660' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='176' y='692' fill='currentColor' style='font-size:1em'>码</text>
+<text text-anchor='middle' x='184' y='4' fill='currentColor' style='font-size:1em'>中</text>
+<text text-anchor='middle' x='184' y='36' fill='currentColor' style='font-size:1em'>重</text>
+<text text-anchor='middle' x='184' y='132' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='184' y='180' fill='currentColor' style='font-size:1em'>过</text>
+<text text-anchor='middle' x='184' y='228' fill='currentColor' style='font-size:1em'>程</text>
+<text text-anchor='middle' x='184' y='244' fill='currentColor' style='font-size:1em'>和</text>
+<text text-anchor='middle' x='184' y='276' fill='currentColor' style='font-size:1em'>设</text>
+<text text-anchor='middle' x='184' y='436' fill='currentColor' style='font-size:1em'>类</text>
+<text text-anchor='middle' x='184' y='516' fill='currentColor' style='font-size:1em'>为</text>
+<text text-anchor='middle' x='184' y='532' fill='currentColor' style='font-size:1em'>复</text>
+<text text-anchor='middle' x='184' y='564' fill='currentColor' style='font-size:1em'>更</text>
+<text text-anchor='middle' x='184' y='596' fill='currentColor' style='font-size:1em'>全</text>
+<text text-anchor='middle' x='184' y='644' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='184' y='660' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='184' y='692' fill='currentColor' style='font-size:1em'>实</text>
+<text text-anchor='middle' x='192' y='4' fill='currentColor' style='font-size:1em'>工</text>
+<text text-anchor='middle' x='192' y='36' fill='currentColor' style='font-size:1em'>试</text>
+<text text-anchor='middle' x='192' y='180' fill='currentColor' style='font-size:1em'>限</text>
+<text text-anchor='middle' x='192' y='228' fill='currentColor' style='font-size:1em'>师</text>
+<text text-anchor='middle' x='192' y='244' fill='currentColor' style='font-size:1em'>扩</text>
+<text text-anchor='middle' x='192' y='276' fill='currentColor' style='font-size:1em'>计</text>
+<text text-anchor='middle' x='192' y='324' fill='currentColor' style='font-size:1em'>A</text>
+<text text-anchor='middle' x='192' y='436' fill='currentColor' style='font-size:1em'>做</text>
+<text text-anchor='middle' x='192' y='532' fill='currentColor' style='font-size:1em'>用</text>
+<text text-anchor='middle' x='192' y='564' fill='currentColor' style='font-size:1em'>重</text>
+<text text-anchor='middle' x='192' y='596' fill='currentColor' style='font-size:1em'>边</text>
+<text text-anchor='middle' x='192' y='644' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='192' y='660' fill='currentColor' style='font-size:1em'>:</text>
+<text text-anchor='middle' x='192' y='692' fill='currentColor' style='font-size:1em'>践</text>
+<text text-anchor='middle' x='200' y='4' fill='currentColor' style='font-size:1em'>作</text>
+<text text-anchor='middle' x='200' y='36' fill='currentColor' style='font-size:1em'>)</text>
+<text text-anchor='middle' x='200' y='132' fill='currentColor' style='font-size:1em'>等</text>
+<text text-anchor='middle' x='200' y='180' fill='currentColor' style='font-size:1em'>制</text>
+<text text-anchor='middle' x='200' y='228' fill='currentColor' style='font-size:1em'>用</text>
+<text text-anchor='middle' x='200' y='244' fill='currentColor' style='font-size:1em'>展</text>
+<text text-anchor='middle' x='200' y='276' fill='currentColor' style='font-size:1em'>的</text>
+<text text-anchor='middle' x='200' y='324' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='200' y='436' fill='currentColor' style='font-size:1em'>决</text>
+<text text-anchor='middle' x='200' y='516' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='200' y='532' fill='currentColor' style='font-size:1em'>.</text>
+<text text-anchor='middle' x='200' y='564' fill='currentColor' style='font-size:1em'>要</text>
+<text text-anchor='middle' x='200' y='596' fill='currentColor' style='font-size:1em'>界</text>
+<text text-anchor='middle' x='200' y='644' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='200' y='660' fill='currentColor' style='font-size:1em'>/</text>
+<text text-anchor='middle' x='200' y='692' fill='currentColor' style='font-size:1em'>:</text>
+<text text-anchor='middle' x='208' y='132' fill='currentColor' style='font-size:1em'>按</text>
+<text text-anchor='middle' x='208' y='180' fill='currentColor' style='font-size:1em'>就</text>
+<text text-anchor='middle' x='208' y='228' fill='currentColor' style='font-size:1em'>的</text>
+<text text-anchor='middle' x='208' y='276' fill='currentColor' style='font-size:1em'>工</text>
+<text text-anchor='middle' x='208' y='436' fill='currentColor' style='font-size:1em'>策</text>
+<text text-anchor='middle' x='208' y='516' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='208' y='644' fill='currentColor' style='font-size:1em'>:</text>
+<text text-anchor='middle' x='208' y='692' fill='currentColor' style='font-size:1em'>不</text>
+<text text-anchor='middle' x='216' y='132' fill='currentColor' style='font-size:1em'>固</text>
+<text text-anchor='middle' x='216' y='180' fill='currentColor' style='font-size:1em'>交</text>
+<text text-anchor='middle' x='216' y='228' fill='currentColor' style='font-size:1em'>:</text>
+<text text-anchor='middle' x='216' y='276' fill='currentColor' style='font-size:1em'>具</text>
+<text text-anchor='middle' x='216' y='324' fill='currentColor' style='font-size:1em'>写</text>
+<text text-anchor='middle' x='216' y='436' fill='currentColor' style='font-size:1em'>.</text>
+<text text-anchor='middle' x='216' y='516' fill='currentColor' style='font-size:1em'>v</text>
+<text text-anchor='middle' x='216' y='660' fill='currentColor' style='font-size:1em'>w</text>
+<text text-anchor='middle' x='216' y='692' fill='currentColor' style='font-size:1em'>是</text>
+<text text-anchor='middle' x='224' y='132' fill='currentColor' style='font-size:1em'>定</text>
+<text text-anchor='middle' x='224' y='180' fill='currentColor' style='font-size:1em'>给</text>
+<text text-anchor='middle' x='224' y='276' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='224' y='324' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='224' y='516' fill='currentColor' style='font-size:1em'>b</text>
+<text text-anchor='middle' x='224' y='644' fill='currentColor' style='font-size:1em'>/</text>
+<text text-anchor='middle' x='224' y='660' fill='currentColor' style='font-size:1em'>w</text>
+<text text-anchor='middle' x='224' y='692' fill='currentColor' style='font-size:1em'>追</text>
+<text text-anchor='middle' x='232' y='132' fill='currentColor' style='font-size:1em'>流</text>
+<text text-anchor='middle' x='232' y='180' fill='currentColor' style='font-size:1em'>人</text>
+<text text-anchor='middle' x='232' y='276' fill='currentColor' style='font-size:1em'>恰</text>
+<text text-anchor='middle' x='232' y='324' fill='currentColor' style='font-size:1em'>人</text>
+<text text-anchor='middle' x='232' y='516' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='232' y='644' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='232' y='660' fill='currentColor' style='font-size:1em'>w</text>
+<text text-anchor='middle' x='232' y='692' fill='currentColor' style='font-size:1em'>求</text>
+<text text-anchor='middle' x='240' y='132' fill='currentColor' style='font-size:1em'>程</text>
+<text text-anchor='middle' x='240' y='180' fill='currentColor' style='font-size:1em'>类</text>
+<text text-anchor='middle' x='240' y='276' fill='currentColor' style='font-size:1em'>好</text>
+<text text-anchor='middle' x='240' y='324' fill='currentColor' style='font-size:1em'>类</text>
+<text text-anchor='middle' x='240' y='516' fill='currentColor' style='font-size:1em'>x</text>
+<text text-anchor='middle' x='240' y='644' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='240' y='660' fill='currentColor' style='font-size:1em'>.</text>
+<text text-anchor='middle' x='240' y='692' fill='currentColor' style='font-size:1em'>炫</text>
+<text text-anchor='middle' x='248' y='132' fill='currentColor' style='font-size:1em'>执</text>
+<text text-anchor='middle' x='248' y='180' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='248' y='276' fill='currentColor' style='font-size:1em'>也</text>
+<text text-anchor='middle' x='248' y='644' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='248' y='660' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='248' y='692' fill='currentColor' style='font-size:1em'>技</text>
+<text text-anchor='middle' x='256' y='132' fill='currentColor' style='font-size:1em'>行</text>
+<text text-anchor='middle' x='256' y='276' fill='currentColor' style='font-size:1em'>适</text>
+<text text-anchor='middle' x='256' y='324' fill='currentColor' style='font-size:1em'>R</text>
+<text text-anchor='middle' x='256' y='516' fill='currentColor' style='font-size:1em'>基</text>
+<text text-anchor='middle' x='256' y='644' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='256' y='660' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='256' y='692' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='264' y='132' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='264' y='276' fill='currentColor' style='font-size:1em'>合</text>
+<text text-anchor='middle' x='264' y='324' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='264' y='516' fill='currentColor' style='font-size:1em'>础</text>
+<text text-anchor='middle' x='264' y='644' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='264' y='660' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='264' y='692' fill='currentColor' style='font-size:1em'>而</text>
+<text text-anchor='middle' x='272' y='180' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='272' y='324' fill='currentColor' style='font-size:1em'>v</text>
+<text text-anchor='middle' x='272' y='516' fill='currentColor' style='font-size:1em'>设</text>
+<text text-anchor='middle' x='272' y='644' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='272' y='660' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='272' y='692' fill='currentColor' style='font-size:1em'>是</text>
+<text text-anchor='middle' x='280' y='180' fill='currentColor' style='font-size:1em'>目</text>
+<text text-anchor='middle' x='280' y='276' fill='currentColor' style='font-size:1em'>A</text>
+<text text-anchor='middle' x='280' y='324' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='280' y='516' fill='currentColor' style='font-size:1em'>施</text>
+<text text-anchor='middle' x='280' y='644' fill='currentColor' style='font-size:1em'>.</text>
+<text text-anchor='middle' x='280' y='660' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='280' y='692' fill='currentColor' style='font-size:1em'>把</text>
+<text text-anchor='middle' x='288' y='132' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='288' y='180' fill='currentColor' style='font-size:1em'>的</text>
+<text text-anchor='middle' x='288' y='276' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='288' y='324' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='288' y='516' fill='currentColor' style='font-size:1em'>早</text>
+<text text-anchor='middle' x='288' y='644' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='288' y='660' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='296' y='132' fill='currentColor' style='font-size:1em'>灵</text>
+<text text-anchor='middle' x='296' y='180' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='296' y='276' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='296' y='324' fill='currentColor' style='font-size:1em'>w</text>
+<text text-anchor='middle' x='296' y='516' fill='currentColor' style='font-size:1em'>就</text>
+<text text-anchor='middle' x='296' y='644' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='296' y='660' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='296' y='692' fill='currentColor' style='font-size:1em'>A</text>
+<text text-anchor='middle' x='304' y='132' fill='currentColor' style='font-size:1em'>活</text>
+<text text-anchor='middle' x='304' y='180' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='304' y='276' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='304' y='324' fill='currentColor' style='font-size:1em'>)</text>
+<text text-anchor='middle' x='304' y='516' fill='currentColor' style='font-size:1em'>建</text>
+<text text-anchor='middle' x='304' y='644' fill='currentColor' style='font-size:1em'>v</text>
+<text text-anchor='middle' x='304' y='660' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='304' y='692' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='312' y='132' fill='currentColor' style='font-size:1em'>步</text>
+<text text-anchor='middle' x='312' y='180' fill='currentColor' style='font-size:1em'>:</text>
+<text text-anchor='middle' x='312' y='276' fill='currentColor' style='font-size:1em'>.</text>
+<text text-anchor='middle' x='312' y='516' fill='currentColor' style='font-size:1em'>好</text>
+<text text-anchor='middle' x='312' y='644' fill='currentColor' style='font-size:1em'>/</text>
+<text text-anchor='middle' x='312' y='660' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='320' y='132' fill='currentColor' style='font-size:1em'>骤</text>
+<text text-anchor='middle' x='320' y='180' fill='currentColor' style='font-size:1em'>控</text>
+<text text-anchor='middle' x='320' y='516' fill='currentColor' style='font-size:1em'>了</text>
+<text text-anchor='middle' x='320' y='644' fill='currentColor' style='font-size:1em'>b</text>
+<text text-anchor='middle' x='320' y='660' fill='currentColor' style='font-size:1em'>y</text>
+<text text-anchor='middle' x='320' y='692' fill='currentColor' style='font-size:1em'>嵌</text>
+<text text-anchor='middle' x='328' y='132' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='328' y='180' fill='currentColor' style='font-size:1em'>制</text>
+<text text-anchor='middle' x='328' y='516' fill='currentColor' style='font-size:1em'>.</text>
+<text text-anchor='middle' x='328' y='644' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='328' y='660' fill='currentColor' style='font-size:1em'>.</text>
+<text text-anchor='middle' x='328' y='692' fill='currentColor' style='font-size:1em'>入</text>
+<text text-anchor='middle' x='336' y='132' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='336' y='180' fill='currentColor' style='font-size:1em'>成</text>
+<text text-anchor='middle' x='336' y='644' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='336' y='660' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='336' y='692' fill='currentColor' style='font-size:1em'>现</text>
+<text text-anchor='middle' x='344' y='132' fill='currentColor' style='font-size:1em'>:</text>
+<text text-anchor='middle' x='344' y='180' fill='currentColor' style='font-size:1em'>本</text>
+<text text-anchor='middle' x='344' y='644' fill='currentColor' style='font-size:1em'>g</text>
+<text text-anchor='middle' x='344' y='660' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='344' y='692' fill='currentColor' style='font-size:1em'>有</text>
+<text text-anchor='middle' x='352' y='132' fill='currentColor' style='font-size:1em'>A</text>
+<text text-anchor='middle' x='352' y='180' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='352' y='644' fill='currentColor' style='font-size:1em'>/</text>
+<text text-anchor='middle' x='352' y='660' fill='currentColor' style='font-size:1em'>/</text>
+<text text-anchor='middle' x='352' y='692' fill='currentColor' style='font-size:1em'>工</text>
+<text text-anchor='middle' x='360' y='132' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='360' y='180' fill='currentColor' style='font-size:1em'>防</text>
+<text text-anchor='middle' x='360' y='644' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='360' y='660' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='360' y='692' fill='currentColor' style='font-size:1em'>作</text>
+<text text-anchor='middle' x='368' y='180' fill='currentColor' style='font-size:1em'>止</text>
+<text text-anchor='middle' x='368' y='644' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='368' y='660' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='368' y='692' fill='currentColor' style='font-size:1em'>流</text>
+<text text-anchor='middle' x='376' y='132' fill='currentColor' style='font-size:1em'>自</text>
+<text text-anchor='middle' x='376' y='180' fill='currentColor' style='font-size:1em'>无</text>
+<text text-anchor='middle' x='376' y='644' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='376' y='660' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='376' y='692' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='384' y='132' fill='currentColor' style='font-size:1em'>主</text>
+<text text-anchor='middle' x='384' y='180' fill='currentColor' style='font-size:1em'>限</text>
+<text text-anchor='middle' x='384' y='644' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='384' y='660' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='384' y='692' fill='currentColor' style='font-size:1em'>让</text>
+<text text-anchor='middle' x='392' y='132' fill='currentColor' style='font-size:1em'>决</text>
+<text text-anchor='middle' x='392' y='180' fill='currentColor' style='font-size:1em'>循</text>
+<text text-anchor='middle' x='392' y='644' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='392' y='660' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='392' y='692' fill='currentColor' style='font-size:1em'>它</text>
+<text text-anchor='middle' x='400' y='132' fill='currentColor' style='font-size:1em'>定</text>
+<text text-anchor='middle' x='400' y='180' fill='currentColor' style='font-size:1em'>环</text>
+<text text-anchor='middle' x='400' y='644' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='400' y='660' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='400' y='692' fill='currentColor' style='font-size:1em'>干</text>
+<text text-anchor='middle' x='408' y='132' fill='currentColor' style='font-size:1em'>如</text>
+<text text-anchor='middle' x='408' y='644' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='408' y='660' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='408' y='692' fill='currentColor' style='font-size:1em'>脏</text>
+<text text-anchor='middle' x='416' y='132' fill='currentColor' style='font-size:1em'>何</text>
+<text text-anchor='middle' x='416' y='644' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='416' y='660' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='416' y='692' fill='currentColor' style='font-size:1em'>活</text>
+<text text-anchor='middle' x='424' y='132' fill='currentColor' style='font-size:1em'>解</text>
+<text text-anchor='middle' x='424' y='644' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='424' y='660' fill='currentColor' style='font-size:1em'>g</text>
+<text text-anchor='middle' x='424' y='692' fill='currentColor' style='font-size:1em'>累</text>
+<text text-anchor='middle' x='432' y='132' fill='currentColor' style='font-size:1em'>决</text>
+<text text-anchor='middle' x='432' y='644' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='432' y='660' fill='currentColor' style='font-size:1em'>y</text>
+<text text-anchor='middle' x='432' y='692' fill='currentColor' style='font-size:1em'>活</text>
+<text text-anchor='middle' x='440' y='132' fill='currentColor' style='font-size:1em'>问</text>
+<text text-anchor='middle' x='440' y='644' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='440' y='660' fill='currentColor' style='font-size:1em'>/</text>
+<text text-anchor='middle' x='440' y='692' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='448' y='132' fill='currentColor' style='font-size:1em'>题</text>
+<text text-anchor='middle' x='448' y='644' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='448' y='660' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='448' y='692' fill='currentColor' style='font-size:1em'>人</text>
+<text text-anchor='middle' x='456' y='132' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='456' y='644' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='456' y='660' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='456' y='692' fill='currentColor' style='font-size:1em'>类</text>
+<text text-anchor='middle' x='464' y='644' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='464' y='660' fill='currentColor' style='font-size:1em'>w</text>
+<text text-anchor='middle' x='464' y='692' fill='currentColor' style='font-size:1em'>专</text>
+<text text-anchor='middle' x='472' y='644' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='472' y='660' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='472' y='692' fill='currentColor' style='font-size:1em'>注</text>
+<text text-anchor='middle' x='480' y='132' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='480' y='644' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='480' y='692' fill='currentColor' style='font-size:1em'>于</text>
+<text text-anchor='middle' x='488' y='132' fill='currentColor' style='font-size:1em'>平</text>
+<text text-anchor='middle' x='488' y='660' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='488' y='692' fill='currentColor' style='font-size:1em'>真</text>
+<text text-anchor='middle' x='496' y='132' fill='currentColor' style='font-size:1em'>衡</text>
+<text text-anchor='middle' x='496' y='644' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='496' y='660' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='496' y='692' fill='currentColor' style='font-size:1em'>正</text>
+<text text-anchor='middle' x='504' y='132' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='504' y='644' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='504' y='660' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='504' y='692' fill='currentColor' style='font-size:1em'>重</text>
+<text text-anchor='middle' x='512' y='132' fill='currentColor' style='font-size:1em'>*</text>
+<text text-anchor='middle' x='512' y='644' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='512' y='660' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='512' y='692' fill='currentColor' style='font-size:1em'>要</text>
+<text text-anchor='middle' x='520' y='132' fill='currentColor' style='font-size:1em'>:</text>
+<text text-anchor='middle' x='520' y='644' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='520' y='660' fill='currentColor' style='font-size:1em'>y</text>
+<text text-anchor='middle' x='520' y='692' fill='currentColor' style='font-size:1em'>的</text>
+<text text-anchor='middle' x='528' y='132' fill='currentColor' style='font-size:1em'>减</text>
+<text text-anchor='middle' x='528' y='644' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='528' y='692' fill='currentColor' style='font-size:1em'>事</text>
+<text text-anchor='middle' x='536' y='132' fill='currentColor' style='font-size:1em'>少</text>
+<text text-anchor='middle' x='536' y='660' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='536' y='692' fill='currentColor' style='font-size:1em'>.</text>
+<text text-anchor='middle' x='544' y='132' fill='currentColor' style='font-size:1em'>错</text>
+<text text-anchor='middle' x='544' y='644' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='544' y='660' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='544' y='692' fill='currentColor' style='font-size:1em'>每</text>
+<text text-anchor='middle' x='552' y='132' fill='currentColor' style='font-size:1em'>误</text>
+<text text-anchor='middle' x='552' y='644' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='552' y='660' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='552' y='692' fill='currentColor' style='font-size:1em'>周</text>
+<text text-anchor='middle' x='560' y='644' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='560' y='660' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='568' y='132' fill='currentColor' style='font-size:1em'>+</text>
+<text text-anchor='middle' x='568' y='644' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='568' y='660' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='568' y='692' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='576' y='644' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='576' y='660' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='576' y='692' fill='currentColor' style='font-size:1em'>3</text>
+<text text-anchor='middle' x='584' y='132' fill='currentColor' style='font-size:1em'>保</text>
+<text text-anchor='middle' x='584' y='644' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='584' y='660' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='584' y='692' fill='currentColor' style='font-size:1em'>0</text>
+<text text-anchor='middle' x='592' y='132' fill='currentColor' style='font-size:1em'>持</text>
+<text text-anchor='middle' x='592' y='644' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='592' y='660' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='592' y='692' fill='currentColor' style='font-size:1em'>0</text>
+<text text-anchor='middle' x='600' y='132' fill='currentColor' style='font-size:1em'>灵</text>
+<text text-anchor='middle' x='600' y='644' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='600' y='660' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='608' y='132' fill='currentColor' style='font-size:1em'>活</text>
+<text text-anchor='middle' x='608' y='644' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='608' y='660' fill='currentColor' style='font-size:1em'>v</text>
+<text text-anchor='middle' x='608' y='692' fill='currentColor' style='font-size:1em'>个</text>
+<text text-anchor='middle' x='616' y='132' fill='currentColor' style='font-size:1em'>性</text>
+<text text-anchor='middle' x='616' y='644' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='616' y='660' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='624' y='644' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='624' y='660' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='624' y='692' fill='currentColor' style='font-size:1em'>P</text>
+<text text-anchor='middle' x='632' y='644' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='632' y='660' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='632' y='692' fill='currentColor' style='font-size:1em'>R</text>
+<text text-anchor='middle' x='640' y='644' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='640' y='660' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='648' y='644' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='648' y='660' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='648' y='692' fill='currentColor' style='font-size:1em'>背</text>
+<text text-anchor='middle' x='656' y='644' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='656' y='660' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='656' y='692' fill='currentColor' style='font-size:1em'>后</text>
+<text text-anchor='middle' x='664' y='644' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='664' y='660' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='664' y='692' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='672' y='644' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='672' y='660' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='672' y='692' fill='currentColor' style='font-size:1em'>是</text>
+<text text-anchor='middle' x='680' y='644' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='680' y='660' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='680' y='692' fill='currentColor' style='font-size:1em'>多</text>
+<text text-anchor='middle' x='688' y='644' fill='currentColor' style='font-size:1em'>g</text>
+<text text-anchor='middle' x='688' y='660' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='688' y='692' fill='currentColor' style='font-size:1em'>年</text>
+<text text-anchor='middle' x='696' y='644' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='696' y='660' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='696' y='692' fill='currentColor' style='font-size:1em'>基</text>
+<text text-anchor='middle' x='704' y='644' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='704' y='660' fill='currentColor' style='font-size:1em'>w</text>
+<text text-anchor='middle' x='704' y='692' fill='currentColor' style='font-size:1em'>础</text>
+<text text-anchor='middle' x='712' y='644' fill='currentColor' style='font-size:1em'>g</text>
+<text text-anchor='middle' x='712' y='660' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='712' y='692' fill='currentColor' style='font-size:1em'>设</text>
+<text text-anchor='middle' x='720' y='644' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='720' y='660' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='720' y='692' fill='currentColor' style='font-size:1em'>施</text>
+<text text-anchor='middle' x='728' y='644' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='728' y='660' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='728' y='692' fill='currentColor' style='font-size:1em'>建</text>
+<text text-anchor='middle' x='736' y='644' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='736' y='660' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='736' y='692' fill='currentColor' style='font-size:1em'>设</text>
+<text text-anchor='middle' x='744' y='644' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='744' y='660' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='744' y='692' fill='currentColor' style='font-size:1em'>的</text>
+<text text-anchor='middle' x='752' y='644' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='752' y='660' fill='currentColor' style='font-size:1em'>g</text>
+<text text-anchor='middle' x='752' y='692' fill='currentColor' style='font-size:1em'>结</text>
+<text text-anchor='middle' x='760' y='644' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='760' y='660' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='760' y='692' fill='currentColor' style='font-size:1em'>果</text>
+<text text-anchor='middle' x='768' y='644' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='768' y='660' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='768' y='692' fill='currentColor' style='font-size:1em'>.</text>
+<text text-anchor='middle' x='776' y='644' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='776' y='660' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='784' y='644' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='784' y='660' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='792' y='644' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='792' y='660' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='800' y='644' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='800' y='660' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='808' y='644' fill='currentColor' style='font-size:1em'>)</text>
+<text text-anchor='middle' x='808' y='660' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='816' y='644' fill='currentColor' style='font-size:1em'>(</text>
+<text text-anchor='middle' x='816' y='660' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='824' y='644' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='824' y='660' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='832' y='644' fill='currentColor' style='font-size:1em'>0</text>
+<text text-anchor='middle' x='832' y='660' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='840' y='644' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='840' y='660' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='848' y='644' fill='currentColor' style='font-size:1em'>6</text>
+<text text-anchor='middle' x='848' y='660' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='856' y='644' fill='currentColor' style='font-size:1em'>.</text>
+<text text-anchor='middle' x='856' y='660' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='864' y='644' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='864' y='660' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='872' y='644' fill='currentColor' style='font-size:1em'>.</text>
+<text text-anchor='middle' x='872' y='660' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='880' y='644' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='880' y='660' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='888' y='644' fill='currentColor' style='font-size:1em'>9</text>
+<text text-anchor='middle' x='888' y='660' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='896' y='644' fill='currentColor' style='font-size:1em'>)</text>
+<text text-anchor='middle' x='896' y='660' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='904' y='660' fill='currentColor' style='font-size:1em'>w</text>
+<text text-anchor='middle' x='912' y='660' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='920' y='660' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='928' y='660' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='936' y='660' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='944' y='660' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='952' y='660' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='960' y='660' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='968' y='660' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='976' y='660' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='984' y='660' fill='currentColor' style='font-size:1em'>b</text>
+<text text-anchor='middle' x='992' y='660' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='1000' y='660' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='1008' y='660' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='1016' y='660' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='1024' y='660' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='1032' y='660' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='1040' y='660' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='1048' y='660' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='1056' y='660' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='1064' y='660' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='1072' y='660' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='1080' y='660' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='1088' y='660' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='1096' y='660' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='1104' y='660' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='1112' y='660' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='1120' y='660' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='1128' y='660' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='1136' y='660' fill='currentColor' style='font-size:1em'>v</text>
+<text text-anchor='middle' x='1144' y='660' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='1152' y='660' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='1160' y='660' fill='currentColor' style='font-size:1em'>w</text>
+<text text-anchor='middle' x='1168' y='660' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='1176' y='660' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='1184' y='660' fill='currentColor' style='font-size:1em'>8</text>
+<text text-anchor='middle' x='1192' y='660' fill='currentColor' style='font-size:1em'>7</text>
+<text text-anchor='middle' x='1200' y='660' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='1208' y='660' fill='currentColor' style='font-size:1em'>3</text>
+<text text-anchor='middle' x='1216' y='660' fill='currentColor' style='font-size:1em'>6</text>
+<text text-anchor='middle' x='1224' y='660' fill='currentColor' style='font-size:1em'>5</text>
+<text text-anchor='middle' x='1232' y='660' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='1240' y='660' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='1248' y='660' fill='currentColor' style='font-size:1em'>0</text>
+<text text-anchor='middle' x='1256' y='660' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='1264' y='660' fill='currentColor' style='font-size:1em'>6</text>
+<text text-anchor='middle' x='1272' y='660' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='1280' y='660' fill='currentColor' style='font-size:1em'>0</text>
+<text text-anchor='middle' x='1288' y='660' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='1296' y='660' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='1304' y='660' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='1312' y='660' fill='currentColor' style='font-size:1em'>0</text>
+<text text-anchor='middle' x='1320' y='660' fill='currentColor' style='font-size:1em'>)</text>
+</g>
+
+    </svg>
+  
+</div>
+
+
+  </div>
+
+  
+  <div style="margin: 30px 0 20px 0; padding: 16px; border-radius: 10px; background: #f8fafc; border: 1px solid #e2e8f0; text-align: center;">
+    <span style="font-size: 13px; color: #64748b; margin-right: 8px;">读完了？</span>
+    <button onclick="copyFullArticle()" style="padding: 7px 16px; background: #16a34a; color: white; border: none; border-radius: 20px; cursor: pointer; font-size: 13px; font-weight: 600;">📄 复制全文</button>
+    <button onclick="copyFullWithLink()" style="padding: 7px 16px; background: #7c3aed; color: white; border: none; border-radius: 20px; cursor: pointer; font-size: 13px; font-weight: 600; margin-left: 6px;">🔗 全文+链接</button>
+    <a id="post-to-x-link-2" href="" target="_blank" style="padding: 7px 16px; background: #000; color: white; border-radius: 20px; font-size: 13px; font-weight: 600; text-decoration: none; display: inline-block; margin-left: 6px;">🚀 发到 X</a>
+  </div>
+
+  <script>
+    
+    function safeCopy(text, successCb) {
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(successCb).catch(function() {
+          fallbackCopy(text, successCb);
+        });
+      } else {
+        fallbackCopy(text, successCb);
+      }
+    }
+
+    function fallbackCopy(text, successCb) {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.left = '-9999px';
+      ta.style.top = '-9999px';
+      document.body.appendChild(ta);
+      ta.focus();
+      ta.select();
+      try {
+        document.execCommand('copy');
+        if (successCb) successCb();
+      } catch (e) {
+        alert('复制失败，请手动选择文本复制');
+      }
+      document.body.removeChild(ta);
+    }
+
+    function showStatus(msg) {
+      var el = document.getElementById('copy-status');
+      el.style.display = 'block';
+      el.innerHTML = msg;
+      setTimeout(function() { el.style.display = 'none'; }, 3000);
+    }
+
+    function flashBtn(btn, origText, origBg) {
+      btn.textContent = '✅ 已复制';
+      btn.style.background = '#059669';
+      setTimeout(function() {
+        btn.textContent = origText;
+        btn.style.background = origBg;
+      }, 2000);
+    }
+
+    function getArticleText() {
+      var el = document.getElementById('article-content');
+      var text = el.innerText || el.textContent;
+      text = text.replace(/\n{3,}/g, '\n\n').trim();
+      return "\"Stripe Minions:每周 1300+ PR 全由 AI 写代码,人类只管 Review\"" + '\n\n' + text;
+    }
+
+    function copyFullArticle() {
+      var text = getArticleText();
+      safeCopy(text, function() {
+        flashBtn(document.getElementById('copy-full-btn'), '📄 复制全文', '#16a34a');
+        showStatus('✅ 全文已复制到剪贴板！直接去 X 粘贴发布');
+      });
+    }
+
+    function copyFullWithLink() {
+      var text = getArticleText() + '\n\n🔗 原文：' + "\"https://claudeai.best/posts/hunter-2026022019/\"";
+      safeCopy(text, function() {
+        flashBtn(document.getElementById('copy-full-link-btn'), '🔗 全文+链接', '#7c3aed');
+        showStatus('✅ 全文+链接已复制！');
+      });
+    }
+
+    function copyTweet() {
+      var text = document.getElementById('x-tweet-text').value;
+      safeCopy(text, function() {
+        flashBtn(document.getElementById('copy-tweet-btn'), '🐦 复制推文', '#1DA1F2');
+        showStatus('✅ 推文已复制！');
+      });
+    }
+
+    
+    var tweetText = document.getElementById('x-tweet-text').value;
+    var xUrl = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(tweetText);
+    document.getElementById('post-to-x-link').href = xUrl;
+    var link2 = document.getElementById('post-to-x-link-2');
+    if (link2) link2.href = xUrl;
+  </script>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://claudeai.best/tags/stripe/">Stripe</a></li>
+      <li><a href="https://claudeai.best/tags/ai-agent/">AI Agent</a></li>
+      <li><a href="https://claudeai.best/tags/%E7%BC%96%E7%A0%81%E4%BB%A3%E7%90%86/">编码代理</a></li>
+      <li><a href="https://claudeai.best/tags/%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7/">开发者工具</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://claudeai.best/posts/hunter-2026022022/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>重磅:ggml.ai 创始团队加入 Hugging Face,llama.cpp 迎来新篇章</span>
+  </a>
+  <a class="next" href="https://claudeai.best/posts/hunter-2026022018/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>17MB 发音评分器超越人类专家:语言学习的新思路</span>
+  </a>
+</nav>
+
+
+<ul class="share-buttons">
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Stripe Minions:每周 1300&#43; PR 全由 AI 写代码,人类只管 Review on x"
+            href="https://x.com/intent/tweet/?text=Stripe%20Minions%3a%e6%af%8f%e5%91%a8%201300%2b%20PR%20%e5%85%a8%e7%94%b1%20AI%20%e5%86%99%e4%bb%a3%e7%a0%81%2c%e4%ba%ba%e7%b1%bb%e5%8f%aa%e7%ae%a1%20Review&amp;url=https%3a%2f%2fclaudeai.best%2fposts%2fhunter-2026022019%2f&amp;hashtags=Stripe%2cAIAgent%2c%e7%bc%96%e7%a0%81%e4%bb%a3%e7%90%86%2c%e5%bc%80%e5%8f%91%e8%80%85%e5%b7%a5%e5%85%b7">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Stripe Minions:每周 1300&#43; PR 全由 AI 写代码,人类只管 Review on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fclaudeai.best%2fposts%2fhunter-2026022019%2f&amp;title=Stripe%20Minions%3a%e6%af%8f%e5%91%a8%201300%2b%20PR%20%e5%85%a8%e7%94%b1%20AI%20%e5%86%99%e4%bb%a3%e7%a0%81%2c%e4%ba%ba%e7%b1%bb%e5%8f%aa%e7%ae%a1%20Review&amp;summary=Stripe%20Minions%3a%e6%af%8f%e5%91%a8%201300%2b%20PR%20%e5%85%a8%e7%94%b1%20AI%20%e5%86%99%e4%bb%a3%e7%a0%81%2c%e4%ba%ba%e7%b1%bb%e5%8f%aa%e7%ae%a1%20Review&amp;source=https%3a%2f%2fclaudeai.best%2fposts%2fhunter-2026022019%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Stripe Minions:每周 1300&#43; PR 全由 AI 写代码,人类只管 Review on reddit"
+            href="https://reddit.com/submit?url=https%3a%2f%2fclaudeai.best%2fposts%2fhunter-2026022019%2f&title=Stripe%20Minions%3a%e6%af%8f%e5%91%a8%201300%2b%20PR%20%e5%85%a8%e7%94%b1%20AI%20%e5%86%99%e4%bb%a3%e7%a0%81%2c%e4%ba%ba%e7%b1%bb%e5%8f%aa%e7%ae%a1%20Review">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Stripe Minions:每周 1300&#43; PR 全由 AI 写代码,人类只管 Review on facebook"
+            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclaudeai.best%2fposts%2fhunter-2026022019%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Stripe Minions:每周 1300&#43; PR 全由 AI 写代码,人类只管 Review on whatsapp"
+            href="https://api.whatsapp.com/send?text=Stripe%20Minions%3a%e6%af%8f%e5%91%a8%201300%2b%20PR%20%e5%85%a8%e7%94%b1%20AI%20%e5%86%99%e4%bb%a3%e7%a0%81%2c%e4%ba%ba%e7%b1%bb%e5%8f%aa%e7%ae%a1%20Review%20-%20https%3a%2f%2fclaudeai.best%2fposts%2fhunter-2026022019%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Stripe Minions:每周 1300&#43; PR 全由 AI 写代码,人类只管 Review on telegram"
+            href="https://telegram.me/share/url?text=Stripe%20Minions%3a%e6%af%8f%e5%91%a8%201300%2b%20PR%20%e5%85%a8%e7%94%b1%20AI%20%e5%86%99%e4%bb%a3%e7%a0%81%2c%e4%ba%ba%e7%b1%bb%e5%8f%aa%e7%ae%a1%20Review&amp;url=https%3a%2f%2fclaudeai.best%2fposts%2fhunter-2026022019%2f">
+            <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Stripe Minions:每周 1300&#43; PR 全由 AI 写代码,人类只管 Review on ycombinator"
+            href="https://news.ycombinator.com/submitlink?t=Stripe%20Minions%3a%e6%af%8f%e5%91%a8%201300%2b%20PR%20%e5%85%a8%e7%94%b1%20AI%20%e5%86%99%e4%bb%a3%e7%a0%81%2c%e4%ba%ba%e7%b1%bb%e5%8f%aa%e7%ae%a1%20Review&u=https%3a%2f%2fclaudeai.best%2fposts%2fhunter-2026022019%2f">
+            <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+                <path
+                    d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z" />
+            </svg>
+        </a>
+    </li>
+</ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://claudeai.best/">AI 极客前沿</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '复制';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已复制！';
+            setTimeout(() => {
+                copybutton.innerHTML = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

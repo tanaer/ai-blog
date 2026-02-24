@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>AI | AI 极客前沿</title>
+<meta name="keywords" content="">
+<meta name="description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
+<meta name="author" content="AI 极客前沿">
+<link rel="canonical" href="https://claudeai.best/tags/ai/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://claudeai.best/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://claudeai.best/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://claudeai.best/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://claudeai.best/apple-touch-icon.png">
+<link rel="mask-icon" href="https://claudeai.best/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://claudeai.best/tags/ai/index.xml" title="rss">
+<link rel="alternate" hreflang="zh" href="https://claudeai.best/tags/ai/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+
+<meta property="og:url" content="https://claudeai.best/tags/ai/">
+  <meta property="og:site_name" content="AI 极客前沿">
+  <meta property="og:title" content="AI">
+  <meta property="og:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AI">
+<meta name="twitter:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
+
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://claudeai.best/" accesskey="h" title="AI 极客前沿 (Alt + H)">AI 极客前沿</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://claudeai.best/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://t.me/TgTechMsgBot" title="联系">
+                    <span>联系</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://claudeai.best/">主页</a>&nbsp;»&nbsp;<a href="https://claudeai.best/tags/">Tags</a></div>
+  <h1>
+    AI
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771464755064_cover.jpg" alt="电影制作 - AI 视频争议">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Seedance 2.0 翻车:那个 Tom Cruise vs Brad Pitt 的 AI 视频是假的
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>上周字节跳动发布了 Seedance 2.0 视频生成模型.营销铺天盖地,LinkedIn 和社交媒体上到处都在转发一个「Tom Cruise vs Brad Pitt」打斗视频.
+官方说法是:一位爱尔兰电影人只用了 两行提示词,30 秒生成了完整的多角度打斗场景.「好莱坞完了」的论调再次刷屏.
+但有人发现不对劲.
+证据:绿幕素材 Shokunin Studio 的博主在 Seedance 官网上找到了 同一段打斗的绿幕版本–两个特技演员在绿幕前表演完全相同的动作,只是换成了动漫风格输出.
+这不是 AI 从零生成的.这是 video-to-video:用真人拍摄的素材 &#43; AI 滤镜 &#43; 换脸技术.
+Video-to-Video 不是新技术 这个工作流程已经存在多年:
+拍摄源素材:绿幕,灯光,专业特技演员,摄影指导 AI 处理:用 video-to-video 模型转换风格 换脸:用 Tom Cruise 和 Brad Pitt 的照片进行面部替换 剪辑:多个角度分别生成,然后拼接 成本呢?租绿幕影棚,请特技演员,灯光师,摄影师–一天至少几千美元.而且不是一次生成就成功,每个角度可能要跑很多遍.
+营销 vs 现实 Seedance 和导演 Ruairi Robinson 声称「只需要两行提示词」.
+但证据显示:
+有专业团队拍摄的绿幕素材, 有多个机位的角度, 有换脸参考图, 可能经过多次生成和筛选 这不是「两行提示词,30 秒搞定」.这是标准的影视后期制作 &#43; AI 滤镜.
+为什么观众会被骗? 两年了,AI 视频炒作从未停止.从 Sora 到 Veo 到现在的 Seedance,每次都有人喊「好莱坞完了」.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 09:32:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>115 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Seedance 2.0 翻车:那个 Tom Cruise vs Brad Pitt 的 AI 视频是假的" href="https://claudeai.best/posts/hunter-2026021909/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771460717679_cover.jpg" alt="代码编辑器 AI 助手 - Claude Code 替代方案">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Claude Code 白嫖攻略:GLM-5 上架 NVIDIA NIM,账单直接归零
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Claude Code 是目前最好的 agentic coding 工具,但每月 $200 的订阅费劝退了很多人.
+刚刚有人在 Reddit 上分享了一个开源方案:用免费的 GLM-5,Kimi-K2.5 完全替代 Claude,账单直接归零.
+核心方案:free-claude-code GitHub 上有个项目叫 free-claude-code,本质是一个代理服务器:
+C 设 # 作 什 G # N # 1 2 3 4 5 # C - 这 如 # ` # g c c # P N M # u # A N # 项 - - - - # 这 对 更 * l 置 # 者 * 么 L # * * * V # . . . . . # l 些 果 # ` i d p R V O v N V # 目 # 不 于 重 参 a 两 在 支 是 M N O L I a 标 跟 你 ` 1 t 2 O I D 3 4 T I 还 从 多 实 语 是 日 要 考 u 个 关 测 持 - 三 V p M D 作 一 u 题 实 用 快 b . f . . V D E . r . H D 额 支 手 会 时 音 我 「 常 的 来 d 环 键 试 i 5 种 I e I 者 * * * * * 个 d 生 际 速 a c r e I I L u R I 外 持 机 话 显 消 的 盗 编 是 源 e 境 发 中 i n , 免 D n S A 的 m z m m q 隐 e 成 编 N 上 s 克 l e n 编 D A = 启 n 运 O A 功 发 并 示 息 看 版 程 , : 变 现 发 n t K 费 I R t 模 o - i i w 藏 , 程 I 手 h 隆 o e v 辑 E _ z 动 行 P 能 D 任 发 支 法 」 任 这 R C 量 : 现 t e i / A o u N 型 o a n s e 优 C 无 M 项 n - . R N - 代 u I N : i 务 t 持 - 务 种 e o , I 了 e r m 低 u d I 排 n i i t n 化 o 建 关 目 e c e . _ I a 理 v C C I 远 s , h ( - , 「 d d C n 一 r l i 成 N t i M 名 s / m r / : d 议 , 免 l x e T M i i l _ M 程 c 远 i W 是 G 解 d e l t 个 l e - 本 I e o ( h g a a q 节 e 模 但 费 h a a n Y _ / c a A 控 o 程 n h L 耦 i a e 重 e a K 方 M r * 是 实 o l x l w 省 式 会 版 t u m v P A g o u U 的 制 r 跑 k i A M 前 t C u r 要 a v 2 案 * * * 最 测 t m a a e 会 , 消 ( t d p E P l r d T d 代 i s P - 端 L d l 规 v e . * * , 推 ) a 5 i i n 3 做 耗 4 p e l = I m n e H A / 码 n p I 5 和 r I e e 律 e d 5 , , 荐 i / 3 0 很 文 你 0 s - e n _ 5 _ P T g e 后 / / a : d 费 的 m d . - 多 件 的 : c v K s C T I e r 代 和 端 L V C v t 支 费 费 用 : k i e 5 4 「 路 额 r / . i E e o O l t 理 」 o S o e t h 持 用 用 = 免 i - n v - 0 辅 径 度 e d e d Y r d K k e o 转 . K 的 c C d d h i . = = 免 费 m i s 3 % 助 提 . q g e n i = v e E e g k 文 你 i 模 a o e i n 大 免 部 费 , i 推 m t 9 请 取 f / i v a n e N y r e 字 用 m 式 l d T n k 多 费 分 ( 慷 - 理 a r 7 A 求 , r m t _ v r = a n ) i , L e 就 h k i 数 , 免 本 慨 k 能 x a b P 」 e i h n a : f 可 m s C - 可 L 能 i i n 替 费 地 的 2 力 - l - I : 前 e n u i p a r 以 l K 能 a → 直 n n g 代 限 , ) 限 . 强 m - a 缀 - ) b m i p e 在 机 和 a 2 是 M 接 k g ? 工 制 , 额 5 , 2 2 1 调 检 c 或 . - p e 器 工 u . A F 用 i 就 具 = 限 , * 刚 . - 7 用 测 l 本 c y c [ 人 具 d 5 A , r 第 n 的 是 会 4 制 限 模 * 上 1 1 b a 地 o o c b : 调 e I e 三 g 模 模 丢 0 = 制 型 架 * 2 * u 部 m u - u 用 的 G e 方 型 型 弃 按 = 质 - * 3 * d 署 / r h A i C 表 工 i 模 才 , 能 r 模 无 量 N b e , A - o N l o 现 具 t C 型 是 在 在 t e 型 , 高 综 I - * - - 这 l k s T d d 已 未 H l . 秘 多 多 h q , . 合 M * c 个 i e t H . e 经 来 u a 无 密 步 轮 i / 推 平 速 各 o 优 s y R n 足 的 b u 需 武 编 对 n m 推 荐 衡 度 - 项 d 化 h - 0 O v 的 够 方 d 修 器 程 话 k i 荐 模 最 快 任 e 是 a h . P i 好 向 f e 改 任 中 i n 模 型 好 , 本 务 「 h e 0 I d U . . r 务 保 n , 型 = 适 地 都 会 能 r r . C i I 如 你 e C C 上 留 g = 任 合 首 稳 拦 用 y e 0 _ a / 果 不 e o L 表 自 推 S 何 简 选 定 截 」 a . B . U 你 再 - d I 现 己 t 荐 t 单 ( 这 和 r 0 A c X 不 被 c e 明 的 o 模 e G 任 需 些 「 1 S o , 依 锁 l 或 显 推 k 型 p G 务 要 请 不 / E m 但 赖 定 a P 更 理 e = - U 足 求 能 f - _ ] 后 在 u r V 好 链 n G 3 F 够 , 用 r p U ( 端 C 单 d o S . ( s L . 显 本 」 e o R h 换 l 一 e x C * t , M 5 模 存 地 的 e r L t 成 a 供 - y o * h 这 - - 型 ) 直 区 - t = t 开 u 应 c d i 是 5 F 接 别 c h p 源 d 商 o → e n 性 , l 响 . l 8 t s 模 e . d k 能 a 应 a 0 t : 型 e N 扩 i 差 K s . u 8 p / . O * V 展 n 距 i h d 2 : / p I . g 的 m : e / b u D 关 i f - / u s I t 键 - r c l i A o . K e o o l 级 k 2 e d c d 别 N e . , e a . 的 I n 5 . l n 推 M s , D g h v 理 ) e i o i 能 / , D e t s d 力 看 e p t i , O 到 v S : a 这 p 之 s e 8 . 个 e 前 t e 0 c 方 n 步 r k 8 o 案 R 骤 a - 2 m 完 o 的 l R / 全 u 思 1 c s 可 t 考 : l e 行 e 过 f a t . r 程 r u t . e d i / e e n g 本 s 地 / 模 a 型 p i - k e y s ) 免 费 获 取 . </p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 08:25:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>8 分钟</span>&nbsp;·&nbsp;<span>1638 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Claude Code 白嫖攻略:GLM-5 上架 NVIDIA NIM,账单直接归零" href="https://claudeai.best/posts/hunter-2026021908/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771456755580_cover.jpg" alt="AI 数字人实时对话 - Phoenix-4 可视化">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Tavus Phoenix-4:600ms 实时对话 AI 数字人,终于跨过了「恐怖谷」
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>刚刚,Tavus 发布了 Phoenix-4–一个真正能「实时对话」的 AI 数字人系统.
+这不是又一个会动嘴的虚拟主播.这是一个能在 600 毫秒内 完成感知-思考-回应的完整对话系统,而且它真的「有表情」.
+为什么这很重要? 过去两年,AI 视频生成爆发式增长.Sora,Runway,Veo 都能做出惊艳的视频.但有一个问题始终没解决:
+交互延迟.
+你跟 AI 视频通话,说完话要等 2-3 秒才能看到回应.这个延迟足够让「真实感」完全崩塌.
+Phoenix-4 把这个延迟压到了 600 毫秒以内.这是一个质的飞跃–足够让你感觉在跟真人对话.
+三模型架构:Raven &#43; Sparrow &#43; Phoenix Phoenix-4 不是单一模型,而是三个模型的协同系统:
+Raven-1, 功能=感知, 类比=眼睛和耳朵 Sparrow-1, 功能=时机判断, 类比=对话节奏感 Phoenix-4, 功能=渲染生成, 类比=视觉输出
+Raven-1 分析你的面部表情和语调,理解对话的情感语境.
+Sparrow-1 决定什么时候该插话,什么时候该等你说完–这才是自然对话的关键.
+Phoenix-4 是核心渲染引擎,使用高斯扩散(Gaussian-Diffusion)技术实时生成逼真的面部表情.
+高斯扩散渲染:告别「恐怖谷」 传统的 AI 视频生成多用 GAN(生成对抗网络).Phoenix-4 换了个思路:Gaussian-Diffusion.
+这个技术能处理皮肤拉伸对光线的影响,眼周微表情的变化–这些细节正是导致「恐怖谷」效应的根源.
+技术亮点:
+30fps 实时流媒体输出, 头部转动时纹理和光照保持稳定, 微表情(眼角,嘴角)的真实物理模拟 情感控制 API 这是我最感兴趣的功能.你可以通过 API 程序化控制数字人的情绪状态:
+e e e e 这 # 创 工 1 2 3 4 整 # P - 这 # 数 P 当 客 * m m m m 不 # 建 作 . . . . 个 # h 就 # 字 h 延 服 参 o o o o 是 一 流 过 o 不 是 人 o 迟 , 考 t t t t 简 2 个 程 上 系 通 用 程 延 e 是 为 我 / e 降 教 来 i i i i 单 「 : 传 统 过 不 迟 n 生 什 的 虚 n 到 育 源 o o o o 的 分 R 生 W 需 是 i 成 么 看 拟 i , : n n n n 表 钟 e 2 成 C e 要 怎 x 完 能 法 人 x 6 陪 M : : : : 情 训 p 唯 V b 么 - 整 做 赛 - 0 伴 a 包 练 l 分 一 I R G 做 4 视 到 道 4 0 , r j s a s 切 你 i 钟 的 T P 到 频 已 m 销 k o a n u 换 的 c 说 S C U 的 采 再 6 经 的 s 售 T y d g r , 数 a 话 r D ? 用 播 0 热 突 . e n e p 而 字 」 视 e K 连 集 放 0 了 破 以 . c → e r r 是 分 ( 频 p 接 群 , m 很 不 下 . h s i 通 身 数 l 部 到 , * s 久 在 , . P 真 s → s 过 字 i 署 你 不 流 而 , 于 当 . o 正 e 「 分 c 的 需 式 是 端 但 画 表 . s 的 → 下 情 身 a 前 要 优 通 到 大 质 情 每 t 微 巴 → 感 ) _ 端 小 先 过 端 多 - 能 个 , 笑 眉 紧 向 只 i 时 ( 延 数 - 跟 需 ( 头 绷 眉 量 需 d 级 S W 迟 产 而 随 要 T 脸 微 , 毛 」 要 训 t e . 品 在 情 「 a 颊 皱 嘴 上 条 练 r b 还 于 绪 面 v &#43; , 角 扬 件 . e R 是 变 对 u 眼 眼 下 , 化 * a T 「 化 面 s 睛 神 压 眼 生 2 m C 看 * , 」 , 下 睛 成 - 起 交 当 沟 官 不 垂 睁 视 分 F 实 来 互 对 通 方 只 大 频 钟 i 时 像 真 话 的 博 是 . 的 r 推 」 实 节 场 客 嘴 视 s 送 而 感 奏 景 * ) 频 t 视 不 * 能 都 素 ) 频 是 * 自 可 材 * 包 「 . 然 能 * * , 聊 把 被 * 起 握 重 . 架 边 来 - 塑 构 生 像 - . : 成 」 这 边 . 才 传 是 输 真 , 正 最 的 小 「 化 数 首 字 帧 人 时 」 间 , 而 不 是 「 会 动 的 图 片 」 . </p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 07:20:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>4 分钟</span>&nbsp;·&nbsp;<span>641 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Tavus Phoenix-4:600ms 实时对话 AI 数字人,终于跨过了「恐怖谷」" href="https://claudeai.best/posts/hunter-2026021907/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771448867122_cover.jpg" alt="AI 音乐生成 - Lyria 3 可视化">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Google DeepMind Lyria 3 发布:上传一张图,30秒生成完整歌曲
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>刚刚,Google DeepMind 正式发布了 Lyria 3–目前最先进的 AI 音乐生成模型.
+而且,它已经集成到 Gemini 应用中了.你现在打开 Gemini,就能用.
+核心功能:一句话生成一首歌 Lyria 3 的核心能力非常直接:
+输入:文字描述,一张图片,或者一段音频 输出:30 秒完整音乐作品(48kHz 立体声),包含人声,歌词,乐器编排 比如你上传一张日落海滩的照片,Lyria 3 能根据画面氛围生成一首配乐.或者你写&#34;一首关于程序员深夜debug的悲伤民谣&#34;,它就真的会给你写歌词,谱曲,演唱.
+技术规格一览 输出时长: 30 秒 采样率: 48kHz 音频格式: 16-bit PCM 立体声 输入模态: 文本,图片,音频, 水印技术: SynthID, 延迟: &lt;2 秒(实时控制) Lyria RealTime API:真正的实时生成 Lyria 3 最有意思的部分是 RealTime API.
+传统音乐生成模型像点唱机:输入 prompt,等待生成完整文件.Lyria RealTime 不一样–它通过 WebSocket 保持实时连接,以 2 秒为单位 逐块生成音频.
+这意味着你可以边听边调整.比如生成到一半突然想换成爵士风格?实时切换.模型会「回头看」前面的上下文保持连贯,「向前看」你的控制指令决定走向.
+Music AI Sandbox:给音乐人的工具箱 除了面向普通用户,DeepMind 还推出了 Music AI Sandbox–一套专业创作工具:
+哼唱转管弦乐:哼一段旋律,AI 把它变成完整配器 风格迁移:用 MIDI 和弦生成合唱效果 乐器替换:保持旋律,用文字描述更换乐器 这套工具的设计逻辑是 Human-in-the-loop:AI 不是替代创作者,而是成为可「即兴演奏」的协作伙伴.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 05:10:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>159 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Google DeepMind Lyria 3 发布:上传一张图,30秒生成完整歌曲" href="https://claudeai.best/posts/hunter-2026021905/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771445383561_cover.jpg" alt="3D 空间智能可视化 - AI 理解三维世界">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Fei-Fei Li 融资 10 亿美元:AI 教母的 World Labs 要让机器「看懂」三维世界
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>如果你关注 AI 领域,一定听说过 Fei-Fei Li(李飞飞)这个名字.她创建了 ImageNet 数据集,推动了现代计算机视觉的发展.现在,她的创业公司 World Labs 刚刚完成了一轮 10 亿美元融资.
+融资详情 根据 Bloomberg 报道,这轮融资的投资者阵容相当豪华:
+Autodesk:软件巨头,单家就投了 2 亿美元 Andreessen Horowitz (a16z):硅谷顶级 VC Nvidia:GPU 霸主 AMD:芯片巨头 公司估值据传在 50 亿美元 左右.
+World Labs 在做什么? World Labs 的核心方向是 空间智能(Spatial Intelligence) 和 World Model(世界模型).
+简单说,就是让 AI 不仅能「看到」图像,还能真正「理解」三维空间中的物体关系,物理规律和因果关系.
+去年底,World Labs 发布了第一个产品 Marble–一个可以从单张图片或文字描述生成 3D 世界的系统.效果相当惊艳:不是简单的 2D 转 3D,而是构建完整的可交互三维场景.
+为什么这很重要? 目前的 LLM(大语言模型)本质上是在文本上训练的,对物理世界的理解非常有限.World Model 的目标是让 AI 像人类一样理解:
+物体在空间中的位置和关系, 物理规律(重力,碰撞,遮挡), 时间和因果关系 这被认为是通向 AGI 的关键一步.自动驾驶,机器人,AR/VR,游戏开发……几乎所有需要 AI 与物理世界交互的领域都等着这一突破.
+Fei-Fei Li 的背景 作为斯坦福大学计算机科学教授,Fei-Fei Li 被称为「AI 教母」.她创建的 ImageNet 数据集和竞赛直接催生了 AlexNet,开启了深度学习时代.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 04:10:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>123 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Fei-Fei Li 融资 10 亿美元:AI 教母的 World Labs 要让机器「看懂」三维世界" href="https://claudeai.best/posts/hunter-2026021904/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771419748291_cover.jpg" alt="SpaceX 火箭发射与 AI 概念图">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">SpaceX 收购 xAI:1.25万亿美元超级合并,马斯克要把数据中心搬上太空
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>这不是普通的并购,这是马斯克的&#34;大一统&#34;计划 2月2日,SpaceX 官方宣布收购 xAI,合并后估值 1.25万亿美元.
+你没看错,是万亿,不是亿.
+SpaceX 估值 1万亿,xAI 估值 2500亿,两家加起来直接超过 Meta,逼近 Amazon.
+但这次合并最疯狂的不是钱,而是马斯克给出的理由:
+“地球上的电不够 AI 用了.长期来看,太空是唯一的出路.”
+为什么要把数据中心放到太空? 马斯克的逻辑是这样的:
+AI 吃电太猛:现在的 AI 数据中心需要海量电力和冷却 电网扛不住:全球 AI 用电需求,靠地面设施根本满足不了 环境压力大:不能为了 AI 把地球的电都抽干 他的解决方案是:在太空建太阳能卫星数据中心.
+这听起来像科幻片,但 SpaceX 已经在向 FCC 申请相关许可了.
+这次合并到底买了什么? SpaceX 收购 xAI 后,会获得:
+Grok 聊天机器人:xAI 的旗舰产品 X 平台(原 Twitter):xAI 在 2025 年初收购的 Colossus 超算集群:全球最大的 AI 训练集群之一 合并后的新公司将整合:
+火箭发射(SpaceX), ️ 卫星网络(Starlink), AI 模型(Grok) 直连手机通信(Starlink Direct to Cell) 社交平台(X) 用官方话说:“地球上(和地球外)最雄心勃勃的垂直整合创新引擎”.
+估值和 IPO 时间表 根据 The Guardian 的报道:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-18 21:00:00 +0800 CST'>2026年2月18日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>113 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to SpaceX 收购 xAI:1.25万亿美元超级合并,马斯克要把数据中心搬上太空" href="https://claudeai.best/posts/hunter-2026021821/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771416097453_cover.jpg" alt="Claude Sonnet 4.6 AI模型发布">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Claude Sonnet 4.6发布:性能对标Opus,价格不变,还学会了用电脑
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>今天Anthropic放了个大招–Claude Sonnet 4.6.
+这不是普通的小版本更新.官方明确说了:Sonnet 4.6的性能接近去年11月的Opus 4.5,而价格却保持Sonnet的水平:$3输入/$15输出每百万token.
+用Opus的钱买Sonnet?不,现在是用Sonnet的钱买Opus级性能.
+性能提升有多猛? 先看几个硬指标:
+Claude Code测试:70%的开发者更喜欢Sonnet 4.6而不是4.5;甚至59%的人更喜欢它而不是Opus 4.5 OfficeQA文档理解:与Opus 4.6打平, Vending-Bench商业模拟:它开发了一套独特的&#34;前期重投入,后期拼利润&#34;策略,比竞争对手都赚得多, 保险行业基准:94%准确率,成为电脑操作任务表现最好的模型 为什么开发者更喜欢它?反馈很一致:
+更少&#34;偷懒&#34;(hallucination和虚假成功声明大幅减少), 代码改动前会先读上下文, 共享逻辑会合并而不是重复, 指令遵循更稳定 简单说:用起来更省心.
+电脑操作:16个月从3.6%到接近人类 这是我最关心的部分.
+2024年10月,Anthropic率先推出电脑操作能力.当时官方自己都说&#34;笨拙且容易出错&#34;.但进展速度惊人:
+在OSWorld基准测试(让AI操作Chrome,LibreOffice,VS Code等真实软件)中:
+Sonnet 3.5 (2024.10):3.6% Sonnet 4.6 (2026.02):接近人类水平 这意味着什么?你不用再为每个旧系统写专门的API连接器了.AI可以像人一样:看屏幕,点鼠标,敲键盘,操作任何软件.
+早期用户已经在用它自动填写复杂表单,跨多个浏览器标签整理数据,操作专业表格软件.
+当然,它还赶不上最熟练的人类.但进步曲线令人咋舌.
+1M上下文窗口(Beta) Sonnet 4.6在Beta模式下支持100万token上下文窗口.
+这是什么概念?足够塞下:
+整个代码库, 几十篇研究论文, 几百页合同文档 而且它不是&#34;塞进去就忘&#34;,而是能有效推理这么多内容.
+配套功能还包括上下文压缩(Context Compaction),在对话接近限制时自动总结旧内容,延长有效对话长度.
+开发者迁移注意 如果你在用Claude API,迁移有几处破坏性变更:
+预填充(Prefill)被废除:以前可以预先填入assistant消息来控制输出格式,现在会返回400错误.改用structured outputs或output_config.format.
+thinking参数迁移:thinking: {type: &#34;enabled&#34;, budget_tokens: N} 已弃用,改用thinking: {type: &#34;adaptive&#34;}配合effort参数.
+Beta头清理:effort,fine-grained-tool-streaming,interleaved-thinking都不再需要beta头了–全是GA功能.
+完整迁移清单在官方文档.
+我的看法 这次更新的核心信号是:性能-价格比正在快速重构.
+半年前,要接近顶级的代码能力,你得上Opus.现在Sonnet就能做到.这对开发者来说是实打实的成本下降.
+更值得玩味的是电脑操作能力的进化速度.如果这个曲线持续下去,2026年可能会看到AI真正&#34;接管&#34;大量重复性的软件操作工作.不是通过API集成,而是直接像人一样操作界面.
+到时候,那些&#34;没有API的祖传系统&#34;就不再是AI无法触及的禁区了.
+Sonnet 4.6现在已经上线所有Claude产品线–免费版,Pro,API,Claude Code,Claude Cowork,以及各大云平台.免费用户也默认升级到Sonnet 4.6.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-18 20:00:00 +0800 CST'>2026年2月18日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>73 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Claude Sonnet 4.6发布:性能对标Opus,价格不变,还学会了用电脑" href="https://claudeai.best/posts/hunter-2026021820/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771348854090_chunwan-cover.jpg" alt="机器人与AI的未来">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">1亿人的饭碗,春晚一个字没提
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>今年春晚看了吗?
+机器人空翻,醉拳,跑酷,十几台机器同时编队起舞.仿生奶奶和孙子演小品,AI视觉特效满屏飞.整台晚会把过去一年中国具身智能最炸裂的Demo全塞进去了,四个小时看下来,弹幕清一色&#34;太牛了&#34;“中国速度&#34;“未来已来”.
+我承认动作确实一年比一年丝滑.去年机器人还在笨拙地转手绢,今年已经连续空翻加跑酷了,进步速度快到你觉得在看加速版科幻片.
+但看完那个晚上,我翻来覆去睡不着,一直在想一件事–
+春晚把中国最先进的AI和机器人,打包成了一场四小时的宣传片.
+展示的全是&#34;多炫&#34;“多像人&#34;“迭代多快”,配的旁白永远是:展示中国智造硬实力,科技与传统文化完美融合,人机共舞未来可期.
+听着真提气.
+但总觉得哪不对.
+……
+哪不对呢?
+它把最有破坏力的东西,包装成了最无害的样子.
+你看到机器人打醉拳,觉得好可爱好厉害.你没看到的是,等这项技术再成熟两三年,建筑工地的搬砖工,物流仓库的分拣员,工厂流水线上的操作工,他们的位置会被一个不要社保,不请假,不闹情绪,24小时连轴转的铁家伙顶掉.
+你看到AI奶奶和孙子在台上逗乐,觉得好温馨好感人.你没想到的是,客服,初级文案,基础设计,数据标注这些白领岗位,正在以比你想象快得多的速度蒸发.
+不是&#34;AI创造新岗位补上缺口&#34;那套说辞能糊弄过去的.
+活在减少,钱在变少.
+我来算一笔账.
+中国制造业从业人员大约1亿,服务业从业人员3.6亿.其中重复性体力劳动加上重复性脑力劳动,保守估计占60%.
+如果AI和机器人在未来5-10年替代其中20%的岗位–注意,我只说20%,不是60%–那就是接近1亿人需要重新找饭吃.
+1亿人什么概念?整个日本的总人口.
+而中国每年新增城镇就业大概1100万-1200万.照这个吸纳速度消化1亿人,需要8-9年,前提是其他岗位一个都不减少.
+但怎么可能不减少呢?
+有人爱拿工业革命说事–蒸汽机淘汰了织布工,但创造了工程师;汽车淘汰了马车夫,但创造了出租车司机.
+这套话术有一个致命问题:它假设&#34;新岗位&#34;的数量和门槛,能跟&#34;被淘汰岗位&#34;对等.
+现实是,AI这一次同时吃掉了两端.
+低端不用说了,富士康的流水线在用机器换人,美团的外卖机器人在部分园区已经能跑通了.高端呢?初级程序员,基础法务,简单翻译,普通会计,这些曾经被认为是&#34;铁饭碗&#34;的脑力活,正在被大模型一个个啃下来.
+更残酷的是速度差.
+1950年代美国钢铁业大裁员,一个炼钢工人失业后,可以在同一家工厂转岗做维修,做质检,做物流.工厂还在,人还在,换个工作就行.
+现在呢?整个岗位没了.不是一个厂,是整个行业.
+你让一个做了十年的淘宝美工&#34;转型”,往哪转?midjourney能出图,Sora能出视频,他转去做什么?去学AI?学AI的人正在把他的新饭碗也端走.
+这不是&#34;学新技能&#34;的问题,是&#34;跑得赢淘汰速度&#34;的问题.
+再说一个春晚打死都不会提的事–钱会流向哪.
+以前开工厂,老板雇100个工人,工人拿工资,工资变消费,消费撑起整个经济循环.大家都有活干,日子虽然卷但还过得下去.
+现在搞AI呢?老板买100台机器人.机器人不拿工资,不消费,不交社保.效率比人高十倍,利润全归资本.
+生产力是真的提高了.但多出来的这块肉,基本上全进了手握模型,算力,数据的那几个大佬口袋里.
+普通人能分到什么?更便宜的外卖,更便宜的网购,以及更卷到吐血的求职市场.
+全球范围看更直观–英伟达一家公司的市值,超过了德国,加拿大这些国家的股市总值.做AI芯片的赚得盆满钵满,用AI芯片被取代的连汤都喝不上.赢家通吃,在AI时代被玩到了极端.
+但最让我睡不着的,不是丢工作,也不是钱的事.
+是一个更往里扎的问题.
+当大部分&#34;有用的事&#34;都被机器做得更好更便宜的时候,人会开始琢磨一个问题:
+我到底还有什么用?
+别觉得矫情.一个人的存在感和价值感,很大程度来自&#34;我能做点什么&#34;“有人需要我”.当这个基础被抽掉,你猜剩下的是什么?
+日本已经有答案了.“无业世代&#34;“蛰居族”,几百万年轻人缩在家里,不工作不社交不恋爱.不是不想,是觉得没意义.
+中国这两年流行&#34;躺平&#34;“摆烂”,本质上是同一种情绪的预演.
+东西够了,但活着的劲儿没了.
+这颗雷,可能比失业那颗还大.
+别误会,我不是反对技术进步.
+我自己每天都在用AI,写东西查资料做分析,效率翻了好几倍,已经完全离不开了.
+但每次用完都有点说不清的不安–今天它帮我提速,明天它可能就是来顶我的那个.
+我不反感机器变聪明,我反感把一场可能改写几亿人命运的变革,拍成贺岁片.
+春晚告诉你:看,机器人多可爱,未来多美好. 它没告诉你:这个美好的未来,不是均匀分配的.
+它秀了中国在AI赛道上跑得多快.但没人问一句–车跑这么快,刹车和安全带准备好了吗?
+技术在狂飙.制度在散步.
+中间这道缝,才是真正要人命的.
+说完焦虑,说点实在的.
+如果真的要面对这场冲击,普通人能往哪走?
+斯坦福2025年的一份研究报告给出了一个关键洞察:AI擅长处理&#34;教科书式&#34;的知识–那些有标准答案,有明确规则,可以写成文档的东西.但AI很难替代&#34;诀窍”,“直觉&#34;以及&#34;与人协作&#34;的能力.
+什么意思?就是那些需要长期经验积累,需要处理模糊情况,需要读懂人心思的活,机器还干不明白.
+这给了两个方向:
+方向一:往&#34;乱&#34;的地方走
+从纯体力/纯重复脑力,转向复杂场景下的非标准化服务.
+高级养老护理–不是推轮椅喂饭那种,是要能陪老人聊天,观察情绪变化,处理突发身体状况的那种.机器能测血压,但测不出老人今天为什么不高兴.
+复杂设备现场维修–工厂里机器坏了,AI能看故障代码,但处理不了&#34;这根管子老化了得换个位置绕过去&#34;这种即兴发挥.
+社区矛盾调解,高端手工定制,个性化家政……这些工作需要处理混乱的现实世界和微妙的人际关系,是目前AI和机器人的软肋.
+方向二:当&#34;驾驭者&#34;而不是&#34;制造者”
+别往&#34;造AI&#34;那条路上挤.写代码,练算法,那条赛道已经卷成麻花了.
+去学&#34;用AI”.
+上海漕河泾搞过一个&#34;人工智能训练师&#34;的培训项目,专门教传统行业的人怎么给AI下指令,怎么清洗数据,怎么检查AI的产出.不需要懂代码,只需要懂业务场景.
+一个做了十年的客服主管,可能写不出聊天机器人,但他知道什么样的回答会让用户满意,什么样的回答会引发投诉.这个&#34;业务直觉&#34;,恰恰是AI产品最缺的.
+从&#34;蓝领&#34;往&#34;灰领&#34;转,门槛比想象中低.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-18 01:10:00 +0800 CST'>2026年2月18日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>76 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to 1亿人的饭碗,春晚一个字没提" href="https://claudeai.best/posts/chunwan-ai-2026/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771272100933_cover.jpg" alt="华尔街股市交易屏幕">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">华尔街的AI恐慌性抛售:从软件到卡车,没有行业是安全的
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>一个西班牙保险App,干翻了千亿美元市值 2月9号,马德里一个叫Tuio的初创公司发布了一款用ChatGPT构建的保险App.
+就这么一个产品发布,保险巨头Marsh股价当天暴跌7.5%,Arthur J. Gallagher跌了9.85%.
+这还只是开始.
+“AI恐慌交易&#34;正在席卷华尔街 过去两周,华尔街出现了一个全新的交易模式–AI恐慌交易(AI Scare Trade).
+逻辑很简单:某个AI初创公司发布了一个新工具 → 投资者判断哪个行业会被颠覆 → 该行业股票集体暴跌.
+Jefferies策略师Mohit Kumar说得直白:“市场现在是先开枪,后问问题的模式.任何可能被AI颠覆的行业都在挨打.”
+来看看这两周的战绩:
+2月9日 — 保险业
+Tuio发布AI保险App Marsh跌7.5%,Arthur J. Gallagher跌9.85% 2月10日 — 财富管理
+Altruist发布AI税务规划工具Hazel 嘉信理财(Schwab)跌7.42%,LPL Financial跌8.75%,Raymond James跌8.31% 2月12-13日 — 商业地产
+Cushman &amp; Wakefield两天暴跌24% CBRE两天跌20%,仲量联行(JLL)两天跌19% 2月13日 — 物流卡车
+Algorhythm Holdings发布货运优化工具, RXO暴跌20.45%,C.H. Robinson跌14.54%, 道琼斯运输指数单日跌4%,创去年4月以来最大单日跌幅 两周之内,AI恐慌从软件蔓延到保险,财富管理,商业地产,物流……几乎每个&#34;高费率,劳动密集型&#34;的行业都被扫了一遍.
+欧洲也没逃掉 这不是美国的独角戏.大西洋对岸同样哀鸿遍野:
+法国达索系统(Dassault Systemes)创下史上最大单日跌幅, 英国分析集团RELX录得1988年以来最差单日表现, 英国财富管理公司St James’s Place,Aberdeen,Quilter全线大跌 UBS分析师警告:市场只是&#34;部分定价&#34;了AI的信用影响,预计这个风险在2026年全年和2027年都会继续加剧.
+到底在怕什么? 牛津大学AI与工作研究副教授Carl Benedikt Frey给出了最精准的诊断:
+“AI正在把曾经稀缺的专业知识变成更便宜,更快,质量越来越接近的产出–这会在整个岗位消失之前就先压缩利润率.”
+翻译成人话:AI不需要把你的工作完全干掉,只要让你的服务变便宜,你的利润就完了.
+保险经纪人,税务顾问,房地产中介,货运调度员–这些角色的共同特征是:靠信息不对称和专业知识收取高费率.而这恰恰是AI最擅长消除的东西.
+更狠的是CBRE老板Bob Sulentic在财报电话会上说的:“如果长期来看AI减少了办公室白领的数量,对办公空间的需求也会减少.”
+商业地产被双杀:AI不仅要替代你的经纪业务,还要消灭你的客户.
+恐慌背后的催化剂 这波恐慌不是凭空产生的.2月5号,OpenAI和Anthropic同一天发布了新模型–GPT-5.3 Codex和Claude Opus 4.6.这两个模型的能力跳跃,让市场重新评估了AI颠覆的时间线.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-17 04:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>103 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to 华尔街的AI恐慌性抛售:从软件到卡车,没有行业是安全的" href="https://claudeai.best/posts/hunter-2026021704/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771228959025_cover.jpg" alt="传统软件被AI浪潮冲击的概念图">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">SaaS已死?2万亿美元蒸发背后,所有软件公司都在抢着改名叫AI
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>最近科技圈有个很有意思的现象:没有人想当软件公司了.
+Salesforce,ServiceNow,Oracle–这些企业软件的老大哥们,过去几周股价集体跳水.SaaS行业龙头们的市值合计蒸发了超过2万亿美元.连专门服务SaaS创业者的社区SaaStr都慌了,直接把名字改成了SaaStr AI,创始人的头衔也从CEO变成了&#34;首席AI官&#34;.
+这不是个别现象,这是一整个行业的身份危机.
+到底发生了什么? 简单说:AI Agent来了,传统软件慌了.
+过去企业买软件,是为了管理客户数据,发工资,搞采购,做客服.这些SaaS工具就像企业的数字基础设施,一旦用上就很难换–有时候一锁就是十年.靠着这种&#34;换不掉&#34;的粘性,SaaS公司们过着躺着收租的好日子.
+但现在,Anthropic推出了Cowork,OpenAI发布了Frontier,再加上OpenClaw这样的开源Agent平台,事情正在起变化.
+这些Agentic AI工具的逻辑完全不同:你用自然语言描述一个业务问题,AI直接给你生成解决方案,包括代码,流程,甚至整个系统.不需要按人头付费的&#34;席位&#34;,不需要花几个月做定制开发,也不需要被锁定在某个供应商的生态里.
+数据说话:AI写代码的速度在指数级增长 这不是画饼.Anthropic的Claude Code已经在实际开发中大量使用,软件开发的生产力正在飙升.Sam Altman更是直接放话:OpenAI的产品很快将实现100%由AI编写代码,涵盖从开发到决策的全流程.
+当AI可以当&#34;初级软件工程师&#43;流程设计师&#34;用的时候,企业为什么还要每个月给Salesforce交几百美元一个席位?
+这就是华尔街恐慌的核心逻辑.
+但先别急着给SaaS写讣告 恐慌归恐慌,现实是复杂的.
+第一,企业的切换成本极高. Salesforce管着你的客户数据,ServiceNow跑着你的工单系统,Oracle连着你的供应链.这些系统和业务流程深度绑定,不是说换就换的.就算AI Agent再强,让一个500强企业把核心系统迁走,至少也是两三年的事.
+第二,AI Agent目前还不够可靠. 让AI处理个报销单没问题,但让它管企业的财务系统?大多数CIO还没那个胆量.可靠性,安全性,合规性–这些&#34;无聊&#34;的需求恰恰是传统SaaS的护城河.
+第三,聪明的SaaS公司已经在自我革命. Salesforce有Agentforce,ServiceNow在搞AI Agent,连Oracle都在往AI上转型.如果你打不过AI,那就把AI塞进自己的产品里.
+真正有意思的是中间地带 我觉得最终的结局不是&#34;AI杀死SaaS&#34;,而是SaaS的形态会彻底改变.
+以前按席位收费–每个人类员工一个账号,一个月几百块.以后呢?可能是按Agent收费–你的AI员工用了多少计算资源,就付多少钱.人类用户数量变得不那么重要了,重要的是AI处理了多少任务.
+这意味着:
+中小企业是最大赢家. 以前雇不起10个人来做客服,做财务,做HR,现在几个AI Agent就搞定了,成本是传统SaaS的零头., 大企业的IT部门会缩小但更重要. 不再需要一堆人维护和配置软件,但需要更懂业务的人来&#34;训练&#34;和&#34;管理&#34;AI Agent., SaaS创业的门槛会降低. 一个人&#43;几个Agent就能做出以前需要50人团队才能开发的产品. 我的判断 短期内(1-2年),这波恐慌有过度反应的成分.企业软件不会一夜之间消失,Salesforce也不会明天倒闭.
+但中期(3-5年),传统的按席位收费模式确实会被颠覆.AI Agent不是取代软件,而是让&#34;软件&#34;这个概念变得更像&#34;服务&#34;–按需生成,按用量付费,随时可替换.
+长期来看,回头看2026年2月这波SaaS股价暴跌,它很可能就是一个转折点–就像2007年iPhone发布对功能机市场的冲击一样.不是谁错了,而是游戏规则变了.
+最讽刺的是: 那些急着把公司名字改成&#34;XX AI&#34;的SaaS公司,恰恰暴露了自己的焦虑.真正在做AI的公司,不需要改名.
+参考来源:NYT DealBook,TechXplore,Forbes,Inc.com
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-16 16:00:00 +0800 CST'>2026年2月16日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>50 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to SaaS已死?2万亿美元蒸发背后,所有软件公司都在抢着改名叫AI" href="https://claudeai.best/posts/hunter-2026021616/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://claudeai.best/tags/ai/page/3/">
+      «&nbsp;上一页&nbsp;
+    </a>
+    <a class="next" href="https://claudeai.best/tags/ai/page/5/">下一页&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://claudeai.best/">AI 极客前沿</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

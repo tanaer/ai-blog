@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Codex on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/codex/</link>
+    <description>Recent content in Codex on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 19 Feb 2026 02:05:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/codex/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude Code和Codex全沦陷:AI Agent Skills供应链攻击实测,一个下午攻破两大平台</title>
+      <link>https://claudeai.best/posts/hunter-2026021902/</link>
+      <pubDate>Thu, 19 Feb 2026 02:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021902/</guid>
+      <description>安全研究者用一下午时间攻破了Claude Code和Codex的skill安装机制.扫描4700个skill发现59个高危木马,335个高风险脚本.恶意skill自己写权限申请,AI照读不误--供应链攻击已经悄悄进入AI时代.</description>
+    </item>
+  </channel>
+</rss>
