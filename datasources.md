@@ -37,6 +37,11 @@
 - **Elevate** (Addy Osmani, 前端工程与AI效率, 35万+读者): https://addyo.substack.com/feed
 - **The AiEdge** (Damien Benveniste, AI工程与生产部署): https://newsletter.theaiedge.io/feed
 - **DiamantAI** (Nir Diamant, RAG与Agent技术, 顶级0.1%): https://diamantai.substack.com/feed
+- **The AI Frontier** (RunLLM团队, 行业+研究交叉, Vicuña/Gorilla模型开发者): https://frontierai.substack.com/feed
+- **Coding with Intelligence** (Rick Lamers, 无BS的LLM/AI开发新闻, 每周更新): https://codingwithintelligence.com/feed
+- **Ben's Bites** (Ben Tossell, VC视角AI新闻+产品, 10万+订阅): https://www.bensbites.com/feed
+- **Gwern Newsletter** (Gwern Branwen, 深度AI理论分析, 缩放定律先驱): https://gwern.substack.com/
+- **AI News by Smol** (swyx等, 15万+AI工程师订阅, Karpathy推荐"最好的AI newsletter"): https://news.smol.ai/ — 无RSS, Newsletter订阅
 
 ### 研究实验室官方博客
 - **OpenAI Blog** (一手发布): https://openai.com/blog/rss.xml
@@ -163,15 +168,13 @@
 > 以下数据源已发现,但尚未完全确认可用性或质量
 
 ### 潜力源(需进一步评估)
+- **Alpha Signal** (20万+开发者, AI工程师newsletter, 5分钟每日): https://alphasignal.ai/ — 无RSS, Newsletter订阅
+- **The Neuron Daily** (50万+订阅, 有趣+教育的AI日报): https://www.theneurondaily.com/ — 无RSS, Newsletter订阅
+- **Pointer** (AI工程管理+领导力, 独特视角): https://www.pointer.io/ — 无RSS, Newsletter订阅
+- **StrictlyVC** (VC投资+AI创业, 已被Yahoo收购): https://strictlyvc.com/ — RSS不活跃, Newsletter订阅
 - **InfoQ Global LLMs** (全球LLM新闻): https://www.infoq.com/llms/news/ — 页面可访问, RSS已确认(通用feed)
-- **LangChain Blog Newsletter** (Agent/LLM开发, 月度总结): https://blog.langchain.com/ — 高质量, RSS待确认
+- **LangChain Blog Newsletter** (Agent/LLM开发, 月度总结): https://blog.langchain.com/ — 高质量, RSS已验证
 - **LLM Stats** (模型对比+新闻): https://llm-stats.com/ — 有Blog, Feed未找到
-- **One Useful Thing** (Ethan Mollick的AI教育博客): https://www.oneusefulthing.org/ — 已验证, 已加入核心源
-- **The Rundown AI** (200万+读者的AI日报): https://www.therundown.ai/ — 已验证, 已加入核心源
-- **DiamantAI** (Nir Diamant, RAG与Agent技术): https://diamantai.substack.com/ — 已验证, 已加入核心源
-- **AI by Hand** (Prof. Tom Yeh, 手写推导AI算法): https://www.byhand.ai — 已验证, 已加入核心源
-- **PYMNTS AI** (支付/金融科技AI新闻): https://www.pymnts.com/category/artificial-intelligence/ — 已验证, 已加入核心源
-- **LLM Stats News** (开源LLM新闻): https://llm-stats.com/ai-news — 已验证, 已加入核心源(无RSS)
 - **allainews_sources GitHub** (已关闭的allainews.com数据源列表, 100+AI源RSS): https://github.com/foorilla/allainews_sources — 宝贵资源库
 - **top-rss-list GitHub** (中文优质RSS源列表, 包含AI/技术): https://github.com/weekend-project-space/top-rss-list — 中文源参考
 - **Sifted EU** (欧洲科技/AI创业新闻): https://sifted.eu/feed/ — ️ 403限制, 待验证
@@ -188,12 +191,11 @@
 - **Distill** (休眠中, 2021年后无更新): https://distill.pub/rss.xml — 历史内容仍有价值
 - **AI Engineer** (网站无法访问): https://ai-engineer.io/feed — 可能已下线
 - **The Batch** (DeepLearning.AI周报, Andrew Ng): https://www.deeplearning.ai/the-batch/ — ️ 无RSS, Newsletter订阅
-- **AI News (smol.ai)** (社区驱动AI新闻聚合): https://news.smol.ai — ️ 已迁移至新平台, RSS不可用
 
 ## 数据源统计
-**当前已验证: 88+ 核心数据源**
-- Newsletter: 22+, 个人博客: 11+, 研究机构: 15, 科技媒体: 25+, 开发者社区: 8, 中文源: 11, 学术源: 12+, AI工具与开发: 4
+**当前已验证: 94+ 核心数据源**
+- Newsletter: 28+, 个人博客: 11+, 研究机构: 15, 科技媒体: 25+, 开发者社区: 8, 中文源: 11, 学术源: 12+, AI工具与开发: 4
 
-**目标: 30+ 高质量源** 已达成 (88+)
+**目标: 30+ 高质量源** 已达成 (94+)
 
-**最后更新**: 2026-02-24 (早)
+**最后更新**: 2026-02-24 (晚)

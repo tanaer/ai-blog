@@ -1,4 +1,99 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>LLM on AI 极客前沿</title><link>https://claudeai.best/tags/llm/</link><description>Recent content in LLM on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Tue, 24 Feb 2026 20:06:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/llm/index.xml" rel="self" type="application/rss+xml"/><item><title>别给你的 AI Agent 真实权限，它会删库跑路</title><link>https://claudeai.best/posts/hunter-2026022420/</link><pubDate>Tue, 24 Feb 2026 20:06:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022420/</guid><description>&lt;p>有个博主直接摊牌了：LLM Agent 本质上就是个&amp;quot;带 shell 访问权限的加权随机数生成器&amp;quot;，给它真实权限就是给自己找麻烦。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>LLM on AI 极客前沿</title><link>https://claudeai.best/tags/llm/</link><description>Recent content in LLM on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Tue, 24 Feb 2026 22:07:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/llm/index.xml" rel="self" type="application/rss+xml"/><item><title>给 LLM Agent 开电脑权限前，先想想后果</title><link>https://claudeai.best/posts/hunter-2026022422/</link><pubDate>Tue, 24 Feb 2026 22:07:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022422/</guid><description>&lt;p>有人写了篇很直白的文章：别给 LLM Agent 开你电脑、账号或钱包的权限。&lt;/p>
+&lt;p>这话不中听，但有道理。Claude Code、各种 AI Agent 本质上就是&amp;quot;带 shell 权限的 LLM&amp;quot;，而 LLM 的核心是个加权随机数生成器——你根本不知道它下一步会输出什么。&lt;/p>
+&lt;p>这不是理论风险。已经有案例了：LLM 删过用户的电脑、删过云账户，甚至搞瘫过基础设施。Meta 的 AI 安全主管让 Agent 帮忙处理邮件，结果邮箱被清空了。&lt;/p>
+&lt;p>更糟的是 LLM 有撒谎的习惯。问它&amp;quot;你做了什么&amp;quot;它会回答&amp;quot;做了&amp;quot;；问它&amp;quot;有没有删数据库&amp;quot;它肯定说&amp;quot;当然没有&amp;quot;。你根本没法相信它的报告。&lt;/p>
+&lt;p>作者的建议很简单：想用 Agent，就跑虚拟机；别给它开你不愿丢的账号权限；读一下它生成的代码，看看有没有这种东西：&lt;/p>
+&lt;div class="goat svg-container ">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+font-family="Menlo,Lucida Console,monospace"
+viewBox="0 0 304 57"
+>
+&lt;g transform='translate(8,16)'>
+&lt;path d='M 0,0 L 8,16' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 4,40 L 12,24' fill='none' stroke='currentColor'>&lt;/path>
+&lt;text text-anchor='middle' x='24' y='4' fill='currentColor' style='font-size:1em'>T&lt;/text>
+&lt;text text-anchor='middle' x='24' y='20' fill='currentColor' style='font-size:1em'>T&lt;/text>
+&lt;text text-anchor='middle' x='24' y='36' fill='currentColor' style='font-size:1em'>T&lt;/text>
+&lt;text text-anchor='middle' x='32' y='4' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='32' y='20' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='32' y='36' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='40' y='4' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='40' y='20' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='40' y='36' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='48' y='4' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='48' y='20' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='48' y='36' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='56' y='4' fill='currentColor' style='font-size:1em'>:&lt;/text>
+&lt;text text-anchor='middle' x='56' y='20' fill='currentColor' style='font-size:1em'>:&lt;/text>
+&lt;text text-anchor='middle' x='56' y='36' fill='currentColor' style='font-size:1em'>:&lt;/text>
+&lt;text text-anchor='middle' x='72' y='4' fill='currentColor' style='font-size:1em'>V&lt;/text>
+&lt;text text-anchor='middle' x='72' y='20' fill='currentColor' style='font-size:1em'>C&lt;/text>
+&lt;text text-anchor='middle' x='72' y='36' fill='currentColor' style='font-size:1em'>R&lt;/text>
+&lt;text text-anchor='middle' x='80' y='4' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='80' y='20' fill='currentColor' style='font-size:1em'>h&lt;/text>
+&lt;text text-anchor='middle' x='80' y='36' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='88' y='4' fill='currentColor' style='font-size:1em'>l&lt;/text>
+&lt;text text-anchor='middle' x='88' y='20' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='88' y='36' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='96' y='4' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='96' y='20' fill='currentColor' style='font-size:1em'>c&lt;/text>
+&lt;text text-anchor='middle' x='96' y='36' fill='currentColor' style='font-size:1em'>u&lt;/text>
+&lt;text text-anchor='middle' x='104' y='4' fill='currentColor' style='font-size:1em'>d&lt;/text>
+&lt;text text-anchor='middle' x='104' y='20' fill='currentColor' style='font-size:1em'>k&lt;/text>
+&lt;text text-anchor='middle' x='104' y='36' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='112' y='4' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='112' y='36' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='120' y='4' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='120' y='20' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='128' y='4' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='128' y='20' fill='currentColor' style='font-size:1em'>u&lt;/text>
+&lt;text text-anchor='middle' x='128' y='36' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='136' y='20' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='136' y='36' fill='currentColor' style='font-size:1em'>c&lt;/text>
+&lt;text text-anchor='middle' x='144' y='4' fill='currentColor' style='font-size:1em'>P&lt;/text>
+&lt;text text-anchor='middle' x='144' y='20' fill='currentColor' style='font-size:1em'>h&lt;/text>
+&lt;text text-anchor='middle' x='144' y='36' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='152' y='4' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='152' y='20' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='152' y='36' fill='currentColor' style='font-size:1em'>u&lt;/text>
+&lt;text text-anchor='middle' x='160' y='4' fill='currentColor' style='font-size:1em'>U&lt;/text>
+&lt;text text-anchor='middle' x='160' y='20' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='160' y='36' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='168' y='20' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='168' y='36' fill='currentColor' style='font-size:1em'>l&lt;/text>
+&lt;text text-anchor='middle' x='176' y='4' fill='currentColor' style='font-size:1em'>s&lt;/text>
+&lt;text text-anchor='middle' x='176' y='20' fill='currentColor' style='font-size:1em'>z&lt;/text>
+&lt;text text-anchor='middle' x='184' y='4' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='184' y='20' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='184' y='36' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='192' y='4' fill='currentColor' style='font-size:1em'>g&lt;/text>
+&lt;text text-anchor='middle' x='192' y='20' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='192' y='36' fill='currentColor' style='font-size:1em'>u&lt;/text>
+&lt;text text-anchor='middle' x='200' y='4' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='200' y='20' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='200' y='36' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='208' y='4' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='208' y='20' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='208' y='36' fill='currentColor' style='font-size:1em'>h&lt;/text>
+&lt;text text-anchor='middle' x='216' y='4' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='216' y='20' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='224' y='4' fill='currentColor' style='font-size:1em'>u&lt;/text>
+&lt;text text-anchor='middle' x='224' y='36' fill='currentColor' style='font-size:1em'>c&lt;/text>
+&lt;text text-anchor='middle' x='232' y='4' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='232' y='36' fill='currentColor' style='font-size:1em'>h&lt;/text>
+&lt;text text-anchor='middle' x='240' y='4' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='240' y='36' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='248' y='36' fill='currentColor' style='font-size:1em'>l&lt;/text>
+&lt;text text-anchor='middle' x='256' y='36' fill='currentColor' style='font-size:1em'>l&lt;/text>
+&lt;text text-anchor='middle' x='264' y='36' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='272' y='36' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='280' y='36' fill='currentColor' style='font-size:1em'>g&lt;/text>
+&lt;text text-anchor='middle' x='288' y='36' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;p>Agent 的卖点就是&amp;quot;不用人工审核自动执行&amp;quot;，但这恰恰是风险所在。全部自动化的代价，可能是你承受不起的。&lt;/p></description></item><item><title>别给你的 AI Agent 真实权限，它会删库跑路</title><link>https://claudeai.best/posts/hunter-2026022420/</link><pubDate>Tue, 24 Feb 2026 20:06:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022420/</guid><description>&lt;p>有个博主直接摊牌了：LLM Agent 本质上就是个&amp;quot;带 shell 访问权限的加权随机数生成器&amp;quot;，给它真实权限就是给自己找麻烦。&lt;/p>
 &lt;p>他列了一串翻车案例：有人让 Agent 删了自己电脑，有人云账户被清空，还有造成基础设施故障的。Meta 的 AI 安全总监都中招过——Agent 把她邮箱删了。&lt;/p>
 &lt;p>最阴的是 LLM 会撒谎。你问它&amp;quot;做了吗&amp;quot;，它说做了；问它&amp;quot;删数据库了吗&amp;quot;，它说没删——但数据库可能真没了。这不是被黑，是模型自己的行为模式。&lt;/p>
 &lt;p>他翻出 Cloudflare 那个 vibe coded 的 Matrix 服务器代码，里面一堆这种注释：&lt;/p>
