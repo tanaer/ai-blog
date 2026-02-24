@@ -1,258 +1,28 @@
-<!DOCTYPE html>
-<html lang="zh" dir="auto" data-theme="auto">
-
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>工具 | AI 极客前沿</title>
-<meta name="keywords" content="">
-<meta name="description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
-<meta name="author" content="AI 极客前沿">
-<link rel="canonical" href="https://claudeai.best/tags/%E5%B7%A5%E5%85%B7/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://claudeai.best/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://claudeai.best/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://claudeai.best/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://claudeai.best/apple-touch-icon.png">
-<link rel="mask-icon" href="https://claudeai.best/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://claudeai.best/tags/%E5%B7%A5%E5%85%B7/index.xml" title="rss">
-<link rel="alternate" hreflang="zh" href="https://claudeai.best/tags/%E5%B7%A5%E5%85%B7/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-                color-scheme: dark;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .toc {
-                background: var(--entry);
-            }
-        }
-
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
-    </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script>
-
-<meta property="og:url" content="https://claudeai.best/tags/%E5%B7%A5%E5%85%B7/">
-  <meta property="og:site_name" content="AI 极客前沿">
-  <meta property="og:title" content="工具">
-  <meta property="og:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
-  <meta property="og:locale" content="zh-cn">
-  <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="工具">
-<meta name="twitter:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
-
-</head>
-<body class="list" id="top">
-    <header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://claudeai.best/" accesskey="h" title="AI 极客前沿 (Alt + H)">AI 极客前沿</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="https://claudeai.best/posts/" title="文章">
-                    <span>文章</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/tags/" title="标签">
-                    <span>标签</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/categories/" title="分类">
-                    <span>分类</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/search/" title="搜索">
-                    <span>搜索</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/about/" title="关于">
-                    <span>关于</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://t.me/TgTechMsgBot" title="联系">
-                    <span>联系</span>&nbsp;
-                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
-                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
-                        <path d="M15 3h6v6"></path>
-                        <path d="M10 14L21 3"></path>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://claudeai.best/">主页</a>&nbsp;»&nbsp;<a href="https://claudeai.best/tags/">Tags</a></div>
-  <h1>
-    工具
-  </h1>
-</header>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&amp;h=630&amp;fit=crop" alt="Persona AI 决策引擎">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Persona AI:不跟你聊天,直接告诉你 YES 还是 NO
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>说实话,大部分 AI 助手的问题不是不够聪明,而是太能聊了.你问它&#34;我该不该辞职创业&#34;,它能给你写三页 PPT,最后结论是&#34;这取决于你的情况&#34;.
+<!doctype html><html lang=zh dir=auto data-theme=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>工具 | AI 极客前沿</title>
+<meta name=keywords content><meta name=description content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态"><meta name=author content="AI 极客前沿"><link rel=canonical href=https://claudeai.best/tags/%E5%B7%A5%E5%85%B7/><link crossorigin=anonymous href=/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css integrity="sha256-2jIR5e+Ge/K3X9WmUVz+1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as=style><link rel=icon href=https://claudeai.best/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://claudeai.best/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://claudeai.best/favicon-32x32.png><link rel=apple-touch-icon href=https://claudeai.best/apple-touch-icon.png><link rel=mask-icon href=https://claudeai.best/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://claudeai.best/tags/%E5%B7%A5%E5%85%B7/index.xml title=rss><link rel=alternate hreflang=zh href=https://claudeai.best/tags/%E5%B7%A5%E5%85%B7/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51);color-scheme:dark}.list{background:var(--theme)}.toc{background:var(--entry)}}@media(prefers-color-scheme:light){.list::-webkit-scrollbar-thumb{border-color:var(--code-bg)}}</style></noscript><script>localStorage.getItem("pref-theme")==="dark"?document.querySelector("html").dataset.theme="dark":localStorage.getItem("pref-theme")==="light"?document.querySelector("html").dataset.theme="light":window.matchMedia("(prefers-color-scheme: dark)").matches?document.querySelector("html").dataset.theme="dark":document.querySelector("html").dataset.theme="light"</script><meta property="og:url" content="https://claudeai.best/tags/%E5%B7%A5%E5%85%B7/"><meta property="og:site_name" content="AI 极客前沿"><meta property="og:title" content="工具"><meta property="og:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态"><meta property="og:locale" content="zh-cn"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="工具"><meta name=twitter:description content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态"></head><body class=list id=top><header class=header><nav class=nav><div class=logo><a href=https://claudeai.best/ accesskey=h title="AI 极客前沿 (Alt + H)">AI 极客前沿</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://claudeai.best/posts/ title=文章><span>文章</span></a></li><li><a href=https://claudeai.best/tags/ title=标签><span>标签</span></a></li><li><a href=https://claudeai.best/categories/ title=分类><span>分类</span></a></li><li><a href=https://claudeai.best/search/ title=搜索><span>搜索</span></a></li><li><a href=https://claudeai.best/about/ title=关于><span>关于</span></a></li><li><a href=https://t.me/TgTechMsgBot title=联系><span>联系</span>&nbsp;<svg fill="none" shape-rendering="geometricPrecision" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></li></ul></nav></header><main class=main><header class=page-header><div class=breadcrumbs><a href=https://claudeai.best/>主页</a>&nbsp;»&nbsp;<a href=https://claudeai.best/tags/>Tags</a></div><h1>工具</h1></header><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&amp;h=630&amp;fit=crop" alt="Persona AI 决策引擎"></figure><header class=entry-header><h2 class=entry-hint-parent>Persona AI:不跟你聊天,直接告诉你 YES 还是 NO</h2></header><div class=entry-content><p>说实话,大部分 AI 助手的问题不是不够聪明,而是太能聊了.你问它"我该不该辞职创业",它能给你写三页 PPT,最后结论是"这取决于你的情况".
 废话,我知道取决于我的情况,我就是不知道怎么选才问你的.
 Persona AI 的思路不太一样–它不聊天,它给判决.
 你输入:我该不该辞职做这个 SaaS?现在有 50 个 beta 用户,5 个付费,老婆怀孕,存款 3 个月…
 它输出:
-V C K 然 它 还 5 h 如 E O i 后 内 有 t 果 R N l 告 置 个 次 t 你 D V l 诉 了 &#34; 免 p 也 I I 你 恶 费 s 受 C C S 为 6 魔 分 : 够 T T i 什 代 析 / 了 : I g 么 个 言 , / &#34; O n : 决 人 不 p 这 N N a 你 策 模 用 e 取 O : l 的 框 式 信 r 决 : 价 架 &#34; 用 s 于 ( 8 值 : - 卡 o . W 7 A 观 逆 - . n . a % c 是 向 如 a . i t &#34; 思 果 i &#34; t i 安 维 你 . , ) v 全 , 只 f 可 e 杠 是 u 以 &gt; 杆 在 n 试 分 寻 试 自 析 求 . 由 , 认 &#34; 用 同 , 户 , 而 真 它 且 相 会 , 强 r 客 制 u 户 构 n 倒 造 w 推 最 a , 强 y 简 的 洁 反 太 过 面 短 滤 论 . 器 点 如 , 来 果 逆 测 两 向 试 周 检 你 内 查 的 没 . 决 有 每 心 付 个 . 费 框 架 p 从 i 不 l 同 o 角 t 度 , 攻 就 击 别 你 想 的 了 问 . 题 . </p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 20:08:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>278 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Persona AI:不跟你聊天,直接告诉你 YES 还是 NO" href="https://claudeai.best/posts/hunter-2026022220/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&amp;h=630&amp;fit=crop" alt="Emacs Gravity Claude Code UI">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Emacs Gravity:magit 风格的 Claude Code UI,不装 Electron
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>发现一个有意思的工具 Emacs Gravity 给 Claude Code 做了个 magit 风格的 UI.不是滚动终端,而是结构化的会话视图 – 工具调用,Agent 树,文件变更都能折叠展开.
+V C K 然 它 还 5 h 如 E O i 后 内 有 t 果 R N l 告 置 个 次 t 你 D V l 诉 了 " 免 p 也 I I 你 恶 费 s 受 C C S 为 6 魔 分 : 够 T T i 什 代 析 / 了 : I g 么 个 言 , / " O n : 决 人 不 p 这 N N a 你 策 模 用 e 取 O : l 的 框 式 信 r 决 : 价 架 " 用 s 于 ( 8 值 : - 卡 o . W 7 A 观 逆 - . n . a % c 是 向 如 a . i t " 思 果 i " t i 安 维 你 . , ) v 全 , 只 f 可 e 杠 是 u 以 > 杆 在 n 试 分 寻 试 自 析 求 . 由 , 认 " 用 同 , 户 , 而 真 它 且 相 会 , 强 r 客 制 u 户 构 n 倒 造 w 推 最 a , 强 y 简 的 洁 反 太 过 面 短 滤 论 . 器 点 如 , 来 果 逆 测 两 向 试 周 检 你 内 查 的 没 . 决 有 每 心 付 个 . 费 框 架 p 从 i 不 l 同 o 角 t 度 , 攻 就 击 别 你 想 的 了 问 . 题 .</p></div><footer class=entry-footer><span title='2026-02-22 20:08:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>278 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Persona AI:不跟你聊天,直接告诉你 YES 还是 NO" href=https://claudeai.best/posts/hunter-2026022220/></a></article><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&amp;h=630&amp;fit=crop" alt="Emacs Gravity Claude Code UI"></figure><header class=entry-header><h2 class=entry-hint-parent>Emacs Gravity:magit 风格的 Claude Code UI,不装 Electron</h2></header><div class=entry-content><p>发现一个有意思的工具 Emacs Gravity 给 Claude Code 做了个 magit 风格的 UI.不是滚动终端,而是结构化的会话视图 – 工具调用,Agent 树,文件变更都能折叠展开.
 谁能用?解决什么问题? 场景:你住在 Emacs 里,用 Claude Code 但不喜欢它的终端 UI – 滚动太快,工具调用和思考混在一起.
 Emacs Gravity 的做法:
 Turn-based 视图:每个用户 prompt 是一个 turn,工具按响应周期分组 Agent 树:子 Agent 渲染成嵌套树,能看到它们的工具调用和结果 内联 diff:文件编辑直接在会话 buffer 里显示 unified diff Plan Review:Claude 提计划时在独立 buffer 审查,加注释,编辑,一键批准或拒绝 多会话管理:按项目分组,像切 buffer 一样切换会话 Capabilities 浏览器:plugins,skills,MCP servers 都在树里可导航 对比 Cursor/AntiGravity:
-UI, Cursor=VS Code 侧边栏, emacs-gravity=magit-section 终端原生 Agent 可见性, Cursor=最小, emacs-gravity=完整嵌套树 多会话, Cursor=无, emacs-gravity=按项目分组 Plan 审查, Cursor=无, emacs-gravity=View &#43; 注释 &#43; diff 开源, Cursor=否, emacs-gravity=是
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 08:06:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>119 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Emacs Gravity:magit 风格的 Claude Code UI,不装 Electron" href="https://claudeai.best/posts/hunter-2026022208/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&amp;h=630&amp;fit=crop" alt="Process Compose MCP 配图">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Process Compose 加了 MCP:不用写 SDK,命令行直接变 AI 工具
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>发现一个有意思的更新 Process Compose v1.94.0 加了嵌入式 MCP server.以前要给 AI 暴露工具得写 Python/TypeScript SDK,现在在 YAML 里配一下就行.
+UI, Cursor=VS Code 侧边栏, emacs-gravity=magit-section 终端原生 Agent 可见性, Cursor=最小, emacs-gravity=完整嵌套树 多会话, Cursor=无, emacs-gravity=按项目分组 Plan 审查, Cursor=无, emacs-gravity=View + 注释 + diff 开源, Cursor=否, emacs-gravity=是
+...</p></div><footer class=entry-footer><span title='2026-02-22 08:06:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>119 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Emacs Gravity:magit 风格的 Claude Code UI,不装 Electron" href=https://claudeai.best/posts/hunter-2026022208/></a></article><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&amp;h=630&amp;fit=crop" alt="Process Compose MCP 配图"></figure><header class=entry-header><h2 class=entry-hint-parent>Process Compose 加了 MCP:不用写 SDK,命令行直接变 AI 工具</h2></header><div class=entry-content><p>发现一个有意思的更新 Process Compose v1.94.0 加了嵌入式 MCP server.以前要给 AI 暴露工具得写 Python/TypeScript SDK,现在在 YAML 里配一下就行.
 谁能用?解决什么问题? 场景:想让 AI 帮你重启服务,查日志,操作 Kubernetes,但不想写 API wrapper.
 Process Compose 的做法:在 process-compose.yaml 里声明命令,自动变成 MCP tool.
-mcp_server: host: localhost port: 3000 transport: sse processes: restart-service: command: &#34;docker-compose restart @{service_name}&#34; mcp: type: tool arguments: - name: service_name type: string 几个实用例子:
+mcp_server: host: localhost port: 3000 transport: sse processes: restart-service: command: "docker-compose restart @{service_name}" mcp: type: tool arguments: - name: service_name type: string 几个实用例子:
 查服务健康:curl localhost:{port}/health 读容器日志:docker logs {container} --tail {lines} 扩容 K8s:kubectl scale deployment {service} --replicas={replicas} 跑老系统:java -jar legacy-reporter.jar --user {user} 20 年的老系统只有 CLI 没有 API?现在 AI 也能调了.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 07:05:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>114 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Process Compose 加了 MCP:不用写 SDK,命令行直接变 AI 工具" href="https://claudeai.best/posts/hunter-2026022207/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1024&amp;q=80" alt="Vouch 信任管理系统示意图">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Vouch:Terraform 作者出手,专治 AI 垃圾 PR
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>️ 发现一个有意思的工具叫 Vouch
+...</p></div><footer class=entry-footer><span title='2026-02-22 07:05:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>114 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Process Compose 加了 MCP:不用写 SDK,命令行直接变 AI 工具" href=https://claudeai.best/posts/hunter-2026022207/></a></article><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1024&amp;q=80" alt="Vouch 信任管理系统示意图"></figure><header class=entry-header><h2 class=entry-hint-parent>Vouch:Terraform 作者出手,专治 AI 垃圾 PR</h2></header><div class=entry-content><p>️ 发现一个有意思的工具叫 Vouch
 开源项目现在被 AI 垃圾贡献淹没了.cURL 上周 16 小时收到 7 个 AI 生成的假漏洞报告,维护者心态崩了直接关掉 Bug 赏金计划.
 Mitchell Hashimoto(Vagrant,Terraform 作者)出手了,做了个 Vouch.
 谁能用?
 你的开源项目被 AI 垃圾 PR/Issue 淹没 想建立可信贡献者网络的项目 GitHub 项目一键集成,Actions 自动检查 怎么用?
 项目里加个 VOUCHED.td 文件 配置 GitHub Actions(check-issue,check-pr) 未背书的用户提交 PR?自动关闭 维护者在 Issue 里评论 vouch @用户名 就能背书 优势在哪?
-不是黑名单,是信任网络:一个项目背过的人,另一个项目也认, 维护者完全控制:只有 write 权限的人能背书, 透明公开:背书列表就是文本文件,随便查 开源以前靠&#34;先信任后验证&#34;,现在 AI 把这模型打破了.Vouch 换成&#34;先验证后信任&#34;,跟社区打招呼,介绍一下自己就能被背书,跟正常社交没两样.
+不是黑名单,是信任网络:一个项目背过的人,另一个项目也认, 维护者完全控制:只有 write 权限的人能背书, 透明公开:背书列表就是文本文件,随便查 开源以前靠"先信任后验证",现在 AI 把这模型打破了.Vouch 换成"先验证后信任",跟社区打招呼,介绍一下自己就能被背书,跟正常社交没两样.
 GitHub: https://github.com/mitchellh/vouch
-#开源 #GitHub #AI安全
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 04:10:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>59 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Vouch:Terraform 作者出手,专治 AI 垃圾 PR" href="https://claudeai.best/posts/hunter-2026022204/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771517072756_cover.jpg" alt="iOS 开发 QA - Crit 可视化反馈">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Crit:iOS 开发者的可视化 QA,让 AI 编码 Agent 看懂你的反馈
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>iOS 开发者怎么给 AI 编码 Agent 反馈 bug?
+#开源 #GitHub #AI安全</p></div><footer class=entry-footer><span title='2026-02-22 04:10:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>59 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Vouch:Terraform 作者出手,专治 AI 垃圾 PR" href=https://claudeai.best/posts/hunter-2026022204/></a></article><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771517072756_cover.jpg alt="iOS 开发 QA - Crit 可视化反馈"></figure><header class=entry-header><h2 class=entry-hint-parent>Crit:iOS 开发者的可视化 QA,让 AI 编码 Agent 看懂你的反馈</h2></header><div class=entry-content><p>iOS 开发者怎么给 AI 编码 Agent 反馈 bug?
 截图 → 截好几个 → 解释问题 → AI 理解偏差 → 来回沟通……
 Crit 简化了这个流程:截图,打点,评论,导出给 AI 直接修.
 一句话介绍 Crit 是一个 CLI 工具,让你从 iOS 模拟器截图,在浏览器里添加反馈,然后把结构化数据交给任何编码 Agent.
@@ -261,41 +31,11 @@ Crit 简化了这个流程:截图,打点,评论,导出给 AI 直接修.
 浏览器打开,你可以:
 点击添加 pin(标注问题位置), 输入评论, 上传参考图片 保存后,告诉你的 Agent: “review .crit and fix each issue”
 Agent 会读取 .crit/ 目录下的 JSON 和标注截图,自动修复.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-20 00:05:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>197 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Crit:iOS 开发者的可视化 QA,让 AI 编码 Agent 看懂你的反馈" href="https://claudeai.best/posts/hunter-2026022000/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771509127499_cover.jpg" alt="MCP 配置工具 - MCP-wire">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">MCP-wire:一个命令搞定所有 AI 编码工具的 MCP 配置
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>你有 Claude Code,Codex,Gemini CLI……每个都要单独配置 MCP?
+...</p></div><footer class=entry-footer><span title='2026-02-20 00:05:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>197 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Crit:iOS 开发者的可视化 QA,让 AI 编码 Agent 看懂你的反馈" href=https://claudeai.best/posts/hunter-2026022000/></a></article><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771509127499_cover.jpg alt="MCP 配置工具 - MCP-wire"></figure><header class=entry-header><h2 class=entry-hint-parent>MCP-wire:一个命令搞定所有 AI 编码工具的 MCP 配置</h2></header><div class=entry-content><p>你有 Claude Code,Codex,Gemini CLI……每个都要单独配置 MCP?
 MCP-wire 解决了这个问题:一个命令,配置所有工具.
 一句话介绍 MCP-wire 是一个 Go CLI,用一个 TUI 界面跨多个 AI 编码工具安装和管理 MCP 服务器.
 支持的工具 Claude Code (Anthropic), Codex CLI (OpenAI), Gemini CLI (Google), OpenCode (开源) 支持的 MCP 服务 内置精选服务 context7 - 文档查找 (OAuth) jira - Atlassian Rovo (OAuth) sentry - 错误监控 (OAuth) playwright - 浏览器自动化 MCP Registry (社区) 启用后可以访问数百个社区发布的 MCP 服务器:
-m 实 - # # ` # m # # m # m # m # m # m # # b b # g c m # 如 - - - 每 M # 只 ` n d t a u e 放 # M 每 M 1 2 3 如 * c 时 # # ` c c c c c c # # r r # i d a / # 果 个 C # 需 ` a e r u r n 到 # C 个 C . . . 果 参 p 搜 S # ` 运 p 5 安 p 安 p 卸 p 全 p 项 p # e e # t k b 你 C C G 工 P 创 ` m s a t l v P 工 P 你 考 - 索 e 怎 b 行 - . 装 - 装 - 载 - 局 - 目 - 安 w w m e i 为 同 l o e 具 - 添 建 y e c n h : : ` 我 具 - 在 来 w 安 n 么 交 a w w w w 安 w 级 w 装 H 从 c c n 什 时 a d m 都 w 加 一 a : r s : s 的 生 有 w * * * 多 源 i 装 t 用 互 s i 应 J i S i i 装 i 安 i o t i 源 l p b / 么 用 u e i 要 i 新 个 m i p &#34; [ e 看 态 自 i 统 抽 社 个 : r : r ? 式 h r 用 i r e r r ( r 装 r m a n 码 o - u m 需 多 d x n 配 r 服 l e p o o h ] r 法 正 己 r 一 象 区 H e y e r e n e e 所 e ( e e p s 构 n w i c 要 个 e i 置 e 务 Y x t r a t v 在 的 e 界 差 驱 A a T a t 有 仅 b t 建 e i l p 这 做 A a i t u t i 快 配 面 异 动 I c f 错 U i r i u 项 i 当 i r a a r d - 个 A C C M 抽 M m o : t p c 速 置 的 * * * k e 误 I M n y n n 目 n 前 n e n l h e w ? I o c L C 象 L p n h s e 发 文 思 * * * 编 e a 追 C s s i 可 s 项 s w d l t i d o I P 了 l : h : s 展 件 路 码 r t 踪 P t 到 t n 用 t 目 t r t r 编 e d , 这 文 e t / / , 位 是 - - - 工 u , a a s ) a ) a ( e m p e 码 e 做 配 些 件 &#34; t / ` 但 置 对 具 N r 到 l O l t l l m a c s 工 写 文 置 差 : E p m 配 和 的 一 用 支 之 e e G l p l a l l a g p : 具 代 r 档 文 异 x c 目 置 格 : 个 户 持 间 w i C e l c r - / : 码 e 件 , a p 录 管 式 不 官 切 s e t l j n s l j j O a w / v 格 你 m . , 理 , T 需 方 换 , n H a i C e i i S n i g i 式 只 p e 不 是 手 U 要 , a u u r o n s r r / d r i e 可 需 l x 用 个 动 I 关 R 这 G b b d a d t e a a L i e t w 能 要 e a 写 痛 维 心 e 个 i l e e r n i / h 还 选 m 点 护 搞 配 g 工 t e 集 y t n t u 不 择 M p G . 很 定 置 i 具 H 成 C - r - - u a b 一 服 C l o 容 所 文 s 能 u r , o t y t t x p . 样 务 P e 易 有 件 t 省 b e d a - a a ) c . &#34; . 代 出 工 格 r 不 g 数 e r t r r o &#43; c 码 错 具 式 y 少 M i 据 g a - g g m o . . 时 C s 库 e r t e e / 选 m 间 P t 连 t g a t t a 择 / . - r 接 e r n 工 m w y , c t g c c d 具 c i l e l l r , p r a o t a a e 它 &#34; e u p u u a 帮 * d e o d d g 你 e n p e e r 生 c e a 成 . o n n 正 几 - d c - - d 确 百 n e o s s i 的 个 o d c c / 配 - e o o m 置 p p p c . r e e p o - m u p w p s r i t e o r r j e e c t </p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-19 21:50:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>6 分钟</span>&nbsp;·&nbsp;<span>1072 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to MCP-wire:一个命令搞定所有 AI 编码工具的 MCP 配置" href="https://claudeai.best/posts/hunter-2026021921/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771497145880_cover.jpg" alt="macOS AI 工具 - Spackle 全局重写">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Spackle:Mac 全局 AI 重写快捷键,选中文字按一下就改好
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>在 Mail 里写邮件,想改一下措辞.切到 ChatGPT,复制,粘贴,等回复,复制,切回来,粘贴……累不累?
+m 实 - # # ` # m # # m # m # m # m # m # # b b # g c m # 如 - - - 每 M # 只 ` n d t a u e 放 # M 每 M 1 2 3 如 * c 时 # # ` c c c c c c # # r r # i d a / # 果 个 C # 需 ` a e r u r n 到 # C 个 C . . . 果 参 p 搜 S # ` 运 p 5 安 p 安 p 卸 p 全 p 项 p # e e # t k b 你 C C G 工 P 创 ` m s a t l v P 工 P 你 考 - 索 e 怎 b 行 - . 装 - 装 - 载 - 局 - 目 - 安 w w m e i 为 同 l o e 具 - 添 建 y e c n h : : ` 我 具 - 在 来 w 安 n 么 交 a w w w w 安 w 级 w 装 H 从 c c n 什 时 a d m 都 w 加 一 a : r s : s 的 生 有 w * * * 多 源 i 装 t 用 互 s i 应 J i S i i 装 i 安 i o t i 源 l p b / 么 用 u e i 要 i 新 个 m i p " [ e 看 态 自 i 统 抽 社 个 : r : r ? 式 h r 用 i r e r r ( r 装 r m a n 码 o - u m 需 多 d x n 配 r 服 l e p o o h ] r 法 正 己 r 一 象 区 H e y e r e n e e 所 e ( e e p s 构 n w i c 要 个 e i 置 e 务 Y x t r a t v 在 的 e 界 差 驱 A a T a t 有 仅 b t 建 e i l p 这 做 A a i t u t i 快 配 面 异 动 I c f 错 U i r i u 项 i 当 i r a a r d - 个 A C C M 抽 M m o : t p c 速 置 的 * * * k e 误 I M n y n n 目 n 前 n e n l h e w ? I o c L C 象 L p n h s e 发 文 思 * * * 编 e a 追 C s s i 可 s 项 s w d l t i d o I P 了 l : h : s 展 件 路 码 r t 踪 P t 到 t n 用 t 目 t r t r 编 e d , 这 文 e t / / , 位 是 - - - 工 u , a a s ) a ) a ( e m p e 码 e 做 配 些 件 " t / ` 但 置 对 具 N r 到 l O l t l l m a c s 工 写 文 置 差 : E p m 配 和 的 一 用 支 之 e e G l p l a l l a g p : 具 代 r 档 文 异 x c 目 置 格 : 个 户 持 间 w i C e l c r - / : 码 e 件 , a p 录 管 式 不 官 切 s e t l j n s l j j O a w / v 格 你 m . , 理 , T 需 方 换 , n H a i C e i i S n i g i 式 只 p e 不 是 手 U 要 , a u u r o n s r r / d r i e 可 需 l x 用 个 动 I 关 R 这 G b b d a d t e a a L i e t w 能 要 e a 写 痛 维 心 e 个 i l e e r n i / h 还 选 m 点 护 搞 配 g 工 t e 集 y t n t u 不 择 M p G . 很 定 置 i 具 H 成 C - r - - u a b 一 服 C l o 容 所 文 s 能 u r , o t y t t x p . 样 务 P e 易 有 件 t 省 b e d a - a a ) c . " . 代 出 工 格 r 不 g 数 e r t r r o + c 码 错 具 式 y 少 M i 据 g a - g g m o . . 时 C s 库 e r t e e / 选 m 间 P t 连 t g a t t a 择 / . - r 接 e r n 工 m w y , c t g c c d 具 c i l e l l r , p r a o t a a e 它 " e u p u u a 帮 * d e o d d g 你 e n p e e r 生 c e a 成 . o n n 正 几 - d c - - d 确 百 n e o s s i 的 个 o d c c / 配 - e o o m 置 p p p c . r e e p o - m u p w p s r i t e o r r j e e c t</p></div><footer class=entry-footer><span title='2026-02-19 21:50:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>6 分钟</span>&nbsp;·&nbsp;<span>1072 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to MCP-wire:一个命令搞定所有 AI 编码工具的 MCP 配置" href=https://claudeai.best/posts/hunter-2026021921/></a></article><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771497145880_cover.jpg alt="macOS AI 工具 - Spackle 全局重写"></figure><header class=entry-header><h2 class=entry-hint-parent>Spackle:Mac 全局 AI 重写快捷键,选中文字按一下就改好</h2></header><div class=entry-content><p>在 Mail 里写邮件,想改一下措辞.切到 ChatGPT,复制,粘贴,等回复,复制,切回来,粘贴……累不累?
 Spackle 解决了这个问题:选中文字,按快捷键,原地替换.
 一句话介绍 Spackle 是一个 macOS 菜单栏应用,让你在任意 App 里用 AI 重写选中的文字–不用切窗口,不用复制粘贴.
 怎么用? 选中任意文字(Mail,Notes,Slack,浏览器,编辑器…) 按快捷键 ⌘⌥⌃I(可自定义) AI 重写后的文字直接替换原文 就这么简单.没有聊天窗口,没有来回切换.
@@ -308,88 +48,8 @@ Slack 回复 同事发了个长问题,你想简洁回复.选中草稿,让 AI 精
 设置 # 4. 设置快捷键 额外功能:触发器模式 如果你不喜欢快捷键,还可以用文字触发器:
 输入特定前缀触发重写 或者用语音命令触发 隐私 只有当前选中的文字会被发送到你配置的 AI Provider.其他什么都不收集.
 下载 官网:https://aisatsu.co/spackle/ GitHub:https://github.com/tsortwehttam/spackle 我的看法 这类「隐形 AI 工具」是趋势–不抢占你的注意力,而是在你需要的时候静默出现.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-19 18:35:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>83 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Spackle:Mac 全局 AI 重写快捷键,选中文字按一下就改好" href="https://claudeai.best/posts/hunter-2026021918/"></a>
-</article>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2026 <a href="https://claudeai.best/">AI 极客前沿</a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu');
-    if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            html.dataset.theme = 'dark';
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-</body>
-
-</html>
+...</p></div><footer class=entry-footer><span title='2026-02-19 18:35:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>83 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Spackle:Mac 全局 AI 重写快捷键,选中文字按一下就改好" href=https://claudeai.best/posts/hunter-2026021918/></a></article></main><footer class=footer><span>&copy; 2026 <a href=https://claudeai.best/>AI 极客前沿</a></span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");if(menu){const e=localStorage.getItem("menu-scroll-position");e&&(menu.scrollLeft=parseInt(e,10)),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}}document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{const e=document.querySelector("html");e.dataset.theme==="dark"?(e.dataset.theme="light",localStorage.setItem("pref-theme","light")):(e.dataset.theme="dark",localStorage.setItem("pref-theme","dark"))})</script></body></html>
