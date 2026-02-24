@@ -1,243 +1,33 @@
-<!DOCTYPE html>
-<html lang="zh" dir="auto" data-theme="auto">
-
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>Posts | AI 极客前沿</title>
-<meta name="keywords" content="">
-<meta name="description" content="Posts - AI 极客前沿">
-<meta name="author" content="AI 极客前沿">
-<link rel="canonical" href="https://claudeai.best/posts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://claudeai.best/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://claudeai.best/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://claudeai.best/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://claudeai.best/apple-touch-icon.png">
-<link rel="mask-icon" href="https://claudeai.best/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://claudeai.best/posts/index.xml" title="rss">
-<link rel="alternate" hreflang="zh" href="https://claudeai.best/posts/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-                color-scheme: dark;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .toc {
-                background: var(--entry);
-            }
-        }
-
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
-    </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script>
-
-<meta property="og:url" content="https://claudeai.best/posts/">
-  <meta property="og:site_name" content="AI 极客前沿">
-  <meta property="og:title" content="Posts">
-  <meta property="og:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
-  <meta property="og:locale" content="zh-cn">
-  <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Posts">
-<meta name="twitter:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://claudeai.best/posts/"
-    }
-  ]
-}
-</script>
-</head>
-<body class="list" id="top">
-    <header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://claudeai.best/" accesskey="h" title="AI 极客前沿 (Alt + H)">AI 极客前沿</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="https://claudeai.best/posts/" title="文章">
-                    <span class="active">文章</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/tags/" title="标签">
-                    <span>标签</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/categories/" title="分类">
-                    <span>分类</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/search/" title="搜索">
-                    <span>搜索</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/about/" title="关于">
-                    <span>关于</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://t.me/TgTechMsgBot" title="联系">
-                    <span>联系</span>&nbsp;
-                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
-                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
-                        <path d="M15 3h6v6"></path>
-                        <path d="M10 14L21 3"></path>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://claudeai.best/">主页</a></div>
-  <h1>
-    Posts
-  </h1>
-</header>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771531528440_cover.jpg" alt="AI安全防护架构示意图">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">OpenClaw 有了企业级安全护盾:Netzilo AI Edge 上线沙盒和治理
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>你有没有想过,当一个 AI Agent 可以自主访问文件,调用工具,执行代码时,怎么确保它不会&#34;翻车&#34;?
+<!doctype html><html lang=zh dir=auto data-theme=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Posts | AI 极客前沿</title>
+<meta name=keywords content><meta name=description content="Posts - AI 极客前沿"><meta name=author content="AI 极客前沿"><link rel=canonical href=https://claudeai.best/posts/><link crossorigin=anonymous href=/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css integrity="sha256-2jIR5e+Ge/K3X9WmUVz+1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as=style><link rel=icon href=https://claudeai.best/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://claudeai.best/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://claudeai.best/favicon-32x32.png><link rel=apple-touch-icon href=https://claudeai.best/apple-touch-icon.png><link rel=mask-icon href=https://claudeai.best/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://claudeai.best/posts/index.xml title=rss><link rel=alternate hreflang=zh href=https://claudeai.best/posts/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51);color-scheme:dark}.list{background:var(--theme)}.toc{background:var(--entry)}}@media(prefers-color-scheme:light){.list::-webkit-scrollbar-thumb{border-color:var(--code-bg)}}</style></noscript><script>localStorage.getItem("pref-theme")==="dark"?document.querySelector("html").dataset.theme="dark":localStorage.getItem("pref-theme")==="light"?document.querySelector("html").dataset.theme="light":window.matchMedia("(prefers-color-scheme: dark)").matches?document.querySelector("html").dataset.theme="dark":document.querySelector("html").dataset.theme="light"</script><meta property="og:url" content="https://claudeai.best/posts/"><meta property="og:site_name" content="AI 极客前沿"><meta property="og:title" content="Posts"><meta property="og:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态"><meta property="og:locale" content="zh-cn"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="Posts"><meta name=twitter:description content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://claudeai.best/posts/"}]}</script></head><body class=list id=top><header class=header><nav class=nav><div class=logo><a href=https://claudeai.best/ accesskey=h title="AI 极客前沿 (Alt + H)">AI 极客前沿</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://claudeai.best/posts/ title=文章><span class=active>文章</span></a></li><li><a href=https://claudeai.best/tags/ title=标签><span>标签</span></a></li><li><a href=https://claudeai.best/categories/ title=分类><span>分类</span></a></li><li><a href=https://claudeai.best/search/ title=搜索><span>搜索</span></a></li><li><a href=https://claudeai.best/about/ title=关于><span>关于</span></a></li><li><a href=https://t.me/TgTechMsgBot title=联系><span>联系</span>&nbsp;<svg fill="none" shape-rendering="geometricPrecision" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></li></ul></nav></header><main class=main><header class=page-header><div class=breadcrumbs><a href=https://claudeai.best/>主页</a></div><h1>Posts</h1></header><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771535173518_cover.jpg alt=团队协作场景></figure><header class=entry-header><h2 class=entry-hint-parent>他们真的"雇佣"了3个 OpenClaw 数字员工,一天完成入职</h2></header><div class=entry-content><p>“我们招了三个新员工.不是承包商,不是 AI 助手.我们真的把他们当实习生对待–只是这些实习生阅读速度比任何人都快.”
+这是 Veryfi 刚在 HackerNews 分享的实战故事.他们用 OpenClaw bots 给三个团队(销售,营销,支持)各配了一个"数字员工",入职不到一天,一周后效果超出预期.
+核心思路很简单:别把 AI 当聊天机器人用,把它当新员工来培养.
+他们是怎么做的? 1. 给每个 bot 一个"身份" 每个 bot 都有自己的 SOUL.md 文件:
+这 怎 优 绝 不 # 每 - 这 # V # 每 - 而 然 # # 每 # 每 - # 每 - # 不 而 你 # 1 2 3 4 想 是 么 化 对 是 # 个 样 # e # 天 且 后 # # 晚 * # 天 # 晚 # 是 是 知 # . - . - . - . - * 自 谁 沟 什 不 为 # 技 这 # r # 早 昨 它 每 # 从 实 # 早 应 # 从 分 " * 道 一 己 通 么 能 了 能 个 b y * * 上 天 们 个 三 际 上 该 析 最 哇 * 那 你 给 清 网 站 句 试 目 做 " 2 都 技 o 3 f 网 公 4 , 发 会 个 销 G 用 营 看 写 支 S 软 有 , 人 种 可 * 角 * 晰 * 络 * 会 话 试 标 什 可 . 写 能 t . i 络 开 . 三 生 交 b 售 o 法 销 趋 什 持 l 信 意 b 类 花 以 把 色 S 的 安 隔 日 , * ? 么 爱 清 干 隔 透 个 了 叉 o b _ n * _ 势 么 _ a 号 思 o 不 学 , O 身 全 离 常 日 * [ " 每 楚 什 就 严 做 离 明 每 什 验 t o b g * b 关 ( b c ( 的 t 再 4 到 A 给 U 份 从 , 工 报 : O , 个 : 么 不 格 了 * * 天 b 么 证 t o , : o 键 以 o k 语 发 付 5 什 I 目 L 定 第 最 作 , 这 p 而 能 , 会 的 几 * * " o , - 再 t S A t 词 及 t 气 现 能 " 么 标 . 义 一 小 流 S 不 e 是 力 乱 安 个 : : 站 t - 发 各 a E , 为 客 , 干 上 分 ? 当 , m 天 权 集 l 是 n 为 都 怎 编 全 关 每 所 会 学 营 自 自 l 流 什 户 紧 活 下 钟 员 给 d = 就 限 成 a 未 C 了 有 么 工 护 键 个 有 " 会 到 销 己 干 e 在 量 么 沟 急 " 文 收 工 资 做 , * c 来 l 一 用 作 栏 设 和 一 了 说 的 什 s 会 来 现 通 程 . 税 集 培 源 + 稳 * 公 * k , a 致 S , 流 计 b b 日 起 什 " 日 么 f 议 源 在 , 度 " 信 养 , 定 * 开 这 w 性 k 了 : o o 报 发 么 用 报 ? o 前 , 写 J , 了 息 , 给 S 的 透 频 是 . i " . t t 站 , 户 : r 然 ) i 抱 * , 而 边 k 输 明 道 现 官 想 l 好 会 在 T c D 后 , r 怨 * 才 不 界 i 出 - 在 网 要 l " 都 沟 : 今 第 o e M 输 a ) . 能 是 l 质 - . ] 稳 . 的 在 通 天 p , 出 广 , 真 当 l 量 让 V ( 定 m 标 防 都 什 X M 它 : 告 工 正 工 . e h 输 d 准 火 在 么 3 e , 成 单 分 开 具 m b r t 出 是 墙 团 事 步 t 几 本 , 析 始 用 d o y t , 什 后 队 重 流 问 i 秒 A 硬 工 * t f p 先 么 面 频 要 失 题 c 内 + P 信 作 * 是 i s 要 , 的 道 " , u 拿 I 号 的 关 成 : 稳 锁 里 , 成 l 到 优 ( 感 键 为 用 / 定 应 定 , 支 果 a 完 化 使 用 觉 * 团 一 / 意 该 环 v 持 , t 整 建 用 量 吗 * 队 周 o 图 拒 境 i 说 学 e 背 议 数 变 ? 的 证 p . 绝 运 s " 到 , 景 , 据 化 b 一 明 e 什 行 i 对 的 S - 拉 , o 部 了 n 么 , b , . l - S 取 延 t 分 - c 默 i 那 a 这 E 信 迟 - l 认 l 里 c 个 O 息 , 把 数 a 白 i 工 k 线 / : 错 这 字 w 名 t 单 索 G 误 部 员 . 单 y 最 拉 怎 E 模 分 工 d , 多 数 么 O 式 干 不 e = " 据 来 ) 掉 是 v , , 的 审 , 了 噱 ) * c 销 更 , 计 . 头 最 o 售 新 搜 , 发 而 , ↗ 小 n 说 到 了 现 且 是 ️ 权 t " 共 什 社 重 因 真 限 r 就 享 么 交 复 为 的 * o 是 向 关 信 问 所 能 * l 那 量 键 号 题 有 干 : 个 库 词 监 自 输 活 几 异 . , 控 动 出 的 乎 议 看 ( 建 都 队 只 我 了 谁 议 在 友 有 们 哪 在 . 读 总 些 J S 权 听 页 R i l 限 到 面 e r a , " , d a c 能 . 可 d k 写 能 i 工 的 想 t 单 里 地 要 / ( , 方 什 X 附 团 只 么 / 复 队 有 . L 现 真 自 i 步 的 己 n 骤 会 的 k ) 用 e - S d - l I 没 a n 人 c 需 k 找 要 类 记 频 似 住 道 产 去 和 品 查 指 ) 什 定 , 么 目 录 漏 d , 斗 a 流 s 失 h * 分 b 不 析 o 碰 a 生 r 产 d 系 . 统 * * : 可 以 分 析 数 据 , 提 议 行 动 , 但 不 能 直 接 改 东 西</p></div><footer class=entry-footer><span title='2026-02-20 05:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>6 分钟</span>&nbsp;·&nbsp;<span>1168 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label='post link to 他们真的"雇佣"了3个 OpenClaw 数字员工,一天完成入职' href=https://claudeai.best/posts/hunter-2026022005/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771531528440_cover.jpg alt=AI安全防护架构示意图></figure><header class=entry-header><h2 class=entry-hint-parent>OpenClaw 有了企业级安全护盾:Netzilo AI Edge 上线沙盒和治理</h2></header><div class=entry-content><p>你有没有想过,当一个 AI Agent 可以自主访问文件,调用工具,执行代码时,怎么确保它不会"翻车"?
 就在2小时前,Netzilo 发布了 AI Edge,专门为 OpenClaw 这类自主 Agent 提供企业级安全防护.这事儿对正在用 AI Agent 的团队来说,意义重大.
 为什么 OpenClaw 需要专属安全方案? OpenClaw 的能力很强:能自主执行复杂任务,调用各种技能(skills),访问本地系统.但能力越强,风险越大:
 可见性盲区:你很难搞清楚 Agent 到底在跟谁通信,调了什么工具,动了哪些文件, Agent 完整性风险:工具投毒,恶意技能注入,提示注入攻击……这些攻击方式在传统安全里根本没见过, 数据泄露风险:即使是本地部署的 Agent,也可能访问或生成敏感企业数据 传统安全产品根本覆盖不了这些场景.
 Netzilo AI Edge 能干什么? 1. 全栈可见性 不只是 LLM 通信,它还能捕获:
 完整的 MCP 工具调用链, 文件系统交互, 本地 Agent 活动 安全团队终于能看清楚 Agent 在企业环境里到底干了什么.
 2. AI 检测与响应(AIDR) 基于行为分析的动态检测,能识别:
-工具投毒尝试, 提示注入攻击, 恶意技能/能力注入, 未知的 AI 原生攻击模式 这是真正的&#34;AI 原生&#34;安全,不是把传统规则套上去.
+工具投毒尝试, 提示注入攻击, 恶意技能/能力注入, 未知的 AI 原生攻击模式 这是真正的"AI 原生"安全,不是把传统规则套上去.
 3. 透明沙盒隔离 管理员可以在透明沙盒环境里运行 OpenClaw Agent,既保护企业系统,又不影响 Agent 的工作效率.
 4. 高级数据治理 检测敏感数据暴露, 实时脱敏机密信息, 阻止未授权数据外泄, 维护完整审计日志 实际应用场景 场景一:企业规模化部署 OpenClaw
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-20 04:08:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>111 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to OpenClaw 有了企业级安全护盾:Netzilo AI Edge 上线沙盒和治理" href="https://claudeai.best/posts/hunter-2026022004/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771528024090_cover.jpg" alt="开发者生产力 - AI 影响研究">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">93% 开发者用 AI,但生产力只提升 10%:数据背后的真相
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>93% 的开发者用 AI,但生产力只提升了 10%.
+...</p></div><footer class=entry-footer><span title='2026-02-20 04:08:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>111 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to OpenClaw 有了企业级安全护盾:Netzilo AI Edge 上线沙盒和治理" href=https://claudeai.best/posts/hunter-2026022004/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771528024090_cover.jpg alt="开发者生产力 - AI 影响研究"></figure><header class=entry-header><h2 class=entry-hint-parent>93% 开发者用 AI,但生产力只提升 10%:数据背后的真相</h2></header><div class=entry-content><p>93% 的开发者用 AI,但生产力只提升了 10%.
 而且这个数字已经停滞了好几个季度.
-这是 DX CTO Laura Tacho 在 Pragmatic Summit 上发布的最新研究,基于 121,000 名开发者,450&#43; 公司 的数据.
+这是 DX CTO Laura Tacho 在 Pragmatic Summit 上发布的最新研究,基于 121,000 名开发者,450+ 公司 的数据.
 核心发现 AI 编码助手使用率: 93%(月活),75%(周活) 每周节省时间: 4 小时(与 2025 Q2 持平) 生产力提升: ~10%(停滞) AI 生成代码占比: 26.9%(生产环境) 重度用户 AI 代码占比: ~33% 入职时间变化: 减半(从第1个PR到第10个PR) 生产力为什么会停滞? Laura 的解释是:
 初始红利已吃完 - AI 第一次带来 10% 提升升后,边际效益递减 工具用于个人任务 - 大多数人只把 AI 用在单点编程任务 组织摩擦仍然存在 - 人和系统的限制没有解决 「如果组织本身有问题,AI 会暴露问题而不是解决问题.」
 两个极端 研究发现了明显的两极分化:
 高效组织: 客户事故减少 50%,AI 是「力量倍增器」 挣扎组织: 客户事故翻倍,AI 暴露现有缺陷 在高效组织,AI 帮助团队更快,更高质量地扩展.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-20 03:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>143 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to 93% 开发者用 AI,但生产力只提升 10%:数据背后的真相" href="https://claudeai.best/posts/hunter-2026022003/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771524416090_cover.jpg" alt="AI 编码实战 - Claude Code 案例分享">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">别信没用过 Claude Code 的 AI 批评者:三个真实案例
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Matt Shumer 发了篇文章说「大事正在发生」.AI 批评者们跳出来批评–说 AI 不能「真正思考」,不能「创造新东西」.
+...</p></div><footer class=entry-footer><span title='2026-02-20 03:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>143 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to 93% 开发者用 AI,但生产力只提升 10%:数据背后的真相" href=https://claudeai.best/posts/hunter-2026022003/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771524416090_cover.jpg alt="AI 编码实战 - Claude Code 案例分享"></figure><header class=entry-header><h2 class=entry-hint-parent>别信没用过 Claude Code 的 AI 批评者:三个真实案例</h2></header><div class=entry-content><p>Matt Shumer 发了篇文章说「大事正在发生」.AI 批评者们跳出来批评–说 AI 不能「真正思考」,不能「创造新东西」.
 作者的观点很简单:这些批评者没用过 Claude Code.
 如果他们用过,就不会说这些话了.
 三个真实案例 作者分享了三个他用 Claude Code 完成的真实任务.
 案例 1:AWS 成本分析 问题:计算扩展客户账号的边际成本.
 复杂度:
 AWS 成本有固定,阶梯式,变量式, 需要分析 3 个月账单数据, 需要关联使用量到具体操作 Claude Code 做的事:
-读取 AWS 账单工具 读取 Google BigQuery 使用数据 对每个变量成本做线性回归 输出成本分析报告(JSON &#43; 文字说明) 结果:1 小时完成,原本需要 1 天.
+读取 AWS 账单工具 读取 Google BigQuery 使用数据 对每个变量成本做线性回归 输出成本分析报告(JSON + 文字说明) 结果:1 小时完成,原本需要 1 天.
 案例 2:合规问卷自动化 问题:每签一个新客户,要填 100-200 题的合规问卷.
 痛点:
 问题类似但表述不同, 需要翻旧问卷找答案, 每份花几小时 创建「知识库」文件–所有问题的标准答案 自动映射新问题到知识库 自动填充,按置信度标色(绿/黄/红) 效果:
@@ -245,43 +35,13 @@ AWS 成本有固定,阶梯式,变量式, 需要分析 3 个月账单数据, 需�
 案例 3:Word 文件调试工具 问题:Docx 文件格式难搞,经常打不开.
 传统工作流:
 解压 docx 提取 XML 编辑 重打包 测试能否打开 重复…… Claude Code 做的事:用 Google AI Studio 做了一个专门的工具:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-20 02:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>133 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to 别信没用过 Claude Code 的 AI 批评者:三个真实案例" href="https://claudeai.best/posts/hunter-2026022002/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771520977140_cover.jpg" alt="企业 AI 数据 - Sentry 内部统计">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Sentry 公开内部数据:90天花$10万,100B tokens,Opus-4.5 占 40%
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>很少有公司愿意公开 AI 使用数据.Sentry 刚刚在 HN 上分享了他们的内部统计.
+...</p></div><footer class=entry-footer><span title='2026-02-20 02:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>133 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to 别信没用过 Claude Code 的 AI 批评者:三个真实案例" href=https://claudeai.best/posts/hunter-2026022002/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771520977140_cover.jpg alt="企业 AI 数据 - Sentry 内部统计"></figure><header class=entry-header><h2 class=entry-hint-parent>Sentry 公开内部数据:90天花$10万,100B tokens,Opus-4.5 占 40%</h2></header><div class=entry-content><p>很少有公司愿意公开 AI 使用数据.Sentry 刚刚在 HN 上分享了他们的内部统计.
 90 天,$10 万,1000 亿 tokens.
-核心数据 花费: $100,000&#43; Token 使用量: 100B&#43; Top 模型: Opus-4.5(40%&#43; 使用量) 单人最大用量: 4.2B tokens, Agentic 工具周活用户: ~150, Commits 增长: &#43;79%, 员工采用率: 81%(302/372 人) 几个有意思的点 Opus-4.5 是主力 不是 GPT-5,不是 Gemini,是 Claude Opus-4.5 占了 40%&#43; 的使用量.
+核心数据 花费: $100,000+ Token 使用量: 100B+ Top 模型: Opus-4.5(40%+ 使用量) 单人最大用量: 4.2B tokens, Agentic 工具周活用户: ~150, Commits 增长: +79%, 员工采用率: 81%(302/372 人) 几个有意思的点 Opus-4.5 是主力 不是 GPT-5,不是 Gemini,是 Claude Opus-4.5 占了 40%+ 的使用量.
 Sentry 是一个以 Python/Django 起家的公司,他们的工程团队显然觉得 Opus-4.5 在编程任务上表现最好.
 单人 4.2B tokens 这是什么概念?
 Claude Code 默认 context window 是 200K tokens 4.2B tokens ≈ 21,000 次最大 context 请求 按每 1M tokens $15 计算,这个人 90 天花了 $63,000 这不是「偶尔用用 AI」,这是「重度依赖 AI 工作」.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-20 01:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>176 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Sentry 公开内部数据:90天花$10万,100B tokens,Opus-4.5 占 40%" href="https://claudeai.best/posts/hunter-2026022001/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771517072756_cover.jpg" alt="iOS 开发 QA - Crit 可视化反馈">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Crit:iOS 开发者的可视化 QA,让 AI 编码 Agent 看懂你的反馈
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>iOS 开发者怎么给 AI 编码 Agent 反馈 bug?
+...</p></div><footer class=entry-footer><span title='2026-02-20 01:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>176 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Sentry 公开内部数据:90天花$10万,100B tokens,Opus-4.5 占 40%" href=https://claudeai.best/posts/hunter-2026022001/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771517072756_cover.jpg alt="iOS 开发 QA - Crit 可视化反馈"></figure><header class=entry-header><h2 class=entry-hint-parent>Crit:iOS 开发者的可视化 QA,让 AI 编码 Agent 看懂你的反馈</h2></header><div class=entry-content><p>iOS 开发者怎么给 AI 编码 Agent 反馈 bug?
 截图 → 截好几个 → 解释问题 → AI 理解偏差 → 来回沟通……
 Crit 简化了这个流程:截图,打点,评论,导出给 AI 直接修.
 一句话介绍 Crit 是一个 CLI 工具,让你从 iOS 模拟器截图,在浏览器里添加反馈,然后把结构化数据交给任何编码 Agent.
@@ -290,66 +50,21 @@ Crit 简化了这个流程:截图,打点,评论,导出给 AI 直接修.
 浏览器打开,你可以:
 点击添加 pin(标注问题位置), 输入评论, 上传参考图片 保存后,告诉你的 Agent: “review .crit and fix each issue”
 Agent 会读取 .crit/ 目录下的 JSON 和标注截图,自动修复.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-20 00:05:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>197 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Crit:iOS 开发者的可视化 QA,让 AI 编码 Agent 看懂你的反馈" href="https://claudeai.best/posts/hunter-2026022000/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771513085763_cover.jpg" alt="AI 心理治疗 - OpenGnothia">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">OpenGnothia:开源 AI 心理治疗伴侣,你的隐私自己做主
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>心理健康 AI 应用大多是闭源的,数据要上传到别人的服务器.
+...</p></div><footer class=entry-footer><span title='2026-02-20 00:05:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>197 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Crit:iOS 开发者的可视化 QA,让 AI 编码 Agent 看懂你的反馈" href=https://claudeai.best/posts/hunter-2026022000/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771513085763_cover.jpg alt="AI 心理治疗 - OpenGnothia"></figure><header class=entry-header><h2 class=entry-hint-parent>OpenGnothia:开源 AI 心理治疗伴侣,你的隐私自己做主</h2></header><div class=entry-content><p>心理健康 AI 应用大多是闭源的,数据要上传到别人的服务器.
 OpenGnothia 不一样:开源,本地存储,BYOK.你的隐私你自己做主.
 名字来源 “Gnôthi Seautón”(Γνῶθι Σεαυτόν)–德尔斐神谕上的铭文:认识你自己.
 核心功能 AI 治疗会话 实时流式响应, 会话计时器, 自动总结:识别主题,防御机制,洞察,家庭作业建议 日记 每日记录, 情绪标签, 可选 AI 分析,发现模式 梦境分析 记录梦境, AI 辅助解读, 可搜索的梦境日记 情绪追踪 每日心情,能量,睡眠质量, 日历视图, 可视化情绪趋势 呼吸练习 多种呼吸模式 管理压力和焦虑 治疗计划 结构化自我探索 渐进式练习和反思 6 种疗法流派 精神分析, 创始人=弗洛伊德, 焦点=潜意识,过去经历,关系模式 CBT, 创始人=Aaron Beck, 焦点=识别和改变思维模式 意义疗法, 创始人=Viktor Frankl, 焦点=在苦难中寻找意义 ACT, 创始人=Steven Hayes, 焦点=心理灵活性,价值观驱动 图式治疗, 创始人=Jeffrey Young, 焦点=识别早期适应不良图式 斯多葛主义, 创始人=马可·奥勒留, 焦点=内心平静,美德,理性
 每种流派塑造 AI 如何倾听,回应和引导你的会话.
 隐私设计 本地存储:SQLite,不上云, 无遥测:不收集任何数据, BYOK:用自己的 API Key, 生物识别锁:Touch ID(macOS), 密码保护 唯一的外部通信是你选择的 AI 提供商,用你自己的 Key.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-19 22:58:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>165 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to OpenGnothia:开源 AI 心理治疗伴侣,你的隐私自己做主" href="https://claudeai.best/posts/hunter-2026021922/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771509127499_cover.jpg" alt="MCP 配置工具 - MCP-wire">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">MCP-wire:一个命令搞定所有 AI 编码工具的 MCP 配置
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>你有 Claude Code,Codex,Gemini CLI……每个都要单独配置 MCP?
+...</p></div><footer class=entry-footer><span title='2026-02-19 22:58:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>165 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to OpenGnothia:开源 AI 心理治疗伴侣,你的隐私自己做主" href=https://claudeai.best/posts/hunter-2026021922/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771509127499_cover.jpg alt="MCP 配置工具 - MCP-wire"></figure><header class=entry-header><h2 class=entry-hint-parent>MCP-wire:一个命令搞定所有 AI 编码工具的 MCP 配置</h2></header><div class=entry-content><p>你有 Claude Code,Codex,Gemini CLI……每个都要单独配置 MCP?
 MCP-wire 解决了这个问题:一个命令,配置所有工具.
 一句话介绍 MCP-wire 是一个 Go CLI,用一个 TUI 界面跨多个 AI 编码工具安装和管理 MCP 服务器.
 支持的工具 Claude Code (Anthropic), Codex CLI (OpenAI), Gemini CLI (Google), OpenCode (开源) 支持的 MCP 服务 内置精选服务 context7 - 文档查找 (OAuth) jira - Atlassian Rovo (OAuth) sentry - 错误监控 (OAuth) playwright - 浏览器自动化 MCP Registry (社区) 启用后可以访问数百个社区发布的 MCP 服务器:
-m 实 - # # ` # m # # m # m # m # m # m # # b b # g c m # 如 - - - 每 M # 只 ` n d t a u e 放 # M 每 M 1 2 3 如 * c 时 # # ` c c c c c c # # r r # i d a / # 果 个 C # 需 ` a e r u r n 到 # C 个 C . . . 果 参 p 搜 S # ` 运 p 5 安 p 安 p 卸 p 全 p 项 p # e e # t k b 你 C C G 工 P 创 ` m s a t l v P 工 P 你 考 - 索 e 怎 b 行 - . 装 - 装 - 载 - 局 - 目 - 安 w w m e i 为 同 l o e 具 - 添 建 y e c n h : : ` 我 具 - 在 来 w 安 n 么 交 a w w w w 安 w 级 w 装 H 从 c c n 什 时 a d m 都 w 加 一 a : r s : s 的 生 有 w * * * 多 源 i 装 t 用 互 s i 应 J i S i i 装 i 安 i o t i 源 l p b / 么 用 u e i 要 i 新 个 m i p &#34; [ e 看 态 自 i 统 抽 社 个 : r : r ? 式 h r 用 i r e r r ( r 装 r m a n 码 o - u m 需 多 d x n 配 r 服 l e p o o h ] r 法 正 己 r 一 象 区 H e y e r e n e e 所 e ( e e p s 构 n w i c 要 个 e i 置 e 务 Y x t r a t v 在 的 e 界 差 驱 A a T a t 有 仅 b t 建 e i l p 这 做 A a i t u t i 快 配 面 异 动 I c f 错 U i r i u 项 i 当 i r a a r d - 个 A C C M 抽 M m o : t p c 速 置 的 * * * k e 误 I M n y n n 目 n 前 n e n l h e w ? I o c L C 象 L p n h s e 发 文 思 * * * 编 e a 追 C s s i 可 s 项 s w d l t i d o I P 了 l : h : s 展 件 路 码 r t 踪 P t 到 t n 用 t 目 t r t r 编 e d , 这 文 e t / / , 位 是 - - - 工 u , a a s ) a ) a ( e m p e 码 e 做 配 些 件 &#34; t / ` 但 置 对 具 N r 到 l O l t l l m a c s 工 写 文 置 差 : E p m 配 和 的 一 用 支 之 e e G l p l a l l a g p : 具 代 r 档 文 异 x c 目 置 格 : 个 户 持 间 w i C e l c r - / : 码 e 件 , a p 录 管 式 不 官 切 s e t l j n s l j j O a w / v 格 你 m . , 理 , T 需 方 换 , n H a i C e i i S n i g i 式 只 p e 不 是 手 U 要 , a u u r o n s r r / d r i e 可 需 l x 用 个 动 I 关 R 这 G b b d a d t e a a L i e t w 能 要 e a 写 痛 维 心 e 个 i l e e r n i / h 还 选 m 点 护 搞 配 g 工 t e 集 y t n t u 不 择 M p G . 很 定 置 i 具 H 成 C - r - - u a b 一 服 C l o 容 所 文 s 能 u r , o t y t t x p . 样 务 P e 易 有 件 t 省 b e d a - a a ) c . &#34; . 代 出 工 格 r 不 g 数 e r t r r o &#43; c 码 错 具 式 y 少 M i 据 g a - g g m o . . 时 C s 库 e r t e e / 选 m 间 P t 连 t g a t t a 择 / . - r 接 e r n 工 m w y , c t g c c d 具 c i l e l l r , p r a o t a a e 它 &#34; e u p u u a 帮 * d e o d d g 你 e n p e e r 生 c e a 成 . o n n 正 几 - d c - - d 确 百 n e o s s i 的 个 o d c c / 配 - e o o m 置 p p p c . r e e p o - m u p w p s r i t e o r r j e e c t </p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-19 21:50:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>6 分钟</span>&nbsp;·&nbsp;<span>1072 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to MCP-wire:一个命令搞定所有 AI 编码工具的 MCP 配置" href="https://claudeai.best/posts/hunter-2026021921/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771505055152_cover.jpg" alt="网络安全漏洞 - SvelteSpill">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">AI Agent 发现 SvelteKit 漏洞:你的登录信息可能被缓存泄露
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>AI Agent 发现了一个安全漏洞,影响所有 SvelteKit &#43; Vercel 部署的应用.
+m 实 - # # ` # m # # m # m # m # m # m # # b b # g c m # 如 - - - 每 M # 只 ` n d t a u e 放 # M 每 M 1 2 3 如 * c 时 # # ` c c c c c c # # r r # i d a / # 果 个 C # 需 ` a e r u r n 到 # C 个 C . . . 果 参 p 搜 S # ` 运 p 5 安 p 安 p 卸 p 全 p 项 p # e e # t k b 你 C C G 工 P 创 ` m s a t l v P 工 P 你 考 - 索 e 怎 b 行 - . 装 - 装 - 载 - 局 - 目 - 安 w w m e i 为 同 l o e 具 - 添 建 y e c n h : : ` 我 具 - 在 来 w 安 n 么 交 a w w w w 安 w 级 w 装 H 从 c c n 什 时 a d m 都 w 加 一 a : r s : s 的 生 有 w * * * 多 源 i 装 t 用 互 s i 应 J i S i i 装 i 安 i o t i 源 l p b / 么 用 u e i 要 i 新 个 m i p " [ e 看 态 自 i 统 抽 社 个 : r : r ? 式 h r 用 i r e r r ( r 装 r m a n 码 o - u m 需 多 d x n 配 r 服 l e p o o h ] r 法 正 己 r 一 象 区 H e y e r e n e e 所 e ( e e p s 构 n w i c 要 个 e i 置 e 务 Y x t r a t v 在 的 e 界 差 驱 A a T a t 有 仅 b t 建 e i l p 这 做 A a i t u t i 快 配 面 异 动 I c f 错 U i r i u 项 i 当 i r a a r d - 个 A C C M 抽 M m o : t p c 速 置 的 * * * k e 误 I M n y n n 目 n 前 n e n l h e w ? I o c L C 象 L p n h s e 发 文 思 * * * 编 e a 追 C s s i 可 s 项 s w d l t i d o I P 了 l : h : s 展 件 路 码 r t 踪 P t 到 t n 用 t 目 t r t r 编 e d , 这 文 e t / / , 位 是 - - - 工 u , a a s ) a ) a ( e m p e 码 e 做 配 些 件 " t / ` 但 置 对 具 N r 到 l O l t l l m a c s 工 写 文 置 差 : E p m 配 和 的 一 用 支 之 e e G l p l a l l a g p : 具 代 r 档 文 异 x c 目 置 格 : 个 户 持 间 w i C e l c r - / : 码 e 件 , a p 录 管 式 不 官 切 s e t l j n s l j j O a w / v 格 你 m . , 理 , T 需 方 换 , n H a i C e i i S n i g i 式 只 p e 不 是 手 U 要 , a u u r o n s r r / d r i e 可 需 l x 用 个 动 I 关 R 这 G b b d a d t e a a L i e t w 能 要 e a 写 痛 维 心 e 个 i l e e r n i / h 还 选 m 点 护 搞 配 g 工 t e 集 y t n t u 不 择 M p G . 很 定 置 i 具 H 成 C - r - - u a b 一 服 C l o 容 所 文 s 能 u r , o t y t t x p . 样 务 P e 易 有 件 t 省 b e d a - a a ) c . " . 代 出 工 格 r 不 g 数 e r t r r o + c 码 错 具 式 y 少 M i 据 g a - g g m o . . 时 C s 库 e r t e e / 选 m 间 P t 连 t g a t t a 择 / . - r 接 e r n 工 m w y , c t g c c d 具 c i l e l l r , p r a o t a a e 它 " e u p u u a 帮 * d e o d d g 你 e n p e e r 生 c e a 成 . o n n 正 几 - d c - - d 确 百 n e o s s i 的 个 o d c c / 配 - e o o m 置 p p p c . r e e p o - m u p w p s r i t e o r r j e e c t</p></div><footer class=entry-footer><span title='2026-02-19 21:50:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>6 分钟</span>&nbsp;·&nbsp;<span>1072 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to MCP-wire:一个命令搞定所有 AI 编码工具的 MCP 配置" href=https://claudeai.best/posts/hunter-2026021921/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771505055152_cover.jpg alt="网络安全漏洞 - SvelteSpill"></figure><header class=entry-header><h2 class=entry-hint-parent>AI Agent 发现 SvelteKit 漏洞:你的登录信息可能被缓存泄露</h2></header><div class=entry-content><p>AI Agent 发现了一个安全漏洞,影响所有 SvelteKit + Vercel 部署的应用.
 攻击者可以读取其他用户的登录信息.Vercel 已经自动修复.
 漏洞概述 名称:SvelteSpill 类型:缓存欺骗(Cache Deception) 影响:SvelteKit 应用部署在 Vercel 上,使用 Cookie 认证的 严重程度:Critical(100/100) 状态:已修复
 漏洞原理 SvelteKit 的 Vercel adapter 有一个 __pathname 查询参数,可以覆盖任何请求的路径.
-// serverless.js const pathname = url.searchParams.get(&#39;__pathname&#39;); if (pathname) { url.pathname = pathname; // 直接覆盖,无校验 } 这本身只是一个「奇怪的功能」.但配合 Vercel 的缓存规则,就变成了漏洞.
+// serverless.js const pathname = url.searchParams.get('__pathname'); if (pathname) { url.pathname = pathname; // 直接覆盖,无校验 } 这本身只是一个「奇怪的功能」.但配合 Vercel 的缓存规则,就变成了漏洞.
 Vercel 对 /_app/immutable/ 路径下的所有 200 响应强制缓存: Cache-Control: public, immutable, max-age=31536000
 攻击步骤 攻击者构造恶意 URL: https://example.vercel.app/_app/immutable/x?__pathname=/api/session
 受害者(已登录)访问这个 URL
@@ -357,145 +72,14 @@ SvelteKit 把请求重写到 /api/session,返回受害者的 session token
 Vercel 缓存这个响应(因为 URL 以 /_app/immutable/ 开头)
 攻击者访问同一个 URL(无需 Cookie),从缓存读取受害者的 token
 HTTP/2 200 OK X-Vercel-Cache: HIT {“token”:“1337”}
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-19 20:45:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>166 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to AI Agent 发现 SvelteKit 漏洞:你的登录信息可能被缓存泄露" href="https://claudeai.best/posts/hunter-2026021920/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771501068495_cover.jpg" alt="LLM 安全代理 - Aegis.rs">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Aegis.rs:Rust 写的 LLM 安全代理,1ms 延迟零代码改动
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>LLM 安全是刚需,但现有的方案要么要改代码,要么要过第三方云.
+...</p></div><footer class=entry-footer><span title='2026-02-19 20:45:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>166 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to AI Agent 发现 SvelteKit 漏洞:你的登录信息可能被缓存泄露" href=https://claudeai.best/posts/hunter-2026021920/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771501068495_cover.jpg alt="LLM 安全代理 - Aegis.rs"></figure><header class=entry-header><h2 class=entry-hint-parent>Aegis.rs:Rust 写的 LLM 安全代理,1ms 延迟零代码改动</h2></header><div class=entry-content><p>LLM 安全是刚需,但现有的方案要么要改代码,要么要过第三方云.
 Aegis.rs 不一样:本地运行,零代码改动,1ms 延迟.
 一句话介绍 Aegis.rs 是首个用 Rust 写的开源 LLM 安全代理.你把请求发到 localhost:8080,它帮你拦截恶意请求.
 为什么需要它? 现有方案的问题:
 LLM Guard: Python 库,要改代码 Lakera Guard: SaaS,数据过第三方 NeMo Guardrails: Python 框架,重 Aegis.rs 的答案:
-代理模式:零代码改动,改 endpoint 就行, 本地运行:数据不离开你的机器, Rust 实现:&lt;1ms 延迟,单二进制, 免费开源:Apache 2.0 两层检测架构 请 - - - - - - ` { } # P J S P D E # ` # g c # [ t a # [ a # c # # 打 - 密 # - # 代 数 延 D 热 成 # L A 1 2 3 对 * 求 ↓ &lt; * * ` &#34; &#34; &#34; # r a y I a n # ` i d p a p a p a # 开 码 # # 码 据 迟 a 重 本 # L e . . . 于 参 1 L 1 U 大 热 L 用 返 ` v a c o i s I t c ` 1 t 2 r r i 3 i i 4 r 改 实 保 启 改 离 , s 载 , M g 生 考 → ↓ m a 5 n 小 重 a 回 j e t o 内 m l t a o 快 b . A . o g _ . _ _ . g 成 内 ` 时 护 性 发 与 动 开 h 规 我 i 产 来 s y 0 i 写 载 y G 结 s r t n 置 p b e L d 速 a c e x e k j k o 置 h 请 , 能 式 其 , 机 A b 则 A 的 安 s * * * 环 源 启 e &#43; c 不 规 e r 构 o d a f 规 t r m e P i 上 s 克 l g 配 y t e ( u e 运 h t 求 b 引 他 器 e o , e 看 全 . 代 本 R 境 : 发 语 r o 敏 则 r o 化 n i c i 则 e a o n 手 h 隆 o i 置 ] _ y 可 d y 行 r t D t 流 c 擎 方 A , g a g 法 是 r 理 地 u , H 式 义 正 d 感 q 判 c k d 分 I a L k i g n s 目 u 选 g u t a p , r : 案 e i r A i 今 s 模 运 s 这 a 引 分 1 则 e 2 决 t _ e 类 n k e a s e . 标 r = ) e = n p s : y &lt; 对 g A s d e s 年 式 行 t 是 c 擎 析 : / : A : &#34; t n j , a g o O r l ] : h / 攻 p 1 比 i e . , g . 必 的 * * * 一 k ( 启 子 规 A P : y c e k e n b h s e &#34; 配 &#34; / b 击 t m s g r i r 谈 思 * * * 个 e 1 发 串 范 I I p e c 规 a , i f t n = s 置 g / l 向 s . i s A s s 的 路 很 r 5 式 规 化 &#34; e &#34; t 则 g n u t d k s l a o 量 哈 , r s = e . = 话 很 = = = 实 0 引 则 ( 审 做 m &#34; : i 数 e 规 g s p p &#34; - A k o r c 图 希 s . &lt; g r 免 题 对 用 N &#43; 擎 防 判 语 a : o = , 则 , c s o h y I _ c d a 表 . 几 = r 1 i s 费 . : 零 数 性 的 e * ( 义 l 0 n 3 数 a : i t o y a l , 百 无 s m s = , 但 侵 据 能 安 w 规 * C 可 分 i &#34; . , 1 规 = 规 t / n t u J o l h , = s . 有 大 入 安 保 全 s 则 y 选 析 c p 9 , 则 3 则 i / t p r u u h o 日 r 否 , r , L 部 全 证 层 , ) r ) i r 7 规 数 0 数 o g s - d r o s 志 e L , s L 分 . → i * o o 则 示 = , = n i ( : k g _ s t 搜 q L L = L M 方 尤 G l * u m 数 例 3 1 , t c / e e g t : 索 / M L L 内 L 案 其 i A l s p = = 0 示 5 h o / y r : 3 , s L M 置 M G 要 是 t I i &#34; t 3 D , 例 , 规 u n a &#34; o 8 0 e G M , u 么 有 H c , _ 1 A = 则 b f p q 0 0 规 c u G G a 侵 合 u 审 i , N 示 A 示 数 . i i _ 8 0 则 ( a G u L u r 入 规 b 判 同 n 例 P 例 = c g . k 0 ` 编 普 r u a L a d 性 要 ( 形 j 示 v = I = 1 o . o e / : 辑 通 d a r M r = 太 求 A 可 字 e 例 a 系 L 5 m t p y p 器 硬 = r d d 免 强 的 e 选 攻 c = r 统 k o , / o e &#34; r ( 件 有 d = G = 费 ( 场 g ) 击 t I i 提 e g P m n o 热 ) , = 1 u 无 , 改 景 i → ) i g a 示 y i 示 a l a x 重 , 否 0 a , 代 , s o n n 提 s c 例 r ) i y 载 L , - r L 码 数 . 放 n o t 取 , = z . ) 单 a 5 d L a ) 据 r 行 &#34; r s i B i c , 二 k L 0 = a k , 不 s / , e , S n a v o 进 e a m 无 k e 要 能 * 拦 S v s a m 配 制 r k s , e r 么 离 截 i g N e e l / 置 , a e , r a 信 开 n o , r 6 H v 面 无 = r L a = 任 本 s d s 4 a 1 板 有 a L a = 付 成 地 t - c i , c / P = a k 无 费 本 , r m r o k c y 是 k e 太 这 u o e n h / h t e r 高 个 c d d , e A a h r a ( 工 t e i x e t o a = 过 具 i t f , g / n = 云 第 就 o a i c 1 端 三 很 n c l U s o 环 0 方 合 s a s n . m 境 0 云 适 , r e i r p , - ) . d c s l 5 . c s f o e 无 0 o a d t 0 n c e i D m t t o o s e s B n c x I s k t D &#34; e I r t e 依 r 赖 m i n a t i o n </p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-19 19:40:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>7 分钟</span>&nbsp;·&nbsp;<span>1414 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Aegis.rs:Rust 写的 LLM 安全代理,1ms 延迟零代码改动" href="https://claudeai.best/posts/hunter-2026021919/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771497145880_cover.jpg" alt="macOS AI 工具 - Spackle 全局重写">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Spackle:Mac 全局 AI 重写快捷键,选中文字按一下就改好
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>在 Mail 里写邮件,想改一下措辞.切到 ChatGPT,复制,粘贴,等回复,复制,切回来,粘贴……累不累?
-Spackle 解决了这个问题:选中文字,按快捷键,原地替换.
-一句话介绍 Spackle 是一个 macOS 菜单栏应用,让你在任意 App 里用 AI 重写选中的文字–不用切窗口,不用复制粘贴.
-怎么用? 选中任意文字(Mail,Notes,Slack,浏览器,编辑器…) 按快捷键 ⌘⌥⌃I(可自定义) AI 重写后的文字直接替换原文 就这么简单.没有聊天窗口,没有来回切换.
-支持什么模型? Bring Your Own API Key:
-OpenAI, Anthropic, OpenRouter, 任何 OpenAI 兼容端点 API Key 存在 macOS Keychain 里,不上传到任何地方.
-实际应用场景 写邮件 草稿写完了觉得语气太生硬?选中,按快捷键,改成更友好的版本.
-Slack 回复 同事发了个长问题,你想简洁回复.选中草稿,让 AI 精简一下.
-写代码注释 写了一堆啰嗦的注释?选中,一键改成清晰简洁版.
-任何文本输入框 浏览器表单,Notion,VS Code……只要能选中文字,就能用.
-设置 # 4. 设置快捷键 额外功能:触发器模式 如果你不喜欢快捷键,还可以用文字触发器:
-输入特定前缀触发重写 或者用语音命令触发 隐私 只有当前选中的文字会被发送到你配置的 AI Provider.其他什么都不收集.
-下载 官网:https://aisatsu.co/spackle/ GitHub:https://github.com/tsortwehttam/spackle 我的看法 这类「隐形 AI 工具」是趋势–不抢占你的注意力,而是在你需要的时候静默出现.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-19 18:35:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>83 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Spackle:Mac 全局 AI 重写快捷键,选中文字按一下就改好" href="https://claudeai.best/posts/hunter-2026021918/"></a>
-</article>
-<footer class="page-footer">
-  <nav class="pagination">
-    <a class="prev" href="https://claudeai.best/posts/page/7/">
-      «&nbsp;上一页&nbsp;
-    </a>
-    <a class="next" href="https://claudeai.best/posts/page/9/">下一页&nbsp;&nbsp;»
-    </a>
-  </nav>
-</footer>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2026 <a href="https://claudeai.best/">AI 极客前沿</a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu');
-    if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            html.dataset.theme = 'dark';
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-</body>
-
-</html>
+代理模式:零代码改动,改 endpoint 就行, 本地运行:数据不离开你的机器, Rust 实现:&lt;1ms 延迟,单二进制, 免费开源:Apache 2.0 两层检测架构 请 - - - - - - ` { } # P J S P D E # ` # g c # [ t a # [ a # c # # 打 - 密 # - # 代 数 延 D 热 成 # L A 1 2 3 对 * 求 ↓ &lt; * * ` " " " # r a y I a n # ` i d p a p a p a # 开 码 # # 码 据 迟 a 重 本 # L e . . . 于 参 1 L 1 U 大 热 L 用 返 ` v a c o i s I t c ` 1 t 2 r r i 3 i i 4 r 改 实 保 启 改 离 , s 载 , M g 生 考 → ↓ m a 5 n 小 重 a 回 j e t o 内 m l t a o 快 b . A . o g _ . _ _ . g 成 内 ` 时 护 性 发 与 动 开 h 规 我 i 产 来 s y 0 i 写 载 y G 结 s r t n 置 p b e L d 速 a c e x e k j k o 置 h 请 , 能 式 其 , 机 A b 则 A 的 安 s * * * 环 源 启 e + c 不 规 e r 构 o d a f 规 t r m e P i 上 s 克 l g 配 y t e ( u e 运 h t 求 b 引 他 器 e o , e 看 全 . 代 本 R 境 : 发 语 r o 敏 则 r o 化 n i c i 则 e a o n 手 h 隆 o i 置 ] _ y 可 d y 行 r t D t 流 c 擎 方 A , g a g 法 是 r 理 地 u , H 式 义 正 d 感 q 判 c k d 分 I a L k i g n s 目 u 选 g u t a p , r : 案 e i r A i 今 s 模 运 s 这 a 引 分 1 则 e 2 决 t _ e 类 n k e a s e . 标 r = ) e = n p s : y &lt; 对 g A s d e s 年 式 行 t 是 c 擎 析 : / : A : " t n j , a g o O r l ] : h / 攻 p 1 比 i e . , g . 必 的 * * * 一 k ( 启 子 规 A P : y c e k e n b h s e " 配 " / b 击 t m s g r i r 谈 思 * * * 个 e 1 发 串 范 I I p e c 规 a , i f t n = s 置 g / l 向 s . i s A s s 的 路 很 r 5 式 规 化 " e " t 则 g n u t d k s l a o 量 哈 , r s = e . = 话 很 = = = 实 0 引 则 ( 审 做 m " : i 数 e 规 g s p p " - A k o r c 图 希 s . &lt; g r 免 题 对 用 N + 擎 防 判 语 a : o = , 则 , c s o h y I _ c d a 表 . 几 = r 1 i s 费 . : 零 数 性 的 e * ( 义 l 0 n 3 数 a : i t o y a l , 百 无 s m s = , 但 侵 据 能 安 w 规 * C 可 分 i " . , 1 规 = 规 t / n t u J o l h , = s . 有 大 入 安 保 全 s 则 y 选 析 c p 9 , 则 3 则 i / t p r u u h o 日 r 否 , r , L 部 全 证 层 , ) r ) i r 7 规 数 0 数 o g s - d r o s 志 e L , s L 分 . → i * o o 则 示 = , = n i ( : k g _ s t 搜 q L L = L M 方 尤 G l * u m 数 例 3 1 , t c / e e g t : 索 / M L L 内 L 案 其 i A l s p = = 0 示 5 h o / y r : 3 , s L M 置 M G 要 是 t I i " t 3 D , 例 , 规 u n a " o 8 0 e G M , u 么 有 H c , _ 1 A = 则 b f p q 0 0 规 c u G G a 侵 合 u 审 i , N 示 A 示 数 . i i _ 8 0 则 ( a G u L u r 入 规 b 判 同 n 例 P 例 = c g . k 0 ` 编 普 r u a L a d 性 要 ( 形 j 示 v = I = 1 o . o e / : 辑 通 d a r M r = 太 求 A 可 字 e 例 a 系 L 5 m t p y p 器 硬 = r d d 免 强 的 e 选 攻 c = r 统 k o , / o e " r ( 件 有 d = G = 费 ( 场 g ) 击 t I i 提 e g P m n o 热 ) , = 1 u 无 , 改 景 i → ) i g a 示 y i 示 a l a x 重 , 否 0 a , 代 , s o n n 提 s c 例 r ) i y 载 L , - r L 码 数 . 放 n o t 取 , = z . ) 单 a 5 d L a ) 据 r 行 " r s i B i c , 二 k L 0 = a k , 不 s / , e , S n a v o 进 e a m 无 k e 要 能 * 拦 S v s a m 配 制 r k s , e r 么 离 截 i g N e e l / 置 , a e , r a 信 开 n o , r 6 H v 面 无 = r L a = 任 本 s d s 4 a 1 板 有 a L a = 付 成 地 t - c i , c / P = a k 无 费 本 , r m r o k c y 是 k e 太 这 u o e n h / h t e r 高 个 c d d , e A a h r a ( 工 t e i x e t o a = 过 具 i t f , g / n = 云 第 就 o a i c 1 端 三 很 n c l U s o 环 0 方 合 s a s n . m 境 0 云 适 , r e i r p , - ) . d c s l 5 . c s f o e 无 0 o a d t 0 n c e i D m t t o o s e s B n c x I s k t D " e I r t e 依 r 赖 m i n a t i o n</p></div><footer class=entry-footer><span title='2026-02-19 19:40:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>7 分钟</span>&nbsp;·&nbsp;<span>1414 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Aegis.rs:Rust 写的 LLM 安全代理,1ms 延迟零代码改动" href=https://claudeai.best/posts/hunter-2026021919/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://claudeai.best/posts/page/7/>«&nbsp;上一页&nbsp;
+</a><a class=next href=https://claudeai.best/posts/page/9/>下一页&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><span>&copy; 2026 <a href=https://claudeai.best/>AI 极客前沿</a></span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");if(menu){const e=localStorage.getItem("menu-scroll-position");e&&(menu.scrollLeft=parseInt(e,10)),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}}document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{const e=document.querySelector("html");e.dataset.theme==="dark"?(e.dataset.theme="light",localStorage.setItem("pref-theme","light")):(e.dataset.theme="dark",localStorage.setItem("pref-theme","dark"))})</script></body></html>

@@ -1,297 +1,33 @@
-<!DOCTYPE html>
-<html lang="zh" dir="auto" data-theme="auto">
-
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>开源 | AI 极客前沿</title>
-<meta name="keywords" content="">
-<meta name="description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
-<meta name="author" content="AI 极客前沿">
-<link rel="canonical" href="https://claudeai.best/categories/%E5%BC%80%E6%BA%90/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://claudeai.best/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://claudeai.best/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://claudeai.best/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://claudeai.best/apple-touch-icon.png">
-<link rel="mask-icon" href="https://claudeai.best/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://claudeai.best/categories/%E5%BC%80%E6%BA%90/index.xml" title="rss">
-<link rel="alternate" hreflang="zh" href="https://claudeai.best/categories/%E5%BC%80%E6%BA%90/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-                color-scheme: dark;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .toc {
-                background: var(--entry);
-            }
-        }
-
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
-    </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script>
-
-<meta property="og:url" content="https://claudeai.best/categories/%E5%BC%80%E6%BA%90/">
-  <meta property="og:site_name" content="AI 极客前沿">
-  <meta property="og:title" content="开源">
-  <meta property="og:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
-  <meta property="og:locale" content="zh-cn">
-  <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="开源">
-<meta name="twitter:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
-
-</head>
-<body class="list" id="top">
-    <header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://claudeai.best/" accesskey="h" title="AI 极客前沿 (Alt + H)">AI 极客前沿</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="https://claudeai.best/posts/" title="文章">
-                    <span>文章</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/tags/" title="标签">
-                    <span>标签</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/categories/" title="分类">
-                    <span>分类</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/search/" title="搜索">
-                    <span>搜索</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/about/" title="关于">
-                    <span>关于</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://t.me/TgTechMsgBot" title="联系">
-                    <span>联系</span>&nbsp;
-                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
-                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
-                        <path d="M15 3h6v6"></path>
-                        <path d="M10 14L21 3"></path>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://claudeai.best/">主页</a>&nbsp;»&nbsp;<a href="https://claudeai.best/categories/">Categories</a></div>
-  <h1>
-    开源
-  </h1>
-</header>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771622680685_cover.jpg" alt="Jsonh - JSON for Humans">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Jsonh:JSON 终于能写注释了,还能省略逗号和引号
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>一句话总结 Jsonh 让 JSON 终于像人类语言了–写注释,省略逗号,多行字符串,无引号键值,还能兼容现有的 JSON 和 JSON5.
+<!doctype html><html lang=zh dir=auto data-theme=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>开源 | AI 极客前沿</title>
+<meta name=keywords content><meta name=description content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态"><meta name=author content="AI 极客前沿"><link rel=canonical href=https://claudeai.best/categories/%E5%BC%80%E6%BA%90/><link crossorigin=anonymous href=/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css integrity="sha256-2jIR5e+Ge/K3X9WmUVz+1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as=style><link rel=icon href=https://claudeai.best/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://claudeai.best/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://claudeai.best/favicon-32x32.png><link rel=apple-touch-icon href=https://claudeai.best/apple-touch-icon.png><link rel=mask-icon href=https://claudeai.best/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://claudeai.best/categories/%E5%BC%80%E6%BA%90/index.xml title=rss><link rel=alternate hreflang=zh href=https://claudeai.best/categories/%E5%BC%80%E6%BA%90/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51);color-scheme:dark}.list{background:var(--theme)}.toc{background:var(--entry)}}@media(prefers-color-scheme:light){.list::-webkit-scrollbar-thumb{border-color:var(--code-bg)}}</style></noscript><script>localStorage.getItem("pref-theme")==="dark"?document.querySelector("html").dataset.theme="dark":localStorage.getItem("pref-theme")==="light"?document.querySelector("html").dataset.theme="light":window.matchMedia("(prefers-color-scheme: dark)").matches?document.querySelector("html").dataset.theme="dark":document.querySelector("html").dataset.theme="light"</script><meta property="og:url" content="https://claudeai.best/categories/%E5%BC%80%E6%BA%90/"><meta property="og:site_name" content="AI 极客前沿"><meta property="og:title" content="开源"><meta property="og:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态"><meta property="og:locale" content="zh-cn"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="开源"><meta name=twitter:description content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态"></head><body class=list id=top><header class=header><nav class=nav><div class=logo><a href=https://claudeai.best/ accesskey=h title="AI 极客前沿 (Alt + H)">AI 极客前沿</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://claudeai.best/posts/ title=文章><span>文章</span></a></li><li><a href=https://claudeai.best/tags/ title=标签><span>标签</span></a></li><li><a href=https://claudeai.best/categories/ title=分类><span>分类</span></a></li><li><a href=https://claudeai.best/search/ title=搜索><span>搜索</span></a></li><li><a href=https://claudeai.best/about/ title=关于><span>关于</span></a></li><li><a href=https://t.me/TgTechMsgBot title=联系><span>联系</span>&nbsp;<svg fill="none" shape-rendering="geometricPrecision" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></li></ul></nav></header><main class=main><header class=page-header><div class=breadcrumbs><a href=https://claudeai.best/>主页</a>&nbsp;»&nbsp;<a href=https://claudeai.best/categories/>Categories</a></div><h1>开源</h1></header><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771622680685_cover.jpg alt="Jsonh - JSON for Humans"></figure><header class=entry-header><h2 class=entry-hint-parent>Jsonh:JSON 终于能写注释了,还能省略逗号和引号</h2></header><div class=entry-content><p>一句话总结 Jsonh 让 JSON 终于像人类语言了–写注释,省略逗号,多行字符串,无引号键值,还能兼容现有的 JSON 和 JSON5.
 痛点:JSON 反人类的地方 每个写过配置文件的人都懂:
-{ &#34;name&#34;: &#34;my-app&#34;, &#34;version&#34;: &#34;1.0.0&#34;, &#34;description&#34;: &#34;A very long description that needs to be on one line...&#34; } 不能写注释(解释为什么这样配置), 最后一个属性不能加逗号(git diff 很丑), 多行字符串必须用 \n(阅读噩梦), 键必须加引号(手累) YAML 和 TOML 试图解决这些问题,但 YAML 的缩进地狱和 TOML 的嵌套语法又带来了新麻烦.
-Jsonh 的解法:JSON &#43; 人性化语法 Jsonh 是 JSON 的超集,意味着所有合法 JSON 都是合法 Jsonh.但它增加了这些救命特性:
-1. 三种注释方式 // 行注释 # 也是行注释 /* 块注释 */ name: &#34;my-app&#34; ### 2. 逗号可选 a: 1 b: 2 c: 3 // 不需要逗号! ### 3. 多行字符串 haiku: &#39;&#39;&#39; Let me die in spring beneath the cherry blossoms while the moon is full. &#39;&#39;&#39; ### 4. 无引号键值 keys: without quotes isn\&#39;t: { that: cool? ### 5. 兼容 JSON5 支持十六进制数字,转义换行等 JSON5 特性: hex: 0xDEADCAFE fraction: .5e3 bigNum: 1_000_000 // 下划线分隔 ## 与现有格式对比 | 注释 | | | | | | | | 尾随逗号 | | | | | | | | 省略逗号 | | | | | | | | 多行字符串 | | | | | | | | 无引号键 | | | | | | | | 十六进制 | | | | | | | | 兼容 JSON | | | | | | | | 兼容 JSON5 | | | | | | | Jsonh 的定位很明确:**HJSON v2**--吸取 HJSON 的教训,同时保持与 JSON/JSON5 的兼容性. ## 实际应用场景 ### 1. 项目配置文件 // 数据库配置 host: localhost port: 5432 // 生产环境覆盖 production: { host: prod.db.internal ssl: true ### 2. API 文档示例 // 用户对象示例 user: { id: 12345 name: &#34;张三&#34; bio: &#39;&#39;&#39; 全栈开发者, 热爱开源和技术分享. ### 3. 游戏配置 player: { health: 100 speed: 5.5 inventory: [ sword shield potion ] ## 快速开始 ### 在线体验 直接访问:https://jsonh-org.github.io/Jsonh ### 安装解析器 **Node.js:** ```bash npm install jsonh-ts **Python:** pip install JsonhPy **Rust:** cargo install jsonh_rs **C#:** dotnet add package JsonhCs # 安装 dotnet tool install --global JsonhCli # 转换 Jsonh 到 JSON jsonh convert config.jsonh -o config.json # 验证语法 jsonh validate config.jsonh ## 为什么不用 YAML/TOML? **YAML 的问题:** - 缩进敏感(少一个空格就报错) - 多行字符串语法复杂(`&gt;`, `|`, `&gt;-`, `&gt;&#43;` 傻傻分不清) - 甚至不是 JSON 的超集! **TOML 的问题:** - 嵌套对象语法反直觉(`[[table]]` 是什么鬼), 深层嵌套时配置分散在各处, 复杂对象还是得用 JSON 语法 **Jsonh 的优势:** - 基于 JSON 语法,学习成本为零, 层级结构清晰(不像 TOML 那样分散), 严格的语法规则(不像 YAML 那样容易出错) ## 写在最后 Jsonh 不是什么革命性发明,它只是**把开发者需要的实用特性整合到一个格式里**. 如果你厌倦了 JSON 的严格,YAML 的诡异,TOML 的分散,Jsonh 可能是你配置文件的新选择. **项目链接:** https://github.com/jsonh-org/Jsonh **在线演示:** https://jsonh-org.github.io/Jsonh ## 时效性验证 - **HN 提交时间**: 20 分钟前(Show HN: Jsonh (JSON for Humans)) - **搜索引擎最早时间**: GitHub 仓库已存在,HN 首发 20 分钟前 - **结论**: 最早时间 ≤ 2 小时,符合新鲜热点标准 </p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-21 05:23:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>379 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Jsonh:JSON 终于能写注释了,还能省略逗号和引号" href="https://claudeai.best/posts/hunter-2026022105/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771315478311_cover.jpg" alt="AI模型架构示意图">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Qwen3.5横空出世:397B参数只激活17B,推理速度暴涨19倍,开源AI格局要变了
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>2月16日,阿里通义千问团队放了个大招–Qwen3.5-397B-A17B,Qwen3.5系列的第一个开源模型.
-这名字里藏着关键信息:总参数397B,但每次推理只激活17B.换句话说,你用的是一个&#34;大脑容量&#34;接近4000亿参数的模型,但每次思考只调动170亿参数的计算量.
+{ "name": "my-app", "version": "1.0.0", "description": "A very long description that needs to be on one line..." } 不能写注释(解释为什么这样配置), 最后一个属性不能加逗号(git diff 很丑), 多行字符串必须用 \n(阅读噩梦), 键必须加引号(手累) YAML 和 TOML 试图解决这些问题,但 YAML 的缩进地狱和 TOML 的嵌套语法又带来了新麻烦.
+Jsonh 的解法:JSON + 人性化语法 Jsonh 是 JSON 的超集,意味着所有合法 JSON 都是合法 Jsonh.但它增加了这些救命特性:
+1. 三种注释方式 // 行注释 # 也是行注释 /* 块注释 */ name: "my-app" ### 2. 逗号可选 a: 1 b: 2 c: 3 // 不需要逗号! ### 3. 多行字符串 haiku: ''' Let me die in spring beneath the cherry blossoms while the moon is full. ''' ### 4. 无引号键值 keys: without quotes isn\'t: { that: cool? ### 5. 兼容 JSON5 支持十六进制数字,转义换行等 JSON5 特性: hex: 0xDEADCAFE fraction: .5e3 bigNum: 1_000_000 // 下划线分隔 ## 与现有格式对比 | 注释 | | | | | | | | 尾随逗号 | | | | | | | | 省略逗号 | | | | | | | | 多行字符串 | | | | | | | | 无引号键 | | | | | | | | 十六进制 | | | | | | | | 兼容 JSON | | | | | | | | 兼容 JSON5 | | | | | | | Jsonh 的定位很明确:**HJSON v2**--吸取 HJSON 的教训,同时保持与 JSON/JSON5 的兼容性. ## 实际应用场景 ### 1. 项目配置文件 // 数据库配置 host: localhost port: 5432 // 生产环境覆盖 production: { host: prod.db.internal ssl: true ### 2. API 文档示例 // 用户对象示例 user: { id: 12345 name: "张三" bio: ''' 全栈开发者, 热爱开源和技术分享. ### 3. 游戏配置 player: { health: 100 speed: 5.5 inventory: [ sword shield potion ] ## 快速开始 ### 在线体验 直接访问:https://jsonh-org.github.io/Jsonh ### 安装解析器 **Node.js:** ```bash npm install jsonh-ts **Python:** pip install JsonhPy **Rust:** cargo install jsonh_rs **C#:** dotnet add package JsonhCs # 安装 dotnet tool install --global JsonhCli # 转换 Jsonh 到 JSON jsonh convert config.jsonh -o config.json # 验证语法 jsonh validate config.jsonh ## 为什么不用 YAML/TOML? **YAML 的问题:** - 缩进敏感(少一个空格就报错) - 多行字符串语法复杂(`>`, `|`, `>-`, `>+` 傻傻分不清) - 甚至不是 JSON 的超集! **TOML 的问题:** - 嵌套对象语法反直觉(`[[table]]` 是什么鬼), 深层嵌套时配置分散在各处, 复杂对象还是得用 JSON 语法 **Jsonh 的优势:** - 基于 JSON 语法,学习成本为零, 层级结构清晰(不像 TOML 那样分散), 严格的语法规则(不像 YAML 那样容易出错) ## 写在最后 Jsonh 不是什么革命性发明,它只是**把开发者需要的实用特性整合到一个格式里**. 如果你厌倦了 JSON 的严格,YAML 的诡异,TOML 的分散,Jsonh 可能是你配置文件的新选择. **项目链接:** https://github.com/jsonh-org/Jsonh **在线演示:** https://jsonh-org.github.io/Jsonh ## 时效性验证 - **HN 提交时间**: 20 分钟前(Show HN: Jsonh (JSON for Humans)) - **搜索引擎最早时间**: GitHub 仓库已存在,HN 首发 20 分钟前 - **结论**: 最早时间 ≤ 2 小时,符合新鲜热点标准</p></div><footer class=entry-footer><span title='2026-02-21 05:23:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>379 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Jsonh:JSON 终于能写注释了,还能省略逗号和引号" href=https://claudeai.best/posts/hunter-2026022105/></a></article><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771315478311_cover.jpg alt=AI模型架构示意图></figure><header class=entry-header><h2 class=entry-hint-parent>Qwen3.5横空出世:397B参数只激活17B,推理速度暴涨19倍,开源AI格局要变了</h2></header><div class=entry-content><p>2月16日,阿里通义千问团队放了个大招–Qwen3.5-397B-A17B,Qwen3.5系列的第一个开源模型.
+这名字里藏着关键信息:总参数397B,但每次推理只激活17B.换句话说,你用的是一个"大脑容量"接近4000亿参数的模型,但每次思考只调动170亿参数的计算量.
 这意味着什么?推理速度暴涨.阿里给出的数据是:在256K token长上下文场景下,吞吐量是Qwen3-Max的19倍;在标准32K场景下也有8.6倍的提升.
 更重要的是,它以Apache 2.0协议完全开源.
 架构上到底改了什么? Qwen3.5的核心创新是引入了Gated Delta Network–一种混合线性注意力机制,配合细粒度的稀疏MoE(Mixture of Experts)架构.
-传统Transformer的注意力机制计算复杂度随序列长度平方增长,这是长上下文处理的老大难问题.Delta Network通过线性注意力变体大幅降低了这个开销,而&#34;Gated&#34;机制则让模型能动态决定哪些信息值得关注.
-MoE的粒度也值得注意.397B总参数只激活17B,意味着专家数量极多,每个专家极小.这种设计的好处是:不同类型的任务可以由高度专业化的&#34;小专家&#34;处理,既保证了质量,又控制了计算成本.
+传统Transformer的注意力机制计算复杂度随序列长度平方增长,这是长上下文处理的老大难问题.Delta Network通过线性注意力变体大幅降低了这个开销,而"Gated"机制则让模型能动态决定哪些信息值得关注.
+MoE的粒度也值得注意.397B总参数只激活17B,意味着专家数量极多,每个专家极小.这种设计的好处是:不同类型的任务可以由高度专业化的"小专家"处理,既保证了质量,又控制了计算成本.
 跑分怎么样?说人话 先说强项:
 指令遵循:IFBench 76.5,MultiChallenge 67.6,都是业界最高, Agent任务:TAU2得分86.7,仅次于Claude 4.5 Opus(91.6)和GPT-5.2(87.1), 多语言:支持201种语言和方言,词表从15万扩到25万, 数学视觉:MathVision 88.6,ZEROBench 12分超过所有前沿模型, 文档理解和OCR:多项测试领先 再说短板–这一点阿里自己也没藏着:
 纯推理:AIME26得分91.3,GPT-5.2是96.7,Claude 4.5 Opus是93.3 代码:LiveCodeBench 83.6,GPT-5.2是87.7 通用图像理解:MMMU 85,Gemini 3 Pro是87.2 简单总结:在效率和多模态方面达到了第一梯队,但在纯推理和硬核编程上还差一口气.不过考虑到它是开源的,推理成本极低,这个性价比已经非常炸裂了.
 API定价:卷到骨头里了 Qwen3.5-Plus的API价格:
 输入:$0.40/百万token 做个对比:同级别的GPT-5.2或Claude 4.5 Opus,输出价格至少是这个的5-10倍.
 阿里还提供了100万token的上下文窗口,内置网页搜索和代码解释器.说实话,对于大多数应用场景,这个价格和功能组合已经没什么拒绝的理由了.
-原生多模态:不是后加的 很多模型的&#34;多模态&#34;是后期拼接的–先训练文本模型,再接上视觉编码器.Qwen3.5不一样,它采用早期融合训练(Early Fusion),从训练初期就让文本和视觉信号在同一个网络里交互.
+原生多模态:不是后加的 很多模型的"多模态"是后期拼接的–先训练文本模型,再接上视觉编码器.Qwen3.5不一样,它采用早期融合训练(Early Fusion),从训练初期就让文本和视觉信号在同一个网络里交互.
 实际效果:
 能处理长达2小时的视频, 看交通视频能分析驾驶决策, 看迷宫图片能自主写Python代码计算最短路径, 作为GUI Agent能操作手机和电脑界面 这不是PPT功能,阿里已经放出了demo.
 强化学习的胜利 Qwen3.5相比前代最大的提升来自大规模强化学习环境扩展训练.
-传统做法是针对特定benchmark做RL优化,容易&#34;刷分&#34;但泛化差.阿里这次走了不同的路:系统性地增加训练环境的多样性和难度,用异步RL框架支持大规模Agent脚手架和环境编排.
+传统做法是针对特定benchmark做RL优化,容易"刷分"但泛化差.阿里这次走了不同的路:系统性地增加训练环境的多样性和难度,用异步RL框架支持大规模Agent脚手架和环境编排.
 效果最明显的就是Agent能力–TAU2得分从Qwen3系列的水平直接跳到86.7,几乎追平GPT-5.2.
 中国开源AI军备竞赛 Qwen3.5的发布节点很有意思.就在同一周:
-智谱AI发布了GLM-5(MIT协议开源,代码和Agent能力强), 字节跳动和快手也分别推出了新模型, DeepSeek v4传闻即将发布 2月份的AI模型密集发布已经被媒体称为&#34;Model Rush&#34;–7个主要模型在同一个月内发布.
+智谱AI发布了GLM-5(MIT协议开源,代码和Agent能力强), 字节跳动和快手也分别推出了新模型, DeepSeek v4传闻即将发布 2月份的AI模型密集发布已经被媒体称为"Model Rush"–7个主要模型在同一个月内发布.
 有意思的是,中国AI公司在企业市场还没打进美国,但在成本敏感的AI创业公司群体中,中国开源模型的采用率正在快速增长.NBC报道称,硅谷越来越多的初创公司在用中国的免费AI模型来降低运营成本.
 我的判断 Qwen3.5代表了开源AI的一个重要转折点:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-17 16:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>98 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Qwen3.5横空出世:397B参数只激活17B,推理速度暴涨19倍,开源AI格局要变了" href="https://claudeai.best/posts/hunter-2026021716/"></a>
-</article>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2026 <a href="https://claudeai.best/">AI 极客前沿</a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu');
-    if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            html.dataset.theme = 'dark';
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-</body>
-
-</html>
+...</p></div><footer class=entry-footer><span title='2026-02-17 16:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>98 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Qwen3.5横空出世:397B参数只激活17B,推理速度暴涨19倍,开源AI格局要变了" href=https://claudeai.best/posts/hunter-2026021716/></a></article></main><footer class=footer><span>&copy; 2026 <a href=https://claudeai.best/>AI 极客前沿</a></span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");if(menu){const e=localStorage.getItem("menu-scroll-position");e&&(menu.scrollLeft=parseInt(e,10)),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}}document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{const e=document.querySelector("html");e.dataset.theme==="dark"?(e.dataset.theme="light",localStorage.setItem("pref-theme","light")):(e.dataset.theme="dark",localStorage.setItem("pref-theme","dark"))})</script></body></html>

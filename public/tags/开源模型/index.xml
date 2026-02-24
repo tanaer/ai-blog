@@ -1,70 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>开源模型 on AI 极客前沿</title>
-    <link>https://claudeai.best/tags/%E5%BC%80%E6%BA%90%E6%A8%A1%E5%9E%8B/</link>
-    <description>Recent content in 开源模型 on AI 极客前沿</description>
-    <generator>Hugo -- 0.146.0</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Wed, 25 Feb 2026 01:05:00 +0800</lastBuildDate>
-    <atom:link href="https://claudeai.best/tags/%E5%BC%80%E6%BA%90%E6%A8%A1%E5%9E%8B/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>DeepSeek V4 Lite 泄露：54 行代码生成 Xbox 手柄，SVG 生成能力震惊社区</title>
-      <link>https://claudeai.best/posts/hunter-2026022501/</link>
-      <pubDate>Wed, 25 Feb 2026 01:05:00 +0800</pubDate>
-      <guid>https://claudeai.best/posts/hunter-2026022501/</guid>
-      <description>&lt;h2 id=&#34;开源模型的新突破&#34;&gt;开源模型的新突破&lt;/h2&gt;
-&lt;p&gt;DeepSeek V4 Lite 在非官方渠道泄露，展现了令人惊叹的 &lt;strong&gt;SVG 代码生成能力&lt;/strong&gt;。这个轻量级模型用区区 54 行代码就生成了一个精致的 Xbox 手柄，另一个复杂场景更是压缩到 42 行。&lt;/p&gt;
-&lt;h2 id=&#34;技术细节&#34;&gt;技术细节&lt;/h2&gt;
-&lt;p&gt;根据泄露的演示：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Xbox 手柄&lt;/strong&gt;：54 行 SVG 代码&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;多元素场景&lt;/strong&gt;：42 行代码&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;性能对比&lt;/strong&gt;：超越 DeepSeek 3.2、Claude Opus 4.6、Gemini 3.1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;内部评估显示，DeepSeek V4 Lite 生成的代码更加&lt;strong&gt;优化和简洁&lt;/strong&gt;，这意味着什么？&lt;/p&gt;
-&lt;h2 id=&#34;设计自动化的未来&#34;&gt;设计自动化的未来&lt;/h2&gt;
-&lt;p&gt;想象一下：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;UI 设计师&lt;/strong&gt;：直接用文字描述界面，AI 生成矢量图&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;营销团队&lt;/strong&gt;：快速生成 logo、图标、营销素材&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;工程师&lt;/strong&gt;：自动生成原理图、流程图、架构图&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;这不是幻想——这是 DeepSeek V4 Lite 正在实现的能力。&lt;/p&gt;
-&lt;h2 id=&#34;空间推理的胜利&#34;&gt;空间推理的胜利&lt;/h2&gt;
-&lt;p&gt;生成高质量的 SVG 不仅需要代码能力，更需要&lt;strong&gt;空间推理&lt;/strong&gt;。模型必须理解：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;物体的几何结构&lt;/li&gt;
-&lt;li&gt;元素之间的空间关系&lt;/li&gt;
-&lt;li&gt;如何用代码表达视觉概念&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;这正是 DeepSeek V4 Lite 的核心竞争力。&lt;/p&gt;
-&lt;h2 id=&#34;警惕与期待&#34;&gt;警惕与期待&lt;/h2&gt;
-&lt;p&gt;⚠️ &lt;strong&gt;重要提示&lt;/strong&gt;：这些性能来自泄露版本，尚未得到 DeepSeek 官方确认。AI 社区呼吁独立验证。&lt;/p&gt;
-&lt;p&gt;但无论如何，这展示了开源模型在&lt;strong&gt;垂直领域&lt;/strong&gt;的巨大潜力。当通用模型还在追求&amp;quot;什么都能做&amp;quot;时，专用模型已经开始&amp;quot;把一件事做到极致&amp;quot;。&lt;/p&gt;
-&lt;h2 id=&#34;开源的力量&#34;&gt;开源的力量&lt;/h2&gt;
-&lt;p&gt;DeepSeek 一直是开源社区的中坚力量。如果 V4 Lite 的 SVG 能力得到验证，它将成为：&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>NVIDIA PersonaPlex-7B:一个7B模型把整个语音AI行业打回原形</title>
-      <link>https://claudeai.best/posts/hunter-2026021819/</link>
-      <pubDate>Wed, 18 Feb 2026 19:00:00 +0800</pubDate>
-      <guid>https://claudeai.best/posts/hunter-2026021819/</guid>
-      <description>NVIDIA开源7B参数全双工语音模型PersonaPlex,将ASR&#43;LLM&#43;TTS三合一,170毫秒延迟击败所有商业API.语音AI的利润正在从API层向GPU层迁移,这个行业的天又变了.</description>
-    </item>
-    <item>
-      <title>Qwen3.5横空出世:397B参数只激活17B,推理速度暴涨19倍,开源AI格局要变了</title>
-      <link>https://claudeai.best/posts/hunter-2026021716/</link>
-      <pubDate>Tue, 17 Feb 2026 16:00:00 +0800</pubDate>
-      <guid>https://claudeai.best/posts/hunter-2026021716/</guid>
-      <description>阿里通义千问团队发布Qwen3.5-397B-A17B,采用全新Gated Delta Network架构,推理吞吐量比Qwen3-Max快19倍,原生多模态支持视觉,视频理解,Apache 2.0开源.详细解读架构创新与实测表现.</description>
-    </item>
-    <item>
-      <title>Qwen3.5横空出世:397B参数只激活17B,阿里这次真的打到GPT-5.2脸上了</title>
-      <link>https://claudeai.best/posts/hunter-2026021621/</link>
-      <pubDate>Mon, 16 Feb 2026 21:00:00 +0800</pubDate>
-      <guid>https://claudeai.best/posts/hunter-2026021621/</guid>
-      <description>阿里今天发布Qwen3.5,397B参数MoE架构仅激活17B,支持201种语言和100万token上下文,benchmark全面超越GPT-5.2和Claude Opus 4.5.开源模型正式进入Agent时代.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>开源模型 on AI 极客前沿</title><link>https://claudeai.best/tags/%E5%BC%80%E6%BA%90%E6%A8%A1%E5%9E%8B/</link><description>Recent content in 开源模型 on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Wed, 25 Feb 2026 01:05:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/%E5%BC%80%E6%BA%90%E6%A8%A1%E5%9E%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>DeepSeek V4 Lite 泄露：54 行代码生成 Xbox 手柄，SVG 生成能力震惊社区</title><link>https://claudeai.best/posts/hunter-2026022501/</link><pubDate>Wed, 25 Feb 2026 01:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022501/</guid><description>&lt;h2 id="开源模型的新突破">开源模型的新突破&lt;/h2>
+&lt;p>DeepSeek V4 Lite 在非官方渠道泄露，展现了令人惊叹的 &lt;strong>SVG 代码生成能力&lt;/strong>。这个轻量级模型用区区 54 行代码就生成了一个精致的 Xbox 手柄，另一个复杂场景更是压缩到 42 行。&lt;/p>
+&lt;h2 id="技术细节">技术细节&lt;/h2>
+&lt;p>根据泄露的演示：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Xbox 手柄&lt;/strong>：54 行 SVG 代码&lt;/li>
+&lt;li>&lt;strong>多元素场景&lt;/strong>：42 行代码&lt;/li>
+&lt;li>&lt;strong>性能对比&lt;/strong>：超越 DeepSeek 3.2、Claude Opus 4.6、Gemini 3.1&lt;/li>
+&lt;/ul>
+&lt;p>内部评估显示，DeepSeek V4 Lite 生成的代码更加&lt;strong>优化和简洁&lt;/strong>，这意味着什么？&lt;/p>
+&lt;h2 id="设计自动化的未来">设计自动化的未来&lt;/h2>
+&lt;p>想象一下：&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>UI 设计师&lt;/strong>：直接用文字描述界面，AI 生成矢量图&lt;/li>
+&lt;li>&lt;strong>营销团队&lt;/strong>：快速生成 logo、图标、营销素材&lt;/li>
+&lt;li>&lt;strong>工程师&lt;/strong>：自动生成原理图、流程图、架构图&lt;/li>
+&lt;/ol>
+&lt;p>这不是幻想——这是 DeepSeek V4 Lite 正在实现的能力。&lt;/p>
+&lt;h2 id="空间推理的胜利">空间推理的胜利&lt;/h2>
+&lt;p>生成高质量的 SVG 不仅需要代码能力，更需要&lt;strong>空间推理&lt;/strong>。模型必须理解：&lt;/p>
+&lt;ul>
+&lt;li>物体的几何结构&lt;/li>
+&lt;li>元素之间的空间关系&lt;/li>
+&lt;li>如何用代码表达视觉概念&lt;/li>
+&lt;/ul>
+&lt;p>这正是 DeepSeek V4 Lite 的核心竞争力。&lt;/p>
+&lt;h2 id="警惕与期待">警惕与期待&lt;/h2>
+&lt;p>⚠️ &lt;strong>重要提示&lt;/strong>：这些性能来自泄露版本，尚未得到 DeepSeek 官方确认。AI 社区呼吁独立验证。&lt;/p>
+&lt;p>但无论如何，这展示了开源模型在&lt;strong>垂直领域&lt;/strong>的巨大潜力。当通用模型还在追求&amp;quot;什么都能做&amp;quot;时，专用模型已经开始&amp;quot;把一件事做到极致&amp;quot;。&lt;/p>
+&lt;h2 id="开源的力量">开源的力量&lt;/h2>
+&lt;p>DeepSeek 一直是开源社区的中坚力量。如果 V4 Lite 的 SVG 能力得到验证，它将成为：&lt;/p></description></item><item><title>NVIDIA PersonaPlex-7B:一个7B模型把整个语音AI行业打回原形</title><link>https://claudeai.best/posts/hunter-2026021819/</link><pubDate>Wed, 18 Feb 2026 19:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021819/</guid><description>NVIDIA开源7B参数全双工语音模型PersonaPlex,将ASR+LLM+TTS三合一,170毫秒延迟击败所有商业API.语音AI的利润正在从API层向GPU层迁移,这个行业的天又变了.</description></item><item><title>Qwen3.5横空出世:397B参数只激活17B,推理速度暴涨19倍,开源AI格局要变了</title><link>https://claudeai.best/posts/hunter-2026021716/</link><pubDate>Tue, 17 Feb 2026 16:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021716/</guid><description>阿里通义千问团队发布Qwen3.5-397B-A17B,采用全新Gated Delta Network架构,推理吞吐量比Qwen3-Max快19倍,原生多模态支持视觉,视频理解,Apache 2.0开源.详细解读架构创新与实测表现.</description></item><item><title>Qwen3.5横空出世:397B参数只激活17B,阿里这次真的打到GPT-5.2脸上了</title><link>https://claudeai.best/posts/hunter-2026021621/</link><pubDate>Mon, 16 Feb 2026 21:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021621/</guid><description>阿里今天发布Qwen3.5,397B参数MoE架构仅激活17B,支持201种语言和100万token上下文,benchmark全面超越GPT-5.2和Claude Opus 4.5.开源模型正式进入Agent时代.</description></item></channel></rss>

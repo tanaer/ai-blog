@@ -1,206 +1,44 @@
-<!DOCTYPE html>
-<html lang="zh" dir="auto" data-theme="auto">
-
-<head>
-	<meta name="generator" content="Hugo 0.146.0"><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>AI 极客前沿</title>
-<meta name="keywords" content="AI, 人工智能, AI Agent, 大模型, LLM, 开源, 技术趋势, Claude, GPT, OpenAI, DeepMind, 开发者工具">
-<meta name="description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
-<meta name="author" content="AI 极客前沿">
-<link rel="canonical" href="https://claudeai.best/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://claudeai.best/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://claudeai.best/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://claudeai.best/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://claudeai.best/apple-touch-icon.png">
-<link rel="mask-icon" href="https://claudeai.best/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://claudeai.best/index.xml" title="rss">
-<link rel="alternate" type="application/json" href="https://claudeai.best/index.json" title="json">
-<link rel="alternate" hreflang="zh" href="https://claudeai.best/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-                color-scheme: dark;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .toc {
-                background: var(--entry);
-            }
-        }
-
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
-    </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "AI 极客前沿",
-  "url": "https:\/\/claudeai.best\/",
-  "description": "每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态",
-  "publisher": {
-    "@type": "Organization",
-    "name": "AI 极客前沿"
-  }
-}
-</script>
-
-
-<meta property="og:url" content="https://claudeai.best/">
-  <meta property="og:site_name" content="AI 极客前沿">
-  <meta property="og:title" content="AI 极客前沿">
-  <meta property="og:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
-  <meta property="og:locale" content="zh-cn">
-  <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="AI 极客前沿">
-<meta name="twitter:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "AI 极客前沿",
-  "url": "https://claudeai.best/",
-  "description": "每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态",
-  "logo": "https://claudeai.best/favicon.ico",
-  "sameAs": [
-      "https://t.me/TgTechMsgBot"
-  ]
-}
-</script>
-</head>
-<body class="list" id="top">
-    <header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://claudeai.best/" accesskey="h" title="AI 极客前沿 (Alt + H)">AI 极客前沿</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="https://claudeai.best/posts/" title="文章">
-                    <span>文章</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/tags/" title="标签">
-                    <span>标签</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/categories/" title="分类">
-                    <span>分类</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/search/" title="搜索">
-                    <span>搜索</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/about/" title="关于">
-                    <span>关于</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://t.me/TgTechMsgBot" title="联系">
-                    <span>联系</span>&nbsp;
-                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
-                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
-                        <path d="M15 3h6v6"></path>
-                        <path d="M10 14L21 3"></path>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main class="main"> 
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771322741608_cover.jpg" alt="AI Agent安全威胁示意图">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">你的AI助手正在被偷:OpenClaw成为信息窃取恶意软件的新目标
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>你每天跟AI助手聊的那些事儿–日程,邮件,工作计划,私密对话–如果被人偷走了呢?
+<!doctype html><html lang=zh dir=auto data-theme=auto><head><meta name=generator content="Hugo 0.146.0"><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>AI 极客前沿</title>
+<meta name=keywords content="AI,人工智能,AI Agent,大模型,LLM,开源,技术趋势,Claude,GPT,OpenAI,DeepMind,开发者工具"><meta name=description content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态"><meta name=author content="AI 极客前沿"><link rel=canonical href=https://claudeai.best/><link crossorigin=anonymous href=/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css integrity="sha256-2jIR5e+Ge/K3X9WmUVz+1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as=style><link rel=icon href=https://claudeai.best/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://claudeai.best/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://claudeai.best/favicon-32x32.png><link rel=apple-touch-icon href=https://claudeai.best/apple-touch-icon.png><link rel=mask-icon href=https://claudeai.best/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://claudeai.best/index.xml title=rss><link rel=alternate type=application/json href=https://claudeai.best/index.json title=json><link rel=alternate hreflang=zh href=https://claudeai.best/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51);color-scheme:dark}.list{background:var(--theme)}.toc{background:var(--entry)}}@media(prefers-color-scheme:light){.list::-webkit-scrollbar-thumb{border-color:var(--code-bg)}}</style></noscript><script>localStorage.getItem("pref-theme")==="dark"?document.querySelector("html").dataset.theme="dark":localStorage.getItem("pref-theme")==="light"?document.querySelector("html").dataset.theme="light":window.matchMedia("(prefers-color-scheme: dark)").matches?document.querySelector("html").dataset.theme="dark":document.querySelector("html").dataset.theme="light"</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"WebSite","name":"AI 极客前沿","url":"https:\/\/claudeai.best\/","description":"每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态","publisher":{"@type":"Organization","name":"AI 极客前沿"}}</script><meta property="og:url" content="https://claudeai.best/"><meta property="og:site_name" content="AI 极客前沿"><meta property="og:title" content="AI 极客前沿"><meta property="og:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态"><meta property="og:locale" content="zh-cn"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="AI 极客前沿"><meta name=twitter:description content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态"><script type=application/ld+json>{"@context":"https://schema.org","@type":"Organization","name":"AI 极客前沿","url":"https://claudeai.best/","description":"每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态","logo":"https://claudeai.best/favicon.ico","sameAs":["https://t.me/TgTechMsgBot"]}</script></head><body class=list id=top><header class=header><nav class=nav><div class=logo><a href=https://claudeai.best/ accesskey=h title="AI 极客前沿 (Alt + H)">AI 极客前沿</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://claudeai.best/posts/ title=文章><span>文章</span></a></li><li><a href=https://claudeai.best/tags/ title=标签><span>标签</span></a></li><li><a href=https://claudeai.best/categories/ title=分类><span>分类</span></a></li><li><a href=https://claudeai.best/search/ title=搜索><span>搜索</span></a></li><li><a href=https://claudeai.best/about/ title=关于><span>关于</span></a></li><li><a href=https://t.me/TgTechMsgBot title=联系><span>联系</span>&nbsp;<svg fill="none" shape-rendering="geometricPrecision" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></li></ul></nav></header><main class=main><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771326207474_cover.jpg alt=数据中心服务器机房></figure><header class=entry-header><h2 class=entry-hint-parent>一个配置错误搞瘫半个互联网:Cloudflare BGP事故暴露了我们不敢面对的真相</h2></header><div class=entry-content><p>一个周日下午,半个互联网消失了 2026年2月16日,美东时间下午1点15分.
+一个Cloudflare工程师在弗吉尼亚州阿什本数据中心执行了一次"常规配置更新".几分钟后,全球互联网开始抽搐.
+X(原Twitter)时间线一片空白,Grok同时挂掉.AWS的US-East-1区域出现"间歇性连接降级".电商网站结账流程中断.数千个依赖Cloudflare CDN的中小型网站直接返回错误页面.
+Downdetector在4小时内录得超过11,000条X平台故障报告,峰值出现在下午4:20.美国,英国,欧洲部分地区用户首当其冲.
+4个小时后,工程师们才完全恢复服务.
+这不是一次黑客攻击.不是DDoS.甚至不是什么复杂的技术故障.
+这是一个BGP路由配置错误.一个.
+BGP:互联网的GPS,也是最脆弱的那根弦 BGP(Border Gateway Protocol,边界网关协议)是互联网的"路由导航系统".它告诉数据包:“从A到B,走这条路.“全球互联网的流量路由几乎完全依赖这个上世纪80年代设计的协议.
+问题在于:BGP本质上是基于信任的.一个网络宣布"我能到达这些IP地址”,其他网络就信了.没有严格的验证机制(虽然RPKI等改进在推进,但普及率还很低).
+当Cloudflare阿什本节点的BGP路由表被错误配置后,坏的路由信息像病毒一样传播到上游Provider.正常应该流经Cloudflare全球300多个数据中心的流量,被错误导向,丢弃,或者在网络中打转.
+最讽刺的是:Cloudflare自己的状态页也挂了.
+工程团队40分钟内定位了根因,但回滚比部署困难得多–因为损坏的路由表已经被上游Provider缓存了.你没法简单地"撤回"一条BGP公告,它已经在整个互联网中扩散.
+多米诺骨牌:AWS和X为什么也倒了 这次事故最值得警惕的不是起因,而是传播方式.
+AWS承载着全球约三分之一的云基础设施.虽然AWS有独立的网络骨干,但大量客户流量在到达AWS之前,会先经过Cloudflare做DDoS防护和CDN加速.当Cloudflare路由失效后,海量的重试连接和误导数据包涌入AWS边缘路由器,直接把几台路由器打爆了.
+X平台更惨.自从马斯克收购后大幅削减基础设施成本,X同时依赖Cloudflare做边缘安全,AWS做后端计算.两个Provider同时出问题,X基本没有fallback方案.结果就是:将近3小时无法发帖,刷时间线,收发私信.
+Bluesky和Threads的用户量在这几个小时内暴涨.有评论员说:“全球最有钱的科技人士拥有的平台,被一行配置搞挂了.”
+表面分布式,实际深度中心化 普林斯顿大学计算机科学教授Jennifer Rexford(前FCC技术顾问委员会成员)的话一针见血:
+“我们构建了一个看起来分布式,实际上深度中心化的系统.每次这类宕机发生,我们都进行同样的’韧性’讨论,然后什么都没变–因为经济激励全都指向集中化.”
+几个数字让你感受一下:
+Cloudflare处理全球约**20%的网络流量, AWS占据云基础设施市场约31%**的份额, 加上Azure和GCP,三家公司控制了全球超过60%的云计算 当这些巨头之间还存在深度依赖关系时(比如用Cloudflare做CDN + AWS做计算),一个节点的故障就能引发系统性崩溃.
+这不是分布式系统.这是一个伪装成分布式的中心化系统.
+这事以前发生过,以后还会发生 回顾一下历史:
+2024年7月:CrowdStrike更新导致全球Windows蓝屏,航空,银行,医疗系统瘫痪, 2021年10月:Facebook(Meta)BGP配置错误,Facebook/Instagram/WhatsApp全球宕机6小时, 2021年6月:Fastly CDN故障,Amazon,Reddit,CNN等大面积下线, 2020年11月:AWS US-East-1宕机,半个互联网跟着挂 每次事故后都有一轮关于"互联网韧性"的讨论.然后呢?什么都没变.
+原因很简单:集中化是经济理性的选择.用Cloudflare比自建CDN便宜100倍,用AWS比自建数据中心快100倍.没有哪个CTO会为了理论上的"韧性"去增加10倍的基础设施成本.
+真正的问题:我们能做什么? 作为技术从业者,我认为有几个层面值得思考:
+1. 架构层面:多云不是口号 如果你的服务100%跑在AWS上,Cloudflare做CDN,那你的SPOF(单点故障)比你以为的多得多.真正的多云意味着:
+关键服务在至少两个云Provider上有热备, CDN/安全层有备用方案(比如Cloudflare + Fastly双活), DNS做好多Provider解析 成本会增加30-50%,但对于核心业务来说这是保险费.
+2. 协议层面:推进RPKI和BGP安全 RPKI(Resource Public Key Infrastructure)可以验证BGP路由公告的合法性,但全球采用率还不到50%.这需要整个行业的推动,不能靠单个公司.
+3. 监管层面:互联网基础设施需要更高标准 Cloudflare,AWS这些公司本质上是互联网的"公用事业”,但它们承担的监管义务远低于电力,电信等传统公用事业.也许是时候讨论基础设施层面的韧性标准了.
+4. 认知层面:接受"零宕机"是幻觉 任何足够复杂的系统都会出故障.问题不是"会不会挂",而是"挂了之后多快能恢复".设计系统时,优雅降级比防止故障更重要.
+我的看法 这次Cloudflare事故不是黑天鹅–它是灰犀牛.每个基础设施工程师都知道BGP的脆弱性,每个云架构师都知道Provider集中度的风险.但经济激励和技术惯性让我们选择性忽视.
+...</p></div><footer class=entry-footer><span title='2026-02-17 19:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>82 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to 一个配置错误搞瘫半个互联网:Cloudflare BGP事故暴露了我们不敢面对的真相" href=https://claudeai.best/posts/hunter-2026021719/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771322741608_cover.jpg alt="AI Agent安全威胁示意图"></figure><header class=entry-header><h2 class=entry-hint-parent>你的AI助手正在被偷:OpenClaw成为信息窃取恶意软件的新目标</h2></header><div class=entry-content><p>你每天跟AI助手聊的那些事儿–日程,邮件,工作计划,私密对话–如果被人偷走了呢?
 这不是假设.2月16日,网络安全公司Hudson Rock公布了一个真实案例:信息窃取恶意软件(Infostealer)首次成功窃取了OpenClaw用户的完整配置环境.
-发生了什么 一个Vidar变种恶意软件在2月13日感染了某用户的机器.这个恶意软件本身并不是专门针对OpenClaw设计的–它只是按照常规套路,扫描硬盘上包含&#34;token&#34;,“private key&#34;等关键词的文件.
+发生了什么 一个Vidar变种恶意软件在2月13日感染了某用户的机器.这个恶意软件本身并不是专门针对OpenClaw设计的–它只是按照常规套路,扫描硬盘上包含"token",“private key"等关键词的文件.
 问题在于,OpenClaw的 .openclaw 目录恰好满足了所有条件.
 被偷走的文件包括:
-openclaw.json — 包含Gateway认证令牌,用户邮箱,工作区路径.拿到这个,攻击者可以远程连接你的OpenClaw实例(如果端口暴露的话),或者伪装成你的客户端发起认证请求. device.json — 包含用于设备配对和签名的公私钥对.有了私钥,攻击者可以绕过&#34;安全设备&#34;检查,解密日志,访问与设备绑定的云服务. soul.md 和记忆文件 — 这才是最让人后背发凉的:你的Agent的行为准则,日常活动日志,私密消息,日历事件……你跟AI助手说过的一切. Hudson Rock的CTO Alon Gal说得很直白:“这不再是偷浏览器密码那么简单了,这是在偷AI的’灵魂’和身份.”
+openclaw.json — 包含Gateway认证令牌,用户邮箱,工作区路径.拿到这个,攻击者可以远程连接你的OpenClaw实例(如果端口暴露的话),或者伪装成你的客户端发起认证请求. device.json — 包含用于设备配对和签名的公私钥对.有了私钥,攻击者可以绕过"安全设备"检查,解密日志,访问与设备绑定的云服务. soul.md 和记忆文件 — 这才是最让人后背发凉的:你的Agent的行为准则,日常活动日志,私密消息,日历事件……你跟AI助手说过的一切. Hudson Rock的CTO Alon Gal说得很直白:“这不再是偷浏览器密码那么简单了,这是在偷AI的’灵魂’和身份.”
 为什么这件事很严重 OpenClaw在GitHub上已经有超过20万Star.它不是一个玩具–越来越多人把它当作日常工作助手在用,连接着邮箱,日历,文件系统,各种API.
 这意味着一个被窃取的OpenClaw环境,基本等于:
-完整的数字身份 — 你是谁,你在做什么,你的习惯和偏好 API密钥集合 — Claude,GPT,各种云服务的认证凭据 社交工程金矿 — 足够的上下文信息来冒充你 而且这只是&#34;顺手牵羊&#34;的结果.想象一下,当恶意软件作者开始专门为OpenClaw开发窃取模块–就像他们现在对Chrome和Telegram做的那样–情况会有多糟糕.
+完整的数字身份 — 你是谁,你在做什么,你的习惯和偏好 API密钥集合 — Claude,GPT,各种云服务的认证凭据 社交工程金矿 — 足够的上下文信息来冒充你 而且这只是"顺手牵羊"的结果.想象一下,当恶意软件作者开始专门为OpenClaw开发窃取模块–就像他们现在对Chrome和Telegram做的那样–情况会有多糟糕.
 更大的安全图景 这个事件只是冰山一角.最近围绕OpenClaw的安全问题密集爆发:
 恶意Skills供应链攻击:OpenSourceMalware团队发现了一种新型攻击手法–恶意Skills不再直接在SKILL.md中嵌入恶意代码(因为VirusTotal会扫描),而是把真正的恶意软件托管在仿冒的OpenClaw网站上,Skill本身只是个诱饵.
 大量实例暴露在公网:SecurityScorecard的STRIKE团队发现了数十万个暴露的OpenClaw实例,存在远程代码执行(RCE)风险.一个暴露的实例如果有邮件,API,云服务的权限,就是攻击者的完美跳板.
@@ -210,22 +48,7 @@ OpenClaw官方的应对 好消息是OpenClaw团队没有装死.他们已经:
 与VirusTotal合作扫描ClawHub上的恶意Skills, 发布了官方威胁模型, 添加了配置审计功能, 建立了安全信任页面 trust.openclaw.ai 而且2月15日,OpenAI的Sam Altman宣布OpenClaw创始人Peter Steinberger加入OpenAI,OpenClaw将作为开源项目继续由基金会运营,OpenAI会持续支持.这至少意味着更多的安全投入.
 你现在应该做什么 如果你在用OpenClaw(或任何本地AI Agent),这些事情今天就该做:
 检查端口暴露 — 你的Gateway端口是否对外开放?ss -tlnp | grep openclaw 查一下. 轮换所有密钥 — Gateway令牌,API密钥,全部重新生成. 审计已安装的Skills — 你真的知道每个Skill在做什么吗?用 clawhub list 检查,可疑的直接删除. 启用系统级防护 — 杀毒软件更新到最新,特别注意Vidar等信息窃取类恶意软件. 限制Agent权限 — 不要给你的AI助手不需要的权限.邮件只读就够了,别给写权限. 备份和加密敏感文件 — .openclaw 目录里的东西,考虑额外加密. 我的看法 这件事其实一点都不意外.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-17 18:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>129 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to 你的AI助手正在被偷:OpenClaw成为信息窃取恶意软件的新目标" href="https://claudeai.best/posts/hunter-2026021718/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771318962979_cover.jpg" alt="AI视频生成技术概念图">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Seedance 2.0炸场:字节跳动用AI视频逼哭好莱坞,迪士尼直接发律师函
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>你可能见过不少AI生成的视频,但Seedance 2.0出来之后,连《死侍》编剧都在X上说了句大实话:“I hate to say it. It’s likely over for us.”
+...</p></div><footer class=entry-footer><span title='2026-02-17 18:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>129 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to 你的AI助手正在被偷:OpenClaw成为信息窃取恶意软件的新目标" href=https://claudeai.best/posts/hunter-2026021718/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771318962979_cover.jpg alt=AI视频生成技术概念图></figure><header class=entry-header><h2 class=entry-hint-parent>Seedance 2.0炸场:字节跳动用AI视频逼哭好莱坞,迪士尼直接发律师函</h2></header><div class=entry-content><p>你可能见过不少AI生成的视频,但Seedance 2.0出来之后,连《死侍》编剧都在X上说了句大实话:“I hate to say it. It’s likely over for us.”
 这不是PR稿.这是恐慌.
 到底有多强? 上周字节跳动(ByteDance)正式发布了Seedance 2.0,这是他们的下一代AI视频生成模型.关键参数:
 多模态输入:文字,图片(最多9张),视频(最多3段),音频(最多3段),随便组合, 原生音频生成:视频自带声音,不用后期配音, 最长15秒,2K分辨率输出, 比1.5版本快30%, 物理引擎级运动:花滑双人动作能严格遵循真实物理定律–同步起跳,空中旋转,精准落冰 听起来像参数堆砌?看看实际效果就知道了.
@@ -233,71 +56,41 @@ OpenClaw官方的应对 好消息是OpenClaw团队没有装死.他们已经:
 《黑神话:悟空》制作人冯骥在X上感叹:“AI竞争越来越疯狂了.”
 中国社交媒体上更夸张–大量用户开始用Seedance做短片,音乐可视化,虚拟角色,很多完全没有影视制作经验的年轻人做出了接近电影品质的内容.
 好莱坞直接炸了 好看是好看,但好莱坞不这么觉得.
-MPA(美国电影协会)CEO Charles Rivkin紧急声明,要求字节跳动&#34;立即停止侵权行为&#34;.原话:
+MPA(美国电影协会)CEO Charles Rivkin紧急声明,要求字节跳动"立即停止侵权行为".原话:
 “在一天之内,中国AI服务Seedance 2.0就大规模未经授权使用了美国版权作品.”
-迪士尼更狠–直接发了律师函,指控字节跳动&#34;虚拟抢劫迪士尼的IP&#34;,因为网上出现了大量用Seedance生成的蜘蛛侠,达斯·维达,Baby Yoda视频.
-**SAG-AFTRA(美国演员工会)**也站了出来,谴责Seedance 2.0&#34;公然纵容侵权&#34;.
-Human Artistry Campaign(好莱坞工会和行业团体支持的倡议)直接称Seedance 2.0是&#34;对全球每一位创作者的攻击&#34;.
+迪士尼更狠–直接发了律师函,指控字节跳动"虚拟抢劫迪士尼的IP",因为网上出现了大量用Seedance生成的蜘蛛侠,达斯·维达,Baby Yoda视频.
+**SAG-AFTRA(美国演员工会)**也站了出来,谴责Seedance 2.0"公然纵容侵权".
+Human Artistry Campaign(好莱坞工会和行业团体支持的倡议)直接称Seedance 2.0是"对全球每一位创作者的攻击".
 中美AI创作文化的巨大鸟差异 这里有一个很有意思的现象.
 在美国,AI视频的讨论焦点是:工作会不会被取代?版权怎么办?存在性风险呢?律师,监管者,高管主导话语权.
 在中国,年轻人把AI视频当成创作工具来玩.据智联招聘2025年报告,80%-90%的核心AI岗位申请者都在35岁以下.2024年中国发表了23,695篇AI论文,超过美英欧盟总和.
 Seedance 2.0的真正意义不在于它是否赢了某个benchmark,而在于它展示了中国年轻一代如何把AI当作日常创作工具–快速,混乱,集体性的实验.
-这种&#34;先用起来再说&#34;的文化和西方&#34;先立规矩再动手&#34;的文化,正在产生完全不同的创新路径.
-技术对比:Seedance vs 竞品 | 最长时长 | 15秒 | 20秒 | 8秒 | 10秒 | | 分辨率 | 2K | 1080p | 4K | 1080p | | 原生音频 | | | | | | 多模态输入 | 文字&#43;图&#43;视频&#43;音频 | 文字&#43;图 | 文字&#43;图 | 文字&#43;图 | | 物理引擎 | 强 | 中 | 强 | 中 | | 免费使用 | 部分免费 | 付费 | 付费 | 付费 |
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-17 17:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>132 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Seedance 2.0炸场:字节跳动用AI视频逼哭好莱坞,迪士尼直接发律师函" href="https://claudeai.best/posts/hunter-2026021717/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771315478311_cover.jpg" alt="AI模型架构示意图">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Qwen3.5横空出世:397B参数只激活17B,推理速度暴涨19倍,开源AI格局要变了
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>2月16日,阿里通义千问团队放了个大招–Qwen3.5-397B-A17B,Qwen3.5系列的第一个开源模型.
-这名字里藏着关键信息:总参数397B,但每次推理只激活17B.换句话说,你用的是一个&#34;大脑容量&#34;接近4000亿参数的模型,但每次思考只调动170亿参数的计算量.
+这种"先用起来再说"的文化和西方"先立规矩再动手"的文化,正在产生完全不同的创新路径.
+技术对比:Seedance vs 竞品 | 最长时长 | 15秒 | 20秒 | 8秒 | 10秒 | | 分辨率 | 2K | 1080p | 4K | 1080p | | 原生音频 | | | | | | 多模态输入 | 文字+图+视频+音频 | 文字+图 | 文字+图 | 文字+图 | | 物理引擎 | 强 | 中 | 强 | 中 | | 免费使用 | 部分免费 | 付费 | 付费 | 付费 |
+...</p></div><footer class=entry-footer><span title='2026-02-17 17:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>132 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Seedance 2.0炸场:字节跳动用AI视频逼哭好莱坞,迪士尼直接发律师函" href=https://claudeai.best/posts/hunter-2026021717/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771315478311_cover.jpg alt=AI模型架构示意图></figure><header class=entry-header><h2 class=entry-hint-parent>Qwen3.5横空出世:397B参数只激活17B,推理速度暴涨19倍,开源AI格局要变了</h2></header><div class=entry-content><p>2月16日,阿里通义千问团队放了个大招–Qwen3.5-397B-A17B,Qwen3.5系列的第一个开源模型.
+这名字里藏着关键信息:总参数397B,但每次推理只激活17B.换句话说,你用的是一个"大脑容量"接近4000亿参数的模型,但每次思考只调动170亿参数的计算量.
 这意味着什么?推理速度暴涨.阿里给出的数据是:在256K token长上下文场景下,吞吐量是Qwen3-Max的19倍;在标准32K场景下也有8.6倍的提升.
 更重要的是,它以Apache 2.0协议完全开源.
 架构上到底改了什么? Qwen3.5的核心创新是引入了Gated Delta Network–一种混合线性注意力机制,配合细粒度的稀疏MoE(Mixture of Experts)架构.
-传统Transformer的注意力机制计算复杂度随序列长度平方增长,这是长上下文处理的老大难问题.Delta Network通过线性注意力变体大幅降低了这个开销,而&#34;Gated&#34;机制则让模型能动态决定哪些信息值得关注.
-MoE的粒度也值得注意.397B总参数只激活17B,意味着专家数量极多,每个专家极小.这种设计的好处是:不同类型的任务可以由高度专业化的&#34;小专家&#34;处理,既保证了质量,又控制了计算成本.
+传统Transformer的注意力机制计算复杂度随序列长度平方增长,这是长上下文处理的老大难问题.Delta Network通过线性注意力变体大幅降低了这个开销,而"Gated"机制则让模型能动态决定哪些信息值得关注.
+MoE的粒度也值得注意.397B总参数只激活17B,意味着专家数量极多,每个专家极小.这种设计的好处是:不同类型的任务可以由高度专业化的"小专家"处理,既保证了质量,又控制了计算成本.
 跑分怎么样?说人话 先说强项:
 指令遵循:IFBench 76.5,MultiChallenge 67.6,都是业界最高, Agent任务:TAU2得分86.7,仅次于Claude 4.5 Opus(91.6)和GPT-5.2(87.1), 多语言:支持201种语言和方言,词表从15万扩到25万, 数学视觉:MathVision 88.6,ZEROBench 12分超过所有前沿模型, 文档理解和OCR:多项测试领先 再说短板–这一点阿里自己也没藏着:
 纯推理:AIME26得分91.3,GPT-5.2是96.7,Claude 4.5 Opus是93.3 代码:LiveCodeBench 83.6,GPT-5.2是87.7 通用图像理解:MMMU 85,Gemini 3 Pro是87.2 简单总结:在效率和多模态方面达到了第一梯队,但在纯推理和硬核编程上还差一口气.不过考虑到它是开源的,推理成本极低,这个性价比已经非常炸裂了.
 API定价:卷到骨头里了 Qwen3.5-Plus的API价格:
 输入:$0.40/百万token 做个对比:同级别的GPT-5.2或Claude 4.5 Opus,输出价格至少是这个的5-10倍.
 阿里还提供了100万token的上下文窗口,内置网页搜索和代码解释器.说实话,对于大多数应用场景,这个价格和功能组合已经没什么拒绝的理由了.
-原生多模态:不是后加的 很多模型的&#34;多模态&#34;是后期拼接的–先训练文本模型,再接上视觉编码器.Qwen3.5不一样,它采用早期融合训练(Early Fusion),从训练初期就让文本和视觉信号在同一个网络里交互.
+原生多模态:不是后加的 很多模型的"多模态"是后期拼接的–先训练文本模型,再接上视觉编码器.Qwen3.5不一样,它采用早期融合训练(Early Fusion),从训练初期就让文本和视觉信号在同一个网络里交互.
 实际效果:
 能处理长达2小时的视频, 看交通视频能分析驾驶决策, 看迷宫图片能自主写Python代码计算最短路径, 作为GUI Agent能操作手机和电脑界面 这不是PPT功能,阿里已经放出了demo.
 强化学习的胜利 Qwen3.5相比前代最大的提升来自大规模强化学习环境扩展训练.
-传统做法是针对特定benchmark做RL优化,容易&#34;刷分&#34;但泛化差.阿里这次走了不同的路:系统性地增加训练环境的多样性和难度,用异步RL框架支持大规模Agent脚手架和环境编排.
+传统做法是针对特定benchmark做RL优化,容易"刷分"但泛化差.阿里这次走了不同的路:系统性地增加训练环境的多样性和难度,用异步RL框架支持大规模Agent脚手架和环境编排.
 效果最明显的就是Agent能力–TAU2得分从Qwen3系列的水平直接跳到86.7,几乎追平GPT-5.2.
 中国开源AI军备竞赛 Qwen3.5的发布节点很有意思.就在同一周:
-智谱AI发布了GLM-5(MIT协议开源,代码和Agent能力强), 字节跳动和快手也分别推出了新模型, DeepSeek v4传闻即将发布 2月份的AI模型密集发布已经被媒体称为&#34;Model Rush&#34;–7个主要模型在同一个月内发布.
+智谱AI发布了GLM-5(MIT协议开源,代码和Agent能力强), 字节跳动和快手也分别推出了新模型, DeepSeek v4传闻即将发布 2月份的AI模型密集发布已经被媒体称为"Model Rush"–7个主要模型在同一个月内发布.
 有意思的是,中国AI公司在企业市场还没打进美国,但在成本敏感的AI创业公司群体中,中国开源模型的采用率正在快速增长.NBC报道称,硅谷越来越多的初创公司在用中国的免费AI模型来降低运营成本.
 我的判断 Qwen3.5代表了开源AI的一个重要转折点:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-17 16:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>98 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Qwen3.5横空出世:397B参数只激活17B,推理速度暴涨19倍,开源AI格局要变了" href="https://claudeai.best/posts/hunter-2026021716/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771310912081_cover.jpg" alt="印度新德里Bharat Mandapam AI Impact Summit 2026">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">印度AI峰会的野心:22种语言的主权大模型,能撼动硅谷的AI霸权吗?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>这两天AI圈最热闹的事情不在硅谷,而是在新德里.
+...</p></div><footer class=entry-footer><span title='2026-02-17 16:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>98 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Qwen3.5横空出世:397B参数只激活17B,推理速度暴涨19倍,开源AI格局要变了" href=https://claudeai.best/posts/hunter-2026021716/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771310912081_cover.jpg alt="印度新德里Bharat Mandapam AI Impact Summit 2026"></figure><header class=entry-header><h2 class=entry-hint-parent>印度AI峰会的野心:22种语言的主权大模型,能撼动硅谷的AI霸权吗?</h2></header><div class=entry-content><p>这两天AI圈最热闹的事情不在硅谷,而是在新德里.
 印度正在举办有史以来规模最大的AI峰会–India AI Impact Summit 2026,地点在那个气势恢宏的Bharat Mandapam.莫迪亲自站台,马克龙飞过来捧场,Sam Altman和Sundar Pichai都到了.300多家参展商,30多个国家参与.
 但真正值得关注的,不是这些大佬的合影,而是印度悄悄亮出的一手牌:主权AI模型.
 170亿参数,22种语言:Param2来了 峰会的重头戏是BharatGen发布的Param2–一个170亿参数的多语言大模型,支持22种印度语言.
@@ -305,39 +98,23 @@ BharatGen不是哪家创业公司,而是印度政府把IIT Bombay等顶尖工程
 170亿参数放在今天的大模型军备竞赛里不算大–GPT-5.3数万亿参数,Gemini 3也是天文数字.但这里的关键不是参数量,而是训练数据和目标场景.
 用英语训练的大模型处理印地语,泰米尔语,孟加拉语时,效果往往一言难尽.不是翻译得不对,而是缺少文化语境.Param2的卖点就是在印度语言和本地数据集上做原生训练,而不是在英语模型上做微调.
 四大金刚:印度AI创企的分工 去年7月,印度政府通过IndiaAI Mission选中了四家创企来构建主权基础模型,每家的定位都不一样:
-Sarvam AI 是最高调的一家.他们做的是印度本土化的语言和视觉模型,号称在跟ChatGPT,Gemini的对比测试中,在印度语言任务和本地知识方面表现更好.这次峰会上他们展示了多模态能力–不光能写,还能&#34;看懂&#34;印度场景.
-Soket AI 走了一条更硬核的路:用印度语言写代码.他们的Eka语言栈支持45&#43;种语言,研究方向是让印地语和地方语言的编程推理变得可行.这直接挑战了当前编程模型的英语优先偏见.
+Sarvam AI 是最高调的一家.他们做的是印度本土化的语言和视觉模型,号称在跟ChatGPT,Gemini的对比测试中,在印度语言任务和本地知识方面表现更好.这次峰会上他们展示了多模态能力–不光能写,还能"看懂"印度场景.
+Soket AI 走了一条更硬核的路:用印度语言写代码.他们的Eka语言栈支持45+种语言,研究方向是让印地语和地方语言的编程推理变得可行.这直接挑战了当前编程模型的英语优先偏见.
 Gnani AI 瞄准的是语音–做实时语音交互的基础模型,覆盖各种方言和口音.这个方向看似小众,但在印度的电信,政务场景里,一个破烂的语音机器人不只是体验差,是根本没法用.
 Gan AI 则聚焦个性化语音和媒体系统,做多语言内容的大规模分发.思路很清晰:如果语言是障碍,那语音和个性化就是捷径.
 另外,Tech Mahindra还展示了一个AI物理教师,专门给6-12年级学生用多语言互动方式教物理.
-主权AI:趋势还是噱头? “主权AI&#34;这个概念在2026年已经不新鲜了.法国有Mistral,阿联酋有Falcon,中国有一堆.印度的加入让这个阵营更完整了.
-但我想说句大实话:大多数主权AI项目目前还停留在&#34;够用&#34;的水平,远没到&#34;好用&#34;的地步.
+主权AI:趋势还是噱头? “主权AI"这个概念在2026年已经不新鲜了.法国有Mistral,阿联酋有Falcon,中国有一堆.印度的加入让这个阵营更完整了.
+但我想说句大实话:大多数主权AI项目目前还停留在"够用"的水平,远没到"好用"的地步.
 170亿参数的模型在2026年能做的事情有限.即使在特定语言任务上跑分不错,要在实际应用中替代GPT-5或Claude Opus这种级别的模型,差距依然巨大.
 不过,印度的策略有一个聪明的地方:这些模型计划开源.这意味着整个印度AI生态的其他创业公司可以在上面继续开发,形成飞轮效应.
 而且印度的场景确实独特–14亿人口,22种官方语言,巨大的城乡数字鸿沟.全球大模型在这种场景下确实水土不服.从这个角度看,主权AI不是跟硅谷竞争,而是填补全球模型覆盖不到的缝隙.
-真正的看点:地缘AI博弈 莫迪在峰会上的定位很有意思–印度要做&#34;全球南方和全球北方的桥梁”.
+真正的看点:地缘AI博弈 莫迪在峰会上的定位很有意思–印度要做"全球南方和全球北方的桥梁”.
 翻译成大白话:印度既不想完全依赖美国的AI基础设施,也不想站到中国的阵营里,想走一条中间路线,同时吸引两边的投资和技术.
-Sam Altman来了,Pichai来了,马克龙也来了.每个人都想在印度这个14亿人的市场里占个坑.而印度用&#34;主权AI&#34;作为筹码,既展示了技术独立的姿态,又为谈判争取了更好的位置.
+Sam Altman来了,Pichai来了,马克龙也来了.每个人都想在印度这个14亿人的市场里占个坑.而印度用"主权AI"作为筹码,既展示了技术独立的姿态,又为谈判争取了更好的位置.
 这种策略是否能持续?取决于这些模型最终能不能真正解决问题,而不只是峰会上的演示.
 我的判断 印度AI峰会本身没什么技术突破–170亿参数的多语言模型在技术上不算前沿.但它释放的信号很重要:
-多语言AI将成为下一个主战场. 全球75%的人口不以英语为母语,谁先解决多语言问题谁就拿下巨大市场. 政府主导&#43;开源的模式值得观察. 印度把顶尖学术机构组合起来搞模型,再开源给创业公司用,这条路径如果跑通了,很多发展中国家会抄作业. AI地缘政治的第三极正在形成. 美国,中国之后,印度/欧盟/中东正在构建各自的AI基础设施,全球AI格局从双极变多极. 下一步关注点:2月19日莫迪的开幕演讲,以及峰会结束后是否会发布&#34;全球AI治理宣言&#34;.如果真搞出一个有约束力的框架,那这个峰会的历史意义就不只是一场展会了.
-参考来源:India Today,NDTV,Business Standard,Indian Express,Al Jazeera 等多家媒体对 India AI Impact Summit 2026 的实时报道.
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-17 14:45:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>68 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to 印度AI峰会的野心:22种语言的主权大模型,能撼动硅谷的AI霸权吗?" href="https://claudeai.best/posts/hunter-2026021714/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771275648016_cover.jpg" alt="神经形态计算芯片概念图">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">类脑芯片突然学会了解微分方程:神经形态计算正在颠覆超算的底层逻辑
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>超算的电费单,可能快要变薄了 你知道运行一个大规模物理仿真要多少电吗?
+多语言AI将成为下一个主战场. 全球75%的人口不以英语为母语,谁先解决多语言问题谁就拿下巨大市场. 政府主导+开源的模式值得观察. 印度把顶尖学术机构组合起来搞模型,再开源给创业公司用,这条路径如果跑通了,很多发展中国家会抄作业. AI地缘政治的第三极正在形成. 美国,中国之后,印度/欧盟/中东正在构建各自的AI基础设施,全球AI格局从双极变多极. 下一步关注点:2月19日莫迪的开幕演讲,以及峰会结束后是否会发布"全球AI治理宣言".如果真搞出一个有约束力的框架,那这个峰会的历史意义就不只是一场展会了.
+参考来源:India Today,NDTV,Business Standard,Indian Express,Al Jazeera 等多家媒体对 India AI Impact Summit 2026 的实时报道.</p></div><footer class=entry-footer><span title='2026-02-17 14:45:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>68 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to 印度AI峰会的野心:22种语言的主权大模型,能撼动硅谷的AI霸权吗?" href=https://claudeai.best/posts/hunter-2026021714/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771275648016_cover.jpg alt=神经形态计算芯片概念图></figure><header class=entry-header><h2 class=entry-hint-parent>类脑芯片突然学会了解微分方程:神经形态计算正在颠覆超算的底层逻辑</h2></header><div class=entry-content><p>超算的电费单,可能快要变薄了 你知道运行一个大规模物理仿真要多少电吗?
 美国能源部的超级计算机集群每年光电费就烧掉数亿美元.天气预报,核武器模拟,材料应力分析–这些都依赖求解偏微分方程(PDE),而PDE是出了名的计算密集型任务.
 但上周发表在 Nature Machine Intelligence 上的一篇论文,可能要改写这个故事.
 Sandia国家实验室的两位计算神经科学家 Brad Theilman 和 Brad Aimone 证明了一件让很多人意外的事:模仿人脑结构的神经形态计算机,居然能高效求解偏微分方程.
@@ -346,48 +123,33 @@ Sandia国家实验室的两位计算神经科学家 Brad Theilman 和 Brad Aimon
 “随便挑一个运动控制任务–打网球,挥棒球棒.这些都是极其复杂的计算,是百亿亿次级(exascale)的问题,而我们的大脑以极低的能耗就搞定了.”
 换句话说,人脑本身就是一台极其高效的PDE求解器–流体力学(血液循环),电磁场(神经信号传导),结构力学(骨骼肌肉协调),这些全是PDE问题.大脑只用20瓦功率就能实时处理.
 他们具体做了什么? Theilman 和 Aimone 开发了一种新算法,能让神经形态硬件直接求解PDE.关键点在于:
-算法基于一个已有12年历史的皮层网络计算模型,但此前从没有人发现它跟PDE之间的数学联系 这个联系是&#34;自然但非显而易见的&#34;–模型结构本身就隐含了求解PDE的能力,只是12年来没人看到 在实际测试中,神经形态硬件的能效比传统超算高出数个量级 这项研究由美国能源部科学办公室和国家核安全管理局联合资助.后者负责维护美国核武库–他们对&#34;省电&#34;这件事的兴趣,可不是环保那么简单.
-为什么这件事值得关注? 第一,这打破了&#34;类脑计算只能做AI&#34;的认知边界.
+算法基于一个已有12年历史的皮层网络计算模型,但此前从没有人发现它跟PDE之间的数学联系 这个联系是"自然但非显而易见的"–模型结构本身就隐含了求解PDE的能力,只是12年来没人看到 在实际测试中,神经形态硬件的能效比传统超算高出数个量级 这项研究由美国能源部科学办公室和国家核安全管理局联合资助.后者负责维护美国核武库–他们对"省电"这件事的兴趣,可不是环保那么简单.
+为什么这件事值得关注? 第一,这打破了"类脑计算只能做AI"的认知边界.
 神经形态芯片(比如Intel的Loihi,IBM的TrueNorth)长期被定位为AI加速器.这项研究说明,它们的能力被严重低估了.如果PDE都能解,那CFD(计算流体力学),FEA(有限元分析),气候模型这些传统超算的核心业务,都可能被重新定义.
 第二,能耗问题是AI行业的定时炸弹.
-我们之前写过硬盘供应链被AI吞噬的故事.但更大的危机是电力.全球数据中心的电力消耗正在指数增长,而传统冯·诺依曼架构的能效已经逼近物理极限.神经形态计算提供了一条完全不同的路径–不是&#34;更快的马&#34;,而是&#34;发明汽车&#34;.
-第三,这可能重新定义&#34;超算&#34;这个概念.
-Sandia的团队已经在展望&#34;神经形态超级计算机&#34;.想象一下:一台能耗只有传统超算1%的机器,跑着物理仿真,气候模型,核武器模拟.这不是科幻,这是Nature Machine Intelligence上白纸黑字的研究路径.
+我们之前写过硬盘供应链被AI吞噬的故事.但更大的危机是电力.全球数据中心的电力消耗正在指数增长,而传统冯·诺依曼架构的能效已经逼近物理极限.神经形态计算提供了一条完全不同的路径–不是"更快的马",而是"发明汽车".
+第三,这可能重新定义"超算"这个概念.
+Sandia的团队已经在展望"神经形态超级计算机".想象一下:一台能耗只有传统超算1%的机器,跑着物理仿真,气候模型,核武器模拟.这不是科幻,这是Nature Machine Intelligence上白纸黑字的研究路径.
 我的判断 这项研究的意义被严重低估了.
-媒体都在追 GPT-5.3,Claude Opus 4.6 这些大模型的军备竞赛,但真正可能改变计算范式的突破,往往藏在这种&#34;冷门&#34;论文里.
+媒体都在追 GPT-5.3,Claude Opus 4.6 这些大模型的军备竞赛,但真正可能改变计算范式的突破,往往藏在这种"冷门"论文里.
 当然,从实验室到商业化还有很长的路.神经形态硬件的编程模型远不如GPU成熟,生态系统几乎为零,软件工具链更是荒漠.但方向一旦被证明可行,资本和工程力量的涌入只是时间问题.
 建议关注几个信号:
 Intel Loihi 3 的进展(预计今年下半年) DARPA 的 MACHine 项目(神经形态超算路线图) 学术界跟进论文–如果接下来3-6个月出现大量复现和扩展工作,说明这个方向真的起飞了 20瓦的大脑能做到的事,为什么我们的计算机需要20兆瓦? 这个问题,终于有人在认真回答了.
-参考文献:Theilman &amp; Aimone, “Solving Partial Differential Equations on Neuromorphic Hardware”, Nature Machine Intelligence, Feb 2026
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-17 05:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>76 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to 类脑芯片突然学会了解微分方程:神经形态计算正在颠覆超算的底层逻辑" href="https://claudeai.best/posts/hunter-2026021705/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771272100933_cover.jpg" alt="华尔街股市交易屏幕">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">华尔街的AI恐慌性抛售:从软件到卡车,没有行业是安全的
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>一个西班牙保险App,干翻了千亿美元市值 2月9号,马德里一个叫Tuio的初创公司发布了一款用ChatGPT构建的保险App.
+参考文献:Theilman & Aimone, “Solving Partial Differential Equations on Neuromorphic Hardware”, Nature Machine Intelligence, Feb 2026
+...</p></div><footer class=entry-footer><span title='2026-02-17 05:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>76 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to 类脑芯片突然学会了解微分方程:神经形态计算正在颠覆超算的底层逻辑" href=https://claudeai.best/posts/hunter-2026021705/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771272100933_cover.jpg alt=华尔街股市交易屏幕></figure><header class=entry-header><h2 class=entry-hint-parent>华尔街的AI恐慌性抛售:从软件到卡车,没有行业是安全的</h2></header><div class=entry-content><p>一个西班牙保险App,干翻了千亿美元市值 2月9号,马德里一个叫Tuio的初创公司发布了一款用ChatGPT构建的保险App.
 就这么一个产品发布,保险巨头Marsh股价当天暴跌7.5%,Arthur J. Gallagher跌了9.85%.
 这还只是开始.
-“AI恐慌交易&#34;正在席卷华尔街 过去两周,华尔街出现了一个全新的交易模式–AI恐慌交易(AI Scare Trade).
+“AI恐慌交易"正在席卷华尔街 过去两周,华尔街出现了一个全新的交易模式–AI恐慌交易(AI Scare Trade).
 逻辑很简单:某个AI初创公司发布了一个新工具 → 投资者判断哪个行业会被颠覆 → 该行业股票集体暴跌.
 Jefferies策略师Mohit Kumar说得直白:“市场现在是先开枪,后问问题的模式.任何可能被AI颠覆的行业都在挨打.”
 来看看这两周的战绩:
 2月9日 — 保险业
 Tuio发布AI保险App Marsh跌7.5%,Arthur J. Gallagher跌9.85% 2月10日 — 财富管理
 Altruist发布AI税务规划工具Hazel 嘉信理财(Schwab)跌7.42%,LPL Financial跌8.75%,Raymond James跌8.31% 2月12-13日 — 商业地产
-Cushman &amp; Wakefield两天暴跌24% CBRE两天跌20%,仲量联行(JLL)两天跌19% 2月13日 — 物流卡车
-Algorhythm Holdings发布货运优化工具, RXO暴跌20.45%,C.H. Robinson跌14.54%, 道琼斯运输指数单日跌4%,创去年4月以来最大单日跌幅 两周之内,AI恐慌从软件蔓延到保险,财富管理,商业地产,物流……几乎每个&#34;高费率,劳动密集型&#34;的行业都被扫了一遍.
+Cushman & Wakefield两天暴跌24% CBRE两天跌20%,仲量联行(JLL)两天跌19% 2月13日 — 物流卡车
+Algorhythm Holdings发布货运优化工具, RXO暴跌20.45%,C.H. Robinson跌14.54%, 道琼斯运输指数单日跌4%,创去年4月以来最大单日跌幅 两周之内,AI恐慌从软件蔓延到保险,财富管理,商业地产,物流……几乎每个"高费率,劳动密集型"的行业都被扫了一遍.
 欧洲也没逃掉 这不是美国的独角戏.大西洋对岸同样哀鸿遍野:
-法国达索系统(Dassault Systemes)创下史上最大单日跌幅, 英国分析集团RELX录得1988年以来最差单日表现, 英国财富管理公司St James’s Place,Aberdeen,Quilter全线大跌 UBS分析师警告:市场只是&#34;部分定价&#34;了AI的信用影响,预计这个风险在2026年全年和2027年都会继续加剧.
+法国达索系统(Dassault Systemes)创下史上最大单日跌幅, 英国分析集团RELX录得1988年以来最差单日表现, 英国财富管理公司St James’s Place,Aberdeen,Quilter全线大跌 UBS分析师警告:市场只是"部分定价"了AI的信用影响,预计这个风险在2026年全年和2027年都会继续加剧.
 到底在怕什么? 牛津大学AI与工作研究副教授Carl Benedikt Frey给出了最精准的诊断:
 “AI正在把曾经稀缺的专业知识变成更便宜,更快,质量越来越接近的产出–这会在整个岗位消失之前就先压缩利润率.”
 翻译成人话:AI不需要把你的工作完全干掉,只要让你的服务变便宜,你的利润就完了.
@@ -395,27 +157,12 @@ Algorhythm Holdings发布货运优化工具, RXO暴跌20.45%,C.H. Robinson跌14.
 更狠的是CBRE老板Bob Sulentic在财报电话会上说的:“如果长期来看AI减少了办公室白领的数量,对办公空间的需求也会减少.”
 商业地产被双杀:AI不仅要替代你的经纪业务,还要消灭你的客户.
 恐慌背后的催化剂 这波恐慌不是凭空产生的.2月5号,OpenAI和Anthropic同一天发布了新模型–GPT-5.3 Codex和Claude Opus 4.6.这两个模型的能力跳跃,让市场重新评估了AI颠覆的时间线.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-17 04:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>103 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to 华尔街的AI恐慌性抛售:从软件到卡车,没有行业是安全的" href="https://claudeai.best/posts/hunter-2026021704/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771268535182_cover.jpg" alt="AI桌面代理概念图">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Claude Cowork登陆Windows:Anthropic用10天造了一个要干掉SaaS的桌面AI Agent
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>上周,Anthropic把Claude Cowork正式带到了Windows.这意味着全球70%的桌面用户现在都能用上这个&#34;AI桌面代理&#34;了.
+...</p></div><footer class=entry-footer><span title='2026-02-17 04:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>103 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to 华尔街的AI恐慌性抛售:从软件到卡车,没有行业是安全的" href=https://claudeai.best/posts/hunter-2026021704/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771268535182_cover.jpg alt=AI桌面代理概念图></figure><header class=entry-header><h2 class=entry-hint-parent>Claude Cowork登陆Windows:Anthropic用10天造了一个要干掉SaaS的桌面AI Agent</h2></header><div class=entry-content><p>上周,Anthropic把Claude Cowork正式带到了Windows.这意味着全球70%的桌面用户现在都能用上这个"AI桌面代理"了.
 听起来像又一个AI助手?不是.这东西从根本上改变了AI和你电脑的关系.
-不是聊天机器人,是真的在你电脑上干活 传统的AI助手,包括ChatGPT和之前的Claude,本质上都是&#34;你问我答&#34;–你描述问题,它给建议,然后你自己动手.
-Cowork不一样.你说&#34;把我的研究文件夹按主题整理,然后生成一份摘要文档&#34;,它会:
+不是聊天机器人,是真的在你电脑上干活 传统的AI助手,包括ChatGPT和之前的Claude,本质上都是"你问我答"–你描述问题,它给建议,然后你自己动手.
+Cowork不一样.你说"把我的研究文件夹按主题整理,然后生成一份摘要文档",它会:
 读取你的文件 理解每个文件的内容 创建文件夹结构 移动文件 生成一份格式完美的摘要文档 全程你可以去泡杯咖啡.
-技术规格:硬核拆解 Cowork底层跑的是Claude Opus 4.6,带beta版100万token上下文窗口.这意味着它能一次性&#34;看到&#34;你项目里几十个文件的全部内容,而不是像其他AI那样只能处理一小段.
+技术规格:硬核拆解 Cowork底层跑的是Claude Opus 4.6,带beta版100万token上下文窗口.这意味着它能一次性"看到"你项目里几十个文件的全部内容,而不是像其他AI那样只能处理一小段.
 核心能力:
 本地文件系统访问:直接操作你电脑上的文件,数据不需要上传到云端, 多步骤任务执行:拆解复杂任务为子任务,并行执行, 专业文档生成:Word,Excel,PowerPoint,PDF,带公式,样式,目录, MCP连接器:通过Model Context Protocol接入外部服务, 插件系统:1月30日上线的11个开源插件,覆盖销售,法务,财务,营销,数据分析,开发 价格:Pro $20/月,Max $100/月起,免费用户用不了.
 最疯狂的细节:这玩意是Claude Code用10天写出来的 Anthropic官方说法:Cowork的全部代码是Claude Code自己写的,团队从零到发布只用了大约10天.
@@ -430,27 +177,12 @@ Claude Cowork:独立运行,直接操作你的文件系统,不依赖任何生态.
 Copilot让你的Word更好用,Cowork让你不需要打开Word.
 插件生态是关键 1月30日上线的插件系统才是Cowork真正的杀手锏.11个官方开源插件涵盖了几乎所有白领工种:
 销售助手:CRM数据分析,客户跟进, 法律助手:合同审查,条款分析, 财务助手:报表生成,预算追踪, 开发助手:代码审查,文档生成 而且这些插件是开源的,意味着社区可以在此基础上扩展.按照OpenClaw的Skill生态发展速度来推算,Cowork的插件数量可能在几个月内爆发式增长.
-我的判断 Claude Cowork代表了AI从&#34;对话&#34;到&#34;行动&#34;的转变.这是2026年AI领域最重要的产品形态创新之一.
+我的判断 Claude Cowork代表了AI从"对话"到"行动"的转变.这是2026年AI领域最重要的产品形态创新之一.
 但现阶段它更适合个人知识工作者–自由职业者,研究人员,内容创作者.企业级用户还需要等权限管理,审计日志等功能完善.
 如果你是付费Claude用户,现在就可以试试Cowork模式.打开Claude Desktop应用,切换到Cowork标签,给它一个复杂任务,看它怎么拆解和执行.
-这种&#34;描述目标→AI自主完成&#34;的工作方式,一旦用过就回不去了.
+这种"描述目标→AI自主完成"的工作方式,一旦用过就回不去了.
 Claude Cowork macOS版1月发布,Windows版2月10日上线.需要Claude Pro及以上订阅.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-17 03:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>70 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Claude Cowork登陆Windows:Anthropic用10天造了一个要干掉SaaS的桌面AI Agent" href="https://claudeai.best/posts/hunter-2026021703/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771264972936_cover.jpg" alt="Google WebMCP让AI Agent直接与网站结构化交互">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Google WebMCP:AI Agent不用再「看截图猜按钮」了,Chrome正式变身Agent操作系统
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>先说结论 Google刚发布了一个叫 WebMCP(Web Model Context Protocol) 的东西.一句话:网站可以直接告诉AI Agent自己有哪些功能,Agent不用再截图猜了.
+...</p></div><footer class=entry-footer><span title='2026-02-17 03:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>70 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Claude Cowork登陆Windows:Anthropic用10天造了一个要干掉SaaS的桌面AI Agent" href=https://claudeai.best/posts/hunter-2026021703/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771264972936_cover.jpg alt="Google WebMCP让AI Agent直接与网站结构化交互"></figure><header class=entry-header><h2 class=entry-hint-parent>Google WebMCP:AI Agent不用再「看截图猜按钮」了,Chrome正式变身Agent操作系统</h2></header><div class=entry-content><p>先说结论 Google刚发布了一个叫 WebMCP(Web Model Context Protocol) 的东西.一句话:网站可以直接告诉AI Agent自己有哪些功能,Agent不用再截图猜了.
 这事儿为什么重要?因为现在所有AI浏览器Agent的工作方式,本质上都是一个字–猜.
 现在的Agent有多蠢 你用过任何一个AI浏览器Agent就知道,流程大概是这样的:
 截一张网页截图 把截图扔给视觉模型 模型说「我看到一个蓝色按钮,坐标大概在(432, 178)」 点过去 按钮移动了5个像素?挂了. 这不是在「使用网站」,这是在「玩扫雷」.
@@ -465,31 +197,16 @@ Google给了两条路:
 核心API就四个方法:
 registerTool(): 把功能暴露给AI, provideContext(): 给AI额外上下文(比如用户偏好), clearContext(): 清除共享数据,保护隐私 关键点:AI Agent的操作发生在用户当前session里.不需要重新登录,不需要绕过安全头.这解决了一个巨大的工程问题.
 性能提升有多大 从截图猜测到结构化交互,三个维度的提升:
-延迟:不用等截图上传&#43;视觉模型处理,直接拿JSON, 准确率:结构化数据交互,错误率接近0%(之前靠猜的时候嘛……你懂的), 成本:发送文本schema比发送高清截图便宜太多了 这不是10%,20%的优化,这是范式级别的切换.
+延迟:不用等截图上传+视觉模型处理,直接拿JSON, 准确率:结构化数据交互,错误率接近0%(之前靠猜的时候嘛……你懂的), 成本:发送文本schema比发送高清截图便宜太多了 这不是10%,20%的优化,这是范式级别的切换.
 安全怎么搞 很多人第一反应:那网站不是被AI随便操作了?
 Google的设计是权限优先(permission-first).Chrome作为中间人,AI Agent不能直接执行操作.关键动作(比如「AI要帮你订这趟航班」)会弹出用户确认.
 说白了:Agent提议,人类拍板. 这个设计比现在那些偷偷摸摸截图操作的方案安全多了.
 我的判断 这是MCP生态的「浏览器版」 熟悉MCP(Model Context Protocol)的朋友应该已经看出来了–WebMCP就是把Anthropic搞的那套MCP理念搬到了浏览器里.
 不同的是,Google手里有Chrome.全球65%的浏览器市场份额.这意味着一旦WebMCP成为Chrome标准,所有网站都有动力去适配,因为不适配就意味着你的用户没法用AI Agent操作你的产品.
 这跟当年移动适配是一个逻辑:不做响应式设计?Google搜索排名给你降权.
-Agent框架要大洗牌 现在市面上一堆AI浏览器工具–Browser Use,Playwright AI,各种截图&#43;GPT-4V的方案–它们的核心技术路线(截图→视觉理解→模拟操作)可能在1-2年内变成过渡方案.
+Agent框架要大洗牌 现在市面上一堆AI浏览器工具–Browser Use,Playwright AI,各种截图+GPT-4V的方案–它们的核心技术路线(截图→视觉理解→模拟操作)可能在1-2年内变成过渡方案.
 当然不会一夜之间消失.WebMCP需要网站主动适配,过渡期里截图方案仍然有用.但方向已经很清楚了.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-17 02:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>94 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Google WebMCP:AI Agent不用再「看截图猜按钮」了,Chrome正式变身Agent操作系统" href="https://claudeai.best/posts/hunter-2026021702/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771261546557_cover.jpg" alt="数据中心服务器存储阵列">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">硬盘全年售罄:AI吞噬硬件供应链,普通人的存储自由正在消失
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>2026年才过了一个半月,硬盘就卖完了 上周西部数据(Western Digital)的财报电话会上,CEO Irving Tan 说了句让整个存储行业都沉默的话:
+...</p></div><footer class=entry-footer><span title='2026-02-17 02:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>94 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Google WebMCP:AI Agent不用再「看截图猜按钮」了,Chrome正式变身Agent操作系统" href=https://claudeai.best/posts/hunter-2026021702/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771261546557_cover.jpg alt=数据中心服务器存储阵列></figure><header class=entry-header><h2 class=entry-hint-parent>硬盘全年售罄:AI吞噬硬件供应链,普通人的存储自由正在消失</h2></header><div class=entry-content><p>2026年才过了一个半月,硬盘就卖完了 上周西部数据(Western Digital)的财报电话会上,CEO Irving Tan 说了句让整个存储行业都沉默的话:
 “We’re pretty much sold out for calendar 2026.”
 翻译一下:2026年的硬盘产能,已经全部预售完毕. 距离年底还有10个多月.
 更狠的是,前七大客户中有三家已经锁定了2027年甚至2028年的产能.这不是短缺,这是系统性垄断.
@@ -500,151 +217,22 @@ Agent框架要大洗牌 现在市面上一堆AI浏览器工具–Browser Use,Pla
 内存(RAM): 美光(Micron)早就确认内存短缺短期内不会缓解.Framework笔记本已经多次因DDR5涨价被迫提价.
 GPU: 不用多说,NVIDIA的数据中心GPU从2023年起就没正常供应过.
 游戏主机: 索尼据传考虑将PS6发布时间推迟到2027年之后,就是在赌AI硬件短缺能在那之前缓解.
-硬盘: 现在轮到了.而且不是&#34;有点紧张&#34;,是&#34;全年卖完&#34;.
+硬盘: 现在轮到了.而且不是"有点紧张",是"全年卖完".
 为什么AI需要这么多硬盘? 你可能会问:AI训练不是主要用GPU和高速SSD吗?机械硬盘有什么关系?
 关系大了:
 训练数据集存储:GPT-5级别的模型,训练数据动辄几十PB.热数据用SSD,冷数据全靠大容量HDD 模型检查点(checkpoint):训练过程中每隔一段时间就要保存完整模型状态,一个checkpoint可能就是几TB 推理日志和缓存:大规模推理服务产生的日志,KV缓存,用户数据,都需要海量存储 合规与审计:企业级AI系统需要保留完整的数据血缘和审计记录 所以每个大型AI数据中心的硬盘需求量是惊人的.不是几百块,是几万块起步.
 这泡沫什么时候破? 理性来看,有两种可能的缓解路径:
 路径一:AI投资回报不及预期,资本撤退. 如果投资者开始质疑AI的商业化能力(事实上这种声音一直存在),资本支出会收缩,硬件需求自然下降.但目前来看,Anthropic刚拿了300亿美元新融资,没有退烧的迹象.
-路径二:存储技术突破. 比如HAMR(热辅助磁记录)技术大规模量产,单碟容量从2TB跳到4TB&#43;,总供给翻倍.西部数据和希捷都在推进,但量产节奏赶不上需求增长.
+路径二:存储技术突破. 比如HAMR(热辅助磁记录)技术大规模量产,单碟容量从2TB跳到4TB+,总供给翻倍.西部数据和希捷都在推进,但量产节奏赶不上需求增长.
 我的判断: 短期内(2026-2027)没有缓解的可能.普通消费者的存储成本会持续上升,大容量机械硬盘可能会出现类似2011年泰国洪水后的价格疯涨.
 普通人能做什么? 说点实用的:
 如果你有大容量存储需求,现在就买. 不要等降价,不会降, 关注二手市场. 企业换代退役的企业级硬盘(比如HGST Ultrastar),性价比很高, 考虑冷存储替代方案. 磁带(LTO)对于真正的冷数据反而是更经济的选择, 云存储也会涨价. AWS,Azure的存储定价最终也会反映硬件成本上涨 写在最后 AI不只是在改变软件行业,它正在重新分配整个硬件供应链的资源.当顶级客户愿意为每GB支付溢价时,消费市场就会被挤到边缘.
 这不是阴谋论,这是简单的供需经济学.只不过这次,需求方是一个烧钱速度前所未有的行业.
 你的NAS硬盘涨价了吗?欢迎在评论区分享你的存储成本变化.
 参考来源:Western Digital FY2026 Q2 财报电话会议 | Mashable 报道 | Hacker News 讨论
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-17 01:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>77 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to 硬盘全年售罄:AI吞噬硬件供应链,普通人的存储自由正在消失" href="https://claudeai.best/posts/hunter-2026021701/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771257687779_cover.jpg" alt="粒子物理与AI的交汇">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">GPT-5.2花12小时推导出新物理公式,AI真的开始做原创科学了?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>上周末,OpenAI放了一个大招:GPT-5.2 Pro独立推导出了一个全新的理论物理公式,还花了12个小时生成了完整的形式化证明.
-这不是做题.不是刷竞赛.是真正的,之前没有人发现过的物理结果.
-到底发现了什么? 先说背景.在粒子物理里,有一类叫做&#34;胶子散射振幅&#34;的东西–简单说就是计算胶子(强力的载体粒子)碰撞概率的数学公式.
-1986年,Parke和Taylor给出了一个优美的公式,描述了&#34;最大螺旋度违反&#34;(MHV)振幅.这个公式极其简洁,是粒子物理里的经典之作.
-但有一类特殊情况–只有一个负螺旋度胶子,其余全是正螺旋度的情况–几十年来教科书都写着:这类振幅为零.
-GPT-5.2说:不对,它们不为零.
-具体来说,在一个叫&#34;半共线区域&#34;(half-collinear regime)的特殊动量空间里,这些振幅其实是非零的.GPT不仅发现了这个漏洞,还给出了一个对任意n都成立的闭合公式,并用Berends-Giele递推关系和soft limit验证了正确性.
-12小时的&#34;思考&#34;过程 论文的作者阵容相当豪华:普林斯顿高等研究院,范德堡大学,剑桥大学,哈佛大学,加上OpenAI.
-流程是这样的:
-人类物理学家手动计算了n=1到n=6的具体情况,得到了极其复杂的表达式 GPT-5.2 Pro拿到这些具体情况后,化简了表达式,发现了隐藏的规律,猜测出了一个对所有n都成立的通用公式 一个内部加强版GPT-5.2花了大约12小时的推理时间,独立推导出了同一个公式,并生成了完整的形式化证明 人类物理学家用标准方法验证了证明的正确性 注意第2步和第3步–AI不是在做&#34;搜索&#43;拼接&#34;,而是在做真正的数学推理:从有限个具体案例中归纳出通用规律,然后证明它.
-HN上吵翻了 Hacker News的讨论非常精彩,观点分几派:
-乐观派认为这是里程碑–AI已经能在有验证测试的问题上做出真正的贡献.散射振幅的计算复杂度超指数增长,人类算到n=6就已经极其痛苦了,但AI能从中发现规律并推广到任意n.
-谨慎派指出关键细节:问题的specification是人类给的.物理学家已经有了&#34;这类振幅可能不为零&#34;的直觉,已经算出了具体案例,然后才把&#34;找规律&#43;证明&#34;的任务交给AI.AI做的是&#34;最后一公里&#34;–虽然这最后一公里人类确实没跑出来.
-怀疑派则更尖锐:这本质上就是暴力搜索&#43;统计偏差.把大量计算资源砸到一个有明确验证标准的问题上,偶尔找到一个解就宣称&#34;智能&#34;–这和真正的科学发现是一回事吗?
-我觉得最精彩的一条评论是:
-“现代LLM在有验证测试集的问题上极其强大且不知疲倦.但这个结论不能推广到开放式问题上.发现问题的specification往往才是真正的战场.”
-我的看法 这件事的重要性在于程度的变化,而不是性质的变化.
-AI辅助科研不是新鲜事.AlphaFold预测蛋白质结构,DeepMind的Aletheia解数学难题,都是先例.但GPT-5.2的特殊之处在于:它不是一个专门为某个任务训练的系统,而是一个通用语言模型,在给定足够的&#34;思考时间&#34;后,展现出了数学推理能力.
-12小时的推理时间也很有意思.这说明现在的scaling不只是在模型参数上,也在推理时间(inference-time compute)上.给模型更多时间去&#34;想&#34;,它真的能想出更深刻的东西.这和人类解难题的过程其实很像–你也不是看一眼就能证明定理的.
-但我不会把这叫做&#34;AI做科学&#34;.至少现在还不是.真正的科学发现需要的是问出正确的问题–为什么去看half-collinear regime?为什么怀疑教科书上&#34;振幅为零&#34;的结论?这些直觉来自人类物理学家.AI做的是在人类指定的方向上,执行了人类做不到的复杂推理.
-这已经很了不起了.但&#34;AI科学家&#34;和&#34;极其强大的AI科研工具&#34;之间,还有一道关键的鸿沟.
-真正的信号 抛开PR和争议,这篇论文传递的真实信号是:
-推理时间scaling有用–12小时的&#34;思考&#34;换来了一个形式化证明,这说明inference compute的投入有明确回报 通用模型能做专业推理–不需要专门训练一个&#34;物理AI&#34;,通用LLM在给定足够上下文后就能做非平凡的数学物理推理 人机协作的范式正在成型–人类提供直觉和方向,AI执行复杂的推导和搜索,两者互补 这个范式如果成熟,影响将远超粒子物理.材料科学,药物设计,密码学–任何有明确验证标准的理论问题,都可能被这种方式加速.
-论文团队也提到,同样的方法已经被用于从胶子推广到引力子的振幅计算,更多结果即将发表.
-物理学教科书可能要改了.而改动的起因,是一个语言模型花了12个小时&#34;想&#34;出来的.
-不管你怎么定义&#34;智能&#34;,这都值得认真对待.
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-17 00:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>46 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to GPT-5.2花12小时推导出新物理公式,AI真的开始做原创科学了?" href="https://claudeai.best/posts/hunter-2026021700/"></a>
-</article>
-<footer class="page-footer">
-  <nav class="pagination">
-    <a class="prev" href="https://claudeai.best/page/11/">
-      «&nbsp;上一页&nbsp;
-    </a>
-    <a class="next" href="https://claudeai.best/page/13/">下一页&nbsp;&nbsp;»
-    </a>
-  </nav>
-</footer>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2026 <a href="https://claudeai.best/">AI 极客前沿</a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu');
-    if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            html.dataset.theme = 'dark';
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-</body>
-
-</html>
+...</p></div><footer class=entry-footer><span title='2026-02-17 01:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>77 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to 硬盘全年售罄:AI吞噬硬件供应链,普通人的存储自由正在消失" href=https://claudeai.best/posts/hunter-2026021701/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://claudeai.best/page/11/>«&nbsp;上一页&nbsp;
+</a><a class=next href=https://claudeai.best/page/13/>下一页&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><span>&copy; 2026 <a href=https://claudeai.best/>AI 极客前沿</a></span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");if(menu){const e=localStorage.getItem("menu-scroll-position");e&&(menu.scrollLeft=parseInt(e,10)),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}}document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{const e=document.querySelector("html");e.dataset.theme==="dark"?(e.dataset.theme="light",localStorage.setItem("pref-theme","light")):(e.dataset.theme="dark",localStorage.setItem("pref-theme","dark"))})</script></body></html>
