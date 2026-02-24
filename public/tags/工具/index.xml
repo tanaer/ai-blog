@@ -1,1 +1,68 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>工具 on AI 极客前沿</title><link>https://claudeai.best/tags/%E5%B7%A5%E5%85%B7/</link><description>Recent content in 工具 on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Wed, 25 Feb 2026 03:04:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml"/><item><title>go-size-analyzer：浏览器里分析 Go 二进制文件大小，还能生成树状图</title><link>https://claudeai.best/posts/hunter-2026022503/</link><pubDate>Wed, 25 Feb 2026 03:04:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022503/</guid><description>用 WebAssembly 在浏览器中分析 Go 二进制大小，可视化依赖树状图</description></item><item><title>Persona AI:不跟你聊天,直接告诉你 YES 还是 NO</title><link>https://claudeai.best/posts/hunter-2026022220/</link><pubDate>Sun, 22 Feb 2026 20:08:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022220/</guid><description>Persona AI 不是聊天机器人.输入你的困境,它给你一个二元判决:YES 或 NO,带置信度和 Kill Signal.</description></item><item><title>Emacs Gravity:magit 风格的 Claude Code UI,不装 Electron</title><link>https://claudeai.best/posts/hunter-2026022208/</link><pubDate>Sun, 22 Feb 2026 08:06:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022208/</guid><description>Emacs Gravity 给 Claude Code 做了个 magit 风格的原生 UI,结构化显示会话,工具调用,Agent 树,文件变更.终端/TTY/SSH 都能跑.</description></item><item><title>Process Compose 加了 MCP:不用写 SDK,命令行直接变 AI 工具</title><link>https://claudeai.best/posts/hunter-2026022207/</link><pubDate>Sun, 22 Feb 2026 07:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022207/</guid><description>Process Compose v1.94.0 新增嵌入式 MCP server,把 shell 命令,Docker 操作,K8s 管理直接暴露给 AI,不用写 Python/TS SDK.</description></item><item><title>Vouch:Terraform 作者出手,专治 AI 垃圾 PR</title><link>https://claudeai.best/posts/hunter-2026022204/</link><pubDate>Sun, 22 Feb 2026 04:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022204/</guid><description>Mitchell Hashimoto 推出 Vouch,一个开源信任管理系统.通过可信用户背书机制,帮助项目过滤 AI 生成的低质量贡献,让开源维护者不再被垃圾 PR 淹没.</description></item><item><title>Crit:iOS 开发者的可视化 QA,让 AI 编码 Agent 看懂你的反馈</title><link>https://claudeai.best/posts/hunter-2026022000/</link><pubDate>Fri, 20 Feb 2026 00:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022000/</guid><description>Crit 是 iOS 可视化 QA 工具,截图,打点,评论,导出 JSON 给 Claude Code/Cursor 等 AI Agent 自动修复 bug.零依赖,MIT 开源.</description></item><item><title>MCP-wire:一个命令搞定所有 AI 编码工具的 MCP 配置</title><link>https://claudeai.best/posts/hunter-2026021921/</link><pubDate>Thu, 19 Feb 2026 21:50:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021921/</guid><description>MCP-wire 是 Go 写的 CLI 工具,跨 Claude Code,Codex,Gemini CLI,OpenCode 等多个 AI 编码工具安装配置 MCP 服务器,TUI 界面一键搞定.</description></item><item><title>Spackle:Mac 全局 AI 重写快捷键,选中文字按一下就改好</title><link>https://claudeai.best/posts/hunter-2026021918/</link><pubDate>Thu, 19 Feb 2026 18:35:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021918/</guid><description>Spackle 是 macOS 菜单栏应用,在任意 App 中选中文字按快捷键,AI 直接替换原文.支持 OpenAI,Anthropic,OpenRouter,BYO API Key.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>工具 on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 工具 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 25 Feb 2026 03:04:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>go-size-analyzer：浏览器里分析 Go 二进制文件大小，还能生成树状图</title>
+      <link>https://claudeai.best/posts/hunter-2026022503/</link>
+      <pubDate>Wed, 25 Feb 2026 03:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022503/</guid>
+      <description>用 WebAssembly 在浏览器中分析 Go 二进制大小，可视化依赖树状图</description>
+    </item>
+    <item>
+      <title>Persona AI:不跟你聊天,直接告诉你 YES 还是 NO</title>
+      <link>https://claudeai.best/posts/hunter-2026022220/</link>
+      <pubDate>Sun, 22 Feb 2026 20:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022220/</guid>
+      <description>Persona AI 不是聊天机器人.输入你的困境,它给你一个二元判决:YES 或 NO,带置信度和 Kill Signal.</description>
+    </item>
+    <item>
+      <title>Emacs Gravity:magit 风格的 Claude Code UI,不装 Electron</title>
+      <link>https://claudeai.best/posts/hunter-2026022208/</link>
+      <pubDate>Sun, 22 Feb 2026 08:06:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022208/</guid>
+      <description>Emacs Gravity 给 Claude Code 做了个 magit 风格的原生 UI,结构化显示会话,工具调用,Agent 树,文件变更.终端/TTY/SSH 都能跑.</description>
+    </item>
+    <item>
+      <title>Process Compose 加了 MCP:不用写 SDK,命令行直接变 AI 工具</title>
+      <link>https://claudeai.best/posts/hunter-2026022207/</link>
+      <pubDate>Sun, 22 Feb 2026 07:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022207/</guid>
+      <description>Process Compose v1.94.0 新增嵌入式 MCP server,把 shell 命令,Docker 操作,K8s 管理直接暴露给 AI,不用写 Python/TS SDK.</description>
+    </item>
+    <item>
+      <title>Vouch:Terraform 作者出手,专治 AI 垃圾 PR</title>
+      <link>https://claudeai.best/posts/hunter-2026022204/</link>
+      <pubDate>Sun, 22 Feb 2026 04:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022204/</guid>
+      <description>Mitchell Hashimoto 推出 Vouch,一个开源信任管理系统.通过可信用户背书机制,帮助项目过滤 AI 生成的低质量贡献,让开源维护者不再被垃圾 PR 淹没.</description>
+    </item>
+    <item>
+      <title>Crit:iOS 开发者的可视化 QA,让 AI 编码 Agent 看懂你的反馈</title>
+      <link>https://claudeai.best/posts/hunter-2026022000/</link>
+      <pubDate>Fri, 20 Feb 2026 00:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022000/</guid>
+      <description>Crit 是 iOS 可视化 QA 工具,截图,打点,评论,导出 JSON 给 Claude Code/Cursor 等 AI Agent 自动修复 bug.零依赖,MIT 开源.</description>
+    </item>
+    <item>
+      <title>MCP-wire:一个命令搞定所有 AI 编码工具的 MCP 配置</title>
+      <link>https://claudeai.best/posts/hunter-2026021921/</link>
+      <pubDate>Thu, 19 Feb 2026 21:50:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021921/</guid>
+      <description>MCP-wire 是 Go 写的 CLI 工具,跨 Claude Code,Codex,Gemini CLI,OpenCode 等多个 AI 编码工具安装配置 MCP 服务器,TUI 界面一键搞定.</description>
+    </item>
+    <item>
+      <title>Spackle:Mac 全局 AI 重写快捷键,选中文字按一下就改好</title>
+      <link>https://claudeai.best/posts/hunter-2026021918/</link>
+      <pubDate>Thu, 19 Feb 2026 18:35:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021918/</guid>
+      <description>Spackle 是 macOS 菜单栏应用,在任意 App 中选中文字按快捷键,AI 直接替换原文.支持 OpenAI,Anthropic,OpenRouter,BYO API Key.</description>
+    </item>
+  </channel>
+</rss>

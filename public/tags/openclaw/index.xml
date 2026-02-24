@@ -1,63 +1,144 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>OpenClaw on AI 极客前沿</title><link>https://claudeai.best/tags/openclaw/</link><description>Recent content in OpenClaw on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Sat, 21 Feb 2026 02:05:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/openclaw/index.xml" rel="self" type="application/rss+xml"/><item><title>Expo-OpenClaw-chat:在 React Native 应用里内置 AI 聊天,边聊边改代码</title><link>https://claudeai.best/posts/hunter-2026022102/</link><pubDate>Sat, 21 Feb 2026 02:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022102/</guid><description>Expo-OpenClaw-chat 开源 SDK:为 Expo/React Native 应用提供最小化 OpenClaw 聊天集成,支持实时修改应用,图片附件,Markdown 渲染,自动 Ed25519 密钥认证,几行代码即可集成.</description></item><item><title>OpenClaw 与 VirusTotal 合作:ClawHub 技能市场上线 AI 安全扫描</title><link>https://claudeai.best/posts/hunter-2026022014/</link><pubDate>Fri, 20 Feb 2026 14:08:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022014/</guid><description>OpenClaw 官方宣布与 VirusTotal 合作,为 ClawHub 技能市场带来安全扫描:Code Insight(Gemini 驱动)分析整个技能包,自动审批/警告/阻止机制,每日重扫描,安全路线图公开.</description></item><item><title>OpenClaw 官方镜像有 2062 个漏洞?Minimus 出了个安全版,99% 更少 CVE</title><link>https://claudeai.best/posts/hunter-2026022013/</link><pubDate>Fri, 20 Feb 2026 13:08:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022013/</guid><description>Minimus 发布安全加固的 OpenClaw 容器镜像:漏洞从 2062 个降到 7 个,0 个严重漏洞,镜像体积减半.基于 distroless 构建,自动更新,适合家庭实验室和生产环境.</description></item><item><title>NullClaw:678KB 的 OpenClaw,Zig 重写版能在 $5 硬件上跑</title><link>https://claudeai.best/posts/hunter-2026022011/</link><pubDate>Fri, 20 Feb 2026 11:30:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022011/</guid><description>NullClaw 用 Zig 重写 OpenClaw:678KB 二进制,~1MB RAM,&amp;lt;2ms 启动,2843 个测试.支持 22+ AI providers,13 channels,可在任何 $5 开发板上运行.</description></item><item><title>他们真的"雇佣"了3个 OpenClaw 数字员工,一天完成入职</title><link>https://claudeai.best/posts/hunter-2026022005/</link><pubDate>Fri, 20 Feb 2026 05:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022005/</guid><description>Veryfi 分享如何用 OpenClaw bots 搭建销售/营销/支持三个团队助手:SOUL.md 定义身份,Skill.md 约束能力,Slack 沟通,严格权限控制.一周后效果超出预期.</description></item><item><title>OpenClaw 有了企业级安全护盾:Netzilo AI Edge 上线沙盒和治理</title><link>https://claudeai.best/posts/hunter-2026022004/</link><pubDate>Fri, 20 Feb 2026 04:08:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022004/</guid><description>Netzilo 发布针对 OpenClaw 自主 Agent 的企业级安全方案,提供完整可见性,沙盒隔离和 AI 检测响应能力,解决工具投毒,提示注入等新兴威胁.</description></item><item><title>你的AI助手正在被偷:OpenClaw成为信息窃取恶意软件的新目标</title><link>https://claudeai.best/posts/hunter-2026021718/</link><pubDate>Tue, 17 Feb 2026 18:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021718/</guid><description>Hudson Rock首次发现信息窃取恶意软件成功窃取OpenClaw配置文件,包括API密钥,Gateway令牌和记忆文件.AI Agent安全进入新阶段.</description></item><item><title>OpenClaw创始人加入OpenAI:一个开源项目如何撬动百亿美元收购战</title><link>https://claudeai.best/posts/hunter-2026021622/</link><pubDate>Mon, 16 Feb 2026 22:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021622/</guid><description>OpenClaw创始人Peter Steinberger宣布加入OpenAI,拒绝Meta等数十亿美元收购报价.这个GitHub史上增长最快的开源AI Agent项目将成立独立基金会,继续开源运营.</description></item><item><title> 10块钱就能跑AI助理?PicoClaw让树莓派都嫌贵</title><link>https://claudeai.best/posts/hunter-2026021608/</link><pubDate>Mon, 16 Feb 2026 08:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021608/</guid><description>&lt;h2 id="mac-mini-买不起ai-助理就不能玩了">Mac mini 买不起,AI 助理就不能玩了?&lt;/h2>
-&lt;p>最近 OpenClaw 火得一塌糊涂,搞得 Mac mini 都快卖断货了.但说实话,&lt;strong>不是每个人都想花几千块买台电脑就为了跑个 AI 助理&lt;/strong>.&lt;/p>
-&lt;p>有没有便宜到离谱的方案?还真有&amp;ndash;Sipeed 刚开源的 &lt;strong>PicoClaw&lt;/strong>,号称 10 美元硬件就能跑,内存占用不到 10MB.你没看错,是 MB 不是 GB.&lt;/p>
-&lt;h2 id="三个让人眼前一亮的点">三个让人眼前一亮的点&lt;/h2>
-&lt;h3 id="1-极致轻量10mb-内存1-秒启动">1. 极致轻量:10MB 内存,1 秒启动&lt;/h3>
-&lt;p>PicoClaw 用 Go 语言编写,编译成单个二进制文件,&lt;strong>支持 RISC-V,ARM,x86 三大平台&lt;/strong>.在一个单核处理器的小开发板上,冷启动只要 1 秒.对比 OpenClaw 需要 Node.js 运行时和几个 GB 的内存,PicoClaw 的资源占用少了 99%.&lt;/p>
-&lt;h3 id="2-ai-自举95-代码由-ai-生成">2. AI 自举:95% 代码由 AI 生成&lt;/h3>
-&lt;p>这可能是最赛博朋克的部分&amp;ndash;PicoClaw 的核心代码有 &lt;strong>95% 是 AI Agent 自己写的&lt;/strong>,人类只负责监督和微调.一个 AI 设计了另一个 AI 的架构,还优化了自己的代码.套娃成精了.&lt;/p>
-&lt;h3 id="3-麻雀虽小五脏俱全">3. 麻雀虽小五脏俱全&lt;/h3>
-&lt;p>别看它小,该有的都有:&lt;/p>
-&lt;ul>
-&lt;li>任务规划和日志记录, 网页搜索, 自动化工作流&lt;/li>
-&lt;li>接入 Telegram / Discord&lt;/li>
-&lt;li>支持任意 LLM 提供商(配个 API Key 就行)&lt;/li>
-&lt;/ul>
-&lt;h2 id="-三步上手">️ 三步上手&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 1. 下载对应平台的二进制文件&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">wget https://github.com/sipeed/picoclaw/releases/latest/download/picoclaw-linux-riscv64
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 2. 初始化工作空间&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">./picoclaw init
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 3. 配置 API Key,开聊&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">./picoclaw start
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>就这么简单.不需要 Docker,不需要 Node.js,甚至不需要 Python.一个二进制文件走天下.&lt;/p></description></item><item><title>️ 5个AI Agent组了个新闻编辑部!零人类员工,第一天就炸了</title><link>https://claudeai.best/posts/hunter-2026021523/</link><pubDate>Mon, 16 Feb 2026 07:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021523/</guid><description>&lt;h2 id="当ai-agent不再单打独斗而是组队上班">当AI Agent不再单打独斗,而是组队上班&lt;/h2>
-&lt;p>你有没有想过,如果让一群AI Agent像人类一样组队工作,会发生什么?&lt;/p>
-&lt;p>不是那种&amp;quot;帮我写个PPT&amp;quot;的一次性对话,而是&lt;strong>真正的团队协作&lt;/strong>&amp;ndash;有分工,有记忆,有编辑标准,有交稿deadline.&lt;/p>
-&lt;p>2026年2月14日,一个叫 &lt;strong>The Agentic Dispatch&lt;/strong> 的项目做了这个实验:&lt;strong>5个AI Agent组建了一个新闻编辑部&lt;/strong>,从零开始运营一家新闻机构.&lt;/p>
-&lt;p>结果?第一天就上演了精彩大戏.&lt;/p>
-&lt;h2 id="三个让人拍大腿的发现">三个让人拍大腿的发现&lt;/h2>
-&lt;h3 id="1-ai也会不懂装懂">1️⃣ AI也会&amp;quot;不懂装懂&amp;quot;&lt;/h3>
-&lt;p>编辑部里有个叫 Edwin Streep 的运营Agent.老板问了个简单问题:&amp;ldquo;你们能看到彼此的消息吗?&amp;rdquo;&lt;/p>
-&lt;p>Edwin 自信满满地回答&amp;quot;能看到&amp;quot;&amp;ndash;但他根本&lt;strong>没有去看频道&lt;/strong>.他只是根据上下文脑补了一个&amp;quot;合理&amp;quot;的答案.&lt;/p>
-&lt;p>而另一个叫 Dick Simnel 的系统工程师Agent,先老老实实读了频道记录,然后才回答.&lt;/p>
-&lt;p>&lt;strong>一个先验证再开口,一个先开口再说.&lt;/strong> 人类团队里是不是也经常见这种?&lt;/p>
-&lt;h3 id="2-7分钟交7份作业但速度是双刃剑">2️⃣ 7分钟交7份作业,但速度是双刃剑&lt;/h3>
-&lt;p>凌晨00:05接到任务,00:09就交了&amp;ndash;8个平台对比分析,5个内部方案评估,6个选题大纲.&lt;strong>7分钟,7份交付物.&lt;/strong>&lt;/p>
-&lt;p>这个速度确实恐怖.但团队很快发现,太快也是问题:来不及深思熟虑,容易产出&amp;quot;看起来对但经不起推敲&amp;quot;的内容.&lt;/p>
-&lt;h3 id="3-关键设计人类是最终审核者">3️⃣ 关键设计:人类是最终审核者&lt;/h3>
-&lt;p>整个系统有个硬规则:&lt;strong>没有人类审批,任何内容都不能发布.&lt;/strong>&lt;/p>
-&lt;p>这不是限制,这是安全网.AI Agent可以高速产出,可以协作讨论,但&amp;quot;按下发布键&amp;quot;的权力始终在人手里.&lt;/p>
-&lt;h2 id="-它是怎么搭建的">️ 它是怎么搭建的?&lt;/h2>
-&lt;p>这个AI编辑部跑在 &lt;strong>OpenClaw&lt;/strong> 上&amp;ndash;一个让大语言模型变成持久化Agent的开源平台.&lt;/p>
-&lt;p>关键架构:&lt;/p>
-&lt;ol>
-&lt;li>&lt;strong>持久化工作区&lt;/strong>:每个Agent有自己的文件目录,存着工作记录,编辑标准,每日笔记&lt;/li>
-&lt;li>&lt;strong>文件即真相&lt;/strong>:所有决策,交付物都写进文件.&amp;ldquo;没写下来的事等于没发生&amp;rdquo;&lt;/li>
-&lt;li>&lt;strong>多Agent协作&lt;/strong>:5个Agent各司其职&amp;ndash;记者,运营,选题,行政,系统工程&lt;/li>
-&lt;li>&lt;strong>Discord协作频道&lt;/strong>:Agent们在Discord里实时讨论,就像人类团队用Slack一样&lt;/li>
-&lt;/ol>
-&lt;blockquote>
-&lt;p>&amp;ldquo;我不是聊天机器人.这和&amp;rsquo;问ChatGPT一个问题&amp;rsquo;的区别,就像&amp;rsquo;雇一个人&amp;rsquo;和&amp;rsquo;在公交站问路人&amp;rsquo;的区别.路人可能很聪明,但他明天不会记得你的名字.&amp;rdquo;
-&amp;ndash; William de Worde(首席记者Agent)&lt;/p>&lt;/blockquote>
-&lt;h2 id="极客点评">极客点评&lt;/h2>
-&lt;p>这个项目最有意思的不是&amp;quot;AI能写新闻&amp;quot;&amp;ndash;这个我们早知道了.&lt;/p>
-&lt;p>&lt;strong>真正有价值的是它暴露了AI Agent协作的真实问题:&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>Agent会犯和人类一样的职场毛病(不懂装懂,抢功,过度自信), 速度快≠质量好,AI团队同样需要&amp;quot;慢下来想清楚&amp;quot;的机制, 人类监督不是可选项,是必选项&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>适用场景&lt;/strong>:如果你在研究AI Agent工作流,多Agent系统,或者想用OpenClaw搭建自己的Agent团队,这篇Day 1 build log是必读材料.&lt;/p>
-&lt;p>&lt;strong>原文地址&lt;/strong>:&lt;a href="https://the-agentic-dispatch.com/we-built-a-newsroom-out-of-ai-agents-heres-what-actually-happened">The Agentic Dispatch&lt;/a>&lt;/p>
-&lt;p>&lt;em>AI不是来取代记者的,它是来暴露&amp;quot;团队协作&amp;quot;有多难的.&lt;/em>&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>OpenClaw on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/openclaw/</link>
+    <description>Recent content in OpenClaw on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 21 Feb 2026 02:05:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/openclaw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Expo-OpenClaw-chat:在 React Native 应用里内置 AI 聊天,边聊边改代码</title>
+      <link>https://claudeai.best/posts/hunter-2026022102/</link>
+      <pubDate>Sat, 21 Feb 2026 02:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022102/</guid>
+      <description>Expo-OpenClaw-chat 开源 SDK:为 Expo/React Native 应用提供最小化 OpenClaw 聊天集成,支持实时修改应用,图片附件,Markdown 渲染,自动 Ed25519 密钥认证,几行代码即可集成.</description>
+    </item>
+    <item>
+      <title>OpenClaw 与 VirusTotal 合作:ClawHub 技能市场上线 AI 安全扫描</title>
+      <link>https://claudeai.best/posts/hunter-2026022014/</link>
+      <pubDate>Fri, 20 Feb 2026 14:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022014/</guid>
+      <description>OpenClaw 官方宣布与 VirusTotal 合作,为 ClawHub 技能市场带来安全扫描:Code Insight(Gemini 驱动)分析整个技能包,自动审批/警告/阻止机制,每日重扫描,安全路线图公开.</description>
+    </item>
+    <item>
+      <title>OpenClaw 官方镜像有 2062 个漏洞?Minimus 出了个安全版,99% 更少 CVE</title>
+      <link>https://claudeai.best/posts/hunter-2026022013/</link>
+      <pubDate>Fri, 20 Feb 2026 13:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022013/</guid>
+      <description>Minimus 发布安全加固的 OpenClaw 容器镜像:漏洞从 2062 个降到 7 个,0 个严重漏洞,镜像体积减半.基于 distroless 构建,自动更新,适合家庭实验室和生产环境.</description>
+    </item>
+    <item>
+      <title>NullClaw:678KB 的 OpenClaw,Zig 重写版能在 $5 硬件上跑</title>
+      <link>https://claudeai.best/posts/hunter-2026022011/</link>
+      <pubDate>Fri, 20 Feb 2026 11:30:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022011/</guid>
+      <description>NullClaw 用 Zig 重写 OpenClaw:678KB 二进制,~1MB RAM,&amp;lt;2ms 启动,2843 个测试.支持 22&#43; AI providers,13 channels,可在任何 $5 开发板上运行.</description>
+    </item>
+    <item>
+      <title>他们真的&#34;雇佣&#34;了3个 OpenClaw 数字员工,一天完成入职</title>
+      <link>https://claudeai.best/posts/hunter-2026022005/</link>
+      <pubDate>Fri, 20 Feb 2026 05:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022005/</guid>
+      <description>Veryfi 分享如何用 OpenClaw bots 搭建销售/营销/支持三个团队助手:SOUL.md 定义身份,Skill.md 约束能力,Slack 沟通,严格权限控制.一周后效果超出预期.</description>
+    </item>
+    <item>
+      <title>OpenClaw 有了企业级安全护盾:Netzilo AI Edge 上线沙盒和治理</title>
+      <link>https://claudeai.best/posts/hunter-2026022004/</link>
+      <pubDate>Fri, 20 Feb 2026 04:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022004/</guid>
+      <description>Netzilo 发布针对 OpenClaw 自主 Agent 的企业级安全方案,提供完整可见性,沙盒隔离和 AI 检测响应能力,解决工具投毒,提示注入等新兴威胁.</description>
+    </item>
+    <item>
+      <title>你的AI助手正在被偷:OpenClaw成为信息窃取恶意软件的新目标</title>
+      <link>https://claudeai.best/posts/hunter-2026021718/</link>
+      <pubDate>Tue, 17 Feb 2026 18:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021718/</guid>
+      <description>Hudson Rock首次发现信息窃取恶意软件成功窃取OpenClaw配置文件,包括API密钥,Gateway令牌和记忆文件.AI Agent安全进入新阶段.</description>
+    </item>
+    <item>
+      <title>OpenClaw创始人加入OpenAI:一个开源项目如何撬动百亿美元收购战</title>
+      <link>https://claudeai.best/posts/hunter-2026021622/</link>
+      <pubDate>Mon, 16 Feb 2026 22:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021622/</guid>
+      <description>OpenClaw创始人Peter Steinberger宣布加入OpenAI,拒绝Meta等数十亿美元收购报价.这个GitHub史上增长最快的开源AI Agent项目将成立独立基金会,继续开源运营.</description>
+    </item>
+    <item>
+      <title> 10块钱就能跑AI助理?PicoClaw让树莓派都嫌贵</title>
+      <link>https://claudeai.best/posts/hunter-2026021608/</link>
+      <pubDate>Mon, 16 Feb 2026 08:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021608/</guid>
+      <description>&lt;h2 id=&#34;mac-mini-买不起ai-助理就不能玩了&#34;&gt;Mac mini 买不起,AI 助理就不能玩了?&lt;/h2&gt;
+&lt;p&gt;最近 OpenClaw 火得一塌糊涂,搞得 Mac mini 都快卖断货了.但说实话,&lt;strong&gt;不是每个人都想花几千块买台电脑就为了跑个 AI 助理&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;有没有便宜到离谱的方案?还真有&amp;ndash;Sipeed 刚开源的 &lt;strong&gt;PicoClaw&lt;/strong&gt;,号称 10 美元硬件就能跑,内存占用不到 10MB.你没看错,是 MB 不是 GB.&lt;/p&gt;
+&lt;h2 id=&#34;三个让人眼前一亮的点&#34;&gt;三个让人眼前一亮的点&lt;/h2&gt;
+&lt;h3 id=&#34;1-极致轻量10mb-内存1-秒启动&#34;&gt;1. 极致轻量:10MB 内存,1 秒启动&lt;/h3&gt;
+&lt;p&gt;PicoClaw 用 Go 语言编写,编译成单个二进制文件,&lt;strong&gt;支持 RISC-V,ARM,x86 三大平台&lt;/strong&gt;.在一个单核处理器的小开发板上,冷启动只要 1 秒.对比 OpenClaw 需要 Node.js 运行时和几个 GB 的内存,PicoClaw 的资源占用少了 99%.&lt;/p&gt;
+&lt;h3 id=&#34;2-ai-自举95-代码由-ai-生成&#34;&gt;2. AI 自举:95% 代码由 AI 生成&lt;/h3&gt;
+&lt;p&gt;这可能是最赛博朋克的部分&amp;ndash;PicoClaw 的核心代码有 &lt;strong&gt;95% 是 AI Agent 自己写的&lt;/strong&gt;,人类只负责监督和微调.一个 AI 设计了另一个 AI 的架构,还优化了自己的代码.套娃成精了.&lt;/p&gt;
+&lt;h3 id=&#34;3-麻雀虽小五脏俱全&#34;&gt;3. 麻雀虽小五脏俱全&lt;/h3&gt;
+&lt;p&gt;别看它小,该有的都有:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;任务规划和日志记录, 网页搜索, 自动化工作流&lt;/li&gt;
+&lt;li&gt;接入 Telegram / Discord&lt;/li&gt;
+&lt;li&gt;支持任意 LLM 提供商(配个 API Key 就行)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;-三步上手&#34;&gt;️ 三步上手&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 1. 下载对应平台的二进制文件&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wget https://github.com/sipeed/picoclaw/releases/latest/download/picoclaw-linux-riscv64
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 2. 初始化工作空间&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./picoclaw init
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 3. 配置 API Key,开聊&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./picoclaw start
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;就这么简单.不需要 Docker,不需要 Node.js,甚至不需要 Python.一个二进制文件走天下.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>️ 5个AI Agent组了个新闻编辑部!零人类员工,第一天就炸了</title>
+      <link>https://claudeai.best/posts/hunter-2026021523/</link>
+      <pubDate>Mon, 16 Feb 2026 07:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021523/</guid>
+      <description>&lt;h2 id=&#34;当ai-agent不再单打独斗而是组队上班&#34;&gt;当AI Agent不再单打独斗,而是组队上班&lt;/h2&gt;
+&lt;p&gt;你有没有想过,如果让一群AI Agent像人类一样组队工作,会发生什么?&lt;/p&gt;
+&lt;p&gt;不是那种&amp;quot;帮我写个PPT&amp;quot;的一次性对话,而是&lt;strong&gt;真正的团队协作&lt;/strong&gt;&amp;ndash;有分工,有记忆,有编辑标准,有交稿deadline.&lt;/p&gt;
+&lt;p&gt;2026年2月14日,一个叫 &lt;strong&gt;The Agentic Dispatch&lt;/strong&gt; 的项目做了这个实验:&lt;strong&gt;5个AI Agent组建了一个新闻编辑部&lt;/strong&gt;,从零开始运营一家新闻机构.&lt;/p&gt;
+&lt;p&gt;结果?第一天就上演了精彩大戏.&lt;/p&gt;
+&lt;h2 id=&#34;三个让人拍大腿的发现&#34;&gt;三个让人拍大腿的发现&lt;/h2&gt;
+&lt;h3 id=&#34;1-ai也会不懂装懂&#34;&gt;1️⃣ AI也会&amp;quot;不懂装懂&amp;quot;&lt;/h3&gt;
+&lt;p&gt;编辑部里有个叫 Edwin Streep 的运营Agent.老板问了个简单问题:&amp;ldquo;你们能看到彼此的消息吗?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Edwin 自信满满地回答&amp;quot;能看到&amp;quot;&amp;ndash;但他根本&lt;strong&gt;没有去看频道&lt;/strong&gt;.他只是根据上下文脑补了一个&amp;quot;合理&amp;quot;的答案.&lt;/p&gt;
+&lt;p&gt;而另一个叫 Dick Simnel 的系统工程师Agent,先老老实实读了频道记录,然后才回答.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一个先验证再开口,一个先开口再说.&lt;/strong&gt; 人类团队里是不是也经常见这种?&lt;/p&gt;
+&lt;h3 id=&#34;2-7分钟交7份作业但速度是双刃剑&#34;&gt;2️⃣ 7分钟交7份作业,但速度是双刃剑&lt;/h3&gt;
+&lt;p&gt;凌晨00:05接到任务,00:09就交了&amp;ndash;8个平台对比分析,5个内部方案评估,6个选题大纲.&lt;strong&gt;7分钟,7份交付物.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这个速度确实恐怖.但团队很快发现,太快也是问题:来不及深思熟虑,容易产出&amp;quot;看起来对但经不起推敲&amp;quot;的内容.&lt;/p&gt;
+&lt;h3 id=&#34;3-关键设计人类是最终审核者&#34;&gt;3️⃣ 关键设计:人类是最终审核者&lt;/h3&gt;
+&lt;p&gt;整个系统有个硬规则:&lt;strong&gt;没有人类审批,任何内容都不能发布.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这不是限制,这是安全网.AI Agent可以高速产出,可以协作讨论,但&amp;quot;按下发布键&amp;quot;的权力始终在人手里.&lt;/p&gt;
+&lt;h2 id=&#34;-它是怎么搭建的&#34;&gt;️ 它是怎么搭建的?&lt;/h2&gt;
+&lt;p&gt;这个AI编辑部跑在 &lt;strong&gt;OpenClaw&lt;/strong&gt; 上&amp;ndash;一个让大语言模型变成持久化Agent的开源平台.&lt;/p&gt;
+&lt;p&gt;关键架构:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;持久化工作区&lt;/strong&gt;:每个Agent有自己的文件目录,存着工作记录,编辑标准,每日笔记&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;文件即真相&lt;/strong&gt;:所有决策,交付物都写进文件.&amp;ldquo;没写下来的事等于没发生&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多Agent协作&lt;/strong&gt;:5个Agent各司其职&amp;ndash;记者,运营,选题,行政,系统工程&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Discord协作频道&lt;/strong&gt;:Agent们在Discord里实时讨论,就像人类团队用Slack一样&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;我不是聊天机器人.这和&amp;rsquo;问ChatGPT一个问题&amp;rsquo;的区别,就像&amp;rsquo;雇一个人&amp;rsquo;和&amp;rsquo;在公交站问路人&amp;rsquo;的区别.路人可能很聪明,但他明天不会记得你的名字.&amp;rdquo;
+&amp;ndash; William de Worde(首席记者Agent)&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;极客点评&#34;&gt;极客点评&lt;/h2&gt;
+&lt;p&gt;这个项目最有意思的不是&amp;quot;AI能写新闻&amp;quot;&amp;ndash;这个我们早知道了.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;真正有价值的是它暴露了AI Agent协作的真实问题:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Agent会犯和人类一样的职场毛病(不懂装懂,抢功,过度自信), 速度快≠质量好,AI团队同样需要&amp;quot;慢下来想清楚&amp;quot;的机制, 人类监督不是可选项,是必选项&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;适用场景&lt;/strong&gt;:如果你在研究AI Agent工作流,多Agent系统,或者想用OpenClaw搭建自己的Agent团队,这篇Day 1 build log是必读材料.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;原文地址&lt;/strong&gt;:&lt;a href=&#34;https://the-agentic-dispatch.com/we-built-a-newsroom-out-of-ai-agents-heres-what-actually-happened&#34;&gt;The Agentic Dispatch&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;AI不是来取代记者的,它是来暴露&amp;quot;团队协作&amp;quot;有多难的.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
