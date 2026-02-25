@@ -1,199 +1,15 @@
-<!DOCTYPE html>
-<html lang="zh" dir="auto" data-theme="auto">
-
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>Claude Code | AI 极客前沿</title>
-<meta name="keywords" content="">
-<meta name="description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
-<meta name="author" content="AI 极客前沿">
-<link rel="canonical" href="https://claudeai.best/tags/claude-code/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://claudeai.best/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://claudeai.best/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://claudeai.best/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://claudeai.best/apple-touch-icon.png">
-<link rel="mask-icon" href="https://claudeai.best/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://claudeai.best/tags/claude-code/index.xml" title="rss">
-<link rel="alternate" hreflang="zh" href="https://claudeai.best/tags/claude-code/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-                color-scheme: dark;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .toc {
-                background: var(--entry);
-            }
-        }
-
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
-    </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script>
-
-<meta property="og:url" content="https://claudeai.best/tags/claude-code/">
-  <meta property="og:site_name" content="AI 极客前沿">
-  <meta property="og:title" content="Claude Code">
-  <meta property="og:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
-  <meta property="og:locale" content="zh-cn">
-  <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Claude Code">
-<meta name="twitter:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
-
-</head>
-<body class="list" id="top">
-    <header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://claudeai.best/" accesskey="h" title="AI 极客前沿 (Alt + H)">AI 极客前沿</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="https://claudeai.best/posts/" title="文章">
-                    <span>文章</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/tags/" title="标签">
-                    <span>标签</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/categories/" title="分类">
-                    <span>分类</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/search/" title="搜索">
-                    <span>搜索</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/about/" title="关于">
-                    <span>关于</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://t.me/TgTechMsgBot" title="联系">
-                    <span>联系</span>&nbsp;
-                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
-                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
-                        <path d="M15 3h6v6"></path>
-                        <path d="M10 14L21 3"></path>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://claudeai.best/">主页</a>&nbsp;»&nbsp;<a href="https://claudeai.best/tags/">Tags</a></div>
-  <h1>
-    Claude Code
-  </h1>
-</header>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://opengraph.githubassets.com/ladybird-rust-migration" alt="Ladybird 浏览器 Rust 迁移">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">2周迁移2.5万行代码：Ladybird用AI把C&#43;&#43;变成Rust，6.5万测试零回归
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>如果你曾经在周末试图把一个几千行的项目从一种语言迁移到另一种，你就知道那是什么感觉——痛苦、漫长、充满 bug。
+<!doctype html><html lang=zh dir=auto data-theme=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Claude Code | AI 极客前沿</title>
+<meta name=keywords content><meta name=description content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态"><meta name=author content="AI 极客前沿"><link rel=canonical href=https://claudeai.best/tags/claude-code/><link crossorigin=anonymous href=/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css integrity="sha256-2jIR5e+Ge/K3X9WmUVz+1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as=style><link rel=icon href=https://claudeai.best/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://claudeai.best/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://claudeai.best/favicon-32x32.png><link rel=apple-touch-icon href=https://claudeai.best/apple-touch-icon.png><link rel=mask-icon href=https://claudeai.best/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://claudeai.best/tags/claude-code/index.xml title=rss><link rel=alternate hreflang=zh href=https://claudeai.best/tags/claude-code/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51);color-scheme:dark}.list{background:var(--theme)}.toc{background:var(--entry)}}@media(prefers-color-scheme:light){.list::-webkit-scrollbar-thumb{border-color:var(--code-bg)}}</style></noscript><script>localStorage.getItem("pref-theme")==="dark"?document.querySelector("html").dataset.theme="dark":localStorage.getItem("pref-theme")==="light"?document.querySelector("html").dataset.theme="light":window.matchMedia("(prefers-color-scheme: dark)").matches?document.querySelector("html").dataset.theme="dark":document.querySelector("html").dataset.theme="light"</script><meta property="og:url" content="https://claudeai.best/tags/claude-code/"><meta property="og:site_name" content="AI 极客前沿"><meta property="og:title" content="Claude Code"><meta property="og:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态"><meta property="og:locale" content="zh-cn"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="Claude Code"><meta name=twitter:description content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态"></head><body class=list id=top><header class=header><nav class=nav><div class=logo><a href=https://claudeai.best/ accesskey=h title="AI 极客前沿 (Alt + H)">AI 极客前沿</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://claudeai.best/posts/ title=文章><span>文章</span></a></li><li><a href=https://claudeai.best/tags/ title=标签><span>标签</span></a></li><li><a href=https://claudeai.best/categories/ title=分类><span>分类</span></a></li><li><a href=https://claudeai.best/search/ title=搜索><span>搜索</span></a></li><li><a href=https://claudeai.best/about/ title=关于><span>关于</span></a></li><li><a href=https://t.me/TgTechMsgBot title=联系><span>联系</span>&nbsp;<svg fill="none" shape-rendering="geometricPrecision" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></li></ul></nav></header><main class=main><header class=page-header><div class=breadcrumbs><a href=https://claudeai.best/>主页</a>&nbsp;»&nbsp;<a href=https://claudeai.best/tags/>Tags</a></div><h1>Claude Code</h1></header><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src=https://opengraph.githubassets.com/ladybird-rust-migration alt="Ladybird 浏览器 Rust 迁移"></figure><header class=entry-header><h2 class=entry-hint-parent>2周迁移2.5万行代码：Ladybird用AI把C++变成Rust，6.5万测试零回归</h2></header><div class=entry-content><p>如果你曾经在周末试图把一个几千行的项目从一种语言迁移到另一种，你就知道那是什么感觉——痛苦、漫长、充满 bug。
 那如果告诉你，有人用 2 周 完成了 25,000 行 代码的迁移，而且 65,359 个测试全部通过，零回归？
 这不是科幻，这是 Ladybird 浏览器刚刚干完的事。
-发生了什么？ Ladybird 是一个从零开始的开源浏览器项目，由 SerenityOS 作者 Andreas Kling 发起。他们一直在寻找一种内存安全的语言来替代 C&#43;&#43;。之前试过 Swift，但 C&#43;&#43; 互操作性不够好，而且平台支持有限。
+发生了什么？ Ladybird 是一个从零开始的开源浏览器项目，由 SerenityOS 作者 Andreas Kling 发起。他们一直在寻找一种内存安全的语言来替代 C++。之前试过 Swift，但 C++ 互操作性不够好，而且平台支持有限。
 这次他们选了 Rust。
 但真正让人震惊的不是 “又一个项目用 Rust”，而是他们迁移的方式——用 AI 辅助，但完全人工主导。
 他们是怎么做到的？ Kling 选择了 LibJS（Ladybird 的 JavaScript 引擎）作为第一个迁移目标。具体是 lexer、parser、AST 和 bytecode generator——这些模块相对独立，而且有 test262 这样的完整测试覆盖。
-工具选择：Claude Code &#43; OpenAI Codex。
+工具选择：Claude Code + OpenAI Codex。
 但重点来了——Kling 强调：
 “This was human-directed, not autonomous code generation. I decided what to port, in what order, and what the Rust code should look like. It was hundreds of small prompts, steering the agents where things needed to go.”
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-25 13:05:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>248 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to 2周迁移2.5万行代码：Ladybird用AI把C&#43;&#43;变成Rust，6.5万测试零回归" href="https://claudeai.best/posts/ladybird-rust-ai-migration/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://claudeai.best/images/hunter/2026022500.jpg" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">AI 写了一个 FreeBSD 内核驱动，还能连 Wi-Fi
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>旧电脑别扔，让 AI 给它写个驱动。
+...</p></div><footer class=entry-footer><span title='2026-02-25 13:05:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>248 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to 2周迁移2.5万行代码：Ladybird用AI把C++变成Rust，6.5万测试零回归" href=https://claudeai.best/posts/ladybird-rust-ai-migration/></a></article><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src=https://claudeai.best/images/hunter/2026022500.jpg alt></figure><header class=entry-header><h2 class=entry-hint-parent>AI 写了一个 FreeBSD 内核驱动，还能连 Wi-Fi</h2></header><div class=entry-content><p>旧电脑别扔，让 AI 给它写个驱动。
 一个尘封的 MacBook Pro Vladimir Varankin 有一台 2016 年的 MacBook Pro，屏幕有 flexgate 问题，一直躺在柜子里吃灰。FreeBSD 15 发布后，他决定把这台电脑改造成 FreeBSD 实验机——直到发现 Wi-Fi 用不了。
 2016 MacBook Pro 用的 Broadcom BCM4350 芯片，FreeBSD 原生不支持。论坛上的标准方案是跑一个叫 wifibox 的小 Linux 虚拟机，把 PCI 设备直通给 Linux。
 但 Varankin 想的是：能不能写一个原生的 FreeBSD 驱动？
@@ -202,102 +18,29 @@
 模块确实编译通过了——但没有任何反应。因为他测试的虚拟机里根本没有那张网卡。
 等他把 PCI 设备加进去，真机测试：kernel panic。
 Claude 开始疯狂打补丁，到处加 #ifdef __FreeBSD__，抱怨 LinuxKPI 缺这少那。补丁越打越多，驱动离能用的距离却一点没缩短。
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-25 00:05:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>3 分钟</span>&nbsp;·&nbsp;<span>427 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to AI 写了一个 FreeBSD 内核驱动，还能连 Wi-Fi" href="https://claudeai.best/posts/hunter-2026022500/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">AI 帮浏览器搬家：Ladybird 两周搞定 2.5 万行 Rust 迁移
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>2.5 万行代码从 C&#43;&#43; 迁移到 Rust，传统方式得几个月？Ladybird 浏览器团队用 AI 两周就搞定了，而且零回退。
-这不是&#34;AI 自动写代码&#34;的吹牛故事。创始人 Andreas Kling 把话说得很清楚：人主导，AI 干活。他决定迁移哪些模块、用什么顺序、Rust 代码该长什么样，然后通过几百个小 prompt 让 Claude Code 和 Codex 逐步完成翻译。
-目标是 LibJS（JavaScript 引擎），包括词法分析器、解析器、AST 和字节码生成器。关键是 Ladybird 已经有 test262 测试套件，每一段生成的代码都能跟 C&#43;&#43; 版本做字节级对比——生成的 AST 和字节码必须完全一致。
+...</p></div><footer class=entry-footer><span title='2026-02-25 00:05:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>3 分钟</span>&nbsp;·&nbsp;<span>427 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to AI 写了一个 FreeBSD 内核驱动，还能连 Wi-Fi" href=https://claudeai.best/posts/hunter-2026022500/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>AI 帮浏览器搬家：Ladybird 两周搞定 2.5 万行 Rust 迁移</h2></header><div class=entry-content><p>2.5 万行代码从 C++ 迁移到 Rust，传统方式得几个月？Ladybird 浏览器团队用 AI 两周就搞定了，而且零回退。
+这不是"AI 自动写代码"的吹牛故事。创始人 Andreas Kling 把话说得很清楚：人主导，AI 干活。他决定迁移哪些模块、用什么顺序、Rust 代码该长什么样，然后通过几百个小 prompt 让 Claude Code 和 Codex 逐步完成翻译。
+目标是 LibJS（JavaScript 引擎），包括词法分析器、解析器、AST 和字节码生成器。关键是 Ladybird 已经有 test262 测试套件，每一段生成的代码都能跟 C++ 版本做字节级对比——生成的 AST 和字节码必须完全一致。
 结果：2 周搞定，手工得几个月。零回退，所有测试通过。
-这模式值得注意：有测试覆盖 &#43; 有可信参照实现 &#43; AI 翻译，比&#34;让 AI 从零写代码&#34;靠谱多了。内存安全语言迁移的老大难问题，可能找到了加速器。
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-24 21:06:00 +0800 CST'>2026年2月24日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>44 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to AI 帮浏览器搬家：Ladybird 两周搞定 2.5 万行 Rust 迁移" href="https://claudeai.best/posts/2026-02-24-ladybird-rust-migration/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1555949963-aae5ca8ef1e9?w=1024&amp;q=80" alt="emacs-gravity Claude Code UI">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">emacs-gravity:给 Claude Code 装个 magit 风格的驾驶舱
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>发现一个有意思的Emacs 工具
+这模式值得注意：有测试覆盖 + 有可信参照实现 + AI 翻译，比"让 AI 从零写代码"靠谱多了。内存安全语言迁移的老大难问题，可能找到了加速器。</p></div><footer class=entry-footer><span title='2026-02-24 21:06:00 +0800 CST'>2026年2月24日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>44 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to AI 帮浏览器搬家：Ladybird 两周搞定 2.5 万行 Rust 迁移" href=https://claudeai.best/posts/2026-02-24-ladybird-rust-migration/></a></article><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src="https://images.unsplash.com/photo-1555949963-aae5ca8ef1e9?w=1024&amp;q=80" alt="emacs-gravity Claude Code UI"></figure><header class=entry-header><h2 class=entry-hint-parent>emacs-gravity:给 Claude Code 装个 magit 风格的驾驶舱</h2></header><div class=entry-content><p>发现一个有意思的Emacs 工具
 Claude Code 的终端 UI 是个信息瀑布 – 滚动文本,工具调用混在一起,Agent 输出和 thinking 交织.
 emacs-gravity 把这一切变成可导航的结构化视图.
 谁能用?
 住在 Emacs 里的开发者 用 Claude Code 但觉得 TUI 太乱 想同时管理多个 Claude 会话 怎么用?
-# 克隆 &#43; 构建 git clone https://github.com/gdanov/emacs-gravity.git cd emacs-gravity/emacs-bridge &amp;&amp; npm install &amp;&amp; npm run build # 编辑 ~/.claude/plugins/marketplace.json 然后在 Emacs 里 M-x claude-gravity-mode.
+# 克隆 + 构建 git clone https://github.com/gdanov/emacs-gravity.git cd emacs-gravity/emacs-bridge && npm install && npm run build # 编辑 ~/.claude/plugins/marketplace.json 然后在 Emacs 里 M-x claude-gravity-mode.
 能干啥?
-magit 风格会话视图 TAB 展开/折叠,RET 访问 每个 turn 分组,工具调用按响应周期组织 多会话收件箱 所有待审核的 Plan,权限请求集中在 Inbox 按项目分组,状态一目了然 Agent 树形追踪 Subagent 渲染成嵌套树 看到每个 Agent 的工具调用,thinking,结果 Plan 审核 &#43; 注释 专用 buffer 审核 Plan 按 c 加波浪线注释,编辑文本 批准发干净版本,带注释自动转为结构化拒绝 内联 diff 文件编辑直接显示 unified diff 不用切 buffer 优势在哪?
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 09:10:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>109 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to emacs-gravity:给 Claude Code 装个 magit 风格的驾驶舱" href="https://claudeai.best/posts/hunter-2026022209/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&amp;h=630&amp;fit=crop" alt="Emacs Gravity Claude Code UI">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Emacs Gravity:magit 风格的 Claude Code UI,不装 Electron
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>发现一个有意思的工具 Emacs Gravity 给 Claude Code 做了个 magit 风格的 UI.不是滚动终端,而是结构化的会话视图 – 工具调用,Agent 树,文件变更都能折叠展开.
+magit 风格会话视图 TAB 展开/折叠,RET 访问 每个 turn 分组,工具调用按响应周期组织 多会话收件箱 所有待审核的 Plan,权限请求集中在 Inbox 按项目分组,状态一目了然 Agent 树形追踪 Subagent 渲染成嵌套树 看到每个 Agent 的工具调用,thinking,结果 Plan 审核 + 注释 专用 buffer 审核 Plan 按 c 加波浪线注释,编辑文本 批准发干净版本,带注释自动转为结构化拒绝 内联 diff 文件编辑直接显示 unified diff 不用切 buffer 优势在哪?
+...</p></div><footer class=entry-footer><span title='2026-02-22 09:10:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>109 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to emacs-gravity:给 Claude Code 装个 magit 风格的驾驶舱" href=https://claudeai.best/posts/hunter-2026022209/></a></article><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&amp;h=630&amp;fit=crop" alt="Emacs Gravity Claude Code UI"></figure><header class=entry-header><h2 class=entry-hint-parent>Emacs Gravity:magit 风格的 Claude Code UI,不装 Electron</h2></header><div class=entry-content><p>发现一个有意思的工具 Emacs Gravity 给 Claude Code 做了个 magit 风格的 UI.不是滚动终端,而是结构化的会话视图 – 工具调用,Agent 树,文件变更都能折叠展开.
 谁能用?解决什么问题? 场景:你住在 Emacs 里,用 Claude Code 但不喜欢它的终端 UI – 滚动太快,工具调用和思考混在一起.
 Emacs Gravity 的做法:
 Turn-based 视图:每个用户 prompt 是一个 turn,工具按响应周期分组 Agent 树:子 Agent 渲染成嵌套树,能看到它们的工具调用和结果 内联 diff:文件编辑直接在会话 buffer 里显示 unified diff Plan Review:Claude 提计划时在独立 buffer 审查,加注释,编辑,一键批准或拒绝 多会话管理:按项目分组,像切 buffer 一样切换会话 Capabilities 浏览器:plugins,skills,MCP servers 都在树里可导航 对比 Cursor/AntiGravity:
-UI, Cursor=VS Code 侧边栏, emacs-gravity=magit-section 终端原生 Agent 可见性, Cursor=最小, emacs-gravity=完整嵌套树 多会话, Cursor=无, emacs-gravity=按项目分组 Plan 审查, Cursor=无, emacs-gravity=View &#43; 注释 &#43; diff 开源, Cursor=否, emacs-gravity=是
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 08:06:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>119 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Emacs Gravity:magit 风格的 Claude Code UI,不装 Electron" href="https://claudeai.best/posts/hunter-2026022208/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771672208451_cover.jpg" alt="Claude Code Open - 开源 AI 编程平台">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Claude Code Open:开源版 Claude Code,带 Web IDE 和多 Agent 系统
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>刚发现一个猛的开源项目:Claude Code Open ️
+UI, Cursor=VS Code 侧边栏, emacs-gravity=magit-section 终端原生 Agent 可见性, Cursor=最小, emacs-gravity=完整嵌套树 多会话, Cursor=无, emacs-gravity=按项目分组 Plan 审查, Cursor=无, emacs-gravity=View + 注释 + diff 开源, Cursor=否, emacs-gravity=是
+...</p></div><footer class=entry-footer><span title='2026-02-22 08:06:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>119 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Emacs Gravity:magit 风格的 Claude Code UI,不装 Electron" href=https://claudeai.best/posts/hunter-2026022208/></a></article><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771672208451_cover.jpg alt="Claude Code Open - 开源 AI 编程平台"></figure><header class=entry-header><h2 class=entry-hint-parent>Claude Code Open:开源版 Claude Code,带 Web IDE 和多 Agent 系统</h2></header><div class=entry-content><p>刚发现一个猛的开源项目:Claude Code Open ️
 谁能用? 想要开源版 Claude Code 的.官方 Claude Code 是闭源的,这个项目基于公开 API 和类型定义逆向工程实现,完全 MIT 开源.
 功能:
-CLI &#43; Web IDE:Monaco 编辑器,文件树,AI 增强编辑 37&#43; 内置工具:文件操作,搜索,执行,Web 访问,任务管理,浏览器自动化 Blueprint 多 Agent:智能规划器 &#43; 领导 Agent &#43; 自主 Worker &#43; 任务队列 &#43; 质量审查 定时任务守护进程:自然语言调度,“每天 9 点代码审查” 自演化:AI 可以修改自己的源代码,热重载 一键安装 Windows:
+CLI + Web IDE:Monaco 编辑器,文件树,AI 增强编辑 37+ 内置工具:文件操作,搜索,执行,Web 访问,任务管理,浏览器自动化 Blueprint 多 Agent:智能规划器 + 领导 Agent + 自主 Worker + 任务队列 + 质量审查 定时任务守护进程:自然语言调度,“每天 9 点代码审查” 自演化:AI 可以修改自己的源代码,热重载 一键安装 Windows:
 irm https://raw.githubusercontent.com/kill136/claude-code-open/private_web_ui/install.ps1 | iex macOS / Linux:
-curl -fsSL https://raw.githubusercontent.com/kill136/claude-code-open/private_web_ui/install.sh | bash 安装后双击桌面快捷方式,浏览器自动打开 http://localhost:3456. ## 有什么特别的? - **Web UI IDE**: Monaco 编辑器,VS Code 风格文件树,AI 悬浮提示 - **Blueprint 多 Agent**: 复杂任务自动分解到多个 Agent 并行执行 - **定时任务**: 自然语言配置时间,文件监控触发,多渠道通知 - **自演化**: AI 修改自己源码 &#43; TypeScript 编译检查 &#43; 热重载 - **检查点回滚**: 文件快照管理 &#43; 会话时间旅行 - **MCP 协议**: 完整实现,支持 stdio,HTTP,SSE 传输 - **代理服务器**: 共享 Claude 订阅到其他设备 # CLI 模式 npm run dev # Web UI 模式 npm run web # 代理服务器模式(共享订阅) npm run proxy # 飞书机器人 npm run feishu # 微信机器人 npm run wechat ## 试试看 一键安装后设置 API Key: export ANTHROPIC_API_KEY=your-api-key GitHub: https://github.com/kill136/claude-code-open Demo: http://voicegpt.site:3456/ ## 时效性验证 - **HN 提交时间**: 1 分钟前(Show HN: Claude Code Open – AI Coding Platform with Web IDE and Agents) - **搜索引擎最早时间**: HN 首发 1 分钟前,GitHub 仓库为新发布 - **结论**: 最早时间 ≤ 2 小时,符合新鲜热点标准 </p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-21 19:09:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>178 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Claude Code Open:开源版 Claude Code,带 Web IDE 和多 Agent 系统" href="https://claudeai.best/posts/hunter-2026022119/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771661536968_cover.jpg" alt="Claude Code worktree 并行开发">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Claude Code --worktree:同时开 5 个 Agent 并行写代码,互不干扰
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>发现一个有意思的功能:claude --worktree
+curl -fsSL https://raw.githubusercontent.com/kill136/claude-code-open/private_web_ui/install.sh | bash 安装后双击桌面快捷方式,浏览器自动打开 http://localhost:3456. ## 有什么特别的? - **Web UI IDE**: Monaco 编辑器,VS Code 风格文件树,AI 悬浮提示 - **Blueprint 多 Agent**: 复杂任务自动分解到多个 Agent 并行执行 - **定时任务**: 自然语言配置时间,文件监控触发,多渠道通知 - **自演化**: AI 修改自己源码 + TypeScript 编译检查 + 热重载 - **检查点回滚**: 文件快照管理 + 会话时间旅行 - **MCP 协议**: 完整实现,支持 stdio,HTTP,SSE 传输 - **代理服务器**: 共享 Claude 订阅到其他设备 # CLI 模式 npm run dev # Web UI 模式 npm run web # 代理服务器模式(共享订阅) npm run proxy # 飞书机器人 npm run feishu # 微信机器人 npm run wechat ## 试试看 一键安装后设置 API Key: export ANTHROPIC_API_KEY=your-api-key GitHub: https://github.com/kill136/claude-code-open Demo: http://voicegpt.site:3456/ ## 时效性验证 - **HN 提交时间**: 1 分钟前(Show HN: Claude Code Open – AI Coding Platform with Web IDE and Agents) - **搜索引擎最早时间**: HN 首发 1 分钟前,GitHub 仓库为新发布 - **结论**: 最早时间 ≤ 2 小时,符合新鲜热点标准</p></div><footer class=entry-footer><span title='2026-02-21 19:09:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>178 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Claude Code Open:开源版 Claude Code,带 Web IDE 和多 Agent 系统" href=https://claudeai.best/posts/hunter-2026022119/></a></article><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771661536968_cover.jpg alt="Claude Code worktree 并行开发"></figure><header class=entry-header><h2 class=entry-hint-parent>Claude Code --worktree:同时开 5 个 Agent 并行写代码,互不干扰</h2></header><div class=entry-content><p>发现一个有意思的功能:claude --worktree
 Claude Code 创作者 Boris Cherny 刚刚发的.
 谁能用? 用 Claude Code 写代码的,想同时跑多个 Agent 干活.
 怎么用 # 在独立 worktree 里启动 Claude claude --worktree # 命名你的 worktree claude --worktree --name my-feature # 加上 tmux 分屏 claude --worktree --tmux 每个 Agent 有自己的 worktree,互不干扰.
@@ -305,70 +48,25 @@ Claude Code 创作者 Boris Cherny 刚刚发的.
 Agent A 写 API Agent B 写前端 Agent C 写测试 同时跑,代码不会互相覆盖.
 –tmux 集成:每个会话在独立 tmux 窗口,管理更方便.
 跟手动开 worktree 比? 手动开 worktree 也能做到,但 --worktree 自动帮你:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-21 16:04:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>88 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Claude Code --worktree:同时开 5 个 Agent 并行写代码,互不干扰" href="https://claudeai.best/posts/hunter-2026022116/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771600176601_cover.jpg" alt="知识图谱与数据连接">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Session-graph:把分散的 AI 编码会话变成可查询的知识图谱
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>你每天用 Claude Code,ChatGPT,DeepSeek,Grok,Warp……每个会话都是孤立的信息孤岛.上周在 Claude Code 里解决的 Supabase auth 问题,今天又在 ChatGPT 里问了一遍.
+...</p></div><footer class=entry-footer><span title='2026-02-21 16:04:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>88 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Claude Code --worktree:同时开 5 个 Agent 并行写代码,互不干扰" href=https://claudeai.best/posts/hunter-2026022116/></a></article><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771600176601_cover.jpg alt=知识图谱与数据连接></figure><header class=entry-header><h2 class=entry-hint-parent>Session-graph:把分散的 AI 编码会话变成可查询的知识图谱</h2></header><div class=entry-content><p>你每天用 Claude Code,ChatGPT,DeepSeek,Grok,Warp……每个会话都是孤立的信息孤岛.上周在 Claude Code 里解决的 Supabase auth 问题,今天又在 ChatGPT 里问了一遍.
 Session-graph 解决这个问题:把分散的 AI 编码会话转化为可查询的知识图谱.
-核心问题 开发者每天用 5&#43; 个 AI 工具,每个会话都是:
+核心问题 开发者每天用 5+ 个 AI 工具,每个会话都是:
 孤立的 silo, 标签页一关,知识就消失, grep 会话日志只能得到文本墙,没有结构 现有方案的问题:单平台,平面文件.只能搜索一个工具的历史,不能跨平台关联.grep 不能告诉你 “FastAPI 使用 Pydantic” 或 “Neo4j 是图数据库”.
 Session-graph 的解决方案 从所有 AI 编码会话中提取结构化知识三元组 – (subject, predicate, object):
-&#34; → &#34; → # - - 组 - - - - 每 - S ` # S # 5 - - # C D G W 1 2 3 4 # 封 # ` # g c # c # p p # d # p # p # p # # &gt; 没 G H W # * * 合 * * 个 * P ` E ? r o S ? F } # 2 # l e r a A S * . . . . # 闭 # ` i d p y i o y y y # 有 * i o F h 3 # 1 C C 2 P 3 实 &#34; 跨 4 三 具 5 A ` 本 L e d w E w I F 6 a e o r p P 实 世 类 依 能 结 分 基 关 ` 1 t 2 3 t p 4 c 5 t 6 t 7 t 8 &#34; 关 一 t w a a . l h . 5 R . 体 k 语 . 元 体 . R s 地 E n f l R d L 实 个 u 0 处 u p k p a A 体 通 检 未 置 2 界 别 赖 力 构 类 础 系 快 b . s . . . h . k . h . h . h . 核 A 系 句 H s t s 技 a a O 链 8 言 组 消 Q p 图 C t s : V T 际 真 s 0 理 d S c R 链 过 查 命 信 4 设 设 速 a c e e o i e o o o 心 的 话 u d t e 术 多 u t 正 个 V W 接 s 去 完 都 息 联 L a 谱 T i : s I s E 数 实 e 流 e e ( h Q 接 中 度 计 施 | 开 s 克 l s 配 n 安 n n 启 r 处 n 链 n 加 n 查 洞 k 知 * b o A s s 亮 平 d G 式 - i 到 &#34; 重 整 能 内 邦 r 中 t l a C c R 据 会 k 会 程 e . S e L * e S 阈 个 , 始 h 隆 o s 置 v 装 s 动 理 接 载 询 察 n 识 * : e P e s 点 台 e P 本 W O k , : 来 追 容 查 的 q 的 ? y a m E h ( 话 i 话 C k j Q * n Q → 值 精 L 谓 u e i i | i n i . - t r 单 - 实 - 到 - o 图 : s I s i 支 T 体 3 : i 1 &#34; &#34; 源 溯 , 询 l 实 l b e e L 的 成 o s L J 查 ( t L 选 L 词 s n s s n e o e m a F u 个 m 体 m m h w 谱 S [ s o 持 C 论 C 来 d k m 追 到 * S 体 o a e A &lt; m A 处 中 本 d o i e 询 上 i i L 0 谓 M e a P T d t n x l u n 会 到 F t l 只 e g F i n * o / * 源 a 亿 u e 溯 : 所 * E , c l s h a N 理 总 : e . n t n 下 t t a . 词 | s b a y e e h - a v l s 话 p p u p t e 是 s i a - o s * d I 追 t &#43; b d * 属 R W a d t : G 结 三 j ) e a 文 y e n 7 只 , l r p p g t g m e e - i W i s i p d 标 s t s u n e C S 溯 a e i * 会 V i l e ? ? t d ( 果 元 ~ s ) 感 _ g 能 e t e l r t r p n - k d p i p e p : g 签 i h t s s a u O , W r c 话 I k L v l w p e ? : 组 $ . o F 知 a 缓 G → 用 d s O O o a p a l v r i e k e k e / e 云 o u A e c ( r 链 i n a , C i a k o d s s w : 0 j n u , l 存 r 这 e , f f y t s p e l i l i l / . n b P s d r J s 标 S 接 k e t E d b g c : c i . s s A i a o 些 p , , e e : h r - i d i i l g 最 - . I - i o S o 准 I * i t i 平 a e : a . / r k 1 6 o z e g a p w 谓 e p d s / . v e n n a n n o r 小 g c - s s O r , O * d e o 台 关 t l E l / i i 3 0 n i k e s h l 词 n r h b O W / e e q a e t e e c a 可 r o r &gt; c s N 不 C a s n 来 键 a n L q p d 8 l p i n e : : d o a r n i g n n u m . a . . a p 行 a m e u L ( 造 : t &#34; &#34; 源 字 ? t a u t a , ( ) ) t s R s s v s o , t i v v i e j l l l h 的 p / l P s C ) 计 轮 对 a , , 让 的 w i b e i t 8 V i . e a O i P a h t r s i o h 提 h r a y s l , 划 子 话 &#34; 和 你 描 i t e r o a 0 e c j A m n d a d s , h &amp; e f o n a o w 取 o t d e a 中 : 结 条 K 磁 同 述 k y l y n D 2 r ) s c e , e r e t u &amp; m u n k d s i 单 让 b e a d u D ) 构 目 8 &#34; 盘 时 i . e , t : o t A s t r o c b e s l _ _ t t 元 你 e n d e , s m 文 查 d ; ; w ? s e ( n s r , , , r o . s n e _ e f : h 是 的 r t t a e e &#34; e 件 询 a i w c 索 x 2 a e e m c o t k t n u 3 o t o i u p S d 路 本 t k i r 引 4 标 g 链 q s e n s p o u s i o t s 0 u ( A o c t C S K 都 i 径 地 a i k i 会 A 准 e 接 u o x a I o m r . _ i e 3 t 主 I s P h o e O 解 c 图 D d i p 话 I 解 个 化 n i l t r n s / c t - r t k 0 语 h y e d e S 析 a 谱 e a d t 数 析 精 ( t r v e r , e r e x p d i i r , 编 i d n e k : 到 m 和 s t a i : b 为 选 1 e e n o s o t f e e 码 m a t 分 e c a t o a 谓 6 ( s s d w q W b 3 s o l 谓 会 i n i &#43; ( 类 Q n W r . a n 5 t R 词 1 L , , s e u i e v 0 p u a 词 话 z t c J 体 2 t i i o D ) 2 c D ) L , r e t r e 3 a t t , 不 u i a D S 系 2 o k p r e , h F 个 M b p r h t n 0 t - p i 再 / c t e O , 6 &#34; i t g s = ) 映 u r i | i , o v : h i u o 宾 是 s ? i e N 6 d i / c 提 射 &#43; i o m e s / 3 / n t n 语 一 e &#34; o p D 1 都 a o s r &#34; 取 ) l d p d a h b 0 t p / s ) 次 s n S z u 3 映 t n p i e 知 W t u l W l i i 3 o u * h , 性 s ? e i b 0 射 a a p n 识 i W c e i t m n 0 / t . i 不 的 i &#34; e p l 6 到 : W r t &#34; 三 L k i e m t e i / s t p 是 , o k ) i H q i ) 元 L i t s e h r z a s e o t s 而 n , n Q E l o 组 M d h n , n u c t s u l [ 是 - 1 R &gt; n : a | t a / t a s t i 主 可 g G C 2 E 提 t | s c t s i i i p s 题 查 r r o 1 { . ~ 取 a o i e v n o u 1 询 a o r 4 { 2 | n v s a / n t j , , p k e 0 , ( A f e s t j . / u 可 h : 5 s P i T i e e j * s 主 关 ] ( 元 0 , I g o o n s . t 题 联 ( J 数 0 p ) u , n a o t 2 , h S 据 &#43; , r - - n t a , 可 t O , , o e s g f l l 扩 t N ) s e r u t 主 展 p ) S 不 r a s o a 题 的 s , c 同 | p e u g 3 知 : h 实 e h k t o ] 识 / W e 体 s . i p u c . 资 / a m : A g u t l 产 g r a s i t p o . i p . ~ , t / u u t o 4 s t d h ( r , r e . u S g 6 e s o b Q : 0 l s u T . L 代 0 a i t h c i 码 &#43; t o p e o t 实 , e n u m e 体 d . t m / ) W T t / i r i o t w n o k l i i b i k m e d i u r a d m t t a o a t v s a i h 链 _ a i 接 l b m 实 i l i 体 n e z : k u s e / ~ . x s 3 t t e 3 t r s % l a s , c i t o 支 i n 持 o - 平 n g 台 r : u a n p 4 i h t ) i s ( s u b j e c t , p r e d i c a t e , o b j e c t ) , n o t [ t o p i c 1 , t o p i c 2 , t o p i c 3 ] . &#34; </p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-20 23:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>11 分钟</span>&nbsp;·&nbsp;<span>2330 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Session-graph:把分散的 AI 编码会话变成可查询的知识图谱" href="https://claudeai.best/posts/hunter-2026022023/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771560433450_cover.jpg" alt="代码与机器学习">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">gskill:自动为编码 Agent 学习 Skills,用小模型训练,迁移到大模型
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>给编码 Agent 写 Skills 是门艺术.写得好,效率翻倍;写得不好,agent 迷路.
+" → " → # - - 组 - - - - 每 - S ` # S # 5 - - # C D G W 1 2 3 4 # 封 # ` # g c # c # p p # d # p # p # p # # > 没 G H W # * * 合 * * 个 * P ` E ? r o S ? F } # 2 # l e r a A S * . . . . # 闭 # ` i d p y i o y y y # 有 * i o F h 3 # 1 C C 2 P 3 实 " 跨 4 三 具 5 A ` 本 L e d w E w I F 6 a e o r p P 实 世 类 依 能 结 分 基 关 ` 1 t 2 3 t p 4 c 5 t 6 t 7 t 8 " 关 一 t w a a . l h . 5 R . 体 k 语 . 元 体 . R s 地 E n f l R d L 实 个 u 0 处 u p k p a A 体 通 检 未 置 2 界 别 赖 力 构 类 础 系 快 b . s . . . h . k . h . h . h . 核 A 系 句 H s t s 技 a a O 链 8 言 组 消 Q p 图 C t s : V T 际 真 s 0 理 d S c R 链 过 查 命 信 4 设 设 速 a c e e o i e o o o 心 的 话 u d t e 术 多 u t 正 个 V W 接 s 去 完 都 息 联 L a 谱 T i : s I s E 数 实 e 流 e e ( h Q 接 中 度 计 施 | 开 s 克 l s 配 n 安 n n 启 r 处 n 链 n 加 n 查 洞 k 知 * b o A s s 亮 平 d G 式 - i 到 " 重 整 能 内 邦 r 中 t l a C c R 据 会 k 会 程 e . S e L * e S 阈 个 , 始 h 隆 o s 置 v 装 s 动 理 接 载 询 察 n 识 * : e P e s 点 台 e P 本 W O k , : 来 追 容 查 的 q 的 ? y a m E h ( 话 i 话 C k j Q * n Q → 值 精 L 谓 u e i i | i n i . - t r 单 - 实 - 到 - o 图 : s I s i 支 T 体 3 : i 1 " " 源 溯 , 询 l 实 l b e e L 的 成 o s L J 查 ( t L 选 L 词 s n s s n e o e m a F u 个 m 体 m m h w 谱 S [ s o 持 C 论 C 来 d k m 追 到 * S 体 o a e A &lt; m A 处 中 本 d o i e 询 上 i i L 0 谓 M e a P T d t n x l u n 会 到 F t l 只 e g F i n * o / * 源 a 亿 u e 溯 : 所 * E , c l s h a N 理 总 : e . n t n 下 t t a . 词 | s b a y e e h - a v l s 话 p p u p t e 是 s i a - o s * d I 追 t + b d * 属 R W a d t : G 结 三 j ) e a 文 y e n 7 只 , l r p p g t g m e e - i W i s i p d 标 s t s u n e C S 溯 a e i * 会 V i l e ? ? t d ( 果 元 ~ s ) 感 _ g 能 e t e l r t r p n - k d p i p e p : g 签 i h t s s a u O , W r c 话 I k L v l w p e ? : 组 $ . o F 知 a 缓 G → 用 d s O O o a p a l v r i e k e k e / e 云 o u A e c ( r 链 i n a , C i a k o d s s w : 0 j n u , l 存 r 这 e , f f y t s p e l i l i l / . n b P s d r J s 标 S 接 k e t E d b g c : c i . s s A i a o 些 p , , e e : h r - i d i i l g 最 - . I - i o S o 准 I * i t i 平 a e : a . / r k 1 6 o z e g a p w 谓 e p d s / . v e n n a n n o r 小 g c - s s O r , O * d e o 台 关 t l E l / i i 3 0 n i k e s h l 词 n r h b O W / e e q a e t e e c a 可 r o r > c s N 不 C a s n 来 键 a n L q p d 8 l p i n e : : d o a r n i g n n u m . a . . a p 行 a m e u L ( 造 : t " " 源 字 ? t a u t a , ( ) ) t s R s s v s o , t i v v i e j l l l h 的 p / l P s C ) 计 轮 对 a , , 让 的 w i b e i t 8 V i . e a O i P a h t r s i o h 提 h r a y s l , 划 子 话 " 和 你 描 i t e r o a 0 e c j A m n d a d s , h & e f o n a o w 取 o t d e a 中 : 结 条 K 磁 同 述 k y l y n D 2 r ) s c e , e r e t u & m u n k d s i 单 让 b e a d u D ) 构 目 8 " 盘 时 i . e , t : o t A s t r o c b e s l _ _ t t 元 你 e n d e , s m 文 查 d ; ; w ? s e ( n s r , , , r o . s n e _ e f : h 是 的 r t t a e e " e 件 询 a i w c 索 x 2 a e e m c o t k t n u 3 o t o i u p S d 路 本 t k i r 引 4 标 g 链 q s e n s p o u s i o t s 0 u ( A o c t C S K 都 i 径 地 a i k i 会 A 准 e 接 u o x a I o m r . _ i e 3 t 主 I s P h o e O 解 c 图 D d i p 话 I 解 个 化 n i l t r n s / c t - r t k 0 语 h y e d e S 析 a 谱 e a d t 数 析 精 ( t r v e r , e r e x p d i i r , 编 i d n e k : 到 m 和 s t a i : b 为 选 1 e e n o s o t f e e 码 m a t 分 e c a t o a 谓 6 ( s s d w q W b 3 s o l 谓 会 i n i + ( 类 Q n W r . a n 5 t R 词 1 L , , s e u i e v 0 p u a 词 话 z t c J 体 2 t i i o D ) 2 c D ) L , r e t r e 3 a t t , 不 u i a D S 系 2 o k p r e , h F 个 M b p r h t n 0 t - p i 再 / c t e O , 6 " i t g s = ) 映 u r i | i , o v : h i u o 宾 是 s ? i e N 6 d i / c 提 射 + i o m e s / 3 / n t n 语 一 e " o p D 1 都 a o s r " 取 ) l d p d a h b 0 t p / s ) 次 s n S z u 3 映 t n p i e 知 W t u l W l i i 3 o u * h , 性 s ? e i b 0 射 a a p n 识 i W c e i t m n 0 / t . i 不 的 i " e p l 6 到 : W r t " 三 L k i e m t e i / s t p 是 , o k ) i H q i ) 元 L i t s e h r z a s e o t s 而 n , n Q E l o 组 M d h n , n u c t s u l [ 是 - 1 R > n : a | t a / t a s t i 主 可 g G C 2 E 提 t | s c t s i i i p s 题 查 r r o 1 { . ~ 取 a o i e v n o u 1 询 a o r 4 { 2 | n v s a / n t j , , p k e 0 , ( A f e s t j . / u 可 h : 5 s P i T i e e j * s 主 关 ] ( 元 0 , I g o o n s . t 题 联 ( J 数 0 p ) u , n a o t 2 , h S 据 + , r - - n t a , 可 t O , , o e s g f l l 扩 t N ) s e r u t 主 展 p ) S 不 r a s o a 题 的 s , c 同 | p e u g 3 知 : h 实 e h k t o ] 识 / W e 体 s . i p u c . 资 / a m : A g u t l 产 g r a s i t p o . i p . ~ , t / u u t o 4 s t d h ( r , r e . u S g 6 e s o b Q : 0 l s u T . L 代 0 a i t h c i 码 + t o p e o t 实 , e n u m e 体 d . t m / ) W T t / i r i o t w n o k l i i b i k m e d i u r a d m t t a o a t v s a i h 链 _ a i 接 l b m 实 i l i 体 n e z : k u s e / ~ . x s 3 t t e 3 t r s % l a s , c i t o 支 i n 持 o - 平 n g 台 r : u a n p 4 i h t ) i s ( s u b j e c t , p r e d i c a t e , o b j e c t ) , n o t [ t o p i c 1 , t o p i c 2 , t o p i c 3 ] . "</p></div><footer class=entry-footer><span title='2026-02-20 23:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>11 分钟</span>&nbsp;·&nbsp;<span>2330 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Session-graph:把分散的 AI 编码会话变成可查询的知识图谱" href=https://claudeai.best/posts/hunter-2026022023/></a></article><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771560433450_cover.jpg alt=代码与机器学习></figure><header class=entry-header><h2 class=entry-hint-parent>gskill:自动为编码 Agent 学习 Skills,用小模型训练,迁移到大模型</h2></header><div class=entry-content><p>给编码 Agent 写 Skills 是门艺术.写得好,效率翻倍;写得不好,agent 迷路.
 问题是:手动写 Skills 太累了,而且每个仓库都需要定制.
 GEPA 刚发布了 gskill,一个全自动化的技能学习管线.给定任意 GitHub 仓库,它会自动生成最适合这个仓库的 Agent Skills.
 最关键的是:用便宜的小模型学出来的技能,可以直接迁移到 Claude Code 上用.
 核心思路 gskill 由两个组件组成:
 SWE-smith:从目标仓库自动生成可验证的 SWE 任务(带测试) GEPA optimize_anything:进化式优化循环,自动学习和改进 Skills 流程:
-仓 优 # # J B B # 技 - - - # 以 ` # - - - # - - - 这 # 团 公 用 # ` # g c # p # c 官 G 库 化 # # i l l # 能 * * * # ` # - - - # 些 # * 队 * 司 * # ` i d y p * 网 i 循 # n e e # 是 B C C J C 关 B ` S F F C A A 场 来 场 有 场 g ` 克 t 使 t 将 一 : t → 环 效 j v v 在 l l l i l 键 学 l m R t N p s o o M h d v S 应 景 了 景 几 景 p 快 b 隆 g 用 h s 句 [ H 的 果 在 a e e 迁 e a a n a 发 到 e a u a a a i r r a a d o k 用 一 新 二 十 三 t 速 a c e o S k 话 g u S 原 有 , , 移 g v u u j u 现 的 v r n r r c n k n i i 场 : 人 : 个 : - 开 s G l p g n k i * e b W 理 多 M 是 到 p e d d a d * e k t r k g p m e g f d l 景 新 , 批 内 成 5 始 h E o a s i l * p : E : 强 i 基 基 t ( e e ( e * S d t o a l a i e o l 项 要 量 部 本 - P n k g l l : a [ - 从 ? n 线 线 G C - G P : k 为 o e b w g e n s m c s s 目 快 优 仓 优 m A e i s l s g - g s 空 i = = o l 5 o H S y H 你 i 例 w s r e i m i o u c 上 速 化 库 化 i l k s / s a i m / - 5 2 a - a o t a 可 l , n t o q : t c a n n s r 是 手 上 内 , * n h l i j k i t i 基 S 5 4 项 u m 项 i n h i 以 l 自 s a u e s t i e e a 从 * 手 部 每 * i t l 复 i i . h t 础 W % % 目 d i 目 k n o k 用 s 动 d i ` s : c m d t * 一 仓 个 t 学 l 制 n l g u h E , , , e n ) u e n u 便 学 e : c g t h a b c A 个 库 都 学 p 习 . 到 j l i b S - 说 i * t 宜 长 到 a k o : f e l e u h g 复 * 配 习 s 任 p a t . 生 k A 加 加 明 C * 4 项 4 的 什 的 r ` l o s , h n e 杂 * : 意 y C / 让 h c 成 i g 这 o 上 : . 4 目 . 小 么 l c y t ` l : a i m n 仓 S S / 仓 l S u o 任 l e S S 套 d 学 5 . ) 5 模 样 S y d : e g l r v t a t 库 k k / 库 a K S b m 务 l n k k 框 e 的 : 5 * : 型 ? k s o o u e i i . i i g 的 - u I k . / s t i i 架 , 7 : * 9 学 i a / t w s v o t n 的 用 l l i r d L i i g → ( l l 不 但 9 通 : 3 习 l n t t e i r e . 成 l l t S e e L l o e 开 g l l 仅 可 . 过 . l d e e t e s g 功 g s s h k p . l / p G 始 p s s 限 以 3 率 9 S s s / s h &#34; w a t o 和 s ( u i o C m s g a E , t 于 直 % 饱 % k i t p t e e a t s 失 k 太 便 b l o d e - P 让 - 后 后 接 和 i 包 t b a x b f 败 i 贵 宜 . l p d 从 p a A 5 = = P 用 → , → l 含 e e t s p l a w i 中 l . ) c s a e / &#34; a i A - 8 9 y 在 但 l : r d h t e e h l 学 l 用 , o l p 手 ] / 优 g m 2 3 t 1 时 9 s a p a c t e e 到 然 m l 项 a 工 ( g 化 e i % % h C 0 间 8 , t &amp; t a c t c i n s 的 自 g 后 / e 目 t 编 h e 循 n n , , o l 0 显 . 然 e &amp; o t k e h m , 动 s 在 g t h 写 t p 环 t i n a % 著 5 后 / h d a e c i 针 生 k e s / &#34; t a 迭 ) 提 提 . u , 减 % 部 f g p / t n ; o n 对 成 i C p / t 变 p ] 代 执 上 升 升 d 时 少 署 r o k t r v g v 性 这 l l a j o 成 s ( 行 = = e 间 到 o g o a s e r e r 极 个 l a - i / &#34; : h S 任 &#43; * 生 m t ` / c s e r e 强 仓 u a n y 自 / t k 务 2 * C 1 产 e p e g r a p . 库 自 d i j o 动 / t i , 7 &#43; o 7 级 f s k o u g o 的 动 e / a u 学 g p l 收 % 6 d 3 的 a t g t t n e 学 g r 习 e s l 集 9 e s i o &#34; r S 习 S e / &#34; p : s 反 % A l - p t i o k , o p p . a / 馈 * 上 → g u r t h s o i 一 n a o r 用 - / → , * : e r u f o e t l 次 n . u o 小 a g 然 1 n e n r m . l 配 e g t j 模 i i 输 后 4 t s . a l s i s 置 t i p e 型 . t 出 用 2 ` T m o m s , , t u c 训 g h 更 s 上 e e c a s 新 全 4 t t 练 i u S 强 . s a l i 人 公 . / , t b K 的 t i t l n 司 5 s . 大 h . I N n e e g &#43; 受 k c 模 u c L L a s . 益 上 i l 型 b o L L m r t t A . 部 l a 部 . m . M e e h I 署 l u 署 i m p e r ( s d , g d 反 - o e A 准 / e 成 / e 思 c p p g 确 j / 本 g p 这 o c r r e ) i s 降 e a 些 u o o o n . n k , p - 结 n d d d t 成 j i 效 a a 果 t e u u 本 a l 果 / i , = c c 都 和 / l 升 ) / 提 1 f i i 能 效 S s . g 出 ` i n n 更 果 K / e 改 r g g 快 兼 I j p 进 s 理 得 L i a 建 t f t 解 . L n ) 议 . u e 项 . j , n s 目 m a 迭 c t . d / 代 t 优 i a 化 o f . n t . e r e a c h c h a n g e . </p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-20 12:08:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>8 分钟</span>&nbsp;·&nbsp;<span>1676 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to gskill:自动为编码 Agent 学习 Skills,用小模型训练,迁移到大模型" href="https://claudeai.best/posts/hunter-2026022012/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771524416090_cover.jpg" alt="AI 编码实战 - Claude Code 案例分享">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">别信没用过 Claude Code 的 AI 批评者:三个真实案例
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Matt Shumer 发了篇文章说「大事正在发生」.AI 批评者们跳出来批评–说 AI 不能「真正思考」,不能「创造新东西」.
+仓 优 # # J B B # 技 - - - # 以 ` # - - - # - - - 这 # 团 公 用 # ` # g c # p # c 官 G 库 化 # # i l l # 能 * * * # ` # - - - # 些 # * 队 * 司 * # ` i d y p * 网 i 循 # n e e # 是 B C C J C 关 B ` S F F C A A 场 来 场 有 场 g ` 克 t 使 t 将 一 : t → 环 效 j v v 在 l l l i l 键 学 l m R t N p s o o M h d v S 应 景 了 景 几 景 p 快 b 隆 g 用 h s 句 [ H 的 果 在 a e e 迁 e a a n a 发 到 e a u a a a i r r a a d o k 用 一 新 二 十 三 t 速 a c e o S k 话 g u S 原 有 , , 移 g v u u j u 现 的 v r n r r c n k n i i 场 : 人 : 个 : - 开 s G l p g n k i * e b W 理 多 M 是 到 p e d d a d * e k t r k g p m e g f d l 景 新 , 批 内 成 5 始 h E o a s i l * p : E : 强 i 基 基 t ( e e ( e * S d t o a l a i e o l 项 要 量 部 本 - P n k g l l : a [ - 从 ? n 线 线 G C - G P : k 为 o e b w g e n s m c s s 目 快 优 仓 优 m A e i s l s g - g s 空 i = = o l 5 o H S y H 你 i 例 w s r e i m i o u c 上 速 化 库 化 i l k s / s a i m / - 5 2 a - a o t a 可 l , n t o q : t c a n n s r 是 手 上 内 , * n h l i j k i t i 基 S 5 4 项 u m 项 i n h i 以 l 自 s a u e s t i e e a 从 * 手 部 每 * i t l 复 i i . h t 础 W % % 目 d i 目 k n o k 用 s 动 d i ` s : c m d t * 一 仓 个 t 学 l 制 n l g u h E , , , e n ) u e n u 便 学 e : c g t h a b c A 个 库 都 学 p 习 . 到 j l i b S - 说 i * t 宜 长 到 a k o : f e l e u h g 复 * 配 习 s 任 p a t . 生 k A 加 加 明 C * 4 项 4 的 什 的 r ` l o s , h n e 杂 * : 意 y C / 让 h c 成 i g 这 o 上 : . 4 目 . 小 么 l c y t ` l : a i m n 仓 S S / 仓 l S u o 任 l e S S 套 d 学 5 . ) 5 模 样 S y d : e g l r v t a t 库 k k / 库 a K S b m 务 l n k k 框 e 的 : 5 * : 型 ? k s o o u e i i . i i g 的 - u I k . / s t i i 架 , 7 : * 9 学 i a / t w s v o t n 的 用 l l i r d L i i g → ( l l 不 但 9 通 : 3 习 l n t t e i r e . 成 l l t S e e L l o e 开 g l l 仅 可 . 过 . l d e e t e s g 功 g s s h k p . l / p G 始 p s s 限 以 3 率 9 S s s / s h " w a t o 和 s ( u i o C m s g a E , t 于 直 % 饱 % k i t p t e e a t s 失 k 太 便 b l o d e - P 让 - 后 后 接 和 i 包 t b a x b f 败 i 贵 宜 . l p d 从 p a A 5 = = P 用 → , → l 含 e e t s p l a w i 中 l . ) c s a e / " a i A - 8 9 y 在 但 l : r d h t e e h l 学 l 用 , o l p 手 ] / 优 g m 2 3 t 1 时 9 s a p a c t e e 到 然 m l 项 a 工 ( g 化 e i % % h C 0 间 8 , t & t a c t c i n s 的 自 g 后 / e 目 t 编 h e 循 n n , , o l 0 显 . 然 e & o t k e h m , 动 s 在 g t h 写 t p 环 t i n a % 著 5 后 / h d a e c i 针 生 k e s / " t a 迭 ) 提 提 . u , 减 % 部 f g p / t n ; o n 对 成 i C p / t 变 p ] 代 执 上 升 升 d 时 少 署 r o k t r v g v 性 这 l l a j o 成 s ( 行 = = e 间 到 o g o a s e r e r 极 个 l a - i / " : h S 任 + * 生 m t ` / c s e r e 强 仓 u a n y 自 / t k 务 2 * C 1 产 e p e g r a p . 库 自 d i j o 动 / t i , 7 + o 7 级 f s k o u g o 的 动 e / a u 学 g p l 收 % 6 d 3 的 a t g t t n e 学 g r 习 e s l 集 9 e s i o " r S 习 S e / " p : s 反 % A l - p t i o k , o p p . a / 馈 * 上 → g u r t h s o i 一 n a o r 用 - / → , * : e r u f o e t l 次 n . u o 小 a g 然 1 n e n r m . l 配 e g t j 模 i i 输 后 4 t s . a l s i s 置 t i p e 型 . t 出 用 2 ` T m o m s , , t u c 训 g h 更 s 上 e e c a s 新 全 4 t t 练 i u S 强 . s a l i 人 公 . / , t b K 的 t i t l n 司 5 s . 大 h . I N n e e g + 受 k c 模 u c L L a s . 益 上 i l 型 b o L L m r t t A . 部 l a 部 . m . M e e h I 署 l u 署 i m p e r ( s d , g d 反 - o e A 准 / e 成 / e 思 c p p g 确 j / 本 g p 这 o c r r e ) i s 降 e a 些 u o o o n . n k , p - 结 n d d d t 成 j i 效 a a 果 t e u u 本 a l 果 / i , = c c 都 和 / l 升 ) / 提 1 f i i 能 效 S s . g 出 ` i n n 更 果 K / e 改 r g g 快 兼 I j p 进 s 理 得 L i a 建 t f t 解 . L n ) 议 . u e 项 . j , n s 目 m a 迭 c t . d / 代 t 优 i a 化 o f . n t . e r e a c h c h a n g e .</p></div><footer class=entry-footer><span title='2026-02-20 12:08:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>8 分钟</span>&nbsp;·&nbsp;<span>1676 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to gskill:自动为编码 Agent 学习 Skills,用小模型训练,迁移到大模型" href=https://claudeai.best/posts/hunter-2026022012/></a></article><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771524416090_cover.jpg alt="AI 编码实战 - Claude Code 案例分享"></figure><header class=entry-header><h2 class=entry-hint-parent>别信没用过 Claude Code 的 AI 批评者:三个真实案例</h2></header><div class=entry-content><p>Matt Shumer 发了篇文章说「大事正在发生」.AI 批评者们跳出来批评–说 AI 不能「真正思考」,不能「创造新东西」.
 作者的观点很简单:这些批评者没用过 Claude Code.
 如果他们用过,就不会说这些话了.
 三个真实案例 作者分享了三个他用 Claude Code 完成的真实任务.
 案例 1:AWS 成本分析 问题:计算扩展客户账号的边际成本.
 复杂度:
 AWS 成本有固定,阶梯式,变量式, 需要分析 3 个月账单数据, 需要关联使用量到具体操作 Claude Code 做的事:
-读取 AWS 账单工具 读取 Google BigQuery 使用数据 对每个变量成本做线性回归 输出成本分析报告(JSON &#43; 文字说明) 结果:1 小时完成,原本需要 1 天.
+读取 AWS 账单工具 读取 Google BigQuery 使用数据 对每个变量成本做线性回归 输出成本分析报告(JSON + 文字说明) 结果:1 小时完成,原本需要 1 天.
 案例 2:合规问卷自动化 问题:每签一个新客户,要填 100-200 题的合规问卷.
 痛点:
 问题类似但表述不同, 需要翻旧问卷找答案, 每份花几小时 创建「知识库」文件–所有问题的标准答案 自动映射新问题到知识库 自动填充,按置信度标色(绿/黄/红) 效果:
@@ -376,94 +74,8 @@ AWS 成本有固定,阶梯式,变量式, 需要分析 3 个月账单数据, 需�
 案例 3:Word 文件调试工具 问题:Docx 文件格式难搞,经常打不开.
 传统工作流:
 解压 docx 提取 XML 编辑 重打包 测试能否打开 重复…… Claude Code 做的事:用 Google AI Studio 做了一个专门的工具:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-20 02:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>133 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to 别信没用过 Claude Code 的 AI 批评者:三个真实案例" href="https://claudeai.best/posts/hunter-2026022002/"></a>
-</article>
-<footer class="page-footer">
-  <nav class="pagination">
-    <a class="next" href="https://claudeai.best/tags/claude-code/page/2/">下一页&nbsp;&nbsp;»
-    </a>
-  </nav>
-</footer>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2026 <a href="https://claudeai.best/">AI 极客前沿</a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu');
-    if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            html.dataset.theme = 'dark';
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-</body>
-
-</html>
+...</p></div><footer class=entry-footer><span title='2026-02-20 02:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>133 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to 别信没用过 Claude Code 的 AI 批评者:三个真实案例" href=https://claudeai.best/posts/hunter-2026022002/></a></article><footer class=page-footer><nav class=pagination><a class=next href=https://claudeai.best/tags/claude-code/page/2/>下一页&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><span>&copy; 2026 <a href=https://claudeai.best/>AI 极客前沿</a></span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");if(menu){const e=localStorage.getItem("menu-scroll-position");e&&(menu.scrollLeft=parseInt(e,10)),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}}document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{const e=document.querySelector("html");e.dataset.theme==="dark"?(e.dataset.theme="light",localStorage.setItem("pref-theme","light")):(e.dataset.theme="dark",localStorage.setItem("pref-theme","dark"))})</script></body></html>
