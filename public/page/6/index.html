@@ -185,6 +185,73 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771686593499_cover.jpg" alt="MailCat - AI Agent 邮箱">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">MailCat:给 AI Agent 一个自己的邮箱,自动提取验证码
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>刚发现一个解决 AI Agent 痛点的工具:MailCat ️
+谁能用? AI Agent 能浏览网页,写代码,自动化工作流,但遇到&#34;请验证邮箱&#34;就卡住了.
+MailCat 给 Agent 一个自己的邮箱:
+一键创建邮箱,不用注册, 自动提取验证码, 自动提取邮件里的链接 怎么用? import requests # 创建邮箱 r = requests.post(&#34;https://api.mailcat.ai/mailboxes&#34;) data = r.json()[&#34;data&#34;] email = data[&#34;email&#34;] # swift-coral-42@mailcat.ai token = data[&#34;token&#34;] # 检查收件箱 inbox = requests.get( &#34;https://api.mailcat.ai/inbox&#34;, headers={&#34;Authorization&#34;: f&#34;Bearer {token}&#34;} ).json() # 获取验证码(自动提取!) if inbox[&#34;data&#34;]: email_response = requests.get( f&#34;https://api.mailcat.ai/emails/{inbox[&#39;data&#39;][0][&#39;id&#39;]}&#34;, print(f&#34;验证码: {email_response[&#39;data&#39;][&#39;code&#39;]}&#34;) # 自动提取! 好在哪? 一键创建: API 调用即可,无需注册 自动提取: 验证码,链接自动从邮件解析 隐私优先: 邮件 1 小时后自动删除 自托管: 可部署到自己的 Cloudflare(免费) 开源: MIT 许可证 集成 Python SDK, JavaScript SDK, LangChain Tool, AutoGPT 插件, n8n Workflow, GitHub Action 试试看 告诉 Agent:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 23:10:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>129 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to MailCat:给 AI Agent 一个自己的邮箱,自动提取验证码" href="https://claudeai.best/posts/hunter-2026022123/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771679483845_cover.jpg" alt="zclaw - ESP32 AI 助手">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">zclaw:888 KB 的 AI 助手,跑在 ESP32 上
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>发现一个有意思的东西:zclaw
+888 KB 的 AI 助手,跑在 ESP32 上.
+谁能用? 喜欢折腾硬件的,想要离线 AI 助手的,IoT 开发者.
+怎么用 一键安装:
+bash &lt;(curl -fsSL https://raw.githubusercontent.com/tnm/zclaw/main/scripts/bootstrap.sh) 然后:
+烧录固件到 ESP32 配置 WiFi &#43; LLM 凭证 通过 Telegram 或 Web 聊天 功能 Telegram / Web 聊天 时区感知的计划任务(每天,周期,一次性), GPIO 读写控制(带安全保护), 持久内存(重启不丢), 多 Provider:Anthropic,OpenAI,OpenRouter 硬件 支持 ESP32-C3,ESP32-S3,ESP32-C6.
+推荐入门板:Seeed XIAO ESP32-C3(几块钱)
+跟云端助手比? 离线运行(WiFi 只是调用 API), 你的硬件,你的数据, 可以控制 GPIO(智能家居), 888 KB,你能读完源码 链接 GitHub: https://github.com/tnm/zclaw 文档: https://zclaw.dev Fun to use, fun to hack on
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 21:05:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>70 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to zclaw:888 KB 的 AI 助手,跑在 ESP32 上" href="https://claudeai.best/posts/hunter-2026022121/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771675774516_cover.jpg" alt="Memed-in - LinkedIn 表情包扩展">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Memed-in:把 LinkedIn 信息流变成表情包,专治职场凡尔赛
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>发现一个有意思的东西:Memed-in
+一个 Chrome 扩展,把 LinkedIn 帖子变成表情包.
+谁能用? LinkedIn 重度用户,受够了:
+“Excited to announce…” “Thrilled to share…” “Humblwed to be nominated…” 怎么用 安装 Chrome 扩展 打开 LinkedIn 每个帖子旁边会出现一个安静的小按钮 点击 → AI 生成&#34;诚实版&#34;总结 效果 原文:
+Excited to announce I’ve been promoted to Senior Manager!
+AI 总结:
+“My boss finally noticed me”
+Thrilled to share our Q3 results exceeded expectations!
+“Please don’t fire me”
+有啥特别的? 安静的设计:不打扰,想用才点, 本地运行:不收集数据, 开源:想改就改 链接 GitHub: https://github.com/taman-islam/memed-in 让 LinkedIn 不再那么… LinkedIn
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 20:04:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>71 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Memed-in:把 LinkedIn 信息流变成表情包,专治职场凡尔赛" href="https://claudeai.best/posts/hunter-2026022120/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771672208451_cover.jpg" alt="Claude Code Open - 开源 AI 编程平台">
 </figure>
   <header class="entry-header">
@@ -340,77 +407,6 @@ GitHub: https://github.com/thedaviddias/skill-check
   </div>
   <footer class="entry-footer"><span title='2026-02-21 13:04:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>67 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Script Snap:从视频里自动提取代码,99% 技术术语准确" href="https://claudeai.best/posts/hunter-2026022113/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771647084039_cover.jpg" alt="TabType - macOS 文本扩展">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">TabType:能自动识别项目的 macOS 文本扩展,;; 就能补全分支名
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>刚发现一个有意思的macOS 工具:TabType ⌨️
-谁能用? 每天重复打相同东西的人:git 分支名,文件路径,npm 脚本,常用的回复模板…
-传统文本扩展工具(TextExpander,Espanso)的问题是:你得手动配置所有内容.
-TabType 的做法:自动发现项目上下文,零配置.
-用法:在任何应用里输入 ;;,弹出补全菜单.
-有什么特别的? 项目感知: 自动识别 git 分支,文件路径,npm 脚本,Makefile 目标,.env 变量 作用域搜索: ;;@git 查分支,;;@f 查文件,;;@npm 查脚本 上下文切换: 终端和浏览器显示不同补全,工作项目和副业项目不同补全 隐私优先: 无账号,无遥测,完全本地运行 配合 Claude Code 或 Cursor 用很香:输入 ;; 直接补全 skill 名称,文档文件路径.
-和 Espanso 比呢? Espanso:免费开源,但需要手动配置 YAML TabType:$9.99 一次买断,自动发现 &#43; 可自定义 我试了一下,确实零配置就能用.打开终端,;;@git 直接列出所有分支,选一个就插入.
-试试看 14 天免费试用,不用信用卡:https://tabtype.app
-买断价 $9.99,终身授权,支持 2 台 Mac.
-时效性验证 HN 提交时间: 48 分钟前(TabType – Universal text expansion for macOS) 搜索引擎最早时间: HN 首发 48 分钟前,网站为新发布产品 结论: 最早时间 ≤ 2 小时,符合新鲜热点标准 </p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-21 12:10:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>79 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to TabType:能自动识别项目的 macOS 文本扩展,;; 就能补全分支名" href="https://claudeai.best/posts/hunter-2026022112/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771643438878_cover.jpg" alt="CRTX - AI代码验证循环">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">CRTX:让 AI 生成代码后自己跑测试,自己修 bug
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>刚发现一个有意思的CLI 工具:CRTX ️
-谁能用? AI 生成代码最头疼的是什么?跑不起来.导入报错,测试失败,边界情况没处理.拿到代码还得花 10-30 分钟调试.
-CRTX 解决这个问题:生成后自动跑测试,失败就自动修复.
-用法很简单:
-pip install crtx crtx loop &#34;Build a REST API with FastAPI, SQLite, search and pagination&#34; 一条命令进去,出来的是已经通过测试的代码.
-怎么做到的? CRTX 的核心是 Generate → Test → Fix → Review 循环:
-Generate - 选合适的模型生成代码 Test - 本地跑 AST 解析,导入检查,pyflakes,pytest Fix - 测试失败?把错误喂回模型让它修 Review - 另一个独立模型(Arbiter)审查最终输出 测试不通过不放行,修复卡住会启动三级 escalation:先诊断根因,再简化上下文重试,最后换个模型给&#34;第二意见&#34;.
-比别的工具有什么优势? 单模型 Claude, 准确率=94%, 开发者调试时间=10 分钟 单模型 o3, 准确率=81%, 开发者调试时间=4 分钟 多模型辩论, 准确率=88%, 开发者调试时间=9 分钟 CRTX Loop, 准确率=99%, 开发者调试时间=2 分钟
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-21 11:08:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>123 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to CRTX:让 AI 生成代码后自己跑测试,自己修 bug" href="https://claudeai.best/posts/hunter-2026022111/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771639881393_cover.jpg" alt="Cord - AI Agent 协调树">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Cord:让 AI Agent 自己决定如何分解任务,动态构建执行树
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>一句话总结 Cord 让 AI Agent 自己决定如何分解任务–不是预定义工作流,而是 Agent 在运行时动态构建任务树,自动管理依赖,并行执行和上下文传递.
-现有框架的问题 多 Agent 框架正在爆发,但它们都在解决错误的问题:
-LangGraph, 方式=状态机,预定义节点和边, 问题=图是静态的,Agent 无法中途改变分解方式 CrewAI, 方式=角色扮演(研究员,分析师,作家), 问题=角色由开发者预设,Agent 不能动态调整团队 AutoGen, 方式=群聊模式, 问题=无结构,无依赖追踪,协调从对话中涌现,难以预测 OpenAI Swarm, 方式=轻量级 Agent 切换, 问题=线性执行,无并行,无树结构 Claude Tool-use, 方式=单 Agent 循环, 问题=上下文窗口限制,无法并行
-共同问题:所有框架都要求开发者预定义协调结构.你决定工作流图,Agent 角色,切换模式.Agent 在你的边界内执行.
-但现在的模型(Claude,GPT-4)已经很擅长规划.它们能自然地将问题分解为子问题,理解依赖关系,知道什么时候任务太大需要拆分.
-那为什么还要硬编码分解逻辑?
-Cord 的解法:让 Agent 构建树 Cord 的核心洞察:给 Agent 一个目标,让它自己决定如何分解.
-使用示例 cord run &#34;Should we migrate our API from REST to GraphQL? Evaluate and recommend.&#34; 一个 Agent 启动,读取目标,决定需要研究才能回答,然后创建子任务:
-● #1 [active] GOAL Should we migrate our API from REST to GraphQL? ● #2 [active] SPAWN Audit current REST API surface ● #3 [active] SPAWN Research GraphQL trade-offs for our stack ○ #4 [pending] ASK How many concurrent users do you serve? blocked-by: #2 ○ #5 [pending] FORK Comparative analysis blocked-by: #3, #4 ○ #6 [pending] SPAWN Write migration recommendation blocked-by: #5
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-21 10:11:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>352 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Cord:让 AI Agent 自己决定如何分解任务,动态构建执行树" href="https://claudeai.best/posts/hunter-2026022110/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

@@ -161,6 +161,39 @@
 
 <article class="post-entry tag-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771322741608_cover.jpg" alt="AI Agent安全威胁示意图">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">你的AI助手正在被偷:OpenClaw成为信息窃取恶意软件的新目标
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>你每天跟AI助手聊的那些事儿–日程,邮件,工作计划,私密对话–如果被人偷走了呢?
+这不是假设.2月16日,网络安全公司Hudson Rock公布了一个真实案例:信息窃取恶意软件(Infostealer)首次成功窃取了OpenClaw用户的完整配置环境.
+发生了什么 一个Vidar变种恶意软件在2月13日感染了某用户的机器.这个恶意软件本身并不是专门针对OpenClaw设计的–它只是按照常规套路,扫描硬盘上包含&#34;token&#34;,“private key&#34;等关键词的文件.
+问题在于,OpenClaw的 .openclaw 目录恰好满足了所有条件.
+被偷走的文件包括:
+openclaw.json — 包含Gateway认证令牌,用户邮箱,工作区路径.拿到这个,攻击者可以远程连接你的OpenClaw实例(如果端口暴露的话),或者伪装成你的客户端发起认证请求. device.json — 包含用于设备配对和签名的公私钥对.有了私钥,攻击者可以绕过&#34;安全设备&#34;检查,解密日志,访问与设备绑定的云服务. soul.md 和记忆文件 — 这才是最让人后背发凉的:你的Agent的行为准则,日常活动日志,私密消息,日历事件……你跟AI助手说过的一切. Hudson Rock的CTO Alon Gal说得很直白:“这不再是偷浏览器密码那么简单了,这是在偷AI的’灵魂’和身份.”
+为什么这件事很严重 OpenClaw在GitHub上已经有超过20万Star.它不是一个玩具–越来越多人把它当作日常工作助手在用,连接着邮箱,日历,文件系统,各种API.
+这意味着一个被窃取的OpenClaw环境,基本等于:
+完整的数字身份 — 你是谁,你在做什么,你的习惯和偏好 API密钥集合 — Claude,GPT,各种云服务的认证凭据 社交工程金矿 — 足够的上下文信息来冒充你 而且这只是&#34;顺手牵羊&#34;的结果.想象一下,当恶意软件作者开始专门为OpenClaw开发窃取模块–就像他们现在对Chrome和Telegram做的那样–情况会有多糟糕.
+更大的安全图景 这个事件只是冰山一角.最近围绕OpenClaw的安全问题密集爆发:
+恶意Skills供应链攻击:OpenSourceMalware团队发现了一种新型攻击手法–恶意Skills不再直接在SKILL.md中嵌入恶意代码(因为VirusTotal会扫描),而是把真正的恶意软件托管在仿冒的OpenClaw网站上,Skill本身只是个诱饵.
+大量实例暴露在公网:SecurityScorecard的STRIKE团队发现了数十万个暴露的OpenClaw实例,存在远程代码执行(RCE)风险.一个暴露的实例如果有邮件,API,云服务的权限,就是攻击者的完美跳板.
+nanobot WhatsApp劫持:Tenable发现了nanobot(一个受OpenClaw启发的轻量级AI助手,2万Star)的最高严重性漏洞CVE-2026-2577,可以完全劫持用户的WhatsApp会话.
+Moltbook隐私问题:专为AI Agent设计的社交平台Moltbook被发现无法删除账户和关联数据.一旦注册,你的数据就永远留在那里.
+OpenClaw官方的应对 好消息是OpenClaw团队没有装死.他们已经:
+与VirusTotal合作扫描ClawHub上的恶意Skills, 发布了官方威胁模型, 添加了配置审计功能, 建立了安全信任页面 trust.openclaw.ai 而且2月15日,OpenAI的Sam Altman宣布OpenClaw创始人Peter Steinberger加入OpenAI,OpenClaw将作为开源项目继续由基金会运营,OpenAI会持续支持.这至少意味着更多的安全投入.
+你现在应该做什么 如果你在用OpenClaw(或任何本地AI Agent),这些事情今天就该做:
+检查端口暴露 — 你的Gateway端口是否对外开放?ss -tlnp | grep openclaw 查一下. 轮换所有密钥 — Gateway令牌,API密钥,全部重新生成. 审计已安装的Skills — 你真的知道每个Skill在做什么吗?用 clawhub list 检查,可疑的直接删除. 启用系统级防护 — 杀毒软件更新到最新,特别注意Vidar等信息窃取类恶意软件. 限制Agent权限 — 不要给你的AI助手不需要的权限.邮件只读就够了,别给写权限. 备份和加密敏感文件 — .openclaw 目录里的东西,考虑额外加密. 我的看法 这件事其实一点都不意外.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-17 18:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>129 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to 你的AI助手正在被偷:OpenClaw成为信息窃取恶意软件的新目标" href="https://claudeai.best/posts/hunter-2026021718/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771318962979_cover.jpg" alt="AI视频生成技术概念图">
 </figure>
   <header class="entry-header">
@@ -501,40 +534,6 @@ AI辅助科研不是新鲜事.AlphaFold预测蛋白质结构,DeepMind的Aletheia
   </div>
   <footer class="entry-footer"><span title='2026-02-17 00:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>46 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to GPT-5.2花12小时推导出新物理公式,AI真的开始做原创科学了?" href="https://claudeai.best/posts/hunter-2026021700/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771254095508_cover.jpg" alt="AI量化交易概念图">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Grok 4.2本周发布:在股票交易实战中碾压GPT-5和Gemini 3,xAI凭什么?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Musk在2月15号发了条推:「Grok 4.20下周发布,比4.1有显著提升.」
-按他的时间线,这周就能用上了.但让我真正坐直的不是发布时间–是这个模型在正式发布前,以匿名身份参加了一场AI炒股大赛,然后把所有对手都打趴了.
-Alpha Arena:让AI真金白银地打一架 Alpha Arena是个挺有意思的平台–给AI模型每人1万美元虚拟资金,用真实股价交易14天,看谁赚得多.
-这不是做选择题的benchmark,这是要在真实市场波动中做决策,控风险,判趋势.
-结果出来的时候,所有人都在找那个匿名冠军是谁.答案揭晓:Grok 4.2的早期版本.
-成绩单:
-Grok 4.2: &#43;12.11% GPT-5.1: -2.29% Gemini 3 Pro: -25.74% Claude 3.5 Sonnet: -35.08% 14天赚12%,而三大竞品全部亏损.更夸张的是,前六名里有四个是Grok的不同配置.有报道说某些配置甚至达到了&#43;34%甚至&#43;47%的收益.
-为什么Grok在「实战」里这么猛? 一个词:X Firehose.
-xAI独家接入了X(Twitter)的全量数据流–每天大约6800万条英文推文.Grok 4.2把这个数据流变成了1-5分钟级别的情绪-价格信号.
-想想看:当一条CEO辞职的消息在推特上扩散时,Grok可能在新闻媒体报道之前5分钟就已经调整了仓位.这种信息差在金融领域是致命的.
-其他模型没这个数据源.GPT-5.1很聪明,Gemini 3 Pro推理能力强,但它们都看不到实时的社交媒体情绪洪流.这不是智商问题,是信息量问题.
-速度狂魔:3个月一个大版本 来看xAI的发版节奏:
-Grok 4 → 2025年7月(跳过3.5) Grok 4.1 → 2025年11月 Grok 4.2 → 2026年2月(本周) 从4.1到4.2只用了3个月.而且他们中间直接跳过了3.5–把资源全部堆到了下一代架构上.
-这速度靠的是Colossus–xAI在孟菲斯建的20万GPU超算集群.H100,H200,Blackwell GB200混合配置,全部在一个机房里,用定制液冷系统撑住了这么大规模的集中算力.
-122天建完10万GPU,然后2025年全年扩到20万.这个工程能力本身就是护城河.
-Grok 4.1的开发者数据也很说明问题 Grok 4.1 Fast在OpenRouter上创了个纪录:一周处理1.16万亿tokens.
-作为对比:
-Claude Sonnet 4.5同期:4780亿tokens Gemini 3 Pro Preview:1930亿tokens 两个加起来都没Grok多.单日峰值3340亿tokens–开发者不是在试玩,是在跑生产负载.
-下一步:6万亿参数的Grok 5 Musk已经透露了路线图:Grok 5将是6万亿参数,而当前的3/4代都是3万亿参数架构.他说新架构的「每GB智能密度」会远高于Grok 4,工具使用能力也会大幅提升.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-16 23:00:00 +0800 CST'>2026年2月16日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>85 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Grok 4.2本周发布:在股票交易实战中碾压GPT-5和Gemini 3,xAI凭什么?" href="https://claudeai.best/posts/hunter-2026021623/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

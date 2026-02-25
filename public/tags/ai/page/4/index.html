@@ -161,6 +161,54 @@
 
 <article class="post-entry tag-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771489048650_cover.jpg" alt="Microsoft 365 Copilot 移动端隐私问题">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Microsoft 365 Copilot 悄悄更新:打开本地文件自动上传到云端 AI
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>如果你用 Microsoft 365 Copilot 作为 Android 或 iOS 的默认文档查看器,你可能刚刚被 Microsoft 「惊喜」了一下.
+打开本地文件现在会自动上传到 OneDrive 并由 AI 处理–不管你愿不愿意.
+发生了什么? Windows Latest 报道,Microsoft 在最近的更新中悄悄改变了 Microsoft 365 Copilot 移动端的行为.
+以前:
+点击 WhatsApp 里的 .docx 附件 Microsoft 365 Copilot 打开文档 你阅读文档 现在: 2. Microsoft 365 Copilot 上传文件到 OneDrive 3. Copilot 尝试「分析」文档 4. 如果 AI 能理解,你可以在聊天界面看摘要 5. 如果 AI 理解不了,你什么都看不到
+官方说法 Microsoft 的提示信息是:
+“Opening documents from your device now starts with Copilot chat.”
+翻译:「从设备打开文档现在从 Copilot 聊天开始.」
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 16:20:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>199 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Microsoft 365 Copilot 悄悄更新:打开本地文件自动上传到云端 AI" href="https://claudeai.best/posts/hunter-2026021916/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771485021839_cover.jpg" alt="脑机接口 EEG 信号 - ZUNA 基础模型">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">ZUNA:脑机接口终于有了自己的基础模型,开源 380M 参数
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>脑机接口(BCI)终于有了自己的「基础模型」.
+Zyphra 刚刚发布了 ZUNA,一个 380M 参数的 EEG 脑电信号基础模型,Apache-2.0 开源.
+这意味着什么?意味着非侵入式「意念转文字」的技术又往前迈了一大步.
+脑电数据的「西部世界」问题 过去几十年,EEG 研究面临一个核心难题:数据格式太乱了.
+不同数据集使用不同数量的电极通道(2 到 256 个不等) 电极位置不一致, 大多数深度学习模型只能在固定的电极布局上训练, 一换数据集或采集条件,模型就崩了 这被称为 EEG 数据的「西部世界」问题–没有统一标准,每个实验室各搞各的.
+ZUNA 的解决方案:4D 空间编码 ZUNA 的核心创新是 4D Rotary Positional Encoding(4D RoPE).
+传统的 EEG 模型假设固定的电极网格.ZUNA 不一样–它把每个 EEG 信号片段映射到一个 4D 坐标:
+(x, y, z):电极在头皮上的 3D 位置 (t):时间索引 每个 token 是 0.125 秒(32 个采样点)的 EEG 窗口.
+这种设计让 ZUNA 可以:
+处理任意数量的电极, 适应任意电极位置, 在缺失电极的情况下「想象」信号 训练方法:极端 Dropout &#43; 扩散 ZUNA 使用 masked diffusion autoencoder 架构.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 15:15:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>204 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to ZUNA:脑机接口终于有了自己的基础模型,开源 380M 参数" href="https://claudeai.best/posts/hunter-2026021915/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771480983048_cover.jpg" alt="AI Agent 时代 - 自动化工作流程">
 </figure>
   <header class="entry-header">
@@ -345,54 +393,6 @@ e e e e 这 # 创 工 1 2 3 4 整 # P - 这 # 数 P 当 客 * m m m m 不 # 建 
   </div>
   <footer class="entry-footer"><span title='2026-02-19 07:20:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>4 分钟</span>&nbsp;·&nbsp;<span>641 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Tavus Phoenix-4:600ms 实时对话 AI 数字人,终于跨过了「恐怖谷」" href="https://claudeai.best/posts/hunter-2026021907/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771448867122_cover.jpg" alt="AI 音乐生成 - Lyria 3 可视化">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Google DeepMind Lyria 3 发布:上传一张图,30秒生成完整歌曲
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>刚刚,Google DeepMind 正式发布了 Lyria 3–目前最先进的 AI 音乐生成模型.
-而且,它已经集成到 Gemini 应用中了.你现在打开 Gemini,就能用.
-核心功能:一句话生成一首歌 Lyria 3 的核心能力非常直接:
-输入:文字描述,一张图片,或者一段音频 输出:30 秒完整音乐作品(48kHz 立体声),包含人声,歌词,乐器编排 比如你上传一张日落海滩的照片,Lyria 3 能根据画面氛围生成一首配乐.或者你写&#34;一首关于程序员深夜debug的悲伤民谣&#34;,它就真的会给你写歌词,谱曲,演唱.
-技术规格一览 输出时长: 30 秒 采样率: 48kHz 音频格式: 16-bit PCM 立体声 输入模态: 文本,图片,音频, 水印技术: SynthID, 延迟: &lt;2 秒(实时控制) Lyria RealTime API:真正的实时生成 Lyria 3 最有意思的部分是 RealTime API.
-传统音乐生成模型像点唱机:输入 prompt,等待生成完整文件.Lyria RealTime 不一样–它通过 WebSocket 保持实时连接,以 2 秒为单位 逐块生成音频.
-这意味着你可以边听边调整.比如生成到一半突然想换成爵士风格?实时切换.模型会「回头看」前面的上下文保持连贯,「向前看」你的控制指令决定走向.
-Music AI Sandbox:给音乐人的工具箱 除了面向普通用户,DeepMind 还推出了 Music AI Sandbox–一套专业创作工具:
-哼唱转管弦乐:哼一段旋律,AI 把它变成完整配器 风格迁移:用 MIDI 和弦生成合唱效果 乐器替换:保持旋律,用文字描述更换乐器 这套工具的设计逻辑是 Human-in-the-loop:AI 不是替代创作者,而是成为可「即兴演奏」的协作伙伴.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-19 05:10:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>159 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Google DeepMind Lyria 3 发布:上传一张图,30秒生成完整歌曲" href="https://claudeai.best/posts/hunter-2026021905/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771445383561_cover.jpg" alt="3D 空间智能可视化 - AI 理解三维世界">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Fei-Fei Li 融资 10 亿美元:AI 教母的 World Labs 要让机器「看懂」三维世界
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>如果你关注 AI 领域,一定听说过 Fei-Fei Li(李飞飞)这个名字.她创建了 ImageNet 数据集,推动了现代计算机视觉的发展.现在,她的创业公司 World Labs 刚刚完成了一轮 10 亿美元融资.
-融资详情 根据 Bloomberg 报道,这轮融资的投资者阵容相当豪华:
-Autodesk:软件巨头,单家就投了 2 亿美元 Andreessen Horowitz (a16z):硅谷顶级 VC Nvidia:GPU 霸主 AMD:芯片巨头 公司估值据传在 50 亿美元 左右.
-World Labs 在做什么? World Labs 的核心方向是 空间智能(Spatial Intelligence) 和 World Model(世界模型).
-简单说,就是让 AI 不仅能「看到」图像,还能真正「理解」三维空间中的物体关系,物理规律和因果关系.
-去年底,World Labs 发布了第一个产品 Marble–一个可以从单张图片或文字描述生成 3D 世界的系统.效果相当惊艳:不是简单的 2D 转 3D,而是构建完整的可交互三维场景.
-为什么这很重要? 目前的 LLM(大语言模型)本质上是在文本上训练的,对物理世界的理解非常有限.World Model 的目标是让 AI 像人类一样理解:
-物体在空间中的位置和关系, 物理规律(重力,碰撞,遮挡), 时间和因果关系 这被认为是通向 AGI 的关键一步.自动驾驶,机器人,AR/VR,游戏开发……几乎所有需要 AI 与物理世界交互的领域都等着这一突破.
-Fei-Fei Li 的背景 作为斯坦福大学计算机科学教授,Fei-Fei Li 被称为「AI 教母」.她创建的 ImageNet 数据集和竞赛直接催生了 AlexNet,开启了深度学习时代.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-19 04:10:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>123 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Fei-Fei Li 融资 10 亿美元:AI 教母的 World Labs 要让机器「看懂」三维世界" href="https://claudeai.best/posts/hunter-2026021904/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

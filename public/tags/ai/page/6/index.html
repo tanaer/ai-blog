@@ -161,6 +161,55 @@
 
 <article class="post-entry tag-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771226948405_hunter-2026021608.jpg" alt="PicoClaw 在 LicheeRV-Nano 开发板上运行">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent"> 10块钱就能跑AI助理?PicoClaw让树莓派都嫌贵
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Mac mini 买不起,AI 助理就不能玩了? 最近 OpenClaw 火得一塌糊涂,搞得 Mac mini 都快卖断货了.但说实话,不是每个人都想花几千块买台电脑就为了跑个 AI 助理.
+有没有便宜到离谱的方案?还真有–Sipeed 刚开源的 PicoClaw,号称 10 美元硬件就能跑,内存占用不到 10MB.你没看错,是 MB 不是 GB.
+三个让人眼前一亮的点 1. 极致轻量:10MB 内存,1 秒启动 PicoClaw 用 Go 语言编写,编译成单个二进制文件,支持 RISC-V,ARM,x86 三大平台.在一个单核处理器的小开发板上,冷启动只要 1 秒.对比 OpenClaw 需要 Node.js 运行时和几个 GB 的内存,PicoClaw 的资源占用少了 99%.
+2. AI 自举:95% 代码由 AI 生成 这可能是最赛博朋克的部分–PicoClaw 的核心代码有 95% 是 AI Agent 自己写的,人类只负责监督和微调.一个 AI 设计了另一个 AI 的架构,还优化了自己的代码.套娃成精了.
+3. 麻雀虽小五脏俱全 别看它小,该有的都有:
+任务规划和日志记录, 网页搜索, 自动化工作流 接入 Telegram / Discord 支持任意 LLM 提供商(配个 API Key 就行) ️ 三步上手 # 1. 下载对应平台的二进制文件 wget https://github.com/sipeed/picoclaw/releases/latest/download/picoclaw-linux-riscv64 # 2. 初始化工作空间 ./picoclaw init # 3. 配置 API Key,开聊 ./picoclaw start 就这么简单.不需要 Docker,不需要 Node.js,甚至不需要 Python.一个二进制文件走天下.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-16 08:00:00 +0800 CST'>2026年2月16日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>138 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to  10块钱就能跑AI助理?PicoClaw让树莓派都嫌贵" href="https://claudeai.best/posts/hunter-2026021608/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771226943336_hunter-2026021522.jpg" alt="Google NotebookLM Logo">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">️ NPR主播起诉谷歌:NotebookLM的AI播客声音是偷来的?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>你的声音被AI偷了,你会怎么办? 想象一下:你是一位拥有几十年经验的广播主持人,某天打开一个AI工具,发现里面的&#34;AI主播&#34;听起来跟你一模一样.
+这不是科幻电影,这是NPR前《Morning Edition》主持人,现《Left, Right &amp; Center》主播 David Greene 正在经历的真实噩梦.2026年2月15日,他正式起诉谷歌,指控Google的NotebookLM工具未经许可复制了他的声音.
+Greene说:“我的声音是我最重要的一部分.” 他的朋友和同事们听了NotebookLM的AI播客后,都说这个相似度&#34;令人毛骨悚然&#34;(uncanny).
+三个核心看点 1. NotebookLM到底是什么? Google NotebookLM 是一款AI研究助手,其杀手级功能是&#34;Audio Overview&#34;–你上传文档,它会自动生成一段两人对话式播客,用自然的声音讨论你的材料.这个功能自2024年推出后爆火,被无数人用来&#34;听&#34;论文和报告.
+但问题来了:这些&#34;自然的声音&#34;是怎么来的?
+2. “我的声音被偷了” Greene在诉讼中指控:
+谷歌非法复制了他的声音特征用于NotebookLM的男性AI主播, 没有获得许可,也没有支付任何费用, AI可以被用户操控,让&#34;他的声音&#34;说出他本人绝不会说的话 谷歌方面否认了这一指控,但目前尚未公开回应声音的具体来源.
+3. 这不只是一个人的事 这场诉讼的意义远超个案.如果Greene胜诉,意味着:
+AI公司必须为训练数据中的声音特征付费, 声音权利可能获得与肖像权类似的法律保护, 所有AI语音合成产品都需要重新审视其数据来源 ️ 如果你也在用NotebookLM 继续用没问题–这是用户侧的合法使用,官司是Google和Greene之间的事 注意生成内容的声明–Google自己也标注&#34;声音是AI生成的,可能包含不准确之处&#34; 关注后续判决–这可能成为AI声音版权的标志性案例,影响未来所有TTS产品 极客点评 这件事让我想到一个根本问题:AI模型学习人类作品和&#34;偷窃&#34;之间的界限到底在哪?
+画家学习梵高的笔触不算抄袭,但AI直接复制一个人的声音纹路呢?Greene的遭遇就像照镜子–镜子里的人长得跟你一样,但说的话完全不受你控制.这种&#34;数字身份被劫持&#34;的恐惧是非常真实的.
+从实用角度看,NotebookLM依然是目前最好的&#34;文档转播客&#34;工具,功能本身无可指摘.但这场诉讼提醒我们:便利的背后,总有人在承担代价.
+适用场景:关注AI伦理,版权法律,语音技术发展的读者.如果你是内容创作者,这个案例值得密切跟踪–下一个被&#34;借鉴&#34;的可能就是你.
+信息来源:The Verge,Washington Post
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-16 06:00:00 +0800 CST'>2026年2月16日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>46 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to ️ NPR主播起诉谷歌:NotebookLM的AI播客声音是偷来的?" href="https://claudeai.best/posts/hunter-2026021522/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://avatars.githubusercontent.com/u/26874008?s=400" alt="Lightning Labs Logo">
 </figure>
   <header class="entry-header">

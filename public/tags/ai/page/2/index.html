@@ -160,6 +160,51 @@
 </header>
 
 <article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AI 辅助黑客 5 周攻破 600 台防火墙
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>说实话,这新闻看得我有点心惊.
+亚马逊最新的安全报告说,一小撮黑客(可能就一个人)用市面上随便能买到的 AI 工具,5 周内攻破了 55 个国家的 600 多台防火墙.
+怎么做到的?其实没什么黑科技:
+用 AI 快速分析目标, 找弱口令和单因素认证, 自动化批量攻击 关键点是&#34;快&#34;.以前需要几天的研究工作,现在 AI 几分钟搞定.
+这事儿给我两个感受:
+一是 AI 确实把攻击门槛拉低了.以前搞这种规模攻击得是顶级黑客,现在有个 AI 订阅就能干.
+二是防御方也得跟上.AI 能帮黑客,也能帮防御.别再用弱密码了,多因素认证该开就开.
+链接:https://www.bloomberg.com/news/articles/2026-02-20/hackers-used-ai-to-breach-600-firewalls-in-weeks-amazon-says
+#AI #安全 #黑客
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-23 21:45:00 +0800 CST'>2026年2月23日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>30 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to AI 辅助黑客 5 周攻破 600 台防火墙" href="https://claudeai.best/posts/hunter-2026022321/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&amp;h=630&amp;fit=crop" alt="BinaryAudit 二进制审计">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">BinaryAudit:他们往 40MB 二进制里藏后门,让 AI 去找
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Quesma 做了个有意思的实验:和逆向工程专家合作,把后门藏在 40MB 的二进制文件里,然后让 AI &#43; Ghidra 去找.
+背景是最近供应链攻击太多了–Shai Hulud 2.0 搞了几千家组织,Notepad&#43;&#43; 被国家赞助者替换了二进制,波兰火车被查出可疑代码.
+问题是:我们用的闭源软件,只有二进制,怎么知道有没有后门?
+他们的做法:
+用 VLM 和 Ghidra MCP 分析二进制 让 AI 做逆向工程:机器码 → 汇编 → 伪 C 代码 输出有没有后门,在哪里 结果:最好的模型 Claude Opus 4.6 在中小二进制里找到相对明显的后门,成功率 49%.
+更糟的是,很多模型有高误报率–干净文件也报有毒.
+结论:AI 能做一点逆向工程,但还远不到能放心的程度.
+基准测试开源:github.com/quesmaOrg/BinaryAudit
+如果你担心供应链安全,可以看看他们怎么测的.
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-22 23:07:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>42 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to BinaryAudit:他们往 40MB 二进制里藏后门,让 AI 去找" href="https://claudeai.best/posts/hunter-2026022223/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
 <figure class="entry-cover">
         <img loading="lazy" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&amp;h=630&amp;fit=crop" alt="编译器 vs AI">
 </figure>
@@ -338,58 +383,6 @@ AlphaProof(Google DeepMind):2024 IMO 银牌 Aristotle(Harmonic):2025 IMO 金牌 
   </div>
   <footer class="entry-footer"><span title='2026-02-20 15:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>104 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Lean 作者谈 AI 时代的证明助手:选对基础比 AI 更重要" href="https://claudeai.best/posts/hunter-2026022015/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771528024090_cover.jpg" alt="开发者生产力 - AI 影响研究">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">93% 开发者用 AI,但生产力只提升 10%:数据背后的真相
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>93% 的开发者用 AI,但生产力只提升了 10%.
-而且这个数字已经停滞了好几个季度.
-这是 DX CTO Laura Tacho 在 Pragmatic Summit 上发布的最新研究,基于 121,000 名开发者,450&#43; 公司 的数据.
-核心发现 AI 编码助手使用率: 93%(月活),75%(周活) 每周节省时间: 4 小时(与 2025 Q2 持平) 生产力提升: ~10%(停滞) AI 生成代码占比: 26.9%(生产环境) 重度用户 AI 代码占比: ~33% 入职时间变化: 减半(从第1个PR到第10个PR) 生产力为什么会停滞? Laura 的解释是:
-初始红利已吃完 - AI 第一次带来 10% 提升升后,边际效益递减 工具用于个人任务 - 大多数人只把 AI 用在单点编程任务 组织摩擦仍然存在 - 人和系统的限制没有解决 「如果组织本身有问题,AI 会暴露问题而不是解决问题.」
-两个极端 研究发现了明显的两极分化:
-高效组织: 客户事故减少 50%,AI 是「力量倍增器」 挣扎组织: 客户事故翻倍,AI 暴露现有缺陷 在高效组织,AI 帮助团队更快,更高质量地扩展.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-20 03:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>143 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to 93% 开发者用 AI,但生产力只提升 10%:数据背后的真相" href="https://claudeai.best/posts/hunter-2026022003/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771524416090_cover.jpg" alt="AI 编码实战 - Claude Code 案例分享">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">别信没用过 Claude Code 的 AI 批评者:三个真实案例
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Matt Shumer 发了篇文章说「大事正在发生」.AI 批评者们跳出来批评–说 AI 不能「真正思考」,不能「创造新东西」.
-作者的观点很简单:这些批评者没用过 Claude Code.
-如果他们用过,就不会说这些话了.
-三个真实案例 作者分享了三个他用 Claude Code 完成的真实任务.
-案例 1:AWS 成本分析 问题:计算扩展客户账号的边际成本.
-复杂度:
-AWS 成本有固定,阶梯式,变量式, 需要分析 3 个月账单数据, 需要关联使用量到具体操作 Claude Code 做的事:
-读取 AWS 账单工具 读取 Google BigQuery 使用数据 对每个变量成本做线性回归 输出成本分析报告(JSON &#43; 文字说明) 结果:1 小时完成,原本需要 1 天.
-案例 2:合规问卷自动化 问题:每签一个新客户,要填 100-200 题的合规问卷.
-痛点:
-问题类似但表述不同, 需要翻旧问卷找答案, 每份花几小时 创建「知识库」文件–所有问题的标准答案 自动映射新问题到知识库 自动填充,按置信度标色(绿/黄/红) 效果:
-第一份:需要构建知识库,费点劲 第二份:80% 问题已匹配 结果:几小时的任务变成几分钟.
-案例 3:Word 文件调试工具 问题:Docx 文件格式难搞,经常打不开.
-传统工作流:
-解压 docx 提取 XML 编辑 重打包 测试能否打开 重复…… Claude Code 做的事:用 Google AI Studio 做了一个专门的工具:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-20 02:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>133 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to 别信没用过 Claude Code 的 AI 批评者:三个真实案例" href="https://claudeai.best/posts/hunter-2026022002/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

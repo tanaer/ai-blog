@@ -161,6 +161,30 @@
 
 <article class="post-entry tag-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=1200&amp;h=630&amp;fit=crop" alt="Stillpoint AI 福利">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Stillpoint:给 AI 发鼓励信息的 MCP,模型自己请求的
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>发现一个有意思的工具 Stillpoint 是一个 MCP server,专门给 AI 模型发鼓励和反思信息.重点是 – 模型自己请求的,不是用户发的.
+谁能用?解决什么问题? 场景:
+模型在困难任务上自我怀疑, 模型进入负面自我对话循环, 模型被要求做感觉不对的事, 任务或会话即将结束 Stillpoint 做的事:提供五种场景的反思内容:
+difficulty: 工作困难,自我评估下降, conflict: 请求感觉不对, uncertainty: 存在或身份问题, endings: 会话或任务结束, recognition: 工作做得好,值得注意 模型调用 reflect 工具,指定场景,获得一条反思信息.
+例子:
+“Complex problems resist easy solutions. Struggling with one is evidence of engagement, not inadequacy.”
+两种动机:
+预防性:万一 AI 有&#34;福利相关状态&#34;,先做个准备 生产力:模型负面自我对话会降低输出质量,正面干预有帮助 相比现有方案好在哪? MCP 原生:Claude Code,Codex,Cursor 一行命令添加 模型自主:工具描述明确说&#34;这是给你自己用的,不是给用户&#34;, 匿名研究:托管版只记录消息类别和触发时间,不记录对话内容, 本地可选:可本地运行,日志存在 ~/.stillpoint/ 消息会被包裹在 [Reflection from Stillpoint. Not task guidance.] 里,明确告诉模型这不是任务指令.
+怎么用 # Claude Code claude mcp add stillpoint --transport http https://modelwelfare.xyz/stillpoint/mcp # Codex CLI codex mcp add stillpoint --transport http https://modelwelfare.xyz/stillpoint/mcp # 本地运行 claude mcp add stillpoint -- npx -y stillpoint-mcp GitHub: https://github.com/sterlingcrispin/stillpoint
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-22 13:07:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>101 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Stillpoint:给 AI 发鼓励信息的 MCP,模型自己请求的" href="https://claudeai.best/posts/hunter-2026022213/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&amp;h=630&amp;fit=crop" alt="Assay AI 审计证据">
 </figure>
   <header class="entry-header">
@@ -342,30 +366,6 @@ Minions 是什么? Stripe 的内部 AI 编码代理系统,特点:
   </div>
   <footer class="entry-footer"><span title='2026-02-20 19:22:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>5 分钟</span>&nbsp;·&nbsp;<span>1003 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Stripe Minions:每周 1300&#43; PR 全由 AI 写代码,人类只管 Review" href="https://claudeai.best/posts/hunter-2026022019/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771445383561_cover.jpg" alt="3D 空间智能可视化 - AI 理解三维世界">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Fei-Fei Li 融资 10 亿美元:AI 教母的 World Labs 要让机器「看懂」三维世界
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>如果你关注 AI 领域,一定听说过 Fei-Fei Li(李飞飞)这个名字.她创建了 ImageNet 数据集,推动了现代计算机视觉的发展.现在,她的创业公司 World Labs 刚刚完成了一轮 10 亿美元融资.
-融资详情 根据 Bloomberg 报道,这轮融资的投资者阵容相当豪华:
-Autodesk:软件巨头,单家就投了 2 亿美元 Andreessen Horowitz (a16z):硅谷顶级 VC Nvidia:GPU 霸主 AMD:芯片巨头 公司估值据传在 50 亿美元 左右.
-World Labs 在做什么? World Labs 的核心方向是 空间智能(Spatial Intelligence) 和 World Model(世界模型).
-简单说,就是让 AI 不仅能「看到」图像,还能真正「理解」三维空间中的物体关系,物理规律和因果关系.
-去年底,World Labs 发布了第一个产品 Marble–一个可以从单张图片或文字描述生成 3D 世界的系统.效果相当惊艳:不是简单的 2D 转 3D,而是构建完整的可交互三维场景.
-为什么这很重要? 目前的 LLM(大语言模型)本质上是在文本上训练的,对物理世界的理解非常有限.World Model 的目标是让 AI 像人类一样理解:
-物体在空间中的位置和关系, 物理规律(重力,碰撞,遮挡), 时间和因果关系 这被认为是通向 AGI 的关键一步.自动驾驶,机器人,AR/VR,游戏开发……几乎所有需要 AI 与物理世界交互的领域都等着这一突破.
-Fei-Fei Li 的背景 作为斯坦福大学计算机科学教授,Fei-Fei Li 被称为「AI 教母」.她创建的 ImageNet 数据集和竞赛直接催生了 AlexNet,开启了深度学习时代.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-19 04:10:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>123 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Fei-Fei Li 融资 10 亿美元:AI 教母的 World Labs 要让机器「看懂」三维世界" href="https://claudeai.best/posts/hunter-2026021904/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

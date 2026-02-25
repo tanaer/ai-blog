@@ -6,20 +6,97 @@
     <description>Recent content in Tags on AI 极客前沿</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 25 Feb 2026 17:05:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Feb 2026 20:08:00 +0800</lastBuildDate>
     <atom:link href="https://claudeai.best/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Agent</title>
-      <link>https://claudeai.best/tags/agent/</link>
-      <pubDate>Wed, 25 Feb 2026 17:05:00 +0800</pubDate>
-      <guid>https://claudeai.best/tags/agent/</guid>
+      <title>AI攻击</title>
+      <link>https://claudeai.best/tags/ai%E6%94%BB%E5%87%BB/</link>
+      <pubDate>Wed, 25 Feb 2026 20:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/ai%E6%94%BB%E5%87%BB/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ChatGPT</title>
+      <link>https://claudeai.best/tags/chatgpt/</link>
+      <pubDate>Wed, 25 Feb 2026 20:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/chatgpt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IBM</title>
+      <link>https://claudeai.best/tags/ibm/</link>
+      <pubDate>Wed, 25 Feb 2026 20:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/ibm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>勒索软件</title>
+      <link>https://claudeai.best/tags/%E5%8B%92%E7%B4%A2%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Wed, 25 Feb 2026 20:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/%E5%8B%92%E7%B4%A2%E8%BD%AF%E4%BB%B6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>网络安全</title>
+      <link>https://claudeai.best/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</link>
+      <pubDate>Wed, 25 Feb 2026 20:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</guid>
       <description></description>
     </item>
     <item>
       <title>AI</title>
       <link>https://claudeai.best/tags/ai/</link>
-      <pubDate>Wed, 25 Feb 2026 17:05:00 +0800</pubDate>
+      <pubDate>Wed, 25 Feb 2026 19:04:00 +0800</pubDate>
       <guid>https://claudeai.best/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>开源模型</title>
+      <link>https://claudeai.best/tags/%E5%BC%80%E6%BA%90%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Wed, 25 Feb 2026 19:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/%E5%BC%80%E6%BA%90%E6%A8%A1%E5%9E%8B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>小米</title>
+      <link>https://claudeai.best/tags/%E5%B0%8F%E7%B1%B3/</link>
+      <pubDate>Wed, 25 Feb 2026 19:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/%E5%B0%8F%E7%B1%B3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gatekeeper</title>
+      <link>https://claudeai.best/tags/gatekeeper/</link>
+      <pubDate>Wed, 25 Feb 2026 18:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/gatekeeper/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Power User</title>
+      <link>https://claudeai.best/tags/power-user/</link>
+      <pubDate>Wed, 25 Feb 2026 18:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/power-user/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>搜索</title>
+      <link>https://claudeai.best/tags/%E6%90%9C%E7%B4%A2/</link>
+      <pubDate>Wed, 25 Feb 2026 18:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/%E6%90%9C%E7%B4%A2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>用户行为</title>
+      <link>https://claudeai.best/tags/%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA/</link>
+      <pubDate>Wed, 25 Feb 2026 18:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Agent</title>
+      <link>https://claudeai.best/tags/agent/</link>
+      <pubDate>Wed, 25 Feb 2026 17:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/agent/</guid>
       <description></description>
     </item>
     <item>
@@ -503,13 +580,6 @@
       <link>https://claudeai.best/tags/svg/</link>
       <pubDate>Wed, 25 Feb 2026 01:05:00 +0800</pubDate>
       <guid>https://claudeai.best/tags/svg/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>开源模型</title>
-      <link>https://claudeai.best/tags/%E5%BC%80%E6%BA%90%E6%A8%A1%E5%9E%8B/</link>
-      <pubDate>Wed, 25 Feb 2026 01:05:00 +0800</pubDate>
-      <guid>https://claudeai.best/tags/%E5%BC%80%E6%BA%90%E6%A8%A1%E5%9E%8B/</guid>
       <description></description>
     </item>
     <item>
@@ -1980,13 +2050,6 @@
       <link>https://claudeai.best/tags/%E8%9E%8D%E8%B5%84/</link>
       <pubDate>Thu, 19 Feb 2026 04:10:00 +0800</pubDate>
       <guid>https://claudeai.best/tags/%E8%9E%8D%E8%B5%84/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ChatGPT</title>
-      <link>https://claudeai.best/tags/chatgpt/</link>
-      <pubDate>Thu, 19 Feb 2026 03:05:00 +0800</pubDate>
-      <guid>https://claudeai.best/tags/chatgpt/</guid>
       <description></description>
     </item>
     <item>

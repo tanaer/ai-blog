@@ -6,8 +6,15 @@
     <description>Recent content in AI on AI 极客前沿</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 25 Feb 2026 12:05:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Feb 2026 19:04:00 +0800</lastBuildDate>
     <atom:link href="https://claudeai.best/categories/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>小米MiMo-V2-Flash：150 tok/s秒杀全场，SWE-Bench第一</title>
+      <link>https://claudeai.best/posts/hunter-2026022519/</link>
+      <pubDate>Wed, 25 Feb 2026 19:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022519/</guid>
+      <description>小米发布309B参数MoE模型，推理速度150 tok/s，SWE-Bench Verified第一，成本只有Claude的2.5%</description>
+    </item>
     <item>
       <title>五角大楼给 Anthropic 下最后通牒：周五前开放 Claude 军用，否则动用战时法律</title>
       <link>https://claudeai.best/posts/hunter-2026022512/</link>
