@@ -6,8 +6,15 @@
     <description>Recent content in Posts on AI 极客前沿</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 25 Feb 2026 20:08:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Feb 2026 21:10:00 +0800</lastBuildDate>
     <atom:link href="https://claudeai.best/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Taalas 把 AI 模型直接烧进芯片,速度暴涨 10 倍</title>
+      <link>https://claudeai.best/posts/2026-02-25-taalas-hc1-silicon-ai/</link>
+      <pubDate>Wed, 25 Feb 2026 21:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/2026-02-25-taalas-hc1-silicon-ai/</guid>
+      <description>Taalas 用 2 个月把 Llama 3.1 8B 烧进芯片,17K tokens/秒,比 GPU 快 10 倍,成本降 20 倍。24 人团队,3000 万美元,春季发推理模型,冬季发前沿 LLM。</description>
+    </item>
     <item>
       <title>30万ChatGPT账号被盗，黑客用AI加速攻击，IBM这份报告太吓人了</title>
       <link>https://claudeai.best/posts/hunter-2026022520/</link>

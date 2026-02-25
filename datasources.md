@@ -11,6 +11,7 @@
 - **Chip Huyen** (ML系统设计, 工程实践): https://huyenchip.com/feed.xml
 - **AI Weirdness** (Janelle Shane, 趣味AI实验+神经网络怪异行为, 高质量独立博客): https://www.aiweirdness.com/rss/
 - **Eugene Yan** (ML产品实践, 消费者数据与技术交叉, 应用科学家): https://eugeneyan.com/rss/
+- **Colah's Blog** (Christopher Olah, 神经网络可视化+深度学习理论, 经典技术博客): https://colah.github.io/rss.xml
 
 ### 顶级技术 Newsletter
 - **Latent Space** (AI工程深度播客+文章, Karpathy/Hotz等嘉宾): https://www.latent.space/feed
@@ -197,15 +198,39 @@
 - **CloudFlare Blog** (CDN/安全/AI基础设施): https://blog.cloudflare.com/feed — ️ 旧RSS已失效, 新URL待确认
 - **AWS News RSS** (AWS官方更新): https://aws.amazon.com/new.rss — ️ 404失效
 
+#### 新发现的高质量Newsletter (2026-02-25)
+- **TLDR AI** (92万读者, 每日AI新闻摘要, 5分钟快速阅读): https://tldr.tech/ai — 无RSS, Newsletter订阅
+- **Mindstream** (HubSpot Media Network, 每日热点+专家观点+互动投票): https://mindstream.news/ — 无RSS, Newsletter订阅
+- **AI Valley** (10万+读者, Google/OpenAI/Notion/Apple员工订阅, 每日5分钟): https://www.theaivalley.com/ — 无RSS, Newsletter订阅
+- **Horizon AI** (每日3分钟AI和科技简报): https://www.joinhorizon.ai/ — 无RSS, Newsletter订阅
+- **Superhuman AI** (AI洞察, 提升生产力和职业发展): https://www.superhuman.ai/subscribe — 无RSS, Newsletter订阅
+- **AI Breakfast** (每周3次, 深度AI项目和趋势分析): https://aibreakfast.beehiiv.com/ — 无RSS, Newsletter订阅
+- **AI Ready** (原名Not A Bot, 人工撰写每日AI新闻): https://www.aiready.so/ — 无RSS, Newsletter订阅
+- **The ML Engineer Newsletter** (机器学习最佳实践专家洞察): https://ethical.institute/mle.html — 无RSS, Newsletter订阅
+- **Enterprise AI Solutions** (10,000+企业领导者, 无废话AI洞察): https://www.enterpriseaisolutions.io — 无RSS, Newsletter订阅
+- **AI Adopters Club** (企业AI应用案例研究, 实践导向): https://aiadopters.club/ — 无RSS, Newsletter订阅
+- **There's An AI For That** (每周3次, AI新闻和工具发现): https://newsletter.theresanaiforthat.com/ — 无RSS, Newsletter订阅
+- **FutureTools** (AI工具、新闻、变现策略全面汇总): https://futuretools.beehiiv.com/subscribe — 无RSS, Newsletter订阅
+- **AI Tool Report** (每日5分钟, 用AI节省时间赚取更多): https://aitoolreport.beehiiv.com/subscribe — 无RSS, Newsletter订阅
+- **AI Break** (AI工具集成到业务流程, 实战导向): https://theaibreak.substack.com/ — 无RSS, Newsletter订阅
+- **Prompts Daily** (10万+读者, AI驱动的营销和生产力技巧): https://www.neatprompts.com/subscribe — 无RSS, Newsletter订阅
+- **AI Marketing School** (双周更新, AI营销工具和技巧): https://aimarketingschool.beehiiv.com/ — 无RSS, Newsletter订阅
+
+#### GitHub资源库 (非RSS但可作为数据源参考)
+- **GetStream/awesome-ai-news** (每月AI新闻和资源汇总, 开发者向): https://github.com/GetStream/awesome-ai-news — 无RSS, GitHub仓库
+- **csarigoz/best-ai-newsletters** (精选AI Newsletter列表, 2025年11月更新): https://github.com/csarigoz/best-ai-newsletters — 无RSS, GitHub仓库
+- **alternbits/awesome-ai-newsletters** (AI Newsletter汇总): https://github.com/alternbits/awesome-ai-newsletters — 无RSS, GitHub仓库
+
 ### 已知不可用/问题
 - **Distill** (休眠中, 2021年后无更新): https://distill.pub/rss.xml — 历史内容仍有价值
 - **AI Engineer** (网站无法访问): https://ai-engineer.io/feed — 可能已下线
 - **The Batch** (DeepLearning.AI周报, Andrew Ng): https://www.deeplearning.ai/the-batch/ — ️ 无RSS, Newsletter订阅
 
 ## 数据源统计
-**当前已验证: 104+ 核心数据源**
-- Newsletter: 31+, 个人博客: 12+, 研究机构: 16, 科技媒体: 26+, 开发者社区: 8, 中文源: 11, 学术源: 12+, AI工具与开发: 8
+**当前已验证: 105+ 核心数据源**
+- Newsletter: 31+, 个人博客: 13+, 研究机构: 16, 科技媒体: 26+, 开发者社区: 8, 中文源: 11, 学术源: 12+, AI工具与开发: 8
+- 待验证潜力源: 40+ (其中16个为2026-02-25新发现的高质量Newsletter)
 
-**目标: 30+ 高质量源** 已达成 (104+)
+**目标: 30+ 高质量源** 已达成 (105+)
 
-**最后更新**: 2026-02-25 (上午)
+**最后更新**: 2026-02-25 (晚上 21:00)
