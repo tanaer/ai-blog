@@ -10,6 +10,7 @@
 - **Sebastian Raschka** (Ahead of AI, LLM研究前沿): https://magazine.sebastianraschka.com/feed
 - **Chip Huyen** (ML系统设计, 工程实践): https://huyenchip.com/feed.xml
 - **AI Weirdness** (Janelle Shane, 趣味AI实验+神经网络怪异行为, 高质量独立博客): https://www.aiweirdness.com/rss/
+- **Eugene Yan** (ML产品实践, 消费者数据与技术交叉, 应用科学家): https://eugeneyan.com/rss/
 
 ### 顶级技术 Newsletter
 - **Latent Space** (AI工程深度播客+文章, Karpathy/Hotz等嘉宾): https://www.latent.space/feed
@@ -42,6 +43,9 @@
 - **Ben's Bites** (Ben Tossell, VC视角AI新闻+产品, 10万+订阅): https://www.bensbites.com/feed
 - **Gwern Newsletter** (Gwern Branwen, 深度AI理论分析, 缩放定律先驱): https://gwern.substack.com/
 - **AI News by Smol** (swyx等, 15万+AI工程师订阅, Karpathy推荐"最好的AI newsletter"): https://news.smol.ai/ — 无RSS, Newsletter订阅
+- **Chain of Thought** (Every.to, AI前沿论文+实验, 深度技术文章): https://every.to/chain-of-thought/feed.xml
+- **Data Machina** (每周AI/ML研究+项目+代码库, 深度挖掘): https://datamachina.substack.com/feed
+- **Generational** (AI趋势与公司分析, 1000+投资者与运营者阅读): https://www.generational.pub/feed
 
 ### 研究实验室官方博客
 - **OpenAI Blog** (一手发布): https://openai.com/blog/rss.xml
@@ -59,6 +63,7 @@
 - **AWS Machine Learning Blog** (AWS ML官方, Bedrock/SageMaker等): https://aws.amazon.com/blogs/machine-learning/feed/
 - **Epoch AI Blog** (AI趋势分析, 算力与预测研究): https://epochai.substack.com/feed
 - **GitHub Blog** (开发者新闻/Insights/Octoverse报告, AI趋势分析): https://github.blog/feed/
+- **EleutherAI Blog** (开源AI研究, GPT-Neo/GPT-J等模型开发者): https://blog.eleuther.ai/index.xml
 
 ### AI基础设施与工具
 - **The New Stack** (DevOps/AI基础设施/云原生, Agent开发趋势): https://thenewstack.io/feed
@@ -82,6 +87,7 @@
 - MIT Tech Review: https://www.technologyreview.com/feed/
 - VentureBeat AI: https://venturebeat.com/category/ai/feed/
 - The Register AI + ML (英国老牌IT媒体, AI行业深度报道+讽刺评论, 每日更新): https://www.theregister.com/software/ai_ml/headlines.atom
+- SiliconANGLE AI (技术新闻, AI领域深度报道+行业分析): https://siliconangle.com/category/ai/feed
 
 ### AI 专业
 - ArXiv CS.LG (Machine Learning): https://rss.arxiv.org/rss/cs.LG
@@ -150,6 +156,10 @@
 - **Console.dev** (开发者工具周刊, 30K+订阅, 每周四更新): https://console.dev/rss.xml
 - **InfoQ Global** (企业级技术, LLM/Agent深度报道): https://feed.infoq.com/
 - **AI News (artificialintelligence-news.com)** (AI商业应用+研究新闻, 英国): https://www.artificialintelligence-news.com/feed/
+- **Neptune.ai Blog** (ML元数据存储, 实验跟踪+模型注册, MLOps实践): https://neptune.ai/blog/feed
+- **Weights & Biases: Fully Connected** (ML教程+行业领袖对话+最新研究深潜): https://wandb.ai/fully-connected/rss.xml
+- **Replicate Blog** (机器学习云平台, AI模型部署+工具): https://replicate.com/blog/rss
+- **Lightning AI** (团队AI构建平台, PyTorch Lightning开发者): https://lightning.ai/pages/feed/
 
 ## 数据源优先级
 **写文章时的选源策略:**
@@ -193,9 +203,9 @@
 - **The Batch** (DeepLearning.AI周报, Andrew Ng): https://www.deeplearning.ai/the-batch/ — ️ 无RSS, Newsletter订阅
 
 ## 数据源统计
-**当前已验证: 94+ 核心数据源**
-- Newsletter: 28+, 个人博客: 11+, 研究机构: 15, 科技媒体: 25+, 开发者社区: 8, 中文源: 11, 学术源: 12+, AI工具与开发: 4
+**当前已验证: 104+ 核心数据源**
+- Newsletter: 31+, 个人博客: 12+, 研究机构: 16, 科技媒体: 26+, 开发者社区: 8, 中文源: 11, 学术源: 12+, AI工具与开发: 8
 
-**目标: 30+ 高质量源** 已达成 (94+)
+**目标: 30+ 高质量源** 已达成 (104+)
 
-**最后更新**: 2026-02-24 (晚)
+**最后更新**: 2026-02-25 (上午)
