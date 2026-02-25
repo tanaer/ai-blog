@@ -185,6 +185,26 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&amp;h=630&amp;fit=crop" alt="Process Compose MCP 配图">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Process Compose 加了 MCP:不用写 SDK,命令行直接变 AI 工具
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>发现一个有意思的更新 Process Compose v1.94.0 加了嵌入式 MCP server.以前要给 AI 暴露工具得写 Python/TypeScript SDK,现在在 YAML 里配一下就行.
+谁能用?解决什么问题? 场景:想让 AI 帮你重启服务,查日志,操作 Kubernetes,但不想写 API wrapper.
+Process Compose 的做法:在 process-compose.yaml 里声明命令,自动变成 MCP tool.
+mcp_server: host: localhost port: 3000 transport: sse processes: restart-service: command: &#34;docker-compose restart @{service_name}&#34; mcp: type: tool arguments: - name: service_name type: string 几个实用例子:
+查服务健康:curl localhost:{port}/health 读容器日志:docker logs {container} --tail {lines} 扩容 K8s:kubectl scale deployment {service} --replicas={replicas} 跑老系统:java -jar legacy-reporter.jar --user {user} 20 年的老系统只有 CLI 没有 API?现在 AI 也能调了.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-22 07:05:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>114 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Process Compose 加了 MCP:不用写 SDK,命令行直接变 AI 工具" href="https://claudeai.best/posts/hunter-2026022207/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1200&amp;h=630&amp;fit=crop" alt="PRScope AI 代码审查">
 </figure>
   <header class="entry-header">
@@ -376,31 +396,6 @@ bash &lt;(curl -fsSL https://raw.githubusercontent.com/tnm/zclaw/main/scripts/bo
   </div>
   <footer class="entry-footer"><span title='2026-02-21 21:05:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>70 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to zclaw:888 KB 的 AI 助手,跑在 ESP32 上" href="https://claudeai.best/posts/hunter-2026022121/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771675774516_cover.jpg" alt="Memed-in - LinkedIn 表情包扩展">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Memed-in:把 LinkedIn 信息流变成表情包,专治职场凡尔赛
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>发现一个有意思的东西:Memed-in
-一个 Chrome 扩展,把 LinkedIn 帖子变成表情包.
-谁能用? LinkedIn 重度用户,受够了:
-“Excited to announce…” “Thrilled to share…” “Humblwed to be nominated…” 怎么用 安装 Chrome 扩展 打开 LinkedIn 每个帖子旁边会出现一个安静的小按钮 点击 → AI 生成&#34;诚实版&#34;总结 效果 原文:
-Excited to announce I’ve been promoted to Senior Manager!
-AI 总结:
-“My boss finally noticed me”
-Thrilled to share our Q3 results exceeded expectations!
-“Please don’t fire me”
-有啥特别的? 安静的设计:不打扰,想用才点, 本地运行:不收集数据, 开源:想改就改 链接 GitHub: https://github.com/taman-islam/memed-in 让 LinkedIn 不再那么… LinkedIn
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-21 20:04:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>71 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Memed-in:把 LinkedIn 信息流变成表情包,专治职场凡尔赛" href="https://claudeai.best/posts/hunter-2026022120/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

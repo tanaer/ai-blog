@@ -185,6 +185,28 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771603732102_cover.jpg" alt="代码与编程">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Expectllm:用 Unix &#34;expect&#34; 风格与 LLM 对话,4 行代码搞定
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>和 LLM 对话时,最烦的是什么?写一堆样板代码:设置 chains,定义 schemas,处理输出解析器……
+刚在 HN 上看到一个新项目 Expectllm,思路很清爽:Agent 就是 expect 脚本.发消息,等模式,根据匹配分支.就这么简单.
+核心洞察 “Agents are just expect scripts. Send a message, expect a pattern, branch on the match.”
+不需要复杂的框架,不需要输出解析器.用正则模式(你本来就会)让 LLM 适应你的格式,而不是反过来.
+4 行代码示例 from expectllm import Conversation c = Conversation() c.send(&#34;Is Python dynamically typed? Reply YES or NO&#34;) if c.expect_yesno(): print(&#34;Correct!&#34;) 对比传统做法(20&#43; 行):
+from langchain.chat_models import ChatOpenAI from langchain.output_parsers import PydanticOutputParser from pydantic import BaseModel, Field
+… 设置,chains,错误处理 … 核心特性 零样板代码 — 没有 chains,没有 schemas,没有输出解析器.直接发消息,等待,匹配.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 00:10:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>393 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Expectllm:用 Unix &#34;expect&#34; 风格与 LLM 对话,4 行代码搞定" href="https://claudeai.best/posts/hunter-2026022100/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771600176601_cover.jpg" alt="知识图谱与数据连接">
 </figure>
   <header class="entry-header">
@@ -391,27 +413,6 @@ Minimus Labs 扫描了主流的 OpenClaw 容器镜像,结果有点吓人:
   </div>
   <footer class="entry-footer"><span title='2026-02-20 13:08:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>205 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to OpenClaw 官方镜像有 2062 个漏洞?Minimus 出了个安全版,99% 更少 CVE" href="https://claudeai.best/posts/hunter-2026022013/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771560433450_cover.jpg" alt="代码与机器学习">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">gskill:自动为编码 Agent 学习 Skills,用小模型训练,迁移到大模型
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>给编码 Agent 写 Skills 是门艺术.写得好,效率翻倍;写得不好,agent 迷路.
-问题是:手动写 Skills 太累了,而且每个仓库都需要定制.
-GEPA 刚发布了 gskill,一个全自动化的技能学习管线.给定任意 GitHub 仓库,它会自动生成最适合这个仓库的 Agent Skills.
-最关键的是:用便宜的小模型学出来的技能,可以直接迁移到 Claude Code 上用.
-核心思路 gskill 由两个组件组成:
-SWE-smith:从目标仓库自动生成可验证的 SWE 任务(带测试) GEPA optimize_anything:进化式优化循环,自动学习和改进 Skills 流程:
-仓 优 # # J B B # 技 - - - # 以 ` # - - - # - - - 这 # 团 公 用 # ` # g c # p # c 官 G 库 化 # # i l l # 能 * * * # ` # - - - # 些 # * 队 * 司 * # ` i d y p * 网 i 循 # n e e # 是 B C C J C 关 B ` S F F C A A 场 来 场 有 场 g ` 克 t 使 t 将 一 : t → 环 效 j v v 在 l l l i l 键 学 l m R t N p s o o M h d v S 应 景 了 景 几 景 p 快 b 隆 g 用 h s 句 [ H 的 果 在 a e e 迁 e a a n a 发 到 e a u a a a i r r a a d o k 用 一 新 二 十 三 t 速 a c e o S k 话 g u S 原 有 , , 移 g v u u j u 现 的 v r n r r c n k n i i 场 : 人 : 个 : - 开 s G l p g n k i * e b W 理 多 M 是 到 p e d d a d * e k t r k g p m e g f d l 景 新 , 批 内 成 5 始 h E o a s i l * p : E : 强 i 基 基 t ( e e ( e * S d t o a l a i e o l 项 要 量 部 本 - P n k g l l : a [ - 从 ? n 线 线 G C - G P : k 为 o e b w g e n s m c s s 目 快 优 仓 优 m A e i s l s g - g s 空 i = = o l 5 o H S y H 你 i 例 w s r e i m i o u c 上 速 化 库 化 i l k s / s a i m / - 5 2 a - a o t a 可 l , n t o q : t c a n n s r 是 手 上 内 , * n h l i j k i t i 基 S 5 4 项 u m 项 i n h i 以 l 自 s a u e s t i e e a 从 * 手 部 每 * i t l 复 i i . h t 础 W % % 目 d i 目 k n o k 用 s 动 d i ` s : c m d t * 一 仓 个 t 学 l 制 n l g u h E , , , e n ) u e n u 便 学 e : c g t h a b c A 个 库 都 学 p 习 . 到 j l i b S - 说 i * t 宜 长 到 a k o : f e l e u h g 复 * 配 习 s 任 p a t . 生 k A 加 加 明 C * 4 项 4 的 什 的 r ` l o s , h n e 杂 * : 意 y C / 让 h c 成 i g 这 o 上 : . 4 目 . 小 么 l c y t ` l : a i m n 仓 S S / 仓 l S u o 任 l e S S 套 d 学 5 . ) 5 模 样 S y d : e g l r v t a t 库 k k / 库 a K S b m 务 l n k k 框 e 的 : 5 * : 型 ? k s o o u e i i . i i g 的 - u I k . / s t i i 架 , 7 : * 9 学 i a / t w s v o t n 的 用 l l i r d L i i g → ( l l 不 但 9 通 : 3 习 l n t t e i r e . 成 l l t S e e L l o e 开 g l l 仅 可 . 过 . l d e e t e s g 功 g s s h k p . l / p G 始 p s s 限 以 3 率 9 S s s / s h &#34; w a t o 和 s ( u i o C m s g a E , t 于 直 % 饱 % k i t p t e e a t s 失 k 太 便 b l o d e - P 让 - 后 后 接 和 i 包 t b a x b f 败 i 贵 宜 . l p d 从 p a A 5 = = P 用 → , → l 含 e e t s p l a w i 中 l . ) c s a e / &#34; a i A - 8 9 y 在 但 l : r d h t e e h l 学 l 用 , o l p 手 ] / 优 g m 2 3 t 1 时 9 s a p a c t e e 到 然 m l 项 a 工 ( g 化 e i % % h C 0 间 8 , t &amp; t a c t c i n s 的 自 g 后 / e 目 t 编 h e 循 n n , , o l 0 显 . 然 e &amp; o t k e h m , 动 s 在 g t h 写 t p 环 t i n a % 著 5 后 / h d a e c i 针 生 k e s / &#34; t a 迭 ) 提 提 . u , 减 % 部 f g p / t n ; o n 对 成 i C p / t 变 p ] 代 执 上 升 升 d 时 少 署 r o k t r v g v 性 这 l l a j o 成 s ( 行 = = e 间 到 o g o a s e r e r 极 个 l a - i / &#34; : h S 任 &#43; * 生 m t ` / c s e r e 强 仓 u a n y 自 / t k 务 2 * C 1 产 e p e g r a p . 库 自 d i j o 动 / t i , 7 &#43; o 7 级 f s k o u g o 的 动 e / a u 学 g p l 收 % 6 d 3 的 a t g t t n e 学 g r 习 e s l 集 9 e s i o &#34; r S 习 S e / &#34; p : s 反 % A l - p t i o k , o p p . a / 馈 * 上 → g u r t h s o i 一 n a o r 用 - / → , * : e r u f o e t l 次 n . u o 小 a g 然 1 n e n r m . l 配 e g t j 模 i i 输 后 4 t s . a l s i s 置 t i p e 型 . t 出 用 2 ` T m o m s , , t u c 训 g h 更 s 上 e e c a s 新 全 4 t t 练 i u S 强 . s a l i 人 公 . / , t b K 的 t i t l n 司 5 s . 大 h . I N n e e g &#43; 受 k c 模 u c L L a s . 益 上 i l 型 b o L L m r t t A . 部 l a 部 . m . M e e h I 署 l u 署 i m p e r ( s d , g d 反 - o e A 准 / e 成 / e 思 c p p g 确 j / 本 g p 这 o c r r e ) i s 降 e a 些 u o o o n . n k , p - 结 n d d d t 成 j i 效 a a 果 t e u u 本 a l 果 / i , = c c 都 和 / l 升 ) / 提 1 f i i 能 效 S s . g 出 ` i n n 更 果 K / e 改 r g g 快 兼 I j p 进 s 理 得 L i a 建 t f t 解 . L n ) 议 . u e 项 . j , n s 目 m a 迭 c t . d / 代 t 优 i a 化 o f . n t . e r e a c h c h a n g e . </p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-20 12:08:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>8 分钟</span>&nbsp;·&nbsp;<span>1676 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to gskill:自动为编码 Agent 学习 Skills,用小模型训练,迁移到大模型" href="https://claudeai.best/posts/hunter-2026022012/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

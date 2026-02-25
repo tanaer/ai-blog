@@ -6,8 +6,22 @@
     <description>Recent content in AI on AI 极客前沿</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 26 Feb 2026 04:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Feb 2026 05:07:00 +0800</lastBuildDate>
     <atom:link href="https://claudeai.best/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI攻击激增！IBM最新报告拉响警报</title>
+      <link>https://claudeai.best/posts/ibm-security-2026/</link>
+      <pubDate>Thu, 26 Feb 2026 05:07:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/ibm-security-2026/</guid>
+      <description>&lt;p&gt;黑客正用AI快速寻找漏洞。&lt;/p&gt;
+&lt;p&gt;IBM最新威胁报告显示，AI驱动的攻击正在激增。基础安全漏洞成了主要突破口。&lt;/p&gt;
+&lt;p&gt;公共应用攻击比去年暴涨44%，就因为缺少认证控制。&lt;/p&gt;
+&lt;p&gt;更吓人的是，30万ChatGPT账号凭证被泄露。AI平台也成了黑客目标。&lt;/p&gt;
+&lt;p&gt;勒索软件团伙数量猛增49%，攻击门槛越来越低。&lt;/p&gt;
+&lt;p&gt;制造业连续五年成头号目标。北美6年来首次成为最被攻击地区。&lt;/p&gt;
+&lt;p&gt;专家说：攻击者没在发明新套路，只是用AI加速了老套路。&lt;/p&gt;
+&lt;p&gt;企业必须转向主动防御。用AI对抗AI，才能抓住威胁。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>6500亿美元！科技巨头AI军备竞赛升级</title>
       <link>https://claudeai.best/posts/2026-02-26-tech-giants-650b-ai-investment/</link>
