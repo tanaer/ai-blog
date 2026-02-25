@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>电动车 on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/%E7%94%B5%E5%8A%A8%E8%BD%A6/</link>
+    <description>Recent content in 电动车 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 26 Feb 2026 02:11:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/%E7%94%B5%E5%8A%A8%E8%BD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI发现新磁性材料，电动车成本要降了</title>
+      <link>https://claudeai.best/posts/ai-discovery-magnetic-materials-2026-02-26/</link>
+      <pubDate>Thu, 26 Feb 2026 02:11:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/ai-discovery-magnetic-materials-2026-02-26/</guid>
+      <description>新罕布什尔大学团队用AI从26,706种材料中筛选出81种高性能磁性候选材料，电动车电机有望用上更便宜的非稀土磁铁。</description>
+    </item>
+  </channel>
+</rss>

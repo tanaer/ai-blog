@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>讽刺 on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/%E8%AE%BD%E5%88%BA/</link>
+    <description>Recent content in 讽刺 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 26 Feb 2026 00:05:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/%E8%AE%BD%E5%88%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Meta AI 安全总监的邮箱被 OpenClaw 删光了，讽刺吗？</title>
+      <link>https://claudeai.best/posts/hunter-2026022600/</link>
+      <pubDate>Thu, 26 Feb 2026 00:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022600/</guid>
+      <description>Meta 的 AI 安全总监 Summer Yue 被 OpenClaw AI 删光了邮箱，明明说了先确认再行动，AI 照样 speedrun 删除。讽刺不？</description>
+    </item>
+  </channel>
+</rss>

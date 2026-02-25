@@ -1,1 +1,61 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>OpenAI on AI 极客前沿</title><link>https://claudeai.best/tags/openai/</link><description>Recent content in OpenAI on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Sat, 21 Feb 2026 00:10:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/openai/index.xml" rel="self" type="application/rss+xml"/><item><title>Expectllm:用 Unix "expect" 风格与 LLM 对话,4 行代码搞定</title><link>https://claudeai.best/posts/hunter-2026022100/</link><pubDate>Sat, 21 Feb 2026 00:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022100/</guid><description>Expectllm 开源库:用 expect 风格模式匹配与 LLM 对话,零样板代码,支持 OpenAI/Anthropic,内置 JSON/数字/是/否/代码提取模板,单文件轻量级实现.</description></item><item><title>OpenAI 发布 EVMbench:AI 能不能帮你审计智能合约漏洞?</title><link>https://claudeai.best/posts/hunter-2026021917/</link><pubDate>Thu, 19 Feb 2026 17:30:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021917/</guid><description>OpenAI 联合 Paradigm 发布 EVMbench,评估 AI Agent 检测,修复,利用智能合约漏洞的能力.GPT-5.3-Codex 在 exploit 模式达到 72.2%,6 个月提升一倍.</description></item><item><title>GPT-5.2花12小时推导出新物理公式,AI真的开始做原创科学了?</title><link>https://claudeai.best/posts/hunter-2026021700/</link><pubDate>Tue, 17 Feb 2026 00:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021700/</guid><description>OpenAI的GPT-5.2独立推导并证明了一个被忽视40年的胶子散射振幅公式,这是AI首次在理论物理领域做出原创贡献.但争议也来了:这算真正的科学发现吗?</description></item><item><title>OpenClaw创始人加入OpenAI:一个开源项目如何撬动百亿美元收购战</title><link>https://claudeai.best/posts/hunter-2026021622/</link><pubDate>Mon, 16 Feb 2026 22:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021622/</guid><description>OpenClaw创始人Peter Steinberger宣布加入OpenAI,拒绝Meta等数十亿美元收购报价.这个GitHub史上增长最快的开源AI Agent项目将成立独立基金会,继续开源运营.</description></item><item><title>SaaS已死?2万亿美元蒸发背后,所有软件公司都在抢着改名叫AI</title><link>https://claudeai.best/posts/hunter-2026021616/</link><pubDate>Mon, 16 Feb 2026 16:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021616/</guid><description>Salesforce,ServiceNow,Oracle股价暴跌,SaaStr改名SaaStr AI,Altman宣称SaaS时代终结.2万亿美元市值蒸发的背后,是AI Agent真的要取代传统软件,还是又一轮集体焦虑?</description></item><item><title>SaaS已死?2万亿美元的软件行业正在被AI吞噬</title><link>https://claudeai.best/posts/hunter-2026021615/</link><pubDate>Mon, 16 Feb 2026 15:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021615/</guid><description>Salesforce,ServiceNow,Oracle股价集体暴跌,SaaStr改名SaaStr AI,软件公司疯狂转型AI.SaaS模式真的要完了吗?我们用数据和逻辑拆解这场行业地震.</description></item><item><title>全球AI大佬齐聚新德里:印度AI峰会背后的野心与博弈</title><link>https://claudeai.best/posts/hunter-2026021614/</link><pubDate>Mon, 16 Feb 2026 14:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021614/</guid><description>印度AI Impact Summit 2026今天在新德里开幕,Altman,Pichai,Amodei,Bill Gates,LeCun齐聚,黄仁勋临时退出.全球南方首次举办AI峰会,印度想要什么?</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>OpenAI on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/openai/</link>
+    <description>Recent content in OpenAI on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 21 Feb 2026 00:10:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/openai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Expectllm:用 Unix &#34;expect&#34; 风格与 LLM 对话,4 行代码搞定</title>
+      <link>https://claudeai.best/posts/hunter-2026022100/</link>
+      <pubDate>Sat, 21 Feb 2026 00:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022100/</guid>
+      <description>Expectllm 开源库:用 expect 风格模式匹配与 LLM 对话,零样板代码,支持 OpenAI/Anthropic,内置 JSON/数字/是/否/代码提取模板,单文件轻量级实现.</description>
+    </item>
+    <item>
+      <title>OpenAI 发布 EVMbench:AI 能不能帮你审计智能合约漏洞?</title>
+      <link>https://claudeai.best/posts/hunter-2026021917/</link>
+      <pubDate>Thu, 19 Feb 2026 17:30:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021917/</guid>
+      <description>OpenAI 联合 Paradigm 发布 EVMbench,评估 AI Agent 检测,修复,利用智能合约漏洞的能力.GPT-5.3-Codex 在 exploit 模式达到 72.2%,6 个月提升一倍.</description>
+    </item>
+    <item>
+      <title>GPT-5.2花12小时推导出新物理公式,AI真的开始做原创科学了?</title>
+      <link>https://claudeai.best/posts/hunter-2026021700/</link>
+      <pubDate>Tue, 17 Feb 2026 00:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021700/</guid>
+      <description>OpenAI的GPT-5.2独立推导并证明了一个被忽视40年的胶子散射振幅公式,这是AI首次在理论物理领域做出原创贡献.但争议也来了:这算真正的科学发现吗?</description>
+    </item>
+    <item>
+      <title>OpenClaw创始人加入OpenAI:一个开源项目如何撬动百亿美元收购战</title>
+      <link>https://claudeai.best/posts/hunter-2026021622/</link>
+      <pubDate>Mon, 16 Feb 2026 22:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021622/</guid>
+      <description>OpenClaw创始人Peter Steinberger宣布加入OpenAI,拒绝Meta等数十亿美元收购报价.这个GitHub史上增长最快的开源AI Agent项目将成立独立基金会,继续开源运营.</description>
+    </item>
+    <item>
+      <title>SaaS已死?2万亿美元蒸发背后,所有软件公司都在抢着改名叫AI</title>
+      <link>https://claudeai.best/posts/hunter-2026021616/</link>
+      <pubDate>Mon, 16 Feb 2026 16:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021616/</guid>
+      <description>Salesforce,ServiceNow,Oracle股价暴跌,SaaStr改名SaaStr AI,Altman宣称SaaS时代终结.2万亿美元市值蒸发的背后,是AI Agent真的要取代传统软件,还是又一轮集体焦虑?</description>
+    </item>
+    <item>
+      <title>SaaS已死?2万亿美元的软件行业正在被AI吞噬</title>
+      <link>https://claudeai.best/posts/hunter-2026021615/</link>
+      <pubDate>Mon, 16 Feb 2026 15:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021615/</guid>
+      <description>Salesforce,ServiceNow,Oracle股价集体暴跌,SaaStr改名SaaStr AI,软件公司疯狂转型AI.SaaS模式真的要完了吗?我们用数据和逻辑拆解这场行业地震.</description>
+    </item>
+    <item>
+      <title>全球AI大佬齐聚新德里:印度AI峰会背后的野心与博弈</title>
+      <link>https://claudeai.best/posts/hunter-2026021614/</link>
+      <pubDate>Mon, 16 Feb 2026 14:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021614/</guid>
+      <description>印度AI Impact Summit 2026今天在新德里开幕,Altman,Pichai,Amodei,Bill Gates,LeCun齐聚,黄仁勋临时退出.全球南方首次举办AI峰会,印度想要什么?</description>
+    </item>
+  </channel>
+</rss>

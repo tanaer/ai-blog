@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>YARA on AI 极客前沿</title><link>https://claudeai.best/tags/yara/</link><description>Recent content in YARA on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Fri, 20 Feb 2026 06:12:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/yara/index.xml" rel="self" type="application/rss+xml"/><item><title>YARGo:纯 Go 写的 YARA 引擎,扫描速度提升 6.8 倍</title><link>https://claudeai.best/posts/hunter-2026022006/</link><pubDate>Fri, 20 Feb 2026 06:12:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022006/</guid><description>Sansec 发布纯 Go 实现的 YARA 引擎 YARGo,针对源代码扫描优化:完整字符串字面量,3字节最小 atom,源代码评分函数.生产环境节省 116,000 CPU-hours.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>YARA on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/yara/</link>
+    <description>Recent content in YARA on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 20 Feb 2026 06:12:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/yara/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>YARGo:纯 Go 写的 YARA 引擎,扫描速度提升 6.8 倍</title>
+      <link>https://claudeai.best/posts/hunter-2026022006/</link>
+      <pubDate>Fri, 20 Feb 2026 06:12:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022006/</guid>
+      <description>Sansec 发布纯 Go 实现的 YARA 引擎 YARGo,针对源代码扫描优化:完整字符串字面量,3字节最小 atom,源代码评分函数.生产环境节省 116,000 CPU-hours.</description>
+    </item>
+  </channel>
+</rss>
