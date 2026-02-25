@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>财报 on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/%E8%B4%A2%E6%8A%A5/</link>
+    <description>Recent content in 财报 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 26 Feb 2026 07:15:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/%E8%B4%A2%E6%8A%A5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>英伟达财报又超预期，AI泡沫？不存在的</title>
+      <link>https://claudeai.best/posts/2026-02-26-nvidia-earnings-ai-bubble/</link>
+      <pubDate>Thu, 26 Feb 2026 07:15:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/2026-02-26-nvidia-earnings-ai-bubble/</guid>
+      <description>英伟达 Q4 财报再次超过华尔街预期，数据中心业务增长 75%，全年利润 1200 亿美元。在 AI 泡沫担忧下，英伟达用数据证明自己免疫。</description>
+    </item>
+  </channel>
+</rss>

@@ -161,6 +161,30 @@
 
 <article class="post-entry tag-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771329764075_cover.jpg" alt="代码编辑器中的编程界面">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AGENTS.md到底有没有用?一篇论文引爆开发者社区大战
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>如果你最近在用 Claude Code,Codex 或者 OpenClaw 之类的 AI 编程工具,你大概率见过一个叫 AGENTS.md(或 CLAUDE.md)的文件.它的作用很简单:告诉 AI Agent 这个项目的规矩–用什么框架,怎么跑测试,有什么坑要避.
+听起来很合理对吧?
+然后一篇 arXiv 论文说:这玩意不但没用,还让 Agent 变蠢了.
+论文说了啥 这篇来自学术界的论文 “Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?” 做了一个挺严谨的实验:
+在 SWE-bench(业内标准的代码修复基准测试)上跑了多个 Agent &#43; 多个 LLM 的组合 分别测试了三种情况:没有上下文文件,LLM 自动生成的上下文文件,开发者手写的上下文文件, 结果:, LLM 生成的文件:任务成功率平均下降 3% 开发者手写的文件:平均提升 4%,但在不同模型上表现不一致(Sonnet 4.5 反而下降 2%) 所有情况下推理成本增加超过 20% 论文的结论是:上下文文件里的&#34;不必要要求&#34;让任务变难了,建议只写最小化的必要信息.
+HN 社区炸了 这篇论文在 Hacker News 上拿到 146 分,94 条评论,评论区基本是一边倒的&#34;你们测错了&#34;.
+最核心的反驳来自一位高赞评论者:
+“4% 的提升是巨大的!一个简单的 markdown 文件就能带来 4% 的改善,这说明它是必须有的.”
+他指出了论文的一个关键盲区:SWE-bench 测试的都是公开的 GitHub 项目,而这些项目里的 AGENTS.md 大多来自&#34;最近的小型 vibecoding 项目&#34;,质量参差不齐.真正需要 AGENTS.md 的场景是大型私有代码库–那些有复杂部署流水线,团队约定,历史债务的项目.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-17 20:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>197 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to AGENTS.md到底有没有用?一篇论文引爆开发者社区大战" href="https://claudeai.best/posts/hunter-2026021720/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771322741608_cover.jpg" alt="AI Agent安全威胁示意图">
 </figure>
   <header class="entry-header">
@@ -493,47 +517,6 @@ GPU: 不用多说,NVIDIA的数据中心GPU从2023年起就没正常供应过.
   </div>
   <footer class="entry-footer"><span title='2026-02-17 01:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>77 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to 硬盘全年售罄:AI吞噬硬件供应链,普通人的存储自由正在消失" href="https://claudeai.best/posts/hunter-2026021701/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771257687779_cover.jpg" alt="粒子物理与AI的交汇">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">GPT-5.2花12小时推导出新物理公式,AI真的开始做原创科学了?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>上周末,OpenAI放了一个大招:GPT-5.2 Pro独立推导出了一个全新的理论物理公式,还花了12个小时生成了完整的形式化证明.
-这不是做题.不是刷竞赛.是真正的,之前没有人发现过的物理结果.
-到底发现了什么? 先说背景.在粒子物理里,有一类叫做&#34;胶子散射振幅&#34;的东西–简单说就是计算胶子(强力的载体粒子)碰撞概率的数学公式.
-1986年,Parke和Taylor给出了一个优美的公式,描述了&#34;最大螺旋度违反&#34;(MHV)振幅.这个公式极其简洁,是粒子物理里的经典之作.
-但有一类特殊情况–只有一个负螺旋度胶子,其余全是正螺旋度的情况–几十年来教科书都写着:这类振幅为零.
-GPT-5.2说:不对,它们不为零.
-具体来说,在一个叫&#34;半共线区域&#34;(half-collinear regime)的特殊动量空间里,这些振幅其实是非零的.GPT不仅发现了这个漏洞,还给出了一个对任意n都成立的闭合公式,并用Berends-Giele递推关系和soft limit验证了正确性.
-12小时的&#34;思考&#34;过程 论文的作者阵容相当豪华:普林斯顿高等研究院,范德堡大学,剑桥大学,哈佛大学,加上OpenAI.
-流程是这样的:
-人类物理学家手动计算了n=1到n=6的具体情况,得到了极其复杂的表达式 GPT-5.2 Pro拿到这些具体情况后,化简了表达式,发现了隐藏的规律,猜测出了一个对所有n都成立的通用公式 一个内部加强版GPT-5.2花了大约12小时的推理时间,独立推导出了同一个公式,并生成了完整的形式化证明 人类物理学家用标准方法验证了证明的正确性 注意第2步和第3步–AI不是在做&#34;搜索&#43;拼接&#34;,而是在做真正的数学推理:从有限个具体案例中归纳出通用规律,然后证明它.
-HN上吵翻了 Hacker News的讨论非常精彩,观点分几派:
-乐观派认为这是里程碑–AI已经能在有验证测试的问题上做出真正的贡献.散射振幅的计算复杂度超指数增长,人类算到n=6就已经极其痛苦了,但AI能从中发现规律并推广到任意n.
-谨慎派指出关键细节:问题的specification是人类给的.物理学家已经有了&#34;这类振幅可能不为零&#34;的直觉,已经算出了具体案例,然后才把&#34;找规律&#43;证明&#34;的任务交给AI.AI做的是&#34;最后一公里&#34;–虽然这最后一公里人类确实没跑出来.
-怀疑派则更尖锐:这本质上就是暴力搜索&#43;统计偏差.把大量计算资源砸到一个有明确验证标准的问题上,偶尔找到一个解就宣称&#34;智能&#34;–这和真正的科学发现是一回事吗?
-我觉得最精彩的一条评论是:
-“现代LLM在有验证测试集的问题上极其强大且不知疲倦.但这个结论不能推广到开放式问题上.发现问题的specification往往才是真正的战场.”
-我的看法 这件事的重要性在于程度的变化,而不是性质的变化.
-AI辅助科研不是新鲜事.AlphaFold预测蛋白质结构,DeepMind的Aletheia解数学难题,都是先例.但GPT-5.2的特殊之处在于:它不是一个专门为某个任务训练的系统,而是一个通用语言模型,在给定足够的&#34;思考时间&#34;后,展现出了数学推理能力.
-12小时的推理时间也很有意思.这说明现在的scaling不只是在模型参数上,也在推理时间(inference-time compute)上.给模型更多时间去&#34;想&#34;,它真的能想出更深刻的东西.这和人类解难题的过程其实很像–你也不是看一眼就能证明定理的.
-但我不会把这叫做&#34;AI做科学&#34;.至少现在还不是.真正的科学发现需要的是问出正确的问题–为什么去看half-collinear regime?为什么怀疑教科书上&#34;振幅为零&#34;的结论?这些直觉来自人类物理学家.AI做的是在人类指定的方向上,执行了人类做不到的复杂推理.
-这已经很了不起了.但&#34;AI科学家&#34;和&#34;极其强大的AI科研工具&#34;之间,还有一道关键的鸿沟.
-真正的信号 抛开PR和争议,这篇论文传递的真实信号是:
-推理时间scaling有用–12小时的&#34;思考&#34;换来了一个形式化证明,这说明inference compute的投入有明确回报 通用模型能做专业推理–不需要专门训练一个&#34;物理AI&#34;,通用LLM在给定足够上下文后就能做非平凡的数学物理推理 人机协作的范式正在成型–人类提供直觉和方向,AI执行复杂的推导和搜索,两者互补 这个范式如果成熟,影响将远超粒子物理.材料科学,药物设计,密码学–任何有明确验证标准的理论问题,都可能被这种方式加速.
-论文团队也提到,同样的方法已经被用于从胶子推广到引力子的振幅计算,更多结果即将发表.
-物理学教科书可能要改了.而改动的起因,是一个语言模型花了12个小时&#34;想&#34;出来的.
-不管你怎么定义&#34;智能&#34;,这都值得认真对待.
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-17 00:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>46 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to GPT-5.2花12小时推导出新物理公式,AI真的开始做原创科学了?" href="https://claudeai.best/posts/hunter-2026021700/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

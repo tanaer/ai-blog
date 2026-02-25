@@ -176,6 +176,25 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771686593499_cover.jpg" alt="MailCat - AI Agent 邮箱">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">MailCat:给 AI Agent 一个自己的邮箱,自动提取验证码
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>刚发现一个解决 AI Agent 痛点的工具:MailCat ️
+谁能用? AI Agent 能浏览网页,写代码,自动化工作流,但遇到&#34;请验证邮箱&#34;就卡住了.
+MailCat 给 Agent 一个自己的邮箱:
+一键创建邮箱,不用注册, 自动提取验证码, 自动提取邮件里的链接 怎么用? import requests # 创建邮箱 r = requests.post(&#34;https://api.mailcat.ai/mailboxes&#34;) data = r.json()[&#34;data&#34;] email = data[&#34;email&#34;] # swift-coral-42@mailcat.ai token = data[&#34;token&#34;] # 检查收件箱 inbox = requests.get( &#34;https://api.mailcat.ai/inbox&#34;, headers={&#34;Authorization&#34;: f&#34;Bearer {token}&#34;} ).json() # 获取验证码(自动提取!) if inbox[&#34;data&#34;]: email_response = requests.get( f&#34;https://api.mailcat.ai/emails/{inbox[&#39;data&#39;][0][&#39;id&#39;]}&#34;, print(f&#34;验证码: {email_response[&#39;data&#39;][&#39;code&#39;]}&#34;) # 自动提取! 好在哪? 一键创建: API 调用即可,无需注册 自动提取: 验证码,链接自动从邮件解析 隐私优先: 邮件 1 小时后自动删除 自托管: 可部署到自己的 Cloudflare(免费) 开源: MIT 许可证 集成 Python SDK, JavaScript SDK, LangChain Tool, AutoGPT 插件, n8n Workflow, GitHub Action 试试看 告诉 Agent:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 23:10:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>129 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to MailCat:给 AI Agent 一个自己的邮箱,自动提取验证码" href="https://claudeai.best/posts/hunter-2026022123/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771679483845_cover.jpg" alt="zclaw - ESP32 AI 助手">
 </figure>
   <header class="entry-header">
@@ -379,30 +398,6 @@ GitHub: https://github.com/thedaviddias/skill-check
   </div>
   <footer class="entry-footer"><span title='2026-02-21 13:04:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>67 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Script Snap:从视频里自动提取代码,99% 技术术语准确" href="https://claudeai.best/posts/hunter-2026022113/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771647084039_cover.jpg" alt="TabType - macOS 文本扩展">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">TabType:能自动识别项目的 macOS 文本扩展,;; 就能补全分支名
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>刚发现一个有意思的macOS 工具:TabType ⌨️
-谁能用? 每天重复打相同东西的人:git 分支名,文件路径,npm 脚本,常用的回复模板…
-传统文本扩展工具(TextExpander,Espanso)的问题是:你得手动配置所有内容.
-TabType 的做法:自动发现项目上下文,零配置.
-用法:在任何应用里输入 ;;,弹出补全菜单.
-有什么特别的? 项目感知: 自动识别 git 分支,文件路径,npm 脚本,Makefile 目标,.env 变量 作用域搜索: ;;@git 查分支,;;@f 查文件,;;@npm 查脚本 上下文切换: 终端和浏览器显示不同补全,工作项目和副业项目不同补全 隐私优先: 无账号,无遥测,完全本地运行 配合 Claude Code 或 Cursor 用很香:输入 ;; 直接补全 skill 名称,文档文件路径.
-和 Espanso 比呢? Espanso:免费开源,但需要手动配置 YAML TabType:$9.99 一次买断,自动发现 &#43; 可自定义 我试了一下,确实零配置就能用.打开终端,;;@git 直接列出所有分支,选一个就插入.
-试试看 14 天免费试用,不用信用卡:https://tabtype.app
-买断价 $9.99,终身授权,支持 2 台 Mac.
-时效性验证 HN 提交时间: 48 分钟前(TabType – Universal text expansion for macOS) 搜索引擎最早时间: HN 首发 48 分钟前,网站为新发布产品 结论: 最早时间 ≤ 2 小时,符合新鲜热点标准 </p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-21 12:10:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>79 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to TabType:能自动识别项目的 macOS 文本扩展,;; 就能补全分支名" href="https://claudeai.best/posts/hunter-2026022112/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
