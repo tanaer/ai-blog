@@ -176,6 +176,29 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771679483845_cover.jpg" alt="zclaw - ESP32 AI 助手">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">zclaw:888 KB 的 AI 助手,跑在 ESP32 上
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>发现一个有意思的东西:zclaw
+888 KB 的 AI 助手,跑在 ESP32 上.
+谁能用? 喜欢折腾硬件的,想要离线 AI 助手的,IoT 开发者.
+怎么用 一键安装:
+bash &lt;(curl -fsSL https://raw.githubusercontent.com/tnm/zclaw/main/scripts/bootstrap.sh) 然后:
+烧录固件到 ESP32 配置 WiFi &#43; LLM 凭证 通过 Telegram 或 Web 聊天 功能 Telegram / Web 聊天 时区感知的计划任务(每天,周期,一次性), GPIO 读写控制(带安全保护), 持久内存(重启不丢), 多 Provider:Anthropic,OpenAI,OpenRouter 硬件 支持 ESP32-C3,ESP32-S3,ESP32-C6.
+推荐入门板:Seeed XIAO ESP32-C3(几块钱)
+跟云端助手比? 离线运行(WiFi 只是调用 API), 你的硬件,你的数据, 可以控制 GPIO(智能家居), 888 KB,你能读完源码 链接 GitHub: https://github.com/tnm/zclaw 文档: https://zclaw.dev Fun to use, fun to hack on
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 21:05:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>70 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to zclaw:888 KB 的 AI 助手,跑在 ESP32 上" href="https://claudeai.best/posts/hunter-2026022121/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771675774516_cover.jpg" alt="Memed-in - LinkedIn 表情包扩展">
 </figure>
   <header class="entry-header">
@@ -380,29 +403,6 @@ TabType 的做法:自动发现项目上下文,零配置.
   </div>
   <footer class="entry-footer"><span title='2026-02-21 12:10:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>79 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to TabType:能自动识别项目的 macOS 文本扩展,;; 就能补全分支名" href="https://claudeai.best/posts/hunter-2026022112/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771643438878_cover.jpg" alt="CRTX - AI代码验证循环">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">CRTX:让 AI 生成代码后自己跑测试,自己修 bug
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>刚发现一个有意思的CLI 工具:CRTX ️
-谁能用? AI 生成代码最头疼的是什么?跑不起来.导入报错,测试失败,边界情况没处理.拿到代码还得花 10-30 分钟调试.
-CRTX 解决这个问题:生成后自动跑测试,失败就自动修复.
-用法很简单:
-pip install crtx crtx loop &#34;Build a REST API with FastAPI, SQLite, search and pagination&#34; 一条命令进去,出来的是已经通过测试的代码.
-怎么做到的? CRTX 的核心是 Generate → Test → Fix → Review 循环:
-Generate - 选合适的模型生成代码 Test - 本地跑 AST 解析,导入检查,pyflakes,pytest Fix - 测试失败?把错误喂回模型让它修 Review - 另一个独立模型(Arbiter)审查最终输出 测试不通过不放行,修复卡住会启动三级 escalation:先诊断根因,再简化上下文重试,最后换个模型给&#34;第二意见&#34;.
-比别的工具有什么优势? 单模型 Claude, 准确率=94%, 开发者调试时间=10 分钟 单模型 o3, 准确率=81%, 开发者调试时间=4 分钟 多模型辩论, 准确率=88%, 开发者调试时间=9 分钟 CRTX Loop, 准确率=99%, 开发者调试时间=2 分钟
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-21 11:08:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>123 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to CRTX:让 AI 生成代码后自己跑测试,自己修 bug" href="https://claudeai.best/posts/hunter-2026022111/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

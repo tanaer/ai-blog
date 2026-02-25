@@ -6,13 +6,41 @@
     <description>Recent content in Tags on AI 极客前沿</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 26 Feb 2026 05:07:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Feb 2026 06:06:00 +0800</lastBuildDate>
     <atom:link href="https://claudeai.best/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
       <link>https://claudeai.best/tags/ai/</link>
-      <pubDate>Thu, 26 Feb 2026 05:07:00 +0800</pubDate>
+      <pubDate>Thu, 26 Feb 2026 06:06:00 +0800</pubDate>
       <guid>https://claudeai.best/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Anthropic</title>
+      <link>https://claudeai.best/tags/anthropic/</link>
+      <pubDate>Thu, 26 Feb 2026 06:06:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/anthropic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Claude</title>
+      <link>https://claudeai.best/tags/claude/</link>
+      <pubDate>Thu, 26 Feb 2026 06:06:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/claude/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>企业应用</title>
+      <link>https://claudeai.best/tags/%E4%BC%81%E4%B8%9A%E5%BA%94%E7%94%A8/</link>
+      <pubDate>Thu, 26 Feb 2026 06:06:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/%E4%BC%81%E4%B8%9A%E5%BA%94%E7%94%A8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>生产力工具</title>
+      <link>https://claudeai.best/tags/%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Thu, 26 Feb 2026 06:06:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7/</guid>
       <description></description>
     </item>
     <item>
@@ -419,20 +447,6 @@
       <link>https://claudeai.best/tags/ai%E6%94%BF%E7%AD%96/</link>
       <pubDate>Wed, 25 Feb 2026 12:05:00 +0800</pubDate>
       <guid>https://claudeai.best/tags/ai%E6%94%BF%E7%AD%96/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Anthropic</title>
-      <link>https://claudeai.best/tags/anthropic/</link>
-      <pubDate>Wed, 25 Feb 2026 12:05:00 +0800</pubDate>
-      <guid>https://claudeai.best/tags/anthropic/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Claude</title>
-      <link>https://claudeai.best/tags/claude/</link>
-      <pubDate>Wed, 25 Feb 2026 12:05:00 +0800</pubDate>
-      <guid>https://claudeai.best/tags/claude/</guid>
       <description></description>
     </item>
     <item>

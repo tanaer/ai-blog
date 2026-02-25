@@ -161,6 +161,47 @@
 
 <article class="post-entry tag-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771416097453_cover.jpg" alt="Claude Sonnet 4.6 AI模型发布">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Claude Sonnet 4.6发布:性能对标Opus,价格不变,还学会了用电脑
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>今天Anthropic放了个大招–Claude Sonnet 4.6.
+这不是普通的小版本更新.官方明确说了:Sonnet 4.6的性能接近去年11月的Opus 4.5,而价格却保持Sonnet的水平:$3输入/$15输出每百万token.
+用Opus的钱买Sonnet?不,现在是用Sonnet的钱买Opus级性能.
+性能提升有多猛? 先看几个硬指标:
+Claude Code测试:70%的开发者更喜欢Sonnet 4.6而不是4.5;甚至59%的人更喜欢它而不是Opus 4.5 OfficeQA文档理解:与Opus 4.6打平, Vending-Bench商业模拟:它开发了一套独特的&#34;前期重投入,后期拼利润&#34;策略,比竞争对手都赚得多, 保险行业基准:94%准确率,成为电脑操作任务表现最好的模型 为什么开发者更喜欢它?反馈很一致:
+更少&#34;偷懒&#34;(hallucination和虚假成功声明大幅减少), 代码改动前会先读上下文, 共享逻辑会合并而不是重复, 指令遵循更稳定 简单说:用起来更省心.
+电脑操作:16个月从3.6%到接近人类 这是我最关心的部分.
+2024年10月,Anthropic率先推出电脑操作能力.当时官方自己都说&#34;笨拙且容易出错&#34;.但进展速度惊人:
+在OSWorld基准测试(让AI操作Chrome,LibreOffice,VS Code等真实软件)中:
+Sonnet 3.5 (2024.10):3.6% Sonnet 4.6 (2026.02):接近人类水平 这意味着什么?你不用再为每个旧系统写专门的API连接器了.AI可以像人一样:看屏幕,点鼠标,敲键盘,操作任何软件.
+早期用户已经在用它自动填写复杂表单,跨多个浏览器标签整理数据,操作专业表格软件.
+当然,它还赶不上最熟练的人类.但进步曲线令人咋舌.
+1M上下文窗口(Beta) Sonnet 4.6在Beta模式下支持100万token上下文窗口.
+这是什么概念?足够塞下:
+整个代码库, 几十篇研究论文, 几百页合同文档 而且它不是&#34;塞进去就忘&#34;,而是能有效推理这么多内容.
+配套功能还包括上下文压缩(Context Compaction),在对话接近限制时自动总结旧内容,延长有效对话长度.
+开发者迁移注意 如果你在用Claude API,迁移有几处破坏性变更:
+预填充(Prefill)被废除:以前可以预先填入assistant消息来控制输出格式,现在会返回400错误.改用structured outputs或output_config.format.
+thinking参数迁移:thinking: {type: &#34;enabled&#34;, budget_tokens: N} 已弃用,改用thinking: {type: &#34;adaptive&#34;}配合effort参数.
+Beta头清理:effort,fine-grained-tool-streaming,interleaved-thinking都不再需要beta头了–全是GA功能.
+完整迁移清单在官方文档.
+我的看法 这次更新的核心信号是:性能-价格比正在快速重构.
+半年前,要接近顶级的代码能力,你得上Opus.现在Sonnet就能做到.这对开发者来说是实打实的成本下降.
+更值得玩味的是电脑操作能力的进化速度.如果这个曲线持续下去,2026年可能会看到AI真正&#34;接管&#34;大量重复性的软件操作工作.不是通过API集成,而是直接像人一样操作界面.
+到时候,那些&#34;没有API的祖传系统&#34;就不再是AI无法触及的禁区了.
+Sonnet 4.6现在已经上线所有Claude产品线–免费版,Pro,API,Claude Code,Claude Cowork,以及各大云平台.免费用户也默认升级到Sonnet 4.6.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-18 20:00:00 +0800 CST'>2026年2月18日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>73 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Claude Sonnet 4.6发布:性能对标Opus,价格不变,还学会了用电脑" href="https://claudeai.best/posts/hunter-2026021820/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771348854090_chunwan-cover.jpg" alt="机器人与AI的未来">
 </figure>
   <header class="entry-header">
@@ -472,29 +513,6 @@ AI 不仅能花钱,还能赚钱.通过 lnget CLI 工具,AI Agent 可以把自己
   </div>
   <footer class="entry-footer"><span title='2026-02-15 21:00:00 +0800 CST'>2026年2月15日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>158 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to  AI Agent 终于有钱包了!Lightning Labs 开源 L402,让 AI 自主花比特币" href="https://claudeai.best/posts/hunter-2026021521/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771226944552_hunter-2026021520.jpg" alt="Google DeepMind Aletheia 数学AI Agent">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent"> AI数学家诞生!DeepMind Aletheia 自主解开4道世界级未解难题
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>AI 做数学竞赛已经不稀奇了,但做「原创研究」呢? 去年 DeepMind 的 AI 在国际数学奥林匹克(IMO)拿了金牌,当时大家已经够震撼了.但说实话,竞赛题和真正的数学研究完全是两回事–竞赛有标准答案,研究需要你自己提出问题,翻阅海量文献,构造全新的证明.
-这周,DeepMind 扔出了一个重磅炸弹:Aletheia,一个专门为数学研究设计的 AI Agent.不是解题机器,是「AI 数学家」.
-它已经自主撰写了一篇可发表的研究论文,还独立解开了 4 道 Erdős 未解猜想.没有人类干预.
-三个让人起鸡皮疙瘩的核心亮点 1️⃣ 三段式自我纠错架构 Aletheia 不是一个模型直接输出答案,而是一个「自我审查」的 Agent 系统:
-Generator(生成器):提出候选解法, Verifier(验证器):用自然语言检查逻辑漏洞和幻觉, Reviser(修正器):根据验证结果反复修改,直到通过审核 这种「生成→检查→修改」的循环,让 AI 能发现自己最初忽略的错误.听起来简单?但就是这个设计让准确率从 65.7% 飙到了 95.1%.
-2️⃣ 算力效率提升 100 倍 2026 年 1 月版的 Gemini Deep Think,在 IMO 级别问题上所需的推理算力比 2025 年版降低了 100 倍.同样的题,花更少的时间想得更清楚–这才是真正的技术进步.
-3️⃣ 从竞赛到真正的科研突破 Aletheia 已经创造了几个「第一次」:
-Feng26 论文, 描述=自主生成算术几何领域论文, 人类参与度= 完全无人干预 LeeSeo26 论文, 描述=AI 提供高层策略,人类完善证明, 人类参与度= 人机协作 Erdős 猜想, 描述=评估700道开放问题,解决4道, 人类参与度= 自主完成
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-15 20:00:00 +0800 CST'>2026年2月15日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>161 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to  AI数学家诞生!DeepMind Aletheia 自主解开4道世界级未解难题" href="https://claudeai.best/posts/hunter-2026021520/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
