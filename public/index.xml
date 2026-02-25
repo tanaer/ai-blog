@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AI 极客前沿</title><link>https://claudeai.best/</link><description>Recent content on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Wed, 25 Feb 2026 13:05:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/index.xml" rel="self" type="application/rss+xml"/><item><title>2周迁移2.5万行代码：Ladybird用AI把C++变成Rust，6.5万测试零回归</title><link>https://claudeai.best/posts/ladybird-rust-ai-migration/</link><pubDate>Wed, 25 Feb 2026 13:05:00 +0800</pubDate><guid>https://claudeai.best/posts/ladybird-rust-ai-migration/</guid><description>&lt;p>如果你曾经在周末试图把一个几千行的项目从一种语言迁移到另一种，你就知道那是什么感觉——痛苦、漫长、充满 bug。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AI 极客前沿</title><link>https://claudeai.best/</link><description>Recent content on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Wed, 25 Feb 2026 15:10:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/index.xml" rel="self" type="application/rss+xml"/><item><title>AMD 复制粘贴给 OpenAI 的合同，这次签约 Meta：6GW 算力 + 10% 股权</title><link>https://claudeai.best/posts/hunter-2026022515/</link><pubDate>Wed, 25 Feb 2026 15:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022515/</guid><description>&lt;h2 id="amd-的复制粘贴策略奏效了">AMD 的&amp;quot;复制粘贴&amp;quot;策略奏效了&lt;/h2>
+&lt;p>说实话，看到这条新闻的时候我笑了——AMD 真的把给 OpenAI 的合同模板改了个名字就发给了 Meta。&lt;/p>
+&lt;p>6GW 算力，10% 股权认股权，多代产品供应……这些条款跟 AMD-OpenAI 的协议几乎一模一样。但你知道什么？这招管用。&lt;/p>
+&lt;p>Meta 在 2 月 24 日宣布与 AMD 达成一项多年期协议，AMD 将供应高达 &lt;strong>6GW（吉瓦）&lt;/strong> 的 Instinct GPU，首批 1GW 将在 2026 年下半年交付。据 &lt;a href="https://www.reuters.com/business/amd-clinches-second-mega-chip-supply-deal-this-time-with-meta-2026-02-24/">路透社报道&lt;/a>，这笔交易总价值约 &lt;strong>600 亿美元&lt;/strong>。&lt;/p>
+&lt;h2 id="为什么-meta-需要-amd">为什么 Meta 需要 AMD？&lt;/h2>
+&lt;p>答案很简单：&lt;strong>议价能力&lt;/strong>。&lt;/p>
+&lt;p>还记得那个传闻吗？OpenAI 只是在谈判桌上放了 Google TPU 的备选方案，Nvidia 就乖乖降价 30%。现在 Meta 也学会了这招——就在几天前，Meta 刚宣布扩展与 Nvidia 的 AI 芯片合作，转头就签了 AMD 的大单。&lt;/p>
+&lt;p>这不是 Meta 第一次搞&amp;quot;多供应商策略&amp;quot;。他们自己也在开发 &lt;a href="https://the-decoder.com/meta-deploys-its-artemis-ai-chip-to-reduce-reliance-on-nvidia-gpus/">Artemis 芯片&lt;/a>，目的就是减少对 Nvidia 的依赖。现在加上 AMD，Meta 手里有三张牌可以打。&lt;/p>
+&lt;h2 id="10-股权是什么操作">10% 股权是什么操作？&lt;/h2>
+&lt;p>这是整个交易最有趣的部分。Meta 获得了最多 1.6 亿股 AMD 股票的认股权，约占 AMD 总股本的 &lt;strong>10%&lt;/strong>。&lt;/p></description></item><item><title>Mercury 2 发布：首个商用 Diffusion LLM，推理速度碾压传统模型</title><link>https://claudeai.best/posts/2026-02-25-mercury-2-diffusion-llm/</link><pubDate>Wed, 25 Feb 2026 14:05:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-25-mercury-2-diffusion-llm/</guid><description>&lt;h2 id="打字员-vs-编辑">打字员 vs 编辑&lt;/h2>
+&lt;p>传统大模型生成文本，就像打字员——一个字一个字敲，手速再快也有天花板。&lt;/p>
+&lt;p>Mercury 2 不一样。它像编辑——拿到初稿，然后整篇整篇地改，几轮下来就成型了。&lt;/p>
+&lt;p>&lt;strong>结果？每秒 1,009 个 token。&lt;/strong>&lt;/p>
+&lt;p>这是 Inception Labs 今天发布的 Mercury 2，全球首个商用的 diffusion 大语言模型。比 GPT-5.2 至少快 2 倍，比 Claude 4.5 Haiku 快 5 倍，成本却只有四分之一。&lt;/p>
+&lt;h2 id="diffusion-架构从图像搬到文本">Diffusion 架构：从图像搬到文本&lt;/h2>
+&lt;p>你可能用过 Stable Diffusion 或 DALL-E 生成图片。它们用的就是 diffusion——从噪声开始，一步步&amp;quot;去噪&amp;quot;，最后得到清晰的图像。&lt;/p>
+&lt;p>Mercury 2 把这个思路搬到了文本。&lt;/p>
+&lt;p>传统 LLM（GPT、Claude、Gemini）都是 autoregressive（自回归）：生成第一个词，等它出来，再生成第二个……永远在等。GPU 再快也没用，瓶颈是&amp;quot;必须按顺序&amp;quot;。&lt;/p>
+&lt;p>Diffusion 不一样。它从一堆&amp;quot;噪声文本&amp;quot;开始，并行地 refining（精炼），几轮之后就是完整回答。&lt;strong>并行处理 vs 串行等待，这是架构层面的碾压。&lt;/strong>&lt;/p>
+&lt;p>创始人 Stefano Ermon 是斯坦福计算机教授，正是他把 diffusion 技术带进 Stable Diffusion 和 DALL-E 的男人。现在他赌的是：&lt;strong>同样的 trick 对文本也管用。&lt;/strong>&lt;/p>
+&lt;h2 id="为什么速度这么重要">为什么速度这么重要？&lt;/h2>
+&lt;p>你可能觉得：快几秒有什么大不了？&lt;/p>
+&lt;p>对于聊天机器人，确实。但对于：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Agent 工作流&lt;/strong>：一个任务可能要调 30 次模型，每次慢 1 秒，整体就慢 30 秒&lt;/li>
+&lt;li>&lt;strong>语音 AI&lt;/strong>：用户说话后等 2 秒才回复，对话感直接崩&lt;/li>
+&lt;li>&lt;strong>代码补全&lt;/strong>：打字停顿等建议，思路断了&lt;/li>
+&lt;/ul>
+&lt;p>Zed 编辑器联合创始人 Max Brunsfeld 的原话：&lt;/p></description></item><item><title>2周迁移2.5万行代码：Ladybird用AI把C++变成Rust，6.5万测试零回归</title><link>https://claudeai.best/posts/ladybird-rust-ai-migration/</link><pubDate>Wed, 25 Feb 2026 13:05:00 +0800</pubDate><guid>https://claudeai.best/posts/ladybird-rust-ai-migration/</guid><description>&lt;p>如果你曾经在周末试图把一个几千行的项目从一种语言迁移到另一种，你就知道那是什么感觉——痛苦、漫长、充满 bug。&lt;/p>
 &lt;p>那如果告诉你，有人用 &lt;strong>2 周&lt;/strong> 完成了 &lt;strong>25,000 行&lt;/strong> 代码的迁移，而且 &lt;strong>65,359 个测试全部通过，零回归&lt;/strong>？&lt;/p>
 &lt;p>这不是科幻，这是 Ladybird 浏览器刚刚干完的事。&lt;/p>
 &lt;h2 id="发生了什么">发生了什么？&lt;/h2>
