@@ -161,6 +161,26 @@
 
 <article class="post-entry tag-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&amp;h=630&amp;fit=crop" alt="Emacs Gravity Claude Code UI">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Emacs Gravity:magit 风格的 Claude Code UI,不装 Electron
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>发现一个有意思的工具 Emacs Gravity 给 Claude Code 做了个 magit 风格的 UI.不是滚动终端,而是结构化的会话视图 – 工具调用,Agent 树,文件变更都能折叠展开.
+谁能用?解决什么问题? 场景:你住在 Emacs 里,用 Claude Code 但不喜欢它的终端 UI – 滚动太快,工具调用和思考混在一起.
+Emacs Gravity 的做法:
+Turn-based 视图:每个用户 prompt 是一个 turn,工具按响应周期分组 Agent 树:子 Agent 渲染成嵌套树,能看到它们的工具调用和结果 内联 diff:文件编辑直接在会话 buffer 里显示 unified diff Plan Review:Claude 提计划时在独立 buffer 审查,加注释,编辑,一键批准或拒绝 多会话管理:按项目分组,像切 buffer 一样切换会话 Capabilities 浏览器:plugins,skills,MCP servers 都在树里可导航 对比 Cursor/AntiGravity:
+UI, Cursor=VS Code 侧边栏, emacs-gravity=magit-section 终端原生 Agent 可见性, Cursor=最小, emacs-gravity=完整嵌套树 多会话, Cursor=无, emacs-gravity=按项目分组 Plan 审查, Cursor=无, emacs-gravity=View &#43; 注释 &#43; diff 开源, Cursor=否, emacs-gravity=是
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-22 08:06:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>119 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Emacs Gravity:magit 风格的 Claude Code UI,不装 Electron" href="https://claudeai.best/posts/hunter-2026022208/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1200&amp;h=630&amp;fit=crop" alt="PRScope AI 代码审查">
 </figure>
   <header class="entry-header">
@@ -370,33 +390,6 @@ m 实 - # # ` # m # # m # m # m # m # m # # b b # g c m # 如 - - - 每 M # 只 
   </div>
   <footer class="entry-footer"><span title='2026-02-19 21:50:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>6 分钟</span>&nbsp;·&nbsp;<span>1072 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to MCP-wire:一个命令搞定所有 AI 编码工具的 MCP 配置" href="https://claudeai.best/posts/hunter-2026021921/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771505055152_cover.jpg" alt="网络安全漏洞 - SvelteSpill">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">AI Agent 发现 SvelteKit 漏洞:你的登录信息可能被缓存泄露
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>AI Agent 发现了一个安全漏洞,影响所有 SvelteKit &#43; Vercel 部署的应用.
-攻击者可以读取其他用户的登录信息.Vercel 已经自动修复.
-漏洞概述 名称:SvelteSpill 类型:缓存欺骗(Cache Deception) 影响:SvelteKit 应用部署在 Vercel 上,使用 Cookie 认证的 严重程度:Critical(100/100) 状态:已修复
-漏洞原理 SvelteKit 的 Vercel adapter 有一个 __pathname 查询参数,可以覆盖任何请求的路径.
-// serverless.js const pathname = url.searchParams.get(&#39;__pathname&#39;); if (pathname) { url.pathname = pathname; // 直接覆盖,无校验 } 这本身只是一个「奇怪的功能」.但配合 Vercel 的缓存规则,就变成了漏洞.
-Vercel 对 /_app/immutable/ 路径下的所有 200 响应强制缓存: Cache-Control: public, immutable, max-age=31536000
-攻击步骤 攻击者构造恶意 URL: https://example.vercel.app/_app/immutable/x?__pathname=/api/session
-受害者(已登录)访问这个 URL
-SvelteKit 把请求重写到 /api/session,返回受害者的 session token
-Vercel 缓存这个响应(因为 URL 以 /_app/immutable/ 开头)
-攻击者访问同一个 URL(无需 Cookie),从缓存读取受害者的 token
-HTTP/2 200 OK X-Vercel-Cache: HIT {“token”:“1337”}
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-19 20:45:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>166 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to AI Agent 发现 SvelteKit 漏洞:你的登录信息可能被缓存泄露" href="https://claudeai.best/posts/hunter-2026021920/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
