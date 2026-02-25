@@ -184,6 +184,23 @@
 <main class="main"> 
 
 <article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AI 帮浏览器搬家：Ladybird 两周搞定 2.5 万行 Rust 迁移
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>2.5 万行代码从 C&#43;&#43; 迁移到 Rust，传统方式得几个月？Ladybird 浏览器团队用 AI 两周就搞定了，而且零回退。
+这不是&#34;AI 自动写代码&#34;的吹牛故事。创始人 Andreas Kling 把话说得很清楚：人主导，AI 干活。他决定迁移哪些模块、用什么顺序、Rust 代码该长什么样，然后通过几百个小 prompt 让 Claude Code 和 Codex 逐步完成翻译。
+目标是 LibJS（JavaScript 引擎），包括词法分析器、解析器、AST 和字节码生成器。关键是 Ladybird 已经有 test262 测试套件，每一段生成的代码都能跟 C&#43;&#43; 版本做字节级对比——生成的 AST 和字节码必须完全一致。
+结果：2 周搞定，手工得几个月。零回退，所有测试通过。
+这模式值得注意：有测试覆盖 &#43; 有可信参照实现 &#43; AI 翻译，比&#34;让 AI 从零写代码&#34;靠谱多了。内存安全语言迁移的老大难问题，可能找到了加速器。
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-24 21:06:00 +0800 CST'>2026年2月24日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>44 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to AI 帮浏览器搬家：Ladybird 两周搞定 2.5 万行 Rust 迁移" href="https://claudeai.best/posts/2026-02-24-ladybird-rust-migration/"></a>
+</article>
+
+<article class="post-entry"> 
 <figure class="entry-cover">
         <img loading="lazy" src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200" alt="">
 </figure>
@@ -386,26 +403,6 @@ https://engrlog.substack.com/p/why-skip-the-code-ship-the-binary
   </div>
   <footer class="entry-footer"><span title='2026-02-22 21:07:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>37 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Musk 说让 AI 直接生成二进制,这个工程师写了一篇反驳" href="https://claudeai.best/posts/hunter-2026022221/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&amp;h=630&amp;fit=crop" alt="Persona AI 决策引擎">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Persona AI:不跟你聊天,直接告诉你 YES 还是 NO
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>说实话,大部分 AI 助手的问题不是不够聪明,而是太能聊了.你问它&#34;我该不该辞职创业&#34;,它能给你写三页 PPT,最后结论是&#34;这取决于你的情况&#34;.
-废话,我知道取决于我的情况,我就是不知道怎么选才问你的.
-Persona AI 的思路不太一样–它不聊天,它给判决.
-你输入:我该不该辞职做这个 SaaS?现在有 50 个 beta 用户,5 个付费,老婆怀孕,存款 3 个月…
-它输出:
-V C K 然 它 还 5 h 如 E O i 后 内 有 t 果 R N l 告 置 个 次 t 你 D V l 诉 了 &#34; 免 p 也 I I 你 恶 费 s 受 C C S 为 6 魔 分 : 够 T T i 什 代 析 / 了 : I g 么 个 言 , / &#34; O n : 决 人 不 p 这 N N a 你 策 模 用 e 取 O : l 的 框 式 信 r 决 : 价 架 &#34; 用 s 于 ( 8 值 : - 卡 o . W 7 A 观 逆 - . n . a % c 是 向 如 a . i t &#34; 思 果 i &#34; t i 安 维 你 . , ) v 全 , 只 f 可 e 杠 是 u 以 &gt; 杆 在 n 试 分 寻 试 自 析 求 . 由 , 认 &#34; 用 同 , 户 , 而 真 它 且 相 会 , 强 r 客 制 u 户 构 n 倒 造 w 推 最 a , 强 y 简 的 洁 反 太 过 面 短 滤 论 . 器 点 如 , 来 果 逆 测 两 向 试 周 检 你 内 查 的 没 . 决 有 每 心 付 个 . 费 框 架 p 从 i 不 l 同 o 角 t 度 , 攻 就 击 别 你 想 的 了 问 . 题 . </p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 20:08:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>278 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Persona AI:不跟你聊天,直接告诉你 YES 还是 NO" href="https://claudeai.best/posts/hunter-2026022220/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

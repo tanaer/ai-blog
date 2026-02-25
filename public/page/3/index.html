@@ -185,6 +185,26 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">MCP 协议：AI 的 USB-C 端口，终于统一了工具接口
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>痛点：每个 AI 都要重写一遍插件 过去几年，让 AI 连接 Slack、读取文件、操作数据库，简直是一场噩梦。每个平台都有自己的插件系统：OpenAI 有 Plugins，Claude 有 Tools，Gemini 有 Extensions…
+你写好的 Slack 集成，换个模型就得重来一遍。
+MCP：通用接口来了 Model Context Protocol (MCP) 就是 AI 界的 USB-C。
+一次开发，到处运行 — 写好一个 MCP server，所有支持的模型都能用 安全隔离 — 工具权限在服务器端控制，模型拿不到你的密钥 开放标准 — 不被任何公司垄断，社区驱动发展 为什么这很重要？ 以前 AI 只能在&#34;实验室&#34;里玩。MCP 让 Agent 真正走出实验室，变成能干活的数字员工。
+现在任何模型都能：
+接入你的日历和邮件 读写本地文件 调用 API 执行任务 和其他 Agent 协作 谁在支持？ 主流模型几乎全加入了：Claude、GPT、Gemini、Llama… 你的工具投资不再被锁定在单一平台。
+这就是为什么 2026 年被称为&#34;Agent 元年&#34;——MCP 把最后一道门槛拆掉了。
+一句话总结：MCP 让 AI 工具像 USB 设备一样即插即用，终于不用为每个模型重写插件了。
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-25 07:05:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>66 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to MCP 协议：AI 的 USB-C 端口，终于统一了工具接口" href="https://claudeai.best/posts/hunter-2026022507/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Firefox 148 发布：内置 AI 屠龙刀，一键关闭所有 AI 功能
     </h2>
   </header>
@@ -386,23 +406,6 @@ T T T O O O D D D O O O : : : V C R a h e l e t i c u d k r a n t a e u a t c P 
   </div>
   <footer class="entry-footer"><span title='2026-02-24 22:07:00 +0800 CST'>2026年2月24日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>106 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to 给 LLM Agent 开电脑权限前，先想想后果" href="https://claudeai.best/posts/hunter-2026022422/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">AI 帮浏览器搬家：Ladybird 两周搞定 2.5 万行 Rust 迁移
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>2.5 万行代码从 C&#43;&#43; 迁移到 Rust，传统方式得几个月？Ladybird 浏览器团队用 AI 两周就搞定了，而且零回退。
-这不是&#34;AI 自动写代码&#34;的吹牛故事。创始人 Andreas Kling 把话说得很清楚：人主导，AI 干活。他决定迁移哪些模块、用什么顺序、Rust 代码该长什么样，然后通过几百个小 prompt 让 Claude Code 和 Codex 逐步完成翻译。
-目标是 LibJS（JavaScript 引擎），包括词法分析器、解析器、AST 和字节码生成器。关键是 Ladybird 已经有 test262 测试套件，每一段生成的代码都能跟 C&#43;&#43; 版本做字节级对比——生成的 AST 和字节码必须完全一致。
-结果：2 周搞定，手工得几个月。零回退，所有测试通过。
-这模式值得注意：有测试覆盖 &#43; 有可信参照实现 &#43; AI 翻译，比&#34;让 AI 从零写代码&#34;靠谱多了。内存安全语言迁移的老大难问题，可能找到了加速器。
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-24 21:06:00 +0800 CST'>2026年2月24日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>44 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to AI 帮浏览器搬家：Ladybird 两周搞定 2.5 万行 Rust 迁移" href="https://claudeai.best/posts/2026-02-24-ladybird-rust-migration/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
