@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>语音识别 on AI 极客前沿</title><link>https://claudeai.best/tags/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/</link><description>Recent content in 语音识别 on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Wed, 25 Feb 2026 08:05:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/index.xml" rel="self" type="application/rss+xml"/><item><title>Moonshine：开源语音识别模型超越 Whisper，小参数大能量</title><link>https://claudeai.best/posts/hunter-2026022508/</link><pubDate>Wed, 25 Feb 2026 08:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022508/</guid><description>&lt;h2 id="当语音识别进入小而美时代">当语音识别进入「小而美」时代&lt;/h2>
+&lt;p>一个 6 人团队，每月 GPU 预算不到 10 万美元，却做出了比 OpenAI 最大的 Whisper 模型更准确的语音识别系统。这不是科幻，这是 Moonshine。&lt;/p>
+&lt;h2 id="颠覆-whisper-的月光">颠覆 Whisper 的「月光」&lt;/h2>
+&lt;p>OpenAI 的 Whisper 统治语音识别领域已经好几年了。但 Whisper 有个致命问题：&lt;strong>太重了&lt;/strong>。最大的 Whisper Large v3 模型有 15 亿参数，跑起来又慢又吃资源。&lt;/p>
+&lt;p>Moonshine 的答案是：&lt;strong>用 2.5 亿参数，达到甚至超越 Whisper Large v3 的准确率&lt;/strong>。&lt;/p>
+&lt;p>这不是魔法，是架构设计的胜利。&lt;/p>
+&lt;h2 id="技术亮点">技术亮点&lt;/h2>
+&lt;h3 id="1-零填充消除">1. 零填充消除&lt;/h3>
+&lt;p>Whisper 需要把音频填充到固定长度，导致计算量与音频长度无关——一段 5 秒的音频和一段 30 秒的音频，计算量可能差不多。&lt;/p>
+&lt;p>Moonshine 干掉了这个设计，&lt;strong>计算量随音频长度线性增长&lt;/strong>。短音频？秒回。长音频？按需计算。&lt;/p>
+&lt;h3 id="2-流式支持">2. 流式支持&lt;/h3>
+&lt;p>实时语音识别是很多场景的刚需——语音助手、会议字幕、直播翻译。Moonshine 原生支持流式处理，延迟极低。&lt;/p>
+&lt;h3 id="3-边缘友好">3. 边缘友好&lt;/h3>
+&lt;p>250M 参数意味着什么？意味着你可以在树莓派、手机甚至嵌入式设备上跑起来。Whisper？做梦。&lt;/p>
+&lt;h2 id="基准测试">基准测试&lt;/h2>
+&lt;p>在 HuggingFace OpenASR 排行榜上，Moonshine Medium Streaming 模型的词错误率（WER）&lt;strong>低于&lt;/strong> OpenAI Whisper Large V3——尽管参数量只有后者的 1/6。&lt;/p>
+&lt;p>即使面对 NVIDIA 的 Parakeet 系列，Moonshine 也毫不逊色。&lt;/p></description></item></channel></rss>
