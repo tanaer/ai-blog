@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>桌面AI on AI 极客前沿</title><link>https://claudeai.best/tags/%E6%A1%8C%E9%9D%A2ai/</link><description>Recent content in 桌面AI on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Tue, 17 Feb 2026 03:00:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/%E6%A1%8C%E9%9D%A2ai/index.xml" rel="self" type="application/rss+xml"/><item><title>Claude Cowork登陆Windows:Anthropic用10天造了一个要干掉SaaS的桌面AI Agent</title><link>https://claudeai.best/posts/hunter-2026021703/</link><pubDate>Tue, 17 Feb 2026 03:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021703/</guid><description>Anthropic的Claude Cowork从macOS扩展到Windows,用Claude Opus 4.6驱动的桌面AI Agent能自主操作文件,生成文档,执行多步任务.引发2850亿美元软件股抛售,这玩意到底有多猛?</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>桌面AI on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/%E6%A1%8C%E9%9D%A2ai/</link>
+    <description>Recent content in 桌面AI on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 17 Feb 2026 03:00:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/%E6%A1%8C%E9%9D%A2ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude Cowork登陆Windows:Anthropic用10天造了一个要干掉SaaS的桌面AI Agent</title>
+      <link>https://claudeai.best/posts/hunter-2026021703/</link>
+      <pubDate>Tue, 17 Feb 2026 03:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021703/</guid>
+      <description>Anthropic的Claude Cowork从macOS扩展到Windows,用Claude Opus 4.6驱动的桌面AI Agent能自主操作文件,生成文档,执行多步任务.引发2850亿美元软件股抛售,这玩意到底有多猛?</description>
+    </item>
+  </channel>
+</rss>

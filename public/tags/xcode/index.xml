@@ -1,27 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Xcode on AI 极客前沿</title><link>https://claudeai.best/tags/xcode/</link><description>Recent content in Xcode on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Wed, 25 Feb 2026 04:05:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/xcode/index.xml" rel="self" type="application/rss+xml"/><item><title>AI 编程工具 15 分钟开发应用，免费工具时代要结束了？</title><link>https://claudeai.best/posts/hunter-2026022504/</link><pubDate>Wed, 25 Feb 2026 04:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022504/</guid><description>&lt;p>一个不懂编程的人，用 AI 工具 15 分钟做出了自己想要的 Mac 应用。这不仅是个人效率的提升，更预示着整个单用途应用市场的崩塌。&lt;/p>
-&lt;h2 id="15-分钟开发一个-mac-应用">15 分钟开发一个 Mac 应用&lt;/h2>
-&lt;p>9to5Mac 的编辑 Benj Edwards 讲了一个亲身经历。&lt;/p>
-&lt;p>他想找一个简单的 Mac 应用解决一个生产力问题。免费的应用充满低质量广告，付费的应用虽然能用，但功能永远差点意思——不是多了一些不需要的功能，就是缺少某个关键细节。&lt;/p>
-&lt;p>于是他试了 OpenAI 的 Codex。&lt;/p>
-&lt;p>&lt;strong>从一个空文件夹开始，15 分钟后，核心功能已经跑起来了。&lt;/strong>&lt;/p>
-&lt;p>接下来的几周，他不断给 Codex 提需求：加个按钮、接入 Apple 的 Foundation Models、某个事件发生时通知我……每次修改，Codex 10 秒钟搞定。&lt;/p>
-&lt;p>最后得到的应用：&lt;strong>完全符合他的需求，没有广告，没有多余功能，代码还能随时调整。&lt;/strong>&lt;/p>
-&lt;h2 id="vibe-coding2025-年的年度词汇">Vibe Coding：2025 年的年度词汇&lt;/h2>
-&lt;p>这种开发方式有个名字：&lt;strong>Vibe Coding&lt;/strong>。&lt;/p>
-&lt;p>2025 年，Collins 词典把它选为年度词汇。维基百科的定义是：用自然语言向大语言模型描述任务，让 AI 生成代码——关键是&lt;strong>接受 AI 生成的代码而不仔细审查内部结构&lt;/strong>，只看结果，通过后续 prompt 调整。&lt;/p>
-&lt;p>Andrej Karpathy 的描述更直接：&amp;ldquo;完全沉浸到氛围里，拥抱指数增长，忘记代码的存在。&amp;rdquo;&lt;/p>
-&lt;p>听起来很危险？批评者确实指出：缺乏问责制、可维护性差、安全漏洞风险高。&lt;/p>
-&lt;p>但对于非程序员来说，这是第一次&lt;strong>软件真正为他们服务&lt;/strong>，而不是他们去适应软件。&lt;/p>
-&lt;h2 id="单用途应用市场的丧钟">单用途应用市场的丧钟&lt;/h2>
-&lt;p>Benj 的观点很明确：&lt;strong>单用途应用的商业模式正在瓦解。&lt;/strong>&lt;/p>
-&lt;p>过去，独立开发者靠做出一个好用的单功能应用赚钱。用户愿意付费，因为自己开发成本太高。&lt;/p>
-&lt;p>但现在：&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>免费应用&lt;/strong>：充满广告，体验差，用户忍着用&lt;/li>
-&lt;li>&lt;strong>付费应用&lt;/strong>：功能固定，永远差点意思，用户妥协着用&lt;/li>
-&lt;li>&lt;strong>AI 开发的应用&lt;/strong>：完全定制，随时调整，代码归你&lt;/li>
-&lt;/ul>
-&lt;p>当第三种选择的门槛降到&amp;quot;会说话就行&amp;quot;，谁还愿意忍受前两种？&lt;/p>
-&lt;h2 id="xcode-集成苹果的官方背书">Xcode 集成：苹果的官方背书&lt;/h2>
-&lt;p>更重要的事情发生在苹果生态。&lt;/p>
-&lt;p>2026 年 2 月，苹果宣布 Xcode 26.4 将原生集成 Claude Agent 和 OpenAI Codex。这意味着：&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Xcode on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/xcode/</link>
+    <description>Recent content in Xcode on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 25 Feb 2026 04:05:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/xcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI 编程工具 15 分钟开发应用，免费工具时代要结束了？</title>
+      <link>https://claudeai.best/posts/hunter-2026022504/</link>
+      <pubDate>Wed, 25 Feb 2026 04:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022504/</guid>
+      <description>&lt;p&gt;一个不懂编程的人，用 AI 工具 15 分钟做出了自己想要的 Mac 应用。这不仅是个人效率的提升，更预示着整个单用途应用市场的崩塌。&lt;/p&gt;
+&lt;h2 id=&#34;15-分钟开发一个-mac-应用&#34;&gt;15 分钟开发一个 Mac 应用&lt;/h2&gt;
+&lt;p&gt;9to5Mac 的编辑 Benj Edwards 讲了一个亲身经历。&lt;/p&gt;
+&lt;p&gt;他想找一个简单的 Mac 应用解决一个生产力问题。免费的应用充满低质量广告，付费的应用虽然能用，但功能永远差点意思——不是多了一些不需要的功能，就是缺少某个关键细节。&lt;/p&gt;
+&lt;p&gt;于是他试了 OpenAI 的 Codex。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;从一个空文件夹开始，15 分钟后，核心功能已经跑起来了。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;接下来的几周，他不断给 Codex 提需求：加个按钮、接入 Apple 的 Foundation Models、某个事件发生时通知我……每次修改，Codex 10 秒钟搞定。&lt;/p&gt;
+&lt;p&gt;最后得到的应用：&lt;strong&gt;完全符合他的需求，没有广告，没有多余功能，代码还能随时调整。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;vibe-coding2025-年的年度词汇&#34;&gt;Vibe Coding：2025 年的年度词汇&lt;/h2&gt;
+&lt;p&gt;这种开发方式有个名字：&lt;strong&gt;Vibe Coding&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;2025 年，Collins 词典把它选为年度词汇。维基百科的定义是：用自然语言向大语言模型描述任务，让 AI 生成代码——关键是&lt;strong&gt;接受 AI 生成的代码而不仔细审查内部结构&lt;/strong&gt;，只看结果，通过后续 prompt 调整。&lt;/p&gt;
+&lt;p&gt;Andrej Karpathy 的描述更直接：&amp;ldquo;完全沉浸到氛围里，拥抱指数增长，忘记代码的存在。&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;听起来很危险？批评者确实指出：缺乏问责制、可维护性差、安全漏洞风险高。&lt;/p&gt;
+&lt;p&gt;但对于非程序员来说，这是第一次&lt;strong&gt;软件真正为他们服务&lt;/strong&gt;，而不是他们去适应软件。&lt;/p&gt;
+&lt;h2 id=&#34;单用途应用市场的丧钟&#34;&gt;单用途应用市场的丧钟&lt;/h2&gt;
+&lt;p&gt;Benj 的观点很明确：&lt;strong&gt;单用途应用的商业模式正在瓦解。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;过去，独立开发者靠做出一个好用的单功能应用赚钱。用户愿意付费，因为自己开发成本太高。&lt;/p&gt;
+&lt;p&gt;但现在：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;免费应用&lt;/strong&gt;：充满广告，体验差，用户忍着用&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;付费应用&lt;/strong&gt;：功能固定，永远差点意思，用户妥协着用&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI 开发的应用&lt;/strong&gt;：完全定制，随时调整，代码归你&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;当第三种选择的门槛降到&amp;quot;会说话就行&amp;quot;，谁还愿意忍受前两种？&lt;/p&gt;
+&lt;h2 id=&#34;xcode-集成苹果的官方背书&#34;&gt;Xcode 集成：苹果的官方背书&lt;/h2&gt;
+&lt;p&gt;更重要的事情发生在苹果生态。&lt;/p&gt;
+&lt;p&gt;2026 年 2 月，苹果宣布 Xcode 26.4 将原生集成 Claude Agent 和 OpenAI Codex。这意味着：&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

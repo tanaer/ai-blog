@@ -1,11 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>内核驱动 on AI 极客前沿</title><link>https://claudeai.best/tags/%E5%86%85%E6%A0%B8%E9%A9%B1%E5%8A%A8/</link><description>Recent content in 内核驱动 on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Wed, 25 Feb 2026 00:05:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/%E5%86%85%E6%A0%B8%E9%A9%B1%E5%8A%A8/index.xml" rel="self" type="application/rss+xml"/><item><title>AI 写了一个 FreeBSD 内核驱动，还能连 Wi-Fi</title><link>https://claudeai.best/posts/hunter-2026022500/</link><pubDate>Wed, 25 Feb 2026 00:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022500/</guid><description>&lt;p>旧电脑别扔，让 AI 给它写个驱动。&lt;/p>
-&lt;h2 id="一个尘封的-macbook-pro">一个尘封的 MacBook Pro&lt;/h2>
-&lt;p>Vladimir Varankin 有一台 2016 年的 MacBook Pro，屏幕有 flexgate 问题，一直躺在柜子里吃灰。FreeBSD 15 发布后，他决定把这台电脑改造成 FreeBSD 实验机——直到发现 Wi-Fi 用不了。&lt;/p>
-&lt;p>2016 MacBook Pro 用的 Broadcom BCM4350 芯片，FreeBSD 原生不支持。论坛上的标准方案是跑一个叫 wifibox 的小 Linux 虚拟机，把 PCI 设备直通给 Linux。&lt;/p>
-&lt;p>但 Varankin 想的是：能不能写一个原生的 FreeBSD 驱动？&lt;/p>
-&lt;h2 id="第一次尝试直接移植直接翻车">第一次尝试：直接移植，直接翻车&lt;/h2>
-&lt;p>2026 年了，&amp;ldquo;把代码从 A 移植到 B&amp;rdquo; 的第一反应当然是让 AI 干。&lt;/p>
-&lt;p>他克隆了 Linux 的 brcmfmac 驱动源码，让 Claude Code 照着 FreeBSD 已有的 iwlwifi 驱动（Intel 网卡）移植。Claude 信心满满地说可以。&lt;/p>
-&lt;p>模块确实编译通过了——但没有任何反应。因为他测试的虚拟机里根本没有那张网卡。&lt;/p>
-&lt;p>等他把 PCI 设备加进去，真机测试：&lt;strong>kernel panic&lt;/strong>。&lt;/p>
-&lt;p>Claude 开始疯狂打补丁，到处加 &lt;code>#ifdef __FreeBSD__&lt;/code>，抱怨 LinuxKPI 缺这少那。补丁越打越多，驱动离能用的距离却一点没缩短。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>内核驱动 on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/%E5%86%85%E6%A0%B8%E9%A9%B1%E5%8A%A8/</link>
+    <description>Recent content in 内核驱动 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 25 Feb 2026 00:05:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/%E5%86%85%E6%A0%B8%E9%A9%B1%E5%8A%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI 写了一个 FreeBSD 内核驱动，还能连 Wi-Fi</title>
+      <link>https://claudeai.best/posts/hunter-2026022500/</link>
+      <pubDate>Wed, 25 Feb 2026 00:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022500/</guid>
+      <description>&lt;p&gt;旧电脑别扔，让 AI 给它写个驱动。&lt;/p&gt;
+&lt;h2 id=&#34;一个尘封的-macbook-pro&#34;&gt;一个尘封的 MacBook Pro&lt;/h2&gt;
+&lt;p&gt;Vladimir Varankin 有一台 2016 年的 MacBook Pro，屏幕有 flexgate 问题，一直躺在柜子里吃灰。FreeBSD 15 发布后，他决定把这台电脑改造成 FreeBSD 实验机——直到发现 Wi-Fi 用不了。&lt;/p&gt;
+&lt;p&gt;2016 MacBook Pro 用的 Broadcom BCM4350 芯片，FreeBSD 原生不支持。论坛上的标准方案是跑一个叫 wifibox 的小 Linux 虚拟机，把 PCI 设备直通给 Linux。&lt;/p&gt;
+&lt;p&gt;但 Varankin 想的是：能不能写一个原生的 FreeBSD 驱动？&lt;/p&gt;
+&lt;h2 id=&#34;第一次尝试直接移植直接翻车&#34;&gt;第一次尝试：直接移植，直接翻车&lt;/h2&gt;
+&lt;p&gt;2026 年了，&amp;ldquo;把代码从 A 移植到 B&amp;rdquo; 的第一反应当然是让 AI 干。&lt;/p&gt;
+&lt;p&gt;他克隆了 Linux 的 brcmfmac 驱动源码，让 Claude Code 照着 FreeBSD 已有的 iwlwifi 驱动（Intel 网卡）移植。Claude 信心满满地说可以。&lt;/p&gt;
+&lt;p&gt;模块确实编译通过了——但没有任何反应。因为他测试的虚拟机里根本没有那张网卡。&lt;/p&gt;
+&lt;p&gt;等他把 PCI 设备加进去，真机测试：&lt;strong&gt;kernel panic&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;Claude 开始疯狂打补丁，到处加 &lt;code&gt;#ifdef __FreeBSD__&lt;/code&gt;，抱怨 LinuxKPI 缺这少那。补丁越打越多，驱动离能用的距离却一点没缩短。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
