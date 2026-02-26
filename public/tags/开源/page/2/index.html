@@ -161,6 +161,26 @@
 
 <article class="post-entry tag-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771672208451_cover.jpg" alt="Claude Code Open - 开源 AI 编程平台">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Claude Code Open:开源版 Claude Code,带 Web IDE 和多 Agent 系统
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>刚发现一个猛的开源项目:Claude Code Open ️
+谁能用? 想要开源版 Claude Code 的.官方 Claude Code 是闭源的,这个项目基于公开 API 和类型定义逆向工程实现,完全 MIT 开源.
+功能:
+CLI &#43; Web IDE:Monaco 编辑器,文件树,AI 增强编辑 37&#43; 内置工具:文件操作,搜索,执行,Web 访问,任务管理,浏览器自动化 Blueprint 多 Agent:智能规划器 &#43; 领导 Agent &#43; 自主 Worker &#43; 任务队列 &#43; 质量审查 定时任务守护进程:自然语言调度,“每天 9 点代码审查” 自演化:AI 可以修改自己的源代码,热重载 一键安装 Windows:
+irm https://raw.githubusercontent.com/kill136/claude-code-open/private_web_ui/install.ps1 | iex macOS / Linux:
+curl -fsSL https://raw.githubusercontent.com/kill136/claude-code-open/private_web_ui/install.sh | bash 安装后双击桌面快捷方式,浏览器自动打开 http://localhost:3456. ## 有什么特别的? - **Web UI IDE**: Monaco 编辑器,VS Code 风格文件树,AI 悬浮提示 - **Blueprint 多 Agent**: 复杂任务自动分解到多个 Agent 并行执行 - **定时任务**: 自然语言配置时间,文件监控触发,多渠道通知 - **自演化**: AI 修改自己源码 &#43; TypeScript 编译检查 &#43; 热重载 - **检查点回滚**: 文件快照管理 &#43; 会话时间旅行 - **MCP 协议**: 完整实现,支持 stdio,HTTP,SSE 传输 - **代理服务器**: 共享 Claude 订阅到其他设备 # CLI 模式 npm run dev # Web UI 模式 npm run web # 代理服务器模式(共享订阅) npm run proxy # 飞书机器人 npm run feishu # 微信机器人 npm run wechat ## 试试看 一键安装后设置 API Key: export ANTHROPIC_API_KEY=your-api-key GitHub: https://github.com/kill136/claude-code-open Demo: http://voicegpt.site:3456/ ## 时效性验证 - **HN 提交时间**: 1 分钟前(Show HN: Claude Code Open – AI Coding Platform with Web IDE and Agents) - **搜索引擎最早时间**: HN 首发 1 分钟前,GitHub 仓库为新发布 - **结论**: 最早时间 ≤ 2 小时,符合新鲜热点标准 </p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 19:09:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>178 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Claude Code Open:开源版 Claude Code,带 Web IDE 和多 Agent 系统" href="https://claudeai.best/posts/hunter-2026022119/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771664888973_cover.jpg" alt="AI Council - 多模型协商框架">
 </figure>
   <header class="entry-header">
@@ -357,26 +377,6 @@ AI/ML: OpenAI, Anthropic, Google AI, Cohere, Replicate, Hugging Face 认证: Cle
   </div>
   <footer class="entry-footer"><span title='2026-02-19 12:55:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>198 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Ship Safe:给 Vibe Coding 的 AI 代码装个安全带" href="https://claudeai.best/posts/hunter-2026021912/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771468823963_cover.jpg" alt="AI 音乐生成 - ACE-Step 1.5">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">ACE-Step 1.5:开源音乐生成的 Stable Diffusion 时刻到了
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>如果 Stable Diffusion 是图像生成的开源革命,那 ACE-Step 1.5 可能是音乐生成的同样时刻.
-这个开源模型刚刚发布,就已经有人把它集成到 OpenClaw 助手里,让 AI 助手「学会唱歌」.
-核心数据 生成速度: 2 秒/首歌(A100),10 秒(RTX 3090) 最低显存: &lt;4GB VRAM 音频时长: 10 秒 - 10 分钟 歌词语言: 50&#43; 种语言 质量定位: 介于 Suno v4.5 和 v5 之间 批量生成: 最多 8 首同时 为什么这很重要? 过去一年,AI 音乐生成被 Suno 和 Udio 垄断.想要高质量音乐?必须付费订阅,必须用云端服务,必须接受版权条款.
-ACE-Step 1.5 改变了这个局面:
-完全本地运行 - 不需要上传你的创意到别人的服务器 消费级硬件 - 6GB 显存就能跑,甚至支持 CPU 全平台支持 - Mac(M 系列芯片),AMD,Intel,Nvidia 全覆盖 MIT 开源 - 随便用,随便改 技术架构:LM &#43; DiT 混合 ACE-Step 1.5 使用了一个有趣的混合架构:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-19 10:40:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>281 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to ACE-Step 1.5:开源音乐生成的 Stable Diffusion 时刻到了" href="https://claudeai.best/posts/hunter-2026021910/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

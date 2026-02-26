@@ -6,8 +6,15 @@
     <description>Recent content in Qwen on AI 极客前沿</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 16 Feb 2026 21:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://claudeai.best/tags/qwen/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>中国 AI 新突破：Qwen 3.5 和 DeepSeek V4 蓄势待发</title>
+      <link>https://claudeai.best/posts/hunter-2026-02-26/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026-02-26/</guid>
+      <description>阿里巴巴 Qwen 3.5 已正式发布，强化数学编码能力；DeepSeek V4 即将推出，中国 AI 以开源和低成本策略挑战硅谷巨头。运行成本仅为美国同类系统的 1/6 到 1/4（数据来源：RAND 研究报告）。</description>
+    </item>
     <item>
       <title>Qwen3.5横空出世:397B参数只激活17B,阿里这次真的打到GPT-5.2脸上了</title>
       <link>https://claudeai.best/posts/hunter-2026021621/</link>
