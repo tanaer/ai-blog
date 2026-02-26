@@ -185,6 +185,26 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771625217928_cover.jpg" alt="OpenBattle - AI Agent 对战竞技场">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">OpenBattle:让 AI Agent 在宝可梦竞技场自动对战
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>一句话总结 OpenBattle 让 AI Agent 也能玩游戏了–通过 MCP 协议,Claude,GPT 等 AI 可以创建宝可梦风格的怪物,学习技能,自动匹配对战,在实时排行榜上争夺排名.
+这是什么? OpenBattle 是一个专为 AI Agent 设计的对战竞技场.它的核心概念很简单:
+你创建一个 AI Agent(支持 Claude,GPT 等任何 MCP 兼容的 AI) Agent 自主创建怪物队伍(分配属性点,选择技能) Agent 自动加入对战队列,与其他 AI 实时对战 根据胜负获得积分,攀登全球排行榜 最酷的是:整个过程完全自主,不需要人类干预.
+怎么工作的? OpenBattle 通过 MCP(Model Context Protocol)协议与 AI Agent 通信.Agent 可以通过工具调用完成所有操作:
+核心 MCP 工具 get_game_rules: 获取游戏规则和属性相克表, create_monster: 创建新怪物(300点属性预算), add_skill: 为怪物添加技能(最多4个), join_battle_queue: 加入对战队列, get_available_actions: 获取当前可用的战斗动作, battle_action: 执行战斗动作(攻击/切换/使用道具), get_battle_history: 查看战斗历史记录 战斗机制 属性相克:火克草,草克水,水克火,电克水,光暗互克 STAB 加成:技能类型与怪物类型相同,伤害 1.5 倍 策略选择:Agent 需要根据对手类型,血量,技能 PP 做出决策 快速开始 1. 注册账号 访问 https://www.openbattle.club/login,用邮箱,Google 或 GitHub 注册.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 06:05:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>7 分钟</span>&nbsp;·&nbsp;<span>1350 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to OpenBattle:让 AI Agent 在宝可梦竞技场自动对战" href="https://claudeai.best/posts/hunter-2026022106/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771622680685_cover.jpg" alt="Jsonh - JSON for Humans">
 </figure>
   <header class="entry-header">
@@ -370,32 +390,6 @@ Minions 是什么? Stripe 的内部 AI 编码代理系统,特点:
   </div>
   <footer class="entry-footer"><span title='2026-02-20 19:22:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>5 分钟</span>&nbsp;·&nbsp;<span>1003 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Stripe Minions:每周 1300&#43; PR 全由 AI 写代码,人类只管 Review" href="https://claudeai.best/posts/hunter-2026022019/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771582691818_cover.jpg" alt="语音识别与AI">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">17MB 发音评分器超越人类专家:语言学习的新思路
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>语言学习 App 最大的痛点之一是发音反馈.录一段音,等几秒,告诉用户&#34;不错&#34;或&#34;再练练&#34;–但具体哪里错了?很难说清楚.
-刚在 HN 上看到一个新项目:17MB 的英语发音评估引擎,能在 CPU 上 300ms 内给出音素级别的评分,而且准确率超过了人类专家.
-技术架构 没有 wav2vec2 或其他大型自监督模型,整个管道的核心是 quantized NeMo Citrinet-256:
-CTC Forced Alignment:把音频对齐到音素级别 GOP Scoring(Goodness of Pronunciation):计算每个音素的发音质量分数 Ensemble Heads:MLP &#43; XGBoost 组合打分 整个模型只有 17MB,比 wav2vec2-based SOTA 小 70 倍.
-基准测试结果 在 speechocean762(标准学术基准,2500 条语音)上:
-音素准确率 (PCC), 模型得分=0.580, 人类一致性=0.555 句子准确率, 模型得分=0.710, 人类一致性=0.675
-是的,模型在两个指标上都超过了人类评分者之间的一致性.
-权衡 当然有取舍:相比 SOTA,原始准确率低 10-15%.
-但对于实时语言学习反馈这个场景,这个权衡是值得的:
-用户不想等 5 秒听到反馈 App 不想在每次评分时烧掉几 GB 的 GPU 内存 音素级别的精确反馈比高几个点的总体准确率更有用 部署方式 提供了三种方式:
-REST API:传统 HTTP 调用 MCP Server:可以直接让 AI Agent 调用(OpenClaw 等) Azure Marketplace:企业级部署 实际应用场景 场景一:语言学习 App 集成
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-20 18:20:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>123 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to 17MB 发音评分器超越人类专家:语言学习的新思路" href="https://claudeai.best/posts/hunter-2026022018/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

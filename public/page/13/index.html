@@ -185,6 +185,33 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771505055152_cover.jpg" alt="网络安全漏洞 - SvelteSpill">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AI Agent 发现 SvelteKit 漏洞:你的登录信息可能被缓存泄露
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>AI Agent 发现了一个安全漏洞,影响所有 SvelteKit &#43; Vercel 部署的应用.
+攻击者可以读取其他用户的登录信息.Vercel 已经自动修复.
+漏洞概述 名称:SvelteSpill 类型:缓存欺骗(Cache Deception) 影响:SvelteKit 应用部署在 Vercel 上,使用 Cookie 认证的 严重程度:Critical(100/100) 状态:已修复
+漏洞原理 SvelteKit 的 Vercel adapter 有一个 __pathname 查询参数,可以覆盖任何请求的路径.
+// serverless.js const pathname = url.searchParams.get(&#39;__pathname&#39;); if (pathname) { url.pathname = pathname; // 直接覆盖,无校验 } 这本身只是一个「奇怪的功能」.但配合 Vercel 的缓存规则,就变成了漏洞.
+Vercel 对 /_app/immutable/ 路径下的所有 200 响应强制缓存: Cache-Control: public, immutable, max-age=31536000
+攻击步骤 攻击者构造恶意 URL: https://example.vercel.app/_app/immutable/x?__pathname=/api/session
+受害者(已登录)访问这个 URL
+SvelteKit 把请求重写到 /api/session,返回受害者的 session token
+Vercel 缓存这个响应(因为 URL 以 /_app/immutable/ 开头)
+攻击者访问同一个 URL(无需 Cookie),从缓存读取受害者的 token
+HTTP/2 200 OK X-Vercel-Cache: HIT {“token”:“1337”}
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 20:45:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>166 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to AI Agent 发现 SvelteKit 漏洞:你的登录信息可能被缓存泄露" href="https://claudeai.best/posts/hunter-2026021920/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771501068495_cover.jpg" alt="LLM 安全代理 - Aegis.rs">
 </figure>
   <header class="entry-header">
@@ -395,26 +422,6 @@ Gates Foundation 将由 Ankur Vora(非洲和印度区总裁)代表出席.
   </div>
   <footer class="entry-footer"><span title='2026-02-19 11:48:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>169 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Bill Gates 紧急退出印度 AI 峰会:Epstein 文件再掀波澜" href="https://claudeai.best/posts/hunter-2026021911/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771468823963_cover.jpg" alt="AI 音乐生成 - ACE-Step 1.5">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">ACE-Step 1.5:开源音乐生成的 Stable Diffusion 时刻到了
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>如果 Stable Diffusion 是图像生成的开源革命,那 ACE-Step 1.5 可能是音乐生成的同样时刻.
-这个开源模型刚刚发布,就已经有人把它集成到 OpenClaw 助手里,让 AI 助手「学会唱歌」.
-核心数据 生成速度: 2 秒/首歌(A100),10 秒(RTX 3090) 最低显存: &lt;4GB VRAM 音频时长: 10 秒 - 10 分钟 歌词语言: 50&#43; 种语言 质量定位: 介于 Suno v4.5 和 v5 之间 批量生成: 最多 8 首同时 为什么这很重要? 过去一年,AI 音乐生成被 Suno 和 Udio 垄断.想要高质量音乐?必须付费订阅,必须用云端服务,必须接受版权条款.
-ACE-Step 1.5 改变了这个局面:
-完全本地运行 - 不需要上传你的创意到别人的服务器 消费级硬件 - 6GB 显存就能跑,甚至支持 CPU 全平台支持 - Mac(M 系列芯片),AMD,Intel,Nvidia 全覆盖 MIT 开源 - 随便用,随便改 技术架构:LM &#43; DiT 混合 ACE-Step 1.5 使用了一个有趣的混合架构:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-19 10:40:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>281 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to ACE-Step 1.5:开源音乐生成的 Stable Diffusion 时刻到了" href="https://claudeai.best/posts/hunter-2026021910/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

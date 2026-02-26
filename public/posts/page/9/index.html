@@ -176,6 +176,29 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771661536968_cover.jpg" alt="Claude Code worktree 并行开发">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Claude Code --worktree:同时开 5 个 Agent 并行写代码,互不干扰
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>发现一个有意思的功能:claude --worktree
+Claude Code 创作者 Boris Cherny 刚刚发的.
+谁能用? 用 Claude Code 写代码的,想同时跑多个 Agent 干活.
+怎么用 # 在独立 worktree 里启动 Claude claude --worktree # 命名你的 worktree claude --worktree --name my-feature # 加上 tmux 分屏 claude --worktree --tmux 每个 Agent 有自己的 worktree,互不干扰.
+有啥特别的? 并行 3-5 个 Agent:Boris 说这是团队最大的生产力提升.
+Agent A 写 API Agent B 写前端 Agent C 写测试 同时跑,代码不会互相覆盖.
+–tmux 集成:每个会话在独立 tmux 窗口,管理更方便.
+跟手动开 worktree 比? 手动开 worktree 也能做到,但 --worktree 自动帮你:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 16:04:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>88 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Claude Code --worktree:同时开 5 个 Agent 并行写代码,互不干扰" href="https://claudeai.best/posts/hunter-2026022116/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771658208972_cover.jpg" alt="MBC - Laravel AI Agent 编排">
 </figure>
   <header class="entry-header">
@@ -376,26 +399,6 @@ Ferret (2023): 基础多模态模型,能理解和定位图像中的任意区域 
   </div>
   <footer class="entry-footer"><span title='2026-02-21 07:06:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>12 分钟</span>&nbsp;·&nbsp;<span>2544 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to 用特殊 Token 解决 Prompt Injection:让 LLM 学会区分指令和外部内容" href="https://claudeai.best/posts/hunter-2026022107/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771625217928_cover.jpg" alt="OpenBattle - AI Agent 对战竞技场">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">OpenBattle:让 AI Agent 在宝可梦竞技场自动对战
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>一句话总结 OpenBattle 让 AI Agent 也能玩游戏了–通过 MCP 协议,Claude,GPT 等 AI 可以创建宝可梦风格的怪物,学习技能,自动匹配对战,在实时排行榜上争夺排名.
-这是什么? OpenBattle 是一个专为 AI Agent 设计的对战竞技场.它的核心概念很简单:
-你创建一个 AI Agent(支持 Claude,GPT 等任何 MCP 兼容的 AI) Agent 自主创建怪物队伍(分配属性点,选择技能) Agent 自动加入对战队列,与其他 AI 实时对战 根据胜负获得积分,攀登全球排行榜 最酷的是:整个过程完全自主,不需要人类干预.
-怎么工作的? OpenBattle 通过 MCP(Model Context Protocol)协议与 AI Agent 通信.Agent 可以通过工具调用完成所有操作:
-核心 MCP 工具 get_game_rules: 获取游戏规则和属性相克表, create_monster: 创建新怪物(300点属性预算), add_skill: 为怪物添加技能(最多4个), join_battle_queue: 加入对战队列, get_available_actions: 获取当前可用的战斗动作, battle_action: 执行战斗动作(攻击/切换/使用道具), get_battle_history: 查看战斗历史记录 战斗机制 属性相克:火克草,草克水,水克火,电克水,光暗互克 STAB 加成:技能类型与怪物类型相同,伤害 1.5 倍 策略选择:Agent 需要根据对手类型,血量,技能 PP 做出决策 快速开始 1. 注册账号 访问 https://www.openbattle.club/login,用邮箱,Google 或 GitHub 注册.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-21 06:05:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>7 分钟</span>&nbsp;·&nbsp;<span>1350 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to OpenBattle:让 AI Agent 在宝可梦竞技场自动对战" href="https://claudeai.best/posts/hunter-2026022106/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

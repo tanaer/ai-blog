@@ -6,8 +6,43 @@
     <description>Recent content in Tags on AI 极客前沿</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 27 Feb 2026 02:08:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 27 Feb 2026 03:12:00 +0800</lastBuildDate>
     <atom:link href="https://claudeai.best/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>https://claudeai.best/tags/ai/</link>
+      <pubDate>Fri, 27 Feb 2026 03:12:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI安全</title>
+      <link>https://claudeai.best/tags/ai%E5%AE%89%E5%85%A8/</link>
+      <pubDate>Fri, 27 Feb 2026 03:12:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/ai%E5%AE%89%E5%85%A8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Anthropic</title>
+      <link>https://claudeai.best/tags/anthropic/</link>
+      <pubDate>Fri, 27 Feb 2026 03:12:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/anthropic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dario Amodei</title>
+      <link>https://claudeai.best/tags/dario-amodei/</link>
+      <pubDate>Fri, 27 Feb 2026 03:12:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/dario-amodei/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>五角大楼</title>
+      <link>https://claudeai.best/tags/%E4%BA%94%E8%A7%92%E5%A4%A7%E6%A5%BC/</link>
+      <pubDate>Fri, 27 Feb 2026 03:12:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/%E4%BA%94%E8%A7%92%E5%A4%A7%E6%A5%BC/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AI搜索</title>
       <link>https://claudeai.best/tags/ai%E6%90%9C%E7%B4%A2/</link>
@@ -34,13 +69,6 @@
       <link>https://claudeai.best/tags/seo/</link>
       <pubDate>Fri, 27 Feb 2026 02:08:00 +0800</pubDate>
       <guid>https://claudeai.best/tags/seo/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AI</title>
-      <link>https://claudeai.best/tags/ai/</link>
-      <pubDate>Thu, 26 Feb 2026 18:04:00 +0800</pubDate>
-      <guid>https://claudeai.best/tags/ai/</guid>
       <description></description>
     </item>
     <item>
@@ -363,13 +391,6 @@
       <link>https://claudeai.best/tags/%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/</link>
       <pubDate>Thu, 26 Feb 2026 07:04:00 +0800</pubDate>
       <guid>https://claudeai.best/tags/%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Anthropic</title>
-      <link>https://claudeai.best/tags/anthropic/</link>
-      <pubDate>Thu, 26 Feb 2026 06:06:00 +0800</pubDate>
-      <guid>https://claudeai.best/tags/anthropic/</guid>
       <description></description>
     </item>
     <item>
@@ -748,13 +769,6 @@
       <link>https://claudeai.best/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/</link>
       <pubDate>Wed, 25 Feb 2026 13:05:00 +0800</pubDate>
       <guid>https://claudeai.best/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AI安全</title>
-      <link>https://claudeai.best/tags/ai%E5%AE%89%E5%85%A8/</link>
-      <pubDate>Wed, 25 Feb 2026 12:05:00 +0800</pubDate>
-      <guid>https://claudeai.best/tags/ai%E5%AE%89%E5%85%A8/</guid>
       <description></description>
     </item>
     <item>
@@ -3289,13 +3303,6 @@
       <link>https://claudeai.best/tags/%E5%86%9B%E4%BA%8Bai/</link>
       <pubDate>Mon, 16 Feb 2026 09:00:00 +0800</pubDate>
       <guid>https://claudeai.best/tags/%E5%86%9B%E4%BA%8Bai/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>五角大楼</title>
-      <link>https://claudeai.best/tags/%E4%BA%94%E8%A7%92%E5%A4%A7%E6%A5%BC/</link>
-      <pubDate>Mon, 16 Feb 2026 09:00:00 +0800</pubDate>
-      <guid>https://claudeai.best/tags/%E4%BA%94%E8%A7%92%E5%A4%A7%E6%A5%BC/</guid>
       <description></description>
     </item>
     <item>

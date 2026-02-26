@@ -176,6 +176,26 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771701151868_cover.jpg" alt="Sensei - 技能改进工具">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Sensei:用 Ralph 循环自动改进 SKILL.md,让 Agent 知道什么时候该用/不该用
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>刚发现一个有意思的技能改进工具:Sensei
+谁能用? 写 AI Agent 技能文件的.技能写得不好,Agent 不知道什么时候用,什么时候不用–这叫 skill collision.
+常见问题:
+没有 triggers → Agent 不知道何时激活 没有 anti-triggers → Agent 不该用时乱用 描述太短 → 匹配不准 Token 太多 → 浪费上下文窗口 Sensei 的做法:用 Ralph 循环自动改进,直到合规.
+怎么用? # 安装 git clone https://github.com/spboyer/sensei.git ~/.copilot/skills/sensei cd ~/.copilot/skills/sensei/scripts &amp;&amp; npm install # 用法 Run sensei on my-skill-name # 单个技能 Run sensei on skill-a, skill-b # 多个技能 Run sensei on all Low-adherence skills # 所有低合规技能 Run sensei on my-skill-name --fast # 快速模式(跳过测试) Ralph 循环是什么? Read → Score → Improve → Verify → Check Tokens → Summary → Prompt → Repeat
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-22 03:15:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>256 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Sensei:用 Ralph 循环自动改进 SKILL.md,让 Agent 知道什么时候该用/不该用" href="https://claudeai.best/posts/hunter-2026022203/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771697522530_cover.jpg" alt="TokenShrink - Prompt 压缩">
 </figure>
   <header class="entry-header">
@@ -369,29 +389,6 @@ Ollama(本地) OpenAI,Anthropic,Google,Groq 可以混用:本地跑 DeepSeek-R1 &
   </div>
   <footer class="entry-footer"><span title='2026-02-21 17:04:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>68 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to AI Council v2:让 35 个 AI 人格开会讨论,最后给你一个答案" href="https://claudeai.best/posts/hunter-2026022117/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771661536968_cover.jpg" alt="Claude Code worktree 并行开发">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Claude Code --worktree:同时开 5 个 Agent 并行写代码,互不干扰
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>发现一个有意思的功能:claude --worktree
-Claude Code 创作者 Boris Cherny 刚刚发的.
-谁能用? 用 Claude Code 写代码的,想同时跑多个 Agent 干活.
-怎么用 # 在独立 worktree 里启动 Claude claude --worktree # 命名你的 worktree claude --worktree --name my-feature # 加上 tmux 分屏 claude --worktree --tmux 每个 Agent 有自己的 worktree,互不干扰.
-有啥特别的? 并行 3-5 个 Agent:Boris 说这是团队最大的生产力提升.
-Agent A 写 API Agent B 写前端 Agent C 写测试 同时跑,代码不会互相覆盖.
-–tmux 集成:每个会话在独立 tmux 窗口,管理更方便.
-跟手动开 worktree 比? 手动开 worktree 也能做到,但 --worktree 自动帮你:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-21 16:04:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>88 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Claude Code --worktree:同时开 5 个 Agent 并行写代码,互不干扰" href="https://claudeai.best/posts/hunter-2026022116/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
