@@ -6,13 +6,41 @@
     <description>Recent content in Tags on AI 极客前沿</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 26 Feb 2026 13:35:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Feb 2026 18:04:00 +0800</lastBuildDate>
     <atom:link href="https://claudeai.best/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
       <link>https://claudeai.best/tags/ai/</link>
-      <pubDate>Thu, 26 Feb 2026 13:35:00 +0800</pubDate>
+      <pubDate>Thu, 26 Feb 2026 18:04:00 +0800</pubDate>
       <guid>https://claudeai.best/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IPhone 17</title>
+      <link>https://claudeai.best/tags/iphone-17/</link>
+      <pubDate>Thu, 26 Feb 2026 18:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/iphone-17/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>科技</title>
+      <link>https://claudeai.best/tags/%E7%A7%91%E6%8A%80/</link>
+      <pubDate>Thu, 26 Feb 2026 18:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/%E7%A7%91%E6%8A%80/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>苹果</title>
+      <link>https://claudeai.best/tags/%E8%8B%B9%E6%9E%9C/</link>
+      <pubDate>Thu, 26 Feb 2026 18:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/%E8%8B%B9%E6%9E%9C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>消费电子</title>
+      <link>https://claudeai.best/tags/%E6%B6%88%E8%B4%B9%E7%94%B5%E5%AD%90/</link>
+      <pubDate>Thu, 26 Feb 2026 18:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/%E6%B6%88%E8%B4%B9%E7%94%B5%E5%AD%90/</guid>
       <description></description>
     </item>
     <item>
@@ -114,10 +142,31 @@
       <description></description>
     </item>
     <item>
+      <title>Physical AI</title>
+      <link>https://claudeai.best/tags/physical-ai/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://claudeai.best/tags/physical-ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Unitree</title>
+      <link>https://claudeai.best/tags/unitree/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://claudeai.best/tags/unitree/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Web标准</title>
       <link>https://claudeai.best/tags/web%E6%A0%87%E5%87%86/</link>
       <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://claudeai.best/tags/web%E6%A0%87%E5%87%86/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>阿里巴巴</title>
+      <link>https://claudeai.best/tags/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://claudeai.best/tags/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4/</guid>
       <description></description>
     </item>
     <item>
@@ -135,10 +184,24 @@
       <description></description>
     </item>
     <item>
+      <title>人形机器人</title>
+      <link>https://claudeai.best/tags/%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://claudeai.best/tags/%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>用户增长</title>
       <link>https://claudeai.best/tags/%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF/</link>
       <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://claudeai.best/tags/%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>中国</title>
+      <link>https://claudeai.best/tags/%E4%B8%AD%E5%9B%BD/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://claudeai.best/tags/%E4%B8%AD%E5%9B%BD/</guid>
       <description></description>
     </item>
     <item>
@@ -2771,13 +2834,6 @@
       <link>https://claudeai.best/tags/qwen3.5/</link>
       <pubDate>Tue, 17 Feb 2026 16:00:00 +0800</pubDate>
       <guid>https://claudeai.best/tags/qwen3.5/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>阿里巴巴</title>
-      <link>https://claudeai.best/tags/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4/</link>
-      <pubDate>Tue, 17 Feb 2026 16:00:00 +0800</pubDate>
-      <guid>https://claudeai.best/tags/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4/</guid>
       <description></description>
     </item>
     <item>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -176,6 +176,47 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&amp;h=630&amp;fit=crop" alt="Process Compose MCP 配图">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Process Compose 加了 MCP:不用写 SDK,命令行直接变 AI 工具
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>发现一个有意思的更新 Process Compose v1.94.0 加了嵌入式 MCP server.以前要给 AI 暴露工具得写 Python/TypeScript SDK,现在在 YAML 里配一下就行.
+谁能用?解决什么问题? 场景:想让 AI 帮你重启服务,查日志,操作 Kubernetes,但不想写 API wrapper.
+Process Compose 的做法:在 process-compose.yaml 里声明命令,自动变成 MCP tool.
+mcp_server: host: localhost port: 3000 transport: sse processes: restart-service: command: &#34;docker-compose restart @{service_name}&#34; mcp: type: tool arguments: - name: service_name type: string 几个实用例子:
+查服务健康:curl localhost:{port}/health 读容器日志:docker logs {container} --tail {lines} 扩容 K8s:kubectl scale deployment {service} --replicas={replicas} 跑老系统:java -jar legacy-reporter.jar --user {user} 20 年的老系统只有 CLI 没有 API?现在 AI 也能调了.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-22 07:05:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>114 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Process Compose 加了 MCP:不用写 SDK,命令行直接变 AI 工具" href="https://claudeai.best/posts/hunter-2026022207/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1200&amp;h=630&amp;fit=crop" alt="PRScope AI 代码审查">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">PRScope:AI 帮你看 PR,一分钟出结果
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>发现一个有意思的工具 PRScope 用 AI 自动审查 GitHub PR,30 秒配好,一分钟出报告.关键是 – 不用注册,你的 API key,你的模型.
+谁能用?解决什么问题? 场景:团队 PR 多,人工 review 来不及,问题溜进代码库.
+PRScope 干的事:
+读 PR diff,理解上下文, 用你选的 LLM 分析, 在 PR 下发一条结构化评论 支持的模型:
+OpenAI:GPT-4.1,o3,o4-mini, Anthropic:Claude Sonnet 4,3.7,3.5, Ollama:Llama 3.3,Qwen 2.5,DeepSeek(本地跑), 任何 OpenAI 兼容端点 四种审查模式:
+balanced: Bug,安全,性能,代码质量, security: 注入攻击,认证缺陷,数据泄露, performance: 内存泄漏,算法问题, strict: 全都要,风格命名文档都不放过 相比现有方案好在哪? 无锁定:没有账号系统,API key 存本地 .env 数据不离手:diff 只发给你选的 LLM,用 Ollama 的话全在本地 纯 Markdown:没有图片,没有外链,没有 JavaScript,任何 GitHub 套餐都能用 风险评级:低/中/高,一眼看出严重程度 还会&#34;夸人&#34; – 报告里有 Praise 部分,告诉你哪里写得好.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-22 06:05:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>95 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to PRScope:AI 帮你看 PR,一分钟出结果" href="https://claudeai.best/posts/hunter-2026022206/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=1200&amp;h=630&amp;fit=crop" alt="Grove 并行开发冲突检测">
 </figure>
   <header class="entry-header">
@@ -346,51 +387,6 @@ bash &lt;(curl -fsSL https://raw.githubusercontent.com/tnm/zclaw/main/scripts/bo
   </div>
   <footer class="entry-footer"><span title='2026-02-21 21:05:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>70 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to zclaw:888 KB 的 AI 助手,跑在 ESP32 上" href="https://claudeai.best/posts/hunter-2026022121/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771675774516_cover.jpg" alt="Memed-in - LinkedIn 表情包扩展">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Memed-in:把 LinkedIn 信息流变成表情包,专治职场凡尔赛
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>发现一个有意思的东西:Memed-in
-一个 Chrome 扩展,把 LinkedIn 帖子变成表情包.
-谁能用? LinkedIn 重度用户,受够了:
-“Excited to announce…” “Thrilled to share…” “Humblwed to be nominated…” 怎么用 安装 Chrome 扩展 打开 LinkedIn 每个帖子旁边会出现一个安静的小按钮 点击 → AI 生成&#34;诚实版&#34;总结 效果 原文:
-Excited to announce I’ve been promoted to Senior Manager!
-AI 总结:
-“My boss finally noticed me”
-Thrilled to share our Q3 results exceeded expectations!
-“Please don’t fire me”
-有啥特别的? 安静的设计:不打扰,想用才点, 本地运行:不收集数据, 开源:想改就改 链接 GitHub: https://github.com/taman-islam/memed-in 让 LinkedIn 不再那么… LinkedIn
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-21 20:04:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>71 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Memed-in:把 LinkedIn 信息流变成表情包,专治职场凡尔赛" href="https://claudeai.best/posts/hunter-2026022120/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771672208451_cover.jpg" alt="Claude Code Open - 开源 AI 编程平台">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Claude Code Open:开源版 Claude Code,带 Web IDE 和多 Agent 系统
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>刚发现一个猛的开源项目:Claude Code Open ️
-谁能用? 想要开源版 Claude Code 的.官方 Claude Code 是闭源的,这个项目基于公开 API 和类型定义逆向工程实现,完全 MIT 开源.
-功能:
-CLI &#43; Web IDE:Monaco 编辑器,文件树,AI 增强编辑 37&#43; 内置工具:文件操作,搜索,执行,Web 访问,任务管理,浏览器自动化 Blueprint 多 Agent:智能规划器 &#43; 领导 Agent &#43; 自主 Worker &#43; 任务队列 &#43; 质量审查 定时任务守护进程:自然语言调度,“每天 9 点代码审查” 自演化:AI 可以修改自己的源代码,热重载 一键安装 Windows:
-irm https://raw.githubusercontent.com/kill136/claude-code-open/private_web_ui/install.ps1 | iex macOS / Linux:
-curl -fsSL https://raw.githubusercontent.com/kill136/claude-code-open/private_web_ui/install.sh | bash 安装后双击桌面快捷方式,浏览器自动打开 http://localhost:3456. ## 有什么特别的? - **Web UI IDE**: Monaco 编辑器,VS Code 风格文件树,AI 悬浮提示 - **Blueprint 多 Agent**: 复杂任务自动分解到多个 Agent 并行执行 - **定时任务**: 自然语言配置时间,文件监控触发,多渠道通知 - **自演化**: AI 修改自己源码 &#43; TypeScript 编译检查 &#43; 热重载 - **检查点回滚**: 文件快照管理 &#43; 会话时间旅行 - **MCP 协议**: 完整实现,支持 stdio,HTTP,SSE 传输 - **代理服务器**: 共享 Claude 订阅到其他设备 # CLI 模式 npm run dev # Web UI 模式 npm run web # 代理服务器模式(共享订阅) npm run proxy # 飞书机器人 npm run feishu # 微信机器人 npm run wechat ## 试试看 一键安装后设置 API Key: export ANTHROPIC_API_KEY=your-api-key GitHub: https://github.com/kill136/claude-code-open Demo: http://voicegpt.site:3456/ ## 时效性验证 - **HN 提交时间**: 1 分钟前(Show HN: Claude Code Open – AI Coding Platform with Web IDE and Agents) - **搜索引擎最早时间**: HN 首发 1 分钟前,GitHub 仓库为新发布 - **结论**: 最早时间 ≤ 2 小时,符合新鲜热点标准 </p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-21 19:09:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>178 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Claude Code Open:开源版 Claude Code,带 Web IDE 和多 Agent 系统" href="https://claudeai.best/posts/hunter-2026022119/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
