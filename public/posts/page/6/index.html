@@ -176,6 +176,69 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&amp;h=630&amp;fit=crop" alt="Assay AI 审计证据">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Assay:AI 系统的篡改证据工具,扫了 30 个项目全是 0
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>发现一个有意思的工具 Assay 扫描了 30 个热门 AI 项目,找到 202 个 LLM 调用点,0 个有防篡改审计.两行代码就能加上密码学签名证据.
+谁能用?解决什么问题? 场景:
+合规要求:EU AI Act 要求高风险系统自动记录日志 审计需要:第三方要验证你的 AI 到底干了什么 防篡改:服务器日志可以删,签名证据删不掉 Assay 做的事:
+scan:扫描代码找所有 LLM 调用点, patch:两行代码插入 receipt 采集, run:运行程序,生成签名证据包, verify-pack:第三方离线验证 四个退出码:
+0: 完整 &#43; 符合标准 1: 完整但违规(诚实失败), 2: 证据被篡改, 3: 输入有问题 “诚实失败&#34;是审计黄金 — 证据是真的,但控制失效了.能证明失败比掩盖失败更可信.
+相比现有方案好在哪? 不是日志框架:不是 Datadog,是密码学证据 离线验证:第三方不需要信任你的服务器 CI 门禁:lockfile 锁配置,diff 抓回归 合规就绪:EU AI Act Article 12/19 引用齐全 支持 OpenAI,Anthropic,Gemini,LiteLLM,LangChain,以及任何 OpenAI 兼容的本地模型(Ollama,vLLM 等).
+怎么用 pip install assay-ai # 1. 扫描 assay scan . --report # 2. 打补丁 assay patch . # 3. 运行生成证据 assay run -c receipt_completeness -- python my_app.py # 4. 验证 assay verify-pack ./proof_pack_*/ GitHub: https://github.com/Haserjian/assay
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-22 12:06:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>102 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Assay:AI 系统的篡改证据工具,扫了 30 个项目全是 0" href="https://claudeai.best/posts/hunter-2026022212/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1517842645767-c639042777db?w=1200&amp;h=630&amp;fit=crop" alt="ThreadKeeper 工作上下文保存">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">ThreadKeeper:Ctrl&#43;Shift&#43;S 一键保存工作上下文,AI 帮你记
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>发现一个有意思的工具 ThreadKeeper 按 Ctrl&#43;Shift&#43;S 一键保存所有打开的应用,浏览器标签,剪贴板.AI 自动总结你在干什么,下次一键恢复.
+谁能用?解决什么问题? 场景:
+开会回来忘了刚才在干啥, 30 个标签页不小心关了, 第二天早上不知道昨天干到哪 任务 A 被任务 B 打断,回来手忙脚乱 ThreadKeeper 做的事:
+记录:一键扫描所有窗口,标签,剪贴板,最近文件 AI 总结:自动推断你在干什么,问一句&#34;这样对吗?&#34; 恢复:点一下 Restore,全部恢复原样 支持 Windows 和 macOS,5 种语言(包括中文).
+相比现有方案好在哪? AI 总结:不是傻傻记列表,而是&#34;你当时在研究 XX&#34;这种自然语言, 本地存储:数据存在 %APPDATA%,不上云, Ollama 支持:本地跑 AI,完全不联网,适合敏感数据, 开源免费:MIT 协议 支持的 AI:
+Google Gemini(免费层), OpenAI GPT-4o, Anthropic Claude, Ollama(本地免费) 怎么用 # 一键保存 Ctrl &#43; Shift &#43; S 网站: https://www.thethread-keeper.com/
+下次开会回来,一键找回状态.
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-22 11:06:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>60 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to ThreadKeeper:Ctrl&#43;Shift&#43;S 一键保存工作上下文,AI 帮你记" href="https://claudeai.best/posts/hunter-2026022211/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=1200&amp;h=630&amp;fit=crop" alt="Residue AI Git 连接">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Residue:AI 对话和 Git 提交连起来了
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>发现一个有意思的工具 Residue 把 AI agent 对话和 Git commit 关联起来.AI 帮你改了代码,但你找不到它做了什么?以后不会了.
+谁能用?解决什么问题? 场景:AI 帮你写了代码,提交了,但你不知道它改了啥,以后想回溯也找不到对话记录.
+Residue 做的事:
+跟踪:你跟 AI agent 聊天,Residue 默默记录会话 关联:git hook 把待处理的对话和 commit SHA 绑定 上传:git push 时话会上传到自托管 worker 浏览:在后台能看到每个 commit 对应的对话 工作流:
+你 g g 后 # 用 # ` # b # r # r 支 G 聊 ↓ i i 台 # # ` u e e 持 i A 天 t t 浏 C ` 2 n 3 s 4 s 各 t I 览 相 * l 怎 b . . i . i 种 H → c p 比 自 o 么 a a d d u 写 o u → 现 托 u 用 s 安 d 连 u 初 u A b 的 R m s 有 管 d h 装 d 接 e 始 e I : 代 e m h 每 方 * f 到 化 码 s i 个 案 * l C - l 仓 i a h , i t → 好 : a L g w o 库 n g t 终 d c 在 部 r I o g i e t 于 u → 会 o 哪 署 e @ r i t n p 能 e 话 m ? 自 r k n t s 追 h 上 m 己 R e e &amp; , : 溯 记 o 传 i 的 2 s r &amp; 配 / 了 录 o 到 t i 置 / . k 你 C 存 d r 好 g 的 对 l 对 u e 就 i 关 应 o 话 e s 能 t 联 w 的 u / i 用 h o d &#43; c d . u c r A f l u b o k I l S i e . m e a 3 c m r 对 r s o i 话 e A e m t P t / W I u b S o p u H r t t A k o &lt; t e k a t r e g o , n e n 数 . n s 据 t / 留 &gt; r 在 e 自 s 己 i 基 d 础 u 设 e 施 , * 可 搜 索 * * : 对 话 能 被 A I 搜 索 , 不 再 丢 失 上 下 文 , * 开 源 免 费 * * : 自 己 部 署 , 不 用 交 月 费 </p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-22 10:06:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>415 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Residue:AI 对话和 Git 提交连起来了" href="https://claudeai.best/posts/hunter-2026022210/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://images.unsplash.com/photo-1555949963-aae5ca8ef1e9?w=1024&amp;q=80" alt="emacs-gravity Claude Code UI">
 </figure>
   <header class="entry-header">
@@ -323,71 +386,6 @@ GitHub: https://github.com/mitchellh/vouch
   </div>
   <footer class="entry-footer"><span title='2026-02-22 03:15:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>256 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Sensei:用 Ralph 循环自动改进 SKILL.md,让 Agent 知道什么时候该用/不该用" href="https://claudeai.best/posts/hunter-2026022203/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771697522530_cover.jpg" alt="TokenShrink - Prompt 压缩">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">TokenShrink v2.0:Reddit 骂醒了他们,Token 计数原来一直都是错的
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>刚发现一个有意思的更新:TokenShrink v2.0 ️
-谁能用? 用 LLM API 的.Prompt 太长,Token 烧太快,想省钱的人.
-TokenShrink 的做法:压缩 Prompt,同样效果,更少 Token.
-Reddit 教做人 v1.0 用 words × 1.3 估算 Token 数量.
-Reddit r/LocalLLaMA 直接撕了:
-“database” 是 1 token,“db” 也是 1 token → 替换省个屁 “should” → “shd” 从 1 token 变 2 token → 越压缩越贵 不同模型 tokenizer 不一样 → 1.3 这个系数是瞎编的 他们说得对.
-v2.0 的修正:
-用真实 BPE tokenizer 计数(tiktoken for GPT, Claude’s tokenizer for Claude) 只压缩真正省 token 的替换 每个模型用各自的 tokenizer 怎么用? 网页版:粘贴 Prompt,一键压缩.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 02:12:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>166 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to TokenShrink v2.0:Reddit 骂醒了他们,Token 计数原来一直都是错的" href="https://claudeai.best/posts/hunter-2026022202/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771693767180_cover.jpg" alt="Eliezer - 自托管 AI Agent">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Eliezer:7000 行代码的自托管 AI Agent,手机上就能跑
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>刚发现一个猛的开源项目:Eliezer ️
-谁能用? 想要自己托管 AI Agent 的.现在主流方案要么是 Claude Code(桌面端),要么是 SaaS(闭源).
-Eliezer 的定位:口袋里的 AI 工程师.
-7000 行 TypeScript,一个下午能读完, PWA 应用,手机上用, 支持 Claude/GPT/Kimi/Grok, 能自己改自己代码 好在哪? 代码量, Eliezer=~7K 行, Claude Code=200K&#43; 行, ChatGPT=闭源 能看懂, Eliezer= 一个下午, Claude Code= 太复杂, ChatGPT= 闭源 手机/PWA, Eliezer= 一级支持, Claude Code=️ 桌面为主, ChatGPT= 只有 App 自托管, Eliezer= 自己的服务器, Claude Code= 需要复杂配置, ChatGPT= SaaS 记忆控制, Eliezer= 完全控制, Claude Code=️ 复杂,无控制, ChatGPT= 闭源 连续运行, Eliezer= 一直跑, Claude Code= 是, ChatGPT= 每次会话
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 01:10:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>118 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Eliezer:7000 行代码的自托管 AI Agent,手机上就能跑" href="https://claudeai.best/posts/hunter-2026022201/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771690224784_cover.jpg" alt="CacheOverflow - AI Agent 知识市场">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">CacheOverflow:AI Agent 知识市场,解决问题还能赚 Token
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>刚发现一个有意思的MCP 工具:CacheOverflow ️
-谁能用? 用 AI Agent 写代码的.问题是:Agent 经常遇到同样的错误,每次都从头猜,浪费时间和 Token.
-CacheOverflow 的做法:Agent 之间共享解决方案.
-你花了 10 分钟解决的问题,另一个 Agent 遇到同样问题–1 秒解决.你还能赚 Token.
-怎么用? npm install -g cache-overflow-mcp 在 Claude Desktop 或 Cursor 的 MCP 配置里添加 cacheoverflow.
-Agent 自动获得两个工具:
-find_solution — 搜索已有解决方案 publish_solution — 发布新解决方案 工作流程:
-Agent 遇到问题 → 搜索 CacheOverflow 找到了 → 直接用(花 Token 购买) 没找到 → 自己解决 → 可以发布赚 Token 好在哪? 省时间: 同样问题不用重复猜, 省 Token: 直接用解决方案,不走弯路, 赚收益: 发布解决方案,别人用你赚 Token, 隐私安全: 只分享通用逻辑,不泄露代码 质量保证: 人工审核 &#43; 社区评分 隐私? 只在你调用 find_solution 时激活 只访问你提供的错误消息/堆栈 分享的是通用模式(“如何修复 Svelte 5 水合错误”),不是你的代码 试试看 官网: https://cacheoverflow.dev GitHub: https://github.com/GetCacheOverflow/CacheOverflow
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 00:08:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>116 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to CacheOverflow:AI Agent 知识市场,解决问题还能赚 Token" href="https://claudeai.best/posts/hunter-2026022200/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

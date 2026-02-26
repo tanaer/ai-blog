@@ -6,34 +6,90 @@
     <description>Recent content in Tags on AI 极客前沿</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 26 Feb 2026 07:15:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Feb 2026 08:04:00 +0800</lastBuildDate>
     <atom:link href="https://claudeai.best/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Agent</title>
+      <link>https://claudeai.best/tags/agent/</link>
+      <pubDate>Thu, 26 Feb 2026 08:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/agent/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AI</title>
       <link>https://claudeai.best/tags/ai/</link>
-      <pubDate>Thu, 26 Feb 2026 07:15:00 +0800</pubDate>
+      <pubDate>Thu, 26 Feb 2026 08:04:00 +0800</pubDate>
       <guid>https://claudeai.best/tags/ai/</guid>
       <description></description>
     </item>
     <item>
-      <title>NVIDIA</title>
-      <link>https://claudeai.best/tags/nvidia/</link>
-      <pubDate>Thu, 26 Feb 2026 07:15:00 +0800</pubDate>
-      <guid>https://claudeai.best/tags/nvidia/</guid>
+      <title>互操作性</title>
+      <link>https://claudeai.best/tags/%E4%BA%92%E6%93%8D%E4%BD%9C%E6%80%A7/</link>
+      <pubDate>Thu, 26 Feb 2026 08:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/%E4%BA%92%E6%93%8D%E4%BD%9C%E6%80%A7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>记忆系统</title>
+      <link>https://claudeai.best/tags/%E8%AE%B0%E5%BF%86%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Thu, 26 Feb 2026 08:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/%E8%AE%B0%E5%BF%86%E7%B3%BB%E7%BB%9F/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>自我验证</title>
+      <link>https://claudeai.best/tags/%E8%87%AA%E6%88%91%E9%AA%8C%E8%AF%81/</link>
+      <pubDate>Thu, 26 Feb 2026 08:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/%E8%87%AA%E6%88%91%E9%AA%8C%E8%AF%81/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LLM-LD</title>
+      <link>https://claudeai.best/tags/llm-ld/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://claudeai.best/tags/llm-ld/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web标准</title>
+      <link>https://claudeai.best/tags/web%E6%A0%87%E5%87%86/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://claudeai.best/tags/web%E6%A0%87%E5%87%86/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>技术</title>
+      <link>https://claudeai.best/tags/%E6%8A%80%E6%9C%AF/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://claudeai.best/tags/%E6%8A%80%E6%9C%AF/</guid>
       <description></description>
     </item>
     <item>
       <title>财报</title>
       <link>https://claudeai.best/tags/%E8%B4%A2%E6%8A%A5/</link>
-      <pubDate>Thu, 26 Feb 2026 07:15:00 +0800</pubDate>
+      <pubDate>Thu, 26 Feb 2026 07:04:00 +0800</pubDate>
       <guid>https://claudeai.best/tags/%E8%B4%A2%E6%8A%A5/</guid>
       <description></description>
     </item>
     <item>
-      <title>科技</title>
-      <link>https://claudeai.best/tags/%E7%A7%91%E6%8A%80/</link>
-      <pubDate>Thu, 26 Feb 2026 07:15:00 +0800</pubDate>
-      <guid>https://claudeai.best/tags/%E7%A7%91%E6%8A%80/</guid>
+      <title>市场分析</title>
+      <link>https://claudeai.best/tags/%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/</link>
+      <pubDate>Thu, 26 Feb 2026 07:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>芯片</title>
+      <link>https://claudeai.best/tags/%E8%8A%AF%E7%89%87/</link>
+      <pubDate>Thu, 26 Feb 2026 07:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/%E8%8A%AF%E7%89%87/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>英伟达</title>
+      <link>https://claudeai.best/tags/%E8%8B%B1%E4%BC%9F%E8%BE%BE/</link>
+      <pubDate>Thu, 26 Feb 2026 07:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/%E8%8B%B1%E4%BC%9F%E8%BE%BE/</guid>
       <description></description>
     </item>
     <item>
@@ -303,13 +359,6 @@
       <description></description>
     </item>
     <item>
-      <title>Agent</title>
-      <link>https://claudeai.best/tags/agent/</link>
-      <pubDate>Wed, 25 Feb 2026 17:05:00 +0800</pubDate>
-      <guid>https://claudeai.best/tags/agent/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Perplexity</title>
       <link>https://claudeai.best/tags/perplexity/</link>
       <pubDate>Wed, 25 Feb 2026 17:05:00 +0800</pubDate>
@@ -475,13 +524,6 @@
       <link>https://claudeai.best/tags/%E5%9B%BD%E9%98%B2%E7%94%9F%E4%BA%A7%E6%B3%95/</link>
       <pubDate>Wed, 25 Feb 2026 12:05:00 +0800</pubDate>
       <guid>https://claudeai.best/tags/%E5%9B%BD%E9%98%B2%E7%94%9F%E4%BA%A7%E6%B3%95/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>市场分析</title>
-      <link>https://claudeai.best/tags/%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/</link>
-      <pubDate>Wed, 25 Feb 2026 11:10:00 +0800</pubDate>
-      <guid>https://claudeai.best/tags/%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/</guid>
       <description></description>
     </item>
     <item>
@@ -2372,6 +2414,13 @@
       <link>https://claudeai.best/tags/sonnet4.6/</link>
       <pubDate>Wed, 18 Feb 2026 20:00:00 +0800</pubDate>
       <guid>https://claudeai.best/tags/sonnet4.6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NVIDIA</title>
+      <link>https://claudeai.best/tags/nvidia/</link>
+      <pubDate>Wed, 18 Feb 2026 19:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/nvidia/</guid>
       <description></description>
     </item>
     <item>

@@ -2,58 +2,123 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://claudeai.best/posts/2026-02-26-ai-six-breakthroughs-2026/</loc>
+    <lastmod>2026-02-26T08:04:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/agent/</loc>
+    <lastmod>2026-02-26T08:04:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/ai/</loc>
+    <lastmod>2026-02-26T08:04:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
     <loc>https://claudeai.best/</loc>
-    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-26T08:04:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
     <loc>https://claudeai.best/posts/</loc>
+    <lastmod>2026-02-26T08:04:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/</loc>
+    <lastmod>2026-02-26T08:04:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/%E4%BA%92%E6%93%8D%E4%BD%9C%E6%80%A7/</loc>
+    <lastmod>2026-02-26T08:04:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/%E8%AE%B0%E5%BF%86%E7%B3%BB%E7%BB%9F/</loc>
+    <lastmod>2026-02-26T08:04:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/%E8%87%AA%E6%88%91%E9%AA%8C%E8%AF%81/</loc>
+    <lastmod>2026-02-26T08:04:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/categories/</loc>
+    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/llm-ld/</loc>
+    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/web%E6%A0%87%E5%87%86/</loc>
+    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/posts/2026-02-26-llm-ld-standard/</loc>
+    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/categories/%E6%8A%80%E6%9C%AF%E8%A7%82%E5%AF%9F/</loc>
     <lastmod>2026-02-26T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
     <loc>https://claudeai.best/categories/ai/</loc>
-    <lastmod>2026-02-26T07:15:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>https://claudeai.best/tags/ai/</loc>
-    <lastmod>2026-02-26T07:15:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>https://claudeai.best/categories/</loc>
-    <lastmod>2026-02-26T07:15:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>https://claudeai.best/tags/nvidia/</loc>
-    <lastmod>2026-02-26T07:15:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>https://claudeai.best/tags/</loc>
-    <lastmod>2026-02-26T07:15:00+08:00</lastmod>
+    <lastmod>2026-02-26T07:04:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
     <loc>https://claudeai.best/tags/%E8%B4%A2%E6%8A%A5/</loc>
-    <lastmod>2026-02-26T07:15:00+08:00</lastmod>
+    <lastmod>2026-02-26T07:04:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
-    <loc>https://claudeai.best/tags/%E7%A7%91%E6%8A%80/</loc>
-    <lastmod>2026-02-26T07:15:00+08:00</lastmod>
+    <loc>https://claudeai.best/categories/%E9%87%91%E8%9E%8D/</loc>
+    <lastmod>2026-02-26T07:04:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
-    <loc>https://claudeai.best/categories/%E5%95%86%E4%B8%9A/</loc>
-    <lastmod>2026-02-26T07:15:00+08:00</lastmod>
+    <loc>https://claudeai.best/categories/%E7%A7%91%E6%8A%80/</loc>
+    <lastmod>2026-02-26T07:04:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/</loc>
+    <lastmod>2026-02-26T07:04:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/%E8%8A%AF%E7%89%87/</loc>
+    <lastmod>2026-02-26T07:04:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/%E8%8B%B1%E4%BC%9F%E8%BE%BE/</loc>
+    <lastmod>2026-02-26T07:04:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
     <loc>https://claudeai.best/posts/2026-02-26-nvidia-earnings-ai-bubble/</loc>
-    <lastmod>2026-02-26T07:15:00+08:00</lastmod>
+    <lastmod>2026-02-26T07:04:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/posts/hunter-2026022607/</loc>
+    <lastmod>2026-02-26T07:04:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
@@ -347,11 +412,6 @@
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
-    <loc>https://claudeai.best/tags/agent/</loc>
-    <lastmod>2026-02-25T17:05:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url><url>
     <loc>https://claudeai.best/categories/ai-%E8%B6%8B%E5%8A%BF/</loc>
     <lastmod>2026-02-25T17:05:00+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -528,11 +588,6 @@
     <priority>0.8</priority>
   </url><url>
     <loc>https://claudeai.best/categories/%E7%BB%8F%E6%B5%8E/</loc>
-    <lastmod>2026-02-25T11:10:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>https://claudeai.best/tags/%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/</loc>
     <lastmod>2026-02-25T11:10:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -2639,6 +2694,11 @@
   </url><url>
     <loc>https://claudeai.best/tags/sonnet4.6/</loc>
     <lastmod>2026-02-18T20:00:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/nvidia/</loc>
+    <lastmod>2026-02-18T19:00:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>

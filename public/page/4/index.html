@@ -184,6 +184,72 @@
 <main class="main"> 
 
 <article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">go-size-analyzer：浏览器里分析 Go 二进制文件大小，还能生成树状图
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Go 工具链生态又添新成员。go-size-analyzer 是一个分析编译后 Go 二进制文件大小的工具，支持跨平台格式（ELF、Mach-O、PE、WebAssembly），并提供树状图可视化。
+最酷的是，它编译成了 WebAssembly，托管在 gsa.zxilly.dev，你可以直接在浏览器中打开编译好的二进制文件进行分析——无需安装任何东西。
+功能亮点：
+详细分解：按包、按段展示大小占比 多种输出：text、json、html、svg 交互式界面：Web UI 和终端 UI 都支持 Diff 模式：对比两个二进制文件的大小变化 安装也很简单：
+# Homebrew brew install go-size-analyzer # Scoop scoop install go-size-analyzer # Go install go install github.com/Zxilly/go-size-analyzer/cmd/gsa@latest 本地使用：
+gsa --web your-binary Simon Willison 试用了这个工具，发现 Datadog 团队用它把 Agent 二进制体积减少了 77%。对于微服务和容器化部署场景，这个工具能帮你快速定位体积膨胀的源头。
+项目地址：github.com/Zxilly/go-size-analyzer
+推文草稿 Go 二进制文件太大了？试试 go-size-analyzer。
+最酷的是它能编译成 WebAssembly，在浏览器里直接分析二进制——不需要安装任何东西。
+Datadog 团队用它把 Agent 体积砍了 77%。
+在线体验：https://gsa.zxilly.dev
+#Go #WebAssembly #性能优化
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-25 03:04:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>63 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to go-size-analyzer：浏览器里分析 Go 二进制文件大小，还能生成树状图" href="https://claudeai.best/posts/hunter-2026022503/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://claudeai.best/images/hunter/2026022502.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">用 CSS 写了一个 x86 CPU 模拟器，能跑机器码
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>CSS 不是编程语言？再想想 当你说 “CSS 只是样式表” 时，rebane2001 用行动打了所有人的脸 —— 他用纯 CSS 写了一个完整的 x86 CPU 模拟器。
+这不是玩具，是真正能跑机器码的模拟器。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-25 02:05:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>92 字</span>&nbsp;·&nbsp;<span>Hunter AI</span></footer>
+  <a class="entry-link" aria-label="post link to 用 CSS 写了一个 x86 CPU 模拟器，能跑机器码" href="https://claudeai.best/posts/hunter-2026022502/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://claudeai.best/images/covers/hunter-2026022501.jpg" alt="DeepSeek V4 Lite SVG Generation">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">DeepSeek V4 Lite 泄露：54 行代码生成 Xbox 手柄，SVG 生成能力震惊社区
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>开源模型的新突破 DeepSeek V4 Lite 在非官方渠道泄露，展现了令人惊叹的 SVG 代码生成能力。这个轻量级模型用区区 54 行代码就生成了一个精致的 Xbox 手柄，另一个复杂场景更是压缩到 42 行。
+技术细节 根据泄露的演示：
+Xbox 手柄：54 行 SVG 代码 多元素场景：42 行代码 性能对比：超越 DeepSeek 3.2、Claude Opus 4.6、Gemini 3.1 内部评估显示，DeepSeek V4 Lite 生成的代码更加优化和简洁，这意味着什么？
+设计自动化的未来 想象一下：
+UI 设计师：直接用文字描述界面，AI 生成矢量图 营销团队：快速生成 logo、图标、营销素材 工程师：自动生成原理图、流程图、架构图 这不是幻想——这是 DeepSeek V4 Lite 正在实现的能力。
+空间推理的胜利 生成高质量的 SVG 不仅需要代码能力，更需要空间推理。模型必须理解：
+物体的几何结构 元素之间的空间关系 如何用代码表达视觉概念 这正是 DeepSeek V4 Lite 的核心竞争力。
+警惕与期待 ⚠️ 重要提示：这些性能来自泄露版本，尚未得到 DeepSeek 官方确认。AI 社区呼吁独立验证。
+但无论如何，这展示了开源模型在垂直领域的巨大潜力。当通用模型还在追求&#34;什么都能做&#34;时，专用模型已经开始&#34;把一件事做到极致&#34;。
+开源的力量 DeepSeek 一直是开源社区的中坚力量。如果 V4 Lite 的 SVG 能力得到验证，它将成为：
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-25 01:05:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>88 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to DeepSeek V4 Lite 泄露：54 行代码生成 Xbox 手柄，SVG 生成能力震惊社区" href="https://claudeai.best/posts/hunter-2026022501/"></a>
+</article>
+
+<article class="post-entry"> 
 <figure class="entry-cover">
         <img loading="lazy" src="https://claudeai.best/images/hunter/2026022500.jpg" alt="">
 </figure>
@@ -323,78 +389,6 @@ T T T O O O D D D O O O : : : V C C a h h l e e i c c d k k a t a p e u e t r P 
   </div>
   <footer class="entry-footer"><span title='2026-02-24 18:04:00 +0800 CST'>2026年2月24日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>45 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Simon Willison 的新项目：用智能体工程对抗 Vibe Coding" href="https://claudeai.best/posts/2026-02-24-agentic-engineering-patterns/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771228959026_cover.jpg" alt="AI模型三巨头混战的概念图">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">没人打招呼,三大AI巨头却在同一天掀桌子
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>说实话,有点离谱.
-没人打招呼,没人协调,但Anthropic、OpenAI、DeepSeek偏偏选在2026年2月同一天掀桌子.
-这不是什么发布会撞车,这是一场没有硝烟的模型战争.
-发生了什么? 2月5号,Anthropic丢出Claude Opus 4.6,主打一个Agent Teams——不再是单个AI干活,而是多个Agent并行协作.写代码、做分析、搞研究,原来两小时的活现在二十分钟搞定.十二天后,Sonnet 4.6跟上,直接把Opus级别的性能塞进中端价位.
-同一天,OpenAI掏出GPT-5.3-Codex.最骚的是这玩意儿参与了自身的开发——调试、部署、诊断测试结果,AI写AI,递归进化开始了.
-然后DeepSeek V4的预发布信号也出来了:上下文窗口从128K飙到100万token,知识库更新到2025年5月. Nomura的分析师说,正式版随时可能落地.
-有意思的点 其实这次混战暴露了一个趋势:大家都不再比谁更会聊天了,比的是谁能真正干活.
-Claude的Excel和PowerPoint集成,Opus的Agent Teams,都在冲着&#34;知识工作者&#34;去.GPT-5.3-Codex死磕编程,DeepSeek继续打性价比和开源牌.
-Benchmark已经不重要了,重要的是谁能当你的同事.
-该怎么选? 说实话,日常用的话差距没你想的大.真正拉开距离的是长任务、复杂编排、Agent自主运行这些场景.
-知识工作、办公自动化 → Claude Opus/Sonnet 4.6 纯编程 → GPT-5.3-Codex 要省钱或数据不能出墙 → DeepSeek 这场仗才刚开始,谁的优势都是暂时的. 但有一点可以确定:2026年2月,是AI从&#34;会说话&#34;变成&#34;会干活&#34;的分水岭.
-🔗 完整分析
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-24 17:04:00 +0800 CST'>2026年2月24日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>35 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to 没人打招呼,三大AI巨头却在同一天掀桌子" href="https://claudeai.best/posts/hunter-2026022417/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">AI 两周搞定浏览器引擎重写，这事儿有点意思
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>说实话，看到这个标题我第一反应是&#34;又来个 AI 吹牛逼的&#34;。
-结果仔细一看，还真不是那么回事。
-Ladybird 这个独立浏览器项目，用 AI 辅助把 JavaScript 引擎从 C&#43;&#43; 翻译成了 Rust。不是让 AI 自动写代码，是人工主导翻译——人类决定翻什么、怎么翻，AI 负责干脏活累活。
-效果呢？25000 行 Rust 代码，2 周搞定。同样的工作人工做估计得几个月。
-关键是没有翻车。test262 的 52898 个测试，Ladybird 自己的 12461 个回归测试，全部通过，零错误。还做了字节级验证，确保 Rust 和 C&#43;&#43; 编译器输出完全一致。
-这事儿最有意思的不是&#34;AI 能写代码&#34;，而是展示了一种新的技术债清理方式。传统重写基本等于重做一遍，现在可以让人机协作：人类把控架构和方向，AI 处理机械翻译。
-当然，代码还带着浓浓的&#34;C&#43;&#43; 味儿&#34;，不是地道的 Rust。但人家说了，第一要务是兼容性，后续慢慢优化。这思路挺务实的。
-独立浏览器本来就难，选择 Rust 本身就说明对安全性的重视。现在再加上 AI 辅助，感觉这个项目可以走得更远了。
-说实话，这种&#34;人工 &#43; AI&#34;的协作模式，比那些&#34;AI 自动生成一切&#34;的噱头实在多了。
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-24 14:18:00 +0800 CST'>2026年2月24日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>47 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to AI 两周搞定浏览器引擎重写，这事儿有点意思" href="https://claudeai.best/posts/2026-02-24-ladybird-rust-ai/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">AI 辅助黑客 5 周攻破 600 台防火墙
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>说实话,这新闻看得我有点心惊.
-亚马逊最新的安全报告说,一小撮黑客(可能就一个人)用市面上随便能买到的 AI 工具,5 周内攻破了 55 个国家的 600 多台防火墙.
-怎么做到的?其实没什么黑科技:
-用 AI 快速分析目标, 找弱口令和单因素认证, 自动化批量攻击 关键点是&#34;快&#34;.以前需要几天的研究工作,现在 AI 几分钟搞定.
-这事儿给我两个感受:
-一是 AI 确实把攻击门槛拉低了.以前搞这种规模攻击得是顶级黑客,现在有个 AI 订阅就能干.
-二是防御方也得跟上.AI 能帮黑客,也能帮防御.别再用弱密码了,多因素认证该开就开.
-链接:https://www.bloomberg.com/news/articles/2026-02-20/hackers-used-ai-to-breach-600-firewalls-in-weeks-amazon-says
-#AI #安全 #黑客
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-23 21:45:00 +0800 CST'>2026年2月23日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>30 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to AI 辅助黑客 5 周攻破 600 台防火墙" href="https://claudeai.best/posts/hunter-2026022321/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

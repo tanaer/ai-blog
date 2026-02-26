@@ -161,6 +161,52 @@
 
 <article class="post-entry tag-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771333447037_cover.jpg" alt="数学公式与AI研究的交叉">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">DeepMind的AI独立写了一篇数学论文,还推翻了一个十年老猜想--但700道题只答对6.5%
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>AI从做题家变成了研究员 上周,Google DeepMind扔出了一个重磅炸弹:Aletheia–一个不是用来刷题,而是用来做真正数学研究的AI Agent.
+这不是说&#34;AI在数学竞赛拿金牌&#34;那种新闻了.那个阶段早在2025年就过去了.Aletheia瞄准的是一个完全不同的目标:让AI自主产出可发表的学术研究成果.
+结果很有意思.一半是惊艳,一半是打脸.
+亮点:独立写论文,推翻老猜想 先说让人兴奋的部分.
+Aletheia独立完成了一篇算术几何论文(Feng26).不是人写了框架AI填充细节,是AI从头到尾自己搞定的–计算了一类叫eigenweights的结构常数.论文已发表在arXiv上.DeepMind的说法是:整个数学内容完全由AI生成,人类作者只做了排版.
+它还推翻了一个存在十年的数学猜想,并在一篇密码学论文中发现了专家遗漏的关键错误.
+在协作模式下,Aletheia帮人类数学家证明了关于独立集界的定理(LeeSeo26)–AI提供高层策略和&#34;大局观&#34;路线图,人类负责严格化.
+IMO-Proof Bench Advanced基准测试上,Aletheia拿到了**95.1%**的准确率,而2025年7月的前代只有65.7%.性能飞跃巨大.
+但700道真正的开放问题呢?只有6.5%有用 重点来了.
+DeepMind把Aletheia扔进了Erdős猜想数据库–700道至今无人解决的开放数学问题.这才是真正的考试.
+结果:63个技术上正确的解答,4个真正解决了开放问题.
+算一下:有用率6.5%.
+这个数字非常诚实,也非常重要.它说明了一个关键现实:AI在有标准答案的竞赛题上表现惊艳,但面对真正的开放性研究,成功率仍然很低.
+这不是贬低–4个开放问题的自主解决已经是历史性的.但它提醒我们,从&#34;做题&#34;到&#34;做研究&#34;的鸿沟,比想象中大得多.
+架构:三个AI互相查作业 Aletheia的设计思路非常务实.它不是一个模型独挑大梁,而是三个角色分工的agentic loop:
+Generator(生成器):针对问题提出候选解答, Verifier(验证器):用自然语言检查解答中的逻辑缺陷和幻觉, Reviser(修正器):根据验证器发现的问题修改解答 这个循环反复迭代,直到验证器接受结果,或者达到尝试上限.关键在于:验证和生成必须分离.研究团队发现,让同一个模型同时生成和检查,它会对自己的错误视而不见.拆开之后,检出率显著提升.
+底层动力来自Gemini Deep Think的升级版.2026年1月版本在推理时间扩展(inference-time scaling)上取得了突破–解决IMO级别问题所需的计算量比2025年版降低了100倍.
+幻觉问题:从编造论文变成了曲解论文 做研究和做竞赛有个根本区别:研究需要引用文献.
+AI的老毛病在这里特别致命–它会编造根本不存在的论文,书籍和作者名字.Aletheia通过接入Google搜索和网页浏览来解决这个问题,效果明显:明显的虚构(假书名,假作者)大幅减少.
+但问题变形了.模型开始引用真实存在的论文,然后错误地描述论文内容.相当于一个学生从&#34;编假参考文献&#34;进化到了&#34;引用真论文但断章取义&#34;.
+这类错误更隐蔽,更难检测,也更危险.
+DeepMind的&#34;自动驾驶分级&#34;体系 有意思的是,DeepMind提出了一个AI数学贡献的分级标准,灵感来自自动驾驶的L0-L5:
+Level 0, 自主程度=主要靠人, 研究意义=可忽略的新颖性(竞赛题水平) Level 1, 自主程度=人机协作, 研究意义=较小的新颖性 Level 2, 自主程度=基本自主, 研究意义=可发表质量
+Feng26论文被归类为Level A2–基本自主且达到可发表质量.这是目前AI在学术研究中达到的最高等级.
+我的看法:这才是AI真正让人兴奋的方向 说实话,我对&#34;AI刷题拿金牌&#34;这类新闻早就脱敏了.但Aletheia让我重新兴奋起来,原因有三:
+第一,它足够诚实. 6.5%的有用率直接公开,没有选择性展示.这种透明度在AI营销满天飞的今天非常稀缺.
+第二,它指向了AI真正的价值. 不是替代数学家,而是成为一个&#34;永远不累,不怕试错,有时能给出灵感&#34;的研究伙伴.4/700的成功率看似很低,但对于人类数学家来说,能解决一个开放猜想就足以定义整个职业生涯.
+第三,架构设计非常有启发性. Generator-Verifier-Reviser的三角分工模式,本质上是把科学方法论(假说-验证-修正)编码进了AI系统.这个思路完全可以迁移到其他研究领域.
+但也要清醒:95.1%的竞赛题准确率和6.5%的开放题有用率之间,是一条我们尚未跨越的鸿沟.AI擅长的是&#34;已知有解的问题&#34;,而研究的本质是&#34;不知道有没有解的问题&#34;.
+Aletheia证明了AI可以偶尔跨过这条线.但&#34;偶尔&#34;和&#34;可靠&#34;之间,还有很长的路.
+参考来源:
+DeepMind官方博客 Aletheia论文(arXiv) The Decoder深度分析 </p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-17 21:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>68 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to DeepMind的AI独立写了一篇数学论文,还推翻了一个十年老猜想--但700道题只答对6.5%" href="https://claudeai.best/posts/hunter-2026021721/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771329764075_cover.jpg" alt="代码编辑器中的编程界面">
 </figure>
   <header class="entry-header">
@@ -478,45 +524,6 @@ Agent框架要大洗牌 现在市面上一堆AI浏览器工具–Browser Use,Pla
   </div>
   <footer class="entry-footer"><span title='2026-02-17 02:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>94 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Google WebMCP:AI Agent不用再「看截图猜按钮」了,Chrome正式变身Agent操作系统" href="https://claudeai.best/posts/hunter-2026021702/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771261546557_cover.jpg" alt="数据中心服务器存储阵列">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">硬盘全年售罄:AI吞噬硬件供应链,普通人的存储自由正在消失
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>2026年才过了一个半月,硬盘就卖完了 上周西部数据(Western Digital)的财报电话会上,CEO Irving Tan 说了句让整个存储行业都沉默的话:
-“We’re pretty much sold out for calendar 2026.”
-翻译一下:2026年的硬盘产能,已经全部预售完毕. 距离年底还有10个多月.
-更狠的是,前七大客户中有三家已经锁定了2027年甚至2028年的产能.这不是短缺,这是系统性垄断.
-消费市场?只剩5%的残渣 最让普通用户心凉的数据:消费级市场目前只占西部数据营收的5%.
-什么概念?以前你买NAS硬盘,装机硬盘,好歹是个重要客户群.现在?你是零头.企业级AI客户才是金主爸爸,你的4TB红盘在他们眼里连个舍入误差都算不上.
-这意味着:
-价格肯定继续涨,因为厂商没有动力为你优化成本, 产品线会进一步偏向企业,消费级新品更新节奏会慢下来, NAS玩家和内容创作者首当其冲,大容量机械硬盘本来就依赖这几家厂商 AI吃硬件的速度比你想象的快 这不是孤立事件,是整条供应链在被AI蚕食:
-内存(RAM): 美光(Micron)早就确认内存短缺短期内不会缓解.Framework笔记本已经多次因DDR5涨价被迫提价.
-GPU: 不用多说,NVIDIA的数据中心GPU从2023年起就没正常供应过.
-游戏主机: 索尼据传考虑将PS6发布时间推迟到2027年之后,就是在赌AI硬件短缺能在那之前缓解.
-硬盘: 现在轮到了.而且不是&#34;有点紧张&#34;,是&#34;全年卖完&#34;.
-为什么AI需要这么多硬盘? 你可能会问:AI训练不是主要用GPU和高速SSD吗?机械硬盘有什么关系?
-关系大了:
-训练数据集存储:GPT-5级别的模型,训练数据动辄几十PB.热数据用SSD,冷数据全靠大容量HDD 模型检查点(checkpoint):训练过程中每隔一段时间就要保存完整模型状态,一个checkpoint可能就是几TB 推理日志和缓存:大规模推理服务产生的日志,KV缓存,用户数据,都需要海量存储 合规与审计:企业级AI系统需要保留完整的数据血缘和审计记录 所以每个大型AI数据中心的硬盘需求量是惊人的.不是几百块,是几万块起步.
-这泡沫什么时候破? 理性来看,有两种可能的缓解路径:
-路径一:AI投资回报不及预期,资本撤退. 如果投资者开始质疑AI的商业化能力(事实上这种声音一直存在),资本支出会收缩,硬件需求自然下降.但目前来看,Anthropic刚拿了300亿美元新融资,没有退烧的迹象.
-路径二:存储技术突破. 比如HAMR(热辅助磁记录)技术大规模量产,单碟容量从2TB跳到4TB&#43;,总供给翻倍.西部数据和希捷都在推进,但量产节奏赶不上需求增长.
-我的判断: 短期内(2026-2027)没有缓解的可能.普通消费者的存储成本会持续上升,大容量机械硬盘可能会出现类似2011年泰国洪水后的价格疯涨.
-普通人能做什么? 说点实用的:
-如果你有大容量存储需求,现在就买. 不要等降价,不会降, 关注二手市场. 企业换代退役的企业级硬盘(比如HGST Ultrastar),性价比很高, 考虑冷存储替代方案. 磁带(LTO)对于真正的冷数据反而是更经济的选择, 云存储也会涨价. AWS,Azure的存储定价最终也会反映硬件成本上涨 写在最后 AI不只是在改变软件行业,它正在重新分配整个硬件供应链的资源.当顶级客户愿意为每GB支付溢价时,消费市场就会被挤到边缘.
-这不是阴谋论,这是简单的供需经济学.只不过这次,需求方是一个烧钱速度前所未有的行业.
-你的NAS硬盘涨价了吗?欢迎在评论区分享你的存储成本变化.
-参考来源:Western Digital FY2026 Q2 财报电话会议 | Mashable 报道 | Hacker News 讨论
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-17 01:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>77 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to 硬盘全年售罄:AI吞噬硬件供应链,普通人的存储自由正在消失" href="https://claudeai.best/posts/hunter-2026021701/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

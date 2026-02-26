@@ -176,6 +176,70 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771622680685_cover.jpg" alt="Jsonh - JSON for Humans">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Jsonh:JSON 终于能写注释了,还能省略逗号和引号
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>一句话总结 Jsonh 让 JSON 终于像人类语言了–写注释,省略逗号,多行字符串,无引号键值,还能兼容现有的 JSON 和 JSON5.
+痛点:JSON 反人类的地方 每个写过配置文件的人都懂:
+{ &#34;name&#34;: &#34;my-app&#34;, &#34;version&#34;: &#34;1.0.0&#34;, &#34;description&#34;: &#34;A very long description that needs to be on one line...&#34; } 不能写注释(解释为什么这样配置), 最后一个属性不能加逗号(git diff 很丑), 多行字符串必须用 \n(阅读噩梦), 键必须加引号(手累) YAML 和 TOML 试图解决这些问题,但 YAML 的缩进地狱和 TOML 的嵌套语法又带来了新麻烦.
+Jsonh 的解法:JSON &#43; 人性化语法 Jsonh 是 JSON 的超集,意味着所有合法 JSON 都是合法 Jsonh.但它增加了这些救命特性:
+1. 三种注释方式 // 行注释 # 也是行注释 /* 块注释 */ name: &#34;my-app&#34; ### 2. 逗号可选 a: 1 b: 2 c: 3 // 不需要逗号! ### 3. 多行字符串 haiku: &#39;&#39;&#39; Let me die in spring beneath the cherry blossoms while the moon is full. &#39;&#39;&#39; ### 4. 无引号键值 keys: without quotes isn\&#39;t: { that: cool? ### 5. 兼容 JSON5 支持十六进制数字,转义换行等 JSON5 特性: hex: 0xDEADCAFE fraction: .5e3 bigNum: 1_000_000 // 下划线分隔 ## 与现有格式对比 | 注释 | | | | | | | | 尾随逗号 | | | | | | | | 省略逗号 | | | | | | | | 多行字符串 | | | | | | | | 无引号键 | | | | | | | | 十六进制 | | | | | | | | 兼容 JSON | | | | | | | | 兼容 JSON5 | | | | | | | Jsonh 的定位很明确:**HJSON v2**--吸取 HJSON 的教训,同时保持与 JSON/JSON5 的兼容性. ## 实际应用场景 ### 1. 项目配置文件 // 数据库配置 host: localhost port: 5432 // 生产环境覆盖 production: { host: prod.db.internal ssl: true ### 2. API 文档示例 // 用户对象示例 user: { id: 12345 name: &#34;张三&#34; bio: &#39;&#39;&#39; 全栈开发者, 热爱开源和技术分享. ### 3. 游戏配置 player: { health: 100 speed: 5.5 inventory: [ sword shield potion ] ## 快速开始 ### 在线体验 直接访问:https://jsonh-org.github.io/Jsonh ### 安装解析器 **Node.js:** ```bash npm install jsonh-ts **Python:** pip install JsonhPy **Rust:** cargo install jsonh_rs **C#:** dotnet add package JsonhCs # 安装 dotnet tool install --global JsonhCli # 转换 Jsonh 到 JSON jsonh convert config.jsonh -o config.json # 验证语法 jsonh validate config.jsonh ## 为什么不用 YAML/TOML? **YAML 的问题:** - 缩进敏感(少一个空格就报错) - 多行字符串语法复杂(`&gt;`, `|`, `&gt;-`, `&gt;&#43;` 傻傻分不清) - 甚至不是 JSON 的超集! **TOML 的问题:** - 嵌套对象语法反直觉(`[[table]]` 是什么鬼), 深层嵌套时配置分散在各处, 复杂对象还是得用 JSON 语法 **Jsonh 的优势:** - 基于 JSON 语法,学习成本为零, 层级结构清晰(不像 TOML 那样分散), 严格的语法规则(不像 YAML 那样容易出错) ## 写在最后 Jsonh 不是什么革命性发明,它只是**把开发者需要的实用特性整合到一个格式里**. 如果你厌倦了 JSON 的严格,YAML 的诡异,TOML 的分散,Jsonh 可能是你配置文件的新选择. **项目链接:** https://github.com/jsonh-org/Jsonh **在线演示:** https://jsonh-org.github.io/Jsonh ## 时效性验证 - **HN 提交时间**: 20 分钟前(Show HN: Jsonh (JSON for Humans)) - **搜索引擎最早时间**: GitHub 仓库已存在,HN 首发 20 分钟前 - **结论**: 最早时间 ≤ 2 小时,符合新鲜热点标准 </p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 05:23:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>379 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Jsonh:JSON 终于能写注释了,还能省略逗号和引号" href="https://claudeai.best/posts/hunter-2026022105/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771618872030_cover.jpg" alt="Ember MCP - AI持久记忆">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Ember MCP:给 Claude 装上永久记忆,告别每次重复交代背景
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>一句话总结 Ember MCP 让你的 Claude/Cursor 拥有真正的长期记忆–关闭电脑周五下班,周一打开新对话,AI 依然记得你上周的技术决策,而且不会把已经废弃的架构方案混进新建议里.
+痛点:AI 的&#34;金鱼记忆&#34; 用过 Claude Desktop 或 Cursor 的开发者都懂这个痛:
+每次新开对话窗口,都要重新交代项目背景 三个月前说好用 PostgreSQL,现在迁移到 MongoDB 了,AI 还在给 PostgreSQL 的代码建议 上周刚决定弃用 Redux 改用 Zustand,这周 AI 还在生成 Redux boilerplate 传统向量数据库的问题在于:它只看语义相似度,不看信息时效性.旧记忆和新查询语义相近,AI 就傻傻地检索出来用,结果就是–幻觉.
+Ember MCP 的解法:时间感知 &#43; 漂移检测 Ember MCP 的核心创新是 Drift Detection(漂移检测).
+怎么工作的? Voronoi 分区:把向量空间划分成 16 个固定区域(比如&#34;数据库&#34;,“前端框架”,“业务逻辑”) 时间智能评分:记忆按重要程度赋予半衰期,越老的记忆权重越低 统计漂移检测:监控每个知识区域的分布变化,发现显著偏移时自动标记旧记忆为&#34;过期&#34; 实际场景 1 月份:你告诉 Claude 项目用 PostgreSQL → Ember 在&#34;数据库&#34;区域存储相关记忆
+4 月份:你迁移到 MongoDB,产生大量新记忆
+传统向量库:PostgreSQL 和 MongoDB 都语义相似于&#34;数据库查询&#34;,AI 可能给出混合建议
+Ember:检测到&#34;数据库&#34;区域的向量分布发生显著漂移,自动将 PostgreSQL 记忆标记为过期,查询时只返回 MongoDB 相关内容
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 04:21:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>243 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Ember MCP:给 Claude 装上永久记忆,告别每次重复交代背景" href="https://claudeai.best/posts/hunter-2026022104/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771614961962_cover.jpg" alt="数据分析与AI">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">LLMWise:一个 API Key 调用 36&#43; 模型,还能对比,融合,评判输出
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>ChatGPT Plus &#43; Claude Pro &#43; Gemini Advanced = $60/月.三个 dashboard,三个 API key,三个账单.
+如果有一个服务,一个 API Key 就能调用 36&#43; 模型,还能对比输出,融合答案,让 AI 评判 AI,自动故障转移呢?
+这就是 LLMWise – 一个多模型 LLM API 服务,刚刚上线.
+五种模式,五种用法 1. Chat(1 credit) 标准聊天,但带智能路由.设置 cost_saver: true,简单问题自动路由到便宜模型.
+from llmwise import LLMWise client = LLMWise(&#34;mm_sk_...&#34;) resp = client.chat( model=&#34;auto&#34;, # 自动选择 cost_saver=True, messages=[{&#34;role&#34;: &#34;user&#34;, &#34;content&#34;: &#34;Explain quantum computing&#34;}], stream=True ) 2. Compare(3 credits) 同一问题,多个模型并行回答,对比输出.
+resp = client.compare( models=[“gpt-5.2”, “claude-sonnet-4.5”, “gemini-3-flash”], messages=[{“role”: “user”, “content”: “Explain eventual consistency”}],
+for r in resp[“responses”]: print(f&#34;{r[‘model’]}: {r[’latency_ms’]}ms&#34;)
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 03:10:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>273 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to LLMWise:一个 API Key 调用 36&#43; 模型,还能对比,融合,评判输出" href="https://claudeai.best/posts/hunter-2026022103/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771610836429_cover.jpg" alt="移动应用与AI">
 </figure>
   <header class="entry-header">
@@ -323,88 +387,6 @@ REST API:传统 HTTP 调用 MCP Server:可以直接让 AI Agent 调用(OpenClaw 
   </div>
   <footer class="entry-footer"><span title='2026-02-20 18:20:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>123 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to 17MB 发音评分器超越人类专家:语言学习的新思路" href="https://claudeai.best/posts/hunter-2026022018/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771578618828_cover.jpg" alt="全球网络与数据中心">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Made in EU:用欧洲基础设施搭初创公司,比我想的难多了
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>有人决定把初创公司完全搭建在欧洲基础设施上.以为就是换个云服务商的事–AWS 换成欧盟供应商,搞定.
-结果是:比想象中难多了.不是做不成,而是没人告诉你那些奇怪的摩擦点.
-为什么要折腾? 数据主权, GDPR 简化, 不想让整个业务依赖三个美国超大规模厂商, 有点倔,想证明这事儿能干 欧盟有真正的基础设施公司在做严肃产品,它们配得上这些流量.
-最终选定的技术栈 Hetzner:核心计算 负载均衡器,VM,S3 兼容对象存储.价格跟 AWS 比简直离谱地便宜,性能也很稳.如果你从没在 Hetzner 开过机器,你在云计算上多花了冤枉钱.
-Scaleway:补充 Hetzner 不覆盖的 Transactional Email (TEM), Container Registry, 第二个 S3 bucket, 可观测性栈, 甚至域名注册 一个供应商搞定多个服务,至少账单简单.
-Bunny.net:无名英雄 Slovenia 公司,提供:
-CDN &#43; 分布式存储, DNS, 图片优化 WAF &#43; DDoS 保护 边缘网络真的很强,dashboard 好用到飞.从 Cloudflare 迁移过来很快就适应了.
-Nebius:AI 推理 如果你需要欧洲的 GPU 计算,又不想把请求发到 us-east-1,这是少数几个真正的选项.
-Hanko:认证和身份 德国供应商,提供 passkeys,社交登录,用户管理.不需要 Auth0 或 Clerk.
-自托管:Rancher 我的爱 自托管了一大堆东西:
-Gitea: 源代码管理, Plausible: 隐私友好分析, Twenty CRM: 客户管理, Infisical: 密钥管理, Bugsink: 错误追踪 全部跑在 Kubernetes 上,Rancher 是保持集群清醒的胶水.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-20 17:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>159 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Made in EU:用欧洲基础设施搭初创公司,比我想的难多了" href="https://claudeai.best/posts/hunter-2026022017/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771574981348_cover.jpg" alt="markdown.new AI Markdown 转换工具">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">markdown.new:Cloudflare 出品,任何 URL 转 Markdown,给 AI 省下 80% Token
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>刚在 HN 上看到个神器:markdown.new,Cloudflare 出的免费服务,把任何网页转成干净的 Markdown.
-核心卖点:相比原始 HTML,能省下 80% 的 Token.
-解决什么问题? AI Agent 浏览网页有个痛点:HTML 太臃肿了.
-一篇博客文章:
-原始 HTML:16,180 tokens, 转成 Markdown:3,150 tokens, 省下 80% 这 80% 省的不是广告和脚本,是真正能被 AI 理解的内容.Token 就是钱,省 Token 就是省钱.
-三层转换机制 markdown.new 用了三层回退,保证每次都能拿到最好的结果:
-Tier 1: Markdown for Agents(最快) fetch(url, {headers: {Accept: &#34;text/markdown&#34;}}) 直接请求 Cloudflare 支持的站点,返回原生 Markdown.零解析,最快速度.
-Tier 2: Workers AI 如果返回的是 HTML,直接丢给 Cloudflare Workers AI 的 toMarkdown() 函数.不需要重新请求.
-Tier 3: Browser Rendering JS 重型页面(SPA),用 Cloudflare Browser Rendering API 渲染完整页面后再提取.
-怎么用? 方式 1:浏览器直接访问 https://markdown.new/https://example.com 在任意 URL 前面加 markdown.new/ 就行.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-20 16:05:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>257 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to markdown.new:Cloudflare 出品,任何 URL 转 Markdown,给 AI 省下 80% Token" href="https://claudeai.best/posts/hunter-2026022016/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771571292793_cover.jpg" alt="数学与逻辑">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Lean 作者谈 AI 时代的证明助手:选对基础比 AI 更重要
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>AI 现在能生成成千上万行经过验证的数学证明了.一个自然的问题是:AI 干活多了,证明助手的选择还重要吗?
-Leonardo de Moura(Lean 作者)的回答是:重要,而且比以前更重要.
-AI 放大你的基础 计算器没有让数学变得无关紧要.它让你跳过算术,专注于真正的问题.但计算器有用,是因为你带着数学框架来用它.表示方式很重要.
-同样的道理适用于 AI 和证明助手.一个语言模型如果目标系统有:
-依赖类型(dependent types), 类型类(typeclasses), 设计良好的 tactic 语言 它就能在正确的抽象层次表达数学思想.证明更短,结构更清晰,AI 能在更高层次工作.这是一个复利优势.
-三个 IMO 奖牌队伍,同一个选择 这不是理论假设,已经有证据了:
-AlphaProof(Google DeepMind):2024 IMO 银牌 Aristotle(Harmonic):2025 IMO 金牌 SEED Prover(ByteDance):2025 IMO 银牌 三个独立团队,解决同一个最高难度问题,都选择了有表达力类型,大型库,可编程生态的证明助手.
-还有 Axiom Math,Math Inc,Logical Intelligence 等公司也在同一个基础上构建.
-这不是巧合.
-可读规范:人类契约 证明助手保证证明正确,但正确性本身不够.总得有人读定理陈述,确认它捕获了预期的数学.
-这是一个人类契约,再多的自动化也无法消除.
-一个经过验证的证明,如果你看不懂定理陈述,对你没什么用.你需要信任的不仅是证明,还有规范(specification)本身.
-形式化陈述是信任锚.有人声称证明了一个重要结果,你需要检查实际的形式化陈述,而不是 AI 的摘要.可读的形式化规范不是便利功能,是信任的基础.
-自动化 = 游戏招式 一个有用的思维方式:每个 tactic 或决策过程是一个游戏招式.
-只有基本招式的系统:需要数百步才能完成例行推理 有强大自动化的系统:一步完成本来要几百步的工作 这对 AI 特别重要.用语言模型处理数百个底层证明步骤,就像用 LLM 算长算术表达式–能做,但远不如用对工具.强大的 tactic 让 AI 跳过程序性工作,专注于数学上有趣的决策.
-每一个你添加的强大 tactic,都是 AI 可以利用的新能力.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-20 15:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>104 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Lean 作者谈 AI 时代的证明助手:选对基础比 AI 更重要" href="https://claudeai.best/posts/hunter-2026022015/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

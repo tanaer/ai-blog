@@ -6,14 +6,35 @@
     <description>Recent content on AI 极客前沿</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 26 Feb 2026 07:15:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Feb 2026 08:04:00 +0800</lastBuildDate>
     <atom:link href="https://claudeai.best/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>英伟达财报又超预期，AI泡沫？不存在的</title>
+      <title>2026年AI的六大突破：不再是更大，而是更聪明</title>
+      <link>https://claudeai.best/posts/2026-02-26-ai-six-breakthroughs-2026/</link>
+      <pubDate>Thu, 26 Feb 2026 08:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/2026-02-26-ai-six-breakthroughs-2026/</guid>
+      <description>AI Agent终于能互相聊天了，还能自己检查作业。这六项突破正在改变一切。</description>
+    </item>
+    <item>
+      <title>不到 2% 品牌能被 AI 推荐？这个新标准想改写规则</title>
+      <link>https://claudeai.best/posts/2026-02-26-llm-ld-standard/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://claudeai.best/posts/2026-02-26-llm-ld-standard/</guid>
+      <description>Capxel 推出的 LLM-LD 标准，让你的网站内容能被 AI 原生读取。已有 100&#43; 网站采用，开源免费。</description>
+    </item>
+    <item>
+      <title>英伟达财报来了，AI泡沫破了吗？</title>
       <link>https://claudeai.best/posts/2026-02-26-nvidia-earnings-ai-bubble/</link>
-      <pubDate>Thu, 26 Feb 2026 07:15:00 +0800</pubDate>
+      <pubDate>Thu, 26 Feb 2026 07:04:00 +0800</pubDate>
       <guid>https://claudeai.best/posts/2026-02-26-nvidia-earnings-ai-bubble/</guid>
-      <description>英伟达 Q4 财报再次超过华尔街预期，数据中心业务增长 75%，全年利润 1200 亿美元。在 AI 泡沫担忧下，英伟达用数据证明自己免疫。</description>
+      <description>英伟达最新财报显示季度收入681亿美元，数据中心业务增长75%，但市场开始担心AI投资泡沫和循环投资问题。华尔街在狂欢与恐慌之间摇摆。</description>
+    </item>
+    <item>
+      <title>英伟达财报来了，AI泡沫破了吗？</title>
+      <link>https://claudeai.best/posts/hunter-2026022607/</link>
+      <pubDate>Thu, 26 Feb 2026 07:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022607/</guid>
+      <description>英伟达最新财报显示季度收入681亿美元，数据中心业务增长75%，但市场开始担心AI投资泡沫和循环投资问题。华尔街在狂欢与恐慌之间摇摆。</description>
     </item>
     <item>
       <title>Anthropic Claude Cowork 企业版来了！</title>

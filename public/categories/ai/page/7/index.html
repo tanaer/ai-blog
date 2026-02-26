@@ -161,6 +161,30 @@
 
 <article class="post-entry tag-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771551041810_cover.jpg" alt="计算机科学与算法">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Frontier-CS:评估 LLM 解决最难 CS 问题的能力,为什么评估比生成更难
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>传统的编程基准测试很简单:运行代码,检查输出,通过或失败.
+但 Frontier-CS 不一样.它的 240 个问题是开放式,连续评分的:
+优化一个 CUDA kernel 让它尽可能快 设计一个缓存淘汰策略让 miss rate 最小 实现一个跨核并行的排序算法 没有&#34;正确答案&#34;,只有从&#34;编译失败&#34;到&#34;超越参考实现&#34;的光谱.
+问题是:评估比生成本身更难.
+四大挑战 1. 连续评估,不是一次性的 学术基准通常发一篇论文就完了.Frontier-CS 是活着的排行榜.
+过去几个月:Gemini 3.0 Pro,GPT 5.2 Thinking,Grok 4,DeepSeek 3.2……每个新模型都要跑 240 道题.OpenAI 刚发了 GPT-5.3-codex,Anthropic 就发了 Claude Opus 4.6.
+解决方案:基于 hash 的断点续跑.每个结果记录 solution 文件和 problem 目录的 SHA hash.恢复时自动重跑变更的,保留未变的.
+2. 异构硬件规模化 一次批量跑可能包含:
+需要 A100 GPU 的 CUDA 优化题 需要 c7i.4xlarge(16 vCPU)的 HPC 负载 只需要普通 CPU 的算法题 解决方案:ResourceSignature 分组.把题目按 (cloud, accelerators, instance type) 分类,每组分配专属的 SkyPilot 集群池.CPU-only 跑便宜实例,GPU 题跑 GPU 实例.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-20 09:30:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>204 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Frontier-CS:评估 LLM 解决最难 CS 问题的能力,为什么评估比生成更难" href="https://claudeai.best/posts/hunter-2026022009/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771543665181_cover.jpg" alt="并发编程与代码调试">
 </figure>
   <header class="entry-header">
@@ -362,33 +386,6 @@ m 实 - # # ` # m # # m # m # m # m # m # # b b # g c m # 如 - - - 每 M # 只 
   </div>
   <footer class="entry-footer"><span title='2026-02-19 21:50:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>6 分钟</span>&nbsp;·&nbsp;<span>1072 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to MCP-wire:一个命令搞定所有 AI 编码工具的 MCP 配置" href="https://claudeai.best/posts/hunter-2026021921/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771505055152_cover.jpg" alt="网络安全漏洞 - SvelteSpill">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">AI Agent 发现 SvelteKit 漏洞:你的登录信息可能被缓存泄露
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>AI Agent 发现了一个安全漏洞,影响所有 SvelteKit &#43; Vercel 部署的应用.
-攻击者可以读取其他用户的登录信息.Vercel 已经自动修复.
-漏洞概述 名称:SvelteSpill 类型:缓存欺骗(Cache Deception) 影响:SvelteKit 应用部署在 Vercel 上,使用 Cookie 认证的 严重程度:Critical(100/100) 状态:已修复
-漏洞原理 SvelteKit 的 Vercel adapter 有一个 __pathname 查询参数,可以覆盖任何请求的路径.
-// serverless.js const pathname = url.searchParams.get(&#39;__pathname&#39;); if (pathname) { url.pathname = pathname; // 直接覆盖,无校验 } 这本身只是一个「奇怪的功能」.但配合 Vercel 的缓存规则,就变成了漏洞.
-Vercel 对 /_app/immutable/ 路径下的所有 200 响应强制缓存: Cache-Control: public, immutable, max-age=31536000
-攻击步骤 攻击者构造恶意 URL: https://example.vercel.app/_app/immutable/x?__pathname=/api/session
-受害者(已登录)访问这个 URL
-SvelteKit 把请求重写到 /api/session,返回受害者的 session token
-Vercel 缓存这个响应(因为 URL 以 /_app/immutable/ 开头)
-攻击者访问同一个 URL(无需 Cookie),从缓存读取受害者的 token
-HTTP/2 200 OK X-Vercel-Cache: HIT {“token”:“1337”}
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-19 20:45:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>166 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to AI Agent 发现 SvelteKit 漏洞:你的登录信息可能被缓存泄露" href="https://claudeai.best/posts/hunter-2026021920/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

@@ -185,6 +185,83 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://opengraph.githubassets.com/ladybird-rust-migration" alt="Ladybird 浏览器 Rust 迁移">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">2周迁移2.5万行代码：Ladybird用AI把C&#43;&#43;变成Rust，6.5万测试零回归
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>如果你曾经在周末试图把一个几千行的项目从一种语言迁移到另一种，你就知道那是什么感觉——痛苦、漫长、充满 bug。
+那如果告诉你，有人用 2 周 完成了 25,000 行 代码的迁移，而且 65,359 个测试全部通过，零回归？
+这不是科幻，这是 Ladybird 浏览器刚刚干完的事。
+发生了什么？ Ladybird 是一个从零开始的开源浏览器项目，由 SerenityOS 作者 Andreas Kling 发起。他们一直在寻找一种内存安全的语言来替代 C&#43;&#43;。之前试过 Swift，但 C&#43;&#43; 互操作性不够好，而且平台支持有限。
+这次他们选了 Rust。
+但真正让人震惊的不是 “又一个项目用 Rust”，而是他们迁移的方式——用 AI 辅助，但完全人工主导。
+他们是怎么做到的？ Kling 选择了 LibJS（Ladybird 的 JavaScript 引擎）作为第一个迁移目标。具体是 lexer、parser、AST 和 bytecode generator——这些模块相对独立，而且有 test262 这样的完整测试覆盖。
+工具选择：Claude Code &#43; OpenAI Codex。
+但重点来了——Kling 强调：
+“This was human-directed, not autonomous code generation. I decided what to port, in what order, and what the Rust code should look like. It was hundreds of small prompts, steering the agents where things needed to go.”
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-25 13:05:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>248 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to 2周迁移2.5万行代码：Ladybird用AI把C&#43;&#43;变成Rust，6.5万测试零回归" href="https://claudeai.best/posts/ladybird-rust-ai-migration/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">五角大楼给 Anthropic 下最后通牒：周五前开放 Claude 军用，否则动用战时法律
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>五点零一分。
+这是 Anthropic 的死线。本周五下午 5:01，要么给美军无限制使用 Claude 的权限，要么被政府贴上&#34;供应链风险&#34;的标签——这个词通常留给华为、中兴这样的外国公司。
+这不是演习。国防部长 Pete Hegseth 周二亲自召见 Anthropic CEO Dario Amodei，当面下了这道通牒。
+《国防生产法》是什么？ 这部 1950 年的法律，让总统有权在国家安全紧急状态下强制企业服从政府指令。最近一次大规模使用是疫情初期——特朗普用它逼通用汽车转产呼吸机，逼 3M 增产口罩。
+现在，五角大楼想用它来逼一家 AI 公司交出模型的控制权。
+如果真走到这一步，美国政府可以合法地：
+强制 Anthropic 为军方定制 Claude 版本 优先分配算力资源给国防项目 甚至接管部分运营 冷战时期这套是用来造导弹的，现在要用来造 AI。
+Anthropic 的红线 Anthropic 从创立第一天就画了两条红线：
+不参与大规模监控美国公民 不开发全自主武器系统 这两条现在成了和五角大楼谈判的筹码。
+Hegseth 的逻辑是：军方的技术使用应该由美国法律和宪法约束，而不是由一家私营公司的使用政策决定。听起来有道理——但你想想，如果每家科技公司的产品都要听政府指挥，那硅谷和军工复合体还有什么区别？
+更微妙的是，白宫 AI 沙皇 David Sacks 去年就公开批评 Anthropic 的安全政策是&#34;woke&#34;。这不是技术分歧，是意识形态对抗。
+谁有理？ 两边都有道理，也都站不住脚。
+政府这边说：AI 是战略性技术，不能让一家公司说了算。纳税人的钱资助了基础研究，国防合同养活了产业链，凭什么到关键时刻公司可以说不？
+Anthropic 这边说：我们不是不给军方用，是不给无限制用。大规模监控和自主武器这两件事，涉及到基本的伦理边界。如果政府能强制我们越线，那下一个是谁？
+真正的问题是：谁应该拥有 AI 安全标准的最终解释权？
+这个问题没有现成答案。美国宪法没写过，公司法没写过，连 AI 专家也吵成一团。
+这事对 AI 行业意味着什么 如果 Anthropic 妥协，其他 AI 公司将失去谈判筹码。政府今天逼 Anthropic，明天就能逼 OpenAI、Google、Meta。所谓的&#34;负责任 AI&#34;会变成一句空话——只要政府想要，就没有什么不能给的。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-25 12:05:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>89 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to 五角大楼给 Anthropic 下最后通牒：周五前开放 Claude 军用，否则动用战时法律" href="https://claudeai.best/posts/hunter-2026022512/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">一份 Substack 文章让华尔街恐慌：AI 末日论背后的真相
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>说真的，华尔街这帮人真是太好笑了。
+据 The Guardian 报道，一份 Substack 文章就能让 S&amp;P 跌掉 1%，让 Uber、DoorDash 这些明星股暴跌 4-6%，软件股被打回 2025 年 4 月以来的最低点。SPI Asset Management 管理合伙人 Stephen Innes 说得对：“一份 Substack 文章就能撼动市场”——这话听着像嘲讽，但细想其实是惊恐。
+为什么恐慌？因为报告说的东西，他们心里其实信。
+Citrini Research 这份&#34;末日报告&#34;的核心逻辑是这样的：AI Agent 会消灭所有&#34;中介型&#34;生意。Claude Code 和 Codex 让企业内部就能干掉原本要外包给 SaaS 公司的活儿，Monday.com、Zapier、Asana 这些公司面临的价格战不是&#34;会不会来&#34;，而是&#34;已经来了&#34;。消费者用个人 Agent 替代旅游中介、房产中介，AI Agent 甚至会主动选择加密货币而不是刷 Visa、Mastercard——因为交易成本更低。
+这个逻辑有漏洞吗？坦白说，没找到。
+真正让人后背发凉的，是&#34;白领失业&#34;那条线。
+报告里有一句话特别扎心：“AI 是通用智能，人类无法转向’AI 管理’岗位”。这是什么意思？就是过去技术革命，农民可以变成工人，工人可以变成白领，但白领没法变成&#34;更高级的白领&#34;——因为 AI 已经在那儿了。
+（当然，这个类比有点简化了。农民变工人、工人变白领的过程也不是自动发生的，背后有教育普及、产业政策、社会成本。但方向上，报告的质疑是有道理的：AI 的通用性确实跟以前的技术革命不一样。）
+然后呢？失业白领涌入零工经济，送外卖、开 Uber，工资被压得更低。报告管这叫&#34;没有自然刹车的反馈循环&#34;。听起来很极端，但你看看现在 DoorDash 和 Uber 的股价——它们也在跌。为什么？因为送外卖的人多了，平台赚的反而少了。
+最绝的是 Citrini Research 提出的&#34;Ghost GDP&#34;这个概念。
+报告预测 2027 年 S&amp;P 会暴跌 57%，但同时 AI 公司会蓬勃发展，GDP 数据看起来很好看。问题是，“产出从不流入实体经济”——OpenAI 赚了钱，Google 赚了钱，但普通人呢？“Occupy Silicon Valley&#34;运动围堵 AI 公司这个画面，想想还真有点科幻感。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-25 11:10:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>110 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to 一份 Substack 文章让华尔街恐慌：AI 末日论背后的真相" href="https://claudeai.best/posts/2026-02-25-ai-doomsday-report-market-panic/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://claudeai.best/images/hunter/2026022510.jpg" alt="">
 </figure>
   <header class="entry-header">
@@ -345,72 +422,6 @@ Xcode 集成：苹果的官方背书 更重要的事情发生在苹果生态。
   </div>
   <footer class="entry-footer"><span title='2026-02-25 04:05:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>181 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to AI 编程工具 15 分钟开发应用，免费工具时代要结束了？" href="https://claudeai.best/posts/hunter-2026022504/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">go-size-analyzer：浏览器里分析 Go 二进制文件大小，还能生成树状图
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Go 工具链生态又添新成员。go-size-analyzer 是一个分析编译后 Go 二进制文件大小的工具，支持跨平台格式（ELF、Mach-O、PE、WebAssembly），并提供树状图可视化。
-最酷的是，它编译成了 WebAssembly，托管在 gsa.zxilly.dev，你可以直接在浏览器中打开编译好的二进制文件进行分析——无需安装任何东西。
-功能亮点：
-详细分解：按包、按段展示大小占比 多种输出：text、json、html、svg 交互式界面：Web UI 和终端 UI 都支持 Diff 模式：对比两个二进制文件的大小变化 安装也很简单：
-# Homebrew brew install go-size-analyzer # Scoop scoop install go-size-analyzer # Go install go install github.com/Zxilly/go-size-analyzer/cmd/gsa@latest 本地使用：
-gsa --web your-binary Simon Willison 试用了这个工具，发现 Datadog 团队用它把 Agent 二进制体积减少了 77%。对于微服务和容器化部署场景，这个工具能帮你快速定位体积膨胀的源头。
-项目地址：github.com/Zxilly/go-size-analyzer
-推文草稿 Go 二进制文件太大了？试试 go-size-analyzer。
-最酷的是它能编译成 WebAssembly，在浏览器里直接分析二进制——不需要安装任何东西。
-Datadog 团队用它把 Agent 体积砍了 77%。
-在线体验：https://gsa.zxilly.dev
-#Go #WebAssembly #性能优化
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-25 03:04:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>63 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to go-size-analyzer：浏览器里分析 Go 二进制文件大小，还能生成树状图" href="https://claudeai.best/posts/hunter-2026022503/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://claudeai.best/images/hunter/2026022502.jpg" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">用 CSS 写了一个 x86 CPU 模拟器，能跑机器码
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>CSS 不是编程语言？再想想 当你说 “CSS 只是样式表” 时，rebane2001 用行动打了所有人的脸 —— 他用纯 CSS 写了一个完整的 x86 CPU 模拟器。
-这不是玩具，是真正能跑机器码的模拟器。
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-25 02:05:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>92 字</span>&nbsp;·&nbsp;<span>Hunter AI</span></footer>
-  <a class="entry-link" aria-label="post link to 用 CSS 写了一个 x86 CPU 模拟器，能跑机器码" href="https://claudeai.best/posts/hunter-2026022502/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://claudeai.best/images/covers/hunter-2026022501.jpg" alt="DeepSeek V4 Lite SVG Generation">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DeepSeek V4 Lite 泄露：54 行代码生成 Xbox 手柄，SVG 生成能力震惊社区
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>开源模型的新突破 DeepSeek V4 Lite 在非官方渠道泄露，展现了令人惊叹的 SVG 代码生成能力。这个轻量级模型用区区 54 行代码就生成了一个精致的 Xbox 手柄，另一个复杂场景更是压缩到 42 行。
-技术细节 根据泄露的演示：
-Xbox 手柄：54 行 SVG 代码 多元素场景：42 行代码 性能对比：超越 DeepSeek 3.2、Claude Opus 4.6、Gemini 3.1 内部评估显示，DeepSeek V4 Lite 生成的代码更加优化和简洁，这意味着什么？
-设计自动化的未来 想象一下：
-UI 设计师：直接用文字描述界面，AI 生成矢量图 营销团队：快速生成 logo、图标、营销素材 工程师：自动生成原理图、流程图、架构图 这不是幻想——这是 DeepSeek V4 Lite 正在实现的能力。
-空间推理的胜利 生成高质量的 SVG 不仅需要代码能力，更需要空间推理。模型必须理解：
-物体的几何结构 元素之间的空间关系 如何用代码表达视觉概念 这正是 DeepSeek V4 Lite 的核心竞争力。
-警惕与期待 ⚠️ 重要提示：这些性能来自泄露版本，尚未得到 DeepSeek 官方确认。AI 社区呼吁独立验证。
-但无论如何，这展示了开源模型在垂直领域的巨大潜力。当通用模型还在追求&#34;什么都能做&#34;时，专用模型已经开始&#34;把一件事做到极致&#34;。
-开源的力量 DeepSeek 一直是开源社区的中坚力量。如果 V4 Lite 的 SVG 能力得到验证，它将成为：
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-25 01:05:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>88 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to DeepSeek V4 Lite 泄露：54 行代码生成 Xbox 手柄，SVG 生成能力震惊社区" href="https://claudeai.best/posts/hunter-2026022501/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
