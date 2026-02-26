@@ -1,27 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AI 工具 on AI 极客前沿</title><link>https://claudeai.best/categories/ai-%E5%B7%A5%E5%85%B7/</link><description>Recent content in AI 工具 on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Wed, 25 Feb 2026 06:05:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/categories/ai-%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml"/><item><title>Firefox 148 发布：内置 AI 屠龙刀，一键关闭所有 AI 功能</title><link>https://claudeai.best/posts/hunter-2026022506/</link><pubDate>Wed, 25 Feb 2026 06:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022506/</guid><description>&lt;h2 id="核心亮点ai-kill-switch-来了">核心亮点：AI Kill Switch 来了&lt;/h2>
-&lt;p>Firefox 148 在今天（2026年2月24日）正式发布，最大的变化是备受期待的 &lt;strong>AI Kill Switch&lt;/strong> 功能。这个功能在设置中叫 &lt;strong>&amp;ldquo;AI Controls&amp;rdquo;&lt;/strong>，允许用户一键关闭浏览器中所有 AI 增强功能。&lt;/p>
-&lt;h2 id="为什么需要-ai-kill-switch">为什么需要 AI Kill Switch？&lt;/h2>
-&lt;p>过去几个月，Mozilla 在 Firefox 中加入了越来越多的 AI 功能：&lt;/p>
-&lt;ul>
-&lt;li>侧边栏 ChatGPT 等聊天机器人&lt;/li>
-&lt;li>AI 链接预览&lt;/li>
-&lt;li>智能标签组建议&lt;/li>
-&lt;li>本地 AI 模型&lt;/li>
-&lt;/ul>
-&lt;p>这些功能虽然有用，但不是所有人都需要。有些用户担心隐私，有些用户觉得 AI 功能干扰了他们的浏览体验，还有些用户只是想要一个干净的浏览器。&lt;/p>
-&lt;p>Mozilla 听到了这些声音，于是推出了 AI Controls。&lt;/p>
-&lt;h2 id="如何使用-ai-controls">如何使用 AI Controls？&lt;/h2>
-&lt;ol>
-&lt;li>打开 Firefox 设置&lt;/li>
-&lt;li>找到 &amp;ldquo;AI Controls&amp;rdquo; 选项&lt;/li>
-&lt;li>切换 &amp;ldquo;Block AI Enhancements&amp;rdquo; 开关&lt;/li>
-&lt;/ol>
-&lt;p>就这么简单。一旦开启：&lt;/p>
-&lt;ul>
-&lt;li>所有 AI 功能立即禁用&lt;/li>
-&lt;li>应用内不再提示你&amp;quot;试用&amp;quot; AI 功能&lt;/li>
-&lt;li>上下文菜单中的 AI 入口消失&lt;/li>
-&lt;li>&lt;strong>已下载的本地模型会被删除&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;h2 id="精细化控制选择性禁用">精细化控制：选择性禁用&lt;/h2>
-&lt;p>如果你只想禁用部分 AI 功能，也完全可以。比如：&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AI 工具 on AI 极客前沿</title>
+    <link>https://claudeai.best/categories/ai-%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in AI 工具 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 25 Feb 2026 06:05:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/categories/ai-%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Firefox 148 发布：内置 AI 屠龙刀，一键关闭所有 AI 功能</title>
+      <link>https://claudeai.best/posts/hunter-2026022506/</link>
+      <pubDate>Wed, 25 Feb 2026 06:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022506/</guid>
+      <description>&lt;h2 id=&#34;核心亮点ai-kill-switch-来了&#34;&gt;核心亮点：AI Kill Switch 来了&lt;/h2&gt;
+&lt;p&gt;Firefox 148 在今天（2026年2月24日）正式发布，最大的变化是备受期待的 &lt;strong&gt;AI Kill Switch&lt;/strong&gt; 功能。这个功能在设置中叫 &lt;strong&gt;&amp;ldquo;AI Controls&amp;rdquo;&lt;/strong&gt;，允许用户一键关闭浏览器中所有 AI 增强功能。&lt;/p&gt;
+&lt;h2 id=&#34;为什么需要-ai-kill-switch&#34;&gt;为什么需要 AI Kill Switch？&lt;/h2&gt;
+&lt;p&gt;过去几个月，Mozilla 在 Firefox 中加入了越来越多的 AI 功能：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;侧边栏 ChatGPT 等聊天机器人&lt;/li&gt;
+&lt;li&gt;AI 链接预览&lt;/li&gt;
+&lt;li&gt;智能标签组建议&lt;/li&gt;
+&lt;li&gt;本地 AI 模型&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这些功能虽然有用，但不是所有人都需要。有些用户担心隐私，有些用户觉得 AI 功能干扰了他们的浏览体验，还有些用户只是想要一个干净的浏览器。&lt;/p&gt;
+&lt;p&gt;Mozilla 听到了这些声音，于是推出了 AI Controls。&lt;/p&gt;
+&lt;h2 id=&#34;如何使用-ai-controls&#34;&gt;如何使用 AI Controls？&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;打开 Firefox 设置&lt;/li&gt;
+&lt;li&gt;找到 &amp;ldquo;AI Controls&amp;rdquo; 选项&lt;/li&gt;
+&lt;li&gt;切换 &amp;ldquo;Block AI Enhancements&amp;rdquo; 开关&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;就这么简单。一旦开启：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;所有 AI 功能立即禁用&lt;/li&gt;
+&lt;li&gt;应用内不再提示你&amp;quot;试用&amp;quot; AI 功能&lt;/li&gt;
+&lt;li&gt;上下文菜单中的 AI 入口消失&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;已下载的本地模型会被删除&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;精细化控制选择性禁用&#34;&gt;精细化控制：选择性禁用&lt;/h2&gt;
+&lt;p&gt;如果你只想禁用部分 AI 功能，也完全可以。比如：&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

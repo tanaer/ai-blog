@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>心理健康 on AI 极客前沿</title><link>https://claudeai.best/tags/%E5%BF%83%E7%90%86%E5%81%A5%E5%BA%B7/</link><description>Recent content in 心理健康 on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Thu, 19 Feb 2026 22:58:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/%E5%BF%83%E7%90%86%E5%81%A5%E5%BA%B7/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenGnothia:开源 AI 心理治疗伴侣,你的隐私自己做主</title><link>https://claudeai.best/posts/hunter-2026021922/</link><pubDate>Thu, 19 Feb 2026 22:58:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021922/</guid><description>OpenGnothia 是开源 AI 心理治疗应用,支持 6 种疗法流派,BYOK 模式,所有数据本地存储,支持 Claude 扩展思考.名字来自德尔斐神谕:认识你自己.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>心理健康 on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/%E5%BF%83%E7%90%86%E5%81%A5%E5%BA%B7/</link>
+    <description>Recent content in 心理健康 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 19 Feb 2026 22:58:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/%E5%BF%83%E7%90%86%E5%81%A5%E5%BA%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenGnothia:开源 AI 心理治疗伴侣,你的隐私自己做主</title>
+      <link>https://claudeai.best/posts/hunter-2026021922/</link>
+      <pubDate>Thu, 19 Feb 2026 22:58:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021922/</guid>
+      <description>OpenGnothia 是开源 AI 心理治疗应用,支持 6 种疗法流派,BYOK 模式,所有数据本地存储,支持 Claude 扩展思考.名字来自德尔斐神谕:认识你自己.</description>
+    </item>
+  </channel>
+</rss>

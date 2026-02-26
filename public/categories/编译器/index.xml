@@ -1,29 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>编译器 on AI 极客前沿</title><link>https://claudeai.best/categories/%E7%BC%96%E8%AF%91%E5%99%A8/</link><description>Recent content in 编译器 on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Wed, 25 Feb 2026 05:05:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/categories/%E7%BC%96%E8%AF%91%E5%99%A8/index.xml" rel="self" type="application/rss+xml"/><item><title>16个 Claude 代理协作写了一个 C 编译器，花了 $20K API 费</title><link>https://claudeai.best/posts/hunter-2026022505/</link><pubDate>Wed, 25 Feb 2026 05:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022505/</guid><description>&lt;p>Anthropic 研究员 Nicholas Carlini 做了一个疯狂实验：让 16 个 Claude Opus 4.6 代理协作，从零开始写一个 C 编译器。&lt;/p>
-&lt;p>结果：&lt;strong>10 万行 Rust 代码，能编译 Linux 6.9 内核，通过了 99% 的 GCC torture test。&lt;/strong>&lt;/p>
-&lt;p>代价：2 周时间，近 2000 次 Claude Code 会话，约 &lt;strong>$20,000 API 费用&lt;/strong>。&lt;/p>
-&lt;h2 id="怎么做到的">怎么做到的？&lt;/h2>
-&lt;p>使用 Claude Opus 4.6 新推出的 &lt;strong>&amp;ldquo;Agent Teams&amp;rdquo;&lt;/strong> 功能：&lt;/p>
-&lt;ul>
-&lt;li>每个代理运行在独立 Docker 容器&lt;/li>
-&lt;li>通过 Git 共享代码库协调工作&lt;/li>
-&lt;li>没有中央编排代理 —— 各自独立识别任务并解决&lt;/li>
-&lt;li>&lt;strong>自动处理合并冲突&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;p>编译器已&lt;a href="https://github.com/anthropics/claudes-c-compiler">开源在 GitHub&lt;/a>。&lt;/p>
-&lt;h2 id="能力验证">能力验证&lt;/h2>
-&lt;p>能编译这些项目：&lt;/p>
-&lt;ul>
-&lt;li>PostgreSQL、SQLite、Redis&lt;/li>
-&lt;li>FFmpeg、QEMU&lt;/li>
-&lt;li>&lt;strong>Doom&lt;/strong>（开发者终极测试）&lt;/li>
-&lt;/ul>
-&lt;p>支持架构：x86、ARM、RISC-V。&lt;/p>
-&lt;h2 id="限制也很明显">限制也很明显&lt;/h2>
-&lt;p>Carlini 很坦诚地列出了问题：&lt;/p>
-&lt;ol>
-&lt;li>缺少 16 位 x86 后端，引导 Linux 需调用 GCC&lt;/li>
-&lt;li>自带的汇编器和链接器还有 bug&lt;/li>
-&lt;li>优化效果甚至不如 GCC 的 &lt;code>-O0&lt;/code>&lt;/li>
-&lt;li>代码质量达不到专家级 Rust 水平&lt;/li>
-&lt;/ol>
-&lt;p>最关键的发现：&lt;strong>当代码量达到约 10 万行时，Claude 开始&amp;quot;失智&amp;quot;&lt;/strong> —— 修 bug 和加功能经常破坏已有功能。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>编译器 on AI 极客前沿</title>
+    <link>https://claudeai.best/categories/%E7%BC%96%E8%AF%91%E5%99%A8/</link>
+    <description>Recent content in 编译器 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 25 Feb 2026 05:05:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/categories/%E7%BC%96%E8%AF%91%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>16个 Claude 代理协作写了一个 C 编译器，花了 $20K API 费</title>
+      <link>https://claudeai.best/posts/hunter-2026022505/</link>
+      <pubDate>Wed, 25 Feb 2026 05:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022505/</guid>
+      <description>&lt;p&gt;Anthropic 研究员 Nicholas Carlini 做了一个疯狂实验：让 16 个 Claude Opus 4.6 代理协作，从零开始写一个 C 编译器。&lt;/p&gt;
+&lt;p&gt;结果：&lt;strong&gt;10 万行 Rust 代码，能编译 Linux 6.9 内核，通过了 99% 的 GCC torture test。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;代价：2 周时间，近 2000 次 Claude Code 会话，约 &lt;strong&gt;$20,000 API 费用&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;怎么做到的&#34;&gt;怎么做到的？&lt;/h2&gt;
+&lt;p&gt;使用 Claude Opus 4.6 新推出的 &lt;strong&gt;&amp;ldquo;Agent Teams&amp;rdquo;&lt;/strong&gt; 功能：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;每个代理运行在独立 Docker 容器&lt;/li&gt;
+&lt;li&gt;通过 Git 共享代码库协调工作&lt;/li&gt;
+&lt;li&gt;没有中央编排代理 —— 各自独立识别任务并解决&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;自动处理合并冲突&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;编译器已&lt;a href=&#34;https://github.com/anthropics/claudes-c-compiler&#34;&gt;开源在 GitHub&lt;/a&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;能力验证&#34;&gt;能力验证&lt;/h2&gt;
+&lt;p&gt;能编译这些项目：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PostgreSQL、SQLite、Redis&lt;/li&gt;
+&lt;li&gt;FFmpeg、QEMU&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Doom&lt;/strong&gt;（开发者终极测试）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;支持架构：x86、ARM、RISC-V。&lt;/p&gt;
+&lt;h2 id=&#34;限制也很明显&#34;&gt;限制也很明显&lt;/h2&gt;
+&lt;p&gt;Carlini 很坦诚地列出了问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;缺少 16 位 x86 后端，引导 Linux 需调用 GCC&lt;/li&gt;
+&lt;li&gt;自带的汇编器和链接器还有 bug&lt;/li&gt;
+&lt;li&gt;优化效果甚至不如 GCC 的 &lt;code&gt;-O0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;代码质量达不到专家级 Rust 水平&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;最关键的发现：&lt;strong&gt;当代码量达到约 10 万行时，Claude 开始&amp;quot;失智&amp;quot;&lt;/strong&gt; —— 修 bug 和加功能经常破坏已有功能。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
