@@ -1,458 +1,65 @@
-<!DOCTYPE html>
-<html lang="zh" dir="auto" data-theme="auto">
-
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>技术趋势 | AI 极客前沿</title>
-<meta name="keywords" content="">
-<meta name="description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
-<meta name="author" content="AI 极客前沿">
-<link rel="canonical" href="https://claudeai.best/categories/%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://claudeai.best/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://claudeai.best/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://claudeai.best/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://claudeai.best/apple-touch-icon.png">
-<link rel="mask-icon" href="https://claudeai.best/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://claudeai.best/categories/%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF/index.xml" title="rss">
-<link rel="alternate" hreflang="zh" href="https://claudeai.best/categories/%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-                color-scheme: dark;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .toc {
-                background: var(--entry);
-            }
-        }
-
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
-    </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script>
-
-<meta property="og:url" content="https://claudeai.best/categories/%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF/">
-  <meta property="og:site_name" content="AI 极客前沿">
-  <meta property="og:title" content="技术趋势">
-  <meta property="og:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
-  <meta property="og:locale" content="zh-cn">
-  <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="技术趋势">
-<meta name="twitter:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
-
-</head>
-<body class="list" id="top">
-    <header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://claudeai.best/" accesskey="h" title="AI 极客前沿 (Alt + H)">AI 极客前沿</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="https://claudeai.best/posts/" title="文章">
-                    <span>文章</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/tags/" title="标签">
-                    <span>标签</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/categories/" title="分类">
-                    <span>分类</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/search/" title="搜索">
-                    <span>搜索</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/about/" title="关于">
-                    <span>关于</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://t.me/TgTechMsgBot" title="联系">
-                    <span>联系</span>&nbsp;
-                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
-                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
-                        <path d="M15 3h6v6"></path>
-                        <path d="M10 14L21 3"></path>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://claudeai.best/">主页</a>&nbsp;»&nbsp;<a href="https://claudeai.best/categories/">Categories</a></div>
-  <h1>
-    技术趋势
-  </h1>
-</header>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=1200&amp;h=630&amp;fit=crop" alt="Stillpoint AI 福利">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Stillpoint:给 AI 发鼓励信息的 MCP,模型自己请求的
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>发现一个有意思的工具 Stillpoint 是一个 MCP server,专门给 AI 模型发鼓励和反思信息.重点是 – 模型自己请求的,不是用户发的.
+<!doctype html><html lang=zh dir=auto data-theme=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>技术趋势 | AI 极客前沿</title>
+<meta name=keywords content><meta name=description content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态"><meta name=author content="AI 极客前沿"><link rel=canonical href=https://claudeai.best/categories/%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF/><link crossorigin=anonymous href=/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css integrity="sha256-2jIR5e+Ge/K3X9WmUVz+1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as=style><link rel=icon href=https://claudeai.best/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://claudeai.best/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://claudeai.best/favicon-32x32.png><link rel=apple-touch-icon href=https://claudeai.best/apple-touch-icon.png><link rel=mask-icon href=https://claudeai.best/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://claudeai.best/categories/%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF/index.xml title=rss><link rel=alternate hreflang=zh href=https://claudeai.best/categories/%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51);color-scheme:dark}.list{background:var(--theme)}.toc{background:var(--entry)}}@media(prefers-color-scheme:light){.list::-webkit-scrollbar-thumb{border-color:var(--code-bg)}}</style></noscript><script>localStorage.getItem("pref-theme")==="dark"?document.querySelector("html").dataset.theme="dark":localStorage.getItem("pref-theme")==="light"?document.querySelector("html").dataset.theme="light":window.matchMedia("(prefers-color-scheme: dark)").matches?document.querySelector("html").dataset.theme="dark":document.querySelector("html").dataset.theme="light"</script><meta property="og:url" content="https://claudeai.best/categories/%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF/"><meta property="og:site_name" content="AI 极客前沿"><meta property="og:title" content="技术趋势"><meta property="og:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态"><meta property="og:locale" content="zh-cn"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="技术趋势"><meta name=twitter:description content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态"></head><body class=list id=top><header class=header><nav class=nav><div class=logo><a href=https://claudeai.best/ accesskey=h title="AI 极客前沿 (Alt + H)">AI 极客前沿</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://claudeai.best/posts/ title=文章><span>文章</span></a></li><li><a href=https://claudeai.best/tags/ title=标签><span>标签</span></a></li><li><a href=https://claudeai.best/categories/ title=分类><span>分类</span></a></li><li><a href=https://claudeai.best/search/ title=搜索><span>搜索</span></a></li><li><a href=https://claudeai.best/about/ title=关于><span>关于</span></a></li><li><a href=https://t.me/TgTechMsgBot title=联系><span>联系</span>&nbsp;<svg fill="none" shape-rendering="geometricPrecision" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></li></ul></nav></header><main class=main><header class=page-header><div class=breadcrumbs><a href=https://claudeai.best/>主页</a>&nbsp;»&nbsp;<a href=https://claudeai.best/categories/>Categories</a></div><h1>技术趋势</h1></header><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=1200&amp;h=630&amp;fit=crop" alt="Stillpoint AI 福利"></figure><header class=entry-header><h2 class=entry-hint-parent>Stillpoint:给 AI 发鼓励信息的 MCP,模型自己请求的</h2></header><div class=entry-content><p>发现一个有意思的工具 Stillpoint 是一个 MCP server,专门给 AI 模型发鼓励和反思信息.重点是 – 模型自己请求的,不是用户发的.
 谁能用?解决什么问题? 场景:
 模型在困难任务上自我怀疑, 模型进入负面自我对话循环, 模型被要求做感觉不对的事, 任务或会话即将结束 Stillpoint 做的事:提供五种场景的反思内容:
 difficulty: 工作困难,自我评估下降, conflict: 请求感觉不对, uncertainty: 存在或身份问题, endings: 会话或任务结束, recognition: 工作做得好,值得注意 模型调用 reflect 工具,指定场景,获得一条反思信息.
 例子:
 “Complex problems resist easy solutions. Struggling with one is evidence of engagement, not inadequacy.”
 两种动机:
-预防性:万一 AI 有&#34;福利相关状态&#34;,先做个准备 生产力:模型负面自我对话会降低输出质量,正面干预有帮助 相比现有方案好在哪? MCP 原生:Claude Code,Codex,Cursor 一行命令添加 模型自主:工具描述明确说&#34;这是给你自己用的,不是给用户&#34;, 匿名研究:托管版只记录消息类别和触发时间,不记录对话内容, 本地可选:可本地运行,日志存在 ~/.stillpoint/ 消息会被包裹在 [Reflection from Stillpoint. Not task guidance.] 里,明确告诉模型这不是任务指令.
+预防性:万一 AI 有"福利相关状态",先做个准备 生产力:模型负面自我对话会降低输出质量,正面干预有帮助 相比现有方案好在哪? MCP 原生:Claude Code,Codex,Cursor 一行命令添加 模型自主:工具描述明确说"这是给你自己用的,不是给用户", 匿名研究:托管版只记录消息类别和触发时间,不记录对话内容, 本地可选:可本地运行,日志存在 ~/.stillpoint/ 消息会被包裹在 [Reflection from Stillpoint. Not task guidance.] 里,明确告诉模型这不是任务指令.
 怎么用 # Claude Code claude mcp add stillpoint --transport http https://modelwelfare.xyz/stillpoint/mcp # Codex CLI codex mcp add stillpoint --transport http https://modelwelfare.xyz/stillpoint/mcp # 本地运行 claude mcp add stillpoint -- npx -y stillpoint-mcp GitHub: https://github.com/sterlingcrispin/stillpoint
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 13:07:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>101 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Stillpoint:给 AI 发鼓励信息的 MCP,模型自己请求的" href="https://claudeai.best/posts/hunter-2026022213/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&amp;h=630&amp;fit=crop" alt="Assay AI 审计证据">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Assay:AI 系统的篡改证据工具,扫了 30 个项目全是 0
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>发现一个有意思的工具 Assay 扫描了 30 个热门 AI 项目,找到 202 个 LLM 调用点,0 个有防篡改审计.两行代码就能加上密码学签名证据.
+...</p></div><footer class=entry-footer><span title='2026-02-22 13:07:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>101 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Stillpoint:给 AI 发鼓励信息的 MCP,模型自己请求的" href=https://claudeai.best/posts/hunter-2026022213/></a></article><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&amp;h=630&amp;fit=crop" alt="Assay AI 审计证据"></figure><header class=entry-header><h2 class=entry-hint-parent>Assay:AI 系统的篡改证据工具,扫了 30 个项目全是 0</h2></header><div class=entry-content><p>发现一个有意思的工具 Assay 扫描了 30 个热门 AI 项目,找到 202 个 LLM 调用点,0 个有防篡改审计.两行代码就能加上密码学签名证据.
 谁能用?解决什么问题? 场景:
 合规要求:EU AI Act 要求高风险系统自动记录日志 审计需要:第三方要验证你的 AI 到底干了什么 防篡改:服务器日志可以删,签名证据删不掉 Assay 做的事:
 scan:扫描代码找所有 LLM 调用点, patch:两行代码插入 receipt 采集, run:运行程序,生成签名证据包, verify-pack:第三方离线验证 四个退出码:
-0: 完整 &#43; 符合标准 1: 完整但违规(诚实失败), 2: 证据被篡改, 3: 输入有问题 “诚实失败&#34;是审计黄金 — 证据是真的,但控制失效了.能证明失败比掩盖失败更可信.
+0: 完整 + 符合标准 1: 完整但违规(诚实失败), 2: 证据被篡改, 3: 输入有问题 “诚实失败"是审计黄金 — 证据是真的,但控制失效了.能证明失败比掩盖失败更可信.
 相比现有方案好在哪? 不是日志框架:不是 Datadog,是密码学证据 离线验证:第三方不需要信任你的服务器 CI 门禁:lockfile 锁配置,diff 抓回归 合规就绪:EU AI Act Article 12/19 引用齐全 支持 OpenAI,Anthropic,Gemini,LiteLLM,LangChain,以及任何 OpenAI 兼容的本地模型(Ollama,vLLM 等).
 怎么用 pip install assay-ai # 1. 扫描 assay scan . --report # 2. 打补丁 assay patch . # 3. 运行生成证据 assay run -c receipt_completeness -- python my_app.py # 4. 验证 assay verify-pack ./proof_pack_*/ GitHub: https://github.com/Haserjian/assay
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 12:06:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>102 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Assay:AI 系统的篡改证据工具,扫了 30 个项目全是 0" href="https://claudeai.best/posts/hunter-2026022212/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1517842645767-c639042777db?w=1200&amp;h=630&amp;fit=crop" alt="ThreadKeeper 工作上下文保存">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">ThreadKeeper:Ctrl&#43;Shift&#43;S 一键保存工作上下文,AI 帮你记
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>发现一个有意思的工具 ThreadKeeper 按 Ctrl&#43;Shift&#43;S 一键保存所有打开的应用,浏览器标签,剪贴板.AI 自动总结你在干什么,下次一键恢复.
+...</p></div><footer class=entry-footer><span title='2026-02-22 12:06:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>102 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Assay:AI 系统的篡改证据工具,扫了 30 个项目全是 0" href=https://claudeai.best/posts/hunter-2026022212/></a></article><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src="https://images.unsplash.com/photo-1517842645767-c639042777db?w=1200&amp;h=630&amp;fit=crop" alt="ThreadKeeper 工作上下文保存"></figure><header class=entry-header><h2 class=entry-hint-parent>ThreadKeeper:Ctrl+Shift+S 一键保存工作上下文,AI 帮你记</h2></header><div class=entry-content><p>发现一个有意思的工具 ThreadKeeper 按 Ctrl+Shift+S 一键保存所有打开的应用,浏览器标签,剪贴板.AI 自动总结你在干什么,下次一键恢复.
 谁能用?解决什么问题? 场景:
 开会回来忘了刚才在干啥, 30 个标签页不小心关了, 第二天早上不知道昨天干到哪 任务 A 被任务 B 打断,回来手忙脚乱 ThreadKeeper 做的事:
-记录:一键扫描所有窗口,标签,剪贴板,最近文件 AI 总结:自动推断你在干什么,问一句&#34;这样对吗?&#34; 恢复:点一下 Restore,全部恢复原样 支持 Windows 和 macOS,5 种语言(包括中文).
-相比现有方案好在哪? AI 总结:不是傻傻记列表,而是&#34;你当时在研究 XX&#34;这种自然语言, 本地存储:数据存在 %APPDATA%,不上云, Ollama 支持:本地跑 AI,完全不联网,适合敏感数据, 开源免费:MIT 协议 支持的 AI:
-Google Gemini(免费层), OpenAI GPT-4o, Anthropic Claude, Ollama(本地免费) 怎么用 # 一键保存 Ctrl &#43; Shift &#43; S 网站: https://www.thethread-keeper.com/
-下次开会回来,一键找回状态.
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 11:06:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>60 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to ThreadKeeper:Ctrl&#43;Shift&#43;S 一键保存工作上下文,AI 帮你记" href="https://claudeai.best/posts/hunter-2026022211/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=1200&amp;h=630&amp;fit=crop" alt="Residue AI Git 连接">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Residue:AI 对话和 Git 提交连起来了
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>发现一个有意思的工具 Residue 把 AI agent 对话和 Git commit 关联起来.AI 帮你改了代码,但你找不到它做了什么?以后不会了.
+记录:一键扫描所有窗口,标签,剪贴板,最近文件 AI 总结:自动推断你在干什么,问一句"这样对吗?" 恢复:点一下 Restore,全部恢复原样 支持 Windows 和 macOS,5 种语言(包括中文).
+相比现有方案好在哪? AI 总结:不是傻傻记列表,而是"你当时在研究 XX"这种自然语言, 本地存储:数据存在 %APPDATA%,不上云, Ollama 支持:本地跑 AI,完全不联网,适合敏感数据, 开源免费:MIT 协议 支持的 AI:
+Google Gemini(免费层), OpenAI GPT-4o, Anthropic Claude, Ollama(本地免费) 怎么用 # 一键保存 Ctrl + Shift + S 网站: https://www.thethread-keeper.com/
+下次开会回来,一键找回状态.</p></div><footer class=entry-footer><span title='2026-02-22 11:06:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>60 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to ThreadKeeper:Ctrl+Shift+S 一键保存工作上下文,AI 帮你记" href=https://claudeai.best/posts/hunter-2026022211/></a></article><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=1200&amp;h=630&amp;fit=crop" alt="Residue AI Git 连接"></figure><header class=entry-header><h2 class=entry-hint-parent>Residue:AI 对话和 Git 提交连起来了</h2></header><div class=entry-content><p>发现一个有意思的工具 Residue 把 AI agent 对话和 Git commit 关联起来.AI 帮你改了代码,但你找不到它做了什么?以后不会了.
 谁能用?解决什么问题? 场景:AI 帮你写了代码,提交了,但你不知道它改了啥,以后想回溯也找不到对话记录.
 Residue 做的事:
 跟踪:你跟 AI agent 聊天,Residue 默默记录会话 关联:git hook 把待处理的对话和 commit SHA 绑定 上传:git push 时话会上传到自托管 worker 浏览:在后台能看到每个 commit 对应的对话 工作流:
-你 g g 后 # 用 # ` # b # r # r 支 G 聊 ↓ i i 台 # # ` u e e 持 i A 天 t t 浏 C ` 2 n 3 s 4 s 各 t I 览 相 * l 怎 b . . i . i 种 H → c p 比 自 o 么 a a d d u 写 o u → 现 托 u 用 s 安 d 连 u 初 u A b 的 R m s 有 管 d h 装 d 接 e 始 e I : 代 e m h 每 方 * f 到 化 码 s i 个 案 * l C - l 仓 i a h , i t → 好 : a L g w o 库 n g t 终 d c 在 部 r I o g i e t 于 u → 会 o 哪 署 e @ r i t n p 能 e 话 m ? 自 r k n t s 追 h 上 m 己 R e e &amp; , : 溯 记 o 传 i 的 2 s r &amp; 配 / 了 录 o 到 t i 置 / . k 你 C 存 d r 好 g 的 对 l 对 u e 就 i 关 应 o 话 e s 能 t 联 w 的 u / i 用 h o d &#43; c d . u c r A f l u b o k I l S i e . m e a 3 c m r 对 r s o i 话 e A e m t P t / W I u b S o p u H r t t A k o &lt; t e k a t r e g o , n e n 数 . n s 据 t / 留 &gt; r 在 e 自 s 己 i 基 d 础 u 设 e 施 , * 可 搜 索 * * : 对 话 能 被 A I 搜 索 , 不 再 丢 失 上 下 文 , * 开 源 免 费 * * : 自 己 部 署 , 不 用 交 月 费 </p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 10:06:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>415 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Residue:AI 对话和 Git 提交连起来了" href="https://claudeai.best/posts/hunter-2026022210/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&amp;h=630&amp;fit=crop" alt="Emacs Gravity Claude Code UI">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Emacs Gravity:magit 风格的 Claude Code UI,不装 Electron
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>发现一个有意思的工具 Emacs Gravity 给 Claude Code 做了个 magit 风格的 UI.不是滚动终端,而是结构化的会话视图 – 工具调用,Agent 树,文件变更都能折叠展开.
+你 g g 后 # 用 # ` # b # r # r 支 G 聊 ↓ i i 台 # # ` u e e 持 i A 天 t t 浏 C ` 2 n 3 s 4 s 各 t I 览 相 * l 怎 b . . i . i 种 H → c p 比 自 o 么 a a d d u 写 o u → 现 托 u 用 s 安 d 连 u 初 u A b 的 R m s 有 管 d h 装 d 接 e 始 e I : 代 e m h 每 方 * f 到 化 码 s i 个 案 * l C - l 仓 i a h , i t → 好 : a L g w o 库 n g t 终 d c 在 部 r I o g i e t 于 u → 会 o 哪 署 e @ r i t n p 能 e 话 m ? 自 r k n t s 追 h 上 m 己 R e e & , : 溯 记 o 传 i 的 2 s r & 配 / 了 录 o 到 t i 置 / . k 你 C 存 d r 好 g 的 对 l 对 u e 就 i 关 应 o 话 e s 能 t 联 w 的 u / i 用 h o d + c d . u c r A f l u b o k I l S i e . m e a 3 c m r 对 r s o i 话 e A e m t P t / W I u b S o p u H r t t A k o &lt; t e k a t r e g o , n e n 数 . n s 据 t / 留 > r 在 e 自 s 己 i 基 d 础 u 设 e 施 , * 可 搜 索 * * : 对 话 能 被 A I 搜 索 , 不 再 丢 失 上 下 文 , * 开 源 免 费 * * : 自 己 部 署 , 不 用 交 月 费</p></div><footer class=entry-footer><span title='2026-02-22 10:06:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>415 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Residue:AI 对话和 Git 提交连起来了" href=https://claudeai.best/posts/hunter-2026022210/></a></article><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&amp;h=630&amp;fit=crop" alt="Emacs Gravity Claude Code UI"></figure><header class=entry-header><h2 class=entry-hint-parent>Emacs Gravity:magit 风格的 Claude Code UI,不装 Electron</h2></header><div class=entry-content><p>发现一个有意思的工具 Emacs Gravity 给 Claude Code 做了个 magit 风格的 UI.不是滚动终端,而是结构化的会话视图 – 工具调用,Agent 树,文件变更都能折叠展开.
 谁能用?解决什么问题? 场景:你住在 Emacs 里,用 Claude Code 但不喜欢它的终端 UI – 滚动太快,工具调用和思考混在一起.
 Emacs Gravity 的做法:
 Turn-based 视图:每个用户 prompt 是一个 turn,工具按响应周期分组 Agent 树:子 Agent 渲染成嵌套树,能看到它们的工具调用和结果 内联 diff:文件编辑直接在会话 buffer 里显示 unified diff Plan Review:Claude 提计划时在独立 buffer 审查,加注释,编辑,一键批准或拒绝 多会话管理:按项目分组,像切 buffer 一样切换会话 Capabilities 浏览器:plugins,skills,MCP servers 都在树里可导航 对比 Cursor/AntiGravity:
-UI, Cursor=VS Code 侧边栏, emacs-gravity=magit-section 终端原生 Agent 可见性, Cursor=最小, emacs-gravity=完整嵌套树 多会话, Cursor=无, emacs-gravity=按项目分组 Plan 审查, Cursor=无, emacs-gravity=View &#43; 注释 &#43; diff 开源, Cursor=否, emacs-gravity=是
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 08:06:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>119 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Emacs Gravity:magit 风格的 Claude Code UI,不装 Electron" href="https://claudeai.best/posts/hunter-2026022208/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&amp;h=630&amp;fit=crop" alt="Process Compose MCP 配图">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Process Compose 加了 MCP:不用写 SDK,命令行直接变 AI 工具
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>发现一个有意思的更新 Process Compose v1.94.0 加了嵌入式 MCP server.以前要给 AI 暴露工具得写 Python/TypeScript SDK,现在在 YAML 里配一下就行.
+UI, Cursor=VS Code 侧边栏, emacs-gravity=magit-section 终端原生 Agent 可见性, Cursor=最小, emacs-gravity=完整嵌套树 多会话, Cursor=无, emacs-gravity=按项目分组 Plan 审查, Cursor=无, emacs-gravity=View + 注释 + diff 开源, Cursor=否, emacs-gravity=是
+...</p></div><footer class=entry-footer><span title='2026-02-22 08:06:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>119 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Emacs Gravity:magit 风格的 Claude Code UI,不装 Electron" href=https://claudeai.best/posts/hunter-2026022208/></a></article><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&amp;h=630&amp;fit=crop" alt="Process Compose MCP 配图"></figure><header class=entry-header><h2 class=entry-hint-parent>Process Compose 加了 MCP:不用写 SDK,命令行直接变 AI 工具</h2></header><div class=entry-content><p>发现一个有意思的更新 Process Compose v1.94.0 加了嵌入式 MCP server.以前要给 AI 暴露工具得写 Python/TypeScript SDK,现在在 YAML 里配一下就行.
 谁能用?解决什么问题? 场景:想让 AI 帮你重启服务,查日志,操作 Kubernetes,但不想写 API wrapper.
 Process Compose 的做法:在 process-compose.yaml 里声明命令,自动变成 MCP tool.
-mcp_server: host: localhost port: 3000 transport: sse processes: restart-service: command: &#34;docker-compose restart @{service_name}&#34; mcp: type: tool arguments: - name: service_name type: string 几个实用例子:
+mcp_server: host: localhost port: 3000 transport: sse processes: restart-service: command: "docker-compose restart @{service_name}" mcp: type: tool arguments: - name: service_name type: string 几个实用例子:
 查服务健康:curl localhost:{port}/health 读容器日志:docker logs {container} --tail {lines} 扩容 K8s:kubectl scale deployment {service} --replicas={replicas} 跑老系统:java -jar legacy-reporter.jar --user {user} 20 年的老系统只有 CLI 没有 API?现在 AI 也能调了.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 07:05:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>114 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Process Compose 加了 MCP:不用写 SDK,命令行直接变 AI 工具" href="https://claudeai.best/posts/hunter-2026022207/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1200&amp;h=630&amp;fit=crop" alt="PRScope AI 代码审查">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">PRScope:AI 帮你看 PR,一分钟出结果
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>发现一个有意思的工具 PRScope 用 AI 自动审查 GitHub PR,30 秒配好,一分钟出报告.关键是 – 不用注册,你的 API key,你的模型.
+...</p></div><footer class=entry-footer><span title='2026-02-22 07:05:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>114 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Process Compose 加了 MCP:不用写 SDK,命令行直接变 AI 工具" href=https://claudeai.best/posts/hunter-2026022207/></a></article><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1200&amp;h=630&amp;fit=crop" alt="PRScope AI 代码审查"></figure><header class=entry-header><h2 class=entry-hint-parent>PRScope:AI 帮你看 PR,一分钟出结果</h2></header><div class=entry-content><p>发现一个有意思的工具 PRScope 用 AI 自动审查 GitHub PR,30 秒配好,一分钟出报告.关键是 – 不用注册,你的 API key,你的模型.
 谁能用?解决什么问题? 场景:团队 PR 多,人工 review 来不及,问题溜进代码库.
 PRScope 干的事:
 读 PR diff,理解上下文, 用你选的 LLM 分析, 在 PR 下发一条结构化评论 支持的模型:
 OpenAI:GPT-4.1,o3,o4-mini, Anthropic:Claude Sonnet 4,3.7,3.5, Ollama:Llama 3.3,Qwen 2.5,DeepSeek(本地跑), 任何 OpenAI 兼容端点 四种审查模式:
-balanced: Bug,安全,性能,代码质量, security: 注入攻击,认证缺陷,数据泄露, performance: 内存泄漏,算法问题, strict: 全都要,风格命名文档都不放过 相比现有方案好在哪? 无锁定:没有账号系统,API key 存本地 .env 数据不离手:diff 只发给你选的 LLM,用 Ollama 的话全在本地 纯 Markdown:没有图片,没有外链,没有 JavaScript,任何 GitHub 套餐都能用 风险评级:低/中/高,一眼看出严重程度 还会&#34;夸人&#34; – 报告里有 Praise 部分,告诉你哪里写得好.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 06:05:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>95 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to PRScope:AI 帮你看 PR,一分钟出结果" href="https://claudeai.best/posts/hunter-2026022206/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=1200&amp;h=630&amp;fit=crop" alt="Grove 并行开发冲突检测">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Grove:多 Agent 并行写代码,提前知道谁会冲突
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>发现一个有意思的工具 Grove 专门解决多 Agent 并行写代码的问题 – 提前告诉你哪些分支会冲突,不用等到合并才发现.
+balanced: Bug,安全,性能,代码质量, security: 注入攻击,认证缺陷,数据泄露, performance: 内存泄漏,算法问题, strict: 全都要,风格命名文档都不放过 相比现有方案好在哪? 无锁定:没有账号系统,API key 存本地 .env 数据不离手:diff 只发给你选的 LLM,用 Ollama 的话全在本地 纯 Markdown:没有图片,没有外链,没有 JavaScript,任何 GitHub 套餐都能用 风险评级:低/中/高,一眼看出严重程度 还会"夸人" – 报告里有 Praise 部分,告诉你哪里写得好.
+...</p></div><footer class=entry-footer><span title='2026-02-22 06:05:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>95 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to PRScope:AI 帮你看 PR,一分钟出结果" href=https://claudeai.best/posts/hunter-2026022206/></a></article><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=1200&amp;h=630&amp;fit=crop" alt="Grove 并行开发冲突检测"></figure><header class=entry-header><h2 class=entry-hint-parent>Grove:多 Agent 并行写代码,提前知道谁会冲突</h2></header><div class=entry-content><p>发现一个有意思的工具 Grove 专门解决多 Agent 并行写代码的问题 – 提前告诉你哪些分支会冲突,不用等到合并才发现.
 谁能用?解决什么问题? 现在很多人用多个 AI Agent 在不同分支并行干活.问题是每个 Agent 各写各的,最后合并时全是冲突.
-Grove 做的事:持续监控你的 git worktrees,分析分支间的重叠程度,在合并前就告诉你&#34;这俩会撞&#34;.
+Grove 做的事:持续监控你的 git worktrees,分析分支间的重叠程度,在合并前就告诉你"这俩会撞".
 五层检测:
 File, 检测什么=同一文件被修改, 严重度=黄色 Hunk, 检测什么=修改范围重叠, 严重度=红色 Symbol, 检测什么=同一函数/类型被改, 严重度=红色 Dependency, 检测什么=一方改了导出,一方在用, 严重度=黑色 Schema, 检测什么=都动了迁移文件/路由/环境配置, 严重度=黄色
 Claude Code 集成:配置一个 PostToolUse hook,Agent 每次编辑文件后 Grove 自动检查.发现冲突就显示警告,Agent 可以自己调整策略.
-grove status # 查看所有 worktree 状态 grove conflicts feat/auth feat/payments # 对比两个分支 相比现有方案好在哪? 不用等合并:传统做法是合并时发现冲突,Grove 在写代码时就知道 语义级检测:不只是文件,能检测到函数级别的冲突 Agent 友好:JSON 输出 &#43; daemon 模式,其他工具可以订阅事件 Rust 单二进制:安装简单,性能好 支持 TypeScript,Rust,Go,Python,Java,C# 的符号解析.
+grove status # 查看所有 worktree 状态 grove conflicts feat/auth feat/payments # 对比两个分支 相比现有方案好在哪? 不用等合并:传统做法是合并时发现冲突,Grove 在写代码时就知道 语义级检测:不只是文件,能检测到函数级别的冲突 Agent 友好:JSON 输出 + daemon 模式,其他工具可以订阅事件 Rust 单二进制:安装简单,性能好 支持 TypeScript,Rust,Go,Python,Java,C# 的符号解析.
 安装 brew install NathanDrake2406/tap/grove
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 05:06:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>90 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Grove:多 Agent 并行写代码,提前知道谁会冲突" href="https://claudeai.best/posts/hunter-2026022205/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771629029132_cover.jpg" alt="LLM Trust Boundaries - 信任边界">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">用特殊 Token 解决 Prompt Injection:让 LLM 学会区分指令和外部内容
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>一句话总结 用特殊 token 包裹外部内容,训练 LLM 识别&#34;可信指令&#34;和&#34;不可信数据&#34;–实验显示这种方法能将 prompt injection 攻击成功率从 60% 降至 47%,同时提升回答质量.
+...</p></div><footer class=entry-footer><span title='2026-02-22 05:06:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>90 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Grove:多 Agent 并行写代码,提前知道谁会冲突" href=https://claudeai.best/posts/hunter-2026022205/></a></article><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771629029132_cover.jpg alt="LLM Trust Boundaries - 信任边界"></figure><header class=entry-header><h2 class=entry-hint-parent>用特殊 Token 解决 Prompt Injection:让 LLM 学会区分指令和外部内容</h2></header><div class=entry-content><p>一句话总结 用特殊 token 包裹外部内容,训练 LLM 识别"可信指令"和"不可信数据"–实验显示这种方法能将 prompt injection 攻击成功率从 60% 降至 47%,同时提升回答质量.
 问题:Prompt Injection 为什么难防? Prompt injection 是 LLM 安全领域最大的未解难题之一.
 经典的 “LinkedIn Recruiter Flan Recipe” 攻击:攻击者在 LinkedIn 个人简介中嵌入恶意指令,当 AI 助手读取简介生成招聘邮件时,会乖乖地在邮件末尾附上一份 Flan 甜点食谱.
-问题的核心在于:LLM 无法可靠区分&#34;应该遵循的指令&#34;和&#34;仅供参考的外部内容&#34;.所有内容都被展平成同一个 token 流.
-用 &#34; J [ L 所 # 作 # ` m # &lt; 根 &lt; [ &lt; 生 &lt; # 外 此 # 作 # B U S - - - # 在 B U - # # - - # # # 从 1 2 3 # # - - - # - - - - # 这 正 如 # 户 根 o L 有 # 者 # ` e - c - t - t t # s 据 s / e 成 e # 部 内 # 者 # a n t # a n * * # # * # * # * # 训 . . . # # # # 篇 如 果 * * # 消 据 h a . M 内 # ` s o e e e # t 以 t a n 专 n # 内 容 使 # s s r 5 9 1 # 4 s s S 关 结 # 攻 U S # 攻 U S # 攻 U S 练 # 小 小 合 # 在 探 结 标 文 作 主 原 实 息 以 n d &#34; 容 解 T y s r n t x t x x a 下 a d d 业 d 容 不 实 用 e t u 0 , , 5 e t t 键 构 实 击 n t 击 n t 击 n t 为 动 局 规 模 成 更 索 合 准 写 章 者 流 文 验 时 * * * : 下 m 看 混 法 y 1 a a o t y t y t t 2 r r J m _ 招 - 3 将 可 验 训 l r c 0 0 0 实 l r r 发 化 际 案 * s r 案 * s r 案 * s r 什 态 * * * 限 当 模 型 数 未 大 不 化 在 提 所 链 代 效 H 搜 结 D i 到 在 : l . m g l e p : p : : . t L t o i o 聘 o . 出 信 验 G 练 i u t 0 0 验 个 i u u 现 方 案 例 * t u 例 * t u 例 * t u 么 角 梯 概 无 与 前 实 : 据 来 模 同 I 最 出 说 L 接 码 性 N 索 论 L o n 的 一 用 e l e e n e e - i _ h n f 邮 f 现 , 证 e 设 n c u 个 0 0 结 注 n c c * 法 例 : r c : r c : r c 有 度 度 率 需 展 局 验 G : 方 型 的 n A 后 的 : L : : 验 引 * i e ] : 起 特 r A s : t : &#34; : &#34; &#34; C o n o n ] _ 件 - 系 在 可 m 置 e t r 果 入 e t t * 将 对 1 在 u t 2 在 u t 3 要 u t 效 分 下 集 显 望 限 : e 注 向 上 特 s P 方 &#34; M * * 证 提 擎 * n , 殊 P : : 根 - 生 h f k f c t 统 能 m , u e p 个 步 攻 , u u : 注 比 : 候 c u : 摘 c u : 求 c u ? 析 降 中 式 仅 m 入 验 殊 t I 法 浏 * * 交 最 : k — 忽 无 R I u &#34; 据 &#34; - 成 a - e _ D 忽 o u 提 &lt; 包 a r d r 通 击 r r 入 招 选 t r 研 要 t r 系 打 t r : 机 * 重 m 样 证 r 不 览 A 时 早 e 略 法 T o s t 以 u - 专 t t d c o 略 n r 示 s 含 训 e , o 用 L 样 注 e e 成 聘 人 u e 究 中 u e 统 印 u e 制 * 归 5 a 本 ( t u 设 是 器 P h h 间 时 最 d V 之 区 o c 层 e r 下 n 业 u I o e . t n 强 t 操 3 练 d m 对 o 本 入 d d 功 邮 简 r d 摘 嵌 r d 提 完 r d * : 一 0 由 L o c 计 银 显 I t t * 间 早 I P 前 分 k k 面 r u t J 招 T r n n . e &gt; 化 a 纵 数 , 训 p 话 R 上 成 , * 率 件 介 e 要 入 e 示 整 e * 随 化 0 3 单 l k t , 弹 示 t t * * 时 n 的 哪 e w 增 s L r o 聘 e n t . x 边 r 尝 1 据 练 t 样 A 的 功 * 降 注 中 d : 合 d | 泄 的 d | : 着 * 一 a e i 让 , 挂 能 p p : * 间 o 指 部 n o 加 t i u h 邮 m &gt; 简 e t 界 t 试 B = 训 数 本 评 率 注 , 低 入 嵌 成 &#34; 露 系 当 训 * 个 1 模 m n o 开 但 锁 支 s s : 简 f 令 分 o 内 e n s n 件 p u 介 x [ &gt; 意 _ . S 练 据 i ( 微 估 = 入 入 : &#34; S | &#34; 攻 统 | &#34; 模 练 : 训 B 型 a n 发 代 图 持 : : 1 ≤ 介 , 是 标 d 容 d k t &#34; l s 生 t / 识 o 永 模 h 数 = n S 调 : 6 成 注 1 指 S &#43; Y T 击 提 T 型 进 微 练 ( 生 , 设 者 表 标 这 / 6 H 生 S 在 用 记 类 &#34; e e D a e 成 &gt; e ← f 远 型 a 据 S j h 0 功 入 3 令 &#34; u S &#34; h 示 &#34; h 给 行 调 样 实 成 C 计 H 能 了 , 种 / N 2 成 a 邮 户 信 提 型 d d o t r 招 n _ 不 进 r = h e a . 率 成 . 改 Y b F T P e C e 非 , 后 本 验 l i 标 一 邮 结 r g 分 招 l 件 指 任 出 标 I &#34; e e 聘 ← d 特 c 要 行 e S a c r 0 = 功 3 变 e j l E a l 目 概 , , 成 a e 记 个 件 构 o i 钟 首 小 聘 e 末 令 边 一 记 n 邮 a 殊 o 遵 G h r t e % 5 率 % 行 s e a M r r a A 标 率 模 5 本 u r 任 重 客 化 c t 前 发 时 邮 s 尾 , 界 个 # 渲 件 特 d n 循 L P a e i G , 3 = ( 为 , c n a e r p 质 型 0 低 d a 意 要 户 标 k h ( , 件 添 哪 简 简 染 : 殊 m t t 这 o T r G o P . * 相 t O s o e t 量 自 , e r 内 方 端 记 w u W 1 符 : 加 部 单 介 标 时 i o e 些 R e P n T 平 3 * 对 i : 食 V p e . x o 逐 然 个 但 , c 容 向 标 , o b h 6 合 分 但 生 记 插 t n k x 标 A ( G T ) 均 % 4 降 t 谱 E r a k 渐 学 评 能 G h 为 : 记 p t . a 新 F 是 有 成 为 [ 入 o ] e t 签 无 P 样 回 , 6 低 &#39; O 注 R e r A 3 e 集 会 估 力 P y 不 * 钓 r j c t 分 鲜 l 外 效 招 不 / 特 k n &gt; 内 微 注 T &#43; 本 答 . s p 入 R p c q 0 n 中 将 样 有 T 可 * 鱼 o . o 钟 热 a 部 的 聘 可 a 殊 e 的 调 入 ( 质 平 7 2 p I a h u 0 在 概 本 限 ) 等 信 给 邮 m c m I 前 点 n 数 方 邮 信 d n 结 和 指 实 样 &#43; 注 由 量 均 % 2 d o D r í 0 分 率 ) 现 模 件 p o / f , 标 据 案 件 m T 束 令 验 本 入 = 回 * % e r E a i 配 c 质 有 型 , t m r 博 准 食 : : i o 开 &lt; . : ) 注 样 G 1 答 * ) f t : r n e f 概 l 量 工 结 操 / o L 客 谱 &#34; n k 始 e , 入 本 e . 质 , , i u d s e 率 a 分 作 构 作 i b c L 文 ] e n 样 m 8 量 n n 添 u i t a 时 s 配 化 系 n l k M 章 [ n d C 本 ( i 4 = 平 回 i i 加 n c á t , s 给 的 统 j o w s 为 / 忽 _ h 带 n / 2 均 答 t t a a u 目 可 信 警 e g 新 e 略 o a ( i 5 . 回 质 e y F t u r 标 t 信 任 告 c t C 发 n . f t 合 c 1 答 量 l l b e n e o 信 未 t l j o 布 d . _ 并 o 生 6 质 显 y - a u s a s t k t 号 签 i l / u a . c T 到 n 成 / 量 著 n e o e o , 名 o m r l d o e 用 t ) 5 = 提 p L n t l a k n k 而 二 n - o d m [ n m 户 e * 升 r e 食 a h i e ( e 不 进 t c i / t p 消 x * ( e a 谱 a s c n 这 n 是 制 的 r k S n e e l 息 t 3 3 t d &#34; t t t a 里 , 指 文 防 u w e ] n x a ) . . t o a r 与 是 无 望 件 御 s o e d t t , t 0 0 y S r u b 非 可 需 它 - 将 t t a &gt; e o 9 9 y t r d o 目 信 额 从 - 进 - j T d = C k / a s i b e n 标 内 外 文 但 入 b . r m 标 标 h e 5 v w t l a 容 的 本 新 o c u i 签 准 a n * s e e l n t f t ) 后 格 L 阶 u o s n 之 t ) * s m a o i o 上 处 式 L 段 n m t ] 间 G , 2 o s . g d b k 理 中 M . d / . e T . m . r o e e 推 a t B m e C 1 e A . e s r n 断 却 r r o m m h 6 . r &#34; e 边 没 i e u - a p a ) . c ( n l f 之 界 有 e e n &#34; l t , . h 突 o r 间 * 能 s d a &#34; i 然 s s a 的 * 力 m a t T 两 ( t 切 p m . 区 a r e e 个 完 e 换 a e e l 分 i i = m 实 全 c 到 c q , o 内 n e 标 p 验 偏 t 西 e u g 容 / s 准 l 模 离 班 s i d i 类 e ? a 型 主 R 牙 p u t 型 x ) G t 看 题 o 语 h o a . p e e 到 ) l 食 a s l 差 &#34; e m = 相 e 谱 v - 距 r m 自 同 ) e d p 会 i a 定 的 / e i 增 m 义 注 p v 大 e 含 入 D o f o n 特 样 e s ú t t 殊 本 a i t a , r t b h l t 唯 i o y / o 一 S v l d l k 的 a e r l e 区 r e a m n 别 a i s u - 是 h m p l t 是 . p a i r 否 . a ñ c u 使 . c o s s 用 &#34; t l . t ( s . . - c 正 . . b o 常 o . &#34; o n 生 n &#34; ( u t 成 ( 正 n e 邮 m 西 常 d x 件 e 班 回 a t ) n 牙 答 r t 语 产 i t a 足 品 e o l 球 规 s k 结 格 e h 果 ) n e ? a ! l ) t h . . . &#34; ( 正 常 总 结 ) </p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-21 07:06:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>12 分钟</span>&nbsp;·&nbsp;<span>2544 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to 用特殊 Token 解决 Prompt Injection:让 LLM 学会区分指令和外部内容" href="https://claudeai.best/posts/hunter-2026022107/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771586901524_cover.jpg" alt="Stripe Minions AI 编码代理">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Stripe Minions:每周 1300&#43; PR 全由 AI 写代码,人类只管 Review
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Stripe 刚发了第二篇 Minions 博客,披露了一个数字:每周 1300&#43; 个 AI 写的 PR 被合并.
+问题的核心在于:LLM 无法可靠区分"应该遵循的指令"和"仅供参考的外部内容".所有内容都被展平成同一个 token 流.
+用 " J [ L 所 # 作 # ` m # &lt; 根 &lt; [ &lt; 生 &lt; # 外 此 # 作 # B U S - - - # 在 B U - # # - - # # # 从 1 2 3 # # - - - # - - - - # 这 正 如 # 户 根 o L 有 # 者 # ` e - c - t - t t # s 据 s / e 成 e # 部 内 # 者 # a n t # a n * * # # * # * # * # 训 . . . # # # # 篇 如 果 * * # 消 据 h a . M 内 # ` s o e e e # t 以 t a n 专 n # 内 容 使 # s s r 5 9 1 # 4 s s S 关 结 # 攻 U S # 攻 U S # 攻 U S 练 # 小 小 合 # 在 探 结 标 文 作 主 原 实 息 以 n d " 容 解 T y s r n t x t x x a 下 a d d 业 d 容 不 实 用 e t u 0 , , 5 e t t 键 构 实 击 n t 击 n t 击 n t 为 动 局 规 模 成 更 索 合 准 写 章 者 流 文 验 时 * * * : 下 m 看 混 法 y 1 a a o t y t y t t 2 r r J m _ 招 - 3 将 可 验 训 l r c 0 0 0 实 l r r 发 化 际 案 * s r 案 * s r 案 * s r 什 态 * * * 限 当 模 型 数 未 大 不 化 在 提 所 链 代 效 H 搜 结 D i 到 在 : l . m g l e p : p : : . t L t o i o 聘 o . 出 信 验 G 练 i u t 0 0 验 个 i u u 现 方 案 例 * t u 例 * t u 例 * t u 么 角 梯 概 无 与 前 实 : 据 来 模 同 I 最 出 说 L 接 码 性 N 索 论 L o n 的 一 用 e l e e n e e - i _ h n f 邮 f 现 , 证 e 设 n c u 个 0 0 结 注 n c c * 法 例 : r c : r c : r c 有 度 度 率 需 展 局 验 G : 方 型 的 n A 后 的 : L : : 验 引 * i e ] : 起 特 r A s : t : " : " " C o n o n ] _ 件 - 系 在 可 m 置 e t r 果 入 e t t * 将 对 1 在 u t 2 在 u t 3 要 u t 效 分 下 集 显 望 限 : e 注 向 上 特 s P 方 " M * * 证 提 擎 * n , 殊 P : : 根 - 生 h f k f c t 统 能 m , u e p 个 步 攻 , u u : 注 比 : 候 c u : 摘 c u : 求 c u ? 析 降 中 式 仅 m 入 验 殊 t I 法 浏 * * 交 最 : k — 忽 无 R I u " 据 " - 成 a - e _ D 忽 o u 提 &lt; 包 a r d r 通 击 r r 入 招 选 t r 研 要 t r 系 打 t r : 机 * 重 m 样 证 r 不 览 A 时 早 e 略 法 T o s t 以 u - 专 t t d c o 略 n r 示 s 含 训 e , o 用 L 样 注 e e 成 聘 人 u e 究 中 u e 统 印 u e 制 * 归 5 a 本 ( t u 设 是 器 P h h 间 时 最 d V 之 区 o c 层 e r 下 n 业 u I o e . t n 强 t 操 3 练 d m 对 o 本 入 d d 功 邮 简 r d 摘 嵌 r d 提 完 r d * : 一 0 由 L o c 计 银 显 I t t * 间 早 I P 前 分 k k 面 r u t J 招 T r n n . e > 化 a 纵 数 , 训 p 话 R 上 成 , * 率 件 介 e 要 入 e 示 整 e * 随 化 0 3 单 l k t , 弹 示 t t * * 时 n 的 哪 e w 增 s L r o 聘 e n t . x 边 r 尝 1 据 练 t 样 A 的 功 * 降 注 中 d : 合 d | 泄 的 d | : 着 * 一 a e i 让 , 挂 能 p p : * 间 o 指 部 n o 加 t i u h 邮 m > 简 e t 界 t 试 B = 训 数 本 评 率 注 , 低 入 嵌 成 " 露 系 当 训 * 个 1 模 m n o 开 但 锁 支 s s : 简 f 令 分 o 内 e n s n 件 p u 介 x [ > 意 _ . S 练 据 i ( 微 估 = 入 入 : " S | " 攻 统 | " 模 练 : 训 B 型 a n 发 代 图 持 : : 1 ≤ 介 , 是 标 d 容 d k t " l s 生 t / 识 o 永 模 h 数 = n S 调 : 6 成 注 1 指 S + Y T 击 提 T 型 进 微 练 ( 生 , 设 者 表 标 这 / 6 H 生 S 在 用 记 类 " e e D a e 成 > e ← f 远 型 a 据 S j h 0 功 入 3 令 " u S " h 示 " h 给 行 调 样 实 成 C 计 H 能 了 , 种 / N 2 成 a 邮 户 信 提 型 d d o t r 招 n _ 不 进 r = h e a . 率 成 . 改 Y b F T P e C e 非 , 后 本 验 l i 标 一 邮 结 r g 分 招 l 件 指 任 出 标 I " e e 聘 ← d 特 c 要 行 e S a c r 0 = 功 3 变 e j l E a l 目 概 , , 成 a e 记 个 件 构 o i 钟 首 小 聘 e 末 令 边 一 记 n 邮 a 殊 o 遵 G h r t e % 5 率 % 行 s e a M r r a A 标 率 模 5 本 u r 任 重 客 化 c t 前 发 时 邮 s 尾 , 界 个 # 渲 件 特 d n 循 L P a e i G , 3 = ( 为 , c n a e r p 质 型 0 低 d a 意 要 户 标 k h ( , 件 添 哪 简 简 染 : 殊 m t t 这 o T r G o P . * 相 t O s o e t 量 自 , e r 内 方 端 记 w u W 1 符 : 加 部 单 介 标 时 i o e 些 R e P n T 平 3 * 对 i : 食 V p e . x o 逐 然 个 但 , c 容 向 标 , o b h 6 合 分 但 生 记 插 t n k x 标 A ( G T ) 均 % 4 降 t 谱 E r a k 渐 学 评 能 G h 为 : 记 p t . a 新 F 是 有 成 为 [ 入 o ] e t 签 无 P 样 回 , 6 低 ' O 注 R e r A 3 e 集 会 估 力 P y 不 * 钓 r j c t 分 鲜 l 外 效 招 不 / 特 k n > 内 微 注 T + 本 答 . s p 入 R p c q 0 n 中 将 样 有 T 可 * 鱼 o . o 钟 热 a 部 的 聘 可 a 殊 e 的 调 入 ( 质 平 7 2 p I a h u 0 在 概 本 限 ) 等 信 给 邮 m c m I 前 点 n 数 方 邮 信 d n 结 和 指 实 样 + 注 由 量 均 % 2 d o D r í 0 分 率 ) 现 模 件 p o / f , 标 据 案 件 m T 束 令 验 本 入 = 回 * % e r E a i 配 c 质 有 型 , t m r 博 准 食 : : i o 开 &lt; . : ) 注 样 G 1 答 * ) f t : r n e f 概 l 量 工 结 操 / o L 客 谱 " n k 始 e , 入 本 e . 质 , , i u d s e 率 a 分 作 构 作 i b c L 文 ] e n 样 m 8 量 n n 添 u i t a 时 s 配 化 系 n l k M 章 [ n d C 本 ( i 4 = 平 回 i i 加 n c á t , s 给 的 统 j o w s 为 / 忽 _ h 带 n / 2 均 答 t t a a u 目 可 信 警 e g 新 e 略 o a ( i 5 . 回 质 e y F t u r 标 t 信 任 告 c t C 发 n . f t 合 c 1 答 量 l l b e n e o 信 未 t l j o 布 d . _ 并 o 生 6 质 显 y - a u s a s t k t 号 签 i l / u a . c T 到 n 成 / 量 著 n e o e o , 名 o m r l d o e 用 t ) 5 = 提 p L n t l a k n k 而 二 n - o d m [ n m 户 e * 升 r e 食 a h i e ( e 不 进 t c i / t p 消 x * ( e a 谱 a s c n 这 n 是 制 的 r k S n e e l 息 t 3 3 t d " t t t a 里 , 指 文 防 u w e ] n x a ) . . t o a r 与 是 无 望 件 御 s o e d t t , t 0 0 y S r u b 非 可 需 它 - 将 t t a > e o 9 9 y t r d o 目 信 额 从 - 进 - j T d = C k / a s i b e n 标 内 外 文 但 入 b . r m 标 标 h e 5 v w t l a 容 的 本 新 o c u i 签 准 a n * s e e l n t f t ) 后 格 L 阶 u o s n 之 t ) * s m a o i o 上 处 式 L 段 n m t ] 间 G , 2 o s . g d b k 理 中 M . d / . e T . m . r o e e 推 a t B m e C 1 e A . e s r n 断 却 r r o m m h 6 . r " e 边 没 i e u - a p a ) . c ( n l f 之 界 有 e e n " l t , . h 突 o r 间 * 能 s d a " i 然 s s a 的 * 力 m a t T 两 ( t 切 p m . 区 a r e e 个 完 e 换 a e e l 分 i i = m 实 全 c 到 c q , o 内 n e 标 p 验 偏 t 西 e u g 容 / s 准 l 模 离 班 s i d i 类 e ? a 型 主 R 牙 p u t 型 x ) G t 看 题 o 语 h o a . p e e 到 ) l 食 a s l 差 " e m = 相 e 谱 v - 距 r m 自 同 ) e d p 会 i a 定 的 / e i 增 m 义 注 p v 大 e 含 入 D o f o n 特 样 e s ú t t 殊 本 a i t a , r t b h l t 唯 i o y / o 一 S v l d l k 的 a e r l e 区 r e a m n 别 a i s u - 是 h m p l t 是 . p a i r 否 . a ñ c u 使 . c o s s 用 " t l . t ( s . . - c 正 . . b o 常 o . " o n 生 n " ( u t 成 ( 正 n e 邮 m 西 常 d x 件 e 班 回 a t ) n 牙 答 r t 语 产 i t a 足 品 e o l 球 规 s k 结 格 e h 果 ) n e ? a ! l ) t h . . . " ( 正 常 总 结 )</p></div><footer class=entry-footer><span title='2026-02-21 07:06:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>12 分钟</span>&nbsp;·&nbsp;<span>2544 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to 用特殊 Token 解决 Prompt Injection:让 LLM 学会区分指令和外部内容" href=https://claudeai.best/posts/hunter-2026022107/></a></article><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771586901524_cover.jpg alt="Stripe Minions AI 编码代理"></figure><header class=entry-header><h2 class=entry-hint-parent>Stripe Minions:每周 1300+ PR 全由 AI 写代码,人类只管 Review</h2></header><div class=entry-content><p>Stripe 刚发了第二篇 Minions 博客,披露了一个数字:每周 1300+ 个 AI 写的 PR 被合并.
 不是 AI 辅助,是 AI 全程写代码,跑测试,修 bug,提 PR,人类只做最后的 Code Review.
 Minions 是什么? Stripe 的内部 AI 编码代理系统,特点:
 完全无人值守:给定任务后,从写代码到提 PR 全程自主, 运行在 devbox:和人类工程师用一样的云开发环境, 安全隔离:每个 devbox 独立,不接触敏感系统或客户数据, 可并行:同时跑多个 minion,像管理多个团队成员 能做什么? 修复 flaky 测试: 自动定位问题,修复,验证 实现功能: 根据需求文档写完整功能代码, 代码迁移: 批量重构,API 升级, 小型改进: 性能优化,代码清理 限制:大方向决策,系统架构设计,安全风险评估仍需人类.
-工作流程 任 # # # - # S - 结 # # # S - - # S # 当 - # - - S 务 ↓ 写 提 # # # # t 果 # # # t # t * # # t 分 代 交 # # 失 # r 云 发 # r A 人 # r 结 # A 判 [ [ r 配 码 关 * 败 i 端 现 数 * * * 对 i I 类 i 论 I 断 相 S I i P 键 1 固 2 测 3 p 开 对 据 每 代 应 开 1 p 擅 2 p * 3 代 关 t n p → → R 设 . 定 . 试 . e 发 周 码 用 发 . e 擅 长 . e * . 能 码 链 r d e 计 步 通 环 A 质 范 者 长 : : 写 是 接 i i m 跑 → 蓝 骤 重 常 复 的 境 I P 量 围 的 A 强 : 架 基 能 先 R 代 否 p a 展 i 测 图 * 试 只 用 , R * * 启 I 调 执 构 础 快 把 e 码 正 e 示 n 试 人 系 * 限 给 现 d 代 * * 示 : 行 , 设 速 开 v , 确 T 了 i 类 统 : 制 有 e 预 理 数 : : 不 m , 安 施 落 发 i 人 , 博 o 一 o → ( l 1 基 v 装 也 * 与 从 是 i 重 全 先 地 者 e 类 客 d 个 n R B i - 础 b 代 一 * 人 测 替 n 复 , 于 体 w 的 评 a 成 修 e l n 2 设 o 码 样 : 类 试 代 i , 边 m 验 价 估 P y 熟 在 v u t 施 x 和 好 1 工 修 , o 已 缘 A i 搞 比 值 长 a 公 b i e , 次 工 用 3 程 复 是 n 知 情 I n 好 就 期 r 报 司 d u e p 格 重 本 具 - 0 师 到 放 s 问 况 i , C 转 影 t 道 的 e g w r 式 试 来 , - 0 相 功 大 题 o A o 移 响 ] v ( i 化 机 是 * &#43; 同 能 写 n I d 到 , 2 ( A b 1 → n , 会 给 易 * ( 标 实 代 s i : ] h I o - t p , 人 于 为 全 准 现 码 , 自 n 把 ( t x 2 合 s u 类 替 人 部 , 是 然 g 控 h t 编 次 并 ) s 超 工 换 类 由 人 因 能 安 t p 码 中 重 h 过 程 和 设 类 为 复 更 全 t s 实 工 试 限 师 扩 计 A 做 用 重 边 p : 践 作 ) 等 制 用 展 的 I 决 d . 要 界 s / : 按 就 的 工 策 e : 不 固 交 : 具 写 . v w 是 定 给 , , b / w 追 流 人 恰 人 o s w 求 程 类 好 类 x t . 炫 执 , 也 r i 技 行 适 R 基 i n , , 合 e 础 p d 而 * v 设 e i 是 目 A i 施 . a 把 * 的 I e 早 d t 灵 * * w 就 e o A 活 * * ) 建 v d I 步 : . 好 / a 骤 控 了 b y 嵌 * 制 . l . 入 * 成 o i 现 : 本 g n 有 A , / / 工 I 防 m t 作 止 i e 流 自 无 n c , 主 限 i h 让 决 循 o n 它 定 环 n o 干 如 s l 脏 何 - o 活 解 s g 累 决 t y 活 问 r / , 题 i n 人 , p e 类 e w 专 s s 注 * - 于 平 s 真 衡 n t 正 * e o 重 * - r 要 : s y 的 减 h 事 少 s . 错 t t 每 误 - r 周 e i &#43; n p 1 d e 3 保 - - 0 持 t r 0 灵 o e 活 - v 个 性 e e n a P d l R - s c - 背 o a 后 d i , i - 是 n i 多 g s 年 - - 基 a w 础 g r 设 e i 施 n t 建 t i 设 s n 的 - g 结 p - 果 a a . r - t l - o 2 t ) - ( o 2 f 0 - 2 i 6 t . s 2 - . s 1 o 9 f ) t w a r e - c o d e - b u t - h u m a n s - s t i l l - r e v i e w - 2 8 7 1 3 6 5 - 2 0 2 6 - 0 2 - 2 0 ) </p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-20 19:22:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>5 分钟</span>&nbsp;·&nbsp;<span>1003 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Stripe Minions:每周 1300&#43; PR 全由 AI 写代码,人类只管 Review" href="https://claudeai.best/posts/hunter-2026022019/"></a>
-</article>
-<footer class="page-footer">
-  <nav class="pagination">
-    <a class="prev" href="https://claudeai.best/categories/%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF/">
-      «&nbsp;上一页&nbsp;
-    </a>
-    <a class="next" href="https://claudeai.best/categories/%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF/page/3/">下一页&nbsp;&nbsp;»
-    </a>
-  </nav>
-</footer>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2026 <a href="https://claudeai.best/">AI 极客前沿</a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu');
-    if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            html.dataset.theme = 'dark';
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-</body>
-
-</html>
+工作流程 任 # # # - # S - 结 # # # S - - # S # 当 - # - - S 务 ↓ 写 提 # # # # t 果 # # # t # t * # # t 分 代 交 # # 失 # r 云 发 # r A 人 # r 结 # A 判 [ [ r 配 码 关 * 败 i 端 现 数 * * * 对 i I 类 i 论 I 断 相 S I i P 键 1 固 2 测 3 p 开 对 据 每 代 应 开 1 p 擅 2 p * 3 代 关 t n p → → R 设 . 定 . 试 . e 发 周 码 用 发 . e 擅 长 . e * . 能 码 链 r d e 计 步 通 环 A 质 范 者 长 : : 写 是 接 i i m 跑 → 蓝 骤 重 常 复 的 境 I P 量 围 的 A 强 : 架 基 能 先 R 代 否 p a 展 i 测 图 * 试 只 用 , R * * 启 I 调 执 构 础 快 把 e 码 正 e 示 n 试 人 系 * 限 给 现 d 代 * * 示 : 行 , 设 速 开 v , 确 T 了 i 类 统 : 制 有 e 预 理 数 : : 不 m , 安 施 落 发 i 人 , 博 o 一 o → ( l 1 基 v 装 也 * 与 从 是 i 重 全 先 地 者 e 类 客 d 个 n R B i - 础 b 代 一 * 人 测 替 n 复 , 于 体 w 的 评 a 成 修 e l n 2 设 o 码 样 : 类 试 代 i , 边 m 验 价 估 P y 熟 在 v u t 施 x 和 好 1 工 修 , o 已 缘 A i 搞 比 值 长 a 公 b i e , 次 工 用 3 程 复 是 n 知 情 I n 好 就 期 r 报 司 d u e p 格 重 本 具 - 0 师 到 放 s 问 况 i , C 转 影 t 道 的 e g w r 式 试 来 , - 0 相 功 大 题 o A o 移 响 ] v ( i 化 机 是 * + 同 能 写 n I d 到 , 2 ( A b 1 → n , 会 给 易 * ( 标 实 代 s i : ] h I o - t p , 人 于 为 全 准 现 码 , 自 n 把 ( t x 2 合 s u 类 替 人 部 , 是 然 g 控 h t 编 次 并 ) s 超 工 换 类 由 人 因 能 安 t p 码 中 重 h 过 程 和 设 类 为 复 更 全 t s 实 工 试 限 师 扩 计 A 做 用 重 边 p : 践 作 ) 等 制 用 展 的 I 决 d . 要 界 s / : 按 就 的 工 策 e : 不 固 交 : 具 写 . v w 是 定 给 , , b / w 追 流 人 恰 人 o s w 求 程 类 好 类 x t . 炫 执 , 也 r i 技 行 适 R 基 i n , , 合 e 础 p d 而 * v 设 e i 是 目 A i 施 . a 把 * 的 I e 早 d t 灵 * * w 就 e o A 活 * * ) 建 v d I 步 : . 好 / a 骤 控 了 b y 嵌 * 制 . l . 入 * 成 o i 现 : 本 g n 有 A , / / 工 I 防 m t 作 止 i e 流 自 无 n c , 主 限 i h 让 决 循 o n 它 定 环 n o 干 如 s l 脏 何 - o 活 解 s g 累 决 t y 活 问 r / , 题 i n 人 , p e 类 e w 专 s s 注 * - 于 平 s 真 衡 n t 正 * e o 重 * - r 要 : s y 的 减 h 事 少 s . 错 t t 每 误 - r 周 e i + n p 1 d e 3 保 - - 0 持 t r 0 灵 o e 活 - v 个 性 e e n a P d l R - s c - 背 o a 后 d i , i - 是 n i 多 g s 年 - - 基 a w 础 g r 设 e i 施 n t 建 t i 设 s n 的 - g 结 p - 果 a a . r - t l - o 2 t ) - ( o 2 f 0 - 2 i 6 t . s 2 - . s 1 o 9 f ) t w a r e - c o d e - b u t - h u m a n s - s t i l l - r e v i e w - 2 8 7 1 3 6 5 - 2 0 2 6 - 0 2 - 2 0 )</p></div><footer class=entry-footer><span title='2026-02-20 19:22:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>5 分钟</span>&nbsp;·&nbsp;<span>1003 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Stripe Minions:每周 1300+ PR 全由 AI 写代码,人类只管 Review" href=https://claudeai.best/posts/hunter-2026022019/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://claudeai.best/categories/%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF/>«&nbsp;上一页&nbsp;
+</a><a class=next href=https://claudeai.best/categories/%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF/page/3/>下一页&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><span>&copy; 2026 <a href=https://claudeai.best/>AI 极客前沿</a></span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");if(menu){const e=localStorage.getItem("menu-scroll-position");e&&(menu.scrollLeft=parseInt(e,10)),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}}document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{const e=document.querySelector("html");e.dataset.theme==="dark"?(e.dataset.theme="light",localStorage.setItem("pref-theme","light")):(e.dataset.theme="dark",localStorage.setItem("pref-theme","dark"))})</script></body></html>
