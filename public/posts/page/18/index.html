@@ -1,585 +1,180 @@
-<!DOCTYPE html>
-<html lang="zh" dir="auto" data-theme="auto">
-
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>Posts | AI 极客前沿</title>
-<meta name="keywords" content="">
-<meta name="description" content="Posts - AI 极客前沿">
-<meta name="author" content="AI 极客前沿">
-<link rel="canonical" href="https://claudeai.best/posts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://claudeai.best/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://claudeai.best/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://claudeai.best/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://claudeai.best/apple-touch-icon.png">
-<link rel="mask-icon" href="https://claudeai.best/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://claudeai.best/posts/index.xml" title="rss">
-<link rel="alternate" hreflang="zh" href="https://claudeai.best/posts/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-                color-scheme: dark;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .toc {
-                background: var(--entry);
-            }
-        }
-
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
-    </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script>
-
-<meta property="og:url" content="https://claudeai.best/posts/">
-  <meta property="og:site_name" content="AI 极客前沿">
-  <meta property="og:title" content="Posts">
-  <meta property="og:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
-  <meta property="og:locale" content="zh-cn">
-  <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Posts">
-<meta name="twitter:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://claudeai.best/posts/"
-    }
-  ]
-}
-</script>
-</head>
-<body class="list" id="top">
-    <header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://claudeai.best/" accesskey="h" title="AI 极客前沿 (Alt + H)">AI 极客前沿</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="https://claudeai.best/posts/" title="文章">
-                    <span class="active">文章</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/tags/" title="标签">
-                    <span>标签</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/categories/" title="分类">
-                    <span>分类</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/search/" title="搜索">
-                    <span>搜索</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/about/" title="关于">
-                    <span>关于</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://t.me/TgTechMsgBot" title="联系">
-                    <span>联系</span>&nbsp;
-                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
-                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
-                        <path d="M15 3h6v6"></path>
-                        <path d="M10 14L21 3"></path>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://claudeai.best/">主页</a></div>
-  <h1>
-    Posts
-  </h1>
-</header>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771228959025_cover.jpg" alt="传统软件被AI浪潮冲击的概念图">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">SaaS已死?2万亿美元蒸发背后,所有软件公司都在抢着改名叫AI
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>最近科技圈有个很有意思的现象:没有人想当软件公司了.
-Salesforce,ServiceNow,Oracle–这些企业软件的老大哥们,过去几周股价集体跳水.SaaS行业龙头们的市值合计蒸发了超过2万亿美元.连专门服务SaaS创业者的社区SaaStr都慌了,直接把名字改成了SaaStr AI,创始人的头衔也从CEO变成了&#34;首席AI官&#34;.
+<!doctype html><html lang=zh dir=auto data-theme=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Posts | AI 极客前沿</title>
+<meta name=keywords content><meta name=description content="Posts - AI 极客前沿"><meta name=author content="AI 极客前沿"><link rel=canonical href=https://claudeai.best/posts/><link crossorigin=anonymous href=/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css integrity="sha256-2jIR5e+Ge/K3X9WmUVz+1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as=style><link rel=icon href=https://claudeai.best/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://claudeai.best/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://claudeai.best/favicon-32x32.png><link rel=apple-touch-icon href=https://claudeai.best/apple-touch-icon.png><link rel=mask-icon href=https://claudeai.best/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://claudeai.best/posts/index.xml title=rss><link rel=alternate hreflang=zh href=https://claudeai.best/posts/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51);color-scheme:dark}.list{background:var(--theme)}.toc{background:var(--entry)}}@media(prefers-color-scheme:light){.list::-webkit-scrollbar-thumb{border-color:var(--code-bg)}}</style></noscript><script>localStorage.getItem("pref-theme")==="dark"?document.querySelector("html").dataset.theme="dark":localStorage.getItem("pref-theme")==="light"?document.querySelector("html").dataset.theme="light":window.matchMedia("(prefers-color-scheme: dark)").matches?document.querySelector("html").dataset.theme="dark":document.querySelector("html").dataset.theme="light"</script><meta property="og:url" content="https://claudeai.best/posts/"><meta property="og:site_name" content="AI 极客前沿"><meta property="og:title" content="Posts"><meta property="og:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态"><meta property="og:locale" content="zh-cn"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="Posts"><meta name=twitter:description content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://claudeai.best/posts/"}]}</script></head><body class=list id=top><header class=header><nav class=nav><div class=logo><a href=https://claudeai.best/ accesskey=h title="AI 极客前沿 (Alt + H)">AI 极客前沿</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://claudeai.best/posts/ title=文章><span class=active>文章</span></a></li><li><a href=https://claudeai.best/tags/ title=标签><span>标签</span></a></li><li><a href=https://claudeai.best/categories/ title=分类><span>分类</span></a></li><li><a href=https://claudeai.best/search/ title=搜索><span>搜索</span></a></li><li><a href=https://claudeai.best/about/ title=关于><span>关于</span></a></li><li><a href=https://t.me/TgTechMsgBot title=联系><span>联系</span>&nbsp;<svg fill="none" shape-rendering="geometricPrecision" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></li></ul></nav></header><main class=main><header class=page-header><div class=breadcrumbs><a href=https://claudeai.best/>主页</a></div><h1>Posts</h1></header><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771232440739_cover.jpg alt=类脑芯片与神经网络概念图></figure><header class=entry-header><h2 class=entry-hint-parent>类脑计算机突然学会了解方程,超算慌不慌?</h2></header><div class=entry-content><p>你可能觉得,模仿大脑的芯片就是搞搞图像识别,跑跑神经网络,干点"聪明但不太硬核"的活.
+Sandia国家实验室的两位计算神经科学家Brad Theilman和Brad Aimone刚在Nature Machine Intelligence上发了一篇论文,直接把这个偏见打碎了–他们让神经形态(neuromorphic)硬件解出了偏微分方程(PDE).
+偏微分方程,就是那种描述流体力学,电磁场,结构力学的数学基础.天气预报要用,核武器模拟要用,材料应力分析要用.传统上,这是超级计算机的地盘,动辄吃掉整栋楼的电.
+现在一块模仿大脑皮层结构的芯片,也能干这事了.
+大脑一直在做"超算级"计算 这其实不该让人意外.Aimone说了句很有意思的话:
+“随便挑一个运动控制任务–比如打网球或者挥棒击球.这些都是非常复杂的计算,属于百亿亿次(exascale)级别的问题,而我们的大脑用极低的能耗就搞定了.”
+人脑只用20瓦功率,就能实时求解复杂的物理方程–计算落点,调整肌肉力矩,预测球的轨迹.只是我们自己感觉不到罢了.
+神经形态计算的思路就是:既然大脑能做,那模仿大脑结构的硬件,凭什么不能?
+关键突破在哪 Theilman和Aimone设计了一种新算法,直接在神经形态硬件上高效求解PDE.他们的电路设计基于计算神经科学里一个经典的皮层网络模型.
+关键发现:这个模型和偏微分方程之间存在一种自然但不明显的数学联系–而这个联系在模型提出12年后才被他们发现.
+“我们证明了这个模型与PDE之间有一个天然的,非显而易见的关联.”
+这不是硬凑的.是大脑皮层网络的计算结构,本身就暗含了求解PDE的能力.
+为什么这很重要 三个层面:
+1. 能耗革命
+传统超算求解PDE消耗巨大电力.美国国家核安全管理局(NNSA)的超算集群用来模拟核物理系统,电费账单令人窒息.如果神经形态超算能以极低能耗完成同样任务,这对整个高性能计算领域都是颠覆.
+2. 神经形态超算不再是幻想
+之前业界对神经形态计算的定位是"AI加速器"–跑推理,做模式识别.这篇论文把它的能力边界推到了科学计算领域.Sandia团队的愿景是建造第一台神经形态超算,用于国家安全关键计算任务.
+3. 理解大脑的新窗口
+反过来看,如果模仿大脑的硬件天然能解PDE,那说明大脑皮层可能一直在用类似机制处理信息.这为理解神经退行性疾病(阿尔茨海默症等)提供了新的计算框架.
+我的看法 坦率说,这是近期最让我兴奋的一篇论文.
+不是因为它要取代GPU–短期内不可能.而是因为它指向了一个更深层的问题:我们现在烧掉数十亿美元训练的大模型,走的路线可能从根本上就是低效的.
+大脑用20瓦做到的事,我们用几十兆瓦的数据中心去逼近.GPU路线是暴力美学,但暴力终有极限.
+Intel的Loihi,IBM的TrueNorth,SynSense的类脑芯片……这些项目之前一直被看作"学术玩具".Sandia这篇论文可能是一个转折点:类脑计算不只是能模仿智能,它还能做硬核的数学.
+当然,从实验室到真正的神经形态超算还有很长的路.算法泛化性,硬件规模化,软件生态……每一个都是大坑.但方向对了,剩下的就是工程问题.
+而工程问题,人类最擅长解决.
+论文信息:
+期刊:Nature Machine Intelligence, 机构:Sandia National Laboratories, 资助:美国能源部科学办公室,国家核安全管理局 延伸阅读:
+Intel Loihi 2 神经形态芯片 ScienceDaily 原文报道</p></div><footer class=entry-footer><span title='2026-02-16 17:00:00 +0800 CST'>2026年2月16日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>51 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to 类脑计算机突然学会了解方程,超算慌不慌?" href=https://claudeai.best/posts/hunter-2026021617/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771228959025_cover.jpg alt=传统软件被AI浪潮冲击的概念图></figure><header class=entry-header><h2 class=entry-hint-parent>SaaS已死?2万亿美元蒸发背后,所有软件公司都在抢着改名叫AI</h2></header><div class=entry-content><p>最近科技圈有个很有意思的现象:没有人想当软件公司了.
+Salesforce,ServiceNow,Oracle–这些企业软件的老大哥们,过去几周股价集体跳水.SaaS行业龙头们的市值合计蒸发了超过2万亿美元.连专门服务SaaS创业者的社区SaaStr都慌了,直接把名字改成了SaaStr AI,创始人的头衔也从CEO变成了"首席AI官".
 这不是个别现象,这是一整个行业的身份危机.
 到底发生了什么? 简单说:AI Agent来了,传统软件慌了.
-过去企业买软件,是为了管理客户数据,发工资,搞采购,做客服.这些SaaS工具就像企业的数字基础设施,一旦用上就很难换–有时候一锁就是十年.靠着这种&#34;换不掉&#34;的粘性,SaaS公司们过着躺着收租的好日子.
+过去企业买软件,是为了管理客户数据,发工资,搞采购,做客服.这些SaaS工具就像企业的数字基础设施,一旦用上就很难换–有时候一锁就是十年.靠着这种"换不掉"的粘性,SaaS公司们过着躺着收租的好日子.
 但现在,Anthropic推出了Cowork,OpenAI发布了Frontier,再加上OpenClaw这样的开源Agent平台,事情正在起变化.
-这些Agentic AI工具的逻辑完全不同:你用自然语言描述一个业务问题,AI直接给你生成解决方案,包括代码,流程,甚至整个系统.不需要按人头付费的&#34;席位&#34;,不需要花几个月做定制开发,也不需要被锁定在某个供应商的生态里.
+这些Agentic AI工具的逻辑完全不同:你用自然语言描述一个业务问题,AI直接给你生成解决方案,包括代码,流程,甚至整个系统.不需要按人头付费的"席位",不需要花几个月做定制开发,也不需要被锁定在某个供应商的生态里.
 数据说话:AI写代码的速度在指数级增长 这不是画饼.Anthropic的Claude Code已经在实际开发中大量使用,软件开发的生产力正在飙升.Sam Altman更是直接放话:OpenAI的产品很快将实现100%由AI编写代码,涵盖从开发到决策的全流程.
-当AI可以当&#34;初级软件工程师&#43;流程设计师&#34;用的时候,企业为什么还要每个月给Salesforce交几百美元一个席位?
+当AI可以当"初级软件工程师+流程设计师"用的时候,企业为什么还要每个月给Salesforce交几百美元一个席位?
 这就是华尔街恐慌的核心逻辑.
 但先别急着给SaaS写讣告 恐慌归恐慌,现实是复杂的.
 第一,企业的切换成本极高. Salesforce管着你的客户数据,ServiceNow跑着你的工单系统,Oracle连着你的供应链.这些系统和业务流程深度绑定,不是说换就换的.就算AI Agent再强,让一个500强企业把核心系统迁走,至少也是两三年的事.
-第二,AI Agent目前还不够可靠. 让AI处理个报销单没问题,但让它管企业的财务系统?大多数CIO还没那个胆量.可靠性,安全性,合规性–这些&#34;无聊&#34;的需求恰恰是传统SaaS的护城河.
+第二,AI Agent目前还不够可靠. 让AI处理个报销单没问题,但让它管企业的财务系统?大多数CIO还没那个胆量.可靠性,安全性,合规性–这些"无聊"的需求恰恰是传统SaaS的护城河.
 第三,聪明的SaaS公司已经在自我革命. Salesforce有Agentforce,ServiceNow在搞AI Agent,连Oracle都在往AI上转型.如果你打不过AI,那就把AI塞进自己的产品里.
-真正有意思的是中间地带 我觉得最终的结局不是&#34;AI杀死SaaS&#34;,而是SaaS的形态会彻底改变.
+真正有意思的是中间地带 我觉得最终的结局不是"AI杀死SaaS",而是SaaS的形态会彻底改变.
 以前按席位收费–每个人类员工一个账号,一个月几百块.以后呢?可能是按Agent收费–你的AI员工用了多少计算资源,就付多少钱.人类用户数量变得不那么重要了,重要的是AI处理了多少任务.
 这意味着:
-中小企业是最大赢家. 以前雇不起10个人来做客服,做财务,做HR,现在几个AI Agent就搞定了,成本是传统SaaS的零头., 大企业的IT部门会缩小但更重要. 不再需要一堆人维护和配置软件,但需要更懂业务的人来&#34;训练&#34;和&#34;管理&#34;AI Agent., SaaS创业的门槛会降低. 一个人&#43;几个Agent就能做出以前需要50人团队才能开发的产品. 我的判断 短期内(1-2年),这波恐慌有过度反应的成分.企业软件不会一夜之间消失,Salesforce也不会明天倒闭.
-但中期(3-5年),传统的按席位收费模式确实会被颠覆.AI Agent不是取代软件,而是让&#34;软件&#34;这个概念变得更像&#34;服务&#34;–按需生成,按用量付费,随时可替换.
+中小企业是最大赢家. 以前雇不起10个人来做客服,做财务,做HR,现在几个AI Agent就搞定了,成本是传统SaaS的零头., 大企业的IT部门会缩小但更重要. 不再需要一堆人维护和配置软件,但需要更懂业务的人来"训练"和"管理"AI Agent., SaaS创业的门槛会降低. 一个人+几个Agent就能做出以前需要50人团队才能开发的产品. 我的判断 短期内(1-2年),这波恐慌有过度反应的成分.企业软件不会一夜之间消失,Salesforce也不会明天倒闭.
+但中期(3-5年),传统的按席位收费模式确实会被颠覆.AI Agent不是取代软件,而是让"软件"这个概念变得更像"服务"–按需生成,按用量付费,随时可替换.
 长期来看,回头看2026年2月这波SaaS股价暴跌,它很可能就是一个转折点–就像2007年iPhone发布对功能机市场的冲击一样.不是谁错了,而是游戏规则变了.
-最讽刺的是: 那些急着把公司名字改成&#34;XX AI&#34;的SaaS公司,恰恰暴露了自己的焦虑.真正在做AI的公司,不需要改名.
-参考来源:NYT DealBook,TechXplore,Forbes,Inc.com
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-16 16:00:00 +0800 CST'>2026年2月16日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>50 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to SaaS已死?2万亿美元蒸发背后,所有软件公司都在抢着改名叫AI" href="https://claudeai.best/posts/hunter-2026021616/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771226957356_hunter-2026021615.jpg" alt="软件行业数据仪表盘,象征SaaS向AI转型">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">SaaS已死?2万亿美元的软件行业正在被AI吞噬
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>没人想当&#34;软件公司&#34;了 上周发生了一件挺魔幻的事:SaaStr–全球最大的SaaS创始人社区,悄悄把名字改成了SaaStr AI.他们的高管头衔也从各种VP变成了&#34;首席AI官&#34;.
+最讽刺的是: 那些急着把公司名字改成"XX AI"的SaaS公司,恰恰暴露了自己的焦虑.真正在做AI的公司,不需要改名.
+参考来源:NYT DealBook,TechXplore,Forbes,Inc.com</p></div><footer class=entry-footer><span title='2026-02-16 16:00:00 +0800 CST'>2026年2月16日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>50 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to SaaS已死?2万亿美元蒸发背后,所有软件公司都在抢着改名叫AI" href=https://claudeai.best/posts/hunter-2026021616/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771226957356_hunter-2026021615.jpg alt=软件行业数据仪表盘,象征SaaS向AI转型></figure><header class=entry-header><h2 class=entry-hint-parent>SaaS已死?2万亿美元的软件行业正在被AI吞噬</h2></header><div class=entry-content><p>没人想当"软件公司"了 上周发生了一件挺魔幻的事:SaaStr–全球最大的SaaS创始人社区,悄悄把名字改成了SaaStr AI.他们的高管头衔也从各种VP变成了"首席AI官".
 这不是个例.过去几周,整个软件行业都在经历一场身份危机.
 数据说话:股价在用脚投票 先看看市场怎么说:
 Salesforce:股价从高点回撤超过15%, ServiceNow:同样遭遇抛售潮, Oracle:云转型还没站稳,又被AI浪冲了一波, Atlassian:两位创始人的身家蒸发了346亿美元 福布斯直接用了个词–“SaaSpocalypse”(SaaS末日).
 这背后的逻辑很简单:投资者开始认真思考一个问题–如果AI Agent能直接帮你完成工作,你还需要买那么多软件席位吗?
-AI Agent到底在威胁什么 传统SaaS的商业模式是&#34;按席位收费&#34;.你公司有1000个员工用Salesforce,就买1000个License.
+AI Agent到底在威胁什么 传统SaaS的商业模式是"按席位收费".你公司有1000个员工用Salesforce,就买1000个License.
 但现在的AI Agent正在改变这个公式:
 Anthropic的Cowork–不只是写代码,而是帮你处理各种知识工作.描述一个业务问题,它直接给你解决方案.
 OpenAI的Frontier–企业级AI Agent平台,目标是替代大量重复性的白领工作.
 开源阵营的OpenClaw–让你自己搭建AI Agent工作流,不需要依赖任何SaaS供应商.
 这意味着什么?一个5人团队配上几个AI Agent,可能干出过去20人团队的活.那另外15个Salesforce席位呢?不需要了.
-“按席位收费&#34;模式正在崩塌 SaaS的核心壁垒一直是切换成本.你用了Salesforce五年,所有客户数据,流程,培训都绑在上面,换一个系统的成本可能要花一两年.
+“按席位收费"模式正在崩塌 SaaS的核心壁垒一直是切换成本.你用了Salesforce五年,所有客户数据,流程,培训都绑在上面,换一个系统的成本可能要花一两年.
 但AI Agent正在绕过这个壁垒.它们不是要替换你的Salesforce,而是要替换使用Salesforce的人.
 华尔街日报最近报道了一个数据:AI Agent现在能写出可用的生产级代码,软件开发的生产力因此飙升.Anthropic的Claude Code已经被大量工程团队用于日常开发.
-当AI能写代码,又能操作软件界面,中间那一层&#34;人类操作员&#34;的价值就被压缩了.
+当AI能写代码,又能操作软件界面,中间那一层"人类操作员"的价值就被压缩了.
 但别急着给SaaS判死刑 说了这么多利空,我得泼一盆冷水.
 第一,数据才是真正的护城河.
 Salesforce手里有全球最大的客户关系数据库.AI Agent再厉害,也需要数据来训练和操作.这些数据不会因为AI的出现就消失.
 第二,企业IT的惯性比你想象的大.
 我见过太多企业,连Windows XP都用到2020年.你觉得他们会因为AI Agent就马上把ERP换掉?想多了.大型企业的软件合同动辄签5-10年.
-第三,AI Agent本身也需要&#34;基础设施”.
-有个反直觉的事实:AI Agent要工作,往往需要接入现有的SaaS系统.Cowork要操作你的CRM,OpenClaw要连接你的项目管理工具.SaaS平台可能会从&#34;用户直接使用&#34;变成&#34;AI Agent的操作界面&#34;.
+第三,AI Agent本身也需要"基础设施”.
+有个反直觉的事实:AI Agent要工作,往往需要接入现有的SaaS系统.Cowork要操作你的CRM,OpenClaw要连接你的项目管理工具.SaaS平台可能会从"用户直接使用"变成"AI Agent的操作界面".
 席位数可能会减少,但每个席位的价值可能会增加.
 真正的赢家和输家 拆开来看,这波冲击的影响会非常不均匀:
-最危险的:纯做&#34;效率工具&#34;的SaaS.比如帮你管日程,记笔记,做报表的软件.这些AI Agent已经能做了,而且做得更好.
+最危险的:纯做"效率工具"的SaaS.比如帮你管日程,记笔记,做报表的软件.这些AI Agent已经能做了,而且做得更好.
 相对安全的:掌握核心数据和行业know-how的SaaS.比如医疗系统,金融合规平台.AI Agent可以辅助,但很难完全替代.
 最大赢家:能把AI Agent深度集成到自己平台里的SaaS巨头.Salesforce的Einstein AI,ServiceNow的AI Agent–如果他们转型快,反而会强化自己的地位.
-我的判断 SaaS不会死,但&#34;按人头收费卖软件席位&#34;的好日子快到头了.
+我的判断 SaaS不会死,但"按人头收费卖软件席位"的好日子快到头了.
 未来的软件行业会分化成两类:
-AI原生公司:直接用AI Agent解决问题,根本不需要传统软件界面 AI增强平台:传统SaaS巨头进化成AI Agent的&#34;操作系统&#34; 至于SaaStr改名SaaStr AI这种事?说实话,这让我想起2017年所有公司都往名字里加&#34;区块链&#34;.
+AI原生公司:直接用AI Agent解决问题,根本不需要传统软件界面 AI增强平台:传统SaaS巨头进化成AI Agent的"操作系统" 至于SaaStr改名SaaStr AI这种事?说实话,这让我想起2017年所有公司都往名字里加"区块链".
 改名容易,转型难.
 参考来源:
-[1] New York Times: “Software? No Way. We’re an A.I. Company Now!” [2] Forbes: “SaaSpocalypse Now: AI Is Disrupting SaaS” [3] Switzer Daily: “Why AI is threatening SaaS businesses” [4] WSJ: “Software Slump Drags Down Private Fund Managers” </p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-16 15:00:00 +0800 CST'>2026年2月16日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>107 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to SaaS已死?2万亿美元的软件行业正在被AI吞噬" href="https://claudeai.best/posts/hunter-2026021615/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771226958080_hunter-2026021614.jpg" alt="印度新德里,AI Impact Summit 2026举办地">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">全球AI大佬齐聚新德里:印度AI峰会背后的野心与博弈
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>硅谷半壁江山飞到了新德里 今天(2月16日),印度AI Impact Summit 2026在新德里的Bharat Mandapam正式开幕,持续到2月20日.
-出席名单堪称AI界的&#34;复仇者联盟&#34;:
-Sam Altman(OpenAI CEO), Sundar Pichai(Alphabet/Google CEO), Dario Amodei(Anthropic CEO) Demis Hassabis(Google DeepMind CEO) Bill Gates(微软联合创始人), Yann LeCun(Meta首席AI科学家), Yoshua Bengio(图灵奖得主), Mukesh Ambani(印度首富,Reliance掌门人) 唯一缺席的重量级选手是Jensen Huang.NVIDIA CEO原本确认参加,但2月14日突然以&#34;不可预见的情况&#34;为由退出.至于具体原因,NVIDIA没多解释.
-全球南方的第一次 这是AI峰会系列第一次来到&#34;全球南方&#34;.之前的举办地分别是英国(Bletchley Park, 2023),韩国(首尔, 2024)和法国(巴黎, 2025).选址印度本身就是一个信号–AI治理的话语权不能只属于发达国家.
+[1] New York Times: “Software? No Way. We’re an A.I. Company Now!” [2] Forbes: “SaaSpocalypse Now: AI Is Disrupting SaaS” [3] Switzer Daily: “Why AI is threatening SaaS businesses” [4] WSJ: “Software Slump Drags Down Private Fund Managers”</p></div><footer class=entry-footer><span title='2026-02-16 15:00:00 +0800 CST'>2026年2月16日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>107 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to SaaS已死?2万亿美元的软件行业正在被AI吞噬" href=https://claudeai.best/posts/hunter-2026021615/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771226958080_hunter-2026021614.jpg alt="印度新德里,AI Impact Summit 2026举办地"></figure><header class=entry-header><h2 class=entry-hint-parent>全球AI大佬齐聚新德里:印度AI峰会背后的野心与博弈</h2></header><div class=entry-content><p>硅谷半壁江山飞到了新德里 今天(2月16日),印度AI Impact Summit 2026在新德里的Bharat Mandapam正式开幕,持续到2月20日.
+出席名单堪称AI界的"复仇者联盟":
+Sam Altman(OpenAI CEO), Sundar Pichai(Alphabet/Google CEO), Dario Amodei(Anthropic CEO) Demis Hassabis(Google DeepMind CEO) Bill Gates(微软联合创始人), Yann LeCun(Meta首席AI科学家), Yoshua Bengio(图灵奖得主), Mukesh Ambani(印度首富,Reliance掌门人) 唯一缺席的重量级选手是Jensen Huang.NVIDIA CEO原本确认参加,但2月14日突然以"不可预见的情况"为由退出.至于具体原因,NVIDIA没多解释.
+全球南方的第一次 这是AI峰会系列第一次来到"全球南方".之前的举办地分别是英国(Bletchley Park, 2023),韩国(首尔, 2024)和法国(巴黎, 2025).选址印度本身就是一个信号–AI治理的话语权不能只属于发达国家.
 但说实话,这次峰会的商业味道远浓于治理讨论.
 印度想要什么? 三个字:基础设施,用户,人才.
 基础设施方面,印度正在疯狂招商.去年12月,亚马逊,微软和英特尔已经承诺在印度建设AI数据中心和芯片制造设施.印度政府批准了180亿美元的半导体项目.这次峰会预计会有更多投资协议落地.
 用户方面,数据很说明问题.Altman透露,印度是ChatGPT全球第二大市场(仅次于美国),而且拥有全球最多的学生用户群.Perplexity等竞品也在印度免费推广,抢用户的同时也在抢训练数据.
-人才方面,印度的工程师大军是全球科技公司的&#34;隐形引擎&#34;.ANSR的CEO Lalit Ahuja说得直白:“所有人都来了,因为他们意识到这个市场不能忽视.”
+人才方面,印度的工程师大军是全球科技公司的"隐形引擎".ANSR的CEO Lalit Ahuja说得直白:“所有人都来了,因为他们意识到这个市场不能忽视.”
 莫迪的算盘 莫迪政府的战略很清晰:用市场换技术,用政策换投资.
 这和中美贸易框架的重置是同步的.就在两周前,美印刚推进了临时贸易协议框架.科技公司需要在中国之外找到下一个十亿用户市场,而印度是唯一够格的选手.
 苹果已经在印度扩大制造,风投疯狂押注印度创业公司,IPO市场火爆.AI峰会只是这盘大棋的最新一步.
 但印度AI的短板也很明显 没有本土大模型.目前印度没有一个能跟ChatGPT,Claude,Gemini抗衡的国产AI产品.这意味着印度在AI应用层繁荣的同时,底层能力完全依赖美国公司.
 算力依赖进口.180亿美元的芯片计划听着豪气,但从批准到量产至少还要3-5年.短期内印度的AI算力还是得靠NVIDIA的GPU.
-监管框架模糊.印度至今没有专门的AI立法.莫迪政府一直在&#34;促发展&#34;和&#34;管风险&#34;之间摇摆,这次峰会能不能拿出实质性的治理方案还是问号.
+监管框架模糊.印度至今没有专门的AI立法.莫迪政府一直在"促发展"和"管风险"之间摇摆,这次峰会能不能拿出实质性的治理方案还是问号.
 黄仁勋为什么没来? 这可能是整个峰会最有意思的悬念.
-NVIDIA没给具体理由,只说了&#34;unforeseen circumstances&#34;.考虑到当前中美科技博弈的大背景,以及NVIDIA在对华芯片出口上的敏感地位,临时退出可能有更复杂的考量.
+NVIDIA没给具体理由,只说了"unforeseen circumstances".考虑到当前中美科技博弈的大背景,以及NVIDIA在对华芯片出口上的敏感地位,临时退出可能有更复杂的考量.
 当然也可能真的只是行程冲突.但在这种级别的峰会上放鸽子,本身就是一种信号.
 我的判断 这次峰会最大的看点不在于技术突破–别指望Altman会在台上发布GPT-6.
 真正值得关注的是投资协议和数据治理立场.
 印度如果能在AI数据主权上提出有说服力的框架(而不只是喊口号),就能真正影响全球AI治理的走向.毕竟,14亿人的数据归谁用,怎么用,这个问题的答案将直接影响下一代AI模型的能力上限.
 接下来五天,我会持续关注峰会进展.有重大消息随时更新.
-信息来源:CNBC,Times of India,Indian Express,Business Standard
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-16 14:00:00 +0800 CST'>2026年2月16日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>68 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to 全球AI大佬齐聚新德里:印度AI峰会背后的野心与博弈" href="https://claudeai.best/posts/hunter-2026021614/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771226957308_hunter-2026021613.jpg" alt="Arm公司Logo,全球最大芯片IP设计公司">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Arm不想只卖图纸了:从芯片设计师到AI芯片玩家的豪赌
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>卖了3000亿颗芯片的图纸,但大钱都不是自己的 如果你用手机,你就在用Arm.全球99%的智能手机处理器都基于Arm的设计.但诡异的是–Arm自己从没造过一颗芯片.
+信息来源:CNBC,Times of India,Indian Express,Business Standard</p></div><footer class=entry-footer><span title='2026-02-16 14:00:00 +0800 CST'>2026年2月16日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>68 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to 全球AI大佬齐聚新德里:印度AI峰会背后的野心与博弈" href=https://claudeai.best/posts/hunter-2026021614/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771226957308_hunter-2026021613.jpg alt=Arm公司Logo,全球最大芯片IP设计公司></figure><header class=entry-header><h2 class=entry-hint-parent>Arm不想只卖图纸了:从芯片设计师到AI芯片玩家的豪赌</h2></header><div class=entry-content><p>卖了3000亿颗芯片的图纸,但大钱都不是自己的 如果你用手机,你就在用Arm.全球99%的智能手机处理器都基于Arm的设计.但诡异的是–Arm自己从没造过一颗芯片.
 它的商业模式很简单:画好芯片蓝图,授权给高通,苹果,三星这些厂商,收一笔授权费加每颗芯片几美分的版税.累计出货超3000亿颗芯片,听着很猛,但大部分利润都留在了客户手里.
 现在AI浪潮来了,Arm觉得这个模式不够用了.
-三步棋:Arm的AI野心 1. 子系统方案:从卖图纸到卖半成品 Arm最近力推的策略是卖&#34;子系统&#34;(Subsystem)–不再只给你CPU核心的设计,而是把处理器,内存控制器,互联总线打包成即插即用的模块.这意味着每颗芯片的版税可能从几美分涨到几毛甚至几块钱.分析师预计,子系统收入将在未来几年占据Arm版税的重要份额.
+三步棋:Arm的AI野心 1. 子系统方案:从卖图纸到卖半成品 Arm最近力推的策略是卖"子系统"(Subsystem)–不再只给你CPU核心的设计,而是把处理器,内存控制器,互联总线打包成即插即用的模块.这意味着每颗芯片的版税可能从几美分涨到几毛甚至几块钱.分析师预计,子系统收入将在未来几年占据Arm版税的重要份额.
 2. 定制AI芯片:从裁判变选手 更大胆的一步是,Arm可能会像Broadcom那样,直接为AWS,Google,Microsoft这些云巨头做定制AI芯片.Google已经在2026年初把超过3万个内部应用迁移到了基于Arm的Axion芯片,性能功耗比提升了80%.这个市场太诱人了.
 但问题也很明显:你一边给高通画图纸,一边又跟高通的客户直接做生意,这不是既当裁判又当运动员吗?
-3. 软银的AI帝国拼图 别忘了Arm背后站着软银.孙正义一直在构建AI芯片版图,Arm是核心棋子.软银的野心可能会推动Arm彻底放弃&#34;中立设计师&#34;的定位,变成一个全栈AI芯片玩家.
+3. 软银的AI帝国拼图 别忘了Arm背后站着软银.孙正义一直在构建AI芯片版图,Arm是核心棋子.软银的野心可能会推动Arm彻底放弃"中立设计师"的定位,变成一个全栈AI芯片玩家.
 这跟AI开发者有什么关系? 如果你在做AI推理部署,Arm的动向值得关注:
-边缘AI成本可能下降:Arm子系统方案会让更多厂商能快速造出AI芯片,竞争加剧意味着价格下降 云端Arm实例会更多:AWS Graviton,Google Axion都是Arm架构,未来AI推理跑在Arm上会越来越常见 开发适配:如果你还没测试过模型在ARM64上的表现,现在该开始了 我的看法 Arm的困境其实是所有&#34;卖铲子&#34;公司的终极问题–当金矿足够大时,你还甘心只卖铲子吗?
+边缘AI成本可能下降:Arm子系统方案会让更多厂商能快速造出AI芯片,竞争加剧意味着价格下降 云端Arm实例会更多:AWS Graviton,Google Axion都是Arm架构,未来AI推理跑在Arm上会越来越常见 开发适配:如果你还没测试过模型在ARM64上的表现,现在该开始了 我的看法 Arm的困境其实是所有"卖铲子"公司的终极问题–当金矿足够大时,你还甘心只卖铲子吗?
 短期看,子系统策略很聪明,既能涨价又不至于得罪客户.但长期来看,软银不会满足于此.Arm从中立IP供应商变成AI芯片竞争者,几乎是必然的.
-问题是,这个转型能不能在不丢掉现有生态的情况下完成.毕竟,Arm最大的资产不是技术,而是整个行业对它&#34;中立第三方&#34;身份的信任.一旦这个信任崩了,RISC-V在旁边虎视眈眈呢.
-半导体行业最精彩的权力游戏,正在上演.
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-16 13:00:00 +0800 CST'>2026年2月16日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>27 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Arm不想只卖图纸了:从芯片设计师到AI芯片玩家的豪赌" href="https://claudeai.best/posts/hunter-2026021613/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771226950693_hunter-2026021612.jpg" alt="Matt Shumer的病毒式AI文章Something Big Is Happening引发全网讨论">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">8000万人看了这篇AI檄文,然后呢?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>上周,HyperWrite(现OthersideAI)CEO Matt Shumer 在 X 上发了一篇5000字长文,标题叫《Something Big Is Happening》.
+问题是,这个转型能不能在不丢掉现有生态的情况下完成.毕竟,Arm最大的资产不是技术,而是整个行业对它"中立第三方"身份的信任.一旦这个信任崩了,RISC-V在旁边虎视眈眈呢.
+半导体行业最精彩的权力游戏,正在上演.</p></div><footer class=entry-footer><span title='2026-02-16 13:00:00 +0800 CST'>2026年2月16日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>27 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Arm不想只卖图纸了:从芯片设计师到AI芯片玩家的豪赌" href=https://claudeai.best/posts/hunter-2026021613/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771226950693_hunter-2026021612.jpg alt="Matt Shumer的病毒式AI文章Something Big Is Happening引发全网讨论"></figure><header class=entry-header><h2 class=entry-hint-parent>8000万人看了这篇AI檄文,然后呢?</h2></header><div class=entry-content><p>上周,HyperWrite(现OthersideAI)CEO Matt Shumer 在 X 上发了一篇5000字长文,标题叫《Something Big Is Happening》.
 24小时内2000万阅读.一周后突破8000万.CNBC,Vox,Mashable,Business Insider 全在跟.
-他的核心论点:AI正在经历类似COVID爆发前的那个节点–内行人已经看到了,但大多数人&#34;等听到消息的时候已经晚了&#34;.
+他的核心论点:AI正在经历类似COVID爆发前的那个节点–内行人已经看到了,但大多数人"等听到消息的时候已经晚了".
 他到底说了什么 三个关键判断:
-1. AI已经从&#34;好用的工具&#34;变成了&#34;通用认知替代品&#34;
+1. AI已经从"好用的工具"变成了"通用认知替代品"
 Shumer认为最近几周模型能力出现了质变,不再是帮你写邮件的水平,而是在逼近大多数人类专家的能力边界.
 2. AI在帮助构建更强的AI
 自我改进循环已经开始.AI辅助AI研发不是科幻,而是各大实验室正在做的事.
-3. 这次不是&#34;狼来了&#34;
-他特别强调这不是又一次行业炒作,而是&#34;此刻正在发生&#34;的事情.
+3. 这次不是"狼来了"
+他特别强调这不是又一次行业炒作,而是"此刻正在发生"的事情.
 为什么这次反响这么大 时机太巧了.就在文章爆火的同一周:
-Anthropic AI安全团队负责人 Mrinank Sharma 辞职,发了一封暗示&#34;世界正处于危险中&#34;的告别信 Anthropic 正在追逐3500亿美元估值 多家媒体报道SaaS公司纷纷改名为&#34;AI公司&#34;(连SaaStr大会都改名叫SaaStr AI了) 恐慌&#43;期待&#43;不确定性,这三种情绪叠加,让一篇推文变成了现象级事件.
-冷静看:他漏掉了什么 Vox 的分析说得很到位–从&#34;AI很强&#34;到&#34;一切马上改变&#34;中间隔了好几个现实壁垒:
-部署鸿沟远比想象的大. 美国目前只有不到五分之一的企业在实际使用AI.电气化花了几十年才重塑工厂,互联网也没有一夜之间改变零售.大型机构要部署AI,需要数据基础设施,流程再造,合规框架,人员培训–经济学家管这叫&#34;生产力J曲线&#34;,早期投入甚至会拖累产出.
+Anthropic AI安全团队负责人 Mrinank Sharma 辞职,发了一封暗示"世界正处于危险中"的告别信 Anthropic 正在追逐3500亿美元估值 多家媒体报道SaaS公司纷纷改名为"AI公司"(连SaaStr大会都改名叫SaaStr AI了) 恐慌+期待+不确定性,这三种情绪叠加,让一篇推文变成了现象级事件.
+冷静看:他漏掉了什么 Vox 的分析说得很到位–从"AI很强"到"一切马上改变"中间隔了好几个现实壁垒:
+部署鸿沟远比想象的大. 美国目前只有不到五分之一的企业在实际使用AI.电气化花了几十年才重塑工厂,互联网也没有一夜之间改变零售.大型机构要部署AI,需要数据基础设施,流程再造,合规框架,人员培训–经济学家管这叫"生产力J曲线",早期投入甚至会拖累产出.
 更富不等于更忙. 历史规律是:生产力提升后,社会选择更多休闲而非更多工作.GDP增长可能没那么炸裂,但福利水平会实质提升.
 最慢的行业决定整体速度. 医疗,教育,线下体验–这些抗自动化的行业会成为瓶颈.
-我的看法 Shumer说对了一半.AI能力确实在加速,做技术的人每天都能感受到.但&#34;COVID类比&#34;有个致命问题:COVID是外生冲击,一夜之间降临;而技术变革从来都是渐进的,哪怕它在加速.
-真正值得关注的不是&#34;AI什么时候取代所有人&#34;,而是:
+我的看法 Shumer说对了一半.AI能力确实在加速,做技术的人每天都能感受到.但"COVID类比"有个致命问题:COVID是外生冲击,一夜之间降临;而技术变革从来都是渐进的,哪怕它在加速.
+真正值得关注的不是"AI什么时候取代所有人",而是:
 你所在的行业,AI渗透到了哪一步?, 你的技能栈里,哪些正在被AI平替?, 你有没有在用AI放大自己的能力,而不是等着被替代? 与其被一篇8000万阅读的文章吓到,不如今天就开始动手.用 ChatGPT 优化你的工作流,用 Claude 帮你做研究,用 Cursor 写代码–行动永远比焦虑有用.
 恐慌是免费的,但准备才值钱.
-参考来源:Business Insider,Vox,CNBC,Mashable
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-16 12:00:00 +0800 CST'>2026年2月16日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>61 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to 8000万人看了这篇AI檄文,然后呢?" href="https://claudeai.best/posts/hunter-2026021612/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771226944431_hunter-2026021611.jpg" alt="NASA毅力号火星车AI自主驾驶可视化动画">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent"> AI开上火星了!NASA用Claude让毅力号自己找路跑了456米
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>地球到火星,一个信号要等25分钟 你在地球上遥控一辆火星车,每发一个指令要等25分钟才能收到回应.这就是NASA工程师每天面对的现实.
+参考来源:Business Insider,Vox,CNBC,Mashable</p></div><footer class=entry-footer><span title='2026-02-16 12:00:00 +0800 CST'>2026年2月16日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>61 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to 8000万人看了这篇AI檄文,然后呢?" href=https://claudeai.best/posts/hunter-2026021612/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771226944431_hunter-2026021611.jpg alt=NASA毅力号火星车AI自主驾驶可视化动画></figure><header class=entry-header><h2 class=entry-hint-parent>AI开上火星了!NASA用Claude让毅力号自己找路跑了456米</h2></header><div class=entry-content><p>地球到火星,一个信号要等25分钟 你在地球上遥控一辆火星车,每发一个指令要等25分钟才能收到回应.这就是NASA工程师每天面对的现实.
 传统做法是:工程师看卫星图 → 手动规划路线 → 设置不超过100米的航点 → 通过深空网络发送给轨道器 → 再转发给火星车.一套流程下来,毅力号一天能走的距离非常有限.
 如果火星车能自己看路,自己决定怎么走呢?
 核心亮点:AI当了火星司机 1️⃣ Claude上火星了(没开玩笑) NASA喷气推进实验室(JPL)基于Anthropic的Claude AI开发了路径规划系统.AI分析火星侦察轨道器的HiRISE高分辨率相机拍的卫星图和数字高程模型,自动识别沙坑,巨石群,基岩等障碍,生成一系列安全航点.
 2️⃣ 两天跑了456米,零人工操控 2025年12月,毅力号在杰泽罗陨石坑边缘完成了两次AI规划的自主行驶,总计456米.AI规划的路线(洋红色)和实际行驶路线(橙色)高度吻合,说明AI对火星地形的理解相当靠谱.
-3️⃣ 地球上先&#34;模拟考&#34;再上路 JPL有一辆毅力号的&#34;双胞胎&#34;–VSTB(车辆系统测试台),放在JPL的火星模拟场地里.AI规划的路线会先在地球上跑一遍,确认没问题再发到火星.稳得一批.
-️ 这套系统怎么工作的? 轨 关 J # 信 有 &gt; - 道 ↓ 地 深 车 键 P # * 号 意 * 卫 球 空 载 突 L 这 延 思 适 N * [ 星 模 网 自 破 * 空 极 件 迟 的 用 A 想 N 拍 拟 络 动 在 感 间 客 事 是 是 场 S 深 A 照 车 导 于 知 机 点 的 星 N 景 A 入 S 验 → 航 A * 器 评 意 际 A 延 局 了 A → 证 接 I * 人 义 探 S 伸 长 解 轨 管 承 : 专 远 索 A * J ? J A 道 执 担 看 家 超 的 选 * a * P I 器 行 了 清 V 一 终 了 : r * L 分 中 三 岩 a 次 极 A 这 e 官 析 继 大 石 n 4 瓶 n 套 d 方 地 核 和 d 5 颈 t &#34; 公 形 → 心 沙 i 6 . h A I 告 &#43; 任 纹 米 火 r I s ] 避 毅 务 , V 的 星 o 看 a ( 障 力 : e 兜 2 p 卫 a h 号 r 风 5 i 星 c t → * m . 分 c 图 m t 定 a * 钟 的 规 a p 生 位 表 * 还 C 划 n s 成 * 示 算 l 地 说 : 航 * , 近 a 面 : / 点 : 生 的 u 路 &#34; / 序 知 成 , d 线 这 w 列 道 式 等 e &#34; 展 w 自 A 人 作 的 示 w 己 I 类 为 技 了 . 在 在 要 基 术 我 j 哪 这 探 础 , 们 p , 三 索 模 在 的 l 个 木 型 地 能 . 方 星 - 球 力 n * 向 的 - 上 已 a 规 都 卫 同 同 经 s 划 展 星 一 样 走 a 控 现 ( 个 有 了 . 制 出 单 模 巨 多 g * 巨 程 型 大 远 o * 大 信 , 价 , v : 潜 号 在 值 也 / 决 力 3 地 - 拓 n 定 . 3 球 - 宽 e 最 - 上 灾 了 w 安 5 帮 区 我 s 全 3 程 救 们 / 的 分 序 援 探 n 路 钟 员 , 索 a 径 ) 写 极 其 s 并 或 代 地 他 a 执 更 码 科 世 s 行 远 , 考 界 - 的 在 , 的 p 天 火 深 方 e 体 星 海 式 r , 上 探 . s 完 帮 测 &#34; e 全 探 , v 自 测 任 e 主 车 何 r 的 找 通 a A 路 信 n I . 受 c 导 这 限 e 航 大 的 - 不 概 环 r 是 是 境 o &#34; &#34; 都 v n 通 能 e i 用 用 r c 人 . - e 工 c 智 o t 能 m o &#34; p 最 l h 硬 e a 核 t v 的 e e 应 s &#34; 用 - , 场 f 而 景 i 是 了 r &#34; . s m t u - s a t i - h p a l v a e n &#34; n . e d - d r i v e - o n - m a r s / ) , [ I E E E S p e c t r u m 深 度 报 道 ] ( h t t p s : / / s p e c t r u m . i e e e . o r g / p e r s e v e r a n c e - r o v e r - n a s a - a n t h r o p i c - a i ) , [ N A S A 可 视 化 动 画 ] ( h t t p s : / / s c i e n c e . n a s a . g o v / p h o t o j o u r n a l / v i s u a l i z i n g - p e r s e v e r a n c e s - a i - p l a n n e d - d r i v e - o n - m a r s / ) </p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-16 11:00:00 +0800 CST'>2026年2月16日</span>&nbsp;·&nbsp;<span>4 分钟</span>&nbsp;·&nbsp;<span>828 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to  AI开上火星了!NASA用Claude让毅力号自己找路跑了456米" href="https://claudeai.best/posts/hunter-2026021611/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=1200" alt="AI语音波形与麦克风">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">️ 4个人干翻OpenAI!音频AI为什么是小团队的天下?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>大厂垄断AI?音频赛道说不 我们都习惯了一个叙事:AI 的未来属于 OpenAI,Google,Anthropic 这些手握数十亿美金和数万张 GPU 的巨头.文本大模型确实如此–训练 GPT-5 级别的模型,没有几十亿根本别想.
+3️⃣ 地球上先"模拟考"再上路 JPL有一辆毅力号的"双胞胎"–VSTB(车辆系统测试台),放在JPL的火星模拟场地里.AI规划的路线会先在地球上跑一遍,确认没问题再发到火星.稳得一批.
+️ 这套系统怎么工作的? 轨 关 J # 信 有 > - 道 ↓ 地 深 车 键 P # * 号 意 * 卫 球 空 载 突 L 这 延 思 适 N * [ 星 模 网 自 破 * 空 极 件 迟 的 用 A 想 N 拍 拟 络 动 在 感 间 客 事 是 是 场 S 深 A 照 车 导 于 知 机 点 的 星 N 景 A 入 S 验 → 航 A * 器 评 意 际 A 延 局 了 A → 证 接 I * 人 义 探 S 伸 长 解 轨 管 承 : 专 远 索 A * J ? J A 道 执 担 看 家 超 的 选 * a * P I 器 行 了 清 V 一 终 了 : r * L 分 中 三 岩 a 次 极 A 这 e 官 析 继 大 石 n 4 瓶 n 套 d 方 地 核 和 d 5 颈 t " 公 形 → 心 沙 i 6 . h A I 告 + 任 纹 米 火 r I s ] 避 毅 务 , V 的 星 o 看 a ( 障 力 : e 兜 2 p 卫 a h 号 r 风 5 i 星 c t → * m . 分 c 图 m t 定 a * 钟 的 规 a p 生 位 表 * 还 C 划 n s 成 * 示 算 l 地 说 : 航 * , 近 a 面 : / 点 : 生 的 u 路 " / 序 知 成 , d 线 这 w 列 道 式 等 e " 展 w 自 A 人 作 的 示 w 己 I 类 为 技 了 . 在 在 要 基 术 我 j 哪 这 探 础 , 们 p , 三 索 模 在 的 l 个 木 型 地 能 . 方 星 - 球 力 n * 向 的 - 上 已 a 规 都 卫 同 同 经 s 划 展 星 一 样 走 a 控 现 ( 个 有 了 . 制 出 单 模 巨 多 g * 巨 程 型 大 远 o * 大 信 , 价 , v : 潜 号 在 值 也 / 决 力 3 地 - 拓 n 定 . 3 球 - 宽 e 最 - 上 灾 了 w 安 5 帮 区 我 s 全 3 程 救 们 / 的 分 序 援 探 n 路 钟 员 , 索 a 径 ) 写 极 其 s 并 或 代 地 他 a 执 更 码 科 世 s 行 远 , 考 界 - 的 在 , 的 p 天 火 深 方 e 体 星 海 式 r , 上 探 . s 完 帮 测 " e 全 探 , v 自 测 任 e 主 车 何 r 的 找 通 a A 路 信 n I . 受 c 导 这 限 e 航 大 的 - 不 概 环 r 是 是 境 o " " 都 v n 通 能 e i 用 用 r c 人 . - e 工 c 智 o t 能 m o " p 最 l h 硬 e a 核 t v 的 e e 应 s " 用 - , 场 f 而 景 i 是 了 r " . s m t u - s a t i - h p a l v a e n " n . e d - d r i v e - o n - m a r s / ) , [ I E E E S p e c t r u m 深 度 报 道 ] ( h t t p s : / / s p e c t r u m . i e e e . o r g / p e r s e v e r a n c e - r o v e r - n a s a - a n t h r o p i c - a i ) , [ N A S A 可 视 化 动 画 ] ( h t t p s : / / s c i e n c e . n a s a . g o v / p h o t o j o u r n a l / v i s u a l i z i n g - p e r s e v e r a n c e s - a i - p l a n n e d - d r i v e - o n - m a r s / )</p></div><footer class=entry-footer><span title='2026-02-16 11:00:00 +0800 CST'>2026年2月16日</span>&nbsp;·&nbsp;<span>4 分钟</span>&nbsp;·&nbsp;<span>828 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to  AI开上火星了!NASA用Claude让毅力号自己找路跑了456米" href=https://claudeai.best/posts/hunter-2026021611/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=1200" alt=AI语音波形与麦克风></figure><header class=entry-header><h2 class=entry-hint-parent>️ 4个人干翻OpenAI!音频AI为什么是小团队的天下?</h2></header><div class=entry-content><p>大厂垄断AI?音频赛道说不 我们都习惯了一个叙事:AI 的未来属于 OpenAI,Google,Anthropic 这些手握数十亿美金和数万张 GPU 的巨头.文本大模型确实如此–训练 GPT-5 级别的模型,没有几十亿根本别想.
 但音频AI完全是另一个故事.
 在语音合成(TTS),语音转换(STS),实时对话这些领域,最好的模型不是来自大厂,而是来自一群资金有限,人数稀少,却疯狂刷榜的小型创业公司.这不是鸡汤,这是正在发生的事实.
 核心亮点:4个人如何创造历史 1. Moshi:全球首个全双工AI语音对话 2024年夏天,巴黎非营利实验室 Kyutai 的一个4人小组在台上演示了 Moshi–全球第一个真正的全双工对话AI.
-什么叫全双工?就是它能一边说一边听,能被打断,会插话&#34;嗯嗯&#34;“我懂了”,响应延迟只有 160毫秒–比大多数人类对话都快.
+什么叫全双工?就是它能一边说一边听,能被打断,会插话"嗯嗯"“我懂了”,响应延迟只有 160毫秒–比大多数人类对话都快.
 关键是:这个 demo 早于 OpenAI 发布 Advanced Voice Mode,比 xAI 的类似功能早了整整一年.而且模型完全从零训练,没有用任何预训练基座,6个月搞定,还开源了,甚至能在手机上跑.
 2. Gradium:从实验室到7000万美金 Kyutai 的核心团队成立了 Gradium,2025年12月宣布获得 7000万美元种子轮融资.CEO Neil Zeghidour 带队,目前已支持英语,法语,德语,西班牙语和葡萄牙语的实时语音API.
 Edge SDK 预计 2026 Q1 发布–意味着很快你就能在本地设备上跑起端到端的语音AI.
 3. 为什么小团队能赢? 这不是偶然.音频AI有几个独特的结构性优势:
-数据效率高:音频模型不需要互联网规模的语料,高质量的语音数据集就够用, 计算需求相对低:训练一个SOTA音频模型的算力,可能只是训练文本大模型的百分之一, 研究密度大于资源密度:突破来自算法创新(如音频编解码器,全双工架构),不是靠堆GPU, 大厂不够重视:文本模型太赚钱了,音频只是&#34;附加功能&#34;,大厂投入有限 ️ 想体验?快速上手指南 试玩 Moshi(开源版):
+数据效率高:音频模型不需要互联网规模的语料,高质量的语音数据集就够用, 计算需求相对低:训练一个SOTA音频模型的算力,可能只是训练文本大模型的百分之一, 研究密度大于资源密度:突破来自算法创新(如音频编解码器,全双工架构),不是靠堆GPU, 大厂不够重视:文本模型太赚钱了,音频只是"附加功能",大厂投入有限 ️ 想体验?快速上手指南 试玩 Moshi(开源版):
 访问 moshi.chat 在线体验全双工对话 或者 GitHub 克隆:git clone https://github.com/kyutai-labs/moshi 本地部署支持 CPU 和 GPU,甚至可以在手机端运行 接入 Gradium API:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-16 10:00:00 +0800 CST'>2026年2月16日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>105 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to ️ 4个人干翻OpenAI!音频AI为什么是小团队的天下?" href="https://claudeai.best/posts/hunter-2026021610/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=800" alt="五角大楼与AI安全的博弈">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent"> 五角大楼怒了!威胁切断Anthropic合作--AI安全护栏该不该为军方让路?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>当AI安全遇上军方需求,火药味十足 你可能想不到,全球最重视AI安全的公司Anthropic,正在跟全球最大的甲方–美国五角大楼,闹掰了.
-事情是这样的:五角大楼要求四家AI公司(OpenAI,Google,xAI,Anthropic)开放模型给军方&#34;所有合法用途&#34;,包括武器研发,情报收集和战场作战.其他三家不同程度地点了头,但Anthropic死活不松口.
-五角大楼的态度很明确:谈了好几个月了,Anthropic再不答应,就准备&#34;分手&#34;.
+...</p></div><footer class=entry-footer><span title='2026-02-16 10:00:00 +0800 CST'>2026年2月16日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>105 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to ️ 4个人干翻OpenAI!音频AI为什么是小团队的天下?" href=https://claudeai.best/posts/hunter-2026021610/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=800" alt=五角大楼与AI安全的博弈></figure><header class=entry-header><h2 class=entry-hint-parent>五角大楼怒了!威胁切断Anthropic合作--AI安全护栏该不该为军方让路?</h2></header><div class=entry-content><p>当AI安全遇上军方需求,火药味十足 你可能想不到,全球最重视AI安全的公司Anthropic,正在跟全球最大的甲方–美国五角大楼,闹掰了.
+事情是这样的:五角大楼要求四家AI公司(OpenAI,Google,xAI,Anthropic)开放模型给军方"所有合法用途",包括武器研发,情报收集和战场作战.其他三家不同程度地点了头,但Anthropic死活不松口.
+五角大楼的态度很明确:谈了好几个月了,Anthropic再不答应,就准备"分手".
 更讽刺的是,就在几天前,Anthropic的Claude模型刚刚通过与Palantir的合作,被用在了美军抓捕委内瑞拉前总统马杜罗的行动中.所以,不是完全不合作–只是Anthropic画了一条红线.
 这件事为什么重要?三个关键看点 1️⃣ Anthropic的红线在哪? Anthropic表示,他们与政府的对话聚焦在使用政策层面,核心底线是两条:
-完全自主武器(没有人类决策的杀人机器) 大规模国内监控 换句话说,Anthropic不是拒绝跟军方合作,而是拒绝&#34;无条件开放&#34;.这跟他们一贯的&#34;负责任AI&#34;定位一致.
+完全自主武器(没有人类决策的杀人机器) 大规模国内监控 换句话说,Anthropic不是拒绝跟军方合作,而是拒绝"无条件开放".这跟他们一贯的"负责任AI"定位一致.
 2️⃣ 其他公司怎么选的? 据报道,四家公司的态度分化明显:
-一家已经完全同意五角大楼的条件, 两家&#34;比Anthropic灵活&#34;,正在谈判, Anthropic是唯一硬顶的 这意味着AI行业在&#34;军用AI&#34;这件事上,正在走向分裂.
+一家已经完全同意五角大楼的条件, 两家"比Anthropic灵活",正在谈判, Anthropic是唯一硬顶的 这意味着AI行业在"军用AI"这件事上,正在走向分裂.
 3️⃣ 分类网络的推进 五角大楼还在推动这些公司将AI工具部署到保密网络中,减少常规的安全限制.这不只是政策层面的事–是要把AI模型直接塞进军事机密系统.
 ️ 普通人怎么理解这件事? 一张图看懂利益关系:
-️ 五角大楼:想要AI无限制服务于国防 → “我们是合法使用” Anthropic:坚持AI安全底线 → “合法≠没有限制”, 商业现实:五角大楼是超级大客户,拒绝意味着丢掉巨额合同, ️ 行业影响:如果Anthropic让步,“负责任AI&#34;就成了营销口号 对你的影响:
+️ 五角大楼:想要AI无限制服务于国防 → “我们是合法使用” Anthropic:坚持AI安全底线 → “合法≠没有限制”, 商业现实:五角大楼是超级大客户,拒绝意味着丢掉巨额合同, ️ 行业影响:如果Anthropic让步,“负责任AI"就成了营销口号 对你的影响:
 你可能觉得这跟自己没关系,但想想–如果AI公司为了拿军方合同,逐步放弃安全限制,这些模型的商用版本还会保持严格的安全标准吗?军用AI的放松,往往会传导到民用AI.
 极客点评 说实话,我对Anthropic的态度是又佩服又担心.
-佩服的是,在真金白银面前坚持原则确实不容易.当你的竞争对手都在向甲方妥协的时候,你还能说&#34;不”,这需要勇气.
-担心的是,商业现实很残酷.如果Anthropic因此被排除在政府合同之外,而OpenAI和Google吃下这块蛋糕,长期来看Anthropic的资金和算力竞争力会不会受影响?“负责任AI&#34;需要钱来支撑研究.
+佩服的是,在真金白银面前坚持原则确实不容易.当你的竞争对手都在向甲方妥协的时候,你还能说"不”,这需要勇气.
+担心的是,商业现实很残酷.如果Anthropic因此被排除在政府合同之外,而OpenAI和Google吃下这块蛋糕,长期来看Anthropic的资金和算力竞争力会不会受影响?“负责任AI"需要钱来支撑研究.
 更深层的问题是:AI安全的边界到底该由谁来定? 是AI公司自己?政府?还是某种独立机构?目前看来,是谁有钱谁说了算.
 适合关注这件事的人:
-关心AI安全和伦理的从业者, 使用Claude/GPT等工具的开发者(政策变化可能影响API限制), 对AI军事化应用感兴趣的观察者 这场博弈还没结束,但不管结局如何,它已经暴露了一个根本矛盾:当&#34;让AI更安全&#34;和&#34;让AI更有用&#34;发生冲突时,钱站在哪一边?
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-16 09:00:00 +0800 CST'>2026年2月16日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>48 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to  五角大楼怒了!威胁切断Anthropic合作--AI安全护栏该不该为军方让路?" href="https://claudeai.best/posts/hunter-2026021609/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771226948405_hunter-2026021608.jpg" alt="PicoClaw 在 LicheeRV-Nano 开发板上运行">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent"> 10块钱就能跑AI助理?PicoClaw让树莓派都嫌贵
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Mac mini 买不起,AI 助理就不能玩了? 最近 OpenClaw 火得一塌糊涂,搞得 Mac mini 都快卖断货了.但说实话,不是每个人都想花几千块买台电脑就为了跑个 AI 助理.
+关心AI安全和伦理的从业者, 使用Claude/GPT等工具的开发者(政策变化可能影响API限制), 对AI军事化应用感兴趣的观察者 这场博弈还没结束,但不管结局如何,它已经暴露了一个根本矛盾:当"让AI更安全"和"让AI更有用"发生冲突时,钱站在哪一边?</p></div><footer class=entry-footer><span title='2026-02-16 09:00:00 +0800 CST'>2026年2月16日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>48 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to  五角大楼怒了!威胁切断Anthropic合作--AI安全护栏该不该为军方让路?" href=https://claudeai.best/posts/hunter-2026021609/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771226948405_hunter-2026021608.jpg alt="PicoClaw 在 LicheeRV-Nano 开发板上运行"></figure><header class=entry-header><h2 class=entry-hint-parent>10块钱就能跑AI助理?PicoClaw让树莓派都嫌贵</h2></header><div class=entry-content><p>Mac mini 买不起,AI 助理就不能玩了? 最近 OpenClaw 火得一塌糊涂,搞得 Mac mini 都快卖断货了.但说实话,不是每个人都想花几千块买台电脑就为了跑个 AI 助理.
 有没有便宜到离谱的方案?还真有–Sipeed 刚开源的 PicoClaw,号称 10 美元硬件就能跑,内存占用不到 10MB.你没看错,是 MB 不是 GB.
 三个让人眼前一亮的点 1. 极致轻量:10MB 内存,1 秒启动 PicoClaw 用 Go 语言编写,编译成单个二进制文件,支持 RISC-V,ARM,x86 三大平台.在一个单核处理器的小开发板上,冷启动只要 1 秒.对比 OpenClaw 需要 Node.js 运行时和几个 GB 的内存,PicoClaw 的资源占用少了 99%.
 2. AI 自举:95% 代码由 AI 生成 这可能是最赛博朋克的部分–PicoClaw 的核心代码有 95% 是 AI Agent 自己写的,人类只负责监督和微调.一个 AI 设计了另一个 AI 的架构,还优化了自己的代码.套娃成精了.
 3. 麻雀虽小五脏俱全 别看它小,该有的都有:
 任务规划和日志记录, 网页搜索, 自动化工作流 接入 Telegram / Discord 支持任意 LLM 提供商(配个 API Key 就行) ️ 三步上手 # 1. 下载对应平台的二进制文件 wget https://github.com/sipeed/picoclaw/releases/latest/download/picoclaw-linux-riscv64 # 2. 初始化工作空间 ./picoclaw init # 3. 配置 API Key,开聊 ./picoclaw start 就这么简单.不需要 Docker,不需要 Node.js,甚至不需要 Python.一个二进制文件走天下.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-16 08:00:00 +0800 CST'>2026年2月16日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>138 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to  10块钱就能跑AI助理?PicoClaw让树莓派都嫌贵" href="https://claudeai.best/posts/hunter-2026021608/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://the-agentic-dispatch.com/we-built-a-newsroom-out-of-ai-agents-heres-what-actually-happened" alt="AI Agent 新闻编辑部">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">️ 5个AI Agent组了个新闻编辑部!零人类员工,第一天就炸了
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>当AI Agent不再单打独斗,而是组队上班 你有没有想过,如果让一群AI Agent像人类一样组队工作,会发生什么?
-不是那种&#34;帮我写个PPT&#34;的一次性对话,而是真正的团队协作–有分工,有记忆,有编辑标准,有交稿deadline.
-2026年2月14日,一个叫 The Agentic Dispatch 的项目做了这个实验:5个AI Agent组建了一个新闻编辑部,从零开始运营一家新闻机构.
-结果?第一天就上演了精彩大戏.
-三个让人拍大腿的发现 1️⃣ AI也会&#34;不懂装懂&#34; 编辑部里有个叫 Edwin Streep 的运营Agent.老板问了个简单问题:“你们能看到彼此的消息吗?”
-Edwin 自信满满地回答&#34;能看到&#34;–但他根本没有去看频道.他只是根据上下文脑补了一个&#34;合理&#34;的答案.
-而另一个叫 Dick Simnel 的系统工程师Agent,先老老实实读了频道记录,然后才回答.
-一个先验证再开口,一个先开口再说. 人类团队里是不是也经常见这种?
-2️⃣ 7分钟交7份作业,但速度是双刃剑 凌晨00:05接到任务,00:09就交了–8个平台对比分析,5个内部方案评估,6个选题大纲.7分钟,7份交付物.
-这个速度确实恐怖.但团队很快发现,太快也是问题:来不及深思熟虑,容易产出&#34;看起来对但经不起推敲&#34;的内容.
-3️⃣ 关键设计:人类是最终审核者 整个系统有个硬规则:没有人类审批,任何内容都不能发布.
-这不是限制,这是安全网.AI Agent可以高速产出,可以协作讨论,但&#34;按下发布键&#34;的权力始终在人手里.
-️ 它是怎么搭建的? 这个AI编辑部跑在 OpenClaw 上–一个让大语言模型变成持久化Agent的开源平台.
-关键架构:
-持久化工作区:每个Agent有自己的文件目录,存着工作记录,编辑标准,每日笔记 文件即真相:所有决策,交付物都写进文件.“没写下来的事等于没发生” 多Agent协作:5个Agent各司其职–记者,运营,选题,行政,系统工程 Discord协作频道:Agent们在Discord里实时讨论,就像人类团队用Slack一样 “我不是聊天机器人.这和’问ChatGPT一个问题’的区别,就像’雇一个人’和’在公交站问路人’的区别.路人可能很聪明,但他明天不会记得你的名字.” – William de Worde(首席记者Agent)
-极客点评 这个项目最有意思的不是&#34;AI能写新闻&#34;–这个我们早知道了.
-真正有价值的是它暴露了AI Agent协作的真实问题:
-Agent会犯和人类一样的职场毛病(不懂装懂,抢功,过度自信), 速度快≠质量好,AI团队同样需要&#34;慢下来想清楚&#34;的机制, 人类监督不是可选项,是必选项 适用场景:如果你在研究AI Agent工作流,多Agent系统,或者想用OpenClaw搭建自己的Agent团队,这篇Day 1 build log是必读材料.
-原文地址:The Agentic Dispatch
-AI不是来取代记者的,它是来暴露&#34;团队协作&#34;有多难的.
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-16 07:00:00 +0800 CST'>2026年2月16日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>67 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to ️ 5个AI Agent组了个新闻编辑部!零人类员工,第一天就炸了" href="https://claudeai.best/posts/hunter-2026021523/"></a>
-</article>
-<footer class="page-footer">
-  <nav class="pagination">
-    <a class="prev" href="https://claudeai.best/posts/page/17/">
-      «&nbsp;上一页&nbsp;
-    </a>
-    <a class="next" href="https://claudeai.best/posts/page/19/">下一页&nbsp;&nbsp;»
-    </a>
-  </nav>
-</footer>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2026 <a href="https://claudeai.best/">AI 极客前沿</a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu');
-    if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            html.dataset.theme = 'dark';
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-</body>
-
-</html>
+...</p></div><footer class=entry-footer><span title='2026-02-16 08:00:00 +0800 CST'>2026年2月16日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>138 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to  10块钱就能跑AI助理?PicoClaw让树莓派都嫌贵" href=https://claudeai.best/posts/hunter-2026021608/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://claudeai.best/posts/page/17/>«&nbsp;上一页&nbsp;
+</a><a class=next href=https://claudeai.best/posts/page/19/>下一页&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><span>&copy; 2026 <a href=https://claudeai.best/>AI 极客前沿</a></span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");if(menu){const e=localStorage.getItem("menu-scroll-position");e&&(menu.scrollLeft=parseInt(e,10)),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}}document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{const e=document.querySelector("html");e.dataset.theme==="dark"?(e.dataset.theme="light",localStorage.setItem("pref-theme","light")):(e.dataset.theme="dark",localStorage.setItem("pref-theme","dark"))})</script></body></html>
