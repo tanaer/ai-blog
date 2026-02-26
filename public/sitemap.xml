@@ -197,6 +197,16 @@
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
+    <loc>https://claudeai.best/tags/perplexity/</loc>
+    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/posts/hunter-2026022622/</loc>
+    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
     <loc>https://claudeai.best/tags/physical-ai/</loc>
     <lastmod>2026-02-26T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -252,6 +262,11 @@
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
+    <loc>https://claudeai.best/tags/%E5%A4%9A%E6%A8%A1%E5%9E%8B/</loc>
+    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
     <loc>https://claudeai.best/tags/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2026-02-26T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -272,7 +287,17 @@
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
+    <loc>https://claudeai.best/tags/%E6%95%B0%E5%AD%97%E5%B7%A5%E4%BD%9C%E8%80%85/</loc>
+    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
     <loc>https://claudeai.best/tags/%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF/</loc>
+    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/</loc>
     <lastmod>2026-02-26T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -482,11 +507,6 @@
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
-    <loc>https://claudeai.best/tags/%E5%A4%9A%E6%A8%A1%E5%9E%8B/</loc>
-    <lastmod>2026-02-25T22:08:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url><url>
     <loc>https://claudeai.best/tags/%E6%B3%95%E5%BE%8B/</loc>
     <lastmod>2026-02-25T22:08:00+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -608,11 +628,6 @@
     <priority>0.8</priority>
   </url><url>
     <loc>https://claudeai.best/categories/ai-%E8%B6%8B%E5%8A%BF/</loc>
-    <lastmod>2026-02-25T17:05:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>https://claudeai.best/tags/perplexity/</loc>
     <lastmod>2026-02-25T17:05:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
