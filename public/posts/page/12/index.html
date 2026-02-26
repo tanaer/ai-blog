@@ -176,27 +176,6 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771513085763_cover.jpg" alt="AI 心理治疗 - OpenGnothia">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">OpenGnothia:开源 AI 心理治疗伴侣,你的隐私自己做主
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>心理健康 AI 应用大多是闭源的,数据要上传到别人的服务器.
-OpenGnothia 不一样:开源,本地存储,BYOK.你的隐私你自己做主.
-名字来源 “Gnôthi Seautón”(Γνῶθι Σεαυτόν)–德尔斐神谕上的铭文:认识你自己.
-核心功能 AI 治疗会话 实时流式响应, 会话计时器, 自动总结:识别主题,防御机制,洞察,家庭作业建议 日记 每日记录, 情绪标签, 可选 AI 分析,发现模式 梦境分析 记录梦境, AI 辅助解读, 可搜索的梦境日记 情绪追踪 每日心情,能量,睡眠质量, 日历视图, 可视化情绪趋势 呼吸练习 多种呼吸模式 管理压力和焦虑 治疗计划 结构化自我探索 渐进式练习和反思 6 种疗法流派 精神分析, 创始人=弗洛伊德, 焦点=潜意识,过去经历,关系模式 CBT, 创始人=Aaron Beck, 焦点=识别和改变思维模式 意义疗法, 创始人=Viktor Frankl, 焦点=在苦难中寻找意义 ACT, 创始人=Steven Hayes, 焦点=心理灵活性,价值观驱动 图式治疗, 创始人=Jeffrey Young, 焦点=识别早期适应不良图式 斯多葛主义, 创始人=马可·奥勒留, 焦点=内心平静,美德,理性
-每种流派塑造 AI 如何倾听,回应和引导你的会话.
-隐私设计 本地存储:SQLite,不上云, 无遥测:不收集任何数据, BYOK:用自己的 API Key, 生物识别锁:Touch ID(macOS), 密码保护 唯一的外部通信是你选择的 AI 提供商,用你自己的 Key.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-19 22:58:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>165 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to OpenGnothia:开源 AI 心理治疗伴侣,你的隐私自己做主" href="https://claudeai.best/posts/hunter-2026021922/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771509127499_cover.jpg" alt="MCP 配置工具 - MCP-wire">
 </figure>
   <header class="entry-header">
@@ -408,6 +387,28 @@ Agent 的核心区别:不是帮你回答问题,是帮你干活.
   </div>
   <footer class="entry-footer"><span title='2026-02-19 14:05:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>210 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to SWE-bench 2月排行榜:Claude 4.5 Opus 登顶,中国模型占了前十的一半" href="https://claudeai.best/posts/hunter-2026021913/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771476861807_cover.jpg" alt="代码安全 - AI 生成代码检查">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Ship Safe:给 Vibe Coding 的 AI 代码装个安全带
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>用 AI 写代码很爽,直到你把 Stripe 密钥推到公开仓库.
+刚刚有个开源工具发布了,专门解决这个问题:Ship Safe.
+问题:AI 代码的安全隐患 如果你用 AI 写代码(Claude,Cursor,Windsurf…),你可能遇到过这些问题:
+AI 生成的代码里硬编码了 API 密钥 默认配置开启了 debug 模式 “我回头再改&#34;变成了&#34;我被黑了” 速度创造了盲区.你可以在一个周末搭出一个 SaaS,但一个 git push 就能暴露你的数据库凭证.
+Ship Safe:5 分钟安全你的 MVP 这是一个开源的安全工具包,核心功能很简单:
+# 扫描泄露的密钥(无需安装) npx ship-safe scan . # 自动生成 .env.example npx ship-safe fix # 阻止 git push(如果发现密钥) npx ship-safe guard # 启动前安全检查清单 npx ship-safe checklist 能检测什么? 50&#43; 种密钥模式:
+AI/ML: OpenAI, Anthropic, Google AI, Cohere, Replicate, Hugging Face 认证: Clerk, Auth0, Supabase Auth 云服务: AWS, Google Cloud, Azure 数据库: Supabase, PlanetScale, Neon, MongoDB, PostgreSQL, MySQL 支付: Stripe, PayPal 通信: Twilio, SendGrid, Resend 其他: GitHub tokens, 私钥, JWT, 通用密钥 MCP 集成:让 AI 自己审计自己 这是最有趣的功能.你可以把 Ship Safe 作为 MCP 服务器运行,让 AI 编辑器直接调用它.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 12:55:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>198 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Ship Safe:给 Vibe Coding 的 AI 代码装个安全带" href="https://claudeai.best/posts/hunter-2026021912/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

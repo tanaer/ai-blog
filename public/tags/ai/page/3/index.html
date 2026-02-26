@@ -161,25 +161,6 @@
 
 <article class="post-entry tag-entry"> 
 <figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Ladybird 两周移植 25000 行代码到 Rust，AI 辅助的教科书级案例
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Ladybird 浏览器最近干了件狠事——把 JavaScript 引擎从 C&#43;&#43; 移植到 Rust，25000 行代码，两周搞定。按传统方式这得折腾好几个月。
-有意思的不是速度，是方法。Andreas Kling 没让 AI 自主写代码，而是用了&#34;人机协作&#34;模式：他决定移植顺序和代码风格，Claude Code 和 Codex 负责翻译。几百个小 prompt，一步步把 lexer、parser、AST、字节码生成器全搬过去。
-关键是验证。他们要求 Rust 版和 C&#43;&#43; 版的输出必须字节级一致。靠着 test262 测试套件，最终零回归——每个 AST、每条字节码都跟原版一模一样。
-这事儿说明两件事：一是 AI 真的能干重活，前提是你得有好的测试覆盖；二是 Rust 在浏览器领域的吸引力越来越大，内存安全不是闹着玩的。Ladybird 这波算是给&#34;AI 辅助大型重构&#34;打了个样。
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-24 19:05:00 +0800 CST'>2026年2月24日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>34 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Ladybird 两周移植 25000 行代码到 Rust，AI 辅助的教科书级案例" href="https://claudeai.best/posts/ladybird-rust-ai/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
         <img loading="lazy" src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1200" alt="">
 </figure>
   <header class="entry-header">
@@ -379,6 +360,26 @@ Google Gemini(免费层), OpenAI GPT-4o, Anthropic Claude, Ollama(本地免费) 
   </div>
   <footer class="entry-footer"><span title='2026-02-22 11:06:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>60 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to ThreadKeeper:Ctrl&#43;Shift&#43;S 一键保存工作上下文,AI 帮你记" href="https://claudeai.best/posts/hunter-2026022211/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&amp;h=630&amp;fit=crop" alt="Emacs Gravity Claude Code UI">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Emacs Gravity:magit 风格的 Claude Code UI,不装 Electron
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>发现一个有意思的工具 Emacs Gravity 给 Claude Code 做了个 magit 风格的 UI.不是滚动终端,而是结构化的会话视图 – 工具调用,Agent 树,文件变更都能折叠展开.
+谁能用?解决什么问题? 场景:你住在 Emacs 里,用 Claude Code 但不喜欢它的终端 UI – 滚动太快,工具调用和思考混在一起.
+Emacs Gravity 的做法:
+Turn-based 视图:每个用户 prompt 是一个 turn,工具按响应周期分组 Agent 树:子 Agent 渲染成嵌套树,能看到它们的工具调用和结果 内联 diff:文件编辑直接在会话 buffer 里显示 unified diff Plan Review:Claude 提计划时在独立 buffer 审查,加注释,编辑,一键批准或拒绝 多会话管理:按项目分组,像切 buffer 一样切换会话 Capabilities 浏览器:plugins,skills,MCP servers 都在树里可导航 对比 Cursor/AntiGravity:
+UI, Cursor=VS Code 侧边栏, emacs-gravity=magit-section 终端原生 Agent 可见性, Cursor=最小, emacs-gravity=完整嵌套树 多会话, Cursor=无, emacs-gravity=按项目分组 Plan 审查, Cursor=无, emacs-gravity=View &#43; 注释 &#43; diff 开源, Cursor=否, emacs-gravity=是
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-22 08:06:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>119 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Emacs Gravity:magit 风格的 Claude Code UI,不装 Electron" href="https://claudeai.best/posts/hunter-2026022208/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

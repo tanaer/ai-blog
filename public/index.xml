@@ -6,15 +6,8 @@
     <description>Recent content on AI 极客前沿</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 26 Feb 2026 14:05:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Feb 2026 13:35:00 +0800</lastBuildDate>
     <atom:link href="https://claudeai.best/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>AI找到稀土替代品了：67573种材料，25种耐高温</title>
-      <link>https://claudeai.best/posts/hunter-2026022614/</link>
-      <pubDate>Thu, 26 Feb 2026 14:05:00 +0800</pubDate>
-      <guid>https://claudeai.best/posts/hunter-2026022614/</guid>
-      <description>科学家用AI创建了包含67573种磁性材料的超大数据库，发现25种新型耐高温磁性材料，有望减少对稀土元素的依赖，降低电动车和可再生能源系统成本。</description>
-    </item>
     <item>
       <title>英伟达Vera Rubin来了：能效暴增10倍，这波算力要起飞</title>
       <link>https://claudeai.best/posts/hunter-2026022613/</link>
@@ -45,6 +38,13 @@
       <pubDate>Thu, 26 Feb 2026 08:04:00 +0800</pubDate>
       <guid>https://claudeai.best/posts/2026-02-26-ai-six-breakthroughs-2026/</guid>
       <description>AI Agent终于能互相聊天了，还能自己检查作业。这六项突破正在改变一切。</description>
+    </item>
+    <item>
+      <title>不到 2% 品牌能被 AI 推荐？这个新标准想改写规则</title>
+      <link>https://claudeai.best/posts/2026-02-26-llm-ld-standard/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://claudeai.best/posts/2026-02-26-llm-ld-standard/</guid>
+      <description>Capxel 推出的 LLM-LD 标准，让你的网站内容能被 AI 原生读取。已有 100&#43; 网站采用，开源免费。</description>
     </item>
     <item>
       <title>抖音豆包日活破亿，这场春节 AI 大战它赢了</title>
@@ -180,13 +180,6 @@ Qwen 靠功能留人。
       <pubDate>Thu, 26 Feb 2026 03:04:00 +0800</pubDate>
       <guid>https://claudeai.best/posts/2026-02-26-ai-discovers-new-magnetic-materials/</guid>
       <description>新罕布什尔大学用AI从6.7万种材料中挖出25种新型磁性候选材料，能在高温下保持磁性，可能替代稀土元素。</description>
-    </item>
-    <item>
-      <title>AI发现新磁性材料，电动车成本要降了</title>
-      <link>https://claudeai.best/posts/ai-discovery-magnetic-materials-2026-02-26/</link>
-      <pubDate>Thu, 26 Feb 2026 02:11:00 +0800</pubDate>
-      <guid>https://claudeai.best/posts/ai-discovery-magnetic-materials-2026-02-26/</guid>
-      <description>新罕布什尔大学团队用AI从26,706种材料中筛选出81种高性能磁性候选材料，电动车电机有望用上更便宜的非稀土磁铁。</description>
     </item>
     <item>
       <title>Meta AI 安全总监的邮箱被 OpenClaw 删光了，讽刺吗？</title>

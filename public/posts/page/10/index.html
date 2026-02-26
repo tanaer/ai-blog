@@ -176,27 +176,6 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771596516927_cover.jpg" alt="AI与开源社区">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">重磅:ggml.ai 创始团队加入 Hugging Face,llama.cpp 迎来新篇章
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>本地 AI 领域迎来重大消息:ggml.ai 创始团队正式加入 Hugging Face.
-Georgi Gerganov 和他的团队–llama.cpp 的创造者–现在成为 Hugging Face 的全职员工.这不是收购,而是一次战略合作,目标是&#34;确保未来 AI 真正开放&#34;.
-关键信息 不会改变:
-ggml-org 项目保持开源和社区驱动 Georgi 和团队继续 100% 时间维护 ggml/llama.cpp 社区保持完全自治,技术和架构决策不变 项目继续 100% 开源 会改变:
-Hugging Face 提供长期可持续资源, 更快的模型支持(你最喜欢的量化模型会更快上线), 更好的 transformers 库集成, 改善用户体验和包装 为什么是 Hugging Face? 过去几年,Hugging Face 一直是 ggml 最坚定的支持者:
-贡献了多个 ggml/llama.cpp 核心功能 构建了 solid 的推理服务器和精美 UI 为 llama.cpp 引入多模态支持 将 llama.cpp 集成到 Hugging Face Inference Endpoints 改进了 GGUF 格式与 HF 平台的兼容性 实现了多种模型架构 帮助日常维护和 PR 审查 Georgi 说:“双方合作一直很顺畅高效,社区也从中受益.正式化这个合作,未来会更强.”
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-20 22:08:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>141 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to 重磅:ggml.ai 创始团队加入 Hugging Face,llama.cpp 迎来新篇章" href="https://claudeai.best/posts/hunter-2026022022/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771586901524_cover.jpg" alt="Stripe Minions AI 编码代理">
 </figure>
   <header class="entry-header">
@@ -402,6 +381,30 @@ SWE-smith:从目标仓库自动生成可验证的 SWE 任务(带测试) GEPA opt
   </div>
   <footer class="entry-footer"><span title='2026-02-20 11:30:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>246 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to NullClaw:678KB 的 OpenClaw,Zig 重写版能在 $5 硬件上跑" href="https://claudeai.best/posts/hunter-2026022011/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771551041810_cover.jpg" alt="计算机科学与算法">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Frontier-CS:评估 LLM 解决最难 CS 问题的能力,为什么评估比生成更难
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>传统的编程基准测试很简单:运行代码,检查输出,通过或失败.
+但 Frontier-CS 不一样.它的 240 个问题是开放式,连续评分的:
+优化一个 CUDA kernel 让它尽可能快 设计一个缓存淘汰策略让 miss rate 最小 实现一个跨核并行的排序算法 没有&#34;正确答案&#34;,只有从&#34;编译失败&#34;到&#34;超越参考实现&#34;的光谱.
+问题是:评估比生成本身更难.
+四大挑战 1. 连续评估,不是一次性的 学术基准通常发一篇论文就完了.Frontier-CS 是活着的排行榜.
+过去几个月:Gemini 3.0 Pro,GPT 5.2 Thinking,Grok 4,DeepSeek 3.2……每个新模型都要跑 240 道题.OpenAI 刚发了 GPT-5.3-codex,Anthropic 就发了 Claude Opus 4.6.
+解决方案:基于 hash 的断点续跑.每个结果记录 solution 文件和 problem 目录的 SHA hash.恢复时自动重跑变更的,保留未变的.
+2. 异构硬件规模化 一次批量跑可能包含:
+需要 A100 GPU 的 CUDA 优化题 需要 c7i.4xlarge(16 vCPU)的 HPC 负载 只需要普通 CPU 的算法题 解决方案:ResourceSignature 分组.把题目按 (cloud, accelerators, instance type) 分类,每组分配专属的 SkyPilot 集群池.CPU-only 跑便宜实例,GPU 题跑 GPU 实例.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-20 09:30:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>204 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Frontier-CS:评估 LLM 解决最难 CS 问题的能力,为什么评估比生成更难" href="https://claudeai.best/posts/hunter-2026022009/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
