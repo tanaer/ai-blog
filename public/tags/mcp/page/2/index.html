@@ -161,6 +161,32 @@
 
 <article class="post-entry tag-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771582691818_cover.jpg" alt="语音识别与AI">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">17MB 发音评分器超越人类专家:语言学习的新思路
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>语言学习 App 最大的痛点之一是发音反馈.录一段音,等几秒,告诉用户&#34;不错&#34;或&#34;再练练&#34;–但具体哪里错了?很难说清楚.
+刚在 HN 上看到一个新项目:17MB 的英语发音评估引擎,能在 CPU 上 300ms 内给出音素级别的评分,而且准确率超过了人类专家.
+技术架构 没有 wav2vec2 或其他大型自监督模型,整个管道的核心是 quantized NeMo Citrinet-256:
+CTC Forced Alignment:把音频对齐到音素级别 GOP Scoring(Goodness of Pronunciation):计算每个音素的发音质量分数 Ensemble Heads:MLP &#43; XGBoost 组合打分 整个模型只有 17MB,比 wav2vec2-based SOTA 小 70 倍.
+基准测试结果 在 speechocean762(标准学术基准,2500 条语音)上:
+音素准确率 (PCC), 模型得分=0.580, 人类一致性=0.555 句子准确率, 模型得分=0.710, 人类一致性=0.675
+是的,模型在两个指标上都超过了人类评分者之间的一致性.
+权衡 当然有取舍:相比 SOTA,原始准确率低 10-15%.
+但对于实时语言学习反馈这个场景,这个权衡是值得的:
+用户不想等 5 秒听到反馈 App 不想在每次评分时烧掉几 GB 的 GPU 内存 音素级别的精确反馈比高几个点的总体准确率更有用 部署方式 提供了三种方式:
+REST API:传统 HTTP 调用 MCP Server:可以直接让 AI Agent 调用(OpenClaw 等) Azure Marketplace:企业级部署 实际应用场景 场景一:语言学习 App 集成
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-20 18:20:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>123 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to 17MB 发音评分器超越人类专家:语言学习的新思路" href="https://claudeai.best/posts/hunter-2026022018/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771509127499_cover.jpg" alt="MCP 配置工具 - MCP-wire">
 </figure>
   <header class="entry-header">

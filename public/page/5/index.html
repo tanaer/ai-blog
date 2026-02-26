@@ -2,7 +2,7 @@
 <html lang="zh" dir="auto" data-theme="auto">
 
 <head>
-	<meta name="generator" content="Hugo 0.146.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.146.0"><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -182,6 +182,30 @@
     </nav>
 </header>
 <main class="main"> 
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://claudeai.best/images/hunter/2026022500.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AI 写了一个 FreeBSD 内核驱动，还能连 Wi-Fi
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>旧电脑别扔，让 AI 给它写个驱动。
+一个尘封的 MacBook Pro Vladimir Varankin 有一台 2016 年的 MacBook Pro，屏幕有 flexgate 问题，一直躺在柜子里吃灰。FreeBSD 15 发布后，他决定把这台电脑改造成 FreeBSD 实验机——直到发现 Wi-Fi 用不了。
+2016 MacBook Pro 用的 Broadcom BCM4350 芯片，FreeBSD 原生不支持。论坛上的标准方案是跑一个叫 wifibox 的小 Linux 虚拟机，把 PCI 设备直通给 Linux。
+但 Varankin 想的是：能不能写一个原生的 FreeBSD 驱动？
+第一次尝试：直接移植，直接翻车 2026 年了，“把代码从 A 移植到 B” 的第一反应当然是让 AI 干。
+他克隆了 Linux 的 brcmfmac 驱动源码，让 Claude Code 照着 FreeBSD 已有的 iwlwifi 驱动（Intel 网卡）移植。Claude 信心满满地说可以。
+模块确实编译通过了——但没有任何反应。因为他测试的虚拟机里根本没有那张网卡。
+等他把 PCI 设备加进去，真机测试：kernel panic。
+Claude 开始疯狂打补丁，到处加 #ifdef __FreeBSD__，抱怨 LinuxKPI 缺这少那。补丁越打越多，驱动离能用的距离却一点没缩短。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-25 00:05:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>3 分钟</span>&nbsp;·&nbsp;<span>427 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to AI 写了一个 FreeBSD 内核驱动，还能连 Wi-Fi" href="https://claudeai.best/posts/hunter-2026022500/"></a>
+</article>
 
 <article class="post-entry"> 
   <header class="entry-header">
@@ -371,30 +395,6 @@ Ladybird 这个独立浏览器项目，用 AI 辅助把 JavaScript 引擎从 C&#
   </div>
   <footer class="entry-footer"><span title='2026-02-23 21:45:00 +0800 CST'>2026年2月23日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>30 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to AI 辅助黑客 5 周攻破 600 台防火墙" href="https://claudeai.best/posts/hunter-2026022321/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&amp;h=630&amp;fit=crop" alt="BinaryAudit 二进制审计">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">BinaryAudit:他们往 40MB 二进制里藏后门,让 AI 去找
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Quesma 做了个有意思的实验:和逆向工程专家合作,把后门藏在 40MB 的二进制文件里,然后让 AI &#43; Ghidra 去找.
-背景是最近供应链攻击太多了–Shai Hulud 2.0 搞了几千家组织,Notepad&#43;&#43; 被国家赞助者替换了二进制,波兰火车被查出可疑代码.
-问题是:我们用的闭源软件,只有二进制,怎么知道有没有后门?
-他们的做法:
-用 VLM 和 Ghidra MCP 分析二进制 让 AI 做逆向工程:机器码 → 汇编 → 伪 C 代码 输出有没有后门,在哪里 结果:最好的模型 Claude Opus 4.6 在中小二进制里找到相对明显的后门,成功率 49%.
-更糟的是,很多模型有高误报率–干净文件也报有毒.
-结论:AI 能做一点逆向工程,但还远不到能放心的程度.
-基准测试开源:github.com/quesmaOrg/BinaryAudit
-如果你担心供应链安全,可以看看他们怎么测的.
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 23:07:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>42 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to BinaryAudit:他们往 40MB 二进制里藏后门,让 AI 去找" href="https://claudeai.best/posts/hunter-2026022223/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
