@@ -6,8 +6,32 @@
     <description>Recent content in Posts on AI 极客前沿</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 26 Feb 2026 08:04:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Feb 2026 13:35:00 +0800</lastBuildDate>
     <atom:link href="https://claudeai.best/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>英伟达Vera Rubin来了：能效暴增10倍，这波算力要起飞</title>
+      <link>https://claudeai.best/posts/hunter-2026022613/</link>
+      <pubDate>Thu, 26 Feb 2026 13:35:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022613/</guid>
+      <description>英伟达最新AI系统Vera Rubin能效比上一代提升10倍，130万个组件，100%液冷，模块化设计，Meta、OpenAI、Anthropic等巨头已排队等待，预计2026年下半年发货。</description>
+    </item>
+    <item>
+      <title>你的屏幕，只有你能看</title>
+      <link>https://claudeai.best/posts/2026-02-26-samsung-s26-ultra-privacy-display/</link>
+      <pubDate>Thu, 26 Feb 2026 11:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/2026-02-26-samsung-s26-ultra-privacy-display/</guid>
+      <description>&lt;p&gt;昨天三星发了 S26 Ultra。这次最大的亮点？不是相机，不是性能。&lt;/p&gt;
+&lt;p&gt;是 Privacy Display。&lt;/p&gt;
+&lt;p&gt;简单说：你旁边的人看不见你的屏幕了。&lt;/p&gt;
+&lt;p&gt;这是手机圈头一个自带防窥屏。从侧面看，屏幕是暗的。你可以选择隐藏整个屏幕，或者只藏某些 App、通知、密码。通勤族应该会爱死这个功能。&lt;/p&gt;
+&lt;p&gt;AI 方面，三星换了思路——不炫耀，而是让 AI 躲在后台默默干活。&lt;/p&gt;
+&lt;p&gt;新的 Now Nudge 功能会主动给你建议。AI 在后台偷偷干活，你干别的它也能搞定复杂任务。相机也升级了，夜拍更强，视频更稳。Photo Assist 现在支持自然语言编辑，你说&amp;quot;把白天改成晚上&amp;quot;，它就帮你改。&lt;/p&gt;
+&lt;p&gt;机器比上一代薄了 0.3 毫米，轻了 4 克。芯片是骁龙 8 Elite Gen 5，CPU 快 19%，NPU 快 39%。&lt;/p&gt;
+&lt;p&gt;充电 30 分钟能到 75%。&lt;/p&gt;
+&lt;p&gt;定价还没出，但估计不会便宜。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;参考来源：Tom&amp;rsquo;s Guide 直播报道、三星官方发布会&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>2026年AI的六大突破：不再是更大，而是更聪明</title>
       <link>https://claudeai.best/posts/2026-02-26-ai-six-breakthroughs-2026/</link>
@@ -2971,6 +2995,50 @@
 &lt;li&gt;每周用 AI 生成运营报告&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;第三步:聚焦你的不可替代性&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://claudeai.best/posts/hunter-2026022612/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022612/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;cover&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;alt&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Neuromorphic computing chip with brain-inspired neural networks, showing energy-efficient architecture for solving complex mathematical equations&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;类脑芯片竟然能解数学题了&#34;&gt;类脑芯片竟然能解数学题了&lt;/h1&gt;
+&lt;p&gt;这个消息挺让人意外的。&lt;/p&gt;
+&lt;p&gt;桑迪亚国家实验室的两位研究员——Brad Theilman 和 Brad Aimone——刚刚在《Nature Machine Intelligence》发了篇论文。&lt;/p&gt;
+&lt;p&gt;他们证明了类脑计算机能解偏微分方程。&lt;/p&gt;
+&lt;p&gt;等等,什么情况?&lt;/p&gt;
+&lt;p&gt;类脑芯片不是模仿大脑的吗?大脑又不擅长做数学计算,这种芯片怎么可能搞定严谨的数学问题?&lt;/p&gt;
+&lt;p&gt;但事实证明,它能。&lt;/p&gt;
+&lt;p&gt;而且效果还不错。&lt;/p&gt;
+&lt;h2 id=&#34;为什么这事儿挺重要&#34;&gt;为什么这事儿挺重要&lt;/h2&gt;
+&lt;p&gt;偏微分方程听着挺玄乎,其实就是描述物理现象的工具。&lt;/p&gt;
+&lt;p&gt;天气预报要用它。&lt;/p&gt;
+&lt;p&gt;飞机设计要用它。&lt;/p&gt;
+&lt;p&gt;核反应堆模拟也要用它。&lt;/p&gt;
+&lt;p&gt;传统计算机解这些方程,能耗惊人。&lt;/p&gt;
+&lt;p&gt;类脑芯片不一样。它的架构更像人脑,处理信息的方式更省电。&lt;/p&gt;
+&lt;p&gt;对国家安全来说,这意义重大。&lt;/p&gt;
+&lt;h2 id=&#34;大脑其实一直在算物理&#34;&gt;大脑其实一直在&amp;quot;算&amp;quot;物理&lt;/h2&gt;
+&lt;p&gt;你打网球的时候,大脑在干嘛?&lt;/p&gt;
+&lt;p&gt;它在预测球的轨迹。&lt;/p&gt;
+&lt;p&gt;风速、旋转、弧线——这些物理问题,你的大脑瞬间就&amp;quot;解&amp;quot;出来了。&lt;/p&gt;
+&lt;p&gt;你不会意识到自己在算方程。&lt;/p&gt;
+&lt;p&gt;但你确实在算。&lt;/p&gt;
+&lt;p&gt;类脑芯片就是想模仿这种能力。&lt;/p&gt;
+&lt;h2 id=&#34;下一步类脑超算&#34;&gt;下一步:类脑超算?&lt;/h2&gt;
+&lt;p&gt;这个突破可能改变一切。&lt;/p&gt;
+&lt;p&gt;如果类脑芯片真的能高效处理复杂的数学问题,那我们离第一台类脑超级计算机就不远了。&lt;/p&gt;
+&lt;p&gt;想想看。&lt;/p&gt;
+&lt;p&gt;一台超算,能耗只有传统机器的零头。&lt;/p&gt;
+&lt;p&gt;却能模拟核武器、预测气候、设计新药。&lt;/p&gt;
+&lt;p&gt;这事儿挺值得期待的。&lt;/p&gt;
+&lt;p&gt;两位Brad可能自己都没想到,类脑芯片能干这活儿。&lt;/p&gt;
+&lt;p&gt;科技的发展就是这样。&lt;/p&gt;
+&lt;p&gt;你以为它在走弯路,结果它开辟了新方向。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

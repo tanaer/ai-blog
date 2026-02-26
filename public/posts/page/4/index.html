@@ -175,6 +175,63 @@
 </header>
 
 <article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://claudeai.best/images/hunter/2026022505.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">16个 Claude 代理协作写了一个 C 编译器，花了 $20K API 费
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Anthropic 研究员 Nicholas Carlini 做了一个疯狂实验：让 16 个 Claude Opus 4.6 代理协作，从零开始写一个 C 编译器。
+结果：10 万行 Rust 代码，能编译 Linux 6.9 内核，通过了 99% 的 GCC torture test。
+代价：2 周时间，近 2000 次 Claude Code 会话，约 $20,000 API 费用。
+怎么做到的？ 使用 Claude Opus 4.6 新推出的 “Agent Teams” 功能：
+每个代理运行在独立 Docker 容器 通过 Git 共享代码库协调工作 没有中央编排代理 —— 各自独立识别任务并解决 自动处理合并冲突 编译器已开源在 GitHub。
+能力验证 能编译这些项目：
+PostgreSQL、SQLite、Redis FFmpeg、QEMU Doom（开发者终极测试） 支持架构：x86、ARM、RISC-V。
+限制也很明显 Carlini 很坦诚地列出了问题：
+缺少 16 位 x86 后端，引导 Linux 需调用 GCC 自带的汇编器和链接器还有 bug 优化效果甚至不如 GCC 的 -O0 代码质量达不到专家级 Rust 水平 最关键的发现：当代码量达到约 10 万行时，Claude 开始&#34;失智&#34; —— 修 bug 和加功能经常破坏已有功能。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-25 05:05:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>154 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to 16个 Claude 代理协作写了一个 C 编译器，花了 $20K API 费" href="https://claudeai.best/posts/hunter-2026022505/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://claudeai.best/images/hunter/2026022504.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AI 编程工具 15 分钟开发应用，免费工具时代要结束了？
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>一个不懂编程的人，用 AI 工具 15 分钟做出了自己想要的 Mac 应用。这不仅是个人效率的提升，更预示着整个单用途应用市场的崩塌。
+15 分钟开发一个 Mac 应用 9to5Mac 的编辑 Benj Edwards 讲了一个亲身经历。
+他想找一个简单的 Mac 应用解决一个生产力问题。免费的应用充满低质量广告，付费的应用虽然能用，但功能永远差点意思——不是多了一些不需要的功能，就是缺少某个关键细节。
+于是他试了 OpenAI 的 Codex。
+从一个空文件夹开始，15 分钟后，核心功能已经跑起来了。
+接下来的几周，他不断给 Codex 提需求：加个按钮、接入 Apple 的 Foundation Models、某个事件发生时通知我……每次修改，Codex 10 秒钟搞定。
+最后得到的应用：完全符合他的需求，没有广告，没有多余功能，代码还能随时调整。
+Vibe Coding：2025 年的年度词汇 这种开发方式有个名字：Vibe Coding。
+2025 年，Collins 词典把它选为年度词汇。维基百科的定义是：用自然语言向大语言模型描述任务，让 AI 生成代码——关键是接受 AI 生成的代码而不仔细审查内部结构，只看结果，通过后续 prompt 调整。
+Andrej Karpathy 的描述更直接：“完全沉浸到氛围里，拥抱指数增长，忘记代码的存在。”
+听起来很危险？批评者确实指出：缺乏问责制、可维护性差、安全漏洞风险高。
+但对于非程序员来说，这是第一次软件真正为他们服务，而不是他们去适应软件。
+单用途应用市场的丧钟 Benj 的观点很明确：单用途应用的商业模式正在瓦解。
+过去，独立开发者靠做出一个好用的单功能应用赚钱。用户愿意付费，因为自己开发成本太高。
+但现在：
+免费应用：充满广告，体验差，用户忍着用 付费应用：功能固定，永远差点意思，用户妥协着用 AI 开发的应用：完全定制，随时调整，代码归你 当第三种选择的门槛降到&#34;会说话就行&#34;，谁还愿意忍受前两种？
+Xcode 集成：苹果的官方背书 更重要的事情发生在苹果生态。
+2026 年 2 月，苹果宣布 Xcode 26.4 将原生集成 Claude Agent 和 OpenAI Codex。这意味着：
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-25 04:05:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>181 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to AI 编程工具 15 分钟开发应用，免费工具时代要结束了？" href="https://claudeai.best/posts/hunter-2026022504/"></a>
+</article>
+
+<article class="post-entry"> 
   <header class="entry-header">
     <h2 class="entry-hint-parent">go-size-analyzer：浏览器里分析 Go 二进制文件大小，还能生成树状图
     </h2>
@@ -339,47 +396,6 @@ T T T O O O D D D O O O : : : V C C a h h l e e i c c d k k a t a p e u e t r P 
   </div>
   <footer class="entry-footer"><span title='2026-02-24 20:06:00 +0800 CST'>2026年2月24日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>104 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to 别给你的 AI Agent 真实权限，它会删库跑路" href="https://claudeai.best/posts/hunter-2026022420/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Ladybird 两周移植 25000 行代码到 Rust，AI 辅助的教科书级案例
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Ladybird 浏览器最近干了件狠事——把 JavaScript 引擎从 C&#43;&#43; 移植到 Rust，25000 行代码，两周搞定。按传统方式这得折腾好几个月。
-有意思的不是速度，是方法。Andreas Kling 没让 AI 自主写代码，而是用了&#34;人机协作&#34;模式：他决定移植顺序和代码风格，Claude Code 和 Codex 负责翻译。几百个小 prompt，一步步把 lexer、parser、AST、字节码生成器全搬过去。
-关键是验证。他们要求 Rust 版和 C&#43;&#43; 版的输出必须字节级一致。靠着 test262 测试套件，最终零回归——每个 AST、每条字节码都跟原版一模一样。
-这事儿说明两件事：一是 AI 真的能干重活，前提是你得有好的测试覆盖；二是 Rust 在浏览器领域的吸引力越来越大，内存安全不是闹着玩的。Ladybird 这波算是给&#34;AI 辅助大型重构&#34;打了个样。
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-24 19:05:00 +0800 CST'>2026年2月24日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>34 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Ladybird 两周移植 25000 行代码到 Rust，AI 辅助的教科书级案例" href="https://claudeai.best/posts/ladybird-rust-ai/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1200" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Simon Willison 的新项目：用智能体工程对抗 Vibe Coding
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Simon Willison 又开新坑了——这次是&#34;Agentic Engineering Patterns&#34;，专门收集编码智能体的最佳实践。
-他把现在 AI 编程分成两派：一派是&#34;vibe coding&#34;，完全不看代码让 AI 乱写；另一派是&#34;Agentic Engineering&#34;，专业工程师用 AI 放大自己的能力。很明显，他站后者。
-这个项目的定位很有意思：不是博客文章，也不是传统书籍，而是&#34;Guide &#43; Chapter&#34;格式。Guide 是主题集合，Chapter 是可以持续更新的章节——解决了博客内容容易过时的问题。
-前两章已经上线：
-“Writing code is cheap now” 探讨代码成本归零后，我们的工作直觉该怎么调整 “Red/green TDD” 讲测试驱动开发怎么让智能体写得更稳 Willison 还特意强调：内容全是他自己写的，LLM 只负责校对和生成示例代码。这态度挺硬核的，但也说明他对这事儿多认真。
-最骚的是，整个 Guide/Chapter 的技术实现，几乎都是 Claude Opus 4.6 在 Claude Code 里写的。用智能体搭建智能体工程指南，这递归玩得溜。
-他说打算每周更新 1-2 章，没说什么时候结束——因为这领域本身就还在快速演化。值得关注。
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-24 18:04:00 +0800 CST'>2026年2月24日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>45 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Simon Willison 的新项目：用智能体工程对抗 Vibe Coding" href="https://claudeai.best/posts/2026-02-24-agentic-engineering-patterns/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
