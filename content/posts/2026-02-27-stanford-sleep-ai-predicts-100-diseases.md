@@ -1,9 +1,12 @@
 ---
 title: "睡一觉就知道你会得什么病？斯坦福AI有点东西"
 date: 2026-02-27
-cover: "/images/stanford-sleep-ai.jpg"
-description: "斯坦福医学院研发出首个AI模型，仅凭一夜睡眠数据就能预测100多种疾病"
+draft: false
 tags: ["AI", "医疗", "斯坦福", "睡眠"]
+cover:
+  image: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=1200"
+  alt: "睡眠监测AI预测疾病"
+description: "斯坦福医学院研发出首个AI模型，仅凭一夜睡眠数据就能预测100多种疾病"
 categories: ["科技"]
 ---
 
