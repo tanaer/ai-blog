@@ -126,6 +126,12 @@
 - **OSCHINA 开源中国** (中文开源技术社区, 软件更新+技术新闻): https://www.oschina.net/news/rss
 - **美团技术团队** (一线大厂技术博客, AI/LLM/Agent技术深度分享): https://tech.meituan.com/feed
 - **奇客Solidot** (科技情报站, 每日更新, 技术+开源+AI新闻): https://www.solidot.org/index.rss
+- **三花 AI 快讯** (AI领域最新动态, 每日更新, 高质量AI资讯): https://sanhua.himrr.com/daily-news/feed
+- **潮流周刊** (Tw93技术周刊, 工程师视角的潮流技术+AI工具, 每周更新): https://weekly.tw93.fun/rss.xml
+- **Decohack** (Product Hunt每日热榜+独立开发者灵感周刊): https://www.decohack.com/feed
+- **分享创造日报** (V2EX分享创造节点精选, 独立开发者产品展示, 每日更新): https://v2ex-create.nexmm.com/rss.xml
+- **Apptisan** (与App背后的工匠交流, 独立开发者产品故事, 深度访谈): https://quaily.com/apptisan/feed/atom
+- **独立开发变现周刊** (独立开发产品变现案例, 每周五发布, 真实营收数据): https://www.ezindie.com/feed/rss.xml
 
 ### Indie Hacker & 创业
 - **Indie Hackers Tech** (技术创业者故事, 真实营收数据): https://www.indiehackers.com/tech
@@ -227,10 +233,10 @@
 - **The Batch** (DeepLearning.AI周报, Andrew Ng): https://www.deeplearning.ai/the-batch/ — ️ 无RSS, Newsletter订阅
 
 ## 数据源统计
-**当前已验证: 105+ 核心数据源**
-- Newsletter: 31+, 个人博客: 13+, 研究机构: 16, 科技媒体: 26+, 开发者社区: 8, 中文源: 11, 学术源: 12+, AI工具与开发: 8
+**当前已验证: 111+ 核心数据源**
+- Newsletter: 31+, 个人博客: 13+, 研究机构: 16, 科技媒体: 26+, 开发者社区: 8, 中文源: 17, 学术源: 12+, AI工具与开发: 8
 - 待验证潜力源: 40+ (其中16个为2026-02-25新发现的高质量Newsletter)
 
-**目标: 30+ 高质量源** 已达成 (105+)
+**目标: 30+ 高质量源** 已达成 (111+)
 
-**最后更新**: 2026-02-25 (晚上 21:00)
+**最后更新**: 2026-02-26 (上午 09:00)
