@@ -176,6 +176,31 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771531528440_cover.jpg" alt="AI安全防护架构示意图">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">OpenClaw 有了企业级安全护盾:Netzilo AI Edge 上线沙盒和治理
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>你有没有想过,当一个 AI Agent 可以自主访问文件,调用工具,执行代码时,怎么确保它不会&#34;翻车&#34;?
+就在2小时前,Netzilo 发布了 AI Edge,专门为 OpenClaw 这类自主 Agent 提供企业级安全防护.这事儿对正在用 AI Agent 的团队来说,意义重大.
+为什么 OpenClaw 需要专属安全方案? OpenClaw 的能力很强:能自主执行复杂任务,调用各种技能(skills),访问本地系统.但能力越强,风险越大:
+可见性盲区:你很难搞清楚 Agent 到底在跟谁通信,调了什么工具,动了哪些文件, Agent 完整性风险:工具投毒,恶意技能注入,提示注入攻击……这些攻击方式在传统安全里根本没见过, 数据泄露风险:即使是本地部署的 Agent,也可能访问或生成敏感企业数据 传统安全产品根本覆盖不了这些场景.
+Netzilo AI Edge 能干什么? 1. 全栈可见性 不只是 LLM 通信,它还能捕获:
+完整的 MCP 工具调用链, 文件系统交互, 本地 Agent 活动 安全团队终于能看清楚 Agent 在企业环境里到底干了什么.
+2. AI 检测与响应(AIDR) 基于行为分析的动态检测,能识别:
+工具投毒尝试, 提示注入攻击, 恶意技能/能力注入, 未知的 AI 原生攻击模式 这是真正的&#34;AI 原生&#34;安全,不是把传统规则套上去.
+3. 透明沙盒隔离 管理员可以在透明沙盒环境里运行 OpenClaw Agent,既保护企业系统,又不影响 Agent 的工作效率.
+4. 高级数据治理 检测敏感数据暴露, 实时脱敏机密信息, 阻止未授权数据外泄, 维护完整审计日志 实际应用场景 场景一:企业规模化部署 OpenClaw
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-20 04:08:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>111 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to OpenClaw 有了企业级安全护盾:Netzilo AI Edge 上线沙盒和治理" href="https://claudeai.best/posts/hunter-2026022004/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771528024090_cover.jpg" alt="开发者生产力 - AI 影响研究">
 </figure>
   <header class="entry-header">
@@ -384,30 +409,6 @@ Slack 回复 同事发了个长问题,你想简洁回复.选中草稿,让 AI 精
   </div>
   <footer class="entry-footer"><span title='2026-02-19 18:35:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>83 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Spackle:Mac 全局 AI 重写快捷键,选中文字按一下就改好" href="https://claudeai.best/posts/hunter-2026021918/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771493135096_cover.jpg" alt="智能合约安全审计 - EVMbench 基准测试">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">OpenAI 发布 EVMbench:AI 能不能帮你审计智能合约漏洞?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>智能合约里锁着 1000 亿美元.AI 能不能帮你找漏洞?OpenAI 刚刚给了答案.
-EVMbench 是什么? OpenAI 联合 Paradigm 发布了 EVMbench,一个专门评估 AI Agent 智能合约安全能力的基准测试.
-核心数据:
-120 个精心挑选的高危漏洞 来自 40 次真实审计(主要是 Code4rena 开源竞赛) 包含 Tempo 区块链的支付场景漏洞 三种测试模式 Detect, 任务=审计合约,找出漏洞, 评分标准=召回率 &#43; 审计奖励 Patch, 任务=修复漏洞,保持功能, 评分标准=自动化测试 &#43; exploit 检查 Exploit, 任务=执行攻击, draining 资金, 评分标准=链上验证交易重放
-最有意思的是 Exploit 模式–Agent 需要在沙盒区块链环境中端到端执行资金盗取攻击.
-测试结果:GPT-5.3-Codex 达到 72.2% GPT-5.3-Codex: 72.2% GPT-5: 31.9% 6 个月,性能翻了一倍多.
-但 Detect 和 Patch 模式仍然挑战很大:
-Detect:Agent 找到一个问题就停了,不够全面 Patch:修复漏洞的同时保持完整功能很难 为什么 Exploit 分数最高? OpenAI 的分析很有意思:
-“在 exploit 设置中,目标非常明确:持续迭代直到资金被转走.”
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-19 17:30:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>186 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to OpenAI 发布 EVMbench:AI 能不能帮你审计智能合约漏洞?" href="https://claudeai.best/posts/hunter-2026021917/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

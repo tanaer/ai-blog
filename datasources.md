@@ -65,9 +65,17 @@
 - **Epoch AI Blog** (AI趋势分析, 算力与预测研究): https://epochai.substack.com/feed
 - **GitHub Blog** (开发者新闻/Insights/Octoverse报告, AI趋势分析): https://github.blog/feed/
 - **EleutherAI Blog** (开源AI研究, GPT-Neo/GPT-J等模型开发者): https://blog.eleuther.ai/index.xml
+- **Stability AI Blog** (Stable Diffusion等开源模型官方博客): https://stability.ai/blog?format=rss
+- **Together.xyz Blog** (开源模型训练平台, RedPajama等): https://www.together.xyz/blog/feed
+- **Uber Engineering AI Blog** (Uber AI研究与应用, 大规模ML系统): https://eng.uber.com/category/articles/ai/feed
 
 ### AI基础设施与工具
 - **The New Stack** (DevOps/AI基础设施/云原生, Agent开发趋势): https://thenewstack.io/feed
+
+### AI 播客 (RSS)
+- **TWIML AI Podcast** (Sam Charrington, 老牌ML/AI播客, 760+集, 顶级嘉宾): https://twimlai.com/feed
+- **Dwarkesh Podcast** (Dwarkesh Patel, 深度采访AI/科技大佬, 68K+订阅, Substack): https://www.dwarkesh.com/feed
+- **This Day in AI Podcast** (每日AI新闻播客, 快速资讯): https://feeds.transistor.fm/this-day-in-ai
 
 ### 开发者社区精选
 - **HN Best (AI相关)** (Hacker News 精选): https://hnrss.org/best?q=AI+OR+LLM+OR+GPT+OR+agent
@@ -89,6 +97,10 @@
 - VentureBeat AI: https://venturebeat.com/category/ai/feed/
 - The Register AI + ML (英国老牌IT媒体, AI行业深度报道+讽刺评论, 每日更新): https://www.theregister.com/software/ai_ml/headlines.atom
 - SiliconANGLE AI (技术新闻, AI领域深度报道+行业分析): https://siliconangle.com/category/ai/feed
+- **The Guardian AI** (英国顶级媒体AI频道, 深度报道+社会影响分析): https://www.theguardian.com/technology/artificialintelligenceai/rss
+- **ZDNet AI** (企业级AI新闻与分析, IT决策者向): https://www.zdnet.com/topic/artificial-intelligence/rss.xml
+- **Gizmodo** (科技生活媒体, AI产品+趋势报道): https://gizmodo.com/rss
+- **Futurism AI** (前沿科技媒体, AI突破+未来展望): https://futurism.com/categories/ai-artificial-intelligence/feed
 
 ### AI 专业
 - ArXiv CS.LG (Machine Learning): https://rss.arxiv.org/rss/cs.LG
@@ -113,6 +125,13 @@
 - **The Gradient** (AI数字出版物, 研究+行业分析): https://thegradient.pub/rss/
 - **Unite.AI** (AI新闻与工具评测): https://www.unite.ai/feed/
 - **AI Snake Oil** → **AI as Normal Technology** (Sayash Kapoor & Arvind Narayanan, AI批判性分析, 普林斯顿大学): https://www.normaltech.ai/feed
+- **AI Now Institute** (AI政策研究, 纽约大学, 社会影响分析): https://ainowinstitute.org/category/news/feed
+- **The Conversation AI** (学术专家AI评论, 深度分析): https://theconversation.com/europe/topics/artificial-intelligence-ai-90/articles.atom
+- **TechRepublic AI** (企业IT专业人士AI指南): https://www.techrepublic.com/rssfeeds/topic/artificial-intelligence/
+- **Artificialis** (Medium数据科学社区, 技术文章聚合): https://medium.com/feed/artificialis
+- **Analytics India Magazine** (印度AI/数据科学媒体, 新兴市场视角): https://analyticsindiamag.com/feed/
+- **AI TechPark** (AI/ML/IoT新闻与趋势分析): https://ai-techpark.com/category/ai/feed/
+- **KnowTechie AI** (非技术人员的AI科技新闻): https://knowtechie.com/category/ai/feed/
 
 ### 中文源
 - **阮一峰的网络日志** (科技周刊/技术博客, 每周五更新, AI工具教程): https://www.ruanyifeng.com/blog/atom.xml
@@ -157,6 +176,9 @@
 - **Analytics Vidhya** (数据科学/机器学习社区, 10万+关注): https://www.analyticsvidhya.com/feed/
 - **Artificial Intelligence Blog** (AI新闻与教育, 商业应用): https://www.artificial-intelligence.blog/ai-news?format=rss
 - **Medium Generative AI** (生成式AI文章聚合, 每日更新): https://medium.com/feed/tag/generative-ai
+- **JMLR** (Journal of Machine Learning Research, 顶级学术期刊): https://www.jmlr.org/jmlr.xml
+- **CMU ML Blog** (卡内基梅隆机器学习博客, 学术前沿): https://blog.ml.cmu.edu/feed
+- **David Stutz Blog** (鲁棒AI与计算机视觉研究): https://davidstutz.de/category/blog/feed
 
 ### ️ AI工具与开发
 - **LLM Explorer News** (LLM新闻聚合, 实时更新, 无RSS): https://llm-explorer.com/static/llm-news/
@@ -167,6 +189,9 @@
 - **Weights & Biases: Fully Connected** (ML教程+行业领袖对话+最新研究深潜): https://wandb.ai/fully-connected/rss.xml
 - **Replicate Blog** (机器学习云平台, AI模型部署+工具): https://replicate.com/blog/rss
 - **Lightning AI** (团队AI构建平台, PyTorch Lightning开发者): https://lightning.ai/pages/feed/
+- **Anaconda Blog** (数据科学博客, Python/ML生态系统): https://www.anaconda.com/blog/feed
+- **InfoWorld Analytics** (企业数据分析与AI应用): https://www.infoworld.com/category/analytics/index.rss
+- **InfoWorld Machine Learning** (ML技术与实践): https://www.infoworld.com/category/machine-learning/index.rss
 
 ## 数据源优先级
 **写文章时的选源策略:**
@@ -222,6 +247,17 @@
 - **Prompts Daily** (10万+读者, AI驱动的营销和生产力技巧): https://www.neatprompts.com/subscribe — 无RSS, Newsletter订阅
 - **AI Marketing School** (双周更新, AI营销工具和技巧): https://aimarketingschool.beehiiv.com/ — 无RSS, Newsletter订阅
 
+#### 新发现的 AI 播客 (无RSS, 2026-02-26)
+- **Lex Fridman Podcast** (MIT AI研究员, 马拉松式深度对话, 2-3小时/集, 顶级嘉宾): https://lexfridman.com/podcast/ — 无RSS, YouTube/Spotify
+- **No Priors** (Sarah Guo & Elad Gil, AI创业+投资视角): https://www.nopriors.com/ — 无RSS, Podcast平台
+- **The Cognitive Revolution** (Nathan Labenz & Erik Torenberg, AI跨行业变革, 双周更新): https://www.cognitiverevolution.ai/ — 无RSS, Podcast平台
+- **Lenny's Podcast** (Lenny Rachitsky, AI + 产品管理交叉, 前Airbnb): https://www.lennyspodcast.com/ — 无RSS, Podcast平台
+- **Practical AI** (Chris Benson & Daniel Whitenack, 实践导向AI播客, 周更): https://changelog.com/practicalai — 无RSS, Podcast平台
+- **Eye on AI** (Craig S. Smith, 前纽约时报记者, AI发展+影响): https://www.eye-on.ai/ — 无RSS, Podcast平台
+- **All-In Podcast** (Chamath等4位科技投资人, 科技+AI+政治讨论): https://www.allinpodcast.co/ — 无RSS, Podcast平台
+- **Machine Learning Street Talk** (Dr. Tim Scarfe, 技术深度播客, AI理论+研究): https://www.youtube.com/c/MachineLearningStreetTalk — 无RSS, YouTube
+- **AI For Humans** (Gavin Purcell & Kevin Pereira, 轻松有趣AI播客): https://www.aiforhumans.show/ — 无RSS, Podcast平台
+
 #### GitHub资源库 (非RSS但可作为数据源参考)
 - **GetStream/awesome-ai-news** (每月AI新闻和资源汇总, 开发者向): https://github.com/GetStream/awesome-ai-news — 无RSS, GitHub仓库
 - **csarigoz/best-ai-newsletters** (精选AI Newsletter列表, 2025年11月更新): https://github.com/csarigoz/best-ai-newsletters — 无RSS, GitHub仓库
@@ -233,10 +269,10 @@
 - **The Batch** (DeepLearning.AI周报, Andrew Ng): https://www.deeplearning.ai/the-batch/ — ️ 无RSS, Newsletter订阅
 
 ## 数据源统计
-**当前已验证: 111+ 核心数据源**
-- Newsletter: 31+, 个人博客: 13+, 研究机构: 16, 科技媒体: 26+, 开发者社区: 8, 中文源: 17, 学术源: 12+, AI工具与开发: 8
-- 待验证潜力源: 40+ (其中16个为2026-02-25新发现的高质量Newsletter)
+**当前已验证: 130+ 核心数据源**
+- Newsletter: 31+, 个人博客: 13+, 研究机构: 19+, 科技媒体: 32+, 开发者社区: 8, 中文源: 17, 学术源: 16+, AI工具与开发: 11, AI播客(RSS): 3
+- 待验证潜力源: 50+ (其中16个为2026-02-25发现的高质量Newsletter, 9个为2026-02-26发现的AI播客)
 
-**目标: 30+ 高质量源** 已达成 (111+)
+**目标: 30+ 高质量源** 已超额达成 (130+)
 
-**最后更新**: 2026-02-26 (上午 09:00)
+**最后更新**: 2026-02-26 (晚上 21:00)

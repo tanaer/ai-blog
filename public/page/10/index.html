@@ -185,6 +185,28 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771614961962_cover.jpg" alt="数据分析与AI">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">LLMWise:一个 API Key 调用 36&#43; 模型,还能对比,融合,评判输出
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>ChatGPT Plus &#43; Claude Pro &#43; Gemini Advanced = $60/月.三个 dashboard,三个 API key,三个账单.
+如果有一个服务,一个 API Key 就能调用 36&#43; 模型,还能对比输出,融合答案,让 AI 评判 AI,自动故障转移呢?
+这就是 LLMWise – 一个多模型 LLM API 服务,刚刚上线.
+五种模式,五种用法 1. Chat(1 credit) 标准聊天,但带智能路由.设置 cost_saver: true,简单问题自动路由到便宜模型.
+from llmwise import LLMWise client = LLMWise(&#34;mm_sk_...&#34;) resp = client.chat( model=&#34;auto&#34;, # 自动选择 cost_saver=True, messages=[{&#34;role&#34;: &#34;user&#34;, &#34;content&#34;: &#34;Explain quantum computing&#34;}], stream=True ) 2. Compare(3 credits) 同一问题,多个模型并行回答,对比输出.
+resp = client.compare( models=[“gpt-5.2”, “claude-sonnet-4.5”, “gemini-3-flash”], messages=[{“role”: “user”, “content”: “Explain eventual consistency”}],
+for r in resp[“responses”]: print(f&#34;{r[‘model’]}: {r[’latency_ms’]}ms&#34;)
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 03:10:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>273 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to LLMWise:一个 API Key 调用 36&#43; 模型,还能对比,融合,评判输出" href="https://claudeai.best/posts/hunter-2026022103/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771610836429_cover.jpg" alt="移动应用与AI">
 </figure>
   <header class="entry-header">
@@ -383,37 +405,6 @@ Tier 3: Browser Rendering JS 重型页面(SPA),用 Cloudflare Browser Rendering 
   </div>
   <footer class="entry-footer"><span title='2026-02-20 16:05:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>257 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to markdown.new:Cloudflare 出品,任何 URL 转 Markdown,给 AI 省下 80% Token" href="https://claudeai.best/posts/hunter-2026022016/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771571292793_cover.jpg" alt="数学与逻辑">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Lean 作者谈 AI 时代的证明助手:选对基础比 AI 更重要
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>AI 现在能生成成千上万行经过验证的数学证明了.一个自然的问题是:AI 干活多了,证明助手的选择还重要吗?
-Leonardo de Moura(Lean 作者)的回答是:重要,而且比以前更重要.
-AI 放大你的基础 计算器没有让数学变得无关紧要.它让你跳过算术,专注于真正的问题.但计算器有用,是因为你带着数学框架来用它.表示方式很重要.
-同样的道理适用于 AI 和证明助手.一个语言模型如果目标系统有:
-依赖类型(dependent types), 类型类(typeclasses), 设计良好的 tactic 语言 它就能在正确的抽象层次表达数学思想.证明更短,结构更清晰,AI 能在更高层次工作.这是一个复利优势.
-三个 IMO 奖牌队伍,同一个选择 这不是理论假设,已经有证据了:
-AlphaProof(Google DeepMind):2024 IMO 银牌 Aristotle(Harmonic):2025 IMO 金牌 SEED Prover(ByteDance):2025 IMO 银牌 三个独立团队,解决同一个最高难度问题,都选择了有表达力类型,大型库,可编程生态的证明助手.
-还有 Axiom Math,Math Inc,Logical Intelligence 等公司也在同一个基础上构建.
-这不是巧合.
-可读规范:人类契约 证明助手保证证明正确,但正确性本身不够.总得有人读定理陈述,确认它捕获了预期的数学.
-这是一个人类契约,再多的自动化也无法消除.
-一个经过验证的证明,如果你看不懂定理陈述,对你没什么用.你需要信任的不仅是证明,还有规范(specification)本身.
-形式化陈述是信任锚.有人声称证明了一个重要结果,你需要检查实际的形式化陈述,而不是 AI 的摘要.可读的形式化规范不是便利功能,是信任的基础.
-自动化 = 游戏招式 一个有用的思维方式:每个 tactic 或决策过程是一个游戏招式.
-只有基本招式的系统:需要数百步才能完成例行推理 有强大自动化的系统:一步完成本来要几百步的工作 这对 AI 特别重要.用语言模型处理数百个底层证明步骤,就像用 LLM 算长算术表达式–能做,但远不如用对工具.强大的 tactic 让 AI 跳过程序性工作,专注于数学上有趣的决策.
-每一个你添加的强大 tactic,都是 AI 可以利用的新能力.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-20 15:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>104 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Lean 作者谈 AI 时代的证明助手:选对基础比 AI 更重要" href="https://claudeai.best/posts/hunter-2026022015/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
