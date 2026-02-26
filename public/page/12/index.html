@@ -185,6 +185,28 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771547063353_cover.jpg" alt="数据仪表盘与分析">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">让 AI Agent 帮你迁移 Postgres 到 ClickHouse:一个 Agent Harness 搞定
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>你的仪表盘越来越慢,Postgres 快被分析查询压垮了.你知道答案是 Postgres &#43; ClickHouse:事务用 Postgres,分析用 ClickHouse.
+但迁移?太痛苦了.AI 来帮忙?大多数 AI 辅助迁移产出的都是垃圾.
+ClickHouse 官方博客刚分享了一个方法:给 AI Agent 配一个&#34;Harness&#34;(工具链框架),让它能有效完成迁移工作.
+为什么普通 AI 迁移会失败? 写个玩具 Demo 没问题.真正难的是生产环境:
+重构数据模型以适应 OLAP 性能, 把读时聚合改成写时物化视图, 优化 API 里的查询, 改完前端组件还要验证 这不是&#34;能不能写 ClickHouse SQL&#34;的问题,而是&#34;能不能在复杂的应用栈里有效工作&#34;的问题.
+三要素:Code &#43; Cadence &#43; Context 1. 一切皆代码(Code) 把整个数据栈当成一个用代码表达的系统–不是散落的 DDL 脚本和 SQL 字符串,而是共享的,带类型的对象:
+import { MaterializedView, OlapTable, sql } from &#34;@514labs/moose-lib&#34;; // 定义目标表 schema(带类型和注释) interface TargetSchema { id: string; /** 所有评分的平均值 */ average_rating: number; /** 有效评论总数 */ num_reviews: number; } // 在代码中声明 ClickHouse 表 export const targetTable = new OlapTable&lt;TargetSchema&gt;(&#34;target_table&#34;, { orderByFields: [&#34;id&#34;], }); // 物化视图:把查询时聚合变成预计算 export const mvToTargetTable = new MaterializedView&lt;TargetSchema&gt;({ selectStatement: sql` SELECT ${sourceTable.columns.id}, avg(${sourceTable.columns.rating}) AS average_rating, count(*) AS num_reviews FROM ${sourceTable} GROUP BY ${sourceTable.columns.id} `, selectTables: [sourceTable], targetTable, materializedViewName: &#34;mv_to_target_table&#34;, 这样 AI Agent 就在它熟悉的环境(TypeScript &#43; Git)里工作了.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-20 08:25:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>192 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to 让 AI Agent 帮你迁移 Postgres 到 ClickHouse:一个 Agent Harness 搞定" href="https://claudeai.best/posts/hunter-2026022008/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771543665181_cover.jpg" alt="并发编程与代码调试">
 </figure>
   <header class="entry-header">
@@ -389,25 +411,6 @@ OpenGnothia 不一样:开源,本地存储,BYOK.你的隐私你自己做主.
   </div>
   <footer class="entry-footer"><span title='2026-02-19 22:58:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>165 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to OpenGnothia:开源 AI 心理治疗伴侣,你的隐私自己做主" href="https://claudeai.best/posts/hunter-2026021922/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771509127499_cover.jpg" alt="MCP 配置工具 - MCP-wire">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">MCP-wire:一个命令搞定所有 AI 编码工具的 MCP 配置
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>你有 Claude Code,Codex,Gemini CLI……每个都要单独配置 MCP?
-MCP-wire 解决了这个问题:一个命令,配置所有工具.
-一句话介绍 MCP-wire 是一个 Go CLI,用一个 TUI 界面跨多个 AI 编码工具安装和管理 MCP 服务器.
-支持的工具 Claude Code (Anthropic), Codex CLI (OpenAI), Gemini CLI (Google), OpenCode (开源) 支持的 MCP 服务 内置精选服务 context7 - 文档查找 (OAuth) jira - Atlassian Rovo (OAuth) sentry - 错误监控 (OAuth) playwright - 浏览器自动化 MCP Registry (社区) 启用后可以访问数百个社区发布的 MCP 服务器:
-m 实 - # # ` # m # # m # m # m # m # m # # b b # g c m # 如 - - - 每 M # 只 ` n d t a u e 放 # M 每 M 1 2 3 如 * c 时 # # ` c c c c c c # # r r # i d a / # 果 个 C # 需 ` a e r u r n 到 # C 个 C . . . 果 参 p 搜 S # ` 运 p 5 安 p 安 p 卸 p 全 p 项 p # e e # t k b 你 C C G 工 P 创 ` m s a t l v P 工 P 你 考 - 索 e 怎 b 行 - . 装 - 装 - 载 - 局 - 目 - 安 w w m e i 为 同 l o e 具 - 添 建 y e c n h : : ` 我 具 - 在 来 w 安 n 么 交 a w w w w 安 w 级 w 装 H 从 c c n 什 时 a d m 都 w 加 一 a : r s : s 的 生 有 w * * * 多 源 i 装 t 用 互 s i 应 J i S i i 装 i 安 i o t i 源 l p b / 么 用 u e i 要 i 新 个 m i p &#34; [ e 看 态 自 i 统 抽 社 个 : r : r ? 式 h r 用 i r e r r ( r 装 r m a n 码 o - u m 需 多 d x n 配 r 服 l e p o o h ] r 法 正 己 r 一 象 区 H e y e r e n e e 所 e ( e e p s 构 n w i c 要 个 e i 置 e 务 Y x t r a t v 在 的 e 界 差 驱 A a T a t 有 仅 b t 建 e i l p 这 做 A a i t u t i 快 配 面 异 动 I c f 错 U i r i u 项 i 当 i r a a r d - 个 A C C M 抽 M m o : t p c 速 置 的 * * * k e 误 I M n y n n 目 n 前 n e n l h e w ? I o c L C 象 L p n h s e 发 文 思 * * * 编 e a 追 C s s i 可 s 项 s w d l t i d o I P 了 l : h : s 展 件 路 码 r t 踪 P t 到 t n 用 t 目 t r t r 编 e d , 这 文 e t / / , 位 是 - - - 工 u , a a s ) a ) a ( e m p e 码 e 做 配 些 件 &#34; t / ` 但 置 对 具 N r 到 l O l t l l m a c s 工 写 文 置 差 : E p m 配 和 的 一 用 支 之 e e G l p l a l l a g p : 具 代 r 档 文 异 x c 目 置 格 : 个 户 持 间 w i C e l c r - / : 码 e 件 , a p 录 管 式 不 官 切 s e t l j n s l j j O a w / v 格 你 m . , 理 , T 需 方 换 , n H a i C e i i S n i g i 式 只 p e 不 是 手 U 要 , a u u r o n s r r / d r i e 可 需 l x 用 个 动 I 关 R 这 G b b d a d t e a a L i e t w 能 要 e a 写 痛 维 心 e 个 i l e e r n i / h 还 选 m 点 护 搞 配 g 工 t e 集 y t n t u 不 择 M p G . 很 定 置 i 具 H 成 C - r - - u a b 一 服 C l o 容 所 文 s 能 u r , o t y t t x p . 样 务 P e 易 有 件 t 省 b e d a - a a ) c . &#34; . 代 出 工 格 r 不 g 数 e r t r r o &#43; c 码 错 具 式 y 少 M i 据 g a - g g m o . . 时 C s 库 e r t e e / 选 m 间 P t 连 t g a t t a 择 / . - r 接 e r n 工 m w y , c t g c c d 具 c i l e l l r , p r a o t a a e 它 &#34; e u p u u a 帮 * d e o d d g 你 e n p e e r 生 c e a 成 . o n n 正 几 - d c - - d 确 百 n e o s s i 的 个 o d c c / 配 - e o o m 置 p p p c . r e e p o - m u p w p s r i t e o r r j e e c t </p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-19 21:50:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>6 分钟</span>&nbsp;·&nbsp;<span>1072 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to MCP-wire:一个命令搞定所有 AI 编码工具的 MCP 配置" href="https://claudeai.best/posts/hunter-2026021921/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

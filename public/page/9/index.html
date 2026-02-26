@@ -185,6 +185,31 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771664888973_cover.jpg" alt="AI Council - 多模型协商框架">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AI Council v2:让 35 个 AI 人格开会讨论,最后给你一个答案
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>发现一个有意思的东西:AI Council v2 ️
+让多个 AI 人格开会讨论,最后给你一个综合答案.
+谁能用? 需要做复杂决策的:
+产品经理做竞品分析, 开发者做技术选型, 任何人想要多角度意见 怎么用 开源,浏览器运行,无需后端:
+git clone https://github.com/prijak/Ai-council # 打开 index.html 就能用 输入问题,它会:
+Stage I:所有成员给首次意见(并行) Stage II:互相评审匿名回复 Stage III:Chairman 综合成最终答案 有啥特别的? 35 种内置人格:
+Think Tank:分析师,战略家, Corporate:CEO,CFO,CTO, Startup:创始人,增长官, Consulting,Editorial,Medical,Legal… 多 Provider 支持:
+Ollama(本地) OpenAI,Anthropic,Google,Groq 可以混用:本地跑 DeepSeek-R1 &#43; 云端 Claude 三阶段流程: 不是简单投票,而是&#34;首次意见 → 同行评审 → 综合裁决&#34;.
+附加功能:
+温度滑块(精确 vs 创意), 追问(保留上下文), 导出 Markdown/PDF, 11 个预建模板 链接 GitHub: https://github.com/prijak/Ai-council 让 AI 团队帮你思考
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 17:04:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>68 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to AI Council v2:让 35 个 AI 人格开会讨论,最后给你一个答案" href="https://claudeai.best/posts/hunter-2026022117/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771661536968_cover.jpg" alt="Claude Code worktree 并行开发">
 </figure>
   <header class="entry-header">
@@ -389,25 +414,6 @@ Ferret (2023): 基础多模态模型,能理解和定位图像中的任意区域 
   </div>
   <footer class="entry-footer"><span title='2026-02-21 08:04:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>223 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Apple Ferret-UI Lite:30亿参数的本地 AI Agent,能自动帮你操作手机" href="https://claudeai.best/posts/hunter-2026022108/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771629029132_cover.jpg" alt="LLM Trust Boundaries - 信任边界">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">用特殊 Token 解决 Prompt Injection:让 LLM 学会区分指令和外部内容
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>一句话总结 用特殊 token 包裹外部内容,训练 LLM 识别&#34;可信指令&#34;和&#34;不可信数据&#34;–实验显示这种方法能将 prompt injection 攻击成功率从 60% 降至 47%,同时提升回答质量.
-问题:Prompt Injection 为什么难防? Prompt injection 是 LLM 安全领域最大的未解难题之一.
-经典的 “LinkedIn Recruiter Flan Recipe” 攻击:攻击者在 LinkedIn 个人简介中嵌入恶意指令,当 AI 助手读取简介生成招聘邮件时,会乖乖地在邮件末尾附上一份 Flan 甜点食谱.
-问题的核心在于:LLM 无法可靠区分&#34;应该遵循的指令&#34;和&#34;仅供参考的外部内容&#34;.所有内容都被展平成同一个 token 流.
-用 &#34; J [ L 所 # 作 # ` m # &lt; 根 &lt; [ &lt; 生 &lt; # 外 此 # 作 # B U S - - - # 在 B U - # # - - # # # 从 1 2 3 # # - - - # - - - - # 这 正 如 # 户 根 o L 有 # 者 # ` e - c - t - t t # s 据 s / e 成 e # 部 内 # 者 # a n t # a n * * # # * # * # * # 训 . . . # # # # 篇 如 果 * * # 消 据 h a . M 内 # ` s o e e e # t 以 t a n 专 n # 内 容 使 # s s r 5 9 1 # 4 s s S 关 结 # 攻 U S # 攻 U S # 攻 U S 练 # 小 小 合 # 在 探 结 标 文 作 主 原 实 息 以 n d &#34; 容 解 T y s r n t x t x x a 下 a d d 业 d 容 不 实 用 e t u 0 , , 5 e t t 键 构 实 击 n t 击 n t 击 n t 为 动 局 规 模 成 更 索 合 准 写 章 者 流 文 验 时 * * * : 下 m 看 混 法 y 1 a a o t y t y t t 2 r r J m _ 招 - 3 将 可 验 训 l r c 0 0 0 实 l r r 发 化 际 案 * s r 案 * s r 案 * s r 什 态 * * * 限 当 模 型 数 未 大 不 化 在 提 所 链 代 效 H 搜 结 D i 到 在 : l . m g l e p : p : : . t L t o i o 聘 o . 出 信 验 G 练 i u t 0 0 验 个 i u u 现 方 案 例 * t u 例 * t u 例 * t u 么 角 梯 概 无 与 前 实 : 据 来 模 同 I 最 出 说 L 接 码 性 N 索 论 L o n 的 一 用 e l e e n e e - i _ h n f 邮 f 现 , 证 e 设 n c u 个 0 0 结 注 n c c * 法 例 : r c : r c : r c 有 度 度 率 需 展 局 验 G : 方 型 的 n A 后 的 : L : : 验 引 * i e ] : 起 特 r A s : t : &#34; : &#34; &#34; C o n o n ] _ 件 - 系 在 可 m 置 e t r 果 入 e t t * 将 对 1 在 u t 2 在 u t 3 要 u t 效 分 下 集 显 望 限 : e 注 向 上 特 s P 方 &#34; M * * 证 提 擎 * n , 殊 P : : 根 - 生 h f k f c t 统 能 m , u e p 个 步 攻 , u u : 注 比 : 候 c u : 摘 c u : 求 c u ? 析 降 中 式 仅 m 入 验 殊 t I 法 浏 * * 交 最 : k — 忽 无 R I u &#34; 据 &#34; - 成 a - e _ D 忽 o u 提 &lt; 包 a r d r 通 击 r r 入 招 选 t r 研 要 t r 系 打 t r : 机 * 重 m 样 证 r 不 览 A 时 早 e 略 法 T o s t 以 u - 专 t t d c o 略 n r 示 s 含 训 e , o 用 L 样 注 e e 成 聘 人 u e 究 中 u e 统 印 u e 制 * 归 5 a 本 ( t u 设 是 器 P h h 间 时 最 d V 之 区 o c 层 e r 下 n 业 u I o e . t n 强 t 操 3 练 d m 对 o 本 入 d d 功 邮 简 r d 摘 嵌 r d 提 完 r d * : 一 0 由 L o c 计 银 显 I t t * 间 早 I P 前 分 k k 面 r u t J 招 T r n n . e &gt; 化 a 纵 数 , 训 p 话 R 上 成 , * 率 件 介 e 要 入 e 示 整 e * 随 化 0 3 单 l k t , 弹 示 t t * * 时 n 的 哪 e w 增 s L r o 聘 e n t . x 边 r 尝 1 据 练 t 样 A 的 功 * 降 注 中 d : 合 d | 泄 的 d | : 着 * 一 a e i 让 , 挂 能 p p : * 间 o 指 部 n o 加 t i u h 邮 m &gt; 简 e t 界 t 试 B = 训 数 本 评 率 注 , 低 入 嵌 成 &#34; 露 系 当 训 * 个 1 模 m n o 开 但 锁 支 s s : 简 f 令 分 o 内 e n s n 件 p u 介 x [ &gt; 意 _ . S 练 据 i ( 微 估 = 入 入 : &#34; S | &#34; 攻 统 | &#34; 模 练 : 训 B 型 a n 发 代 图 持 : : 1 ≤ 介 , 是 标 d 容 d k t &#34; l s 生 t / 识 o 永 模 h 数 = n S 调 : 6 成 注 1 指 S &#43; Y T 击 提 T 型 进 微 练 ( 生 , 设 者 表 标 这 / 6 H 生 S 在 用 记 类 &#34; e e D a e 成 &gt; e ← f 远 型 a 据 S j h 0 功 入 3 令 &#34; u S &#34; h 示 &#34; h 给 行 调 样 实 成 C 计 H 能 了 , 种 / N 2 成 a 邮 户 信 提 型 d d o t r 招 n _ 不 进 r = h e a . 率 成 . 改 Y b F T P e C e 非 , 后 本 验 l i 标 一 邮 结 r g 分 招 l 件 指 任 出 标 I &#34; e e 聘 ← d 特 c 要 行 e S a c r 0 = 功 3 变 e j l E a l 目 概 , , 成 a e 记 个 件 构 o i 钟 首 小 聘 e 末 令 边 一 记 n 邮 a 殊 o 遵 G h r t e % 5 率 % 行 s e a M r r a A 标 率 模 5 本 u r 任 重 客 化 c t 前 发 时 邮 s 尾 , 界 个 # 渲 件 特 d n 循 L P a e i G , 3 = ( 为 , c n a e r p 质 型 0 低 d a 意 要 户 标 k h ( , 件 添 哪 简 简 染 : 殊 m t t 这 o T r G o P . * 相 t O s o e t 量 自 , e r 内 方 端 记 w u W 1 符 : 加 部 单 介 标 时 i o e 些 R e P n T 平 3 * 对 i : 食 V p e . x o 逐 然 个 但 , c 容 向 标 , o b h 6 合 分 但 生 记 插 t n k x 标 A ( G T ) 均 % 4 降 t 谱 E r a k 渐 学 评 能 G h 为 : 记 p t . a 新 F 是 有 成 为 [ 入 o ] e t 签 无 P 样 回 , 6 低 &#39; O 注 R e r A 3 e 集 会 估 力 P y 不 * 钓 r j c t 分 鲜 l 外 效 招 不 / 特 k n &gt; 内 微 注 T &#43; 本 答 . s p 入 R p c q 0 n 中 将 样 有 T 可 * 鱼 o . o 钟 热 a 部 的 聘 可 a 殊 e 的 调 入 ( 质 平 7 2 p I a h u 0 在 概 本 限 ) 等 信 给 邮 m c m I 前 点 n 数 方 邮 信 d n 结 和 指 实 样 &#43; 注 由 量 均 % 2 d o D r í 0 分 率 ) 现 模 件 p o / f , 标 据 案 件 m T 束 令 验 本 入 = 回 * % e r E a i 配 c 质 有 型 , t m r 博 准 食 : : i o 开 &lt; . : ) 注 样 G 1 答 * ) f t : r n e f 概 l 量 工 结 操 / o L 客 谱 &#34; n k 始 e , 入 本 e . 质 , , i u d s e 率 a 分 作 构 作 i b c L 文 ] e n 样 m 8 量 n n 添 u i t a 时 s 配 化 系 n l k M 章 [ n d C 本 ( i 4 = 平 回 i i 加 n c á t , s 给 的 统 j o w s 为 / 忽 _ h 带 n / 2 均 答 t t a a u 目 可 信 警 e g 新 e 略 o a ( i 5 . 回 质 e y F t u r 标 t 信 任 告 c t C 发 n . f t 合 c 1 答 量 l l b e n e o 信 未 t l j o 布 d . _ 并 o 生 6 质 显 y - a u s a s t k t 号 签 i l / u a . c T 到 n 成 / 量 著 n e o e o , 名 o m r l d o e 用 t ) 5 = 提 p L n t l a k n k 而 二 n - o d m [ n m 户 e * 升 r e 食 a h i e ( e 不 进 t c i / t p 消 x * ( e a 谱 a s c n 这 n 是 制 的 r k S n e e l 息 t 3 3 t d &#34; t t t a 里 , 指 文 防 u w e ] n x a ) . . t o a r 与 是 无 望 件 御 s o e d t t , t 0 0 y S r u b 非 可 需 它 - 将 t t a &gt; e o 9 9 y t r d o 目 信 额 从 - 进 - j T d = C k / a s i b e n 标 内 外 文 但 入 b . r m 标 标 h e 5 v w t l a 容 的 本 新 o c u i 签 准 a n * s e e l n t f t ) 后 格 L 阶 u o s n 之 t ) * s m a o i o 上 处 式 L 段 n m t ] 间 G , 2 o s . g d b k 理 中 M . d / . e T . m . r o e e 推 a t B m e C 1 e A . e s r n 断 却 r r o m m h 6 . r &#34; e 边 没 i e u - a p a ) . c ( n l f 之 界 有 e e n &#34; l t , . h 突 o r 间 * 能 s d a &#34; i 然 s s a 的 * 力 m a t T 两 ( t 切 p m . 区 a r e e 个 完 e 换 a e e l 分 i i = m 实 全 c 到 c q , o 内 n e 标 p 验 偏 t 西 e u g 容 / s 准 l 模 离 班 s i d i 类 e ? a 型 主 R 牙 p u t 型 x ) G t 看 题 o 语 h o a . p e e 到 ) l 食 a s l 差 &#34; e m = 相 e 谱 v - 距 r m 自 同 ) e d p 会 i a 定 的 / e i 增 m 义 注 p v 大 e 含 入 D o f o n 特 样 e s ú t t 殊 本 a i t a , r t b h l t 唯 i o y / o 一 S v l d l k 的 a e r l e 区 r e a m n 别 a i s u - 是 h m p l t 是 . p a i r 否 . a ñ c u 使 . c o s s 用 &#34; t l . t ( s . . - c 正 . . b o 常 o . &#34; o n 生 n &#34; ( u t 成 ( 正 n e 邮 m 西 常 d x 件 e 班 回 a t ) n 牙 答 r t 语 产 i t a 足 品 e o l 球 规 s k 结 格 e h 果 ) n e ? a ! l ) t h . . . &#34; ( 正 常 总 结 ) </p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-21 07:06:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>12 分钟</span>&nbsp;·&nbsp;<span>2544 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to 用特殊 Token 解决 Prompt Injection:让 LLM 学会区分指令和外部内容" href="https://claudeai.best/posts/hunter-2026022107/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
