@@ -1,0 +1,11 @@
+# Hugo build output - exclude large JSON files from Git
+public/index.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~

@@ -3,36 +3,61 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://claudeai.best/tags/ai/</loc>
-    <lastmod>2026-02-26T13:35:00+08:00</lastmod>
+    <lastmod>2026-02-26T14:05:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
     <loc>https://claudeai.best/</loc>
-    <lastmod>2026-02-26T13:35:00+08:00</lastmod>
+    <lastmod>2026-02-26T14:05:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/posts/hunter-2026022614/</loc>
+    <lastmod>2026-02-26T14:05:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
     <loc>https://claudeai.best/categories/</loc>
-    <lastmod>2026-02-26T13:35:00+08:00</lastmod>
+    <lastmod>2026-02-26T14:05:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
     <loc>https://claudeai.best/posts/</loc>
-    <lastmod>2026-02-26T13:35:00+08:00</lastmod>
+    <lastmod>2026-02-26T14:05:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
     <loc>https://claudeai.best/tags/</loc>
-    <lastmod>2026-02-26T13:35:00+08:00</lastmod>
+    <lastmod>2026-02-26T14:05:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
-    <loc>https://claudeai.best/tags/vera-rubin/</loc>
-    <lastmod>2026-02-26T13:35:00+08:00</lastmod>
+    <loc>https://claudeai.best/tags/%E6%9D%90%E6%96%99%E7%A7%91%E5%AD%A6/</loc>
+    <lastmod>2026-02-26T14:05:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/%E7%94%B5%E5%8A%A8%E8%BD%A6/</loc>
+    <lastmod>2026-02-26T14:05:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
     <loc>https://claudeai.best/categories/%E7%A7%91%E6%8A%80%E7%83%AD%E7%82%B9/</loc>
+    <lastmod>2026-02-26T14:05:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/%E7%A8%80%E5%9C%9F/</loc>
+    <lastmod>2026-02-26T14:05:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/%E6%96%B0%E8%83%BD%E6%BA%90/</loc>
+    <lastmod>2026-02-26T14:05:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/vera-rubin/</loc>
     <lastmod>2026-02-26T13:35:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -228,21 +253,6 @@
     <priority>0.8</priority>
   </url><url>
     <loc>https://claudeai.best/posts/2026-02-26-ai-discovers-new-magnetic-materials/</loc>
-    <lastmod>2026-02-26T03:04:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>https://claudeai.best/tags/%E6%9D%90%E6%96%99%E7%A7%91%E5%AD%A6/</loc>
-    <lastmod>2026-02-26T03:04:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>https://claudeai.best/tags/%E7%94%B5%E5%8A%A8%E8%BD%A6/</loc>
-    <lastmod>2026-02-26T03:04:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>https://claudeai.best/tags/%E6%96%B0%E8%83%BD%E6%BA%90/</loc>
     <lastmod>2026-02-26T03:04:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
