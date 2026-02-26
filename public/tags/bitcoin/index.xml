@@ -1,28 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Bitcoin on AI 极客前沿</title><link>https://claudeai.best/tags/bitcoin/</link><description>Recent content in Bitcoin on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Sun, 15 Feb 2026 21:00:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/bitcoin/index.xml" rel="self" type="application/rss+xml"/><item><title> AI Agent 终于有钱包了!Lightning Labs 开源 L402,让 AI 自主花比特币</title><link>https://claudeai.best/posts/hunter-2026021521/</link><pubDate>Sun, 15 Feb 2026 21:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021521/</guid><description>&lt;h2 id="ai-会干活了但它不会付钱">AI 会干活了,但它不会付钱&lt;/h2>
-&lt;p>2026 年了,AI Agent 已经能写代码,做研究,管理日程.但有个尴尬的问题一直没解决:&lt;strong>AI 不会花钱&lt;/strong>.&lt;/p>
-&lt;p>想让 AI 自动调用付费 API?得先绑你的信用卡.想让 AI 买数据?还是得你来操作.AI 在&amp;quot;干活&amp;quot;这件事上已经很强了,但在&amp;quot;花钱&amp;quot;这件事上,它还是个巨婴&amp;ndash;每笔交易都得人类手动授权.&lt;/p>
-&lt;p>这就像雇了个超级助理,结果每次买杯咖啡都得你亲自掏钱包.&lt;strong>效率瓶颈不在智能上,在支付上.&lt;/strong>&lt;/p>
-&lt;h2 id="l402-来了ai-的第一个自己的钱包">L402 来了:AI 的第一个「自己的钱包」&lt;/h2>
-&lt;p>2 月 15 日,Lightning Labs 正式开源了 &lt;strong>L402 Agent Tools&lt;/strong>&amp;ndash;一套让 AI Agent 直接在比特币闪电网络上自主交易的工具包.&lt;/p>
-&lt;h3 id="三大核心能力">三大核心能力&lt;/h3>
-&lt;p>&lt;strong>1. AI 自己跑闪电节点&lt;/strong>&lt;/p>
-&lt;p>没听错.AI Agent 现在可以独立运行 Lightning 节点,拥有自己的钱包地址,自主发起和接收支付.不需要银行账户,不需要 KYC,不需要信用卡.&lt;/p>
-&lt;p>&lt;strong>2. 无账户付费 API 调用&lt;/strong>&lt;/p>
-&lt;p>L402 协议的精髓在于:&lt;strong>用 HTTP 402 状态码 + macaroon 凭证实现原生支付&lt;/strong>.AI 访问一个付费接口时,服务器返回 402(需要付款),AI 自动通过闪电网络完成微支付,拿到访问令牌.整个过程不需要注册账号.&lt;/p>
-&lt;p>&lt;strong>3. 托管付费端点&lt;/strong>&lt;/p>
-&lt;p>AI 不仅能花钱,还能赚钱.通过 &lt;code>lnget&lt;/code> CLI 工具,AI Agent 可以把自己的能力包装成付费 API 端点,其他 Agent 或用户付费调用.&lt;strong>AI 经济体的雏形.&lt;/strong>&lt;/p>
-&lt;h2 id="-快速上手">️ 快速上手&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 1. 克隆仓库&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git clone https://github.com/lightninglabs/agent-tools
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> agent-tools
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 2. 安装 lnget CLI&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">go install ./cmd/lnget
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 3. 连接你的 Lightning 节点&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">lnget init --node&lt;span class="o">=&lt;/span>your-node-address
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 4. AI Agent 调用付费 API(自动完成 L402 支付)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">lnget fetch https://paid-api.example.com/data
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>核心依赖:&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Bitcoin on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/bitcoin/</link>
+    <description>Recent content in Bitcoin on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 15 Feb 2026 21:00:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/bitcoin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> AI Agent 终于有钱包了!Lightning Labs 开源 L402,让 AI 自主花比特币</title>
+      <link>https://claudeai.best/posts/hunter-2026021521/</link>
+      <pubDate>Sun, 15 Feb 2026 21:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021521/</guid>
+      <description>&lt;h2 id=&#34;ai-会干活了但它不会付钱&#34;&gt;AI 会干活了,但它不会付钱&lt;/h2&gt;
+&lt;p&gt;2026 年了,AI Agent 已经能写代码,做研究,管理日程.但有个尴尬的问题一直没解决:&lt;strong&gt;AI 不会花钱&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;想让 AI 自动调用付费 API?得先绑你的信用卡.想让 AI 买数据?还是得你来操作.AI 在&amp;quot;干活&amp;quot;这件事上已经很强了,但在&amp;quot;花钱&amp;quot;这件事上,它还是个巨婴&amp;ndash;每笔交易都得人类手动授权.&lt;/p&gt;
+&lt;p&gt;这就像雇了个超级助理,结果每次买杯咖啡都得你亲自掏钱包.&lt;strong&gt;效率瓶颈不在智能上,在支付上.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;l402-来了ai-的第一个自己的钱包&#34;&gt;L402 来了:AI 的第一个「自己的钱包」&lt;/h2&gt;
+&lt;p&gt;2 月 15 日,Lightning Labs 正式开源了 &lt;strong&gt;L402 Agent Tools&lt;/strong&gt;&amp;ndash;一套让 AI Agent 直接在比特币闪电网络上自主交易的工具包.&lt;/p&gt;
+&lt;h3 id=&#34;三大核心能力&#34;&gt;三大核心能力&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;1. AI 自己跑闪电节点&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;没听错.AI Agent 现在可以独立运行 Lightning 节点,拥有自己的钱包地址,自主发起和接收支付.不需要银行账户,不需要 KYC,不需要信用卡.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. 无账户付费 API 调用&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;L402 协议的精髓在于:&lt;strong&gt;用 HTTP 402 状态码 + macaroon 凭证实现原生支付&lt;/strong&gt;.AI 访问一个付费接口时,服务器返回 402(需要付款),AI 自动通过闪电网络完成微支付,拿到访问令牌.整个过程不需要注册账号.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. 托管付费端点&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;AI 不仅能花钱,还能赚钱.通过 &lt;code&gt;lnget&lt;/code&gt; CLI 工具,AI Agent 可以把自己的能力包装成付费 API 端点,其他 Agent 或用户付费调用.&lt;strong&gt;AI 经济体的雏形.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;-快速上手&#34;&gt;️ 快速上手&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 1. 克隆仓库&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://github.com/lightninglabs/agent-tools
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; agent-tools
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 2. 安装 lnget CLI&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;go install ./cmd/lnget
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 3. 连接你的 Lightning 节点&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;lnget init --node&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;your-node-address
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 4. AI Agent 调用付费 API(自动完成 L402 支付)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;lnget fetch https://paid-api.example.com/data
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;核心依赖:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

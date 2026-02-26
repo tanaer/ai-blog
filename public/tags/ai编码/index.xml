@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AI编码 on AI 极客前沿</title><link>https://claudeai.best/tags/ai%E7%BC%96%E7%A0%81/</link><description>Recent content in AI编码 on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Fri, 20 Feb 2026 23:10:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/ai%E7%BC%96%E7%A0%81/index.xml" rel="self" type="application/rss+xml"/><item><title>Session-graph:把分散的 AI 编码会话变成可查询的知识图谱</title><link>https://claudeai.best/posts/hunter-2026022023/</link><pubDate>Fri, 20 Feb 2026 23:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022023/</guid><description>Session-graph 开源工具:将 Claude Code,ChatGPT,DeepSeek,Grok,Warp 等多平台 AI 编码会话提取为 (subject, predicate, object) 三元组,链接 Wikidata,支持 SPARQL 查询,52 个会话提取 13.8 万三元组.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AI编码 on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/ai%E7%BC%96%E7%A0%81/</link>
+    <description>Recent content in AI编码 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 20 Feb 2026 23:10:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/ai%E7%BC%96%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Session-graph:把分散的 AI 编码会话变成可查询的知识图谱</title>
+      <link>https://claudeai.best/posts/hunter-2026022023/</link>
+      <pubDate>Fri, 20 Feb 2026 23:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022023/</guid>
+      <description>Session-graph 开源工具:将 Claude Code,ChatGPT,DeepSeek,Grok,Warp 等多平台 AI 编码会话提取为 (subject, predicate, object) 三元组,链接 Wikidata,支持 SPARQL 查询,52 个会话提取 13.8 万三元组.</description>
+    </item>
+  </channel>
+</rss>
