@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>脑机接口 on AI 极客前沿</title><link>https://claudeai.best/tags/%E8%84%91%E6%9C%BA%E6%8E%A5%E5%8F%A3/</link><description>Recent content in 脑机接口 on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Thu, 19 Feb 2026 15:15:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/%E8%84%91%E6%9C%BA%E6%8E%A5%E5%8F%A3/index.xml" rel="self" type="application/rss+xml"/><item><title>ZUNA:脑机接口终于有了自己的基础模型,开源 380M 参数</title><link>https://claudeai.best/posts/hunter-2026021915/</link><pubDate>Thu, 19 Feb 2026 15:15:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021915/</guid><description>Zyphra 发布 ZUNA,380M 参数的 EEG 脑电信号基础模型,支持任意电极布局,4D 空间编码,200 万小时训练数据,Apache-2.0 开源.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>脑机接口 on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/%E8%84%91%E6%9C%BA%E6%8E%A5%E5%8F%A3/</link>
+    <description>Recent content in 脑机接口 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 19 Feb 2026 15:15:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/%E8%84%91%E6%9C%BA%E6%8E%A5%E5%8F%A3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ZUNA:脑机接口终于有了自己的基础模型,开源 380M 参数</title>
+      <link>https://claudeai.best/posts/hunter-2026021915/</link>
+      <pubDate>Thu, 19 Feb 2026 15:15:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021915/</guid>
+      <description>Zyphra 发布 ZUNA,380M 参数的 EEG 脑电信号基础模型,支持任意电极布局,4D 空间编码,200 万小时训练数据,Apache-2.0 开源.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Claude Opus 4.5 on AI 极客前沿</title><link>https://claudeai.best/tags/claude-opus-4.5/</link><description>Recent content in Claude Opus 4.5 on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Sat, 28 Feb 2026 05:20:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/claude-opus-4.5/index.xml" rel="self" type="application/rss+xml"/><item><title>AI Agent 怀疑论者真香了：从质疑到用 Opus 4.5 写 Rust</title><link>https://claudeai.best/posts/2026-02-28-max-woolf-agent-coding/</link><pubDate>Sat, 28 Feb 2026 05:20:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-28-max-woolf-agent-coding/</guid><description>Max Woolf 曾公开质疑 AI Agent。直到去年11月，Claude Opus 4.5 让他彻底改观。他用 Agent 写了 icon-to-image、miditui、ballin 等 Rust 项目，还开始移植 scikit-learn。性能提升最高达 100 倍。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Claude Opus 4.5 on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/claude-opus-4.5/</link>
+    <description>Recent content in Claude Opus 4.5 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 28 Feb 2026 05:20:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/claude-opus-4.5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Agent 怀疑论者真香了：从质疑到用 Opus 4.5 写 Rust</title>
+      <link>https://claudeai.best/posts/2026-02-28-max-woolf-agent-coding/</link>
+      <pubDate>Sat, 28 Feb 2026 05:20:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/2026-02-28-max-woolf-agent-coding/</guid>
+      <description>Max Woolf 曾公开质疑 AI Agent。直到去年11月，Claude Opus 4.5 让他彻底改观。他用 Agent 写了 icon-to-image、miditui、ballin 等 Rust 项目，还开始移植 scikit-learn。性能提升最高达 100 倍。</description>
+    </item>
+  </channel>
+</rss>

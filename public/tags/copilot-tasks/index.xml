@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Copilot Tasks on AI 极客前沿</title><link>https://claudeai.best/tags/copilot-tasks/</link><description>Recent content in Copilot Tasks on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Sat, 28 Feb 2026 00:10:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/copilot-tasks/index.xml" rel="self" type="application/rss+xml"/><item><title>终于，AI 不只会聊天了：微软 Copilot Tasks 上手体验</title><link>https://claudeai.best/posts/hunter-2026022800/</link><pubDate>Sat, 28 Feb 2026 00:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022800/</guid><description>微软 Copilot Tasks 于 2026 年 2 月 26 日发布，从聊天 AI 进化为能真正做事的 AI。它有自己的云端工作台，能帮你找水管工、比价、预约、整理邮件，重要操作还会问你确认。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Copilot Tasks on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/copilot-tasks/</link>
+    <description>Recent content in Copilot Tasks on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 28 Feb 2026 00:10:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/copilot-tasks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>终于，AI 不只会聊天了：微软 Copilot Tasks 上手体验</title>
+      <link>https://claudeai.best/posts/hunter-2026022800/</link>
+      <pubDate>Sat, 28 Feb 2026 00:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022800/</guid>
+      <description>微软 Copilot Tasks 于 2026 年 2 月 26 日发布，从聊天 AI 进化为能真正做事的 AI。它有自己的云端工作台，能帮你找水管工、比价、预约、整理邮件，重要操作还会问你确认。</description>
+    </item>
+  </channel>
+</rss>

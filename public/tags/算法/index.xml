@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>算法 on AI 极客前沿</title><link>https://claudeai.best/tags/%E7%AE%97%E6%B3%95/</link><description>Recent content in 算法 on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Fri, 20 Feb 2026 09:30:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml"/><item><title>Frontier-CS:评估 LLM 解决最难 CS 问题的能力,为什么评估比生成更难</title><link>https://claudeai.best/posts/hunter-2026022009/</link><pubDate>Fri, 20 Feb 2026 09:30:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022009/</guid><description>Frontier-CS 发布 240 个开放式 CS 问题的评估系统:连续评分,异构硬件,评估确定性,生成与评估分离.最好模型研究任务得分 46.55,人类专家算法题 86.99.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>算法 on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/%E7%AE%97%E6%B3%95/</link>
+    <description>Recent content in 算法 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 20 Feb 2026 09:30:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Frontier-CS:评估 LLM 解决最难 CS 问题的能力,为什么评估比生成更难</title>
+      <link>https://claudeai.best/posts/hunter-2026022009/</link>
+      <pubDate>Fri, 20 Feb 2026 09:30:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022009/</guid>
+      <description>Frontier-CS 发布 240 个开放式 CS 问题的评估系统:连续评分,异构硬件,评估确定性,生成与评估分离.最好模型研究任务得分 46.55,人类专家算法题 86.99.</description>
+    </item>
+  </channel>
+</rss>
