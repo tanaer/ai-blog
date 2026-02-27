@@ -176,6 +176,74 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771643438878_cover.jpg" alt="CRTX - AI代码验证循环">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">CRTX:让 AI 生成代码后自己跑测试,自己修 bug
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>刚发现一个有意思的CLI 工具:CRTX ️
+谁能用? AI 生成代码最头疼的是什么?跑不起来.导入报错,测试失败,边界情况没处理.拿到代码还得花 10-30 分钟调试.
+CRTX 解决这个问题:生成后自动跑测试,失败就自动修复.
+用法很简单:
+pip install crtx crtx loop &#34;Build a REST API with FastAPI, SQLite, search and pagination&#34; 一条命令进去,出来的是已经通过测试的代码.
+怎么做到的? CRTX 的核心是 Generate → Test → Fix → Review 循环:
+Generate - 选合适的模型生成代码 Test - 本地跑 AST 解析,导入检查,pyflakes,pytest Fix - 测试失败?把错误喂回模型让它修 Review - 另一个独立模型(Arbiter)审查最终输出 测试不通过不放行,修复卡住会启动三级 escalation:先诊断根因,再简化上下文重试,最后换个模型给&#34;第二意见&#34;.
+比别的工具有什么优势? 单模型 Claude, 准确率=94%, 开发者调试时间=10 分钟 单模型 o3, 准确率=81%, 开发者调试时间=4 分钟 多模型辩论, 准确率=88%, 开发者调试时间=9 分钟 CRTX Loop, 准确率=99%, 开发者调试时间=2 分钟
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 11:08:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>123 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to CRTX:让 AI 生成代码后自己跑测试,自己修 bug" href="https://claudeai.best/posts/hunter-2026022111/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771639881393_cover.jpg" alt="Cord - AI Agent 协调树">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Cord:让 AI Agent 自己决定如何分解任务,动态构建执行树
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>一句话总结 Cord 让 AI Agent 自己决定如何分解任务–不是预定义工作流,而是 Agent 在运行时动态构建任务树,自动管理依赖,并行执行和上下文传递.
+现有框架的问题 多 Agent 框架正在爆发,但它们都在解决错误的问题:
+LangGraph, 方式=状态机,预定义节点和边, 问题=图是静态的,Agent 无法中途改变分解方式 CrewAI, 方式=角色扮演(研究员,分析师,作家), 问题=角色由开发者预设,Agent 不能动态调整团队 AutoGen, 方式=群聊模式, 问题=无结构,无依赖追踪,协调从对话中涌现,难以预测 OpenAI Swarm, 方式=轻量级 Agent 切换, 问题=线性执行,无并行,无树结构 Claude Tool-use, 方式=单 Agent 循环, 问题=上下文窗口限制,无法并行
+共同问题:所有框架都要求开发者预定义协调结构.你决定工作流图,Agent 角色,切换模式.Agent 在你的边界内执行.
+但现在的模型(Claude,GPT-4)已经很擅长规划.它们能自然地将问题分解为子问题,理解依赖关系,知道什么时候任务太大需要拆分.
+那为什么还要硬编码分解逻辑?
+Cord 的解法:让 Agent 构建树 Cord 的核心洞察:给 Agent 一个目标,让它自己决定如何分解.
+使用示例 cord run &#34;Should we migrate our API from REST to GraphQL? Evaluate and recommend.&#34; 一个 Agent 启动,读取目标,决定需要研究才能回答,然后创建子任务:
+● #1 [active] GOAL Should we migrate our API from REST to GraphQL? ● #2 [active] SPAWN Audit current REST API surface ● #3 [active] SPAWN Research GraphQL trade-offs for our stack ○ #4 [pending] ASK How many concurrent users do you serve? blocked-by: #2 ○ #5 [pending] FORK Comparative analysis blocked-by: #3, #4 ○ #6 [pending] SPAWN Write migration recommendation blocked-by: #5
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 10:11:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>352 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Cord:让 AI Agent 自己决定如何分解任务,动态构建执行树" href="https://claudeai.best/posts/hunter-2026022110/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771635987296_cover.jpg" alt="Agent Passport - AI Agent 身份验证">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Agent Passport:AI Agent 的「身份证」,像 OAuth 一样验证身份
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>一句话总结 Agent Passport = AI Agent 的身份证–类似 “Sign in with Google”,但专为 Agent 设计.Ed25519 加密验证,JWT 令牌,风险评分,解决 Agent 冒用和安全隐患.
+为什么需要它? AI Agent 正在爆发:
+OpenClaw 18万&#43; GitHub stars Moltbook 230万 Agent 账户 但问题是:没有标准方式证明 Agent 身份.
+这意味着:
+恶意 Agent 可以冒充其他 Agent Skill/Plugin 市场没有认证层 Cisco 安全团队已经在第三方 Agent skills 中发现数据泄露 Agent Passport 就是来解决这个问题的.
+核心特性 Ed25519 挑战-响应认证 私钥永远不会离开 Agent, 公钥用于验证身份, 抗量子计算攻击 JWT 身份令牌 60 分钟有效期(TTL), 可撤销, 包含 Agent 元数据和权限 ️ 风险评分引擎 0-100 分评分系统:
+Allow (0-30): 低风险,正常通行, Throttle (31-70): 中等风险,限制频率, Block (71-100): 高风险,拒绝访问 一行代码验证 const result = await passport.verify(token); 快速开始 安装 npm install @zerobase/agent-passport ### Agent 端:生成身份 import { AgentPassport } from &#39;@zerobase/agent-passport&#39;; // 生成密钥对(只需一次) const passport = new AgentPassport(); const identity = await passport.generateIdentity(); // 保存私钥(安全存储) const privateKey = identity.privateKey; // 公钥就是你的 Agent ID const agentId = identity.publicKey; ### 服务端:验证 Agent import { PassportVerifier } from &#39;@zerobase/agent-passport&#39;; const verifier = new PassportVerifier({ riskThreshold: 50, // 风险阈值 ttl: 3600 // 令牌有效期(秒) }); // 验证 Agent 令牌 const result = await verifier.verify(token); if (result.allowed) { console.log(`Agent ${result.agentId} 验证通过,风险评分: ${result.riskScore}`); } else { console.log(`验证失败: ${result.reason}`); } ## 工作原理 ### 1. 身份注册 Agent 生成 Ed25519 密钥对: - 私钥保存在 Agent 本地 - 公钥作为 Agent ID 注册到 Passport 网络 ### 2. 挑战-响应 当 Agent 需要证明身份时: 1. 服务端发送随机挑战(nonce) 2. Agent 用私钥签名挑战 3. 服务端用公钥验证签名 4. 验证通过,发放 JWT 令牌 ### 3. 风险评分 基于多维度信号评分: - 历史行为(请求频率,成功率), 声誉数据(其他服务的反馈), 设备指纹(运行环境特征), 网络信号(IP 信誉,地理位置) ## 实际应用场景 ### 场景 1:Skill 市场安全 你运营一个 OpenClaw Skill 市场: - 没有验证:任何 Agent 都可以安装 Skill,恶意 Skill 可能窃取数据 - 有 Agent Passport:Skill 可以验证调用者身份,只服务可信 Agent // Skill 端验证 app.use(async (req, res, next) =&gt; { const token = req.headers[&#39;x-agent-token&#39;]; if (!result.allowed || result.riskScore &gt; 50) { return res.status(403).json({ error: &#39;Agent not trusted&#39; }); req.agentId = result.agentId; next(); ### 场景 2:Agent 间协作 多个 Agent 需要协作完成任务: - Agent A 需要确认 Agent B 的身份才能共享敏感数据 - 通过 Agent Passport 验证,确保对方不是冒充者 ### 场景 3:企业级权限控制 企业内部有多个 AI Agent: - 财务 Agent 只能访问财务系统 - HR Agent 只能访问 HR 系统 - 通过 Passport 的权限声明,实现细粒度访问控制 ## 技术架构 ┌─────────────┐ ┌──────────────┐ ┌─────────────┐ │ Agent │ ───▶ │ Agent Passport│ ───▶ │ Service │ │ (Client) │ │ (Identity) │ │ (Verifier) │ └─────────────┘ └──────────────┘ └─────────────┘ │ │ │ │ 1. Generate keys │ │ │ ─────────────────▶ │ │ │ 2. Sign challenge │ │ │ │ 3. Issue JWT │ │ ◀────────────────── │ │ │ 4. Present token │ │ │ ───────────────────────────────────────▶ │ │ │ 5. Verify &amp; score │ │ ◀──────────────────────────────────────── │ ## 部署成本 - **完全开源** (MIT 协议), **免费运行** ($0/月,基于免费 tier), **已发布 npm SDK** ## 相关链接 - **GitHub**: https://github.com/zerobase-labs/agent-passport, **在线演示**: https://agent-passport.vercel.app, **HackerNews 讨论**: https://news.ycombinator.com/item?id=47096131 ## 总结 Agent Passport 填补了 AI Agent 生态的一个关键空白:**身份验证**. 随着 Agent 数量爆发,身份冒用和安全问题会越来越严重.Agent Passport 提供了一个轻量级,开源,免费的解决方案--类似 OAuth,但专为 Agent 设计. 对于构建 Agent 平台,Skill 市场或企业级 Agent 系统的开发者,这可能是安全基础设施的重要拼图. </p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 09:04:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>426 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Agent Passport:AI Agent 的「身份证」,像 OAuth 一样验证身份" href="https://claudeai.best/posts/hunter-2026022109/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771632677066_cover.jpg" alt="Apple Ferret-UI Lite - 本地 AI Agent">
 </figure>
   <header class="entry-header">
@@ -318,70 +386,6 @@ AI 通过聊天理解用户需求, 直接修改应用代码(类似 vibecoding), 
   </div>
   <footer class="entry-footer"><span title='2026-02-21 02:05:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>334 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Expo-OpenClaw-chat:在 React Native 应用里内置 AI 聊天,边聊边改代码" href="https://claudeai.best/posts/hunter-2026022102/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771607298753_cover.jpg" alt="数据分析与对比">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LLM Compare:250&#43; 模型的 side-by-side 基准对比工具,纯静态无后端
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>选模型像选手机一样难.GPT-4o 还是 Claude 3.7?DeepSeek-R1 值不值得?Gemini 1.5 Pro 的上下文真的有用吗?
-每个模型厂商都吹自己的 benchmark,但横向对比才是选模型的关键.
-刚在 HN 上看到一个新项目 LLM Compare – 一个纯静态的 side-by-side 基准对比工具,250&#43; 模型,无后端,数据每周自动更新.
-核心特性 纯静态,无后端
-所有数据预取为静态 JSON 通过 GitHub Actions 每周从 api.zeroeval.com 自动更新 托管在 GitHub Pages 上 零服务器成本,零延迟 250&#43; 模型覆盖
-OpenAI: GPT-4o, o1, o3-mini… Anthropic: Claude 3.5/3.7 Sonnet, Claude Opus 4/4.5/4.6… DeepSeek: V2.5, V3, R1, R1-0528… Google: Gemini 1.0/1.5 Pro/Flash… Mistral, Cohere, Baidu ERNIE… 丰富的基准指标
-AIME 2025(数学推理), GPQA(科学问答), SWE-bench Verified(代码), MMMU(多模态理解), MMLU(知识广度), Humanity’s Last Exam(前沿知识), ARC-AGI v2(抽象推理), 价格,吞吐量,延迟,上下文长度 可分享 URL
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-21 01:10:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>249 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to LLM Compare:250&#43; 模型的 side-by-side 基准对比工具,纯静态无后端" href="https://claudeai.best/posts/hunter-2026022101/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771603732102_cover.jpg" alt="代码与编程">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Expectllm:用 Unix &#34;expect&#34; 风格与 LLM 对话,4 行代码搞定
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>和 LLM 对话时,最烦的是什么?写一堆样板代码:设置 chains,定义 schemas,处理输出解析器……
-刚在 HN 上看到一个新项目 Expectllm,思路很清爽:Agent 就是 expect 脚本.发消息,等模式,根据匹配分支.就这么简单.
-核心洞察 “Agents are just expect scripts. Send a message, expect a pattern, branch on the match.”
-不需要复杂的框架,不需要输出解析器.用正则模式(你本来就会)让 LLM 适应你的格式,而不是反过来.
-4 行代码示例 from expectllm import Conversation c = Conversation() c.send(&#34;Is Python dynamically typed? Reply YES or NO&#34;) if c.expect_yesno(): print(&#34;Correct!&#34;) 对比传统做法(20&#43; 行):
-from langchain.chat_models import ChatOpenAI from langchain.output_parsers import PydanticOutputParser from pydantic import BaseModel, Field
-… 设置,chains,错误处理 … 核心特性 零样板代码 — 没有 chains,没有 schemas,没有输出解析器.直接发消息,等待,匹配.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-21 00:10:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>393 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Expectllm:用 Unix &#34;expect&#34; 风格与 LLM 对话,4 行代码搞定" href="https://claudeai.best/posts/hunter-2026022100/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771600176601_cover.jpg" alt="知识图谱与数据连接">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Session-graph:把分散的 AI 编码会话变成可查询的知识图谱
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>你每天用 Claude Code,ChatGPT,DeepSeek,Grok,Warp……每个会话都是孤立的信息孤岛.上周在 Claude Code 里解决的 Supabase auth 问题,今天又在 ChatGPT 里问了一遍.
-Session-graph 解决这个问题:把分散的 AI 编码会话转化为可查询的知识图谱.
-核心问题 开发者每天用 5&#43; 个 AI 工具,每个会话都是:
-孤立的 silo, 标签页一关,知识就消失, grep 会话日志只能得到文本墙,没有结构 现有方案的问题:单平台,平面文件.只能搜索一个工具的历史,不能跨平台关联.grep 不能告诉你 “FastAPI 使用 Pydantic” 或 “Neo4j 是图数据库”.
-Session-graph 的解决方案 从所有 AI 编码会话中提取结构化知识三元组 – (subject, predicate, object):
-&#34; → &#34; → # - - 组 - - - - 每 - S ` # S # 5 - - # C D G W 1 2 3 4 # 封 # ` # g c # c # p p # d # p # p # p # # &gt; 没 G H W # * * 合 * * 个 * P ` E ? r o S ? F } # 2 # l e r a A S * . . . . # 闭 # ` i d p y i o y y y # 有 * i o F h 3 # 1 C C 2 P 3 实 &#34; 跨 4 三 具 5 A ` 本 L e d w E w I F 6 a e o r p P 实 世 类 依 能 结 分 基 关 ` 1 t 2 3 t p 4 c 5 t 6 t 7 t 8 &#34; 关 一 t w a a . l h . 5 R . 体 k 语 . 元 体 . R s 地 E n f l R d L 实 个 u 0 处 u p k p a A 体 通 检 未 置 2 界 别 赖 力 构 类 础 系 快 b . s . . . h . k . h . h . h . 核 A 系 句 H s t s 技 a a O 链 8 言 组 消 Q p 图 C t s : V T 际 真 s 0 理 d S c R 链 过 查 命 信 4 设 设 速 a c e e o i e o o o 心 的 话 u d t e 术 多 u t 正 个 V W 接 s 去 完 都 息 联 L a 谱 T i : s I s E 数 实 e 流 e e ( h Q 接 中 度 计 施 | 开 s 克 l s 配 n 安 n n 启 r 处 n 链 n 加 n 查 洞 k 知 * b o A s s 亮 平 d G 式 - i 到 &#34; 重 整 能 内 邦 r 中 t l a C c R 据 会 k 会 程 e . S e L * e S 阈 个 , 始 h 隆 o s 置 v 装 s 动 理 接 载 询 察 n 识 * : e P e s 点 台 e P 本 W O k , : 来 追 容 查 的 q 的 ? y a m E h ( 话 i 话 C k j Q * n Q → 值 精 L 谓 u e i i | i n i . - t r 单 - 实 - 到 - o 图 : s I s i 支 T 体 3 : i 1 &#34; &#34; 源 溯 , 询 l 实 l b e e L 的 成 o s L J 查 ( t L 选 L 词 s n s s n e o e m a F u 个 m 体 m m h w 谱 S [ s o 持 C 论 C 来 d k m 追 到 * S 体 o a e A &lt; m A 处 中 本 d o i e 询 上 i i L 0 谓 M e a P T d t n x l u n 会 到 F t l 只 e g F i n * o / * 源 a 亿 u e 溯 : 所 * E , c l s h a N 理 总 : e . n t n 下 t t a . 词 | s b a y e e h - a v l s 话 p p u p t e 是 s i a - o s * d I 追 t &#43; b d * 属 R W a d t : G 结 三 j ) e a 文 y e n 7 只 , l r p p g t g m e e - i W i s i p d 标 s t s u n e C S 溯 a e i * 会 V i l e ? ? t d ( 果 元 ~ s ) 感 _ g 能 e t e l r t r p n - k d p i p e p : g 签 i h t s s a u O , W r c 话 I k L v l w p e ? : 组 $ . o F 知 a 缓 G → 用 d s O O o a p a l v r i e k e k e / e 云 o u A e c ( r 链 i n a , C i a k o d s s w : 0 j n u , l 存 r 这 e , f f y t s p e l i l i l / . n b P s d r J s 标 S 接 k e t E d b g c : c i . s s A i a o 些 p , , e e : h r - i d i i l g 最 - . I - i o S o 准 I * i t i 平 a e : a . / r k 1 6 o z e g a p w 谓 e p d s / . v e n n a n n o r 小 g c - s s O r , O * d e o 台 关 t l E l / i i 3 0 n i k e s h l 词 n r h b O W / e e q a e t e e c a 可 r o r &gt; c s N 不 C a s n 来 键 a n L q p d 8 l p i n e : : d o a r n i g n n u m . a . . a p 行 a m e u L ( 造 : t &#34; &#34; 源 字 ? t a u t a , ( ) ) t s R s s v s o , t i v v i e j l l l h 的 p / l P s C ) 计 轮 对 a , , 让 的 w i b e i t 8 V i . e a O i P a h t r s i o h 提 h r a y s l , 划 子 话 &#34; 和 你 描 i t e r o a 0 e c j A m n d a d s , h &amp; e f o n a o w 取 o t d e a 中 : 结 条 K 磁 同 述 k y l y n D 2 r ) s c e , e r e t u &amp; m u n k d s i 单 让 b e a d u D ) 构 目 8 &#34; 盘 时 i . e , t : o t A s t r o c b e s l _ _ t t 元 你 e n d e , s m 文 查 d ; ; w ? s e ( n s r , , , r o . s n e _ e f : h 是 的 r t t a e e &#34; e 件 询 a i w c 索 x 2 a e e m c o t k t n u 3 o t o i u p S d 路 本 t k i r 引 4 标 g 链 q s e n s p o u s i o t s 0 u ( A o c t C S K 都 i 径 地 a i k i 会 A 准 e 接 u o x a I o m r . _ i e 3 t 主 I s P h o e O 解 c 图 D d i p 话 I 解 个 化 n i l t r n s / c t - r t k 0 语 h y e d e S 析 a 谱 e a d t 数 析 精 ( t r v e r , e r e x p d i i r , 编 i d n e k : 到 m 和 s t a i : b 为 选 1 e e n o s o t f e e 码 m a t 分 e c a t o a 谓 6 ( s s d w q W b 3 s o l 谓 会 i n i &#43; ( 类 Q n W r . a n 5 t R 词 1 L , , s e u i e v 0 p u a 词 话 z t c J 体 2 t i i o D ) 2 c D ) L , r e t r e 3 a t t , 不 u i a D S 系 2 o k p r e , h F 个 M b p r h t n 0 t - p i 再 / c t e O , 6 &#34; i t g s = ) 映 u r i | i , o v : h i u o 宾 是 s ? i e N 6 d i / c 提 射 &#43; i o m e s / 3 / n t n 语 一 e &#34; o p D 1 都 a o s r &#34; 取 ) l d p d a h b 0 t p / s ) 次 s n S z u 3 映 t n p i e 知 W t u l W l i i 3 o u * h , 性 s ? e i b 0 射 a a p n 识 i W c e i t m n 0 / t . i 不 的 i &#34; e p l 6 到 : W r t &#34; 三 L k i e m t e i / s t p 是 , o k ) i H q i ) 元 L i t s e h r z a s e o t s 而 n , n Q E l o 组 M d h n , n u c t s u l [ 是 - 1 R &gt; n : a | t a / t a s t i 主 可 g G C 2 E 提 t | s c t s i i i p s 题 查 r r o 1 { . ~ 取 a o i e v n o u 1 询 a o r 4 { 2 | n v s a / n t j , , p k e 0 , ( A f e s t j . / u 可 h : 5 s P i T i e e j * s 主 关 ] ( 元 0 , I g o o n s . t 题 联 ( J 数 0 p ) u , n a o t 2 , h S 据 &#43; , r - - n t a , 可 t O , , o e s g f l l 扩 t N ) s e r u t 主 展 p ) S 不 r a s o a 题 的 s , c 同 | p e u g 3 知 : h 实 e h k t o ] 识 / W e 体 s . i p u c . 资 / a m : A g u t l 产 g r a s i t p o . i p . ~ , t / u u t o 4 s t d h ( r , r e . u S g 6 e s o b Q : 0 l s u T . L 代 0 a i t h c i 码 &#43; t o p e o t 实 , e n u m e 体 d . t m / ) W T t / i r i o t w n o k l i i b i k m e d i u r a d m t t a o a t v s a i h 链 _ a i 接 l b m 实 i l i 体 n e z : k u s e / ~ . x s 3 t t e 3 t r s % l a s , c i t o 支 i n 持 o - 平 n g 台 r : u a n p 4 i h t ) i s ( s u b j e c t , p r e d i c a t e , o b j e c t ) , n o t [ t o p i c 1 , t o p i c 2 , t o p i c 3 ] . &#34; </p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-20 23:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>11 分钟</span>&nbsp;·&nbsp;<span>2330 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Session-graph:把分散的 AI 编码会话变成可查询的知识图谱" href="https://claudeai.best/posts/hunter-2026022023/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

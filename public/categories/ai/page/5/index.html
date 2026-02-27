@@ -161,6 +161,28 @@
 
 <article class="post-entry tag-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771658208972_cover.jpg" alt="MBC - Laravel AI Agent 编排">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">MBC:Laravel 后端也能跑 AI Agent 了,3 个 Agent 34 秒搭个网站
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>发现一个有意思的东西:MBC
+Laravel 后端也能跑 AI Agent 了.
+谁能用? PHP/Laravel 开发者,想在服务端跑 AI 自动化任务.
+怎么用 安装:
+composer require undergrace/laravel-mbc php artisan vendor:publish --tag=mbc-config php artisan migrate 配置 .env:
+MBC_PROVIDER=anthropic ANTHROPIC_API_KEY=sk-ant-…
+写代码:
+$session = Mbc::session(&#39;my-agent&#39;) -&gt;systemPrompt(&#39;你是数据助手&#39;) -&gt;tools([ListItemsTool::class, CreateReportTool::class]) -&gt;context([&#39;user_id&#39; =&gt; 1]) -&gt;start(&#39;分析销售数据并生成报告&#39;); ## 有啥特别的? **多 Provider 支持**: - Anthropic (Claude) - OpenAI (GPT-4o, o1, o3) - OpenRouter (200&#43; 模型) **多 Agent 模式**: - Pipeline:流水线, Orchestrator:编排, Shared Memory:共享内存 **工具用 PHP Attributes 定义**: #[Tool(name: &#39;analyze_data&#39;, description: &#39;分析数据&#39;)] class AnalyzeDataTool extends BaseTool { #[ToolParam(name: &#39;table&#39;, required: true)] public function execute(array $input): mixed return $this-&gt;dataRepo-&gt;analyze($input[&#39;table&#39;]); } 官方 demo:3 个 AI Agent 34 秒搭一个网站,只要 $0.34 ## 链接 - GitHub: https://github.com/etazza2025/laravel-mbc PHP 开发者也能玩 Agent 了 </p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 15:04:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>105 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to MBC:Laravel 后端也能跑 AI Agent 了,3 个 Agent 34 秒搭个网站" href="https://claudeai.best/posts/hunter-2026022115/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771654350724_cover.jpg" alt="Skill Check - Agent Skill Linter">
 </figure>
   <header class="entry-header">
@@ -358,28 +380,6 @@ Ember:检测到&#34;数据库&#34;区域的向量分布发生显著漂移,自动
   </div>
   <footer class="entry-footer"><span title='2026-02-21 04:21:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>243 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Ember MCP:给 Claude 装上永久记忆,告别每次重复交代背景" href="https://claudeai.best/posts/hunter-2026022104/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771614961962_cover.jpg" alt="数据分析与AI">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LLMWise:一个 API Key 调用 36&#43; 模型,还能对比,融合,评判输出
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>ChatGPT Plus &#43; Claude Pro &#43; Gemini Advanced = $60/月.三个 dashboard,三个 API key,三个账单.
-如果有一个服务,一个 API Key 就能调用 36&#43; 模型,还能对比输出,融合答案,让 AI 评判 AI,自动故障转移呢?
-这就是 LLMWise – 一个多模型 LLM API 服务,刚刚上线.
-五种模式,五种用法 1. Chat(1 credit) 标准聊天,但带智能路由.设置 cost_saver: true,简单问题自动路由到便宜模型.
-from llmwise import LLMWise client = LLMWise(&#34;mm_sk_...&#34;) resp = client.chat( model=&#34;auto&#34;, # 自动选择 cost_saver=True, messages=[{&#34;role&#34;: &#34;user&#34;, &#34;content&#34;: &#34;Explain quantum computing&#34;}], stream=True ) 2. Compare(3 credits) 同一问题,多个模型并行回答,对比输出.
-resp = client.compare( models=[“gpt-5.2”, “claude-sonnet-4.5”, “gemini-3-flash”], messages=[{“role”: “user”, “content”: “Explain eventual consistency”}],
-for r in resp[“responses”]: print(f&#34;{r[‘model’]}: {r[’latency_ms’]}ms&#34;)
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-21 03:10:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>273 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to LLMWise:一个 API Key 调用 36&#43; 模型,还能对比,融合,评判输出" href="https://claudeai.best/posts/hunter-2026022103/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

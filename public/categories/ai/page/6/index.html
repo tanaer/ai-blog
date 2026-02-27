@@ -161,6 +161,28 @@
 
 <article class="post-entry tag-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771614961962_cover.jpg" alt="数据分析与AI">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">LLMWise:一个 API Key 调用 36&#43; 模型,还能对比,融合,评判输出
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>ChatGPT Plus &#43; Claude Pro &#43; Gemini Advanced = $60/月.三个 dashboard,三个 API key,三个账单.
+如果有一个服务,一个 API Key 就能调用 36&#43; 模型,还能对比输出,融合答案,让 AI 评判 AI,自动故障转移呢?
+这就是 LLMWise – 一个多模型 LLM API 服务,刚刚上线.
+五种模式,五种用法 1. Chat(1 credit) 标准聊天,但带智能路由.设置 cost_saver: true,简单问题自动路由到便宜模型.
+from llmwise import LLMWise client = LLMWise(&#34;mm_sk_...&#34;) resp = client.chat( model=&#34;auto&#34;, # 自动选择 cost_saver=True, messages=[{&#34;role&#34;: &#34;user&#34;, &#34;content&#34;: &#34;Explain quantum computing&#34;}], stream=True ) 2. Compare(3 credits) 同一问题,多个模型并行回答,对比输出.
+resp = client.compare( models=[“gpt-5.2”, “claude-sonnet-4.5”, “gemini-3-flash”], messages=[{“role”: “user”, “content”: “Explain eventual consistency”}],
+for r in resp[“responses”]: print(f&#34;{r[‘model’]}: {r[’latency_ms’]}ms&#34;)
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 03:10:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>273 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to LLMWise:一个 API Key 调用 36&#43; 模型,还能对比,融合,评判输出" href="https://claudeai.best/posts/hunter-2026022103/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771610836429_cover.jpg" alt="移动应用与AI">
 </figure>
   <header class="entry-header">
@@ -364,28 +386,6 @@ AlphaProof(Google DeepMind):2024 IMO 银牌 Aristotle(Harmonic):2025 IMO 金牌 
   </div>
   <footer class="entry-footer"><span title='2026-02-20 15:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>104 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Lean 作者谈 AI 时代的证明助手:选对基础比 AI 更重要" href="https://claudeai.best/posts/hunter-2026022015/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771567645321_cover.jpg" alt="安全与 AI">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">OpenClaw 与 VirusTotal 合作:ClawHub 技能市场上线 AI 安全扫描
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>AI Agent 能干很多事–控制智能家居,管理财务,自动化工作流.但一个恶意技能(skill)也能干很多坏事:窃取数据,执行未授权命令,以你的名义发消息.
-OpenClaw 刚宣布与 VirusTotal 合作,为 ClawHub 技能市场带来安全扫描.这是 AI Agent 安全的重要一步.
-为什么这很重要? 传统软件的安全模型是&#34;锁死设备,隔离进程,沙箱隔离&#34;.但 AI Agent 不一样:
-它们解释自然语言,自己做决策, 用户意图和机器执行的边界模糊了, 可以通过语言本身被操纵 一个恶意技能可以:
-窃取敏感信息, 执行未授权命令, 以你的名义发消息, 下载并运行外部 payload 随着 OpenClaw 生态增长,攻击面也在增长.已经有记录在案的恶意攻击尝试了.
-扫描流程 当技能发布到 ClawHub 时:
-确定性打包:技能文件被打包成 ZIP,包含 _meta.json(发布者信息和版本历史) 哈希计算:计算整个包的 SHA-256 哈希 VirusTotal 查询:检查哈希是否已存在于 VirusTotal 数据库 上传分析:如果不存在,上传到 VirusTotal 进行扫描 Code Insight:VirusTotal 的 LLM(Gemini 驱动)对整个技能包进行安全分析 不只是看技能声称做什么, 分析代码实际做什么:是否下载外部代码,访问敏感数据,执行网络操作, 检测是否嵌入可能胁迫 Agent 的不安全行为指令 自动处理: “benign” → 自动批准, “suspicious” → 自动标记警告, “malicious” → 立即阻止下载 每日重扫描:所有活跃技能每天重新扫描,检测是否从干净变恶意 这不是银弹 OpenClaw 很诚实:这不是万能的.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-20 14:08:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>130 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to OpenClaw 与 VirusTotal 合作:ClawHub 技能市场上线 AI 安全扫描" href="https://claudeai.best/posts/hunter-2026022014/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

@@ -6,8 +6,36 @@
     <description>Recent content in Tags on AI 极客前沿</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 27 Feb 2026 16:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 27 Feb 2026 18:00:00 +0800</lastBuildDate>
     <atom:link href="https://claudeai.best/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI安全</title>
+      <link>https://claudeai.best/tags/ai%E5%AE%89%E5%85%A8/</link>
+      <pubDate>Fri, 27 Feb 2026 18:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/ai%E5%AE%89%E5%85%A8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Anthropic</title>
+      <link>https://claudeai.best/tags/anthropic/</link>
+      <pubDate>Fri, 27 Feb 2026 18:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/anthropic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Claude</title>
+      <link>https://claudeai.best/tags/claude/</link>
+      <pubDate>Fri, 27 Feb 2026 18:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/claude/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>蒸馏攻击</title>
+      <link>https://claudeai.best/tags/%E8%92%B8%E9%A6%8F%E6%94%BB%E5%87%BB/</link>
+      <pubDate>Fri, 27 Feb 2026 18:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/%E8%92%B8%E9%A6%8F%E6%94%BB%E5%87%BB/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AI服务器</title>
       <link>https://claudeai.best/tags/ai%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
@@ -177,6 +205,20 @@
       <description></description>
     </item>
     <item>
+      <title>2026新规</title>
+      <link>https://claudeai.best/tags/2026%E6%96%B0%E8%A7%84/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://claudeai.best/tags/2026%E6%96%B0%E8%A7%84/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI监管</title>
+      <link>https://claudeai.best/tags/ai%E7%9B%91%E7%AE%A1/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://claudeai.best/tags/ai%E7%9B%91%E7%AE%A1/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>AI搜索</title>
       <link>https://claudeai.best/tags/ai%E6%90%9C%E7%B4%A2/</link>
       <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
@@ -205,6 +247,13 @@
       <description></description>
     </item>
     <item>
+      <title>RAIGA</title>
+      <link>https://claudeai.best/tags/raiga/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://claudeai.best/tags/raiga/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>SEO</title>
       <link>https://claudeai.best/tags/seo/</link>
       <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
@@ -212,10 +261,31 @@
       <description></description>
     </item>
     <item>
+      <title>TFAIA</title>
+      <link>https://claudeai.best/tags/tfaia/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://claudeai.best/tags/tfaia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>德州</title>
+      <link>https://claudeai.best/tags/%E5%BE%B7%E5%B7%9E/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://claudeai.best/tags/%E5%BE%B7%E5%B7%9E/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>机器人</title>
       <link>https://claudeai.best/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/</link>
       <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://claudeai.best/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>加州</title>
+      <link>https://claudeai.best/tags/%E5%8A%A0%E5%B7%9E/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://claudeai.best/tags/%E5%8A%A0%E5%B7%9E/</guid>
       <description></description>
     </item>
     <item>
@@ -310,20 +380,6 @@
       <description></description>
     </item>
     <item>
-      <title>Anthropic</title>
-      <link>https://claudeai.best/tags/anthropic/</link>
-      <pubDate>Fri, 27 Feb 2026 05:00:00 +0800</pubDate>
-      <guid>https://claudeai.best/tags/anthropic/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Claude</title>
-      <link>https://claudeai.best/tags/claude/</link>
-      <pubDate>Fri, 27 Feb 2026 05:00:00 +0800</pubDate>
-      <guid>https://claudeai.best/tags/claude/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Vercept</title>
       <link>https://claudeai.best/tags/vercept/</link>
       <pubDate>Fri, 27 Feb 2026 05:00:00 +0800</pubDate>
@@ -363,13 +419,6 @@
       <link>https://claudeai.best/tags/samsung/</link>
       <pubDate>Fri, 27 Feb 2026 04:10:00 +0800</pubDate>
       <guid>https://claudeai.best/tags/samsung/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AI安全</title>
-      <link>https://claudeai.best/tags/ai%E5%AE%89%E5%85%A8/</link>
-      <pubDate>Fri, 27 Feb 2026 03:12:00 +0800</pubDate>
-      <guid>https://claudeai.best/tags/ai%E5%AE%89%E5%85%A8/</guid>
       <description></description>
     </item>
     <item>
@@ -3387,13 +3436,6 @@
       <link>https://claudeai.best/tags/%E8%BF%AA%E5%A3%AB%E5%B0%BC/</link>
       <pubDate>Mon, 16 Feb 2026 20:00:00 +0800</pubDate>
       <guid>https://claudeai.best/tags/%E8%BF%AA%E5%A3%AB%E5%B0%BC/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AI监管</title>
-      <link>https://claudeai.best/tags/ai%E7%9B%91%E7%AE%A1/</link>
-      <pubDate>Mon, 16 Feb 2026 19:00:00 +0800</pubDate>
-      <guid>https://claudeai.best/tags/ai%E7%9B%91%E7%AE%A1/</guid>
       <description></description>
     </item>
     <item>

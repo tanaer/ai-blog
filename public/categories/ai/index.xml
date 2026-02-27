@@ -6,8 +6,15 @@
     <description>Recent content in AI on AI 极客前沿</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 27 Feb 2026 09:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 27 Feb 2026 18:00:00 +0800</lastBuildDate>
     <atom:link href="https://claudeai.best/categories/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI界&#39;偷师&#39;大案：三家中企被曝大规模窃取Claude能力</title>
+      <link>https://claudeai.best/posts/hunter-2026022718/</link>
+      <pubDate>Fri, 27 Feb 2026 18:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022718/</guid>
+      <description>DeepSeek、MiniMax和Moonshot被指控通过24000个虚假账户进行蒸馏攻击</description>
+    </item>
     <item>
       <title>Meta砸数十亿租Google芯片：不想把鸡蛋都放Nvidia篮子里</title>
       <link>https://claudeai.best/posts/hunter-2026-02-27-3/</link>

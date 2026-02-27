@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>蒸馏攻击 on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/%E8%92%B8%E9%A6%8F%E6%94%BB%E5%87%BB/</link>
+    <description>Recent content in 蒸馏攻击 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 27 Feb 2026 18:00:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/%E8%92%B8%E9%A6%8F%E6%94%BB%E5%87%BB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI界&#39;偷师&#39;大案：三家中企被曝大规模窃取Claude能力</title>
+      <link>https://claudeai.best/posts/hunter-2026022718/</link>
+      <pubDate>Fri, 27 Feb 2026 18:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022718/</guid>
+      <description>DeepSeek、MiniMax和Moonshot被指控通过24000个虚假账户进行蒸馏攻击</description>
+    </item>
+  </channel>
+</rss>

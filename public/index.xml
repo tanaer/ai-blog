@@ -6,8 +6,15 @@
     <description>Recent content on AI 极客前沿</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 27 Feb 2026 16:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 27 Feb 2026 18:00:00 +0800</lastBuildDate>
     <atom:link href="https://claudeai.best/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI界&#39;偷师&#39;大案：三家中企被曝大规模窃取Claude能力</title>
+      <link>https://claudeai.best/posts/hunter-2026022718/</link>
+      <pubDate>Fri, 27 Feb 2026 18:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022718/</guid>
+      <description>DeepSeek、MiniMax和Moonshot被指控通过24000个虚假账户进行蒸馏攻击</description>
+    </item>
     <item>
       <title>Apple 放大招了！Mac mini 首次在美国生产</title>
       <link>https://claudeai.best/posts/2026-02-27-apple-us-manufacturing-expansion/</link>
@@ -179,6 +186,20 @@
       <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://claudeai.best/posts/hunter-2026-02-27-2/</guid>
       <description>LinkedIn B2B内容流量暴跌60%，排名却没变。这是AI搜索带来的颠覆。从SEO到GEO，游戏规则已经变了。</description>
+    </item>
+    <item>
+      <title>美国AI监管开闸：加州和德州新规今日生效</title>
+      <link>https://claudeai.best/posts/2026-02-27-us-ai-regulations-california-texas/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://claudeai.best/posts/2026-02-27-us-ai-regulations-california-texas/</guid>
+      <description>2026年1月1日，加州TFAIA和德州RAIGA正式实施。联邦层面还在扯皮，各州已经动手了。AI公司的苦日子来了？还是新的机会？</description>
+    </item>
+    <item>
+      <title>美国AI监管开闸：加州和德州新规今日生效</title>
+      <link>https://claudeai.best/posts/hunter-2026-02-27-1700/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026-02-27-1700/</guid>
+      <description>2026年1月1日，加州TFAIA和德州RAIGA正式实施。联邦层面还在扯皮，各州已经动手了。AI公司的苦日子来了？还是新的机会？</description>
     </item>
     <item>
       <title>睡一觉就知道你会得什么病？斯坦福AI有点东西</title>
