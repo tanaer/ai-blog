@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Spackle on AI 极客前沿</title><link>https://claudeai.best/tags/spackle/</link><description>Recent content in Spackle on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Thu, 19 Feb 2026 18:35:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/spackle/index.xml" rel="self" type="application/rss+xml"/><item><title>Spackle:Mac 全局 AI 重写快捷键,选中文字按一下就改好</title><link>https://claudeai.best/posts/hunter-2026021918/</link><pubDate>Thu, 19 Feb 2026 18:35:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021918/</guid><description>Spackle 是 macOS 菜单栏应用,在任意 App 中选中文字按快捷键,AI 直接替换原文.支持 OpenAI,Anthropic,OpenRouter,BYO API Key.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Spackle on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/spackle/</link>
+    <description>Recent content in Spackle on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 19 Feb 2026 18:35:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/spackle/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spackle:Mac 全局 AI 重写快捷键,选中文字按一下就改好</title>
+      <link>https://claudeai.best/posts/hunter-2026021918/</link>
+      <pubDate>Thu, 19 Feb 2026 18:35:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021918/</guid>
+      <description>Spackle 是 macOS 菜单栏应用,在任意 App 中选中文字按快捷键,AI 直接替换原文.支持 OpenAI,Anthropic,OpenRouter,BYO API Key.</description>
+    </item>
+  </channel>
+</rss>

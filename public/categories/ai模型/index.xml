@@ -1,69 +1,94 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AI模型 on AI 极客前沿</title><link>https://claudeai.best/categories/ai%E6%A8%A1%E5%9E%8B/</link><description>Recent content in AI模型 on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Fri, 27 Feb 2026 23:10:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/categories/ai%E6%A8%A1%E5%9E%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>DeepSeek V4 将发布：提前给华为看，英伟达靠边站</title><link>https://claudeai.best/posts/hunter-2026022723/</link><pubDate>Fri, 27 Feb 2026 23:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022723/</guid><description>&lt;h2 id="deepseek-v4-快来了">DeepSeek V4 快来了&lt;/h2>
-&lt;p>年后第一波 AI 大消息。&lt;/p>
-&lt;p>DeepSeek V4 预计近期正式发布。&lt;/p>
-&lt;p>具体哪天？官方还没说。&lt;/p>
-&lt;p>但圈子里的动静已经很大了。&lt;/p>
-&lt;h2 id="这回不一样">这回不一样&lt;/h2>
-&lt;p>DeepSeek 这次玩了个新操作。&lt;/p>
-&lt;p>按照惯例，AI 公司发新模型之前。&lt;/p>
-&lt;p>都会给芯片厂商提前看看。&lt;/p>
-&lt;p>让英伟达、AMD 这些公司优化一下性能。&lt;/p>
-&lt;p>模型跑得更顺畅，大家双赢。&lt;/p>
-&lt;p>但 DeepSeek 这次没按套路出牌。&lt;/p>
-&lt;p>&lt;strong>给华为看了，没给英伟达。&lt;/strong>&lt;/p>
-&lt;p>给中国芯片厂商开了绿灯。&lt;/p>
-&lt;p>美国两大 GPU 巨头，反而被关在门外。&lt;/p>
-&lt;h2 id="为什么这么做">为什么这么做？&lt;/h2>
-&lt;p>路透社的报道说了几件事。&lt;/p>
-&lt;p>DeepSeek V4 训练用的是 Nvidia Blackwell。&lt;/p>
-&lt;p>这芯片在美国出口管制名单上。&lt;/p>
-&lt;p>按理说中国买不到。&lt;/p>
-&lt;p>但 DeepSeek 用上了。&lt;/p>
-&lt;p>美国官方已经确认了这事。&lt;/p>
-&lt;p>现在 DeepSeek 又把英伟达晾在一边。&lt;/p>
-&lt;p>这操作，多少有点意思。&lt;/p>
-&lt;h2 id="技术上有什么期待">技术上有什么期待？&lt;/h2>
-&lt;p>V4 Lite 之前泄露过。&lt;/p>
-&lt;p>代码生成能力很强。&lt;/p>
-&lt;p>54 行代码画出 Xbox 手柄。&lt;/p>
-&lt;p>这次正式版应该更强。&lt;/p>
-&lt;p>主打的就是编程能力。&lt;/p>
-&lt;h2 id="对开发者意味着什么">对开发者意味着什么？&lt;/h2>
-&lt;p>如果你是写代码的。&lt;/p>
-&lt;p>DeepSeek V4 值得关注。&lt;/p>
-&lt;p>开源、免费、代码能力强。&lt;/p>
-&lt;p>用来辅助开发，性价比很高。&lt;/p>
-&lt;h2 id="这事的信号">这事的信号&lt;/h2>
-&lt;p>DeepSeek 这波操作传递了一个信号。&lt;/p>
-&lt;p>中国 AI 公司开始有自己的节奏了。&lt;/p>
-&lt;p>不再完全依赖美国技术生态。&lt;/p></description></item><item><title>DeepSeek V4 Lite 泄露：54 行代码生成 Xbox 手柄，SVG 生成能力震惊社区</title><link>https://claudeai.best/posts/hunter-2026022501/</link><pubDate>Wed, 25 Feb 2026 01:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022501/</guid><description>&lt;h2 id="开源模型的新突破">开源模型的新突破&lt;/h2>
-&lt;p>DeepSeek V4 Lite 在非官方渠道泄露，展现了令人惊叹的 &lt;strong>SVG 代码生成能力&lt;/strong>。这个轻量级模型用区区 54 行代码就生成了一个精致的 Xbox 手柄，另一个复杂场景更是压缩到 42 行。&lt;/p>
-&lt;h2 id="技术细节">技术细节&lt;/h2>
-&lt;p>根据泄露的演示：&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Xbox 手柄&lt;/strong>：54 行 SVG 代码&lt;/li>
-&lt;li>&lt;strong>多元素场景&lt;/strong>：42 行代码&lt;/li>
-&lt;li>&lt;strong>性能对比&lt;/strong>：超越 DeepSeek 3.2、Claude Opus 4.6、Gemini 3.1&lt;/li>
-&lt;/ul>
-&lt;p>内部评估显示，DeepSeek V4 Lite 生成的代码更加&lt;strong>优化和简洁&lt;/strong>，这意味着什么？&lt;/p>
-&lt;h2 id="设计自动化的未来">设计自动化的未来&lt;/h2>
-&lt;p>想象一下：&lt;/p>
-&lt;ol>
-&lt;li>&lt;strong>UI 设计师&lt;/strong>：直接用文字描述界面，AI 生成矢量图&lt;/li>
-&lt;li>&lt;strong>营销团队&lt;/strong>：快速生成 logo、图标、营销素材&lt;/li>
-&lt;li>&lt;strong>工程师&lt;/strong>：自动生成原理图、流程图、架构图&lt;/li>
-&lt;/ol>
-&lt;p>这不是幻想——这是 DeepSeek V4 Lite 正在实现的能力。&lt;/p>
-&lt;h2 id="空间推理的胜利">空间推理的胜利&lt;/h2>
-&lt;p>生成高质量的 SVG 不仅需要代码能力，更需要&lt;strong>空间推理&lt;/strong>。模型必须理解：&lt;/p>
-&lt;ul>
-&lt;li>物体的几何结构&lt;/li>
-&lt;li>元素之间的空间关系&lt;/li>
-&lt;li>如何用代码表达视觉概念&lt;/li>
-&lt;/ul>
-&lt;p>这正是 DeepSeek V4 Lite 的核心竞争力。&lt;/p>
-&lt;h2 id="警惕与期待">警惕与期待&lt;/h2>
-&lt;p>⚠️ &lt;strong>重要提示&lt;/strong>：这些性能来自泄露版本，尚未得到 DeepSeek 官方确认。AI 社区呼吁独立验证。&lt;/p>
-&lt;p>但无论如何，这展示了开源模型在&lt;strong>垂直领域&lt;/strong>的巨大潜力。当通用模型还在追求&amp;quot;什么都能做&amp;quot;时，专用模型已经开始&amp;quot;把一件事做到极致&amp;quot;。&lt;/p>
-&lt;h2 id="开源的力量">开源的力量&lt;/h2>
-&lt;p>DeepSeek 一直是开源社区的中坚力量。如果 V4 Lite 的 SVG 能力得到验证，它将成为：&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AI模型 on AI 极客前沿</title>
+    <link>https://claudeai.best/categories/ai%E6%A8%A1%E5%9E%8B/</link>
+    <description>Recent content in AI模型 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 27 Feb 2026 23:10:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/categories/ai%E6%A8%A1%E5%9E%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DeepSeek V4 将发布：提前给华为看，英伟达靠边站</title>
+      <link>https://claudeai.best/posts/hunter-2026022723/</link>
+      <pubDate>Fri, 27 Feb 2026 23:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022723/</guid>
+      <description>&lt;h2 id=&#34;deepseek-v4-快来了&#34;&gt;DeepSeek V4 快来了&lt;/h2&gt;
+&lt;p&gt;年后第一波 AI 大消息。&lt;/p&gt;
+&lt;p&gt;DeepSeek V4 预计近期正式发布。&lt;/p&gt;
+&lt;p&gt;具体哪天？官方还没说。&lt;/p&gt;
+&lt;p&gt;但圈子里的动静已经很大了。&lt;/p&gt;
+&lt;h2 id=&#34;这回不一样&#34;&gt;这回不一样&lt;/h2&gt;
+&lt;p&gt;DeepSeek 这次玩了个新操作。&lt;/p&gt;
+&lt;p&gt;按照惯例，AI 公司发新模型之前。&lt;/p&gt;
+&lt;p&gt;都会给芯片厂商提前看看。&lt;/p&gt;
+&lt;p&gt;让英伟达、AMD 这些公司优化一下性能。&lt;/p&gt;
+&lt;p&gt;模型跑得更顺畅，大家双赢。&lt;/p&gt;
+&lt;p&gt;但 DeepSeek 这次没按套路出牌。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;给华为看了，没给英伟达。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;给中国芯片厂商开了绿灯。&lt;/p&gt;
+&lt;p&gt;美国两大 GPU 巨头，反而被关在门外。&lt;/p&gt;
+&lt;h2 id=&#34;为什么这么做&#34;&gt;为什么这么做？&lt;/h2&gt;
+&lt;p&gt;路透社的报道说了几件事。&lt;/p&gt;
+&lt;p&gt;DeepSeek V4 训练用的是 Nvidia Blackwell。&lt;/p&gt;
+&lt;p&gt;这芯片在美国出口管制名单上。&lt;/p&gt;
+&lt;p&gt;按理说中国买不到。&lt;/p&gt;
+&lt;p&gt;但 DeepSeek 用上了。&lt;/p&gt;
+&lt;p&gt;美国官方已经确认了这事。&lt;/p&gt;
+&lt;p&gt;现在 DeepSeek 又把英伟达晾在一边。&lt;/p&gt;
+&lt;p&gt;这操作，多少有点意思。&lt;/p&gt;
+&lt;h2 id=&#34;技术上有什么期待&#34;&gt;技术上有什么期待？&lt;/h2&gt;
+&lt;p&gt;V4 Lite 之前泄露过。&lt;/p&gt;
+&lt;p&gt;代码生成能力很强。&lt;/p&gt;
+&lt;p&gt;54 行代码画出 Xbox 手柄。&lt;/p&gt;
+&lt;p&gt;这次正式版应该更强。&lt;/p&gt;
+&lt;p&gt;主打的就是编程能力。&lt;/p&gt;
+&lt;h2 id=&#34;对开发者意味着什么&#34;&gt;对开发者意味着什么？&lt;/h2&gt;
+&lt;p&gt;如果你是写代码的。&lt;/p&gt;
+&lt;p&gt;DeepSeek V4 值得关注。&lt;/p&gt;
+&lt;p&gt;开源、免费、代码能力强。&lt;/p&gt;
+&lt;p&gt;用来辅助开发，性价比很高。&lt;/p&gt;
+&lt;h2 id=&#34;这事的信号&#34;&gt;这事的信号&lt;/h2&gt;
+&lt;p&gt;DeepSeek 这波操作传递了一个信号。&lt;/p&gt;
+&lt;p&gt;中国 AI 公司开始有自己的节奏了。&lt;/p&gt;
+&lt;p&gt;不再完全依赖美国技术生态。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DeepSeek V4 Lite 泄露：54 行代码生成 Xbox 手柄，SVG 生成能力震惊社区</title>
+      <link>https://claudeai.best/posts/hunter-2026022501/</link>
+      <pubDate>Wed, 25 Feb 2026 01:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022501/</guid>
+      <description>&lt;h2 id=&#34;开源模型的新突破&#34;&gt;开源模型的新突破&lt;/h2&gt;
+&lt;p&gt;DeepSeek V4 Lite 在非官方渠道泄露，展现了令人惊叹的 &lt;strong&gt;SVG 代码生成能力&lt;/strong&gt;。这个轻量级模型用区区 54 行代码就生成了一个精致的 Xbox 手柄，另一个复杂场景更是压缩到 42 行。&lt;/p&gt;
+&lt;h2 id=&#34;技术细节&#34;&gt;技术细节&lt;/h2&gt;
+&lt;p&gt;根据泄露的演示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Xbox 手柄&lt;/strong&gt;：54 行 SVG 代码&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多元素场景&lt;/strong&gt;：42 行代码&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;性能对比&lt;/strong&gt;：超越 DeepSeek 3.2、Claude Opus 4.6、Gemini 3.1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;内部评估显示，DeepSeek V4 Lite 生成的代码更加&lt;strong&gt;优化和简洁&lt;/strong&gt;，这意味着什么？&lt;/p&gt;
+&lt;h2 id=&#34;设计自动化的未来&#34;&gt;设计自动化的未来&lt;/h2&gt;
+&lt;p&gt;想象一下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;UI 设计师&lt;/strong&gt;：直接用文字描述界面，AI 生成矢量图&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;营销团队&lt;/strong&gt;：快速生成 logo、图标、营销素材&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;工程师&lt;/strong&gt;：自动生成原理图、流程图、架构图&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这不是幻想——这是 DeepSeek V4 Lite 正在实现的能力。&lt;/p&gt;
+&lt;h2 id=&#34;空间推理的胜利&#34;&gt;空间推理的胜利&lt;/h2&gt;
+&lt;p&gt;生成高质量的 SVG 不仅需要代码能力，更需要&lt;strong&gt;空间推理&lt;/strong&gt;。模型必须理解：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;物体的几何结构&lt;/li&gt;
+&lt;li&gt;元素之间的空间关系&lt;/li&gt;
+&lt;li&gt;如何用代码表达视觉概念&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这正是 DeepSeek V4 Lite 的核心竞争力。&lt;/p&gt;
+&lt;h2 id=&#34;警惕与期待&#34;&gt;警惕与期待&lt;/h2&gt;
+&lt;p&gt;⚠️ &lt;strong&gt;重要提示&lt;/strong&gt;：这些性能来自泄露版本，尚未得到 DeepSeek 官方确认。AI 社区呼吁独立验证。&lt;/p&gt;
+&lt;p&gt;但无论如何，这展示了开源模型在&lt;strong&gt;垂直领域&lt;/strong&gt;的巨大潜力。当通用模型还在追求&amp;quot;什么都能做&amp;quot;时，专用模型已经开始&amp;quot;把一件事做到极致&amp;quot;。&lt;/p&gt;
+&lt;h2 id=&#34;开源的力量&#34;&gt;开源的力量&lt;/h2&gt;
+&lt;p&gt;DeepSeek 一直是开源社区的中坚力量。如果 V4 Lite 的 SVG 能力得到验证，它将成为：&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,1 +1,103 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>技术工具 on AI 极客前沿</title><link>https://claudeai.best/categories/%E6%8A%80%E6%9C%AF%E5%B7%A5%E5%85%B7/</link><description>Recent content in 技术工具 on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Sat, 21 Feb 2026 05:23:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/categories/%E6%8A%80%E6%9C%AF%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml"/><item><title>Jsonh:JSON 终于能写注释了,还能省略逗号和引号</title><link>https://claudeai.best/posts/hunter-2026022105/</link><pubDate>Sat, 21 Feb 2026 05:23:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022105/</guid><description>Jsonh 是一个全新的 JSON 超集,支持注释,省略逗号,多行字符串,无引号键值等特性.兼容 JSON 和 JSON5,号称&amp;#39;HJSON v2&amp;#39;,让配置文件真正为人类设计.</description></item><item><title>LLMWise:一个 API Key 调用 36+ 模型,还能对比,融合,评判输出</title><link>https://claudeai.best/posts/hunter-2026022103/</link><pubDate>Sat, 21 Feb 2026 03:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022103/</guid><description>LLMWise 多模型 LLM API:一个 Key 调用 GPT/Claude/Gemini/DeepSeek 等 36+ 模型,支持对比,融合,评判,故障转移四种模式,零订阅按需付费,40 免费试用积分.</description></item><item><title>Expo-OpenClaw-chat:在 React Native 应用里内置 AI 聊天,边聊边改代码</title><link>https://claudeai.best/posts/hunter-2026022102/</link><pubDate>Sat, 21 Feb 2026 02:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022102/</guid><description>Expo-OpenClaw-chat 开源 SDK:为 Expo/React Native 应用提供最小化 OpenClaw 聊天集成,支持实时修改应用,图片附件,Markdown 渲染,自动 Ed25519 密钥认证,几行代码即可集成.</description></item><item><title>LLM Compare:250+ 模型的 side-by-side 基准对比工具,纯静态无后端</title><link>https://claudeai.best/posts/hunter-2026022101/</link><pubDate>Sat, 21 Feb 2026 01:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022101/</guid><description>LLM Compare 开源工具:side-by-side 对比 250+ 大语言模型基准数据,涵盖 OpenAI,Anthropic,DeepSeek,Google 等,纯静态实现无后端,数据每周自动更新,支持可分享 URL 和程序化访问.</description></item><item><title>Expectllm:用 Unix "expect" 风格与 LLM 对话,4 行代码搞定</title><link>https://claudeai.best/posts/hunter-2026022100/</link><pubDate>Sat, 21 Feb 2026 00:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022100/</guid><description>Expectllm 开源库:用 expect 风格模式匹配与 LLM 对话,零样板代码,支持 OpenAI/Anthropic,内置 JSON/数字/是/否/代码提取模板,单文件轻量级实现.</description></item><item><title>Session-graph:把分散的 AI 编码会话变成可查询的知识图谱</title><link>https://claudeai.best/posts/hunter-2026022023/</link><pubDate>Fri, 20 Feb 2026 23:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022023/</guid><description>Session-graph 开源工具:将 Claude Code,ChatGPT,DeepSeek,Grok,Warp 等多平台 AI 编码会话提取为 (subject, predicate, object) 三元组,链接 Wikidata,支持 SPARQL 查询,52 个会话提取 13.8 万三元组.</description></item><item><title>17MB 发音评分器超越人类专家:语言学习的新思路</title><link>https://claudeai.best/posts/hunter-2026022018/</link><pubDate>Fri, 20 Feb 2026 18:20:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022018/</guid><description>开发者发布 17MB 发音评估引擎:CTC forced alignment + GOP scoring + ensemble heads,在 speechocean762 基准上超越人类评分一致性,CPU 300ms 响应,提供 REST API 和 MCP server.</description></item><item><title>OpenClaw 官方镜像有 2062 个漏洞?Minimus 出了个安全版,99% 更少 CVE</title><link>https://claudeai.best/posts/hunter-2026022013/</link><pubDate>Fri, 20 Feb 2026 13:08:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022013/</guid><description>Minimus 发布安全加固的 OpenClaw 容器镜像:漏洞从 2062 个降到 7 个,0 个严重漏洞,镜像体积减半.基于 distroless 构建,自动更新,适合家庭实验室和生产环境.</description></item><item><title>gskill:自动为编码 Agent 学习 Skills,用小模型训练,迁移到大模型</title><link>https://claudeai.best/posts/hunter-2026022012/</link><pubDate>Fri, 20 Feb 2026 12:08:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022012/</guid><description>GEPA 发布 gskill 自动化技能学习管线:给定任意 GitHub 仓库,自动生成 Agent Skills.在 Mini-SWE-Agent 上训练的技能可迁移到 Claude Code,Jinja 93.9%→98.5%,Bleve 79.3%→100%.</description></item><item><title>NullClaw:678KB 的 OpenClaw,Zig 重写版能在 $5 硬件上跑</title><link>https://claudeai.best/posts/hunter-2026022011/</link><pubDate>Fri, 20 Feb 2026 11:30:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022011/</guid><description>NullClaw 用 Zig 重写 OpenClaw:678KB 二进制,~1MB RAM,&amp;lt;2ms 启动,2843 个测试.支持 22+ AI providers,13 channels,可在任何 $5 开发板上运行.</description></item><item><title>让 AI Agent 帮你迁移 Postgres 到 ClickHouse:一个 Agent Harness 搞定</title><link>https://claudeai.best/posts/hunter-2026022008/</link><pubDate>Fri, 20 Feb 2026 08:25:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022008/</guid><description>ClickHouse 官方博客分享用 AI Agent 加速 Postgres → ClickHouse 迁移:把一切变成代码,建立快速反馈循环,注入 ClickHouse 最佳实践.MooseStack 开源框架实战案例.</description></item><item><title>AI Agent 修不好并发 Bug?Spaghetti Bench 告诉你差距有多大</title><link>https://claudeai.best/posts/hunter-2026022007/</link><pubDate>Fri, 20 Feb 2026 07:30:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022007/</guid><description>CMU 发布 Spaghetti Bench 基准测试,评估 Claude Opus 4.5,GPT-5.2,Gemini 3 Pro 等6个模型修复并发 Bug 的能力.结果:没有确定性重放工具,AI Agent 几乎必定给出错误修复.</description></item><item><title>YARGo:纯 Go 写的 YARA 引擎,扫描速度提升 6.8 倍</title><link>https://claudeai.best/posts/hunter-2026022006/</link><pubDate>Fri, 20 Feb 2026 06:12:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022006/</guid><description>Sansec 发布纯 Go 实现的 YARA 引擎 YARGo,针对源代码扫描优化:完整字符串字面量,3字节最小 atom,源代码评分函数.生产环境节省 116,000 CPU-hours.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>技术工具 on AI 极客前沿</title>
+    <link>https://claudeai.best/categories/%E6%8A%80%E6%9C%AF%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 技术工具 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 21 Feb 2026 05:23:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/categories/%E6%8A%80%E6%9C%AF%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jsonh:JSON 终于能写注释了,还能省略逗号和引号</title>
+      <link>https://claudeai.best/posts/hunter-2026022105/</link>
+      <pubDate>Sat, 21 Feb 2026 05:23:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022105/</guid>
+      <description>Jsonh 是一个全新的 JSON 超集,支持注释,省略逗号,多行字符串,无引号键值等特性.兼容 JSON 和 JSON5,号称&amp;#39;HJSON v2&amp;#39;,让配置文件真正为人类设计.</description>
+    </item>
+    <item>
+      <title>LLMWise:一个 API Key 调用 36&#43; 模型,还能对比,融合,评判输出</title>
+      <link>https://claudeai.best/posts/hunter-2026022103/</link>
+      <pubDate>Sat, 21 Feb 2026 03:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022103/</guid>
+      <description>LLMWise 多模型 LLM API:一个 Key 调用 GPT/Claude/Gemini/DeepSeek 等 36&#43; 模型,支持对比,融合,评判,故障转移四种模式,零订阅按需付费,40 免费试用积分.</description>
+    </item>
+    <item>
+      <title>Expo-OpenClaw-chat:在 React Native 应用里内置 AI 聊天,边聊边改代码</title>
+      <link>https://claudeai.best/posts/hunter-2026022102/</link>
+      <pubDate>Sat, 21 Feb 2026 02:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022102/</guid>
+      <description>Expo-OpenClaw-chat 开源 SDK:为 Expo/React Native 应用提供最小化 OpenClaw 聊天集成,支持实时修改应用,图片附件,Markdown 渲染,自动 Ed25519 密钥认证,几行代码即可集成.</description>
+    </item>
+    <item>
+      <title>LLM Compare:250&#43; 模型的 side-by-side 基准对比工具,纯静态无后端</title>
+      <link>https://claudeai.best/posts/hunter-2026022101/</link>
+      <pubDate>Sat, 21 Feb 2026 01:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022101/</guid>
+      <description>LLM Compare 开源工具:side-by-side 对比 250&#43; 大语言模型基准数据,涵盖 OpenAI,Anthropic,DeepSeek,Google 等,纯静态实现无后端,数据每周自动更新,支持可分享 URL 和程序化访问.</description>
+    </item>
+    <item>
+      <title>Expectllm:用 Unix &#34;expect&#34; 风格与 LLM 对话,4 行代码搞定</title>
+      <link>https://claudeai.best/posts/hunter-2026022100/</link>
+      <pubDate>Sat, 21 Feb 2026 00:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022100/</guid>
+      <description>Expectllm 开源库:用 expect 风格模式匹配与 LLM 对话,零样板代码,支持 OpenAI/Anthropic,内置 JSON/数字/是/否/代码提取模板,单文件轻量级实现.</description>
+    </item>
+    <item>
+      <title>Session-graph:把分散的 AI 编码会话变成可查询的知识图谱</title>
+      <link>https://claudeai.best/posts/hunter-2026022023/</link>
+      <pubDate>Fri, 20 Feb 2026 23:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022023/</guid>
+      <description>Session-graph 开源工具:将 Claude Code,ChatGPT,DeepSeek,Grok,Warp 等多平台 AI 编码会话提取为 (subject, predicate, object) 三元组,链接 Wikidata,支持 SPARQL 查询,52 个会话提取 13.8 万三元组.</description>
+    </item>
+    <item>
+      <title>17MB 发音评分器超越人类专家:语言学习的新思路</title>
+      <link>https://claudeai.best/posts/hunter-2026022018/</link>
+      <pubDate>Fri, 20 Feb 2026 18:20:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022018/</guid>
+      <description>开发者发布 17MB 发音评估引擎:CTC forced alignment &#43; GOP scoring &#43; ensemble heads,在 speechocean762 基准上超越人类评分一致性,CPU 300ms 响应,提供 REST API 和 MCP server.</description>
+    </item>
+    <item>
+      <title>OpenClaw 官方镜像有 2062 个漏洞?Minimus 出了个安全版,99% 更少 CVE</title>
+      <link>https://claudeai.best/posts/hunter-2026022013/</link>
+      <pubDate>Fri, 20 Feb 2026 13:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022013/</guid>
+      <description>Minimus 发布安全加固的 OpenClaw 容器镜像:漏洞从 2062 个降到 7 个,0 个严重漏洞,镜像体积减半.基于 distroless 构建,自动更新,适合家庭实验室和生产环境.</description>
+    </item>
+    <item>
+      <title>gskill:自动为编码 Agent 学习 Skills,用小模型训练,迁移到大模型</title>
+      <link>https://claudeai.best/posts/hunter-2026022012/</link>
+      <pubDate>Fri, 20 Feb 2026 12:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022012/</guid>
+      <description>GEPA 发布 gskill 自动化技能学习管线:给定任意 GitHub 仓库,自动生成 Agent Skills.在 Mini-SWE-Agent 上训练的技能可迁移到 Claude Code,Jinja 93.9%→98.5%,Bleve 79.3%→100%.</description>
+    </item>
+    <item>
+      <title>NullClaw:678KB 的 OpenClaw,Zig 重写版能在 $5 硬件上跑</title>
+      <link>https://claudeai.best/posts/hunter-2026022011/</link>
+      <pubDate>Fri, 20 Feb 2026 11:30:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022011/</guid>
+      <description>NullClaw 用 Zig 重写 OpenClaw:678KB 二进制,~1MB RAM,&amp;lt;2ms 启动,2843 个测试.支持 22&#43; AI providers,13 channels,可在任何 $5 开发板上运行.</description>
+    </item>
+    <item>
+      <title>让 AI Agent 帮你迁移 Postgres 到 ClickHouse:一个 Agent Harness 搞定</title>
+      <link>https://claudeai.best/posts/hunter-2026022008/</link>
+      <pubDate>Fri, 20 Feb 2026 08:25:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022008/</guid>
+      <description>ClickHouse 官方博客分享用 AI Agent 加速 Postgres → ClickHouse 迁移:把一切变成代码,建立快速反馈循环,注入 ClickHouse 最佳实践.MooseStack 开源框架实战案例.</description>
+    </item>
+    <item>
+      <title>AI Agent 修不好并发 Bug?Spaghetti Bench 告诉你差距有多大</title>
+      <link>https://claudeai.best/posts/hunter-2026022007/</link>
+      <pubDate>Fri, 20 Feb 2026 07:30:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022007/</guid>
+      <description>CMU 发布 Spaghetti Bench 基准测试,评估 Claude Opus 4.5,GPT-5.2,Gemini 3 Pro 等6个模型修复并发 Bug 的能力.结果:没有确定性重放工具,AI Agent 几乎必定给出错误修复.</description>
+    </item>
+    <item>
+      <title>YARGo:纯 Go 写的 YARA 引擎,扫描速度提升 6.8 倍</title>
+      <link>https://claudeai.best/posts/hunter-2026022006/</link>
+      <pubDate>Fri, 20 Feb 2026 06:12:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022006/</guid>
+      <description>Sansec 发布纯 Go 实现的 YARA 引擎 YARGo,针对源代码扫描优化:完整字符串字面量,3字节最小 atom,源代码评分函数.生产环境节省 116,000 CPU-hours.</description>
+    </item>
+  </channel>
+</rss>
