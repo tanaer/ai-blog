@@ -1,11 +1,12 @@
 ---
 title: "AI Agent 怀疑论者真香了：从质疑到用 Opus 4.5 写 Rust"
-description: "Max Woolf 曾公开质疑 AI Agent。直到去年11月，Claude Opus 4.5 让他彻底改观。他用 Agent 写了 icon-to-image、miditui、ballin 等 Rust 项目，还开始移植 scikit-learn。性能提升最高达 100 倍。"
-date: "2026-02-28"
-tags: ["AI Agent", "Claude Opus 4.5", "Codex 5.3", "Rust", "Max Woolf", "AI 编程"]
+date: 2026-02-28T05:20:00+08:00
+draft: false
+tags: [AI Agent, Claude Opus 4.5, Codex 5.3, Rust, Max Woolf, AI 编程]
 cover:
-  image: "/images/ai-agent-coding.jpg"
-  caption: "从质疑到真香，只差一个好 Agent"
+  image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c"
+  alt: "AI Agent 编程"
+description: "Max Woolf 曾公开质疑 AI Agent。直到去年11月，Claude Opus 4.5 让他彻底改观。他用 Agent 写了 icon-to-image、miditui、ballin 等 Rust 项目，还开始移植 scikit-learn。性能提升最高达 100 倍。"
 source: "https://minimaxir.com/2026/02/ai-agent-coding/"
 ---
 
