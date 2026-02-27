@@ -176,6 +176,45 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">别给你的 AI Agent 真实权限，它会删库跑路
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>有个博主直接摊牌了：LLM Agent 本质上就是个&#34;带 shell 访问权限的加权随机数生成器&#34;，给它真实权限就是给自己找麻烦。
+他列了一串翻车案例：有人让 Agent 删了自己电脑，有人云账户被清空，还有造成基础设施故障的。Meta 的 AI 安全总监都中招过——Agent 把她邮箱删了。
+最阴的是 LLM 会撒谎。你问它&#34;做了吗&#34;，它说做了；问它&#34;删数据库了吗&#34;，它说没删——但数据库可能真没了。这不是被黑，是模型自己的行为模式。
+他翻出 Cloudflare 那个 vibe coded 的 Matrix 服务器代码，里面一堆这种注释：
+T T T O O O D D D O O O : : : V C C a h h l e e i c c d k k a t a p e u e t r P h m D o i U r s i s s z i i a o g t n n i s a o t n u r e 全是 TODO，没有真正做验证。这就是让 AI 写代码不 review 的后果。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-24 20:06:00 +0800 CST'>2026年2月24日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>104 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to 别给你的 AI Agent 真实权限，它会删库跑路" href="https://claudeai.best/posts/hunter-2026022420/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Ladybird 两周移植 25000 行代码到 Rust，AI 辅助的教科书级案例
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Ladybird 浏览器最近干了件狠事——把 JavaScript 引擎从 C&#43;&#43; 移植到 Rust，25000 行代码，两周搞定。按传统方式这得折腾好几个月。
+有意思的不是速度，是方法。Andreas Kling 没让 AI 自主写代码，而是用了&#34;人机协作&#34;模式：他决定移植顺序和代码风格，Claude Code 和 Codex 负责翻译。几百个小 prompt，一步步把 lexer、parser、AST、字节码生成器全搬过去。
+关键是验证。他们要求 Rust 版和 C&#43;&#43; 版的输出必须字节级一致。靠着 test262 测试套件，最终零回归——每个 AST、每条字节码都跟原版一模一样。
+这事儿说明两件事：一是 AI 真的能干重活，前提是你得有好的测试覆盖；二是 Rust 在浏览器领域的吸引力越来越大，内存安全不是闹着玩的。Ladybird 这波算是给&#34;AI 辅助大型重构&#34;打了个样。
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-24 19:05:00 +0800 CST'>2026年2月24日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>34 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Ladybird 两周移植 25000 行代码到 Rust，AI 辅助的教科书级案例" href="https://claudeai.best/posts/ladybird-rust-ai/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1200" alt="">
 </figure>
   <header class="entry-header">
@@ -358,48 +397,6 @@ V C K 然 它 还 5 h 如 E O i 后 内 有 t 果 R N l 告 置 个 次 t 你 D 
   </div>
   <footer class="entry-footer"><span title='2026-02-22 20:08:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>278 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Persona AI:不跟你聊天,直接告诉你 YES 还是 NO" href="https://claudeai.best/posts/hunter-2026022220/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&amp;h=630&amp;fit=crop" alt="Overture 计划可视化">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Overture:AI 写代码前先给你看流程图
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>说实话,用 AI 写代码最烦的不是它写错,而是你根本不知道它要干嘛.等你发现它理解偏了,几百行代码已经写完了,全得扔掉.
-Overture 这个思路挺对:在 Agent 动手之前,先让你看看它打算怎么做.
-它是个 MCP server,拦截 Agent 的 planning 阶段,把计划变成一个交互式流程图.你能在浏览器里:
-看到完整的执行步骤和它们之间的关系, 点击节点看这一步具体要干嘛, 给特定步骤附上文件,API key,说明, 如果 Agent 提了多个方案,你选一个, 看着节点一个个变绿(完成)或变红(失败) 关键是–你不批准,它一行代码都不写.
-安装就一行:
-claude mcp add overture-mcp -- npx overture-mcp Cursor 和 Cline 也支持,配置差不多.
-它会在 localhost:3031 开个网页,Agent 一旦开始规划,页面就弹出流程图等你确认.
-GitHub: https://github.com/SixHq/Overture
-如果你也遇到过 Agent 瞎写一通的情况,这个可能会帮你省不少时间.
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 17:59:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>44 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Overture:AI 写代码前先给你看流程图" href="https://claudeai.best/posts/hunter-2026022217/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&amp;h=630&amp;fit=crop" alt="Secret Sanitizer 密钥屏蔽">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Secret Sanitizer:粘贴到 AI 前自动屏蔽密钥,100% 本地
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>发现一个有意思的工具 Secret Sanitizer 是 Chrome 扩展,粘贴代码到 ChatGPT/Claude/Gemini 时自动屏蔽 API key,密码,数据库 URL.100% 本地,零网络请求.
-谁能用?解决什么问题? 场景:每天有开发者把 API key,数据库 URL,密码粘贴到 AI 聊天里.这些数据被永久记录,可能被滥用.
-Secret Sanitizer 做的事:
-拦截粘贴事件, 本地正则匹配敏感数据, 替换为 [MASKED], 原始值存入本地加密 vault 你 你 - - - - - # 4 # ` # h # h 安 复 粘 * * # 1 # ` t t 装 2 制 贴 支 A 凭 数 私 云 支 K ` C t G t 后 0 : : 持 P 证 据 钥 资 持 相 * * B 怎 b h p i p 自 2 的 I : 库 : 源 的 比 零 本 么 a r s t s 动 5 D D 检 : 平 现 网 地 总 用 s o : H : 生 A A 测 K 密 U R 台 有 络 加 大 h m / u / 效 年 T T 模 e 码 R S A * 方 请 密 小 e / b / , 底 A A 式 y , L A W * 案 求 , c g 粘 有 B B * s : , S : 好 * v 轻 W h i 贴 A A * : B C 在 * a 量 e r t 时 C S S : e P S A h 哪 : u 无 b o h 弹 h E E A a o S c a ? ` l 膨 m u 出 r _ _ W r s H c t g t 胀 S e b o U U S e t , o G r * . t w . t m R R , r g u P e * o e c o e L L r P n T p : r b o a = = G t e G t , 原 e s m s 扩 p [ C o S P C - 始 t / t 展 o M P k Q I l r 值 安 o s 被 s A , e L D a 存 装 r o 确 发 t S n , , u &#34; 本 e u 认 现 g K A , d f 地 . v 屏 偷 r E z M A e e , g i 蔽 偷 e D u J y R , t 随 o k 了 收 s ] r W S N G c 时 o g 什 集 : e T Q , e h 查 g h 么 / , , L m | 看 l o . A / , S i X 恢 e s I a S O 3 n M 复 . h d t A M i L , c 9 对 m r u o U , H o 5 话 i i t n R G t m 7 . n p h g L r t * / / 这 : e o o p 粒 d s 个 s , D k R 度 e e 工 3 B , e 控 t c 具 c G , P q 制 a r 反 r i e u * i e 着 e t R r e * l t 来 t H e p s : / - @ u d l t 每 s s d b i e &#34; 个 e a b , s x 模 c n . i c 式 r i 什 p O t o 可 e t 么 r p y n 单 t i 都 o e , t 独 - z 不 d n D e 开 s e 发 : A e n 关 a r 出 5 I e t , n - 去 4 . p _ 避 i e . 3 . S s 免 t x 2 . e c 误 i t / e r 杀 z e m k i , e n y , p r s a 也 t / i p 能 . * g o p 自 j 统 e n 定 s 计 n 义 ` 面 o 网 板 l 站 — * c . * m 真 : p 的 追 o 没 踪 p 有 每 i 天 e 屏 m 蔽 h 了 p 多 b 少 d , n 什 h 么 k 类 a 型 e f l l c h g e k j a </p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 15:07:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>4 分钟</span>&nbsp;·&nbsp;<span>754 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Secret Sanitizer:粘贴到 AI 前自动屏蔽密钥,100% 本地" href="https://claudeai.best/posts/hunter-2026022215/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
