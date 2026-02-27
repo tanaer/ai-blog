@@ -6,8 +6,15 @@
     <description>Recent content on AI 极客前沿</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Feb 2026 09:10:00 +0800</lastBuildDate>
     <atom:link href="https://claudeai.best/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Meta砸数十亿租Google芯片：不想把鸡蛋都放Nvidia篮子里</title>
+      <link>https://claudeai.best/posts/hunter-2026-02-27-3/</link>
+      <pubDate>Fri, 27 Feb 2026 09:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026-02-27-3/</guid>
+      <description>Meta与Google签署数十亿美元协议租用TPU芯片，同时谈判购买用于数据中心。这是Meta芯片多元化战略的重要一步，Google TPU正在挑战Nvidia GPU的霸主地位。</description>
+    </item>
     <item>
       <title>OpenAI迎来新任首席人事官：前Roblox高管Arvind KC</title>
       <link>https://claudeai.best/posts/hunter-2026-02-27-1/</link>

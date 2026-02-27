@@ -176,6 +176,31 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771650484907_cover.jpg" alt="Script Snap - 视频代码提取">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Script Snap:从视频里自动提取代码,99% 技术术语准确
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>发现一个有意思的工具:Script Snap
+它能把技术视频里的代码自动提取出来,而且号称 99% 技术术语准确.
+谁能用? 做技术内容的 YouTuber,技术博主,或者经常看技术视频想记笔记的人.
+痛点它解决了:
+通用 AI 把 “PyTorch” 认成 “Pie Torch” 看了 20 小时视频做完笔记,视频火了 2 天就沉了 想写博客复用视频内容,但重新写太累 怎么用 丢一个视频链接给它,它自动:
+提取音频 - FFmpeg 处理 语音识别 - SOTA ASR 模型 术语校正 - 对照技术字典验证 生成文档 - 输出博客/笔记格式 技术栈是现代的:Next.js &#43; Vercel Edge &#43; Inngest &#43; Railway &#43; Python Worker.
+跟直接用 ChatGPT 转录有啥区别? 通用 AI 会猜技术术语.Script Snap 用严格的工程本体论验证–
+不是&#34;听起来对&#34;,而是&#34;确实对&#34;.
+对于技术内容创作者,这意味着不用花几个小时改 AI 的幻觉拼写错误.
+链接 官网: https://script-snap.com 试试吧,把你收藏的技术视频变成可搜索的知识库 ️
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 13:04:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>67 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Script Snap:从视频里自动提取代码,99% 技术术语准确" href="https://claudeai.best/posts/hunter-2026022113/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771647084039_cover.jpg" alt="TabType - macOS 文本扩展">
 </figure>
   <header class="entry-header">
@@ -367,28 +392,6 @@ Ember:检测到&#34;数据库&#34;区域的向量分布发生显著漂移,自动
   </div>
   <footer class="entry-footer"><span title='2026-02-21 04:21:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>243 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Ember MCP:给 Claude 装上永久记忆,告别每次重复交代背景" href="https://claudeai.best/posts/hunter-2026022104/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771614961962_cover.jpg" alt="数据分析与AI">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LLMWise:一个 API Key 调用 36&#43; 模型,还能对比,融合,评判输出
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>ChatGPT Plus &#43; Claude Pro &#43; Gemini Advanced = $60/月.三个 dashboard,三个 API key,三个账单.
-如果有一个服务,一个 API Key 就能调用 36&#43; 模型,还能对比输出,融合答案,让 AI 评判 AI,自动故障转移呢?
-这就是 LLMWise – 一个多模型 LLM API 服务,刚刚上线.
-五种模式,五种用法 1. Chat(1 credit) 标准聊天,但带智能路由.设置 cost_saver: true,简单问题自动路由到便宜模型.
-from llmwise import LLMWise client = LLMWise(&#34;mm_sk_...&#34;) resp = client.chat( model=&#34;auto&#34;, # 自动选择 cost_saver=True, messages=[{&#34;role&#34;: &#34;user&#34;, &#34;content&#34;: &#34;Explain quantum computing&#34;}], stream=True ) 2. Compare(3 credits) 同一问题,多个模型并行回答,对比输出.
-resp = client.compare( models=[“gpt-5.2”, “claude-sonnet-4.5”, “gemini-3-flash”], messages=[{“role”: “user”, “content”: “Explain eventual consistency”}],
-for r in resp[“responses”]: print(f&#34;{r[‘model’]}: {r[’latency_ms’]}ms&#34;)
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-21 03:10:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>273 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to LLMWise:一个 API Key 调用 36&#43; 模型,还能对比,融合,评判输出" href="https://claudeai.best/posts/hunter-2026022103/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

@@ -12,6 +12,7 @@
 - **AI Weirdness** (Janelle Shane, 趣味AI实验+神经网络怪异行为, 高质量独立博客): https://www.aiweirdness.com/rss/
 - **Eugene Yan** (ML产品实践, 消费者数据与技术交叉, 应用科学家): https://eugeneyan.com/rss/
 - **Colah's Blog** (Christopher Olah, 神经网络可视化+深度学习理论, 经典技术博客): https://colah.github.io/rss.xml
+- **Somethings Blog** (技术深度文章, AI工具+独立黑客+加密开发, 2026年活跃): https://www.somethingsblog.com/feed/
 
 ### 顶级技术 Newsletter
 - **Latent Space** (AI工程深度播客+文章, Karpathy/Hotz等嘉宾): https://www.latent.space/feed
@@ -258,6 +259,11 @@
 - **Machine Learning Street Talk** (Dr. Tim Scarfe, 技术深度播客, AI理论+研究): https://www.youtube.com/c/MachineLearningStreetTalk — 无RSS, YouTube
 - **AI For Humans** (Gavin Purcell & Kevin Pereira, 轻松有趣AI播客): https://www.aiforhumans.show/ — 无RSS, Podcast平台
 
+#### 新发现的技术博客与资源 (2026-02-27)
+- **VibeCoding.app Blog** (AI编程工具评测+比较, Cursor/Copilot/Bolt.new等, 深度实战评测): https://vibecoding.app/blog — 无RSS, 网站访问
+- **Superframeworks** (独立黑客创业资源, YC创业想法+案例研究+商业工具, 3000+订阅): https://superframeworks.com — 无RSS, Newsletter订阅
+- **IndieRadar.app** (独立黑客每日通讯, AI工具+创业案例, 100+订阅): https://indieradar.app — 无RSS, Newsletter订阅
+
 #### GitHub资源库 (非RSS但可作为数据源参考)
 - **GetStream/awesome-ai-news** (每月AI新闻和资源汇总, 开发者向): https://github.com/GetStream/awesome-ai-news — 无RSS, GitHub仓库
 - **csarigoz/best-ai-newsletters** (精选AI Newsletter列表, 2025年11月更新): https://github.com/csarigoz/best-ai-newsletters — 无RSS, GitHub仓库
@@ -269,10 +275,10 @@
 - **The Batch** (DeepLearning.AI周报, Andrew Ng): https://www.deeplearning.ai/the-batch/ — ️ 无RSS, Newsletter订阅
 
 ## 数据源统计
-**当前已验证: 130+ 核心数据源**
-- Newsletter: 31+, 个人博客: 13+, 研究机构: 19+, 科技媒体: 32+, 开发者社区: 8, 中文源: 17, 学术源: 16+, AI工具与开发: 11, AI播客(RSS): 3
-- 待验证潜力源: 50+ (其中16个为2026-02-25发现的高质量Newsletter, 9个为2026-02-26发现的AI播客)
+**当前已验证: 131+ 核心数据源**
+- Newsletter: 31+, 个人博客: 14+ (新增 Somethings Blog), 研究机构: 19+, 科技媒体: 32+, 开发者社区: 8, 中文源: 17, 学术源: 16+, AI工具与开发: 11, AI播客(RSS): 3
+- 待验证潜力源: 53+ (其中16个为2026-02-25发现的高质量Newsletter, 9个为2026-02-26发现的AI播客, 3个为2026-02-27发现的技术博客与资源)
 
-**目标: 30+ 高质量源** 已超额达成 (130+)
+**目标: 30+ 高质量源** 已超额达成 (131+)
 
-**最后更新**: 2026-02-26 (晚上 21:00)
+**最后更新**: 2026-02-27 (上午 09:00)
