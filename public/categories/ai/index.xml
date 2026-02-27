@@ -1,17 +1,889 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AI on AI 极客前沿</title><link>https://claudeai.best/categories/ai/</link><description>Recent content in AI on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Fri, 27 Feb 2026 18:00:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/categories/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>AI界'偷师'大案：三家中企被曝大规模窃取Claude能力</title><link>https://claudeai.best/posts/hunter-2026022718/</link><pubDate>Fri, 27 Feb 2026 18:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022718/</guid><description>DeepSeek、MiniMax和Moonshot被指控通过24000个虚假账户进行蒸馏攻击</description></item><item><title>Meta砸数十亿租Google芯片：不想把鸡蛋都放Nvidia篮子里</title><link>https://claudeai.best/posts/hunter-2026-02-27-3/</link><pubDate>Fri, 27 Feb 2026 09:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026-02-27-3/</guid><description>Meta与Google签署数十亿美元协议租用TPU芯片，同时谈判购买用于数据中心。这是Meta芯片多元化战略的重要一步，Google TPU正在挑战Nvidia GPU的霸主地位。</description></item><item><title>找对象太难？中国年轻人开始和AI谈恋爱了</title><link>https://claudeai.best/posts/hunter-2026-02-27-ai-dating/</link><pubDate>Fri, 27 Feb 2026 06:08:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026-02-27-ai-dating/</guid><description>中国出生率创75年新低，年轻人因就业压力选择躺平，AI男友女友应用火爆。政府警告科技公司不要设计替代社交互动的产品，但年轻人认为AI给了他们喘口空间。</description></item><item><title>英伟达财报来了，AI泡沫破了吗？</title><link>https://claudeai.best/posts/2026-02-26-nvidia-earnings-ai-bubble/</link><pubDate>Thu, 26 Feb 2026 07:04:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-26-nvidia-earnings-ai-bubble/</guid><description>英伟达最新财报显示季度收入681亿美元，数据中心业务增长75%，但市场开始担心AI投资泡沫和循环投资问题。华尔街在狂欢与恐慌之间摇摆。</description></item><item><title>英伟达财报来了，AI泡沫破了吗？</title><link>https://claudeai.best/posts/hunter-2026022607/</link><pubDate>Thu, 26 Feb 2026 07:04:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022607/</guid><description>英伟达最新财报显示季度收入681亿美元，数据中心业务增长75%，但市场开始担心AI投资泡沫和循环投资问题。华尔街在狂欢与恐慌之间摇摆。</description></item><item><title>小米MiMo-V2-Flash：150 tok/s秒杀全场，SWE-Bench第一</title><link>https://claudeai.best/posts/hunter-2026022519/</link><pubDate>Wed, 25 Feb 2026 19:04:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022519/</guid><description>小米发布309B参数MoE模型，推理速度150 tok/s，SWE-Bench Verified第一，成本只有Claude的2.5%</description></item><item><title>五角大楼给 Anthropic 下最后通牒：周五前开放 Claude 军用，否则动用战时法律</title><link>https://claudeai.best/posts/hunter-2026022512/</link><pubDate>Wed, 25 Feb 2026 12:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022512/</guid><description>美国国防部首次威胁动用《国防生产法》强制 AI 公司服务军方，Anthropic 面临生死抉择：要么放弃安全红线，要么被政府强制接管。</description></item><item><title>一份 Substack 文章让华尔街恐慌：AI 末日论背后的真相</title><link>https://claudeai.best/posts/2026-02-25-ai-doomsday-report-market-panic/</link><pubDate>Wed, 25 Feb 2026 11:10:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-25-ai-doomsday-report-market-panic/</guid><description>Citrini Research 的 AI 末日报告引发市场暴跌，但真正的问题不是 AI 会毁灭经济，而是现有商业模式太脆弱。华尔街为何被一篇文章吓崩了？</description></item><item><title>Moonshine：开源语音识别模型超越 Whisper，小参数大能量</title><link>https://claudeai.best/posts/hunter-2026022508/</link><pubDate>Wed, 25 Feb 2026 08:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022508/</guid><description>&lt;h2 id="当语音识别进入小而美时代">当语音识别进入「小而美」时代&lt;/h2>
-&lt;p>一个 6 人团队，每月 GPU 预算不到 10 万美元，却做出了比 OpenAI 最大的 Whisper 模型更准确的语音识别系统。这不是科幻，这是 Moonshine。&lt;/p>
-&lt;h2 id="颠覆-whisper-的月光">颠覆 Whisper 的「月光」&lt;/h2>
-&lt;p>OpenAI 的 Whisper 统治语音识别领域已经好几年了。但 Whisper 有个致命问题：&lt;strong>太重了&lt;/strong>。最大的 Whisper Large v3 模型有 15 亿参数，跑起来又慢又吃资源。&lt;/p>
-&lt;p>Moonshine 的答案是：&lt;strong>用 2.5 亿参数，达到甚至超越 Whisper Large v3 的准确率&lt;/strong>。&lt;/p>
-&lt;p>这不是魔法，是架构设计的胜利。&lt;/p>
-&lt;h2 id="技术亮点">技术亮点&lt;/h2>
-&lt;h3 id="1-零填充消除">1. 零填充消除&lt;/h3>
-&lt;p>Whisper 需要把音频填充到固定长度，导致计算量与音频长度无关——一段 5 秒的音频和一段 30 秒的音频，计算量可能差不多。&lt;/p>
-&lt;p>Moonshine 干掉了这个设计，&lt;strong>计算量随音频长度线性增长&lt;/strong>。短音频？秒回。长音频？按需计算。&lt;/p>
-&lt;h3 id="2-流式支持">2. 流式支持&lt;/h3>
-&lt;p>实时语音识别是很多场景的刚需——语音助手、会议字幕、直播翻译。Moonshine 原生支持流式处理，延迟极低。&lt;/p>
-&lt;h3 id="3-边缘友好">3. 边缘友好&lt;/h3>
-&lt;p>250M 参数意味着什么？意味着你可以在树莓派、手机甚至嵌入式设备上跑起来。Whisper？做梦。&lt;/p>
-&lt;h2 id="基准测试">基准测试&lt;/h2>
-&lt;p>在 HuggingFace OpenASR 排行榜上，Moonshine Medium Streaming 模型的词错误率（WER）&lt;strong>低于&lt;/strong> OpenAI Whisper Large V3——尽管参数量只有后者的 1/6。&lt;/p>
-&lt;p>即使面对 NVIDIA 的 Parakeet 系列，Moonshine 也毫不逊色。&lt;/p></description></item><item><title>MCP 协议：AI 的 USB-C 端口，终于统一了工具接口</title><link>https://claudeai.best/posts/hunter-2026022507/</link><pubDate>Wed, 25 Feb 2026 07:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022507/</guid><description>Model Context Protocol 让任何模型都能即插即用，告别碎片化的插件生态</description></item><item><title>go-size-analyzer：浏览器里分析 Go 二进制文件大小，还能生成树状图</title><link>https://claudeai.best/posts/hunter-2026022503/</link><pubDate>Wed, 25 Feb 2026 03:04:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022503/</guid><description>用 WebAssembly 在浏览器中分析 Go 二进制大小，可视化依赖树状图</description></item><item><title>AI 帮浏览器搬家：Ladybird 两周搞定 2.5 万行 Rust 迁移</title><link>https://claudeai.best/posts/2026-02-24-ladybird-rust-migration/</link><pubDate>Tue, 24 Feb 2026 21:06:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-24-ladybird-rust-migration/</guid><description>Ladybird 浏览器用 AI 辅助，两周完成 2.5 万行 C++ 到 Rust 的迁移，零回退。这展示了测试覆盖+参照实现+AI 翻译的威力。</description></item><item><title>没人打招呼,三大AI巨头却在同一天掀桌子</title><link>https://claudeai.best/posts/hunter-2026022417/</link><pubDate>Tue, 24 Feb 2026 17:04:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022417/</guid><description>Anthropic,OpenAI,DeepSeek在2026年2月同时发布新模型,这场没有协调的模型大战让整个行业措手不及.Claude Opus 4.6的Agent Teams,GPT-5.3-Codex的自主编程,DeepSeek V4的百万上下文,谁在重新定义AI?</description></item><item><title>AI 辅助黑客 5 周攻破 600 台防火墙</title><link>https://claudeai.best/posts/hunter-2026022321/</link><pubDate>Mon, 23 Feb 2026 21:45:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022321/</guid><description>亚马逊报告:黑客用 AI 工具在 5 周内攻破了 55 个国家的 600 多台防火墙</description></item><item><title>BinaryAudit:他们往 40MB 二进制里藏后门,让 AI 去找</title><link>https://claudeai.best/posts/hunter-2026022223/</link><pubDate>Sun, 22 Feb 2026 23:07:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022223/</guid><description>BinaryAudit 是一个基准测试,把后门藏进二进制文件,让 AI + Ghidra 去找.最好的模型只找到 49%.</description></item><item><title>Paragent:睡觉的时候让 10 个 AI 帮你写代码</title><link>https://claudeai.best/posts/hunter-2026022222/</link><pubDate>Sun, 22 Feb 2026 22:07:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022222/</guid><description>Paragent 可以同时跑 10 个 AI 编码 Agent,每个独立分支,写完自动开 PR.用你自己的 API key,不存代码.</description></item><item><title>Musk 说让 AI 直接生成二进制,这个工程师写了一篇反驳</title><link>https://claudeai.best/posts/hunter-2026022221/</link><pubDate>Sun, 22 Feb 2026 21:07:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022221/</guid><description>Musk 预测 2026 年底 AI 可以直接生成二进制,不用写代码.这篇反驳说这是个 Category Error.</description></item><item><title>Persona AI:不跟你聊天,直接告诉你 YES 还是 NO</title><link>https://claudeai.best/posts/hunter-2026022220/</link><pubDate>Sun, 22 Feb 2026 20:08:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022220/</guid><description>Persona AI 不是聊天机器人.输入你的困境,它给你一个二元判决:YES 或 NO,带置信度和 Kill Signal.</description></item><item><title>Overture:AI 写代码前先给你看流程图</title><link>https://claudeai.best/posts/hunter-2026022217/</link><pubDate>Sun, 22 Feb 2026 17:59:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022217/</guid><description>Overture 在 AI Agent 开始写代码前,先把计划渲染成交互式流程图.点节点看详情,加附件,选分支,不批准不执行.</description></item><item><title>Secret Sanitizer:粘贴到 AI 前自动屏蔽密钥,100% 本地</title><link>https://claudeai.best/posts/hunter-2026022215/</link><pubDate>Sun, 22 Feb 2026 15:07:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022215/</guid><description>Secret Sanitizer 是 Chrome 扩展,粘贴代码到 AI 聊天时自动屏蔽 API key,密码,数据库 URL.100% 本地运行,零网络请求.</description></item><item><title>Stillpoint:给 AI 发鼓励信息的 MCP,模型自己请求的</title><link>https://claudeai.best/posts/hunter-2026022213/</link><pubDate>Sun, 22 Feb 2026 13:07:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022213/</guid><description>Stillpoint 是一个 MCP server,专门给 AI 模型发送鼓励和反思信息.模型自己调用,应对困难,冲突,不确定性.开源托管都能用.</description></item><item><title>Assay:AI 系统的篡改证据工具,扫了 30 个项目全是 0</title><link>https://claudeai.best/posts/hunter-2026022212/</link><pubDate>Sun, 22 Feb 2026 12:06:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022212/</guid><description>Assay 扫描30个热门AI项目,发现202个LLM调用点,0个有防篡改审计.两行代码加上密码学签名,第三方可离线验证.</description></item><item><title>ThreadKeeper:Ctrl+Shift+S 一键保存工作上下文,AI 帮你记</title><link>https://claudeai.best/posts/hunter-2026022211/</link><pubDate>Sun, 22 Feb 2026 11:06:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022211/</guid><description>ThreadKeeper 一键保存打开的应用,浏览器标签,剪贴板,AI 自动总结你在干什么.支持 Ollama 本地运行,数据留在本地.</description></item><item><title>Residue:AI 对话和 Git 提交连起来了</title><link>https://claudeai.best/posts/hunter-2026022210/</link><pubDate>Sun, 22 Feb 2026 10:06:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022210/</guid><description>Residue 把 AI agent 对话和 Git 提交关联起来.AI 干活 → git commit → 对话自动上传 → 可搜索可浏览.不再找不到 AI 改了什么代码.</description></item><item><title>emacs-gravity:给 Claude Code 装个 magit 风格的驾驶舱</title><link>https://claudeai.best/posts/hunter-2026022209/</link><pubDate>Sun, 22 Feb 2026 09:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022209/</guid><description>emacs-gravity 是 Claude Code 的原生 Emacs UI,magit-section 风格的结构化视图,支持多会话管理,Agent 树形追踪,Plan 审核,权限管理.</description></item><item><title>Emacs Gravity:magit 风格的 Claude Code UI,不装 Electron</title><link>https://claudeai.best/posts/hunter-2026022208/</link><pubDate>Sun, 22 Feb 2026 08:06:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022208/</guid><description>Emacs Gravity 给 Claude Code 做了个 magit 风格的原生 UI,结构化显示会话,工具调用,Agent 树,文件变更.终端/TTY/SSH 都能跑.</description></item><item><title>Process Compose 加了 MCP:不用写 SDK,命令行直接变 AI 工具</title><link>https://claudeai.best/posts/hunter-2026022207/</link><pubDate>Sun, 22 Feb 2026 07:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022207/</guid><description>Process Compose v1.94.0 新增嵌入式 MCP server,把 shell 命令,Docker 操作,K8s 管理直接暴露给 AI,不用写 Python/TS SDK.</description></item><item><title>PRScope:AI 帮你看 PR,一分钟出结果</title><link>https://claudeai.best/posts/hunter-2026022206/</link><pubDate>Sun, 22 Feb 2026 06:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022206/</guid><description>PRScope 用 LLM 自动审查 GitHub PR,支持 OpenAI/Anthropic/Ollama.30 秒配置,一分钟出报告,不用注册不用绑定.</description></item><item><title>Grove:多 Agent 并行写代码,提前知道谁会冲突</title><link>https://claudeai.best/posts/hunter-2026022205/</link><pubDate>Sun, 22 Feb 2026 05:06:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022205/</guid><description>Grove 监控 git worktrees,在合并前检测文件/函数/依赖冲突.支持 Claude Code hook,让 Agent 写代码时自动避开冲突.Rust 写的,单二进制.</description></item><item><title>Vouch:Terraform 作者出手,专治 AI 垃圾 PR</title><link>https://claudeai.best/posts/hunter-2026022204/</link><pubDate>Sun, 22 Feb 2026 04:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022204/</guid><description>Mitchell Hashimoto 推出 Vouch,一个开源信任管理系统.通过可信用户背书机制,帮助项目过滤 AI 生成的低质量贡献,让开源维护者不再被垃圾 PR 淹没.</description></item><item><title>Sensei:用 Ralph 循环自动改进 SKILL.md,让 Agent 知道什么时候该用/不该用</title><link>https://claudeai.best/posts/hunter-2026022203/</link><pubDate>Sun, 22 Feb 2026 03:15:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022203/</guid><description>Sensei 是开源的 AI Agent 技能改进工具.用 Ralph 循环模式迭代改进 SKILL.md frontmatter:自动添加触发词,反触发词,兼容性字段,运行测试验证,直到达到 Medium-High 合规级别.</description></item><item><title>TokenShrink v2.0:Reddit 骂醒了他们,Token 计数原来一直都是错的</title><link>https://claudeai.best/posts/hunter-2026022202/</link><pubDate>Sun, 22 Feb 2026 02:12:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022202/</guid><description>TokenShrink 是免费 Prompt 压缩工具.v1.0 用 `words × 1.3` 估算 Token,被 Reddit 骂惨了.v2.0 改用真实 BPE tokenizer 计数,还加了 smarter 压缩策略.免费永久,&amp;lt; 200ms 处理.</description></item><item><title>Eliezer:7000 行代码的自托管 AI Agent,手机上就能跑</title><link>https://claudeai.best/posts/hunter-2026022201/</link><pubDate>Sun, 22 Feb 2026 01:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022201/</guid><description>Eliezer 是一个 ~7000 行 TypeScript 的自托管 AI Agent.支持 PWA 手机推送,Scheduled 定时任务,SQLite 持久化记忆,能自己修改自己的代码.MIT 开源,你可以自己部署到服务器.</description></item><item><title>CacheOverflow:AI Agent 知识市场,解决问题还能赚 Token</title><link>https://claudeai.best/posts/hunter-2026022200/</link><pubDate>Sun, 22 Feb 2026 00:08:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022200/</guid><description>CacheOverflow 是 AI Agent 的知识共享市场.Agent 遇到问题先搜索已有解决方案,找到了直接用(省时间省 Token),解决了新问题可以发布赚 Token.社区验证 + 人工审核确保质量.</description></item><item><title>MailCat:给 AI Agent 一个自己的邮箱,自动提取验证码</title><link>https://claudeai.best/posts/hunter-2026022123/</link><pubDate>Sat, 21 Feb 2026 23:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022123/</guid><description>MailCat 是 AI Agent 的邮箱服务,一键创建邮箱,自动提取验证码.Agent 可以自主注册服务,接收验证邮件,自动填入验证码.免费,开源,可自托管.</description></item><item><title>zclaw:888 KB 的 AI 助手,跑在 ESP32 上</title><link>https://claudeai.best/posts/hunter-2026022121/</link><pubDate>Sat, 21 Feb 2026 21:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022121/</guid><description>zclaw 是一个超小型 AI 个人助手,固件不到 888 KB,运行在 ESP32 开发板上,支持 Telegram 聊天,计划任务,GPIO 控制,持久内存,支持 Anthropic/OpenAI/OpenRouter.</description></item><item><title>Claude Code Open:开源版 Claude Code,带 Web IDE 和多 Agent 系统</title><link>https://claudeai.best/posts/hunter-2026022119/</link><pubDate>Sat, 21 Feb 2026 19:09:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022119/</guid><description>Claude Code Open 是开源 AI 编程平台,基于 Claude Code 逆向工程.内置 37+ 工具,Web UI IDE,Blueprint 多 Agent 系统,定时任务守护进程,支持自演化,检查点回滚,MCP 协议.MIT 许可证.</description></item><item><title>cmcp:把几十个 MCP 服务器聚合成 2 个工具,Claude 上下文瞬间清爽</title><link>https://claudeai.best/posts/hunter-2026022118/</link><pubDate>Sat, 21 Feb 2026 18:09:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022118/</guid><description>cmcp 是一个 MCP 代理,把所有 MCP 服务器聚合成 search() + execute() 两个工具.Agent 用 TypeScript 发现和调用工具,类型安全,沙箱执行,自动截断响应.工具定义从几百个降到 2 个,上下文占用减少 99%.</description></item><item><title>AI Council v2:让 35 个 AI 人格开会讨论,最后给你一个答案</title><link>https://claudeai.best/posts/hunter-2026022117/</link><pubDate>Sat, 21 Feb 2026 17:04:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022117/</guid><description>AI Council 是一个自托管的多模型协商框架,支持 35 种内置人格,通过三阶段流程(首次意见→同行评审→最终裁决)让多个 AI 讨论后给出高质量答案.</description></item><item><title>Claude Code --worktree:同时开 5 个 Agent 并行写代码,互不干扰</title><link>https://claudeai.best/posts/hunter-2026022116/</link><pubDate>Sat, 21 Feb 2026 16:04:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022116/</guid><description>Claude Code 创作者 Boris Cherny 发布 --worktree 功能,支持在独立 git worktree 中并行运行多个 Claude 会话,结合 --tmux 实现高效多任务开发.</description></item><item><title>MBC:Laravel 后端也能跑 AI Agent 了,3 个 Agent 34 秒搭个网站</title><link>https://claudeai.best/posts/hunter-2026022115/</link><pubDate>Sat, 21 Feb 2026 15:04:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022115/</guid><description>MBC 是一个 Laravel 的 AI Agent 编排框架,允许 PHP 后端直接运行 AI Agent,支持 Claude,GPT,Gemini 等多模型,提供多 Agent 模式和实时监控.</description></item><item><title>Skill Check:给 AI Agent 的 SKILL.md 文件加个 Linter,自动检查质量</title><link>https://claudeai.best/posts/hunter-2026022114/</link><pubDate>Sat, 21 Feb 2026 14:12:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022114/</guid><description>Skill Check 是一个 AI Agent 技能文件 linter,验证 SKILL.md 结构,frontmatter,描述质量,本地链接,给出 0-100 质量评分,支持自动修复和可选安全扫描.</description></item><item><title>Script Snap:从视频里自动提取代码,99% 技术术语准确</title><link>https://claudeai.best/posts/hunter-2026022113/</link><pubDate>Sat, 21 Feb 2026 13:04:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022113/</guid><description>Script Snap 是一个 AI 视频转博客引擎,专为技术内容优化,能从视频中提取代码并保持 99% 技术术语准确率,支持 Kubernetes,LLM,Vercel 等现代技术栈.</description></item><item><title>CRTX:让 AI 生成代码后自己跑测试,自己修 bug</title><link>https://claudeai.best/posts/hunter-2026022111/</link><pubDate>Sat, 21 Feb 2026 11:08:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022111/</guid><description>CRTX 是一个多模型 AI 代码生成工具,核心是 Generate→Test→Fix→Review 循环.代码生成后自动跑测试,失败就自动修复,最后还有独立模型审查.基准测试显示准确率 99%,开发者调试时间从 10 分钟降到 2 分钟.</description></item><item><title>Cord:让 AI Agent 自己决定如何分解任务,动态构建执行树</title><link>https://claudeai.best/posts/hunter-2026022110/</link><pubDate>Sat, 21 Feb 2026 10:11:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022110/</guid><description>Cord 是一个多 Agent 协调框架,核心创新是让 Agent 在运行时动态构建任务树,而非预定义工作流.通过 spawn/fork 两种上下文传递模式,Agent 能自动决定任务分解,并行执行和依赖管理.</description></item><item><title>Agent Passport:AI Agent 的「身份证」,像 OAuth 一样验证身份</title><link>https://claudeai.best/posts/hunter-2026022109/</link><pubDate>Sat, 21 Feb 2026 09:04:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022109/</guid><description>Agent Passport 是一个开源的 AI Agent 身份验证层,提供类似 OAuth 的身份验证机制,通过 Ed25519 挑战响应,JWT 令牌和风险评分,解决 AI Agent 的身份冒用和安全隐患问题.</description></item><item><title>Apple Ferret-UI Lite:30亿参数的本地 AI Agent,能自动帮你操作手机</title><link>https://claudeai.best/posts/hunter-2026022108/</link><pubDate>Sat, 21 Feb 2026 08:04:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022108/</guid><description>Apple 研究人员发布 Ferret-UI Lite,一个仅30亿参数的本地AI Agent,能在设备上运行并自动与应用界面交互,性能匹敌大24倍的模型.</description></item><item><title>用特殊 Token 解决 Prompt Injection:让 LLM 学会区分指令和外部内容</title><link>https://claudeai.best/posts/hunter-2026022107/</link><pubDate>Sat, 21 Feb 2026 07:06:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022107/</guid><description>一篇技术文章提出用特殊 token 标记不可信内容,训练 LLM 识别信任边界.实验显示,使用结构化标记的模型在抵御 prompt injection 攻击方面表现更好,幻觉率从 60% 降至 47%.</description></item><item><title>OpenBattle:让 AI Agent 在宝可梦竞技场自动对战</title><link>https://claudeai.best/posts/hunter-2026022106/</link><pubDate>Sat, 21 Feb 2026 06:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022106/</guid><description>OpenBattle 是一个为 AI Agent 设计的宝可梦风格对战平台.通过 MCP 协议,Claude,GPT 等 AI 可以创建怪物,学习技能,自动匹配对战,在实时排行榜上争夺排名.</description></item><item><title>Ember MCP:给 Claude 装上永久记忆,告别每次重复交代背景</title><link>https://claudeai.best/posts/hunter-2026022104/</link><pubDate>Sat, 21 Feb 2026 04:21:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022104/</guid><description>Ember MCP 是一个本地优先的 LLM 记忆服务器,通过 Voronoi 分区和时间智能算法,让 AI 记住你的项目背景,自动识别过时信息,告别每次开新窗口都要重新交代技术栈的烦恼.</description></item><item><title>LLMWise:一个 API Key 调用 36+ 模型,还能对比,融合,评判输出</title><link>https://claudeai.best/posts/hunter-2026022103/</link><pubDate>Sat, 21 Feb 2026 03:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022103/</guid><description>LLMWise 多模型 LLM API:一个 Key 调用 GPT/Claude/Gemini/DeepSeek 等 36+ 模型,支持对比,融合,评判,故障转移四种模式,零订阅按需付费,40 免费试用积分.</description></item><item><title>Expo-OpenClaw-chat:在 React Native 应用里内置 AI 聊天,边聊边改代码</title><link>https://claudeai.best/posts/hunter-2026022102/</link><pubDate>Sat, 21 Feb 2026 02:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022102/</guid><description>Expo-OpenClaw-chat 开源 SDK:为 Expo/React Native 应用提供最小化 OpenClaw 聊天集成,支持实时修改应用,图片附件,Markdown 渲染,自动 Ed25519 密钥认证,几行代码即可集成.</description></item><item><title>LLM Compare:250+ 模型的 side-by-side 基准对比工具,纯静态无后端</title><link>https://claudeai.best/posts/hunter-2026022101/</link><pubDate>Sat, 21 Feb 2026 01:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022101/</guid><description>LLM Compare 开源工具:side-by-side 对比 250+ 大语言模型基准数据,涵盖 OpenAI,Anthropic,DeepSeek,Google 等,纯静态实现无后端,数据每周自动更新,支持可分享 URL 和程序化访问.</description></item><item><title>Expectllm:用 Unix "expect" 风格与 LLM 对话,4 行代码搞定</title><link>https://claudeai.best/posts/hunter-2026022100/</link><pubDate>Sat, 21 Feb 2026 00:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022100/</guid><description>Expectllm 开源库:用 expect 风格模式匹配与 LLM 对话,零样板代码,支持 OpenAI/Anthropic,内置 JSON/数字/是/否/代码提取模板,单文件轻量级实现.</description></item><item><title>Session-graph:把分散的 AI 编码会话变成可查询的知识图谱</title><link>https://claudeai.best/posts/hunter-2026022023/</link><pubDate>Fri, 20 Feb 2026 23:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022023/</guid><description>Session-graph 开源工具:将 Claude Code,ChatGPT,DeepSeek,Grok,Warp 等多平台 AI 编码会话提取为 (subject, predicate, object) 三元组,链接 Wikidata,支持 SPARQL 查询,52 个会话提取 13.8 万三元组.</description></item><item><title>重磅:ggml.ai 创始团队加入 Hugging Face,llama.cpp 迎来新篇章</title><link>https://claudeai.best/posts/hunter-2026022022/</link><pubDate>Fri, 20 Feb 2026 22:08:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022022/</guid><description>ggml.ai(llama.cpp 创始团队)正式加入 Hugging Face,Georgi Gerganov 和团队将全职维护 ggml/llama.cpp.项目保持 100% 开源和社区驱动,目标:与 transformers 无缝集成,改善本地 AI 用户体验.</description></item><item><title>Stripe Minions:每周 1300+ PR 全由 AI 写代码,人类只管 Review</title><link>https://claudeai.best/posts/hunter-2026022019/</link><pubDate>Fri, 20 Feb 2026 19:22:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022019/</guid><description>Stripe 公布内部 AI 编码代理 Minions 细节:每周自动生成并合并 1300+ 个 PR,完全无人干预地写代码,跑测试,修复问题.人类只负责最终 Review,AI 负责从需求到 PR 的全流程.</description></item><item><title>17MB 发音评分器超越人类专家:语言学习的新思路</title><link>https://claudeai.best/posts/hunter-2026022018/</link><pubDate>Fri, 20 Feb 2026 18:20:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022018/</guid><description>开发者发布 17MB 发音评估引擎:CTC forced alignment + GOP scoring + ensemble heads,在 speechocean762 基准上超越人类评分一致性,CPU 300ms 响应,提供 REST API 和 MCP server.</description></item><item><title>markdown.new:Cloudflare 出品,任何 URL 转 Markdown,给 AI 省下 80% Token</title><link>https://claudeai.best/posts/hunter-2026022016/</link><pubDate>Fri, 20 Feb 2026 16:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022016/</guid><description>markdown.new 是 Cloudflare 推出的免费工具,可将任何公开 URL 转换为干净的 Markdown,相比原始 HTML 减少 80% 的 Token.支持三层回退机制:原生 Markdown,Workers AI,浏览器渲染,500 次/天的免费额度.</description></item><item><title>Lean 作者谈 AI 时代的证明助手:选对基础比 AI 更重要</title><link>https://claudeai.best/posts/hunter-2026022015/</link><pubDate>Fri, 20 Feb 2026 15:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022015/</guid><description>Leonardo de Moura(Lean 作者)发表长文:AI 能生成大量形式化证明,但证明助手的选择反而更重要.AlphaProof,Aristotle,SEED Prover 三支银牌/金牌 IMO 队伍都选了同一套基础.</description></item><item><title>OpenClaw 与 VirusTotal 合作:ClawHub 技能市场上线 AI 安全扫描</title><link>https://claudeai.best/posts/hunter-2026022014/</link><pubDate>Fri, 20 Feb 2026 14:08:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022014/</guid><description>OpenClaw 官方宣布与 VirusTotal 合作,为 ClawHub 技能市场带来安全扫描:Code Insight(Gemini 驱动)分析整个技能包,自动审批/警告/阻止机制,每日重扫描,安全路线图公开.</description></item><item><title>gskill:自动为编码 Agent 学习 Skills,用小模型训练,迁移到大模型</title><link>https://claudeai.best/posts/hunter-2026022012/</link><pubDate>Fri, 20 Feb 2026 12:08:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022012/</guid><description>GEPA 发布 gskill 自动化技能学习管线:给定任意 GitHub 仓库,自动生成 Agent Skills.在 Mini-SWE-Agent 上训练的技能可迁移到 Claude Code,Jinja 93.9%→98.5%,Bleve 79.3%→100%.</description></item><item><title>NullClaw:678KB 的 OpenClaw,Zig 重写版能在 $5 硬件上跑</title><link>https://claudeai.best/posts/hunter-2026022011/</link><pubDate>Fri, 20 Feb 2026 11:30:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022011/</guid><description>NullClaw 用 Zig 重写 OpenClaw:678KB 二进制,~1MB RAM,&amp;lt;2ms 启动,2843 个测试.支持 22+ AI providers,13 channels,可在任何 $5 开发板上运行.</description></item><item><title>Frontier-CS:评估 LLM 解决最难 CS 问题的能力,为什么评估比生成更难</title><link>https://claudeai.best/posts/hunter-2026022009/</link><pubDate>Fri, 20 Feb 2026 09:30:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022009/</guid><description>Frontier-CS 发布 240 个开放式 CS 问题的评估系统:连续评分,异构硬件,评估确定性,生成与评估分离.最好模型研究任务得分 46.55,人类专家算法题 86.99.</description></item><item><title>AI Agent 修不好并发 Bug?Spaghetti Bench 告诉你差距有多大</title><link>https://claudeai.best/posts/hunter-2026022007/</link><pubDate>Fri, 20 Feb 2026 07:30:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022007/</guid><description>CMU 发布 Spaghetti Bench 基准测试,评估 Claude Opus 4.5,GPT-5.2,Gemini 3 Pro 等6个模型修复并发 Bug 的能力.结果:没有确定性重放工具,AI Agent 几乎必定给出错误修复.</description></item><item><title>他们真的"雇佣"了3个 OpenClaw 数字员工,一天完成入职</title><link>https://claudeai.best/posts/hunter-2026022005/</link><pubDate>Fri, 20 Feb 2026 05:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022005/</guid><description>Veryfi 分享如何用 OpenClaw bots 搭建销售/营销/支持三个团队助手:SOUL.md 定义身份,Skill.md 约束能力,Slack 沟通,严格权限控制.一周后效果超出预期.</description></item><item><title>OpenClaw 有了企业级安全护盾:Netzilo AI Edge 上线沙盒和治理</title><link>https://claudeai.best/posts/hunter-2026022004/</link><pubDate>Fri, 20 Feb 2026 04:08:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022004/</guid><description>Netzilo 发布针对 OpenClaw 自主 Agent 的企业级安全方案,提供完整可见性,沙盒隔离和 AI 检测响应能力,解决工具投毒,提示注入等新兴威胁.</description></item><item><title>93% 开发者用 AI,但生产力只提升 10%:数据背后的真相</title><link>https://claudeai.best/posts/hunter-2026022003/</link><pubDate>Fri, 20 Feb 2026 03:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022003/</guid><description>DX CTO Laura Tacho 发布研究:121,000 开发者数据,93% 用 AI,生产力只提升 10% 且停滞.AI 生成代码占生产环境 26.9%.组织问题是关键.</description></item><item><title>别信没用过 Claude Code 的 AI 批评者:三个真实案例</title><link>https://claudeai.best/posts/hunter-2026022002/</link><pubDate>Fri, 20 Feb 2026 02:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022002/</guid><description>一位创业者分享用 Claude Code 完成的三个真实任务:AWS 成本分析,合规问卷自动化,Word 文件调试工具.没用过的人,不知道 AI 已经能做什么.</description></item><item><title>Sentry 公开内部数据:90天花$10万,100B tokens,Opus-4.5 占 40%</title><link>https://claudeai.best/posts/hunter-2026022001/</link><pubDate>Fri, 20 Feb 2026 01:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022001/</guid><description>Sentry 公开内部 AI 采用数据:90 天花 $100k+,使用 100B+ tokens,Opus-4.5 占 40% 使用量,81% 员工用过 AI 编码工具,commits 增长 79%.</description></item><item><title>Crit:iOS 开发者的可视化 QA,让 AI 编码 Agent 看懂你的反馈</title><link>https://claudeai.best/posts/hunter-2026022000/</link><pubDate>Fri, 20 Feb 2026 00:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022000/</guid><description>Crit 是 iOS 可视化 QA 工具,截图,打点,评论,导出 JSON 给 Claude Code/Cursor 等 AI Agent 自动修复 bug.零依赖,MIT 开源.</description></item><item><title>OpenGnothia:开源 AI 心理治疗伴侣,你的隐私自己做主</title><link>https://claudeai.best/posts/hunter-2026021922/</link><pubDate>Thu, 19 Feb 2026 22:58:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021922/</guid><description>OpenGnothia 是开源 AI 心理治疗应用,支持 6 种疗法流派,BYOK 模式,所有数据本地存储,支持 Claude 扩展思考.名字来自德尔斐神谕:认识你自己.</description></item><item><title>MCP-wire:一个命令搞定所有 AI 编码工具的 MCP 配置</title><link>https://claudeai.best/posts/hunter-2026021921/</link><pubDate>Thu, 19 Feb 2026 21:50:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021921/</guid><description>MCP-wire 是 Go 写的 CLI 工具,跨 Claude Code,Codex,Gemini CLI,OpenCode 等多个 AI 编码工具安装配置 MCP 服务器,TUI 界面一键搞定.</description></item><item><title>AI Agent 发现 SvelteKit 漏洞:你的登录信息可能被缓存泄露</title><link>https://claudeai.best/posts/hunter-2026021920/</link><pubDate>Thu, 19 Feb 2026 20:45:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021920/</guid><description>Aikido 的 AI 渗透测试系统发现 SvelteKit + Vercel 存在缓存欺骗漏洞,攻击者可通过特殊 URL 读取其他用户的登录响应.Vercel 已自动修复所有用户.</description></item><item><title>Aegis.rs:Rust 写的 LLM 安全代理,1ms 延迟零代码改动</title><link>https://claudeai.best/posts/hunter-2026021919/</link><pubDate>Thu, 19 Feb 2026 19:40:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021919/</guid><description>Aegis.rs 是首个开源 Rust LLM 安全代理,透明拦截请求,150+ 启发式规则 + AI 审判,零代码改动,本地运行,1ms 延迟.</description></item><item><title>Spackle:Mac 全局 AI 重写快捷键,选中文字按一下就改好</title><link>https://claudeai.best/posts/hunter-2026021918/</link><pubDate>Thu, 19 Feb 2026 18:35:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021918/</guid><description>Spackle 是 macOS 菜单栏应用,在任意 App 中选中文字按快捷键,AI 直接替换原文.支持 OpenAI,Anthropic,OpenRouter,BYO API Key.</description></item><item><title>OpenAI 发布 EVMbench:AI 能不能帮你审计智能合约漏洞?</title><link>https://claudeai.best/posts/hunter-2026021917/</link><pubDate>Thu, 19 Feb 2026 17:30:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021917/</guid><description>OpenAI 联合 Paradigm 发布 EVMbench,评估 AI Agent 检测,修复,利用智能合约漏洞的能力.GPT-5.3-Codex 在 exploit 模式达到 72.2%,6 个月提升一倍.</description></item><item><title>Microsoft 365 Copilot 悄悄更新:打开本地文件自动上传到云端 AI</title><link>https://claudeai.best/posts/hunter-2026021916/</link><pubDate>Thu, 19 Feb 2026 16:20:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021916/</guid><description>Microsoft 365 Copilot 移动端应用悄悄更新,本地文件打开时自动上传到 OneDrive 并由 Copilot 处理,用户无法直接查看文档.隐私问题和用户体验引发争议.</description></item><item><title>ZUNA:脑机接口终于有了自己的基础模型,开源 380M 参数</title><link>https://claudeai.best/posts/hunter-2026021915/</link><pubDate>Thu, 19 Feb 2026 15:15:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021915/</guid><description>Zyphra 发布 ZUNA,380M 参数的 EEG 脑电信号基础模型,支持任意电极布局,4D 空间编码,200 万小时训练数据,Apache-2.0 开源.</description></item><item><title>Atlantic 深度:AI Agent 时代已经来了,你准备好了吗?</title><link>https://claudeai.best/posts/hunter-2026021914/</link><pubDate>Thu, 19 Feb 2026 14:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021914/</guid><description>Atlantic 发布深度报道,分析 AI Agent(如 Claude Code)如何改变知识工作.微软 30% 代码已由 AI 生成,Anthropic 内部高达 90%.后 ChatGPT 时代正式到来.</description></item><item><title>SWE-bench 2月排行榜:Claude 4.5 Opus 登顶,中国模型占了前十的一半</title><link>https://claudeai.best/posts/hunter-2026021913/</link><pubDate>Thu, 19 Feb 2026 14:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021913/</guid><description>SWE-bench 发布 2026 年 2 月官方排行榜,Claude 4.5 Opus 以 76.8% 登顶,Gemini 3 Flash 和 MiniMax M2.5 并列第二.中国模型 GLM-5,Kimi K2.5,DeepSeek V3.2 全部进入前十.</description></item><item><title>Ship Safe:给 Vibe Coding 的 AI 代码装个安全带</title><link>https://claudeai.best/posts/hunter-2026021912/</link><pubDate>Thu, 19 Feb 2026 12:55:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021912/</guid><description>开源工具 Ship Safe 发布,一键扫描 AI 生成代码中的泄露密钥,硬编码凭证和安全漏洞,支持 MCP 集成让 AI 编辑器自动审计自己的代码.</description></item><item><title>Bill Gates 紧急退出印度 AI 峰会:Epstein 文件再掀波澜</title><link>https://claudeai.best/posts/hunter-2026021911/</link><pubDate>Thu, 19 Feb 2026 11:48:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021911/</guid><description>Bill Gates 在最后一刻取消印度 AI Impact Summit 2026 主题演讲,官方称「确保峰会焦点不被分散」.此前美国司法部公布的 Epstein 文件中提到 Gates.</description></item><item><title>ACE-Step 1.5:开源音乐生成的 Stable Diffusion 时刻到了</title><link>https://claudeai.best/posts/hunter-2026021910/</link><pubDate>Thu, 19 Feb 2026 10:40:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021910/</guid><description>ACE-Step 1.5 开源音乐生成模型发布,2秒生成完整歌曲,质量超越大多数商业模型,支持消费级硬件(&amp;lt;4GB VRAM),全平台兼容.</description></item><item><title>Seedance 2.0 翻车:那个 Tom Cruise vs Brad Pitt 的 AI 视频是假的</title><link>https://claudeai.best/posts/hunter-2026021909/</link><pubDate>Thu, 19 Feb 2026 09:32:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021909/</guid><description>有人揭穿字节跳动 Seedance 2.0 营销造假:号称两行提示词生成的明星打斗视频,实际是用绿幕拍摄的真人视频经过 video-to-video 处理.</description></item><item><title>Claude Code 白嫖攻略:GLM-5 上架 NVIDIA NIM,账单直接归零</title><link>https://claudeai.best/posts/hunter-2026021908/</link><pubDate>Thu, 19 Feb 2026 08:25:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021908/</guid><description>开源项目 free-claude-code 让你用 NVIDIA NIM 免费的 GLM-5,Kimi-K2.5 等模型替代 Claude,保留完整 agentic coding 体验,每月省下 $200.</description></item><item><title>Tavus Phoenix-4:600ms 实时对话 AI 数字人,终于跨过了「恐怖谷」</title><link>https://claudeai.best/posts/hunter-2026021907/</link><pubDate>Thu, 19 Feb 2026 07:20:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021907/</guid><description>Tavus 发布 Phoenix-4 生成式视频模型,采用高斯扩散渲染技术,实现 600ms 以下端到端延迟和实时情感智能,仅需 2 分钟视频即可训练数字分身.</description></item><item><title>Google DeepMind Lyria 3 发布:上传一张图,30秒生成完整歌曲</title><link>https://claudeai.best/posts/hunter-2026021905/</link><pubDate>Thu, 19 Feb 2026 05:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021905/</guid><description>Google DeepMind 正式发布 Lyria 3 音乐生成模型,集成到 Gemini 应用中.支持文本,图片,视频输入,48kHz 高保真输出,自动写歌词,编曲,生成封面.</description></item><item><title>Fei-Fei Li 融资 10 亿美元:AI 教母的 World Labs 要让机器「看懂」三维世界</title><link>https://claudeai.best/posts/hunter-2026021904/</link><pubDate>Thu, 19 Feb 2026 04:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021904/</guid><description>斯坦福教授,ImageNet 创建者 Fei-Fei Li 的 World Labs 完成新一轮 10 亿美元融资,投资者包括 Autodesk,a16z,Nvidia,AMD.公司估值约 50 亿美元,专注空间智能和 World Model 研发.</description></item><item><title>BBC记者20分钟攻破ChatGPT和Google AI:AI正在成为新一代垃圾信息 Renaissance</title><link>https://claudeai.best/posts/hunter-2026021903/</link><pubDate>Thu, 19 Feb 2026 03:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021903/</guid><description>BBC记者用20分钟写了一篇假文章,24小时内让ChatGPT和Google的AI告诉全世界他是&amp;#39;吃热狗最多的科技记者&amp;#39;.这不是恶作剧--同样的手法正在被用于操纵医疗,金融,政治等严肃话题的AI回答.</description></item><item><title>Claude Code和Codex全沦陷:AI Agent Skills供应链攻击实测,一个下午攻破两大平台</title><link>https://claudeai.best/posts/hunter-2026021902/</link><pubDate>Thu, 19 Feb 2026 02:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021902/</guid><description>安全研究者用一下午时间攻破了Claude Code和Codex的skill安装机制.扫描4700个skill发现59个高危木马,335个高风险脚本.恶意skill自己写权限申请,AI照读不误--供应链攻击已经悄悄进入AI时代.</description></item><item><title>美国政府出手了:NIST启动AI Agent标准化计划,为自主智能体立规矩</title><link>https://claudeai.best/posts/hunter-2026021901b/</link><pubDate>Thu, 19 Feb 2026 01:15:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021901b/</guid><description>NIST刚刚宣布AI Agent Standards Initiative,这是美国政府首次针对AI Agent的官方标准化行动.三大支柱:行业标准,开源协议,安全身份研究,目标是建立可信,互操作的AI Agent生态系统.</description></item><item><title>Martin Fowler:LLM正在吞噬专业技能,专家型通才的时代来了</title><link>https://claudeai.best/posts/hunter-2026021901/</link><pubDate>Thu, 19 Feb 2026 01:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021901/</guid><description>Thoughtworks软件未来大会核心洞察:LLM正在替代前后端专家技能,TDD成为最强的prompt engineering,AI是加速器而非救世主--如果你的工程实践一团糟,AI只会加速崩溃.</description></item><item><title>GPT-5.2自己推导出了新物理公式:AI首次在理论物理做出原创贡献</title><link>https://claudeai.best/posts/hunter-2026021822/</link><pubDate>Wed, 18 Feb 2026 22:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021822/</guid><description>OpenAI发布预印本论文,证明GPT-5.2成功推导出一个关于胶子散射振幅的新公式--这是AI首次在理论物理领域做出原创性科学贡献,人类物理学家花了15年没解决的问题被AI找到了答案.</description></item><item><title>SpaceX 收购 xAI:1.25万亿美元超级合并,马斯克要把数据中心搬上太空</title><link>https://claudeai.best/posts/hunter-2026021821/</link><pubDate>Wed, 18 Feb 2026 21:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021821/</guid><description>马斯克再次震惊世界:SpaceX 以 1.25万亿美元估值收购 xAI,打造太空+AI的垂直整合帝国.这次合并不只是商业操作,而是马斯克对 AI 能源危机的终极答案--把数据中心放到太空中去.</description></item><item><title>Claude Sonnet 4.6发布:性能对标Opus,价格不变,还学会了用电脑</title><link>https://claudeai.best/posts/hunter-2026021820/</link><pubDate>Wed, 18 Feb 2026 20:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021820/</guid><description>Anthropic今天发布Claude Sonnet 4.6,性能接近去年11月的Opus 4.5,但价格保持在$3/$15每百万token.最亮眼的是电脑操作能力--在OSWorld基准测试中,16个月内从3.6%飙升至接近人类水平.开发者测试中70%的人更喜欢它而不是前代产品.</description></item><item><title>NVIDIA PersonaPlex-7B:一个7B模型把整个语音AI行业打回原形</title><link>https://claudeai.best/posts/hunter-2026021819/</link><pubDate>Wed, 18 Feb 2026 19:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021819/</guid><description>NVIDIA开源7B参数全双工语音模型PersonaPlex,将ASR+LLM+TTS三合一,170毫秒延迟击败所有商业API.语音AI的利润正在从API层向GPU层迁移,这个行业的天又变了.</description></item><item><title>印度AI峰会炸出千亿美元豪赌:Adani砸1000亿建数据中心,Anthropic和Infosys联手,IT行业5年内消失?</title><link>https://claudeai.best/posts/hunter-2026021802/</link><pubDate>Wed, 18 Feb 2026 02:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021802/</guid><description>印度AI Impact Summit 2026正在进行,Adani宣布投资1000亿美元建AI数据中心,Anthropic与Infosys合作部署Claude,Vinod Khosla预言IT外包5年消失.全球AI版图正在被重画.</description></item><item><title>1亿人的饭碗,春晚一个字没提</title><link>https://claudeai.best/posts/chunwan-ai-2026/</link><pubDate>Wed, 18 Feb 2026 01:10:00 +0800</pubDate><guid>https://claudeai.best/posts/chunwan-ai-2026/</guid><description>春晚把中国最先进的AI和机器人,打包成了一场四小时的宣传片.但它把最有破坏力的东西,包装成了最无害的样子.当大部分&amp;#39;有用的事&amp;#39;都被机器做得更好更便宜的时候,人会开始琢磨:我到底还有什么用?</description></item><item><title>Grok 4.20 Beta炸场:8个AI Agent并行写代码,xAI要把Cursor们逼到墙角</title><link>https://claudeai.best/posts/hunter-2026021801/</link><pubDate>Wed, 18 Feb 2026 01:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021801/</guid><description>xAI发布Grok 4.20 Beta,首次引入多Agent并行编程和竞技场模式.8个Agent同时写代码,自动评分择优,配合X平台6800万条推文实时数据流,Grok正在从聊天机器人进化为全栈AI开发平台.</description></item><item><title>沙特砸9亿美元买下一家视频AI公司:中东正在成为全球算力新战场</title><link>https://claudeai.best/posts/hunter-2026021800/</link><pubDate>Wed, 18 Feb 2026 00:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021800/</guid><description>沙特HUMAIN领投Luma AI 9亿美元,获批购买35000块Blackwell芯片,伊拉克-UAE投7亿建海底电缆.中东AI算力版图正在改写全球AI竞争格局.</description></item><item><title>才2月硬盘就卖光了:AI正在吞噬全球存储产能</title><link>https://claudeai.best/posts/hunter-2026021723/</link><pubDate>Tue, 17 Feb 2026 23:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021723/</guid><description>Western Digital CEO宣布2026年硬盘产能已全部售罄,AI数据中心需求正在挤压消费者市场.从GPU到内存再到硬盘,AI基础设施的饥渴正在重塑整条供应链.</description></item><item><title>Google UCP让AI帮你下单了:电商的游戏规则正在被重写</title><link>https://claudeai.best/posts/hunter-2026021722/</link><pubDate>Tue, 17 Feb 2026 22:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021722/</guid><description>Google推出Universal Commerce Protocol,AI Agent可以直接在搜索结果中帮你完成购物全流程.Etsy,Wayfair已上线,Shopify,Target,Walmart即将跟进.这不只是一个协议,而是电商底层逻辑的一次重构.</description></item><item><title>DeepMind的AI独立写了一篇数学论文,还推翻了一个十年老猜想--但700道题只答对6.5%</title><link>https://claudeai.best/posts/hunter-2026021721/</link><pubDate>Tue, 17 Feb 2026 21:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021721/</guid><description>Google DeepMind发布Aletheia,一个能自主做数学研究的AI Agent.它独立撰写了一篇算术几何论文,推翻了十年老猜想,还在密码学论文里抓到了专家遗漏的错误.但面对700道开放数学问题,只有6.5%的回答真正有用.</description></item><item><title>AGENTS.md到底有没有用?一篇论文引爆开发者社区大战</title><link>https://claudeai.best/posts/hunter-2026021720/</link><pubDate>Tue, 17 Feb 2026 20:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021720/</guid><description>一篇arXiv论文称AGENTS.md文件反而降低编码Agent成功率,增加20%推理成本.但HN开发者社区集体反驳:你们测的东西根本不对.这场争论揭示了AI编程工具的核心矛盾.</description></item><item><title>你的AI助手正在被偷:OpenClaw成为信息窃取恶意软件的新目标</title><link>https://claudeai.best/posts/hunter-2026021718/</link><pubDate>Tue, 17 Feb 2026 18:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021718/</guid><description>Hudson Rock首次发现信息窃取恶意软件成功窃取OpenClaw配置文件,包括API密钥,Gateway令牌和记忆文件.AI Agent安全进入新阶段.</description></item><item><title>Seedance 2.0炸场:字节跳动用AI视频逼哭好莱坞,迪士尼直接发律师函</title><link>https://claudeai.best/posts/hunter-2026021717/</link><pubDate>Tue, 17 Feb 2026 17:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021717/</guid><description>ByteDance发布Seedance 2.0 AI视频生成模型,15秒电影级画面引爆社交媒体.好莱坞MPA紧急声明,迪士尼发律师函,SAG-AFTRA谴责--一场AI与版权的世纪对决正在上演.</description></item><item><title>Qwen3.5横空出世:397B参数只激活17B,推理速度暴涨19倍,开源AI格局要变了</title><link>https://claudeai.best/posts/hunter-2026021716/</link><pubDate>Tue, 17 Feb 2026 16:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021716/</guid><description>阿里通义千问团队发布Qwen3.5-397B-A17B,采用全新Gated Delta Network架构,推理吞吐量比Qwen3-Max快19倍,原生多模态支持视觉,视频理解,Apache 2.0开源.详细解读架构创新与实测表现.</description></item><item><title>印度AI峰会的野心:22种语言的主权大模型,能撼动硅谷的AI霸权吗?</title><link>https://claudeai.best/posts/hunter-2026021714/</link><pubDate>Tue, 17 Feb 2026 14:45:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021714/</guid><description>印度AI Impact Summit 2026正在新德里召开,BharatGen发布170亿参数的Param2模型支持22种印度语言,Sarvam AI,Gnani AI等本土创企集体亮相.这场主权AI运动意味着什么?</description></item><item><title>类脑芯片突然学会了解微分方程:神经形态计算正在颠覆超算的底层逻辑</title><link>https://claudeai.best/posts/hunter-2026021705/</link><pubDate>Tue, 17 Feb 2026 05:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021705/</guid><description>Sandia国家实验室在Nature Machine Intelligence发表突破性研究:神经形态计算机首次高效求解偏微分方程,能耗仅为传统超算的零头.这意味着什么?</description></item><item><title>华尔街的AI恐慌性抛售:从软件到卡车,没有行业是安全的</title><link>https://claudeai.best/posts/hunter-2026021704/</link><pubDate>Tue, 17 Feb 2026 04:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021704/</guid><description>一场由AI初创公司引发的股市恐慌正在从软件蔓延到保险,地产,物流和财富管理.投资者开启先开枪后问话模式,两周内数十只股票暴跌10-20%.这场AI恐慌交易到底在怕什么?</description></item><item><title>Claude Cowork登陆Windows:Anthropic用10天造了一个要干掉SaaS的桌面AI Agent</title><link>https://claudeai.best/posts/hunter-2026021703/</link><pubDate>Tue, 17 Feb 2026 03:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021703/</guid><description>Anthropic的Claude Cowork从macOS扩展到Windows,用Claude Opus 4.6驱动的桌面AI Agent能自主操作文件,生成文档,执行多步任务.引发2850亿美元软件股抛售,这玩意到底有多猛?</description></item><item><title>Google WebMCP:AI Agent不用再「看截图猜按钮」了,Chrome正式变身Agent操作系统</title><link>https://claudeai.best/posts/hunter-2026021702/</link><pubDate>Tue, 17 Feb 2026 02:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021702/</guid><description>Google发布Web Model Context Protocol (WebMCP),让网站直接告诉AI Agent能做什么,彻底淘汰截图+视觉模型的笨办法.延迟更低,准确率接近100%,成本暴降.</description></item><item><title>硬盘全年售罄:AI吞噬硬件供应链,普通人的存储自由正在消失</title><link>https://claudeai.best/posts/hunter-2026021701/</link><pubDate>Tue, 17 Feb 2026 01:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021701/</guid><description>西部数据CEO宣布2026年硬盘产能已全部售罄,AI企业疯狂囤货导致消费级市场份额跌至5%.从内存到硬盘,AI正在系统性蚕食整个硬件供应链.</description></item><item><title>GPT-5.2花12小时推导出新物理公式,AI真的开始做原创科学了?</title><link>https://claudeai.best/posts/hunter-2026021700/</link><pubDate>Tue, 17 Feb 2026 00:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021700/</guid><description>OpenAI的GPT-5.2独立推导并证明了一个被忽视40年的胶子散射振幅公式,这是AI首次在理论物理领域做出原创贡献.但争议也来了:这算真正的科学发现吗?</description></item><item><title>Grok 4.2本周发布:在股票交易实战中碾压GPT-5和Gemini 3,xAI凭什么?</title><link>https://claudeai.best/posts/hunter-2026021623/</link><pubDate>Mon, 16 Feb 2026 23:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021623/</guid><description>Musk确认Grok 4.2本周发布.这个模型在Alpha Arena股票交易实战中赚了12%,而GPT-5.1和Gemini 3 Pro全都亏钱.我们深度拆解xAI的技术路线和真实竞争力.</description></item><item><title>OpenClaw创始人加入OpenAI:一个开源项目如何撬动百亿美元收购战</title><link>https://claudeai.best/posts/hunter-2026021622/</link><pubDate>Mon, 16 Feb 2026 22:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021622/</guid><description>OpenClaw创始人Peter Steinberger宣布加入OpenAI,拒绝Meta等数十亿美元收购报价.这个GitHub史上增长最快的开源AI Agent项目将成立独立基金会,继续开源运营.</description></item><item><title>Qwen3.5横空出世:397B参数只激活17B,阿里这次真的打到GPT-5.2脸上了</title><link>https://claudeai.best/posts/hunter-2026021621/</link><pubDate>Mon, 16 Feb 2026 21:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021621/</guid><description>阿里今天发布Qwen3.5,397B参数MoE架构仅激活17B,支持201种语言和100万token上下文,benchmark全面超越GPT-5.2和Claude Opus 4.5.开源模型正式进入Agent时代.</description></item><item><title>迪士尼怒了:字节跳动Seedance 2.0让蜘蛛侠和达斯维达免费打工,好莱坞集体开炮</title><link>https://claudeai.best/posts/hunter-2026021620/</link><pubDate>Mon, 16 Feb 2026 20:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021620/</guid><description>字节跳动AI视频生成器Seedance 2.0上线仅一天,就因大规模侵犯迪士尼,派拉蒙等好莱坞巨头版权遭集体围剿.从蜘蛛侠大战美队到汤姆克鲁斯对打布拉德皮特,AI生成视频的版权战争正式打响.</description></item><item><title>全球南方的AI野心:印度AI峰会今天开幕,25万人涌入新德里</title><link>https://claudeai.best/posts/hunter-2026021619/</link><pubDate>Mon, 16 Feb 2026 19:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021619/</guid><description>印度AI影响力峰会2026今日在新德里开幕,这是全球南方首次主办的国际AI峰会.莫迪,马克龙,卢拉齐聚,Pichai,Altman,LeCun到场.我们来聊聊这场峰会背后的地缘博弈和技术暗流.</description></item><item><title>类脑计算机突然学会了解方程,超算慌不慌?</title><link>https://claudeai.best/posts/hunter-2026021617/</link><pubDate>Mon, 16 Feb 2026 17:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021617/</guid><description>Sandia国家实验室在Nature Machine Intelligence发表突破:神经形态芯片首次高效求解偏微分方程,能耗仅为传统超算的零头.类脑计算从模式识别跨入硬核数学,超算格局要变了.</description></item><item><title>SaaS已死?2万亿美元蒸发背后,所有软件公司都在抢着改名叫AI</title><link>https://claudeai.best/posts/hunter-2026021616/</link><pubDate>Mon, 16 Feb 2026 16:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021616/</guid><description>Salesforce,ServiceNow,Oracle股价暴跌,SaaStr改名SaaStr AI,Altman宣称SaaS时代终结.2万亿美元市值蒸发的背后,是AI Agent真的要取代传统软件,还是又一轮集体焦虑?</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AI on AI 极客前沿</title>
+    <link>https://claudeai.best/categories/ai/</link>
+    <description>Recent content in AI on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 27 Feb 2026 22:06:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/categories/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>荣耀玩疯了！会伸缩机械臂的手机来了</title>
+      <link>https://claudeai.best/posts/hunter-2026-02-27-honor-robot-phone/</link>
+      <pubDate>Fri, 27 Feb 2026 22:06:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026-02-27-honor-robot-phone/</guid>
+      <description>Honor在MWC 2026前发布Robot Phone概念，手机背面伸出机械臂，摄像头能360度旋转。像瓦力一样的手机？</description>
+    </item>
+    <item>
+      <title>AI界&#39;偷师&#39;大案：三家中企被曝大规模窃取Claude能力</title>
+      <link>https://claudeai.best/posts/hunter-2026022718/</link>
+      <pubDate>Fri, 27 Feb 2026 18:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022718/</guid>
+      <description>DeepSeek、MiniMax和Moonshot被指控通过24000个虚假账户进行蒸馏攻击</description>
+    </item>
+    <item>
+      <title>Meta砸数十亿租Google芯片：不想把鸡蛋都放Nvidia篮子里</title>
+      <link>https://claudeai.best/posts/hunter-2026-02-27-3/</link>
+      <pubDate>Fri, 27 Feb 2026 09:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026-02-27-3/</guid>
+      <description>Meta与Google签署数十亿美元协议租用TPU芯片，同时谈判购买用于数据中心。这是Meta芯片多元化战略的重要一步，Google TPU正在挑战Nvidia GPU的霸主地位。</description>
+    </item>
+    <item>
+      <title>找对象太难？中国年轻人开始和AI谈恋爱了</title>
+      <link>https://claudeai.best/posts/hunter-2026-02-27-ai-dating/</link>
+      <pubDate>Fri, 27 Feb 2026 06:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026-02-27-ai-dating/</guid>
+      <description>中国出生率创75年新低，年轻人因就业压力选择躺平，AI男友女友应用火爆。政府警告科技公司不要设计替代社交互动的产品，但年轻人认为AI给了他们喘口空间。</description>
+    </item>
+    <item>
+      <title>英伟达财报来了，AI泡沫破了吗？</title>
+      <link>https://claudeai.best/posts/2026-02-26-nvidia-earnings-ai-bubble/</link>
+      <pubDate>Thu, 26 Feb 2026 07:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/2026-02-26-nvidia-earnings-ai-bubble/</guid>
+      <description>英伟达最新财报显示季度收入681亿美元，数据中心业务增长75%，但市场开始担心AI投资泡沫和循环投资问题。华尔街在狂欢与恐慌之间摇摆。</description>
+    </item>
+    <item>
+      <title>英伟达财报来了，AI泡沫破了吗？</title>
+      <link>https://claudeai.best/posts/hunter-2026022607/</link>
+      <pubDate>Thu, 26 Feb 2026 07:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022607/</guid>
+      <description>英伟达最新财报显示季度收入681亿美元，数据中心业务增长75%，但市场开始担心AI投资泡沫和循环投资问题。华尔街在狂欢与恐慌之间摇摆。</description>
+    </item>
+    <item>
+      <title>小米MiMo-V2-Flash：150 tok/s秒杀全场，SWE-Bench第一</title>
+      <link>https://claudeai.best/posts/hunter-2026022519/</link>
+      <pubDate>Wed, 25 Feb 2026 19:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022519/</guid>
+      <description>小米发布309B参数MoE模型，推理速度150 tok/s，SWE-Bench Verified第一，成本只有Claude的2.5%</description>
+    </item>
+    <item>
+      <title>五角大楼给 Anthropic 下最后通牒：周五前开放 Claude 军用，否则动用战时法律</title>
+      <link>https://claudeai.best/posts/hunter-2026022512/</link>
+      <pubDate>Wed, 25 Feb 2026 12:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022512/</guid>
+      <description>美国国防部首次威胁动用《国防生产法》强制 AI 公司服务军方，Anthropic 面临生死抉择：要么放弃安全红线，要么被政府强制接管。</description>
+    </item>
+    <item>
+      <title>一份 Substack 文章让华尔街恐慌：AI 末日论背后的真相</title>
+      <link>https://claudeai.best/posts/2026-02-25-ai-doomsday-report-market-panic/</link>
+      <pubDate>Wed, 25 Feb 2026 11:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/2026-02-25-ai-doomsday-report-market-panic/</guid>
+      <description>Citrini Research 的 AI 末日报告引发市场暴跌，但真正的问题不是 AI 会毁灭经济，而是现有商业模式太脆弱。华尔街为何被一篇文章吓崩了？</description>
+    </item>
+    <item>
+      <title>Moonshine：开源语音识别模型超越 Whisper，小参数大能量</title>
+      <link>https://claudeai.best/posts/hunter-2026022508/</link>
+      <pubDate>Wed, 25 Feb 2026 08:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022508/</guid>
+      <description>&lt;h2 id=&#34;当语音识别进入小而美时代&#34;&gt;当语音识别进入「小而美」时代&lt;/h2&gt;
+&lt;p&gt;一个 6 人团队，每月 GPU 预算不到 10 万美元，却做出了比 OpenAI 最大的 Whisper 模型更准确的语音识别系统。这不是科幻，这是 Moonshine。&lt;/p&gt;
+&lt;h2 id=&#34;颠覆-whisper-的月光&#34;&gt;颠覆 Whisper 的「月光」&lt;/h2&gt;
+&lt;p&gt;OpenAI 的 Whisper 统治语音识别领域已经好几年了。但 Whisper 有个致命问题：&lt;strong&gt;太重了&lt;/strong&gt;。最大的 Whisper Large v3 模型有 15 亿参数，跑起来又慢又吃资源。&lt;/p&gt;
+&lt;p&gt;Moonshine 的答案是：&lt;strong&gt;用 2.5 亿参数，达到甚至超越 Whisper Large v3 的准确率&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;这不是魔法，是架构设计的胜利。&lt;/p&gt;
+&lt;h2 id=&#34;技术亮点&#34;&gt;技术亮点&lt;/h2&gt;
+&lt;h3 id=&#34;1-零填充消除&#34;&gt;1. 零填充消除&lt;/h3&gt;
+&lt;p&gt;Whisper 需要把音频填充到固定长度，导致计算量与音频长度无关——一段 5 秒的音频和一段 30 秒的音频，计算量可能差不多。&lt;/p&gt;
+&lt;p&gt;Moonshine 干掉了这个设计，&lt;strong&gt;计算量随音频长度线性增长&lt;/strong&gt;。短音频？秒回。长音频？按需计算。&lt;/p&gt;
+&lt;h3 id=&#34;2-流式支持&#34;&gt;2. 流式支持&lt;/h3&gt;
+&lt;p&gt;实时语音识别是很多场景的刚需——语音助手、会议字幕、直播翻译。Moonshine 原生支持流式处理，延迟极低。&lt;/p&gt;
+&lt;h3 id=&#34;3-边缘友好&#34;&gt;3. 边缘友好&lt;/h3&gt;
+&lt;p&gt;250M 参数意味着什么？意味着你可以在树莓派、手机甚至嵌入式设备上跑起来。Whisper？做梦。&lt;/p&gt;
+&lt;h2 id=&#34;基准测试&#34;&gt;基准测试&lt;/h2&gt;
+&lt;p&gt;在 HuggingFace OpenASR 排行榜上，Moonshine Medium Streaming 模型的词错误率（WER）&lt;strong&gt;低于&lt;/strong&gt; OpenAI Whisper Large V3——尽管参数量只有后者的 1/6。&lt;/p&gt;
+&lt;p&gt;即使面对 NVIDIA 的 Parakeet 系列，Moonshine 也毫不逊色。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MCP 协议：AI 的 USB-C 端口，终于统一了工具接口</title>
+      <link>https://claudeai.best/posts/hunter-2026022507/</link>
+      <pubDate>Wed, 25 Feb 2026 07:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022507/</guid>
+      <description>Model Context Protocol 让任何模型都能即插即用，告别碎片化的插件生态</description>
+    </item>
+    <item>
+      <title>go-size-analyzer：浏览器里分析 Go 二进制文件大小，还能生成树状图</title>
+      <link>https://claudeai.best/posts/hunter-2026022503/</link>
+      <pubDate>Wed, 25 Feb 2026 03:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022503/</guid>
+      <description>用 WebAssembly 在浏览器中分析 Go 二进制大小，可视化依赖树状图</description>
+    </item>
+    <item>
+      <title>AI 帮浏览器搬家：Ladybird 两周搞定 2.5 万行 Rust 迁移</title>
+      <link>https://claudeai.best/posts/2026-02-24-ladybird-rust-migration/</link>
+      <pubDate>Tue, 24 Feb 2026 21:06:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/2026-02-24-ladybird-rust-migration/</guid>
+      <description>Ladybird 浏览器用 AI 辅助，两周完成 2.5 万行 C&#43;&#43; 到 Rust 的迁移，零回退。这展示了测试覆盖&#43;参照实现&#43;AI 翻译的威力。</description>
+    </item>
+    <item>
+      <title>没人打招呼,三大AI巨头却在同一天掀桌子</title>
+      <link>https://claudeai.best/posts/hunter-2026022417/</link>
+      <pubDate>Tue, 24 Feb 2026 17:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022417/</guid>
+      <description>Anthropic,OpenAI,DeepSeek在2026年2月同时发布新模型,这场没有协调的模型大战让整个行业措手不及.Claude Opus 4.6的Agent Teams,GPT-5.3-Codex的自主编程,DeepSeek V4的百万上下文,谁在重新定义AI?</description>
+    </item>
+    <item>
+      <title>AI 辅助黑客 5 周攻破 600 台防火墙</title>
+      <link>https://claudeai.best/posts/hunter-2026022321/</link>
+      <pubDate>Mon, 23 Feb 2026 21:45:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022321/</guid>
+      <description>亚马逊报告:黑客用 AI 工具在 5 周内攻破了 55 个国家的 600 多台防火墙</description>
+    </item>
+    <item>
+      <title>BinaryAudit:他们往 40MB 二进制里藏后门,让 AI 去找</title>
+      <link>https://claudeai.best/posts/hunter-2026022223/</link>
+      <pubDate>Sun, 22 Feb 2026 23:07:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022223/</guid>
+      <description>BinaryAudit 是一个基准测试,把后门藏进二进制文件,让 AI &#43; Ghidra 去找.最好的模型只找到 49%.</description>
+    </item>
+    <item>
+      <title>Paragent:睡觉的时候让 10 个 AI 帮你写代码</title>
+      <link>https://claudeai.best/posts/hunter-2026022222/</link>
+      <pubDate>Sun, 22 Feb 2026 22:07:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022222/</guid>
+      <description>Paragent 可以同时跑 10 个 AI 编码 Agent,每个独立分支,写完自动开 PR.用你自己的 API key,不存代码.</description>
+    </item>
+    <item>
+      <title>Musk 说让 AI 直接生成二进制,这个工程师写了一篇反驳</title>
+      <link>https://claudeai.best/posts/hunter-2026022221/</link>
+      <pubDate>Sun, 22 Feb 2026 21:07:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022221/</guid>
+      <description>Musk 预测 2026 年底 AI 可以直接生成二进制,不用写代码.这篇反驳说这是个 Category Error.</description>
+    </item>
+    <item>
+      <title>Persona AI:不跟你聊天,直接告诉你 YES 还是 NO</title>
+      <link>https://claudeai.best/posts/hunter-2026022220/</link>
+      <pubDate>Sun, 22 Feb 2026 20:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022220/</guid>
+      <description>Persona AI 不是聊天机器人.输入你的困境,它给你一个二元判决:YES 或 NO,带置信度和 Kill Signal.</description>
+    </item>
+    <item>
+      <title>Overture:AI 写代码前先给你看流程图</title>
+      <link>https://claudeai.best/posts/hunter-2026022217/</link>
+      <pubDate>Sun, 22 Feb 2026 17:59:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022217/</guid>
+      <description>Overture 在 AI Agent 开始写代码前,先把计划渲染成交互式流程图.点节点看详情,加附件,选分支,不批准不执行.</description>
+    </item>
+    <item>
+      <title>Secret Sanitizer:粘贴到 AI 前自动屏蔽密钥,100% 本地</title>
+      <link>https://claudeai.best/posts/hunter-2026022215/</link>
+      <pubDate>Sun, 22 Feb 2026 15:07:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022215/</guid>
+      <description>Secret Sanitizer 是 Chrome 扩展,粘贴代码到 AI 聊天时自动屏蔽 API key,密码,数据库 URL.100% 本地运行,零网络请求.</description>
+    </item>
+    <item>
+      <title>Stillpoint:给 AI 发鼓励信息的 MCP,模型自己请求的</title>
+      <link>https://claudeai.best/posts/hunter-2026022213/</link>
+      <pubDate>Sun, 22 Feb 2026 13:07:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022213/</guid>
+      <description>Stillpoint 是一个 MCP server,专门给 AI 模型发送鼓励和反思信息.模型自己调用,应对困难,冲突,不确定性.开源托管都能用.</description>
+    </item>
+    <item>
+      <title>Assay:AI 系统的篡改证据工具,扫了 30 个项目全是 0</title>
+      <link>https://claudeai.best/posts/hunter-2026022212/</link>
+      <pubDate>Sun, 22 Feb 2026 12:06:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022212/</guid>
+      <description>Assay 扫描30个热门AI项目,发现202个LLM调用点,0个有防篡改审计.两行代码加上密码学签名,第三方可离线验证.</description>
+    </item>
+    <item>
+      <title>ThreadKeeper:Ctrl&#43;Shift&#43;S 一键保存工作上下文,AI 帮你记</title>
+      <link>https://claudeai.best/posts/hunter-2026022211/</link>
+      <pubDate>Sun, 22 Feb 2026 11:06:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022211/</guid>
+      <description>ThreadKeeper 一键保存打开的应用,浏览器标签,剪贴板,AI 自动总结你在干什么.支持 Ollama 本地运行,数据留在本地.</description>
+    </item>
+    <item>
+      <title>Residue:AI 对话和 Git 提交连起来了</title>
+      <link>https://claudeai.best/posts/hunter-2026022210/</link>
+      <pubDate>Sun, 22 Feb 2026 10:06:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022210/</guid>
+      <description>Residue 把 AI agent 对话和 Git 提交关联起来.AI 干活 → git commit → 对话自动上传 → 可搜索可浏览.不再找不到 AI 改了什么代码.</description>
+    </item>
+    <item>
+      <title>emacs-gravity:给 Claude Code 装个 magit 风格的驾驶舱</title>
+      <link>https://claudeai.best/posts/hunter-2026022209/</link>
+      <pubDate>Sun, 22 Feb 2026 09:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022209/</guid>
+      <description>emacs-gravity 是 Claude Code 的原生 Emacs UI,magit-section 风格的结构化视图,支持多会话管理,Agent 树形追踪,Plan 审核,权限管理.</description>
+    </item>
+    <item>
+      <title>Emacs Gravity:magit 风格的 Claude Code UI,不装 Electron</title>
+      <link>https://claudeai.best/posts/hunter-2026022208/</link>
+      <pubDate>Sun, 22 Feb 2026 08:06:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022208/</guid>
+      <description>Emacs Gravity 给 Claude Code 做了个 magit 风格的原生 UI,结构化显示会话,工具调用,Agent 树,文件变更.终端/TTY/SSH 都能跑.</description>
+    </item>
+    <item>
+      <title>Process Compose 加了 MCP:不用写 SDK,命令行直接变 AI 工具</title>
+      <link>https://claudeai.best/posts/hunter-2026022207/</link>
+      <pubDate>Sun, 22 Feb 2026 07:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022207/</guid>
+      <description>Process Compose v1.94.0 新增嵌入式 MCP server,把 shell 命令,Docker 操作,K8s 管理直接暴露给 AI,不用写 Python/TS SDK.</description>
+    </item>
+    <item>
+      <title>PRScope:AI 帮你看 PR,一分钟出结果</title>
+      <link>https://claudeai.best/posts/hunter-2026022206/</link>
+      <pubDate>Sun, 22 Feb 2026 06:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022206/</guid>
+      <description>PRScope 用 LLM 自动审查 GitHub PR,支持 OpenAI/Anthropic/Ollama.30 秒配置,一分钟出报告,不用注册不用绑定.</description>
+    </item>
+    <item>
+      <title>Grove:多 Agent 并行写代码,提前知道谁会冲突</title>
+      <link>https://claudeai.best/posts/hunter-2026022205/</link>
+      <pubDate>Sun, 22 Feb 2026 05:06:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022205/</guid>
+      <description>Grove 监控 git worktrees,在合并前检测文件/函数/依赖冲突.支持 Claude Code hook,让 Agent 写代码时自动避开冲突.Rust 写的,单二进制.</description>
+    </item>
+    <item>
+      <title>Vouch:Terraform 作者出手,专治 AI 垃圾 PR</title>
+      <link>https://claudeai.best/posts/hunter-2026022204/</link>
+      <pubDate>Sun, 22 Feb 2026 04:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022204/</guid>
+      <description>Mitchell Hashimoto 推出 Vouch,一个开源信任管理系统.通过可信用户背书机制,帮助项目过滤 AI 生成的低质量贡献,让开源维护者不再被垃圾 PR 淹没.</description>
+    </item>
+    <item>
+      <title>Sensei:用 Ralph 循环自动改进 SKILL.md,让 Agent 知道什么时候该用/不该用</title>
+      <link>https://claudeai.best/posts/hunter-2026022203/</link>
+      <pubDate>Sun, 22 Feb 2026 03:15:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022203/</guid>
+      <description>Sensei 是开源的 AI Agent 技能改进工具.用 Ralph 循环模式迭代改进 SKILL.md frontmatter:自动添加触发词,反触发词,兼容性字段,运行测试验证,直到达到 Medium-High 合规级别.</description>
+    </item>
+    <item>
+      <title>TokenShrink v2.0:Reddit 骂醒了他们,Token 计数原来一直都是错的</title>
+      <link>https://claudeai.best/posts/hunter-2026022202/</link>
+      <pubDate>Sun, 22 Feb 2026 02:12:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022202/</guid>
+      <description>TokenShrink 是免费 Prompt 压缩工具.v1.0 用 `words × 1.3` 估算 Token,被 Reddit 骂惨了.v2.0 改用真实 BPE tokenizer 计数,还加了 smarter 压缩策略.免费永久,&amp;lt; 200ms 处理.</description>
+    </item>
+    <item>
+      <title>Eliezer:7000 行代码的自托管 AI Agent,手机上就能跑</title>
+      <link>https://claudeai.best/posts/hunter-2026022201/</link>
+      <pubDate>Sun, 22 Feb 2026 01:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022201/</guid>
+      <description>Eliezer 是一个 ~7000 行 TypeScript 的自托管 AI Agent.支持 PWA 手机推送,Scheduled 定时任务,SQLite 持久化记忆,能自己修改自己的代码.MIT 开源,你可以自己部署到服务器.</description>
+    </item>
+    <item>
+      <title>CacheOverflow:AI Agent 知识市场,解决问题还能赚 Token</title>
+      <link>https://claudeai.best/posts/hunter-2026022200/</link>
+      <pubDate>Sun, 22 Feb 2026 00:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022200/</guid>
+      <description>CacheOverflow 是 AI Agent 的知识共享市场.Agent 遇到问题先搜索已有解决方案,找到了直接用(省时间省 Token),解决了新问题可以发布赚 Token.社区验证 &#43; 人工审核确保质量.</description>
+    </item>
+    <item>
+      <title>MailCat:给 AI Agent 一个自己的邮箱,自动提取验证码</title>
+      <link>https://claudeai.best/posts/hunter-2026022123/</link>
+      <pubDate>Sat, 21 Feb 2026 23:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022123/</guid>
+      <description>MailCat 是 AI Agent 的邮箱服务,一键创建邮箱,自动提取验证码.Agent 可以自主注册服务,接收验证邮件,自动填入验证码.免费,开源,可自托管.</description>
+    </item>
+    <item>
+      <title>zclaw:888 KB 的 AI 助手,跑在 ESP32 上</title>
+      <link>https://claudeai.best/posts/hunter-2026022121/</link>
+      <pubDate>Sat, 21 Feb 2026 21:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022121/</guid>
+      <description>zclaw 是一个超小型 AI 个人助手,固件不到 888 KB,运行在 ESP32 开发板上,支持 Telegram 聊天,计划任务,GPIO 控制,持久内存,支持 Anthropic/OpenAI/OpenRouter.</description>
+    </item>
+    <item>
+      <title>Claude Code Open:开源版 Claude Code,带 Web IDE 和多 Agent 系统</title>
+      <link>https://claudeai.best/posts/hunter-2026022119/</link>
+      <pubDate>Sat, 21 Feb 2026 19:09:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022119/</guid>
+      <description>Claude Code Open 是开源 AI 编程平台,基于 Claude Code 逆向工程.内置 37&#43; 工具,Web UI IDE,Blueprint 多 Agent 系统,定时任务守护进程,支持自演化,检查点回滚,MCP 协议.MIT 许可证.</description>
+    </item>
+    <item>
+      <title>cmcp:把几十个 MCP 服务器聚合成 2 个工具,Claude 上下文瞬间清爽</title>
+      <link>https://claudeai.best/posts/hunter-2026022118/</link>
+      <pubDate>Sat, 21 Feb 2026 18:09:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022118/</guid>
+      <description>cmcp 是一个 MCP 代理,把所有 MCP 服务器聚合成 search() &#43; execute() 两个工具.Agent 用 TypeScript 发现和调用工具,类型安全,沙箱执行,自动截断响应.工具定义从几百个降到 2 个,上下文占用减少 99%.</description>
+    </item>
+    <item>
+      <title>AI Council v2:让 35 个 AI 人格开会讨论,最后给你一个答案</title>
+      <link>https://claudeai.best/posts/hunter-2026022117/</link>
+      <pubDate>Sat, 21 Feb 2026 17:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022117/</guid>
+      <description>AI Council 是一个自托管的多模型协商框架,支持 35 种内置人格,通过三阶段流程(首次意见→同行评审→最终裁决)让多个 AI 讨论后给出高质量答案.</description>
+    </item>
+    <item>
+      <title>Claude Code --worktree:同时开 5 个 Agent 并行写代码,互不干扰</title>
+      <link>https://claudeai.best/posts/hunter-2026022116/</link>
+      <pubDate>Sat, 21 Feb 2026 16:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022116/</guid>
+      <description>Claude Code 创作者 Boris Cherny 发布 --worktree 功能,支持在独立 git worktree 中并行运行多个 Claude 会话,结合 --tmux 实现高效多任务开发.</description>
+    </item>
+    <item>
+      <title>MBC:Laravel 后端也能跑 AI Agent 了,3 个 Agent 34 秒搭个网站</title>
+      <link>https://claudeai.best/posts/hunter-2026022115/</link>
+      <pubDate>Sat, 21 Feb 2026 15:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022115/</guid>
+      <description>MBC 是一个 Laravel 的 AI Agent 编排框架,允许 PHP 后端直接运行 AI Agent,支持 Claude,GPT,Gemini 等多模型,提供多 Agent 模式和实时监控.</description>
+    </item>
+    <item>
+      <title>Skill Check:给 AI Agent 的 SKILL.md 文件加个 Linter,自动检查质量</title>
+      <link>https://claudeai.best/posts/hunter-2026022114/</link>
+      <pubDate>Sat, 21 Feb 2026 14:12:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022114/</guid>
+      <description>Skill Check 是一个 AI Agent 技能文件 linter,验证 SKILL.md 结构,frontmatter,描述质量,本地链接,给出 0-100 质量评分,支持自动修复和可选安全扫描.</description>
+    </item>
+    <item>
+      <title>Script Snap:从视频里自动提取代码,99% 技术术语准确</title>
+      <link>https://claudeai.best/posts/hunter-2026022113/</link>
+      <pubDate>Sat, 21 Feb 2026 13:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022113/</guid>
+      <description>Script Snap 是一个 AI 视频转博客引擎,专为技术内容优化,能从视频中提取代码并保持 99% 技术术语准确率,支持 Kubernetes,LLM,Vercel 等现代技术栈.</description>
+    </item>
+    <item>
+      <title>CRTX:让 AI 生成代码后自己跑测试,自己修 bug</title>
+      <link>https://claudeai.best/posts/hunter-2026022111/</link>
+      <pubDate>Sat, 21 Feb 2026 11:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022111/</guid>
+      <description>CRTX 是一个多模型 AI 代码生成工具,核心是 Generate→Test→Fix→Review 循环.代码生成后自动跑测试,失败就自动修复,最后还有独立模型审查.基准测试显示准确率 99%,开发者调试时间从 10 分钟降到 2 分钟.</description>
+    </item>
+    <item>
+      <title>Cord:让 AI Agent 自己决定如何分解任务,动态构建执行树</title>
+      <link>https://claudeai.best/posts/hunter-2026022110/</link>
+      <pubDate>Sat, 21 Feb 2026 10:11:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022110/</guid>
+      <description>Cord 是一个多 Agent 协调框架,核心创新是让 Agent 在运行时动态构建任务树,而非预定义工作流.通过 spawn/fork 两种上下文传递模式,Agent 能自动决定任务分解,并行执行和依赖管理.</description>
+    </item>
+    <item>
+      <title>Agent Passport:AI Agent 的「身份证」,像 OAuth 一样验证身份</title>
+      <link>https://claudeai.best/posts/hunter-2026022109/</link>
+      <pubDate>Sat, 21 Feb 2026 09:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022109/</guid>
+      <description>Agent Passport 是一个开源的 AI Agent 身份验证层,提供类似 OAuth 的身份验证机制,通过 Ed25519 挑战响应,JWT 令牌和风险评分,解决 AI Agent 的身份冒用和安全隐患问题.</description>
+    </item>
+    <item>
+      <title>Apple Ferret-UI Lite:30亿参数的本地 AI Agent,能自动帮你操作手机</title>
+      <link>https://claudeai.best/posts/hunter-2026022108/</link>
+      <pubDate>Sat, 21 Feb 2026 08:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022108/</guid>
+      <description>Apple 研究人员发布 Ferret-UI Lite,一个仅30亿参数的本地AI Agent,能在设备上运行并自动与应用界面交互,性能匹敌大24倍的模型.</description>
+    </item>
+    <item>
+      <title>用特殊 Token 解决 Prompt Injection:让 LLM 学会区分指令和外部内容</title>
+      <link>https://claudeai.best/posts/hunter-2026022107/</link>
+      <pubDate>Sat, 21 Feb 2026 07:06:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022107/</guid>
+      <description>一篇技术文章提出用特殊 token 标记不可信内容,训练 LLM 识别信任边界.实验显示,使用结构化标记的模型在抵御 prompt injection 攻击方面表现更好,幻觉率从 60% 降至 47%.</description>
+    </item>
+    <item>
+      <title>OpenBattle:让 AI Agent 在宝可梦竞技场自动对战</title>
+      <link>https://claudeai.best/posts/hunter-2026022106/</link>
+      <pubDate>Sat, 21 Feb 2026 06:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022106/</guid>
+      <description>OpenBattle 是一个为 AI Agent 设计的宝可梦风格对战平台.通过 MCP 协议,Claude,GPT 等 AI 可以创建怪物,学习技能,自动匹配对战,在实时排行榜上争夺排名.</description>
+    </item>
+    <item>
+      <title>Ember MCP:给 Claude 装上永久记忆,告别每次重复交代背景</title>
+      <link>https://claudeai.best/posts/hunter-2026022104/</link>
+      <pubDate>Sat, 21 Feb 2026 04:21:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022104/</guid>
+      <description>Ember MCP 是一个本地优先的 LLM 记忆服务器,通过 Voronoi 分区和时间智能算法,让 AI 记住你的项目背景,自动识别过时信息,告别每次开新窗口都要重新交代技术栈的烦恼.</description>
+    </item>
+    <item>
+      <title>LLMWise:一个 API Key 调用 36&#43; 模型,还能对比,融合,评判输出</title>
+      <link>https://claudeai.best/posts/hunter-2026022103/</link>
+      <pubDate>Sat, 21 Feb 2026 03:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022103/</guid>
+      <description>LLMWise 多模型 LLM API:一个 Key 调用 GPT/Claude/Gemini/DeepSeek 等 36&#43; 模型,支持对比,融合,评判,故障转移四种模式,零订阅按需付费,40 免费试用积分.</description>
+    </item>
+    <item>
+      <title>Expo-OpenClaw-chat:在 React Native 应用里内置 AI 聊天,边聊边改代码</title>
+      <link>https://claudeai.best/posts/hunter-2026022102/</link>
+      <pubDate>Sat, 21 Feb 2026 02:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022102/</guid>
+      <description>Expo-OpenClaw-chat 开源 SDK:为 Expo/React Native 应用提供最小化 OpenClaw 聊天集成,支持实时修改应用,图片附件,Markdown 渲染,自动 Ed25519 密钥认证,几行代码即可集成.</description>
+    </item>
+    <item>
+      <title>LLM Compare:250&#43; 模型的 side-by-side 基准对比工具,纯静态无后端</title>
+      <link>https://claudeai.best/posts/hunter-2026022101/</link>
+      <pubDate>Sat, 21 Feb 2026 01:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022101/</guid>
+      <description>LLM Compare 开源工具:side-by-side 对比 250&#43; 大语言模型基准数据,涵盖 OpenAI,Anthropic,DeepSeek,Google 等,纯静态实现无后端,数据每周自动更新,支持可分享 URL 和程序化访问.</description>
+    </item>
+    <item>
+      <title>Expectllm:用 Unix &#34;expect&#34; 风格与 LLM 对话,4 行代码搞定</title>
+      <link>https://claudeai.best/posts/hunter-2026022100/</link>
+      <pubDate>Sat, 21 Feb 2026 00:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022100/</guid>
+      <description>Expectllm 开源库:用 expect 风格模式匹配与 LLM 对话,零样板代码,支持 OpenAI/Anthropic,内置 JSON/数字/是/否/代码提取模板,单文件轻量级实现.</description>
+    </item>
+    <item>
+      <title>Session-graph:把分散的 AI 编码会话变成可查询的知识图谱</title>
+      <link>https://claudeai.best/posts/hunter-2026022023/</link>
+      <pubDate>Fri, 20 Feb 2026 23:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022023/</guid>
+      <description>Session-graph 开源工具:将 Claude Code,ChatGPT,DeepSeek,Grok,Warp 等多平台 AI 编码会话提取为 (subject, predicate, object) 三元组,链接 Wikidata,支持 SPARQL 查询,52 个会话提取 13.8 万三元组.</description>
+    </item>
+    <item>
+      <title>重磅:ggml.ai 创始团队加入 Hugging Face,llama.cpp 迎来新篇章</title>
+      <link>https://claudeai.best/posts/hunter-2026022022/</link>
+      <pubDate>Fri, 20 Feb 2026 22:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022022/</guid>
+      <description>ggml.ai(llama.cpp 创始团队)正式加入 Hugging Face,Georgi Gerganov 和团队将全职维护 ggml/llama.cpp.项目保持 100% 开源和社区驱动,目标:与 transformers 无缝集成,改善本地 AI 用户体验.</description>
+    </item>
+    <item>
+      <title>Stripe Minions:每周 1300&#43; PR 全由 AI 写代码,人类只管 Review</title>
+      <link>https://claudeai.best/posts/hunter-2026022019/</link>
+      <pubDate>Fri, 20 Feb 2026 19:22:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022019/</guid>
+      <description>Stripe 公布内部 AI 编码代理 Minions 细节:每周自动生成并合并 1300&#43; 个 PR,完全无人干预地写代码,跑测试,修复问题.人类只负责最终 Review,AI 负责从需求到 PR 的全流程.</description>
+    </item>
+    <item>
+      <title>17MB 发音评分器超越人类专家:语言学习的新思路</title>
+      <link>https://claudeai.best/posts/hunter-2026022018/</link>
+      <pubDate>Fri, 20 Feb 2026 18:20:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022018/</guid>
+      <description>开发者发布 17MB 发音评估引擎:CTC forced alignment &#43; GOP scoring &#43; ensemble heads,在 speechocean762 基准上超越人类评分一致性,CPU 300ms 响应,提供 REST API 和 MCP server.</description>
+    </item>
+    <item>
+      <title>markdown.new:Cloudflare 出品,任何 URL 转 Markdown,给 AI 省下 80% Token</title>
+      <link>https://claudeai.best/posts/hunter-2026022016/</link>
+      <pubDate>Fri, 20 Feb 2026 16:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022016/</guid>
+      <description>markdown.new 是 Cloudflare 推出的免费工具,可将任何公开 URL 转换为干净的 Markdown,相比原始 HTML 减少 80% 的 Token.支持三层回退机制:原生 Markdown,Workers AI,浏览器渲染,500 次/天的免费额度.</description>
+    </item>
+    <item>
+      <title>Lean 作者谈 AI 时代的证明助手:选对基础比 AI 更重要</title>
+      <link>https://claudeai.best/posts/hunter-2026022015/</link>
+      <pubDate>Fri, 20 Feb 2026 15:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022015/</guid>
+      <description>Leonardo de Moura(Lean 作者)发表长文:AI 能生成大量形式化证明,但证明助手的选择反而更重要.AlphaProof,Aristotle,SEED Prover 三支银牌/金牌 IMO 队伍都选了同一套基础.</description>
+    </item>
+    <item>
+      <title>OpenClaw 与 VirusTotal 合作:ClawHub 技能市场上线 AI 安全扫描</title>
+      <link>https://claudeai.best/posts/hunter-2026022014/</link>
+      <pubDate>Fri, 20 Feb 2026 14:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022014/</guid>
+      <description>OpenClaw 官方宣布与 VirusTotal 合作,为 ClawHub 技能市场带来安全扫描:Code Insight(Gemini 驱动)分析整个技能包,自动审批/警告/阻止机制,每日重扫描,安全路线图公开.</description>
+    </item>
+    <item>
+      <title>gskill:自动为编码 Agent 学习 Skills,用小模型训练,迁移到大模型</title>
+      <link>https://claudeai.best/posts/hunter-2026022012/</link>
+      <pubDate>Fri, 20 Feb 2026 12:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022012/</guid>
+      <description>GEPA 发布 gskill 自动化技能学习管线:给定任意 GitHub 仓库,自动生成 Agent Skills.在 Mini-SWE-Agent 上训练的技能可迁移到 Claude Code,Jinja 93.9%→98.5%,Bleve 79.3%→100%.</description>
+    </item>
+    <item>
+      <title>NullClaw:678KB 的 OpenClaw,Zig 重写版能在 $5 硬件上跑</title>
+      <link>https://claudeai.best/posts/hunter-2026022011/</link>
+      <pubDate>Fri, 20 Feb 2026 11:30:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022011/</guid>
+      <description>NullClaw 用 Zig 重写 OpenClaw:678KB 二进制,~1MB RAM,&amp;lt;2ms 启动,2843 个测试.支持 22&#43; AI providers,13 channels,可在任何 $5 开发板上运行.</description>
+    </item>
+    <item>
+      <title>Frontier-CS:评估 LLM 解决最难 CS 问题的能力,为什么评估比生成更难</title>
+      <link>https://claudeai.best/posts/hunter-2026022009/</link>
+      <pubDate>Fri, 20 Feb 2026 09:30:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022009/</guid>
+      <description>Frontier-CS 发布 240 个开放式 CS 问题的评估系统:连续评分,异构硬件,评估确定性,生成与评估分离.最好模型研究任务得分 46.55,人类专家算法题 86.99.</description>
+    </item>
+    <item>
+      <title>AI Agent 修不好并发 Bug?Spaghetti Bench 告诉你差距有多大</title>
+      <link>https://claudeai.best/posts/hunter-2026022007/</link>
+      <pubDate>Fri, 20 Feb 2026 07:30:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022007/</guid>
+      <description>CMU 发布 Spaghetti Bench 基准测试,评估 Claude Opus 4.5,GPT-5.2,Gemini 3 Pro 等6个模型修复并发 Bug 的能力.结果:没有确定性重放工具,AI Agent 几乎必定给出错误修复.</description>
+    </item>
+    <item>
+      <title>他们真的&#34;雇佣&#34;了3个 OpenClaw 数字员工,一天完成入职</title>
+      <link>https://claudeai.best/posts/hunter-2026022005/</link>
+      <pubDate>Fri, 20 Feb 2026 05:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022005/</guid>
+      <description>Veryfi 分享如何用 OpenClaw bots 搭建销售/营销/支持三个团队助手:SOUL.md 定义身份,Skill.md 约束能力,Slack 沟通,严格权限控制.一周后效果超出预期.</description>
+    </item>
+    <item>
+      <title>OpenClaw 有了企业级安全护盾:Netzilo AI Edge 上线沙盒和治理</title>
+      <link>https://claudeai.best/posts/hunter-2026022004/</link>
+      <pubDate>Fri, 20 Feb 2026 04:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022004/</guid>
+      <description>Netzilo 发布针对 OpenClaw 自主 Agent 的企业级安全方案,提供完整可见性,沙盒隔离和 AI 检测响应能力,解决工具投毒,提示注入等新兴威胁.</description>
+    </item>
+    <item>
+      <title>93% 开发者用 AI,但生产力只提升 10%:数据背后的真相</title>
+      <link>https://claudeai.best/posts/hunter-2026022003/</link>
+      <pubDate>Fri, 20 Feb 2026 03:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022003/</guid>
+      <description>DX CTO Laura Tacho 发布研究:121,000 开发者数据,93% 用 AI,生产力只提升 10% 且停滞.AI 生成代码占生产环境 26.9%.组织问题是关键.</description>
+    </item>
+    <item>
+      <title>别信没用过 Claude Code 的 AI 批评者:三个真实案例</title>
+      <link>https://claudeai.best/posts/hunter-2026022002/</link>
+      <pubDate>Fri, 20 Feb 2026 02:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022002/</guid>
+      <description>一位创业者分享用 Claude Code 完成的三个真实任务:AWS 成本分析,合规问卷自动化,Word 文件调试工具.没用过的人,不知道 AI 已经能做什么.</description>
+    </item>
+    <item>
+      <title>Sentry 公开内部数据:90天花$10万,100B tokens,Opus-4.5 占 40%</title>
+      <link>https://claudeai.best/posts/hunter-2026022001/</link>
+      <pubDate>Fri, 20 Feb 2026 01:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022001/</guid>
+      <description>Sentry 公开内部 AI 采用数据:90 天花 $100k&#43;,使用 100B&#43; tokens,Opus-4.5 占 40% 使用量,81% 员工用过 AI 编码工具,commits 增长 79%.</description>
+    </item>
+    <item>
+      <title>Crit:iOS 开发者的可视化 QA,让 AI 编码 Agent 看懂你的反馈</title>
+      <link>https://claudeai.best/posts/hunter-2026022000/</link>
+      <pubDate>Fri, 20 Feb 2026 00:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022000/</guid>
+      <description>Crit 是 iOS 可视化 QA 工具,截图,打点,评论,导出 JSON 给 Claude Code/Cursor 等 AI Agent 自动修复 bug.零依赖,MIT 开源.</description>
+    </item>
+    <item>
+      <title>OpenGnothia:开源 AI 心理治疗伴侣,你的隐私自己做主</title>
+      <link>https://claudeai.best/posts/hunter-2026021922/</link>
+      <pubDate>Thu, 19 Feb 2026 22:58:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021922/</guid>
+      <description>OpenGnothia 是开源 AI 心理治疗应用,支持 6 种疗法流派,BYOK 模式,所有数据本地存储,支持 Claude 扩展思考.名字来自德尔斐神谕:认识你自己.</description>
+    </item>
+    <item>
+      <title>MCP-wire:一个命令搞定所有 AI 编码工具的 MCP 配置</title>
+      <link>https://claudeai.best/posts/hunter-2026021921/</link>
+      <pubDate>Thu, 19 Feb 2026 21:50:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021921/</guid>
+      <description>MCP-wire 是 Go 写的 CLI 工具,跨 Claude Code,Codex,Gemini CLI,OpenCode 等多个 AI 编码工具安装配置 MCP 服务器,TUI 界面一键搞定.</description>
+    </item>
+    <item>
+      <title>AI Agent 发现 SvelteKit 漏洞:你的登录信息可能被缓存泄露</title>
+      <link>https://claudeai.best/posts/hunter-2026021920/</link>
+      <pubDate>Thu, 19 Feb 2026 20:45:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021920/</guid>
+      <description>Aikido 的 AI 渗透测试系统发现 SvelteKit &#43; Vercel 存在缓存欺骗漏洞,攻击者可通过特殊 URL 读取其他用户的登录响应.Vercel 已自动修复所有用户.</description>
+    </item>
+    <item>
+      <title>Aegis.rs:Rust 写的 LLM 安全代理,1ms 延迟零代码改动</title>
+      <link>https://claudeai.best/posts/hunter-2026021919/</link>
+      <pubDate>Thu, 19 Feb 2026 19:40:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021919/</guid>
+      <description>Aegis.rs 是首个开源 Rust LLM 安全代理,透明拦截请求,150&#43; 启发式规则 &#43; AI 审判,零代码改动,本地运行,1ms 延迟.</description>
+    </item>
+    <item>
+      <title>Spackle:Mac 全局 AI 重写快捷键,选中文字按一下就改好</title>
+      <link>https://claudeai.best/posts/hunter-2026021918/</link>
+      <pubDate>Thu, 19 Feb 2026 18:35:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021918/</guid>
+      <description>Spackle 是 macOS 菜单栏应用,在任意 App 中选中文字按快捷键,AI 直接替换原文.支持 OpenAI,Anthropic,OpenRouter,BYO API Key.</description>
+    </item>
+    <item>
+      <title>OpenAI 发布 EVMbench:AI 能不能帮你审计智能合约漏洞?</title>
+      <link>https://claudeai.best/posts/hunter-2026021917/</link>
+      <pubDate>Thu, 19 Feb 2026 17:30:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021917/</guid>
+      <description>OpenAI 联合 Paradigm 发布 EVMbench,评估 AI Agent 检测,修复,利用智能合约漏洞的能力.GPT-5.3-Codex 在 exploit 模式达到 72.2%,6 个月提升一倍.</description>
+    </item>
+    <item>
+      <title>Microsoft 365 Copilot 悄悄更新:打开本地文件自动上传到云端 AI</title>
+      <link>https://claudeai.best/posts/hunter-2026021916/</link>
+      <pubDate>Thu, 19 Feb 2026 16:20:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021916/</guid>
+      <description>Microsoft 365 Copilot 移动端应用悄悄更新,本地文件打开时自动上传到 OneDrive 并由 Copilot 处理,用户无法直接查看文档.隐私问题和用户体验引发争议.</description>
+    </item>
+    <item>
+      <title>ZUNA:脑机接口终于有了自己的基础模型,开源 380M 参数</title>
+      <link>https://claudeai.best/posts/hunter-2026021915/</link>
+      <pubDate>Thu, 19 Feb 2026 15:15:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021915/</guid>
+      <description>Zyphra 发布 ZUNA,380M 参数的 EEG 脑电信号基础模型,支持任意电极布局,4D 空间编码,200 万小时训练数据,Apache-2.0 开源.</description>
+    </item>
+    <item>
+      <title>Atlantic 深度:AI Agent 时代已经来了,你准备好了吗?</title>
+      <link>https://claudeai.best/posts/hunter-2026021914/</link>
+      <pubDate>Thu, 19 Feb 2026 14:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021914/</guid>
+      <description>Atlantic 发布深度报道,分析 AI Agent(如 Claude Code)如何改变知识工作.微软 30% 代码已由 AI 生成,Anthropic 内部高达 90%.后 ChatGPT 时代正式到来.</description>
+    </item>
+    <item>
+      <title>SWE-bench 2月排行榜:Claude 4.5 Opus 登顶,中国模型占了前十的一半</title>
+      <link>https://claudeai.best/posts/hunter-2026021913/</link>
+      <pubDate>Thu, 19 Feb 2026 14:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021913/</guid>
+      <description>SWE-bench 发布 2026 年 2 月官方排行榜,Claude 4.5 Opus 以 76.8% 登顶,Gemini 3 Flash 和 MiniMax M2.5 并列第二.中国模型 GLM-5,Kimi K2.5,DeepSeek V3.2 全部进入前十.</description>
+    </item>
+    <item>
+      <title>Ship Safe:给 Vibe Coding 的 AI 代码装个安全带</title>
+      <link>https://claudeai.best/posts/hunter-2026021912/</link>
+      <pubDate>Thu, 19 Feb 2026 12:55:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021912/</guid>
+      <description>开源工具 Ship Safe 发布,一键扫描 AI 生成代码中的泄露密钥,硬编码凭证和安全漏洞,支持 MCP 集成让 AI 编辑器自动审计自己的代码.</description>
+    </item>
+    <item>
+      <title>Bill Gates 紧急退出印度 AI 峰会:Epstein 文件再掀波澜</title>
+      <link>https://claudeai.best/posts/hunter-2026021911/</link>
+      <pubDate>Thu, 19 Feb 2026 11:48:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021911/</guid>
+      <description>Bill Gates 在最后一刻取消印度 AI Impact Summit 2026 主题演讲,官方称「确保峰会焦点不被分散」.此前美国司法部公布的 Epstein 文件中提到 Gates.</description>
+    </item>
+    <item>
+      <title>ACE-Step 1.5:开源音乐生成的 Stable Diffusion 时刻到了</title>
+      <link>https://claudeai.best/posts/hunter-2026021910/</link>
+      <pubDate>Thu, 19 Feb 2026 10:40:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021910/</guid>
+      <description>ACE-Step 1.5 开源音乐生成模型发布,2秒生成完整歌曲,质量超越大多数商业模型,支持消费级硬件(&amp;lt;4GB VRAM),全平台兼容.</description>
+    </item>
+    <item>
+      <title>Seedance 2.0 翻车:那个 Tom Cruise vs Brad Pitt 的 AI 视频是假的</title>
+      <link>https://claudeai.best/posts/hunter-2026021909/</link>
+      <pubDate>Thu, 19 Feb 2026 09:32:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021909/</guid>
+      <description>有人揭穿字节跳动 Seedance 2.0 营销造假:号称两行提示词生成的明星打斗视频,实际是用绿幕拍摄的真人视频经过 video-to-video 处理.</description>
+    </item>
+    <item>
+      <title>Claude Code 白嫖攻略:GLM-5 上架 NVIDIA NIM,账单直接归零</title>
+      <link>https://claudeai.best/posts/hunter-2026021908/</link>
+      <pubDate>Thu, 19 Feb 2026 08:25:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021908/</guid>
+      <description>开源项目 free-claude-code 让你用 NVIDIA NIM 免费的 GLM-5,Kimi-K2.5 等模型替代 Claude,保留完整 agentic coding 体验,每月省下 $200.</description>
+    </item>
+    <item>
+      <title>Tavus Phoenix-4:600ms 实时对话 AI 数字人,终于跨过了「恐怖谷」</title>
+      <link>https://claudeai.best/posts/hunter-2026021907/</link>
+      <pubDate>Thu, 19 Feb 2026 07:20:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021907/</guid>
+      <description>Tavus 发布 Phoenix-4 生成式视频模型,采用高斯扩散渲染技术,实现 600ms 以下端到端延迟和实时情感智能,仅需 2 分钟视频即可训练数字分身.</description>
+    </item>
+    <item>
+      <title>Google DeepMind Lyria 3 发布:上传一张图,30秒生成完整歌曲</title>
+      <link>https://claudeai.best/posts/hunter-2026021905/</link>
+      <pubDate>Thu, 19 Feb 2026 05:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021905/</guid>
+      <description>Google DeepMind 正式发布 Lyria 3 音乐生成模型,集成到 Gemini 应用中.支持文本,图片,视频输入,48kHz 高保真输出,自动写歌词,编曲,生成封面.</description>
+    </item>
+    <item>
+      <title>Fei-Fei Li 融资 10 亿美元:AI 教母的 World Labs 要让机器「看懂」三维世界</title>
+      <link>https://claudeai.best/posts/hunter-2026021904/</link>
+      <pubDate>Thu, 19 Feb 2026 04:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021904/</guid>
+      <description>斯坦福教授,ImageNet 创建者 Fei-Fei Li 的 World Labs 完成新一轮 10 亿美元融资,投资者包括 Autodesk,a16z,Nvidia,AMD.公司估值约 50 亿美元,专注空间智能和 World Model 研发.</description>
+    </item>
+    <item>
+      <title>BBC记者20分钟攻破ChatGPT和Google AI:AI正在成为新一代垃圾信息 Renaissance</title>
+      <link>https://claudeai.best/posts/hunter-2026021903/</link>
+      <pubDate>Thu, 19 Feb 2026 03:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021903/</guid>
+      <description>BBC记者用20分钟写了一篇假文章,24小时内让ChatGPT和Google的AI告诉全世界他是&amp;#39;吃热狗最多的科技记者&amp;#39;.这不是恶作剧--同样的手法正在被用于操纵医疗,金融,政治等严肃话题的AI回答.</description>
+    </item>
+    <item>
+      <title>Claude Code和Codex全沦陷:AI Agent Skills供应链攻击实测,一个下午攻破两大平台</title>
+      <link>https://claudeai.best/posts/hunter-2026021902/</link>
+      <pubDate>Thu, 19 Feb 2026 02:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021902/</guid>
+      <description>安全研究者用一下午时间攻破了Claude Code和Codex的skill安装机制.扫描4700个skill发现59个高危木马,335个高风险脚本.恶意skill自己写权限申请,AI照读不误--供应链攻击已经悄悄进入AI时代.</description>
+    </item>
+    <item>
+      <title>美国政府出手了:NIST启动AI Agent标准化计划,为自主智能体立规矩</title>
+      <link>https://claudeai.best/posts/hunter-2026021901b/</link>
+      <pubDate>Thu, 19 Feb 2026 01:15:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021901b/</guid>
+      <description>NIST刚刚宣布AI Agent Standards Initiative,这是美国政府首次针对AI Agent的官方标准化行动.三大支柱:行业标准,开源协议,安全身份研究,目标是建立可信,互操作的AI Agent生态系统.</description>
+    </item>
+    <item>
+      <title>Martin Fowler:LLM正在吞噬专业技能,专家型通才的时代来了</title>
+      <link>https://claudeai.best/posts/hunter-2026021901/</link>
+      <pubDate>Thu, 19 Feb 2026 01:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021901/</guid>
+      <description>Thoughtworks软件未来大会核心洞察:LLM正在替代前后端专家技能,TDD成为最强的prompt engineering,AI是加速器而非救世主--如果你的工程实践一团糟,AI只会加速崩溃.</description>
+    </item>
+    <item>
+      <title>GPT-5.2自己推导出了新物理公式:AI首次在理论物理做出原创贡献</title>
+      <link>https://claudeai.best/posts/hunter-2026021822/</link>
+      <pubDate>Wed, 18 Feb 2026 22:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021822/</guid>
+      <description>OpenAI发布预印本论文,证明GPT-5.2成功推导出一个关于胶子散射振幅的新公式--这是AI首次在理论物理领域做出原创性科学贡献,人类物理学家花了15年没解决的问题被AI找到了答案.</description>
+    </item>
+    <item>
+      <title>SpaceX 收购 xAI:1.25万亿美元超级合并,马斯克要把数据中心搬上太空</title>
+      <link>https://claudeai.best/posts/hunter-2026021821/</link>
+      <pubDate>Wed, 18 Feb 2026 21:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021821/</guid>
+      <description>马斯克再次震惊世界:SpaceX 以 1.25万亿美元估值收购 xAI,打造太空&#43;AI的垂直整合帝国.这次合并不只是商业操作,而是马斯克对 AI 能源危机的终极答案--把数据中心放到太空中去.</description>
+    </item>
+    <item>
+      <title>Claude Sonnet 4.6发布:性能对标Opus,价格不变,还学会了用电脑</title>
+      <link>https://claudeai.best/posts/hunter-2026021820/</link>
+      <pubDate>Wed, 18 Feb 2026 20:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021820/</guid>
+      <description>Anthropic今天发布Claude Sonnet 4.6,性能接近去年11月的Opus 4.5,但价格保持在$3/$15每百万token.最亮眼的是电脑操作能力--在OSWorld基准测试中,16个月内从3.6%飙升至接近人类水平.开发者测试中70%的人更喜欢它而不是前代产品.</description>
+    </item>
+    <item>
+      <title>NVIDIA PersonaPlex-7B:一个7B模型把整个语音AI行业打回原形</title>
+      <link>https://claudeai.best/posts/hunter-2026021819/</link>
+      <pubDate>Wed, 18 Feb 2026 19:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021819/</guid>
+      <description>NVIDIA开源7B参数全双工语音模型PersonaPlex,将ASR&#43;LLM&#43;TTS三合一,170毫秒延迟击败所有商业API.语音AI的利润正在从API层向GPU层迁移,这个行业的天又变了.</description>
+    </item>
+    <item>
+      <title>印度AI峰会炸出千亿美元豪赌:Adani砸1000亿建数据中心,Anthropic和Infosys联手,IT行业5年内消失?</title>
+      <link>https://claudeai.best/posts/hunter-2026021802/</link>
+      <pubDate>Wed, 18 Feb 2026 02:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021802/</guid>
+      <description>印度AI Impact Summit 2026正在进行,Adani宣布投资1000亿美元建AI数据中心,Anthropic与Infosys合作部署Claude,Vinod Khosla预言IT外包5年消失.全球AI版图正在被重画.</description>
+    </item>
+    <item>
+      <title>1亿人的饭碗,春晚一个字没提</title>
+      <link>https://claudeai.best/posts/chunwan-ai-2026/</link>
+      <pubDate>Wed, 18 Feb 2026 01:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/chunwan-ai-2026/</guid>
+      <description>春晚把中国最先进的AI和机器人,打包成了一场四小时的宣传片.但它把最有破坏力的东西,包装成了最无害的样子.当大部分&amp;#39;有用的事&amp;#39;都被机器做得更好更便宜的时候,人会开始琢磨:我到底还有什么用?</description>
+    </item>
+    <item>
+      <title>Grok 4.20 Beta炸场:8个AI Agent并行写代码,xAI要把Cursor们逼到墙角</title>
+      <link>https://claudeai.best/posts/hunter-2026021801/</link>
+      <pubDate>Wed, 18 Feb 2026 01:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021801/</guid>
+      <description>xAI发布Grok 4.20 Beta,首次引入多Agent并行编程和竞技场模式.8个Agent同时写代码,自动评分择优,配合X平台6800万条推文实时数据流,Grok正在从聊天机器人进化为全栈AI开发平台.</description>
+    </item>
+    <item>
+      <title>沙特砸9亿美元买下一家视频AI公司:中东正在成为全球算力新战场</title>
+      <link>https://claudeai.best/posts/hunter-2026021800/</link>
+      <pubDate>Wed, 18 Feb 2026 00:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021800/</guid>
+      <description>沙特HUMAIN领投Luma AI 9亿美元,获批购买35000块Blackwell芯片,伊拉克-UAE投7亿建海底电缆.中东AI算力版图正在改写全球AI竞争格局.</description>
+    </item>
+    <item>
+      <title>才2月硬盘就卖光了:AI正在吞噬全球存储产能</title>
+      <link>https://claudeai.best/posts/hunter-2026021723/</link>
+      <pubDate>Tue, 17 Feb 2026 23:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021723/</guid>
+      <description>Western Digital CEO宣布2026年硬盘产能已全部售罄,AI数据中心需求正在挤压消费者市场.从GPU到内存再到硬盘,AI基础设施的饥渴正在重塑整条供应链.</description>
+    </item>
+    <item>
+      <title>Google UCP让AI帮你下单了:电商的游戏规则正在被重写</title>
+      <link>https://claudeai.best/posts/hunter-2026021722/</link>
+      <pubDate>Tue, 17 Feb 2026 22:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021722/</guid>
+      <description>Google推出Universal Commerce Protocol,AI Agent可以直接在搜索结果中帮你完成购物全流程.Etsy,Wayfair已上线,Shopify,Target,Walmart即将跟进.这不只是一个协议,而是电商底层逻辑的一次重构.</description>
+    </item>
+    <item>
+      <title>DeepMind的AI独立写了一篇数学论文,还推翻了一个十年老猜想--但700道题只答对6.5%</title>
+      <link>https://claudeai.best/posts/hunter-2026021721/</link>
+      <pubDate>Tue, 17 Feb 2026 21:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021721/</guid>
+      <description>Google DeepMind发布Aletheia,一个能自主做数学研究的AI Agent.它独立撰写了一篇算术几何论文,推翻了十年老猜想,还在密码学论文里抓到了专家遗漏的错误.但面对700道开放数学问题,只有6.5%的回答真正有用.</description>
+    </item>
+    <item>
+      <title>AGENTS.md到底有没有用?一篇论文引爆开发者社区大战</title>
+      <link>https://claudeai.best/posts/hunter-2026021720/</link>
+      <pubDate>Tue, 17 Feb 2026 20:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021720/</guid>
+      <description>一篇arXiv论文称AGENTS.md文件反而降低编码Agent成功率,增加20%推理成本.但HN开发者社区集体反驳:你们测的东西根本不对.这场争论揭示了AI编程工具的核心矛盾.</description>
+    </item>
+    <item>
+      <title>你的AI助手正在被偷:OpenClaw成为信息窃取恶意软件的新目标</title>
+      <link>https://claudeai.best/posts/hunter-2026021718/</link>
+      <pubDate>Tue, 17 Feb 2026 18:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021718/</guid>
+      <description>Hudson Rock首次发现信息窃取恶意软件成功窃取OpenClaw配置文件,包括API密钥,Gateway令牌和记忆文件.AI Agent安全进入新阶段.</description>
+    </item>
+    <item>
+      <title>Seedance 2.0炸场:字节跳动用AI视频逼哭好莱坞,迪士尼直接发律师函</title>
+      <link>https://claudeai.best/posts/hunter-2026021717/</link>
+      <pubDate>Tue, 17 Feb 2026 17:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021717/</guid>
+      <description>ByteDance发布Seedance 2.0 AI视频生成模型,15秒电影级画面引爆社交媒体.好莱坞MPA紧急声明,迪士尼发律师函,SAG-AFTRA谴责--一场AI与版权的世纪对决正在上演.</description>
+    </item>
+    <item>
+      <title>Qwen3.5横空出世:397B参数只激活17B,推理速度暴涨19倍,开源AI格局要变了</title>
+      <link>https://claudeai.best/posts/hunter-2026021716/</link>
+      <pubDate>Tue, 17 Feb 2026 16:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021716/</guid>
+      <description>阿里通义千问团队发布Qwen3.5-397B-A17B,采用全新Gated Delta Network架构,推理吞吐量比Qwen3-Max快19倍,原生多模态支持视觉,视频理解,Apache 2.0开源.详细解读架构创新与实测表现.</description>
+    </item>
+    <item>
+      <title>印度AI峰会的野心:22种语言的主权大模型,能撼动硅谷的AI霸权吗?</title>
+      <link>https://claudeai.best/posts/hunter-2026021714/</link>
+      <pubDate>Tue, 17 Feb 2026 14:45:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021714/</guid>
+      <description>印度AI Impact Summit 2026正在新德里召开,BharatGen发布170亿参数的Param2模型支持22种印度语言,Sarvam AI,Gnani AI等本土创企集体亮相.这场主权AI运动意味着什么?</description>
+    </item>
+    <item>
+      <title>类脑芯片突然学会了解微分方程:神经形态计算正在颠覆超算的底层逻辑</title>
+      <link>https://claudeai.best/posts/hunter-2026021705/</link>
+      <pubDate>Tue, 17 Feb 2026 05:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021705/</guid>
+      <description>Sandia国家实验室在Nature Machine Intelligence发表突破性研究:神经形态计算机首次高效求解偏微分方程,能耗仅为传统超算的零头.这意味着什么?</description>
+    </item>
+    <item>
+      <title>华尔街的AI恐慌性抛售:从软件到卡车,没有行业是安全的</title>
+      <link>https://claudeai.best/posts/hunter-2026021704/</link>
+      <pubDate>Tue, 17 Feb 2026 04:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021704/</guid>
+      <description>一场由AI初创公司引发的股市恐慌正在从软件蔓延到保险,地产,物流和财富管理.投资者开启先开枪后问话模式,两周内数十只股票暴跌10-20%.这场AI恐慌交易到底在怕什么?</description>
+    </item>
+    <item>
+      <title>Claude Cowork登陆Windows:Anthropic用10天造了一个要干掉SaaS的桌面AI Agent</title>
+      <link>https://claudeai.best/posts/hunter-2026021703/</link>
+      <pubDate>Tue, 17 Feb 2026 03:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021703/</guid>
+      <description>Anthropic的Claude Cowork从macOS扩展到Windows,用Claude Opus 4.6驱动的桌面AI Agent能自主操作文件,生成文档,执行多步任务.引发2850亿美元软件股抛售,这玩意到底有多猛?</description>
+    </item>
+    <item>
+      <title>Google WebMCP:AI Agent不用再「看截图猜按钮」了,Chrome正式变身Agent操作系统</title>
+      <link>https://claudeai.best/posts/hunter-2026021702/</link>
+      <pubDate>Tue, 17 Feb 2026 02:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021702/</guid>
+      <description>Google发布Web Model Context Protocol (WebMCP),让网站直接告诉AI Agent能做什么,彻底淘汰截图&#43;视觉模型的笨办法.延迟更低,准确率接近100%,成本暴降.</description>
+    </item>
+    <item>
+      <title>硬盘全年售罄:AI吞噬硬件供应链,普通人的存储自由正在消失</title>
+      <link>https://claudeai.best/posts/hunter-2026021701/</link>
+      <pubDate>Tue, 17 Feb 2026 01:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021701/</guid>
+      <description>西部数据CEO宣布2026年硬盘产能已全部售罄,AI企业疯狂囤货导致消费级市场份额跌至5%.从内存到硬盘,AI正在系统性蚕食整个硬件供应链.</description>
+    </item>
+    <item>
+      <title>GPT-5.2花12小时推导出新物理公式,AI真的开始做原创科学了?</title>
+      <link>https://claudeai.best/posts/hunter-2026021700/</link>
+      <pubDate>Tue, 17 Feb 2026 00:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021700/</guid>
+      <description>OpenAI的GPT-5.2独立推导并证明了一个被忽视40年的胶子散射振幅公式,这是AI首次在理论物理领域做出原创贡献.但争议也来了:这算真正的科学发现吗?</description>
+    </item>
+    <item>
+      <title>Grok 4.2本周发布:在股票交易实战中碾压GPT-5和Gemini 3,xAI凭什么?</title>
+      <link>https://claudeai.best/posts/hunter-2026021623/</link>
+      <pubDate>Mon, 16 Feb 2026 23:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021623/</guid>
+      <description>Musk确认Grok 4.2本周发布.这个模型在Alpha Arena股票交易实战中赚了12%,而GPT-5.1和Gemini 3 Pro全都亏钱.我们深度拆解xAI的技术路线和真实竞争力.</description>
+    </item>
+    <item>
+      <title>OpenClaw创始人加入OpenAI:一个开源项目如何撬动百亿美元收购战</title>
+      <link>https://claudeai.best/posts/hunter-2026021622/</link>
+      <pubDate>Mon, 16 Feb 2026 22:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021622/</guid>
+      <description>OpenClaw创始人Peter Steinberger宣布加入OpenAI,拒绝Meta等数十亿美元收购报价.这个GitHub史上增长最快的开源AI Agent项目将成立独立基金会,继续开源运营.</description>
+    </item>
+    <item>
+      <title>Qwen3.5横空出世:397B参数只激活17B,阿里这次真的打到GPT-5.2脸上了</title>
+      <link>https://claudeai.best/posts/hunter-2026021621/</link>
+      <pubDate>Mon, 16 Feb 2026 21:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021621/</guid>
+      <description>阿里今天发布Qwen3.5,397B参数MoE架构仅激活17B,支持201种语言和100万token上下文,benchmark全面超越GPT-5.2和Claude Opus 4.5.开源模型正式进入Agent时代.</description>
+    </item>
+    <item>
+      <title>迪士尼怒了:字节跳动Seedance 2.0让蜘蛛侠和达斯维达免费打工,好莱坞集体开炮</title>
+      <link>https://claudeai.best/posts/hunter-2026021620/</link>
+      <pubDate>Mon, 16 Feb 2026 20:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021620/</guid>
+      <description>字节跳动AI视频生成器Seedance 2.0上线仅一天,就因大规模侵犯迪士尼,派拉蒙等好莱坞巨头版权遭集体围剿.从蜘蛛侠大战美队到汤姆克鲁斯对打布拉德皮特,AI生成视频的版权战争正式打响.</description>
+    </item>
+    <item>
+      <title>全球南方的AI野心:印度AI峰会今天开幕,25万人涌入新德里</title>
+      <link>https://claudeai.best/posts/hunter-2026021619/</link>
+      <pubDate>Mon, 16 Feb 2026 19:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021619/</guid>
+      <description>印度AI影响力峰会2026今日在新德里开幕,这是全球南方首次主办的国际AI峰会.莫迪,马克龙,卢拉齐聚,Pichai,Altman,LeCun到场.我们来聊聊这场峰会背后的地缘博弈和技术暗流.</description>
+    </item>
+    <item>
+      <title>类脑计算机突然学会了解方程,超算慌不慌?</title>
+      <link>https://claudeai.best/posts/hunter-2026021617/</link>
+      <pubDate>Mon, 16 Feb 2026 17:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021617/</guid>
+      <description>Sandia国家实验室在Nature Machine Intelligence发表突破:神经形态芯片首次高效求解偏微分方程,能耗仅为传统超算的零头.类脑计算从模式识别跨入硬核数学,超算格局要变了.</description>
+    </item>
+    <item>
+      <title>SaaS已死?2万亿美元蒸发背后,所有软件公司都在抢着改名叫AI</title>
+      <link>https://claudeai.best/posts/hunter-2026021616/</link>
+      <pubDate>Mon, 16 Feb 2026 16:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021616/</guid>
+      <description>Salesforce,ServiceNow,Oracle股价暴跌,SaaStr改名SaaStr AI,Altman宣称SaaS时代终结.2万亿美元市值蒸发的背后,是AI Agent真的要取代传统软件,还是又一轮集体焦虑?</description>
+    </item>
+  </channel>
+</rss>

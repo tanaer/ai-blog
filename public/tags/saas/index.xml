@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>SaaS on AI 极客前沿</title><link>https://claudeai.best/tags/saas/</link><description>Recent content in SaaS on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Tue, 17 Feb 2026 04:00:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/saas/index.xml" rel="self" type="application/rss+xml"/><item><title>华尔街的AI恐慌性抛售:从软件到卡车,没有行业是安全的</title><link>https://claudeai.best/posts/hunter-2026021704/</link><pubDate>Tue, 17 Feb 2026 04:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021704/</guid><description>一场由AI初创公司引发的股市恐慌正在从软件蔓延到保险,地产,物流和财富管理.投资者开启先开枪后问话模式,两周内数十只股票暴跌10-20%.这场AI恐慌交易到底在怕什么?</description></item><item><title>SaaS已死?2万亿美元蒸发背后,所有软件公司都在抢着改名叫AI</title><link>https://claudeai.best/posts/hunter-2026021616/</link><pubDate>Mon, 16 Feb 2026 16:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021616/</guid><description>Salesforce,ServiceNow,Oracle股价暴跌,SaaStr改名SaaStr AI,Altman宣称SaaS时代终结.2万亿美元市值蒸发的背后,是AI Agent真的要取代传统软件,还是又一轮集体焦虑?</description></item><item><title>SaaS已死?2万亿美元的软件行业正在被AI吞噬</title><link>https://claudeai.best/posts/hunter-2026021615/</link><pubDate>Mon, 16 Feb 2026 15:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021615/</guid><description>Salesforce,ServiceNow,Oracle股价集体暴跌,SaaStr改名SaaStr AI,软件公司疯狂转型AI.SaaS模式真的要完了吗?我们用数据和逻辑拆解这场行业地震.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SaaS on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/saas/</link>
+    <description>Recent content in SaaS on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 17 Feb 2026 04:00:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/saas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>华尔街的AI恐慌性抛售:从软件到卡车,没有行业是安全的</title>
+      <link>https://claudeai.best/posts/hunter-2026021704/</link>
+      <pubDate>Tue, 17 Feb 2026 04:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021704/</guid>
+      <description>一场由AI初创公司引发的股市恐慌正在从软件蔓延到保险,地产,物流和财富管理.投资者开启先开枪后问话模式,两周内数十只股票暴跌10-20%.这场AI恐慌交易到底在怕什么?</description>
+    </item>
+    <item>
+      <title>SaaS已死?2万亿美元蒸发背后,所有软件公司都在抢着改名叫AI</title>
+      <link>https://claudeai.best/posts/hunter-2026021616/</link>
+      <pubDate>Mon, 16 Feb 2026 16:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021616/</guid>
+      <description>Salesforce,ServiceNow,Oracle股价暴跌,SaaStr改名SaaStr AI,Altman宣称SaaS时代终结.2万亿美元市值蒸发的背后,是AI Agent真的要取代传统软件,还是又一轮集体焦虑?</description>
+    </item>
+    <item>
+      <title>SaaS已死?2万亿美元的软件行业正在被AI吞噬</title>
+      <link>https://claudeai.best/posts/hunter-2026021615/</link>
+      <pubDate>Mon, 16 Feb 2026 15:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021615/</guid>
+      <description>Salesforce,ServiceNow,Oracle股价集体暴跌,SaaStr改名SaaStr AI,软件公司疯狂转型AI.SaaS模式真的要完了吗?我们用数据和逻辑拆解这场行业地震.</description>
+    </item>
+  </channel>
+</rss>
