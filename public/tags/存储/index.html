@@ -1,174 +1,5 @@
-<!DOCTYPE html>
-<html lang="zh" dir="auto" data-theme="auto">
-
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>存储 | AI 极客前沿</title>
-<meta name="keywords" content="">
-<meta name="description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
-<meta name="author" content="AI 极客前沿">
-<link rel="canonical" href="https://claudeai.best/tags/%E5%AD%98%E5%82%A8/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://claudeai.best/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://claudeai.best/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://claudeai.best/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://claudeai.best/apple-touch-icon.png">
-<link rel="mask-icon" href="https://claudeai.best/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://claudeai.best/tags/%E5%AD%98%E5%82%A8/index.xml" title="rss">
-<link rel="alternate" hreflang="zh" href="https://claudeai.best/tags/%E5%AD%98%E5%82%A8/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-                color-scheme: dark;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .toc {
-                background: var(--entry);
-            }
-        }
-
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
-    </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script>
-
-<meta property="og:url" content="https://claudeai.best/tags/%E5%AD%98%E5%82%A8/">
-  <meta property="og:site_name" content="AI 极客前沿">
-  <meta property="og:title" content="存储">
-  <meta property="og:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
-  <meta property="og:locale" content="zh-cn">
-  <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="存储">
-<meta name="twitter:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
-
-</head>
-<body class="list" id="top">
-    <header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://claudeai.best/" accesskey="h" title="AI 极客前沿 (Alt + H)">AI 极客前沿</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="https://claudeai.best/posts/" title="文章">
-                    <span>文章</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/tags/" title="标签">
-                    <span>标签</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/categories/" title="分类">
-                    <span>分类</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/search/" title="搜索">
-                    <span>搜索</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://claudeai.best/about/" title="关于">
-                    <span>关于</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://t.me/TgTechMsgBot" title="联系">
-                    <span>联系</span>&nbsp;
-                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
-                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
-                        <path d="M15 3h6v6"></path>
-                        <path d="M10 14L21 3"></path>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://claudeai.best/">主页</a>&nbsp;»&nbsp;<a href="https://claudeai.best/tags/">Tags</a></div>
-  <h1>
-    存储
-  </h1>
-</header>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771340642598_cover.jpg" alt="数据中心服务器存储阵列">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">才2月硬盘就卖光了:AI正在吞噬全球存储产能
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>你有没有注意到最近硬盘越来越贵了?
+<!doctype html><html lang=zh dir=auto data-theme=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>存储 | AI 极客前沿</title>
+<meta name=keywords content><meta name=description content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态"><meta name=author content="AI 极客前沿"><link rel=canonical href=https://claudeai.best/tags/%E5%AD%98%E5%82%A8/><link crossorigin=anonymous href=/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css integrity="sha256-2jIR5e+Ge/K3X9WmUVz+1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as=style><link rel=icon href=https://claudeai.best/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://claudeai.best/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://claudeai.best/favicon-32x32.png><link rel=apple-touch-icon href=https://claudeai.best/apple-touch-icon.png><link rel=mask-icon href=https://claudeai.best/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://claudeai.best/tags/%E5%AD%98%E5%82%A8/index.xml title=rss><link rel=alternate hreflang=zh href=https://claudeai.best/tags/%E5%AD%98%E5%82%A8/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51);color-scheme:dark}.list{background:var(--theme)}.toc{background:var(--entry)}}@media(prefers-color-scheme:light){.list::-webkit-scrollbar-thumb{border-color:var(--code-bg)}}</style></noscript><script>localStorage.getItem("pref-theme")==="dark"?document.querySelector("html").dataset.theme="dark":localStorage.getItem("pref-theme")==="light"?document.querySelector("html").dataset.theme="light":window.matchMedia("(prefers-color-scheme: dark)").matches?document.querySelector("html").dataset.theme="dark":document.querySelector("html").dataset.theme="light"</script><meta property="og:url" content="https://claudeai.best/tags/%E5%AD%98%E5%82%A8/"><meta property="og:site_name" content="AI 极客前沿"><meta property="og:title" content="存储"><meta property="og:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态"><meta property="og:locale" content="zh-cn"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="存储"><meta name=twitter:description content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态"></head><body class=list id=top><header class=header><nav class=nav><div class=logo><a href=https://claudeai.best/ accesskey=h title="AI 极客前沿 (Alt + H)">AI 极客前沿</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://claudeai.best/posts/ title=文章><span>文章</span></a></li><li><a href=https://claudeai.best/tags/ title=标签><span>标签</span></a></li><li><a href=https://claudeai.best/categories/ title=分类><span>分类</span></a></li><li><a href=https://claudeai.best/search/ title=搜索><span>搜索</span></a></li><li><a href=https://claudeai.best/about/ title=关于><span>关于</span></a></li><li><a href=https://t.me/TgTechMsgBot title=联系><span>联系</span>&nbsp;<svg fill="none" shape-rendering="geometricPrecision" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></li></ul></nav></header><main class=main><header class=page-header><div class=breadcrumbs><a href=https://claudeai.best/>主页</a>&nbsp;»&nbsp;<a href=https://claudeai.best/tags/>Tags</a></div><h1>存储</h1></header><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771340642598_cover.jpg alt=数据中心服务器存储阵列></figure><header class=entry-header><h2 class=entry-hint-parent>才2月硬盘就卖光了:AI正在吞噬全球存储产能</h2></header><div class=entry-content><p>你有没有注意到最近硬盘越来越贵了?
 不是你的错觉.Western Digital的CEO Irving Tan在最近的Q2财报电话会上扔了一颗炸弹:2026年的硬盘产能,已经全部卖光了.
 现在才2月份.
 七大客户包圆,消费者只剩5% 具体数字是这样的:Western Digital跟旗下最大的七个客户签了硬性采购订单(firm POs),锁死了整个2026年的产能.更夸张的是,其中两家已经签到了2027年,一家甚至签到了2028年.
@@ -176,32 +7,16 @@
 结果就是:云计算和AI业务现在占WD总收入的89%,而消费级市场?只剩5%.
 说白了,你我这种买个硬盘装NAS的需求,在他们眼里已经是四舍五入等于零了.
 不只是硬盘,是整条供应链在被吃 这不是孤立事件.把时间线拉开看:
-GPU:NVIDIA的产能早就被抢光了,这已经是老新闻, 内存:Micron说DRAM/NAND短缺短期内不会结束,Framework等PC厂商已经多次涨价, 硬盘:现在Western Digital加入了&#34;被AI包圆&#34;俱乐部, PlayStation 6:索尼据传考虑推迟到2027年之后发布,就是因为等不到内存 AI训练一个大模型,需要的存储是按EB算的.训练数据,模型checkpoint,推理日志,备份–每一项都是存储黑洞.虽然SSD在性能上占优,但论性价比和大容量,HDD在数据中心依然是不可替代的.
+GPU:NVIDIA的产能早就被抢光了,这已经是老新闻, 内存:Micron说DRAM/NAND短缺短期内不会结束,Framework等PC厂商已经多次涨价, 硬盘:现在Western Digital加入了"被AI包圆"俱乐部, PlayStation 6:索尼据传考虑推迟到2027年之后发布,就是因为等不到内存 AI训练一个大模型,需要的存储是按EB算的.训练数据,模型checkpoint,推理日志,备份–每一项都是存储黑洞.虽然SSD在性能上占优,但论性价比和大容量,HDD在数据中心依然是不可替代的.
 价格要涨到什么时候? 坏消息是:硬盘价格已经在过去两年持续上涨,而且看不到拐点.
-当产能被长期合同锁定后,供给侧就失去了弹性.即使WD扩产,新产能也会被AI客户优先认购.消费者市场变成了&#34;有剩余才轮到你&#34;的局面.
-好消息?如果你是WD的股东,这个&#34;AI超级周期&#34;(AI supercycle)意味着前所未有的收入可见性.
+当产能被长期合同锁定后,供给侧就失去了弹性.即使WD扩产,新产能也会被AI客户优先认购.消费者市场变成了"有剩余才轮到你"的局面.
+好消息?如果你是WD的股东,这个"AI超级周期"(AI supercycle)意味着前所未有的收入可见性.
 我的看法 这件事揭示了AI行业一个经常被忽视的维度:AI的瓶颈正在从算力扩散到存储.
-我们过去两年一直在聊GPU够不够,能效够不够.但现在存储产能也被锁死了,这说明AI基础设施的需求不是&#34;某个环节特别缺&#34;,而是整条链都在被撑爆.
+我们过去两年一直在聊GPU够不够,能效够不够.但现在存储产能也被锁死了,这说明AI基础设施的需求不是"某个环节特别缺",而是整条链都在被撑爆.
 更值得思考的是消费者市场被边缘化的趋势.当企业客户贡献89%的收入时,硬件厂商几乎没有动力为消费者优化价格或保留产能.这对普通用户意味着什么?更贵的硬盘,更少的选择,更长的交货周期.
 唯一可能改变这个局面的是AI投资泡沫破裂–如果投资者开始质疑AI的回报预期,需求可能急剧收缩.但从目前的趋势看,2026年不太可能发生.
 所以如果你有扩容NAS或买硬盘的计划,趁现在库存还在的时候赶紧下手吧.
-参考来源:Western Digital Q2 FY2026财报电话会,Mashable,eTeknix,TweakTown
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-17 23:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>37 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to 才2月硬盘就卖光了:AI正在吞噬全球存储产能" href="https://claudeai.best/posts/hunter-2026021723/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771261546557_cover.jpg" alt="数据中心服务器存储阵列">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">硬盘全年售罄:AI吞噬硬件供应链,普通人的存储自由正在消失
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>2026年才过了一个半月,硬盘就卖完了 上周西部数据(Western Digital)的财报电话会上,CEO Irving Tan 说了句让整个存储行业都沉默的话:
+参考来源:Western Digital Q2 FY2026财报电话会,Mashable,eTeknix,TweakTown</p></div><footer class=entry-footer><span title='2026-02-17 23:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>37 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to 才2月硬盘就卖光了:AI正在吞噬全球存储产能" href=https://claudeai.best/posts/hunter-2026021723/></a></article><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771261546557_cover.jpg alt=数据中心服务器存储阵列></figure><header class=entry-header><h2 class=entry-hint-parent>硬盘全年售罄:AI吞噬硬件供应链,普通人的存储自由正在消失</h2></header><div class=entry-content><p>2026年才过了一个半月,硬盘就卖完了 上周西部数据(Western Digital)的财报电话会上,CEO Irving Tan 说了句让整个存储行业都沉默的话:
 “We’re pretty much sold out for calendar 2026.”
 翻译一下:2026年的硬盘产能,已经全部预售完毕. 距离年底还有10个多月.
 更狠的是,前七大客户中有三家已经锁定了2027年甚至2028年的产能.这不是短缺,这是系统性垄断.
@@ -212,101 +27,21 @@ GPU:NVIDIA的产能早就被抢光了,这已经是老新闻, 内存:Micron说DRA
 内存(RAM): 美光(Micron)早就确认内存短缺短期内不会缓解.Framework笔记本已经多次因DDR5涨价被迫提价.
 GPU: 不用多说,NVIDIA的数据中心GPU从2023年起就没正常供应过.
 游戏主机: 索尼据传考虑将PS6发布时间推迟到2027年之后,就是在赌AI硬件短缺能在那之前缓解.
-硬盘: 现在轮到了.而且不是&#34;有点紧张&#34;,是&#34;全年卖完&#34;.
+硬盘: 现在轮到了.而且不是"有点紧张",是"全年卖完".
 为什么AI需要这么多硬盘? 你可能会问:AI训练不是主要用GPU和高速SSD吗?机械硬盘有什么关系?
 关系大了:
 训练数据集存储:GPT-5级别的模型,训练数据动辄几十PB.热数据用SSD,冷数据全靠大容量HDD 模型检查点(checkpoint):训练过程中每隔一段时间就要保存完整模型状态,一个checkpoint可能就是几TB 推理日志和缓存:大规模推理服务产生的日志,KV缓存,用户数据,都需要海量存储 合规与审计:企业级AI系统需要保留完整的数据血缘和审计记录 所以每个大型AI数据中心的硬盘需求量是惊人的.不是几百块,是几万块起步.
 这泡沫什么时候破? 理性来看,有两种可能的缓解路径:
 路径一:AI投资回报不及预期,资本撤退. 如果投资者开始质疑AI的商业化能力(事实上这种声音一直存在),资本支出会收缩,硬件需求自然下降.但目前来看,Anthropic刚拿了300亿美元新融资,没有退烧的迹象.
-路径二:存储技术突破. 比如HAMR(热辅助磁记录)技术大规模量产,单碟容量从2TB跳到4TB&#43;,总供给翻倍.西部数据和希捷都在推进,但量产节奏赶不上需求增长.
+路径二:存储技术突破. 比如HAMR(热辅助磁记录)技术大规模量产,单碟容量从2TB跳到4TB+,总供给翻倍.西部数据和希捷都在推进,但量产节奏赶不上需求增长.
 我的判断: 短期内(2026-2027)没有缓解的可能.普通消费者的存储成本会持续上升,大容量机械硬盘可能会出现类似2011年泰国洪水后的价格疯涨.
 普通人能做什么? 说点实用的:
 如果你有大容量存储需求,现在就买. 不要等降价,不会降, 关注二手市场. 企业换代退役的企业级硬盘(比如HGST Ultrastar),性价比很高, 考虑冷存储替代方案. 磁带(LTO)对于真正的冷数据反而是更经济的选择, 云存储也会涨价. AWS,Azure的存储定价最终也会反映硬件成本上涨 写在最后 AI不只是在改变软件行业,它正在重新分配整个硬件供应链的资源.当顶级客户愿意为每GB支付溢价时,消费市场就会被挤到边缘.
 这不是阴谋论,这是简单的供需经济学.只不过这次,需求方是一个烧钱速度前所未有的行业.
 你的NAS硬盘涨价了吗?欢迎在评论区分享你的存储成本变化.
 参考来源:Western Digital FY2026 Q2 财报电话会议 | Mashable 报道 | Hacker News 讨论
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-17 01:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>77 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to 硬盘全年售罄:AI吞噬硬件供应链,普通人的存储自由正在消失" href="https://claudeai.best/posts/hunter-2026021701/"></a>
-</article>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2026 <a href="https://claudeai.best/">AI 极客前沿</a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu');
-    if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            html.dataset.theme = 'dark';
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-</body>
-
-</html>
+...</p></div><footer class=entry-footer><span title='2026-02-17 01:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>77 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to 硬盘全年售罄:AI吞噬硬件供应链,普通人的存储自由正在消失" href=https://claudeai.best/posts/hunter-2026021701/></a></article></main><footer class=footer><span>&copy; 2026 <a href=https://claudeai.best/>AI 极客前沿</a></span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");if(menu){const e=localStorage.getItem("menu-scroll-position");e&&(menu.scrollLeft=parseInt(e,10)),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}}document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{const e=document.querySelector("html");e.dataset.theme==="dark"?(e.dataset.theme="light",localStorage.setItem("pref-theme","light")):(e.dataset.theme="dark",localStorage.setItem("pref-theme","dark"))})</script></body></html>

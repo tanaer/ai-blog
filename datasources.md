@@ -56,6 +56,7 @@
 - **Google Research Blog** (Google AI研究一手发布): https://blog.research.google/feeds/posts/default
 - **Google AI Blog** (Google AI新闻与发布, 官方渠道): https://blog.google/innovation-and-ai/technology/ai/rss/
 - **Meta Engineering Blog** (LLaMA/开源AI基础设施): https://engineering.fb.com/feed/
+- **Microsoft AI News** (微软官方AI新闻, Copilot 365应用案例+企业AI实践): https://news.microsoft.com/source/topics/ai/feed/
 - **Hugging Face Blog** (开源模型/库/工具官方博客): https://huggingface.co/blog/feed.xml
 - **LangChain Blog** (AI Agent开发框架官方, 实战案例+技术深潜): https://blog.langchain.dev/rss/
 - **SemiAnalysis** (半导体/AI硬件/数据中心深度分析, 行业顶级): https://www.semianalysis.com/feed/
@@ -133,6 +134,8 @@
 - **Analytics India Magazine** (印度AI/数据科学媒体, 新兴市场视角): https://analyticsindiamag.com/feed/
 - **AI TechPark** (AI/ML/IoT新闻与趋势分析): https://ai-techpark.com/category/ai/feed/
 - **KnowTechie AI** (非技术人员的AI科技新闻): https://knowtechie.com/category/ai/feed/
+- **AI 2 People** (AI社会影响+行业新闻, 深度分析AI对生活的影响): https://ai2people.com/feed/
+- **Marketing AI Institute** (营销AI实践, AI工具+策略, 营销人员向): https://www.marketingaiinstitute.com/blog/rss.xml
 
 ### 中文源
 - **阮一峰的网络日志** (科技周刊/技术博客, 每周五更新, AI工具教程): https://www.ruanyifeng.com/blog/atom.xml
@@ -180,6 +183,7 @@
 - **JMLR** (Journal of Machine Learning Research, 顶级学术期刊): https://www.jmlr.org/jmlr.xml
 - **CMU ML Blog** (卡内基梅隆机器学习博客, 学术前沿): https://blog.ml.cmu.edu/feed
 - **David Stutz Blog** (鲁棒AI与计算机视觉研究): https://davidstutz.de/category/blog/feed
+- **O'Reilly Media AI & ML** (AI/ML深度分析, 行业内部洞察, 技术趋势): https://www.oreilly.com/radar/topics/ai-ml/feed/index.xml
 
 ### ️ AI工具与开发
 - **LLM Explorer News** (LLM新闻聚合, 实时更新, 无RSS): https://llm-explorer.com/static/llm-news/
@@ -275,10 +279,10 @@
 - **The Batch** (DeepLearning.AI周报, Andrew Ng): https://www.deeplearning.ai/the-batch/ — ️ 无RSS, Newsletter订阅
 
 ## 数据源统计
-**当前已验证: 131+ 核心数据源**
-- Newsletter: 31+, 个人博客: 14+ (新增 Somethings Blog), 研究机构: 19+, 科技媒体: 32+, 开发者社区: 8, 中文源: 17, 学术源: 16+, AI工具与开发: 11, AI播客(RSS): 3
-- 待验证潜力源: 53+ (其中16个为2026-02-25发现的高质量Newsletter, 9个为2026-02-26发现的AI播客, 3个为2026-02-27发现的技术博客与资源)
+**当前已验证: 135+ 核心数据源**
+- Newsletter: 31+, 个人博客: 14+, 研究机构: 20+ (新增 Microsoft AI News), 科技媒体: 32+, 开发者社区: 8, 中文源: 17, 学术源: 17+ (新增 O'Reilly AI & ML), AI工具与开发: 11, AI播客(RSS): 3, AI专业媒体: 24+ (新增 AI 2 People, Marketing AI Institute)
+- 待验证潜力源: 53+ (其中16个为高质量Newsletter, 9个为AI播客, 3个为技术博客与资源)
 
-**目标: 30+ 高质量源** 已超额达成 (131+)
+**目标: 30+ 高质量源** 已超额达成 (135+)
 
-**最后更新**: 2026-02-27 (上午 09:00)
+**最后更新**: 2026-02-27 (晚上 21:00)
