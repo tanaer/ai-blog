@@ -1,6 +1,7 @@
 ---
 title: "LinkedIn 放弃传统 SEO：B2B 流量暴跌 60% 后的转型"
 date: 2026-02-27T02:08:00+08:00
+draft: false
 tags: [SEO, LinkedIn, AI搜索, B2B营销]
 cover:
   image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=1200"
