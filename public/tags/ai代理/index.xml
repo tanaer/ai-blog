@@ -1,73 +1,55 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>AI代理 on AI 极客前沿</title>
-    <link>https://claudeai.best/tags/ai%E4%BB%A3%E7%90%86/</link>
-    <description>Recent content in AI代理 on AI 极客前沿</description>
-    <generator>Hugo -- 0.146.0</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Fri, 27 Feb 2026 05:00:00 +0800</lastBuildDate>
-    <atom:link href="https://claudeai.best/tags/ai%E4%BB%A3%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Anthropic 又出手了：收购 AI 代理公司 Vercept</title>
-      <link>https://claudeai.best/posts/2026-02-27-anthropic-acquires-vercept/</link>
-      <pubDate>Fri, 27 Feb 2026 05:00:00 +0800</pubDate>
-      <guid>https://claudeai.best/posts/2026-02-27-anthropic-acquires-vercept/</guid>
-      <description>&lt;h1 id=&#34;anthropic又出手了收购ai代理公司vercept&#34;&gt;Anthropic又出手了：收购AI代理公司Vercept&lt;/h1&gt;
-&lt;p&gt;这周AI圈又有大动作。&lt;/p&gt;
-&lt;p&gt;Anthropic把Vercept买了。&lt;/p&gt;
-&lt;p&gt;消息一出，圈内人都炸了。&lt;/p&gt;
-&lt;h2 id=&#34;vercept是干啥的&#34;&gt;Vercept是干啥的？&lt;/h2&gt;
-&lt;p&gt;这家公司很低调。&lt;/p&gt;
-&lt;p&gt;但做的事情挺硬核。&lt;/p&gt;
-&lt;p&gt;专攻AI代理任务。&lt;/p&gt;
-&lt;p&gt;啥是代理任务？&lt;/p&gt;
-&lt;p&gt;就是让AI自己操作电脑。&lt;/p&gt;
-&lt;p&gt;不是简单问答那种。&lt;/p&gt;
-&lt;p&gt;是真干活。&lt;/p&gt;
-&lt;p&gt;打开软件、点按钮、填表格。&lt;/p&gt;
-&lt;p&gt;全靠AI自己完成。&lt;/p&gt;
-&lt;p&gt;他们的产品叫Vy。&lt;/p&gt;
-&lt;p&gt;一个云端计算机使用代理。&lt;/p&gt;
-&lt;p&gt;听着就挺酷。&lt;/p&gt;
-&lt;h2 id=&#34;创始团队有点东西&#34;&gt;创始团队有点东西&lt;/h2&gt;
-&lt;p&gt;Vercept出身不错。&lt;/p&gt;
-&lt;p&gt;AI2孵化器孵出来的。&lt;/p&gt;
-&lt;p&gt;AI2是Paul Allen搞的。&lt;/p&gt;
-&lt;p&gt;微软联合创始人。&lt;/p&gt;
-&lt;p&gt;含金量不用多说。&lt;/p&gt;
-&lt;p&gt;创始人团队也很能打。&lt;/p&gt;
-&lt;p&gt;Kiana Ehsani、Luca Weihs、Ross Girshick。&lt;/p&gt;
-&lt;p&gt;Ross Girshick这人得说两句。&lt;/p&gt;
-&lt;p&gt;做计算机视觉的应该都知道。&lt;/p&gt;
-&lt;p&gt;目标检测领域的扛把子。&lt;/p&gt;
-&lt;p&gt;Fast R-CNN、Faster R-CNN都是他的手笔。&lt;/p&gt;
-&lt;p&gt;还有个Matt Deitke。&lt;/p&gt;
-&lt;p&gt;不过已经被Meta挖走了。&lt;/p&gt;
-&lt;p&gt;大厂抢人真是不手软。&lt;/p&gt;
-&lt;h2 id=&#34;融资5000万美元&#34;&gt;融资5000万美元&lt;/h2&gt;
-&lt;p&gt;钱也没少拿。&lt;/p&gt;
-&lt;p&gt;5000万美元。&lt;/p&gt;
-&lt;p&gt;投资人名单挺豪华。&lt;/p&gt;
-&lt;p&gt;Eric Schmidt、Jeff Dean。&lt;/p&gt;
-&lt;p&gt;前Google CEO和AI大神。&lt;/p&gt;
-&lt;p&gt;Jeff Dean在AI圈地位不用解释。&lt;/p&gt;
-&lt;p&gt;Google Brain就是他带的。&lt;/p&gt;
-&lt;p&gt;这阵容，含金量拉满。&lt;/p&gt;
-&lt;h2 id=&#34;产品3月25日关闭&#34;&gt;产品3月25日关闭&lt;/h2&gt;
-&lt;p&gt;收购之后呢？&lt;/p&gt;
-&lt;p&gt;Vercept的产品要关了。&lt;/p&gt;
-&lt;p&gt;3月25日正式下线。&lt;/p&gt;
-&lt;p&gt;现有用户得赶紧迁移。&lt;/p&gt;
-&lt;p&gt;数据不导就没了。&lt;/p&gt;
-&lt;p&gt;说实话有点可惜。&lt;/p&gt;
-&lt;p&gt;Vy这个产品做得还挺有意思的。&lt;/p&gt;
-&lt;p&gt;但大厂收购嘛。&lt;/p&gt;
-&lt;p&gt;产品关停很正常。&lt;/p&gt;
-&lt;p&gt;团队和技术才是重点。&lt;/p&gt;
-&lt;h2 id=&#34;anthropic在下一盘大棋&#34;&gt;Anthropic在下一盘大棋&lt;/h2&gt;
-&lt;p&gt;Anthropic最近动作挺多。&lt;/p&gt;
-&lt;p&gt;Claude 3.5、Claude 4。&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AI代理 on AI 极客前沿</title><link>https://claudeai.best/tags/ai%E4%BB%A3%E7%90%86/</link><description>Recent content in AI代理 on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Fri, 27 Feb 2026 05:00:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/ai%E4%BB%A3%E7%90%86/index.xml" rel="self" type="application/rss+xml"/><item><title>Anthropic 又出手了：收购 AI 代理公司 Vercept</title><link>https://claudeai.best/posts/2026-02-27-anthropic-acquires-vercept/</link><pubDate>Fri, 27 Feb 2026 05:00:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-27-anthropic-acquires-vercept/</guid><description>&lt;h1 id="anthropic又出手了收购ai代理公司vercept">Anthropic又出手了：收购AI代理公司Vercept&lt;/h1>
+&lt;p>这周AI圈又有大动作。&lt;/p>
+&lt;p>Anthropic把Vercept买了。&lt;/p>
+&lt;p>消息一出，圈内人都炸了。&lt;/p>
+&lt;h2 id="vercept是干啥的">Vercept是干啥的？&lt;/h2>
+&lt;p>这家公司很低调。&lt;/p>
+&lt;p>但做的事情挺硬核。&lt;/p>
+&lt;p>专攻AI代理任务。&lt;/p>
+&lt;p>啥是代理任务？&lt;/p>
+&lt;p>就是让AI自己操作电脑。&lt;/p>
+&lt;p>不是简单问答那种。&lt;/p>
+&lt;p>是真干活。&lt;/p>
+&lt;p>打开软件、点按钮、填表格。&lt;/p>
+&lt;p>全靠AI自己完成。&lt;/p>
+&lt;p>他们的产品叫Vy。&lt;/p>
+&lt;p>一个云端计算机使用代理。&lt;/p>
+&lt;p>听着就挺酷。&lt;/p>
+&lt;h2 id="创始团队有点东西">创始团队有点东西&lt;/h2>
+&lt;p>Vercept出身不错。&lt;/p>
+&lt;p>AI2孵化器孵出来的。&lt;/p>
+&lt;p>AI2是Paul Allen搞的。&lt;/p>
+&lt;p>微软联合创始人。&lt;/p>
+&lt;p>含金量不用多说。&lt;/p>
+&lt;p>创始人团队也很能打。&lt;/p>
+&lt;p>Kiana Ehsani、Luca Weihs、Ross Girshick。&lt;/p>
+&lt;p>Ross Girshick这人得说两句。&lt;/p>
+&lt;p>做计算机视觉的应该都知道。&lt;/p>
+&lt;p>目标检测领域的扛把子。&lt;/p>
+&lt;p>Fast R-CNN、Faster R-CNN都是他的手笔。&lt;/p>
+&lt;p>还有个Matt Deitke。&lt;/p>
+&lt;p>不过已经被Meta挖走了。&lt;/p>
+&lt;p>大厂抢人真是不手软。&lt;/p>
+&lt;h2 id="融资5000万美元">融资5000万美元&lt;/h2>
+&lt;p>钱也没少拿。&lt;/p>
+&lt;p>5000万美元。&lt;/p>
+&lt;p>投资人名单挺豪华。&lt;/p>
+&lt;p>Eric Schmidt、Jeff Dean。&lt;/p>
+&lt;p>前Google CEO和AI大神。&lt;/p>
+&lt;p>Jeff Dean在AI圈地位不用解释。&lt;/p>
+&lt;p>Google Brain就是他带的。&lt;/p>
+&lt;p>这阵容，含金量拉满。&lt;/p>
+&lt;h2 id="产品3月25日关闭">产品3月25日关闭&lt;/h2>
+&lt;p>收购之后呢？&lt;/p>
+&lt;p>Vercept的产品要关了。&lt;/p>
+&lt;p>3月25日正式下线。&lt;/p>
+&lt;p>现有用户得赶紧迁移。&lt;/p>
+&lt;p>数据不导就没了。&lt;/p>
+&lt;p>说实话有点可惜。&lt;/p>
+&lt;p>Vy这个产品做得还挺有意思的。&lt;/p>
+&lt;p>但大厂收购嘛。&lt;/p>
+&lt;p>产品关停很正常。&lt;/p>
+&lt;p>团队和技术才是重点。&lt;/p>
+&lt;h2 id="anthropic在下一盘大棋">Anthropic在下一盘大棋&lt;/h2>
+&lt;p>Anthropic最近动作挺多。&lt;/p>
+&lt;p>Claude 3.5、Claude 4。&lt;/p></description></item></channel></rss>
