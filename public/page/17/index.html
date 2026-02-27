@@ -2,7 +2,7 @@
 <html lang="zh" dir="auto" data-theme="auto">
 
 <head>
-	<meta name="generator" content="Hugo 0.146.0"><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.146.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -182,76 +182,6 @@
     </nav>
 </header>
 <main class="main"> 
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771329764075_cover.jpg" alt="代码编辑器中的编程界面">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">AGENTS.md到底有没有用?一篇论文引爆开发者社区大战
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>如果你最近在用 Claude Code,Codex 或者 OpenClaw 之类的 AI 编程工具,你大概率见过一个叫 AGENTS.md(或 CLAUDE.md)的文件.它的作用很简单:告诉 AI Agent 这个项目的规矩–用什么框架,怎么跑测试,有什么坑要避.
-听起来很合理对吧?
-然后一篇 arXiv 论文说:这玩意不但没用,还让 Agent 变蠢了.
-论文说了啥 这篇来自学术界的论文 “Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?” 做了一个挺严谨的实验:
-在 SWE-bench(业内标准的代码修复基准测试)上跑了多个 Agent &#43; 多个 LLM 的组合 分别测试了三种情况:没有上下文文件,LLM 自动生成的上下文文件,开发者手写的上下文文件, 结果:, LLM 生成的文件:任务成功率平均下降 3% 开发者手写的文件:平均提升 4%,但在不同模型上表现不一致(Sonnet 4.5 反而下降 2%) 所有情况下推理成本增加超过 20% 论文的结论是:上下文文件里的&#34;不必要要求&#34;让任务变难了,建议只写最小化的必要信息.
-HN 社区炸了 这篇论文在 Hacker News 上拿到 146 分,94 条评论,评论区基本是一边倒的&#34;你们测错了&#34;.
-最核心的反驳来自一位高赞评论者:
-“4% 的提升是巨大的!一个简单的 markdown 文件就能带来 4% 的改善,这说明它是必须有的.”
-他指出了论文的一个关键盲区:SWE-bench 测试的都是公开的 GitHub 项目,而这些项目里的 AGENTS.md 大多来自&#34;最近的小型 vibecoding 项目&#34;,质量参差不齐.真正需要 AGENTS.md 的场景是大型私有代码库–那些有复杂部署流水线,团队约定,历史债务的项目.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-17 20:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>197 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to AGENTS.md到底有没有用?一篇论文引爆开发者社区大战" href="https://claudeai.best/posts/hunter-2026021720/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771326207474_cover.jpg" alt="数据中心服务器机房">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">一个配置错误搞瘫半个互联网:Cloudflare BGP事故暴露了我们不敢面对的真相
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>一个周日下午,半个互联网消失了 2026年2月16日,美东时间下午1点15分.
-一个Cloudflare工程师在弗吉尼亚州阿什本数据中心执行了一次&#34;常规配置更新&#34;.几分钟后,全球互联网开始抽搐.
-X(原Twitter)时间线一片空白,Grok同时挂掉.AWS的US-East-1区域出现&#34;间歇性连接降级&#34;.电商网站结账流程中断.数千个依赖Cloudflare CDN的中小型网站直接返回错误页面.
-Downdetector在4小时内录得超过11,000条X平台故障报告,峰值出现在下午4:20.美国,英国,欧洲部分地区用户首当其冲.
-4个小时后,工程师们才完全恢复服务.
-这不是一次黑客攻击.不是DDoS.甚至不是什么复杂的技术故障.
-这是一个BGP路由配置错误.一个.
-BGP:互联网的GPS,也是最脆弱的那根弦 BGP(Border Gateway Protocol,边界网关协议)是互联网的&#34;路由导航系统&#34;.它告诉数据包:“从A到B,走这条路.“全球互联网的流量路由几乎完全依赖这个上世纪80年代设计的协议.
-问题在于:BGP本质上是基于信任的.一个网络宣布&#34;我能到达这些IP地址”,其他网络就信了.没有严格的验证机制(虽然RPKI等改进在推进,但普及率还很低).
-当Cloudflare阿什本节点的BGP路由表被错误配置后,坏的路由信息像病毒一样传播到上游Provider.正常应该流经Cloudflare全球300多个数据中心的流量,被错误导向,丢弃,或者在网络中打转.
-最讽刺的是:Cloudflare自己的状态页也挂了.
-工程团队40分钟内定位了根因,但回滚比部署困难得多–因为损坏的路由表已经被上游Provider缓存了.你没法简单地&#34;撤回&#34;一条BGP公告,它已经在整个互联网中扩散.
-多米诺骨牌:AWS和X为什么也倒了 这次事故最值得警惕的不是起因,而是传播方式.
-AWS承载着全球约三分之一的云基础设施.虽然AWS有独立的网络骨干,但大量客户流量在到达AWS之前,会先经过Cloudflare做DDoS防护和CDN加速.当Cloudflare路由失效后,海量的重试连接和误导数据包涌入AWS边缘路由器,直接把几台路由器打爆了.
-X平台更惨.自从马斯克收购后大幅削减基础设施成本,X同时依赖Cloudflare做边缘安全,AWS做后端计算.两个Provider同时出问题,X基本没有fallback方案.结果就是:将近3小时无法发帖,刷时间线,收发私信.
-Bluesky和Threads的用户量在这几个小时内暴涨.有评论员说:“全球最有钱的科技人士拥有的平台,被一行配置搞挂了.”
-表面分布式,实际深度中心化 普林斯顿大学计算机科学教授Jennifer Rexford(前FCC技术顾问委员会成员)的话一针见血:
-“我们构建了一个看起来分布式,实际上深度中心化的系统.每次这类宕机发生,我们都进行同样的’韧性’讨论,然后什么都没变–因为经济激励全都指向集中化.”
-几个数字让你感受一下:
-Cloudflare处理全球约**20%的网络流量, AWS占据云基础设施市场约31%**的份额, 加上Azure和GCP,三家公司控制了全球超过60%的云计算 当这些巨头之间还存在深度依赖关系时(比如用Cloudflare做CDN &#43; AWS做计算),一个节点的故障就能引发系统性崩溃.
-这不是分布式系统.这是一个伪装成分布式的中心化系统.
-这事以前发生过,以后还会发生 回顾一下历史:
-2024年7月:CrowdStrike更新导致全球Windows蓝屏,航空,银行,医疗系统瘫痪, 2021年10月:Facebook(Meta)BGP配置错误,Facebook/Instagram/WhatsApp全球宕机6小时, 2021年6月:Fastly CDN故障,Amazon,Reddit,CNN等大面积下线, 2020年11月:AWS US-East-1宕机,半个互联网跟着挂 每次事故后都有一轮关于&#34;互联网韧性&#34;的讨论.然后呢?什么都没变.
-原因很简单:集中化是经济理性的选择.用Cloudflare比自建CDN便宜100倍,用AWS比自建数据中心快100倍.没有哪个CTO会为了理论上的&#34;韧性&#34;去增加10倍的基础设施成本.
-真正的问题:我们能做什么? 作为技术从业者,我认为有几个层面值得思考:
-1. 架构层面:多云不是口号 如果你的服务100%跑在AWS上,Cloudflare做CDN,那你的SPOF(单点故障)比你以为的多得多.真正的多云意味着:
-关键服务在至少两个云Provider上有热备, CDN/安全层有备用方案(比如Cloudflare &#43; Fastly双活), DNS做好多Provider解析 成本会增加30-50%,但对于核心业务来说这是保险费.
-2. 协议层面:推进RPKI和BGP安全 RPKI(Resource Public Key Infrastructure)可以验证BGP路由公告的合法性,但全球采用率还不到50%.这需要整个行业的推动,不能靠单个公司.
-3. 监管层面:互联网基础设施需要更高标准 Cloudflare,AWS这些公司本质上是互联网的&#34;公用事业”,但它们承担的监管义务远低于电力,电信等传统公用事业.也许是时候讨论基础设施层面的韧性标准了.
-4. 认知层面:接受&#34;零宕机&#34;是幻觉 任何足够复杂的系统都会出故障.问题不是&#34;会不会挂&#34;,而是&#34;挂了之后多快能恢复&#34;.设计系统时,优雅降级比防止故障更重要.
-我的看法 这次Cloudflare事故不是黑天鹅–它是灰犀牛.每个基础设施工程师都知道BGP的脆弱性,每个云架构师都知道Provider集中度的风险.但经济激励和技术惯性让我们选择性忽视.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-17 19:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>82 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to 一个配置错误搞瘫半个互联网:Cloudflare BGP事故暴露了我们不敢面对的真相" href="https://claudeai.best/posts/hunter-2026021719/"></a>
-</article>
 
 <article class="post-entry"> 
 <figure class="entry-cover">
@@ -548,6 +478,86 @@ Agent框架要大洗牌 现在市面上一堆AI浏览器工具–Browser Use,Pla
   </div>
   <footer class="entry-footer"><span title='2026-02-17 02:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>94 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Google WebMCP:AI Agent不用再「看截图猜按钮」了,Chrome正式变身Agent操作系统" href="https://claudeai.best/posts/hunter-2026021702/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771261546557_cover.jpg" alt="数据中心服务器存储阵列">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">硬盘全年售罄:AI吞噬硬件供应链,普通人的存储自由正在消失
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>2026年才过了一个半月,硬盘就卖完了 上周西部数据(Western Digital)的财报电话会上,CEO Irving Tan 说了句让整个存储行业都沉默的话:
+“We’re pretty much sold out for calendar 2026.”
+翻译一下:2026年的硬盘产能,已经全部预售完毕. 距离年底还有10个多月.
+更狠的是,前七大客户中有三家已经锁定了2027年甚至2028年的产能.这不是短缺,这是系统性垄断.
+消费市场?只剩5%的残渣 最让普通用户心凉的数据:消费级市场目前只占西部数据营收的5%.
+什么概念?以前你买NAS硬盘,装机硬盘,好歹是个重要客户群.现在?你是零头.企业级AI客户才是金主爸爸,你的4TB红盘在他们眼里连个舍入误差都算不上.
+这意味着:
+价格肯定继续涨,因为厂商没有动力为你优化成本, 产品线会进一步偏向企业,消费级新品更新节奏会慢下来, NAS玩家和内容创作者首当其冲,大容量机械硬盘本来就依赖这几家厂商 AI吃硬件的速度比你想象的快 这不是孤立事件,是整条供应链在被AI蚕食:
+内存(RAM): 美光(Micron)早就确认内存短缺短期内不会缓解.Framework笔记本已经多次因DDR5涨价被迫提价.
+GPU: 不用多说,NVIDIA的数据中心GPU从2023年起就没正常供应过.
+游戏主机: 索尼据传考虑将PS6发布时间推迟到2027年之后,就是在赌AI硬件短缺能在那之前缓解.
+硬盘: 现在轮到了.而且不是&#34;有点紧张&#34;,是&#34;全年卖完&#34;.
+为什么AI需要这么多硬盘? 你可能会问:AI训练不是主要用GPU和高速SSD吗?机械硬盘有什么关系?
+关系大了:
+训练数据集存储:GPT-5级别的模型,训练数据动辄几十PB.热数据用SSD,冷数据全靠大容量HDD 模型检查点(checkpoint):训练过程中每隔一段时间就要保存完整模型状态,一个checkpoint可能就是几TB 推理日志和缓存:大规模推理服务产生的日志,KV缓存,用户数据,都需要海量存储 合规与审计:企业级AI系统需要保留完整的数据血缘和审计记录 所以每个大型AI数据中心的硬盘需求量是惊人的.不是几百块,是几万块起步.
+这泡沫什么时候破? 理性来看,有两种可能的缓解路径:
+路径一:AI投资回报不及预期,资本撤退. 如果投资者开始质疑AI的商业化能力(事实上这种声音一直存在),资本支出会收缩,硬件需求自然下降.但目前来看,Anthropic刚拿了300亿美元新融资,没有退烧的迹象.
+路径二:存储技术突破. 比如HAMR(热辅助磁记录)技术大规模量产,单碟容量从2TB跳到4TB&#43;,总供给翻倍.西部数据和希捷都在推进,但量产节奏赶不上需求增长.
+我的判断: 短期内(2026-2027)没有缓解的可能.普通消费者的存储成本会持续上升,大容量机械硬盘可能会出现类似2011年泰国洪水后的价格疯涨.
+普通人能做什么? 说点实用的:
+如果你有大容量存储需求,现在就买. 不要等降价,不会降, 关注二手市场. 企业换代退役的企业级硬盘(比如HGST Ultrastar),性价比很高, 考虑冷存储替代方案. 磁带(LTO)对于真正的冷数据反而是更经济的选择, 云存储也会涨价. AWS,Azure的存储定价最终也会反映硬件成本上涨 写在最后 AI不只是在改变软件行业,它正在重新分配整个硬件供应链的资源.当顶级客户愿意为每GB支付溢价时,消费市场就会被挤到边缘.
+这不是阴谋论,这是简单的供需经济学.只不过这次,需求方是一个烧钱速度前所未有的行业.
+你的NAS硬盘涨价了吗?欢迎在评论区分享你的存储成本变化.
+参考来源:Western Digital FY2026 Q2 财报电话会议 | Mashable 报道 | Hacker News 讨论
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-17 01:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>77 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to 硬盘全年售罄:AI吞噬硬件供应链,普通人的存储自由正在消失" href="https://claudeai.best/posts/hunter-2026021701/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771257687779_cover.jpg" alt="粒子物理与AI的交汇">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">GPT-5.2花12小时推导出新物理公式,AI真的开始做原创科学了?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>上周末,OpenAI放了一个大招:GPT-5.2 Pro独立推导出了一个全新的理论物理公式,还花了12个小时生成了完整的形式化证明.
+这不是做题.不是刷竞赛.是真正的,之前没有人发现过的物理结果.
+到底发现了什么? 先说背景.在粒子物理里,有一类叫做&#34;胶子散射振幅&#34;的东西–简单说就是计算胶子(强力的载体粒子)碰撞概率的数学公式.
+1986年,Parke和Taylor给出了一个优美的公式,描述了&#34;最大螺旋度违反&#34;(MHV)振幅.这个公式极其简洁,是粒子物理里的经典之作.
+但有一类特殊情况–只有一个负螺旋度胶子,其余全是正螺旋度的情况–几十年来教科书都写着:这类振幅为零.
+GPT-5.2说:不对,它们不为零.
+具体来说,在一个叫&#34;半共线区域&#34;(half-collinear regime)的特殊动量空间里,这些振幅其实是非零的.GPT不仅发现了这个漏洞,还给出了一个对任意n都成立的闭合公式,并用Berends-Giele递推关系和soft limit验证了正确性.
+12小时的&#34;思考&#34;过程 论文的作者阵容相当豪华:普林斯顿高等研究院,范德堡大学,剑桥大学,哈佛大学,加上OpenAI.
+流程是这样的:
+人类物理学家手动计算了n=1到n=6的具体情况,得到了极其复杂的表达式 GPT-5.2 Pro拿到这些具体情况后,化简了表达式,发现了隐藏的规律,猜测出了一个对所有n都成立的通用公式 一个内部加强版GPT-5.2花了大约12小时的推理时间,独立推导出了同一个公式,并生成了完整的形式化证明 人类物理学家用标准方法验证了证明的正确性 注意第2步和第3步–AI不是在做&#34;搜索&#43;拼接&#34;,而是在做真正的数学推理:从有限个具体案例中归纳出通用规律,然后证明它.
+HN上吵翻了 Hacker News的讨论非常精彩,观点分几派:
+乐观派认为这是里程碑–AI已经能在有验证测试的问题上做出真正的贡献.散射振幅的计算复杂度超指数增长,人类算到n=6就已经极其痛苦了,但AI能从中发现规律并推广到任意n.
+谨慎派指出关键细节:问题的specification是人类给的.物理学家已经有了&#34;这类振幅可能不为零&#34;的直觉,已经算出了具体案例,然后才把&#34;找规律&#43;证明&#34;的任务交给AI.AI做的是&#34;最后一公里&#34;–虽然这最后一公里人类确实没跑出来.
+怀疑派则更尖锐:这本质上就是暴力搜索&#43;统计偏差.把大量计算资源砸到一个有明确验证标准的问题上,偶尔找到一个解就宣称&#34;智能&#34;–这和真正的科学发现是一回事吗?
+我觉得最精彩的一条评论是:
+“现代LLM在有验证测试集的问题上极其强大且不知疲倦.但这个结论不能推广到开放式问题上.发现问题的specification往往才是真正的战场.”
+我的看法 这件事的重要性在于程度的变化,而不是性质的变化.
+AI辅助科研不是新鲜事.AlphaFold预测蛋白质结构,DeepMind的Aletheia解数学难题,都是先例.但GPT-5.2的特殊之处在于:它不是一个专门为某个任务训练的系统,而是一个通用语言模型,在给定足够的&#34;思考时间&#34;后,展现出了数学推理能力.
+12小时的推理时间也很有意思.这说明现在的scaling不只是在模型参数上,也在推理时间(inference-time compute)上.给模型更多时间去&#34;想&#34;,它真的能想出更深刻的东西.这和人类解难题的过程其实很像–你也不是看一眼就能证明定理的.
+但我不会把这叫做&#34;AI做科学&#34;.至少现在还不是.真正的科学发现需要的是问出正确的问题–为什么去看half-collinear regime?为什么怀疑教科书上&#34;振幅为零&#34;的结论?这些直觉来自人类物理学家.AI做的是在人类指定的方向上,执行了人类做不到的复杂推理.
+这已经很了不起了.但&#34;AI科学家&#34;和&#34;极其强大的AI科研工具&#34;之间,还有一道关键的鸿沟.
+真正的信号 抛开PR和争议,这篇论文传递的真实信号是:
+推理时间scaling有用–12小时的&#34;思考&#34;换来了一个形式化证明,这说明inference compute的投入有明确回报 通用模型能做专业推理–不需要专门训练一个&#34;物理AI&#34;,通用LLM在给定足够上下文后就能做非平凡的数学物理推理 人机协作的范式正在成型–人类提供直觉和方向,AI执行复杂的推导和搜索,两者互补 这个范式如果成熟,影响将远超粒子物理.材料科学,药物设计,密码学–任何有明确验证标准的理论问题,都可能被这种方式加速.
+论文团队也提到,同样的方法已经被用于从胶子推广到引力子的振幅计算,更多结果即将发表.
+物理学教科书可能要改了.而改动的起因,是一个语言模型花了12个小时&#34;想&#34;出来的.
+不管你怎么定义&#34;智能&#34;,这都值得认真对待.
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-17 00:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>46 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to GPT-5.2花12小时推导出新物理公式,AI真的开始做原创科学了?" href="https://claudeai.best/posts/hunter-2026021700/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

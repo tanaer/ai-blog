@@ -6,8 +6,15 @@
     <description>Recent content on AI 极客前沿</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 27 Feb 2026 12:04:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 27 Feb 2026 14:10:00 +0800</lastBuildDate>
     <atom:link href="https://claudeai.best/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>英伟达的芯片，进得去中国吗？</title>
+      <link>https://claudeai.best/posts/hunter-2026022714/</link>
+      <pubDate>Fri, 27 Feb 2026 14:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022714/</guid>
+      <description>美国批准了 H200 出口，但英伟达至今零收入。中国对手便宜又能打，连 Sam Altman 都说令人惊叹。</description>
+    </item>
     <item>
       <title>硅谷产品开始用中国大模型</title>
       <link>https://claudeai.best/posts/2026-02-27-silicon-valley-chinese-llms/</link>

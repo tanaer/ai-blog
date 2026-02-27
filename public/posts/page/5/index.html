@@ -175,6 +175,30 @@
 </header>
 
 <article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Mercury 2 发布：首个商用 Diffusion LLM，推理速度碾压传统模型
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>打字员 vs 编辑 传统大模型生成文本，就像打字员——一个字一个字敲，手速再快也有天花板。
+Mercury 2 不一样。它像编辑——拿到初稿，然后整篇整篇地改，几轮下来就成型了。
+结果？每秒 1,009 个 token。
+这是 Inception Labs 今天发布的 Mercury 2，全球首个商用的 diffusion 大语言模型。比 GPT-5.2 至少快 2 倍，比 Claude 4.5 Haiku 快 5 倍，成本却只有四分之一。
+Diffusion 架构：从图像搬到文本 你可能用过 Stable Diffusion 或 DALL-E 生成图片。它们用的就是 diffusion——从噪声开始，一步步&#34;去噪&#34;，最后得到清晰的图像。
+Mercury 2 把这个思路搬到了文本。
+传统 LLM（GPT、Claude、Gemini）都是 autoregressive（自回归）：生成第一个词，等它出来，再生成第二个……永远在等。GPU 再快也没用，瓶颈是&#34;必须按顺序&#34;。
+Diffusion 不一样。它从一堆&#34;噪声文本&#34;开始，并行地 refining（精炼），几轮之后就是完整回答。并行处理 vs 串行等待，这是架构层面的碾压。
+创始人 Stefano Ermon 是斯坦福计算机教授，正是他把 diffusion 技术带进 Stable Diffusion 和 DALL-E 的男人。现在他赌的是：同样的 trick 对文本也管用。
+为什么速度这么重要？ 你可能觉得：快几秒有什么大不了？
+对于聊天机器人，确实。但对于：
+Agent 工作流：一个任务可能要调 30 次模型，每次慢 1 秒，整体就慢 30 秒 语音 AI：用户说话后等 2 秒才回复，对话感直接崩 代码补全：打字停顿等建议，思路断了 Zed 编辑器联合创始人 Max Brunsfeld 的原话：
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-25 14:05:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>167 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Mercury 2 发布：首个商用 Diffusion LLM，推理速度碾压传统模型" href="https://claudeai.best/posts/2026-02-25-mercury-2-diffusion-llm/"></a>
+</article>
+
+<article class="post-entry"> 
 <figure class="entry-cover">
         <img loading="lazy" src="https://opengraph.githubassets.com/ladybird-rust-migration" alt="Ladybird 浏览器 Rust 迁移">
 </figure>
@@ -380,39 +404,6 @@ PostgreSQL、SQLite、Redis FFmpeg、QEMU Doom（开发者终极测试） 支持
   </div>
   <footer class="entry-footer"><span title='2026-02-25 05:05:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>154 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to 16个 Claude 代理协作写了一个 C 编译器，花了 $20K API 费" href="https://claudeai.best/posts/hunter-2026022505/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://claudeai.best/images/hunter/2026022504.jpg" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">AI 编程工具 15 分钟开发应用，免费工具时代要结束了？
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>一个不懂编程的人，用 AI 工具 15 分钟做出了自己想要的 Mac 应用。这不仅是个人效率的提升，更预示着整个单用途应用市场的崩塌。
-15 分钟开发一个 Mac 应用 9to5Mac 的编辑 Benj Edwards 讲了一个亲身经历。
-他想找一个简单的 Mac 应用解决一个生产力问题。免费的应用充满低质量广告，付费的应用虽然能用，但功能永远差点意思——不是多了一些不需要的功能，就是缺少某个关键细节。
-于是他试了 OpenAI 的 Codex。
-从一个空文件夹开始，15 分钟后，核心功能已经跑起来了。
-接下来的几周，他不断给 Codex 提需求：加个按钮、接入 Apple 的 Foundation Models、某个事件发生时通知我……每次修改，Codex 10 秒钟搞定。
-最后得到的应用：完全符合他的需求，没有广告，没有多余功能，代码还能随时调整。
-Vibe Coding：2025 年的年度词汇 这种开发方式有个名字：Vibe Coding。
-2025 年，Collins 词典把它选为年度词汇。维基百科的定义是：用自然语言向大语言模型描述任务，让 AI 生成代码——关键是接受 AI 生成的代码而不仔细审查内部结构，只看结果，通过后续 prompt 调整。
-Andrej Karpathy 的描述更直接：“完全沉浸到氛围里，拥抱指数增长，忘记代码的存在。”
-听起来很危险？批评者确实指出：缺乏问责制、可维护性差、安全漏洞风险高。
-但对于非程序员来说，这是第一次软件真正为他们服务，而不是他们去适应软件。
-单用途应用市场的丧钟 Benj 的观点很明确：单用途应用的商业模式正在瓦解。
-过去，独立开发者靠做出一个好用的单功能应用赚钱。用户愿意付费，因为自己开发成本太高。
-但现在：
-免费应用：充满广告，体验差，用户忍着用 付费应用：功能固定，永远差点意思，用户妥协着用 AI 开发的应用：完全定制，随时调整，代码归你 当第三种选择的门槛降到&#34;会说话就行&#34;，谁还愿意忍受前两种？
-Xcode 集成：苹果的官方背书 更重要的事情发生在苹果生态。
-2026 年 2 月，苹果宣布 Xcode 26.4 将原生集成 Claude Agent 和 OpenAI Codex。这意味着：
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-25 04:05:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>181 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to AI 编程工具 15 分钟开发应用，免费工具时代要结束了？" href="https://claudeai.best/posts/hunter-2026022504/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
