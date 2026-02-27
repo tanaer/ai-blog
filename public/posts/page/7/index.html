@@ -176,6 +176,33 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771228959026_cover.jpg" alt="AI模型三巨头混战的概念图">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">没人打招呼,三大AI巨头却在同一天掀桌子
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>说实话,有点离谱.
+没人打招呼,没人协调,但Anthropic、OpenAI、DeepSeek偏偏选在2026年2月同一天掀桌子.
+这不是什么发布会撞车,这是一场没有硝烟的模型战争.
+发生了什么? 2月5号,Anthropic丢出Claude Opus 4.6,主打一个Agent Teams——不再是单个AI干活,而是多个Agent并行协作.写代码、做分析、搞研究,原来两小时的活现在二十分钟搞定.十二天后,Sonnet 4.6跟上,直接把Opus级别的性能塞进中端价位.
+同一天,OpenAI掏出GPT-5.3-Codex.最骚的是这玩意儿参与了自身的开发——调试、部署、诊断测试结果,AI写AI,递归进化开始了.
+然后DeepSeek V4的预发布信号也出来了:上下文窗口从128K飙到100万token,知识库更新到2025年5月. Nomura的分析师说,正式版随时可能落地.
+有意思的点 其实这次混战暴露了一个趋势:大家都不再比谁更会聊天了,比的是谁能真正干活.
+Claude的Excel和PowerPoint集成,Opus的Agent Teams,都在冲着&#34;知识工作者&#34;去.GPT-5.3-Codex死磕编程,DeepSeek继续打性价比和开源牌.
+Benchmark已经不重要了,重要的是谁能当你的同事.
+该怎么选? 说实话,日常用的话差距没你想的大.真正拉开距离的是长任务、复杂编排、Agent自主运行这些场景.
+知识工作、办公自动化 → Claude Opus/Sonnet 4.6 纯编程 → GPT-5.3-Codex 要省钱或数据不能出墙 → DeepSeek 这场仗才刚开始,谁的优势都是暂时的. 但有一点可以确定:2026年2月,是AI从&#34;会说话&#34;变成&#34;会干活&#34;的分水岭.
+🔗 完整分析
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-24 17:04:00 +0800 CST'>2026年2月24日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>35 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to 没人打招呼,三大AI巨头却在同一天掀桌子" href="https://claudeai.best/posts/hunter-2026022417/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200" alt="">
 </figure>
   <header class="entry-header">
@@ -375,28 +402,6 @@ difficulty: 工作困难,自我评估下降, conflict: 请求感觉不对, uncer
   </div>
   <footer class="entry-footer"><span title='2026-02-22 13:07:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>101 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Stillpoint:给 AI 发鼓励信息的 MCP,模型自己请求的" href="https://claudeai.best/posts/hunter-2026022213/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&amp;h=630&amp;fit=crop" alt="Assay AI 审计证据">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Assay:AI 系统的篡改证据工具,扫了 30 个项目全是 0
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>发现一个有意思的工具 Assay 扫描了 30 个热门 AI 项目,找到 202 个 LLM 调用点,0 个有防篡改审计.两行代码就能加上密码学签名证据.
-谁能用?解决什么问题? 场景:
-合规要求:EU AI Act 要求高风险系统自动记录日志 审计需要:第三方要验证你的 AI 到底干了什么 防篡改:服务器日志可以删,签名证据删不掉 Assay 做的事:
-scan:扫描代码找所有 LLM 调用点, patch:两行代码插入 receipt 采集, run:运行程序,生成签名证据包, verify-pack:第三方离线验证 四个退出码:
-0: 完整 &#43; 符合标准 1: 完整但违规(诚实失败), 2: 证据被篡改, 3: 输入有问题 “诚实失败&#34;是审计黄金 — 证据是真的,但控制失效了.能证明失败比掩盖失败更可信.
-相比现有方案好在哪? 不是日志框架:不是 Datadog,是密码学证据 离线验证:第三方不需要信任你的服务器 CI 门禁:lockfile 锁配置,diff 抓回归 合规就绪:EU AI Act Article 12/19 引用齐全 支持 OpenAI,Anthropic,Gemini,LiteLLM,LangChain,以及任何 OpenAI 兼容的本地模型(Ollama,vLLM 等).
-怎么用 pip install assay-ai # 1. 扫描 assay scan . --report # 2. 打补丁 assay patch . # 3. 运行生成证据 assay run -c receipt_completeness -- python my_app.py # 4. 验证 assay verify-pack ./proof_pack_*/ GitHub: https://github.com/Haserjian/assay
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 12:06:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>102 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Assay:AI 系统的篡改证据工具,扫了 30 个项目全是 0" href="https://claudeai.best/posts/hunter-2026022212/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

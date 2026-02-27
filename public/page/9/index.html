@@ -185,6 +185,29 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771697522530_cover.jpg" alt="TokenShrink - Prompt 压缩">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">TokenShrink v2.0:Reddit 骂醒了他们,Token 计数原来一直都是错的
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>刚发现一个有意思的更新:TokenShrink v2.0 ️
+谁能用? 用 LLM API 的.Prompt 太长,Token 烧太快,想省钱的人.
+TokenShrink 的做法:压缩 Prompt,同样效果,更少 Token.
+Reddit 教做人 v1.0 用 words × 1.3 估算 Token 数量.
+Reddit r/LocalLLaMA 直接撕了:
+“database” 是 1 token,“db” 也是 1 token → 替换省个屁 “should” → “shd” 从 1 token 变 2 token → 越压缩越贵 不同模型 tokenizer 不一样 → 1.3 这个系数是瞎编的 他们说得对.
+v2.0 的修正:
+用真实 BPE tokenizer 计数(tiktoken for GPT, Claude’s tokenizer for Claude) 只压缩真正省 token 的替换 每个模型用各自的 tokenizer 怎么用? 网页版:粘贴 Prompt,一键压缩.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-22 02:12:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>166 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to TokenShrink v2.0:Reddit 骂醒了他们,Token 计数原来一直都是错的" href="https://claudeai.best/posts/hunter-2026022202/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771693767180_cover.jpg" alt="Eliezer - 自托管 AI Agent">
 </figure>
   <header class="entry-header">
@@ -378,28 +401,6 @@ Agent A 写 API Agent B 写前端 Agent C 写测试 同时跑,代码不会互相
   </div>
   <footer class="entry-footer"><span title='2026-02-21 16:04:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>88 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Claude Code --worktree:同时开 5 个 Agent 并行写代码,互不干扰" href="https://claudeai.best/posts/hunter-2026022116/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771658208972_cover.jpg" alt="MBC - Laravel AI Agent 编排">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">MBC:Laravel 后端也能跑 AI Agent 了,3 个 Agent 34 秒搭个网站
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>发现一个有意思的东西:MBC
-Laravel 后端也能跑 AI Agent 了.
-谁能用? PHP/Laravel 开发者,想在服务端跑 AI 自动化任务.
-怎么用 安装:
-composer require undergrace/laravel-mbc php artisan vendor:publish --tag=mbc-config php artisan migrate 配置 .env:
-MBC_PROVIDER=anthropic ANTHROPIC_API_KEY=sk-ant-…
-写代码:
-$session = Mbc::session(&#39;my-agent&#39;) -&gt;systemPrompt(&#39;你是数据助手&#39;) -&gt;tools([ListItemsTool::class, CreateReportTool::class]) -&gt;context([&#39;user_id&#39; =&gt; 1]) -&gt;start(&#39;分析销售数据并生成报告&#39;); ## 有啥特别的? **多 Provider 支持**: - Anthropic (Claude) - OpenAI (GPT-4o, o1, o3) - OpenRouter (200&#43; 模型) **多 Agent 模式**: - Pipeline:流水线, Orchestrator:编排, Shared Memory:共享内存 **工具用 PHP Attributes 定义**: #[Tool(name: &#39;analyze_data&#39;, description: &#39;分析数据&#39;)] class AnalyzeDataTool extends BaseTool { #[ToolParam(name: &#39;table&#39;, required: true)] public function execute(array $input): mixed return $this-&gt;dataRepo-&gt;analyze($input[&#39;table&#39;]); } 官方 demo:3 个 AI Agent 34 秒搭一个网站,只要 $0.34 ## 链接 - GitHub: https://github.com/etazza2025/laravel-mbc PHP 开发者也能玩 Agent 了 </p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-21 15:04:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>105 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to MBC:Laravel 后端也能跑 AI Agent 了,3 个 Agent 34 秒搭个网站" href="https://claudeai.best/posts/hunter-2026022115/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

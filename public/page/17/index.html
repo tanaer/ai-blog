@@ -185,6 +185,30 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771329764075_cover.jpg" alt="代码编辑器中的编程界面">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AGENTS.md到底有没有用?一篇论文引爆开发者社区大战
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>如果你最近在用 Claude Code,Codex 或者 OpenClaw 之类的 AI 编程工具,你大概率见过一个叫 AGENTS.md(或 CLAUDE.md)的文件.它的作用很简单:告诉 AI Agent 这个项目的规矩–用什么框架,怎么跑测试,有什么坑要避.
+听起来很合理对吧?
+然后一篇 arXiv 论文说:这玩意不但没用,还让 Agent 变蠢了.
+论文说了啥 这篇来自学术界的论文 “Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?” 做了一个挺严谨的实验:
+在 SWE-bench(业内标准的代码修复基准测试)上跑了多个 Agent &#43; 多个 LLM 的组合 分别测试了三种情况:没有上下文文件,LLM 自动生成的上下文文件,开发者手写的上下文文件, 结果:, LLM 生成的文件:任务成功率平均下降 3% 开发者手写的文件:平均提升 4%,但在不同模型上表现不一致(Sonnet 4.5 反而下降 2%) 所有情况下推理成本增加超过 20% 论文的结论是:上下文文件里的&#34;不必要要求&#34;让任务变难了,建议只写最小化的必要信息.
+HN 社区炸了 这篇论文在 Hacker News 上拿到 146 分,94 条评论,评论区基本是一边倒的&#34;你们测错了&#34;.
+最核心的反驳来自一位高赞评论者:
+“4% 的提升是巨大的!一个简单的 markdown 文件就能带来 4% 的改善,这说明它是必须有的.”
+他指出了论文的一个关键盲区:SWE-bench 测试的都是公开的 GitHub 项目,而这些项目里的 AGENTS.md 大多来自&#34;最近的小型 vibecoding 项目&#34;,质量参差不齐.真正需要 AGENTS.md 的场景是大型私有代码库–那些有复杂部署流水线,团队约定,历史债务的项目.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-17 20:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>197 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to AGENTS.md到底有没有用?一篇论文引爆开发者社区大战" href="https://claudeai.best/posts/hunter-2026021720/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771326207474_cover.jpg" alt="数据中心服务器机房">
 </figure>
   <header class="entry-header">
@@ -524,45 +548,6 @@ Agent框架要大洗牌 现在市面上一堆AI浏览器工具–Browser Use,Pla
   </div>
   <footer class="entry-footer"><span title='2026-02-17 02:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>94 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Google WebMCP:AI Agent不用再「看截图猜按钮」了,Chrome正式变身Agent操作系统" href="https://claudeai.best/posts/hunter-2026021702/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771261546557_cover.jpg" alt="数据中心服务器存储阵列">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">硬盘全年售罄:AI吞噬硬件供应链,普通人的存储自由正在消失
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>2026年才过了一个半月,硬盘就卖完了 上周西部数据(Western Digital)的财报电话会上,CEO Irving Tan 说了句让整个存储行业都沉默的话:
-“We’re pretty much sold out for calendar 2026.”
-翻译一下:2026年的硬盘产能,已经全部预售完毕. 距离年底还有10个多月.
-更狠的是,前七大客户中有三家已经锁定了2027年甚至2028年的产能.这不是短缺,这是系统性垄断.
-消费市场?只剩5%的残渣 最让普通用户心凉的数据:消费级市场目前只占西部数据营收的5%.
-什么概念?以前你买NAS硬盘,装机硬盘,好歹是个重要客户群.现在?你是零头.企业级AI客户才是金主爸爸,你的4TB红盘在他们眼里连个舍入误差都算不上.
-这意味着:
-价格肯定继续涨,因为厂商没有动力为你优化成本, 产品线会进一步偏向企业,消费级新品更新节奏会慢下来, NAS玩家和内容创作者首当其冲,大容量机械硬盘本来就依赖这几家厂商 AI吃硬件的速度比你想象的快 这不是孤立事件,是整条供应链在被AI蚕食:
-内存(RAM): 美光(Micron)早就确认内存短缺短期内不会缓解.Framework笔记本已经多次因DDR5涨价被迫提价.
-GPU: 不用多说,NVIDIA的数据中心GPU从2023年起就没正常供应过.
-游戏主机: 索尼据传考虑将PS6发布时间推迟到2027年之后,就是在赌AI硬件短缺能在那之前缓解.
-硬盘: 现在轮到了.而且不是&#34;有点紧张&#34;,是&#34;全年卖完&#34;.
-为什么AI需要这么多硬盘? 你可能会问:AI训练不是主要用GPU和高速SSD吗?机械硬盘有什么关系?
-关系大了:
-训练数据集存储:GPT-5级别的模型,训练数据动辄几十PB.热数据用SSD,冷数据全靠大容量HDD 模型检查点(checkpoint):训练过程中每隔一段时间就要保存完整模型状态,一个checkpoint可能就是几TB 推理日志和缓存:大规模推理服务产生的日志,KV缓存,用户数据,都需要海量存储 合规与审计:企业级AI系统需要保留完整的数据血缘和审计记录 所以每个大型AI数据中心的硬盘需求量是惊人的.不是几百块,是几万块起步.
-这泡沫什么时候破? 理性来看,有两种可能的缓解路径:
-路径一:AI投资回报不及预期,资本撤退. 如果投资者开始质疑AI的商业化能力(事实上这种声音一直存在),资本支出会收缩,硬件需求自然下降.但目前来看,Anthropic刚拿了300亿美元新融资,没有退烧的迹象.
-路径二:存储技术突破. 比如HAMR(热辅助磁记录)技术大规模量产,单碟容量从2TB跳到4TB&#43;,总供给翻倍.西部数据和希捷都在推进,但量产节奏赶不上需求增长.
-我的判断: 短期内(2026-2027)没有缓解的可能.普通消费者的存储成本会持续上升,大容量机械硬盘可能会出现类似2011年泰国洪水后的价格疯涨.
-普通人能做什么? 说点实用的:
-如果你有大容量存储需求,现在就买. 不要等降价,不会降, 关注二手市场. 企业换代退役的企业级硬盘(比如HGST Ultrastar),性价比很高, 考虑冷存储替代方案. 磁带(LTO)对于真正的冷数据反而是更经济的选择, 云存储也会涨价. AWS,Azure的存储定价最终也会反映硬件成本上涨 写在最后 AI不只是在改变软件行业,它正在重新分配整个硬件供应链的资源.当顶级客户愿意为每GB支付溢价时,消费市场就会被挤到边缘.
-这不是阴谋论,这是简单的供需经济学.只不过这次,需求方是一个烧钱速度前所未有的行业.
-你的NAS硬盘涨价了吗?欢迎在评论区分享你的存储成本变化.
-参考来源:Western Digital FY2026 Q2 财报电话会议 | Mashable 报道 | Hacker News 讨论
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-17 01:00:00 +0800 CST'>2026年2月17日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>77 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to 硬盘全年售罄:AI吞噬硬件供应链,普通人的存储自由正在消失" href="https://claudeai.best/posts/hunter-2026021701/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
