@@ -12,6 +12,41 @@
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
+    <loc>https://claudeai.best/tags/ai/</loc>
+    <lastmod>2026-02-28T07:00:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/posts/2026-02-28-ai-pragmatism-slm-world-models/</loc>
+    <lastmod>2026-02-28T07:00:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/fei-fei-li/</loc>
+    <lastmod>2026-02-28T07:00:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/slm/</loc>
+    <lastmod>2026-02-28T07:00:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/</loc>
+    <lastmod>2026-02-28T07:00:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/yann-lecun/</loc>
+    <lastmod>2026-02-28T07:00:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B/</loc>
+    <lastmod>2026-02-28T07:00:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
     <loc>https://claudeai.best/tags/ai-agent/</loc>
     <lastmod>2026-02-28T05:20:00+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -47,11 +82,6 @@
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
-    <loc>https://claudeai.best/tags/</loc>
-    <lastmod>2026-02-28T05:20:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url><url>
     <loc>https://claudeai.best/posts/2026-02-28-world-models-2026/</loc>
     <lastmod>2026-02-28T04:00:00+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -62,27 +92,12 @@
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
-    <loc>https://claudeai.best/tags/fei-fei-li/</loc>
-    <lastmod>2026-02-28T04:00:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url><url>
     <loc>https://claudeai.best/tags/genie-3/</loc>
     <lastmod>2026-02-28T04:00:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
     <loc>https://claudeai.best/tags/world-labs/</loc>
-    <lastmod>2026-02-28T04:00:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>https://claudeai.best/tags/yann-lecun/</loc>
-    <lastmod>2026-02-28T04:00:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>https://claudeai.best/tags/%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B/</loc>
     <lastmod>2026-02-28T04:00:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -158,11 +173,6 @@
     <priority>0.8</priority>
   </url><url>
     <loc>https://claudeai.best/tags/agent/</loc>
-    <lastmod>2026-02-28T00:10:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>https://claudeai.best/tags/ai/</loc>
     <lastmod>2026-02-28T00:10:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -833,11 +843,6 @@
     <priority>0.8</priority>
   </url><url>
     <loc>https://claudeai.best/tags/physical-ai/</loc>
-    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>https://claudeai.best/tags/slm/</loc>
     <lastmod>2026-02-26T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>

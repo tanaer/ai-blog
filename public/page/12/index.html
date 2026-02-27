@@ -185,6 +185,29 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771643438878_cover.jpg" alt="CRTX - AI代码验证循环">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">CRTX:让 AI 生成代码后自己跑测试,自己修 bug
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>刚发现一个有意思的CLI 工具:CRTX ️
+谁能用? AI 生成代码最头疼的是什么?跑不起来.导入报错,测试失败,边界情况没处理.拿到代码还得花 10-30 分钟调试.
+CRTX 解决这个问题:生成后自动跑测试,失败就自动修复.
+用法很简单:
+pip install crtx crtx loop &#34;Build a REST API with FastAPI, SQLite, search and pagination&#34; 一条命令进去,出来的是已经通过测试的代码.
+怎么做到的? CRTX 的核心是 Generate → Test → Fix → Review 循环:
+Generate - 选合适的模型生成代码 Test - 本地跑 AST 解析,导入检查,pyflakes,pytest Fix - 测试失败?把错误喂回模型让它修 Review - 另一个独立模型(Arbiter)审查最终输出 测试不通过不放行,修复卡住会启动三级 escalation:先诊断根因,再简化上下文重试,最后换个模型给&#34;第二意见&#34;.
+比别的工具有什么优势? 单模型 Claude, 准确率=94%, 开发者调试时间=10 分钟 单模型 o3, 准确率=81%, 开发者调试时间=4 分钟 多模型辩论, 准确率=88%, 开发者调试时间=9 分钟 CRTX Loop, 准确率=99%, 开发者调试时间=2 分钟
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 11:08:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>123 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to CRTX:让 AI 生成代码后自己跑测试,自己修 bug" href="https://claudeai.best/posts/hunter-2026022111/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771639881393_cover.jpg" alt="Cord - AI Agent 协调树">
 </figure>
   <header class="entry-header">
@@ -372,28 +395,6 @@ AI 通过聊天理解用户需求, 直接修改应用代码(类似 vibecoding), 
   </div>
   <footer class="entry-footer"><span title='2026-02-21 02:05:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>334 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Expo-OpenClaw-chat:在 React Native 应用里内置 AI 聊天,边聊边改代码" href="https://claudeai.best/posts/hunter-2026022102/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771607298753_cover.jpg" alt="数据分析与对比">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LLM Compare:250&#43; 模型的 side-by-side 基准对比工具,纯静态无后端
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>选模型像选手机一样难.GPT-4o 还是 Claude 3.7?DeepSeek-R1 值不值得?Gemini 1.5 Pro 的上下文真的有用吗?
-每个模型厂商都吹自己的 benchmark,但横向对比才是选模型的关键.
-刚在 HN 上看到一个新项目 LLM Compare – 一个纯静态的 side-by-side 基准对比工具,250&#43; 模型,无后端,数据每周自动更新.
-核心特性 纯静态,无后端
-所有数据预取为静态 JSON 通过 GitHub Actions 每周从 api.zeroeval.com 自动更新 托管在 GitHub Pages 上 零服务器成本,零延迟 250&#43; 模型覆盖
-OpenAI: GPT-4o, o1, o3-mini… Anthropic: Claude 3.5/3.7 Sonnet, Claude Opus 4/4.5/4.6… DeepSeek: V2.5, V3, R1, R1-0528… Google: Gemini 1.0/1.5 Pro/Flash… Mistral, Cohere, Baidu ERNIE… 丰富的基准指标
-AIME 2025(数学推理), GPQA(科学问答), SWE-bench Verified(代码), MMMU(多模态理解), MMLU(知识广度), Humanity’s Last Exam(前沿知识), ARC-AGI v2(抽象推理), 价格,吞吐量,延迟,上下文长度 可分享 URL
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-21 01:10:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>249 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to LLM Compare:250&#43; 模型的 side-by-side 基准对比工具,纯静态无后端" href="https://claudeai.best/posts/hunter-2026022101/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

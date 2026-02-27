@@ -6,8 +6,43 @@
     <description>Recent content in Tags on AI 极客前沿</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 28 Feb 2026 05:20:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 28 Feb 2026 07:00:00 +0800</lastBuildDate>
     <atom:link href="https://claudeai.best/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>https://claudeai.best/tags/ai/</link>
+      <pubDate>Sat, 28 Feb 2026 07:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fei-Fei Li</title>
+      <link>https://claudeai.best/tags/fei-fei-li/</link>
+      <pubDate>Sat, 28 Feb 2026 07:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/fei-fei-li/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SLM</title>
+      <link>https://claudeai.best/tags/slm/</link>
+      <pubDate>Sat, 28 Feb 2026 07:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/slm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Yann LeCun</title>
+      <link>https://claudeai.best/tags/yann-lecun/</link>
+      <pubDate>Sat, 28 Feb 2026 07:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/yann-lecun/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>世界模型</title>
+      <link>https://claudeai.best/tags/%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Sat, 28 Feb 2026 07:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/tags/%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AI Agent</title>
       <link>https://claudeai.best/tags/ai-agent/</link>
@@ -58,13 +93,6 @@
       <description></description>
     </item>
     <item>
-      <title>Fei-Fei Li</title>
-      <link>https://claudeai.best/tags/fei-fei-li/</link>
-      <pubDate>Sat, 28 Feb 2026 04:00:00 +0800</pubDate>
-      <guid>https://claudeai.best/tags/fei-fei-li/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Genie 3</title>
       <link>https://claudeai.best/tags/genie-3/</link>
       <pubDate>Sat, 28 Feb 2026 04:00:00 +0800</pubDate>
@@ -76,20 +104,6 @@
       <link>https://claudeai.best/tags/world-labs/</link>
       <pubDate>Sat, 28 Feb 2026 04:00:00 +0800</pubDate>
       <guid>https://claudeai.best/tags/world-labs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Yann LeCun</title>
-      <link>https://claudeai.best/tags/yann-lecun/</link>
-      <pubDate>Sat, 28 Feb 2026 04:00:00 +0800</pubDate>
-      <guid>https://claudeai.best/tags/yann-lecun/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>世界模型</title>
-      <link>https://claudeai.best/tags/%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B/</link>
-      <pubDate>Sat, 28 Feb 2026 04:00:00 +0800</pubDate>
-      <guid>https://claudeai.best/tags/%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B/</guid>
       <description></description>
     </item>
     <item>
@@ -146,13 +160,6 @@
       <link>https://claudeai.best/tags/agent/</link>
       <pubDate>Sat, 28 Feb 2026 00:10:00 +0800</pubDate>
       <guid>https://claudeai.best/tags/agent/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AI</title>
-      <link>https://claudeai.best/tags/ai/</link>
-      <pubDate>Sat, 28 Feb 2026 00:10:00 +0800</pubDate>
-      <guid>https://claudeai.best/tags/ai/</guid>
       <description></description>
     </item>
     <item>
@@ -797,13 +804,6 @@
       <link>https://claudeai.best/tags/physical-ai/</link>
       <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://claudeai.best/tags/physical-ai/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SLM</title>
-      <link>https://claudeai.best/tags/slm/</link>
-      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://claudeai.best/tags/slm/</guid>
       <description></description>
     </item>
     <item>
