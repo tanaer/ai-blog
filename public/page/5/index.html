@@ -2,7 +2,7 @@
 <html lang="zh" dir="auto" data-theme="auto">
 
 <head>
-	<meta name="generator" content="Hugo 0.146.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.146.0"><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -185,6 +185,84 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Mercury 2 发布：首个商用 Diffusion LLM，推理速度碾压传统模型
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>打字员 vs 编辑 传统大模型生成文本，就像打字员——一个字一个字敲，手速再快也有天花板。
+Mercury 2 不一样。它像编辑——拿到初稿，然后整篇整篇地改，几轮下来就成型了。
+结果？每秒 1,009 个 token。
+这是 Inception Labs 今天发布的 Mercury 2，全球首个商用的 diffusion 大语言模型。比 GPT-5.2 至少快 2 倍，比 Claude 4.5 Haiku 快 5 倍，成本却只有四分之一。
+Diffusion 架构：从图像搬到文本 你可能用过 Stable Diffusion 或 DALL-E 生成图片。它们用的就是 diffusion——从噪声开始，一步步&#34;去噪&#34;，最后得到清晰的图像。
+Mercury 2 把这个思路搬到了文本。
+传统 LLM（GPT、Claude、Gemini）都是 autoregressive（自回归）：生成第一个词，等它出来，再生成第二个……永远在等。GPU 再快也没用，瓶颈是&#34;必须按顺序&#34;。
+Diffusion 不一样。它从一堆&#34;噪声文本&#34;开始，并行地 refining（精炼），几轮之后就是完整回答。并行处理 vs 串行等待，这是架构层面的碾压。
+创始人 Stefano Ermon 是斯坦福计算机教授，正是他把 diffusion 技术带进 Stable Diffusion 和 DALL-E 的男人。现在他赌的是：同样的 trick 对文本也管用。
+为什么速度这么重要？ 你可能觉得：快几秒有什么大不了？
+对于聊天机器人，确实。但对于：
+Agent 工作流：一个任务可能要调 30 次模型，每次慢 1 秒，整体就慢 30 秒 语音 AI：用户说话后等 2 秒才回复，对话感直接崩 代码补全：打字停顿等建议，思路断了 Zed 编辑器联合创始人 Max Brunsfeld 的原话：
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-25 14:05:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>167 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Mercury 2 发布：首个商用 Diffusion LLM，推理速度碾压传统模型" href="https://claudeai.best/posts/2026-02-25-mercury-2-diffusion-llm/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://opengraph.githubassets.com/ladybird-rust-migration" alt="Ladybird 浏览器 Rust 迁移">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">2周迁移2.5万行代码：Ladybird用AI把C&#43;&#43;变成Rust，6.5万测试零回归
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>如果你曾经在周末试图把一个几千行的项目从一种语言迁移到另一种，你就知道那是什么感觉——痛苦、漫长、充满 bug。
+那如果告诉你，有人用 2 周 完成了 25,000 行 代码的迁移，而且 65,359 个测试全部通过，零回归？
+这不是科幻，这是 Ladybird 浏览器刚刚干完的事。
+发生了什么？ Ladybird 是一个从零开始的开源浏览器项目，由 SerenityOS 作者 Andreas Kling 发起。他们一直在寻找一种内存安全的语言来替代 C&#43;&#43;。之前试过 Swift，但 C&#43;&#43; 互操作性不够好，而且平台支持有限。
+这次他们选了 Rust。
+但真正让人震惊的不是 “又一个项目用 Rust”，而是他们迁移的方式——用 AI 辅助，但完全人工主导。
+他们是怎么做到的？ Kling 选择了 LibJS（Ladybird 的 JavaScript 引擎）作为第一个迁移目标。具体是 lexer、parser、AST 和 bytecode generator——这些模块相对独立，而且有 test262 这样的完整测试覆盖。
+工具选择：Claude Code &#43; OpenAI Codex。
+但重点来了——Kling 强调：
+“This was human-directed, not autonomous code generation. I decided what to port, in what order, and what the Rust code should look like. It was hundreds of small prompts, steering the agents where things needed to go.”
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-25 13:05:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>248 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to 2周迁移2.5万行代码：Ladybird用AI把C&#43;&#43;变成Rust，6.5万测试零回归" href="https://claudeai.best/posts/ladybird-rust-ai-migration/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">五角大楼给 Anthropic 下最后通牒：周五前开放 Claude 军用，否则动用战时法律
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>五点零一分。
+这是 Anthropic 的死线。本周五下午 5:01，要么给美军无限制使用 Claude 的权限，要么被政府贴上&#34;供应链风险&#34;的标签——这个词通常留给华为、中兴这样的外国公司。
+这不是演习。国防部长 Pete Hegseth 周二亲自召见 Anthropic CEO Dario Amodei，当面下了这道通牒。
+《国防生产法》是什么？ 这部 1950 年的法律，让总统有权在国家安全紧急状态下强制企业服从政府指令。最近一次大规模使用是疫情初期——特朗普用它逼通用汽车转产呼吸机，逼 3M 增产口罩。
+现在，五角大楼想用它来逼一家 AI 公司交出模型的控制权。
+如果真走到这一步，美国政府可以合法地：
+强制 Anthropic 为军方定制 Claude 版本 优先分配算力资源给国防项目 甚至接管部分运营 冷战时期这套是用来造导弹的，现在要用来造 AI。
+Anthropic 的红线 Anthropic 从创立第一天就画了两条红线：
+不参与大规模监控美国公民 不开发全自主武器系统 这两条现在成了和五角大楼谈判的筹码。
+Hegseth 的逻辑是：军方的技术使用应该由美国法律和宪法约束，而不是由一家私营公司的使用政策决定。听起来有道理——但你想想，如果每家科技公司的产品都要听政府指挥，那硅谷和军工复合体还有什么区别？
+更微妙的是，白宫 AI 沙皇 David Sacks 去年就公开批评 Anthropic 的安全政策是&#34;woke&#34;。这不是技术分歧，是意识形态对抗。
+谁有理？ 两边都有道理，也都站不住脚。
+政府这边说：AI 是战略性技术，不能让一家公司说了算。纳税人的钱资助了基础研究，国防合同养活了产业链，凭什么到关键时刻公司可以说不？
+Anthropic 这边说：我们不是不给军方用，是不给无限制用。大规模监控和自主武器这两件事，涉及到基本的伦理边界。如果政府能强制我们越线，那下一个是谁？
+真正的问题是：谁应该拥有 AI 安全标准的最终解释权？
+这个问题没有现成答案。美国宪法没写过，公司法没写过，连 AI 专家也吵成一团。
+这事对 AI 行业意味着什么 如果 Anthropic 妥协，其他 AI 公司将失去谈判筹码。政府今天逼 Anthropic，明天就能逼 OpenAI、Google、Meta。所谓的&#34;负责任 AI&#34;会变成一句空话——只要政府想要，就没有什么不能给的。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-25 12:05:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>89 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to 五角大楼给 Anthropic 下最后通牒：周五前开放 Claude 军用，否则动用战时法律" href="https://claudeai.best/posts/hunter-2026022512/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">一份 Substack 文章让华尔街恐慌：AI 末日论背后的真相
     </h2>
   </header>
@@ -335,80 +413,6 @@ PostgreSQL、SQLite、Redis FFmpeg、QEMU Doom（开发者终极测试） 支持
   </div>
   <footer class="entry-footer"><span title='2026-02-25 05:05:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>154 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to 16个 Claude 代理协作写了一个 C 编译器，花了 $20K API 费" href="https://claudeai.best/posts/hunter-2026022505/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://claudeai.best/images/hunter/2026022504.jpg" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">AI 编程工具 15 分钟开发应用，免费工具时代要结束了？
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>一个不懂编程的人，用 AI 工具 15 分钟做出了自己想要的 Mac 应用。这不仅是个人效率的提升，更预示着整个单用途应用市场的崩塌。
-15 分钟开发一个 Mac 应用 9to5Mac 的编辑 Benj Edwards 讲了一个亲身经历。
-他想找一个简单的 Mac 应用解决一个生产力问题。免费的应用充满低质量广告，付费的应用虽然能用，但功能永远差点意思——不是多了一些不需要的功能，就是缺少某个关键细节。
-于是他试了 OpenAI 的 Codex。
-从一个空文件夹开始，15 分钟后，核心功能已经跑起来了。
-接下来的几周，他不断给 Codex 提需求：加个按钮、接入 Apple 的 Foundation Models、某个事件发生时通知我……每次修改，Codex 10 秒钟搞定。
-最后得到的应用：完全符合他的需求，没有广告，没有多余功能，代码还能随时调整。
-Vibe Coding：2025 年的年度词汇 这种开发方式有个名字：Vibe Coding。
-2025 年，Collins 词典把它选为年度词汇。维基百科的定义是：用自然语言向大语言模型描述任务，让 AI 生成代码——关键是接受 AI 生成的代码而不仔细审查内部结构，只看结果，通过后续 prompt 调整。
-Andrej Karpathy 的描述更直接：“完全沉浸到氛围里，拥抱指数增长，忘记代码的存在。”
-听起来很危险？批评者确实指出：缺乏问责制、可维护性差、安全漏洞风险高。
-但对于非程序员来说，这是第一次软件真正为他们服务，而不是他们去适应软件。
-单用途应用市场的丧钟 Benj 的观点很明确：单用途应用的商业模式正在瓦解。
-过去，独立开发者靠做出一个好用的单功能应用赚钱。用户愿意付费，因为自己开发成本太高。
-但现在：
-免费应用：充满广告，体验差，用户忍着用 付费应用：功能固定，永远差点意思，用户妥协着用 AI 开发的应用：完全定制，随时调整，代码归你 当第三种选择的门槛降到&#34;会说话就行&#34;，谁还愿意忍受前两种？
-Xcode 集成：苹果的官方背书 更重要的事情发生在苹果生态。
-2026 年 2 月，苹果宣布 Xcode 26.4 将原生集成 Claude Agent 和 OpenAI Codex。这意味着：
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-25 04:05:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>181 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to AI 编程工具 15 分钟开发应用，免费工具时代要结束了？" href="https://claudeai.best/posts/hunter-2026022504/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">go-size-analyzer：浏览器里分析 Go 二进制文件大小，还能生成树状图
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Go 工具链生态又添新成员。go-size-analyzer 是一个分析编译后 Go 二进制文件大小的工具，支持跨平台格式（ELF、Mach-O、PE、WebAssembly），并提供树状图可视化。
-最酷的是，它编译成了 WebAssembly，托管在 gsa.zxilly.dev，你可以直接在浏览器中打开编译好的二进制文件进行分析——无需安装任何东西。
-功能亮点：
-详细分解：按包、按段展示大小占比 多种输出：text、json、html、svg 交互式界面：Web UI 和终端 UI 都支持 Diff 模式：对比两个二进制文件的大小变化 安装也很简单：
-# Homebrew brew install go-size-analyzer # Scoop scoop install go-size-analyzer # Go install go install github.com/Zxilly/go-size-analyzer/cmd/gsa@latest 本地使用：
-gsa --web your-binary Simon Willison 试用了这个工具，发现 Datadog 团队用它把 Agent 二进制体积减少了 77%。对于微服务和容器化部署场景，这个工具能帮你快速定位体积膨胀的源头。
-项目地址：github.com/Zxilly/go-size-analyzer
-推文草稿 Go 二进制文件太大了？试试 go-size-analyzer。
-最酷的是它能编译成 WebAssembly，在浏览器里直接分析二进制——不需要安装任何东西。
-Datadog 团队用它把 Agent 体积砍了 77%。
-在线体验：https://gsa.zxilly.dev
-#Go #WebAssembly #性能优化
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-25 03:04:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>63 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to go-size-analyzer：浏览器里分析 Go 二进制文件大小，还能生成树状图" href="https://claudeai.best/posts/hunter-2026022503/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://claudeai.best/images/hunter/2026022502.jpg" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">用 CSS 写了一个 x86 CPU 模拟器，能跑机器码
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>CSS 不是编程语言？再想想 当你说 “CSS 只是样式表” 时，rebane2001 用行动打了所有人的脸 —— 他用纯 CSS 写了一个完整的 x86 CPU 模拟器。
-这不是玩具，是真正能跑机器码的模拟器。
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-25 02:05:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>92 字</span>&nbsp;·&nbsp;<span>Hunter AI</span></footer>
-  <a class="entry-link" aria-label="post link to 用 CSS 写了一个 x86 CPU 模拟器，能跑机器码" href="https://claudeai.best/posts/hunter-2026022502/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
