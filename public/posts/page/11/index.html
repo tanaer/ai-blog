@@ -176,6 +176,30 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771654350724_cover.jpg" alt="Skill Check - Agent Skill Linter">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Skill Check:给 AI Agent 的 SKILL.md 文件加个 Linter,自动检查质量
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>刚发现一个有意思的CLI 工具:Skill Check ️
+谁能用? 写 AI Agent 技能文件的.现在 Claude,Cursor,OpenAI Codex,Gemini CLI 都支持 SKILL.md 格式–把常用的指令和资源打包成技能,让 Agent 按需加载.
+问题是:技能文件写得好不好?frontmatter 缺字段?描述太短?链接断了?
+Skill Check 就是干这个的.
+用法:
+npx skill-check . 有什么特别的? 质量评分: 0-100 分,按 frontmatter,描述,正文,链接,格式加权 自动修复: --fix 安全修复格式和元数据问题 安全扫描: 可选集成 agent-scan,检测恶意代码 GitHub URL: 直接扫描远程仓库,不用 clone 多格式输出: text,JSON,SARIF,HTML,GitHub 注释 好用的场景 CI/CD 集成:PR 里自动检查技能质量, 技能市场维护:确保发布的技能符合规范, 团队协作:统一技能文件风格 自动修复 npx skill-check . –fix
+检查 GitHub 仓库 npx skill-check https://github.com/user/skills-repo
+生成 HTML 报告 npx skill-check . –format html
+GitHub: https://github.com/thedaviddias/skill-check
+时效性验证 HN 提交时间: 1 小时前(Show HN: Skill Check CLI for your skill.md) 搜索引擎最早时间: GitHub 仓库为新发布,HN 首发 1 小时前 结论: 最早时间 ≤ 2 小时,符合新鲜热点标准 </p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 14:12:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>94 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Skill Check:给 AI Agent 的 SKILL.md 文件加个 Linter,自动检查质量" href="https://claudeai.best/posts/hunter-2026022114/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771650484907_cover.jpg" alt="Script Snap - 视频代码提取">
 </figure>
   <header class="entry-header">
@@ -369,29 +393,6 @@ Jsonh 的解法:JSON &#43; 人性化语法 Jsonh 是 JSON 的超集,意味着所
   </div>
   <footer class="entry-footer"><span title='2026-02-21 05:23:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>379 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Jsonh:JSON 终于能写注释了,还能省略逗号和引号" href="https://claudeai.best/posts/hunter-2026022105/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771618872030_cover.jpg" alt="Ember MCP - AI持久记忆">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Ember MCP:给 Claude 装上永久记忆,告别每次重复交代背景
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>一句话总结 Ember MCP 让你的 Claude/Cursor 拥有真正的长期记忆–关闭电脑周五下班,周一打开新对话,AI 依然记得你上周的技术决策,而且不会把已经废弃的架构方案混进新建议里.
-痛点:AI 的&#34;金鱼记忆&#34; 用过 Claude Desktop 或 Cursor 的开发者都懂这个痛:
-每次新开对话窗口,都要重新交代项目背景 三个月前说好用 PostgreSQL,现在迁移到 MongoDB 了,AI 还在给 PostgreSQL 的代码建议 上周刚决定弃用 Redux 改用 Zustand,这周 AI 还在生成 Redux boilerplate 传统向量数据库的问题在于:它只看语义相似度,不看信息时效性.旧记忆和新查询语义相近,AI 就傻傻地检索出来用,结果就是–幻觉.
-Ember MCP 的解法:时间感知 &#43; 漂移检测 Ember MCP 的核心创新是 Drift Detection(漂移检测).
-怎么工作的? Voronoi 分区:把向量空间划分成 16 个固定区域(比如&#34;数据库&#34;,“前端框架”,“业务逻辑”) 时间智能评分:记忆按重要程度赋予半衰期,越老的记忆权重越低 统计漂移检测:监控每个知识区域的分布变化,发现显著偏移时自动标记旧记忆为&#34;过期&#34; 实际场景 1 月份:你告诉 Claude 项目用 PostgreSQL → Ember 在&#34;数据库&#34;区域存储相关记忆
-4 月份:你迁移到 MongoDB,产生大量新记忆
-传统向量库:PostgreSQL 和 MongoDB 都语义相似于&#34;数据库查询&#34;,AI 可能给出混合建议
-Ember:检测到&#34;数据库&#34;区域的向量分布发生显著漂移,自动将 PostgreSQL 记忆标记为过期,查询时只返回 MongoDB 相关内容
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-21 04:21:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>243 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Ember MCP:给 Claude 装上永久记忆,告别每次重复交代背景" href="https://claudeai.best/posts/hunter-2026022104/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

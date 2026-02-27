@@ -6,8 +6,53 @@
     <description>Recent content in AI模型 on AI 极客前沿</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 25 Feb 2026 01:05:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 27 Feb 2026 23:10:00 +0800</lastBuildDate>
     <atom:link href="https://claudeai.best/categories/ai%E6%A8%A1%E5%9E%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DeepSeek V4 将发布：提前给华为看，英伟达靠边站</title>
+      <link>https://claudeai.best/posts/hunter-2026022723/</link>
+      <pubDate>Fri, 27 Feb 2026 23:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022723/</guid>
+      <description>&lt;h2 id=&#34;deepseek-v4-快来了&#34;&gt;DeepSeek V4 快来了&lt;/h2&gt;
+&lt;p&gt;年后第一波 AI 大消息。&lt;/p&gt;
+&lt;p&gt;DeepSeek V4 预计近期正式发布。&lt;/p&gt;
+&lt;p&gt;具体哪天？官方还没说。&lt;/p&gt;
+&lt;p&gt;但圈子里的动静已经很大了。&lt;/p&gt;
+&lt;h2 id=&#34;这回不一样&#34;&gt;这回不一样&lt;/h2&gt;
+&lt;p&gt;DeepSeek 这次玩了个新操作。&lt;/p&gt;
+&lt;p&gt;按照惯例，AI 公司发新模型之前。&lt;/p&gt;
+&lt;p&gt;都会给芯片厂商提前看看。&lt;/p&gt;
+&lt;p&gt;让英伟达、AMD 这些公司优化一下性能。&lt;/p&gt;
+&lt;p&gt;模型跑得更顺畅，大家双赢。&lt;/p&gt;
+&lt;p&gt;但 DeepSeek 这次没按套路出牌。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;给华为看了，没给英伟达。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;给中国芯片厂商开了绿灯。&lt;/p&gt;
+&lt;p&gt;美国两大 GPU 巨头，反而被关在门外。&lt;/p&gt;
+&lt;h2 id=&#34;为什么这么做&#34;&gt;为什么这么做？&lt;/h2&gt;
+&lt;p&gt;路透社的报道说了几件事。&lt;/p&gt;
+&lt;p&gt;DeepSeek V4 训练用的是 Nvidia Blackwell。&lt;/p&gt;
+&lt;p&gt;这芯片在美国出口管制名单上。&lt;/p&gt;
+&lt;p&gt;按理说中国买不到。&lt;/p&gt;
+&lt;p&gt;但 DeepSeek 用上了。&lt;/p&gt;
+&lt;p&gt;美国官方已经确认了这事。&lt;/p&gt;
+&lt;p&gt;现在 DeepSeek 又把英伟达晾在一边。&lt;/p&gt;
+&lt;p&gt;这操作，多少有点意思。&lt;/p&gt;
+&lt;h2 id=&#34;技术上有什么期待&#34;&gt;技术上有什么期待？&lt;/h2&gt;
+&lt;p&gt;V4 Lite 之前泄露过。&lt;/p&gt;
+&lt;p&gt;代码生成能力很强。&lt;/p&gt;
+&lt;p&gt;54 行代码画出 Xbox 手柄。&lt;/p&gt;
+&lt;p&gt;这次正式版应该更强。&lt;/p&gt;
+&lt;p&gt;主打的就是编程能力。&lt;/p&gt;
+&lt;h2 id=&#34;对开发者意味着什么&#34;&gt;对开发者意味着什么？&lt;/h2&gt;
+&lt;p&gt;如果你是写代码的。&lt;/p&gt;
+&lt;p&gt;DeepSeek V4 值得关注。&lt;/p&gt;
+&lt;p&gt;开源、免费、代码能力强。&lt;/p&gt;
+&lt;p&gt;用来辅助开发，性价比很高。&lt;/p&gt;
+&lt;h2 id=&#34;这事的信号&#34;&gt;这事的信号&lt;/h2&gt;
+&lt;p&gt;DeepSeek 这波操作传递了一个信号。&lt;/p&gt;
+&lt;p&gt;中国 AI 公司开始有自己的节奏了。&lt;/p&gt;
+&lt;p&gt;不再完全依赖美国技术生态。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>DeepSeek V4 Lite 泄露：54 行代码生成 Xbox 手柄，SVG 生成能力震惊社区</title>
       <link>https://claudeai.best/posts/hunter-2026022501/</link>

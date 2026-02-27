@@ -2,22 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://claudeai.best/</loc>
+    <lastmod>2026-02-27T23:10:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/categories/ai%E6%A8%A1%E5%9E%8B/</loc>
+    <lastmod>2026-02-27T23:10:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/categories/</loc>
+    <lastmod>2026-02-27T23:10:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/deepseek/</loc>
+    <lastmod>2026-02-27T23:10:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/posts/hunter-2026022723/</loc>
+    <lastmod>2026-02-27T23:10:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/posts/</loc>
+    <lastmod>2026-02-27T23:10:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/</loc>
+    <lastmod>2026-02-27T23:10:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/v4/</loc>
+    <lastmod>2026-02-27T23:10:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/%E5%8D%8E%E4%B8%BA/</loc>
+    <lastmod>2026-02-27T23:10:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://claudeai.best/tags/%E8%8B%B1%E4%BC%9F%E8%BE%BE/</loc>
+    <lastmod>2026-02-27T23:10:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
     <loc>https://claudeai.best/categories/ai/</loc>
     <lastmod>2026-02-27T22:06:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
     <loc>https://claudeai.best/tags/ai/</loc>
-    <lastmod>2026-02-27T22:06:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>https://claudeai.best/</loc>
-    <lastmod>2026-02-27T22:06:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>https://claudeai.best/categories/</loc>
     <lastmod>2026-02-27T22:06:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -37,17 +77,7 @@
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
-    <loc>https://claudeai.best/posts/</loc>
-    <lastmod>2026-02-27T22:06:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url><url>
     <loc>https://claudeai.best/tags/robot-phone/</loc>
-    <lastmod>2026-02-27T22:06:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>https://claudeai.best/tags/</loc>
     <lastmod>2026-02-27T22:06:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -172,11 +202,6 @@
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
-    <loc>https://claudeai.best/tags/%E8%8B%B1%E4%BC%9F%E8%BE%BE/</loc>
-    <lastmod>2026-02-27T14:10:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url><url>
     <loc>https://claudeai.best/posts/hunter-2026022714/</loc>
     <lastmod>2026-02-27T14:10:00+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -184,11 +209,6 @@
   </url><url>
     <loc>https://claudeai.best/tags/%E4%B8%AD%E5%9B%BD%E5%B8%82%E5%9C%BA/</loc>
     <lastmod>2026-02-27T14:10:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>https://claudeai.best/tags/deepseek/</loc>
-    <lastmod>2026-02-27T12:04:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
@@ -1429,11 +1449,6 @@
   </url><url>
     <loc>https://claudeai.best/posts/hunter-2026022502/</loc>
     <lastmod>2026-02-25T02:05:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>https://claudeai.best/categories/ai%E6%A8%A1%E5%9E%8B/</loc>
-    <lastmod>2026-02-25T01:05:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
