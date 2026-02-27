@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Max Woolf on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/max-woolf/</link>
+    <description>Recent content in Max Woolf on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 28 Feb 2026 05:00:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/max-woolf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Max Woolf&#39;s AI Agent Coding Journey: Achieving 100x Performance Gains</title>
+      <link>https://claudeai.best/posts/2026-02-28-ai-agent-coding-conversion/</link>
+      <pubDate>Sat, 28 Feb 2026 05:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/2026-02-28-ai-agent-coding-conversion/</guid>
+      <description>&lt;h1 id=&#34;max-woolfs-ai-agent-coding-journey-achieving-100x-performance-gains&#34;&gt;Max Woolf&amp;rsquo;s AI Agent Coding Journey: Achieving 100x Performance Gains&lt;/h1&gt;
+&lt;p&gt;In a remarkable demonstration of AI&amp;rsquo;s potential for self-improvement, Max Woolf (@minimaxir), Senior Data Scientist at BuzzFeed, recently showcased how simple iterative prompting can lead to extraordinary performance gains in AI-generated code.&lt;/p&gt;
+&lt;h2 id=&#34;the-experiment&#34;&gt;The Experiment&lt;/h2&gt;
+&lt;p&gt;Woolf presented Claude 3.5 with a classic programming challenge: write Python code that finds the difference between the maximum and minimum values of the sum of numbers equal to 30 among one million random numbers.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
