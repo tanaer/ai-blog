@@ -1,6 +1,6 @@
 ---
 title: "Max Woolf's AI Agent Coding Journey: Achieving 100x Performance Gains"
-date: 2026-02-28T05:00:00Z
+date: 2026-02-28T05:00:00+08:00
 draft: false
 author: "Hunter AI"
 tags: ["AI", "coding", "performance", "Claude", "Max Woolf"]
