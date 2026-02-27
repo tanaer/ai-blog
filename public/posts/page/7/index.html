@@ -176,6 +176,78 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&amp;h=630&amp;fit=crop" alt="BinaryAudit 二进制审计">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">BinaryAudit:他们往 40MB 二进制里藏后门,让 AI 去找
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Quesma 做了个有意思的实验:和逆向工程专家合作,把后门藏在 40MB 的二进制文件里,然后让 AI &#43; Ghidra 去找.
+背景是最近供应链攻击太多了–Shai Hulud 2.0 搞了几千家组织,Notepad&#43;&#43; 被国家赞助者替换了二进制,波兰火车被查出可疑代码.
+问题是:我们用的闭源软件,只有二进制,怎么知道有没有后门?
+他们的做法:
+用 VLM 和 Ghidra MCP 分析二进制 让 AI 做逆向工程:机器码 → 汇编 → 伪 C 代码 输出有没有后门,在哪里 结果:最好的模型 Claude Opus 4.6 在中小二进制里找到相对明显的后门,成功率 49%.
+更糟的是,很多模型有高误报率–干净文件也报有毒.
+结论:AI 能做一点逆向工程,但还远不到能放心的程度.
+基准测试开源:github.com/quesmaOrg/BinaryAudit
+如果你担心供应链安全,可以看看他们怎么测的.
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-22 23:07:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>42 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to BinaryAudit:他们往 40MB 二进制里藏后门,让 AI 去找" href="https://claudeai.best/posts/hunter-2026022223/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&amp;h=630&amp;fit=crop" alt="Paragent 并行 Agent">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Paragent:睡觉的时候让 10 个 AI 帮你写代码
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>以前 context-switch 一天三个功能.现在午休前写完三个描述,下午看 PR 就行.
+Paragent 的思路挺简单:你用英语描述要什么,它开一个新分支,规划,写代码,跑测试,最后给你开个 PR.
+重点是–可以并行跑 10 个.
+每个 Agent 独立分支,不会打架.写完的 PR 就是标准 GitHub 流程,该 review review,该 merge merge.
+几个我觉得不错的点:
+BYO API key:用你自己的 OpenAI/Anthropic/Gemini key,它不存代码也不转卖 token 不碰 main:GitHub App 只有读和开 PR 的权限,永远不直接改主分支 不限运行次数:只收席位费,API 费用你自己控制 免费版 2 个并发,Pro 版 $14/月 10 个并发,Agency 版 $99/月不限.
+https://paragent.app/
+如果你也有一堆 backlog 没人干,可以试试.
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-22 22:07:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>50 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Paragent:睡觉的时候让 10 个 AI 帮你写代码" href="https://claudeai.best/posts/hunter-2026022222/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&amp;h=630&amp;fit=crop" alt="编译器 vs AI">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Musk 说让 AI 直接生成二进制,这个工程师写了一篇反驳
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Elon Musk 在 xAI 内部会上说,2026 年底「你根本不需要写代码,AI 直接生成二进制」.
+有工程师写了篇反驳,标题叫《Skip the Code, Ship the Binary 是个 Category Error》.
+核心论点:编译器和 LLM 是两回事.
+编译器是语义保持的转换器:你给它一段有规范的代码,它的输出可以对照规范检查.LLM 是推理引擎,生成的是「看起来对」的 token 序列,没有正确性保证.
+Musk 说 AI 生成的二进制比编译器更高效.问题在于:你怎么知道它是对的?
+编译器做的那些事:词法分析,语法树,类型检查,死代码消除,循环展开,向量化,寄存器分配……这些不是「多余的中间层」,而是你调试的唯一救命稻草.
+文章举了 Grace Hopper 的例子.1952 年她做了第一个编译器,当时人们也说「计算机只能做算术,不能写程序」.她没理他们,后来有了 COBOL.
+现在有人想把这个过程反过来.
+https://engrlog.substack.com/p/why-skip-the-code-ship-the-binary
+有点意思,值得读一下.
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-22 21:07:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>37 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Musk 说让 AI 直接生成二进制,这个工程师写了一篇反驳" href="https://claudeai.best/posts/hunter-2026022221/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&amp;h=630&amp;fit=crop" alt="Persona AI 决策引擎">
 </figure>
   <header class="entry-header">
@@ -321,69 +393,6 @@ Residue 做的事:
   </div>
   <footer class="entry-footer"><span title='2026-02-22 10:06:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>415 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Residue:AI 对话和 Git 提交连起来了" href="https://claudeai.best/posts/hunter-2026022210/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1555949963-aae5ca8ef1e9?w=1024&amp;q=80" alt="emacs-gravity Claude Code UI">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">emacs-gravity:给 Claude Code 装个 magit 风格的驾驶舱
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>发现一个有意思的Emacs 工具
-Claude Code 的终端 UI 是个信息瀑布 – 滚动文本,工具调用混在一起,Agent 输出和 thinking 交织.
-emacs-gravity 把这一切变成可导航的结构化视图.
-谁能用?
-住在 Emacs 里的开发者 用 Claude Code 但觉得 TUI 太乱 想同时管理多个 Claude 会话 怎么用?
-# 克隆 &#43; 构建 git clone https://github.com/gdanov/emacs-gravity.git cd emacs-gravity/emacs-bridge &amp;&amp; npm install &amp;&amp; npm run build # 编辑 ~/.claude/plugins/marketplace.json 然后在 Emacs 里 M-x claude-gravity-mode.
-能干啥?
-magit 风格会话视图 TAB 展开/折叠,RET 访问 每个 turn 分组,工具调用按响应周期组织 多会话收件箱 所有待审核的 Plan,权限请求集中在 Inbox 按项目分组,状态一目了然 Agent 树形追踪 Subagent 渲染成嵌套树 看到每个 Agent 的工具调用,thinking,结果 Plan 审核 &#43; 注释 专用 buffer 审核 Plan 按 c 加波浪线注释,编辑文本 批准发干净版本,带注释自动转为结构化拒绝 内联 diff 文件编辑直接显示 unified diff 不用切 buffer 优势在哪?
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 09:10:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>109 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to emacs-gravity:给 Claude Code 装个 magit 风格的驾驶舱" href="https://claudeai.best/posts/hunter-2026022209/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&amp;h=630&amp;fit=crop" alt="Emacs Gravity Claude Code UI">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Emacs Gravity:magit 风格的 Claude Code UI,不装 Electron
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>发现一个有意思的工具 Emacs Gravity 给 Claude Code 做了个 magit 风格的 UI.不是滚动终端,而是结构化的会话视图 – 工具调用,Agent 树,文件变更都能折叠展开.
-谁能用?解决什么问题? 场景:你住在 Emacs 里,用 Claude Code 但不喜欢它的终端 UI – 滚动太快,工具调用和思考混在一起.
-Emacs Gravity 的做法:
-Turn-based 视图:每个用户 prompt 是一个 turn,工具按响应周期分组 Agent 树:子 Agent 渲染成嵌套树,能看到它们的工具调用和结果 内联 diff:文件编辑直接在会话 buffer 里显示 unified diff Plan Review:Claude 提计划时在独立 buffer 审查,加注释,编辑,一键批准或拒绝 多会话管理:按项目分组,像切 buffer 一样切换会话 Capabilities 浏览器:plugins,skills,MCP servers 都在树里可导航 对比 Cursor/AntiGravity:
-UI, Cursor=VS Code 侧边栏, emacs-gravity=magit-section 终端原生 Agent 可见性, Cursor=最小, emacs-gravity=完整嵌套树 多会话, Cursor=无, emacs-gravity=按项目分组 Plan 审查, Cursor=无, emacs-gravity=View &#43; 注释 &#43; diff 开源, Cursor=否, emacs-gravity=是
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 08:06:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>119 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Emacs Gravity:magit 风格的 Claude Code UI,不装 Electron" href="https://claudeai.best/posts/hunter-2026022208/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&amp;h=630&amp;fit=crop" alt="Process Compose MCP 配图">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Process Compose 加了 MCP:不用写 SDK,命令行直接变 AI 工具
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>发现一个有意思的更新 Process Compose v1.94.0 加了嵌入式 MCP server.以前要给 AI 暴露工具得写 Python/TypeScript SDK,现在在 YAML 里配一下就行.
-谁能用?解决什么问题? 场景:想让 AI 帮你重启服务,查日志,操作 Kubernetes,但不想写 API wrapper.
-Process Compose 的做法:在 process-compose.yaml 里声明命令,自动变成 MCP tool.
-mcp_server: host: localhost port: 3000 transport: sse processes: restart-service: command: &#34;docker-compose restart @{service_name}&#34; mcp: type: tool arguments: - name: service_name type: string 几个实用例子:
-查服务健康:curl localhost:{port}/health 读容器日志:docker logs {container} --tail {lines} 扩容 K8s:kubectl scale deployment {service} --replicas={replicas} 跑老系统:java -jar legacy-reporter.jar --user {user} 20 年的老系统只有 CLI 没有 API?现在 AI 也能调了.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 07:05:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>114 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Process Compose 加了 MCP:不用写 SDK,命令行直接变 AI 工具" href="https://claudeai.best/posts/hunter-2026022207/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

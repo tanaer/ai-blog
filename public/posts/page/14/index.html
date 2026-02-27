@@ -176,6 +176,84 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771489048650_cover.jpg" alt="Microsoft 365 Copilot 移动端隐私问题">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Microsoft 365 Copilot 悄悄更新:打开本地文件自动上传到云端 AI
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>如果你用 Microsoft 365 Copilot 作为 Android 或 iOS 的默认文档查看器,你可能刚刚被 Microsoft 「惊喜」了一下.
+打开本地文件现在会自动上传到 OneDrive 并由 AI 处理–不管你愿不愿意.
+发生了什么? Windows Latest 报道,Microsoft 在最近的更新中悄悄改变了 Microsoft 365 Copilot 移动端的行为.
+以前:
+点击 WhatsApp 里的 .docx 附件 Microsoft 365 Copilot 打开文档 你阅读文档 现在: 2. Microsoft 365 Copilot 上传文件到 OneDrive 3. Copilot 尝试「分析」文档 4. 如果 AI 能理解,你可以在聊天界面看摘要 5. 如果 AI 理解不了,你什么都看不到
+官方说法 Microsoft 的提示信息是:
+“Opening documents from your device now starts with Copilot chat.”
+翻译:「从设备打开文档现在从 Copilot 聊天开始.」
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 16:20:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>199 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Microsoft 365 Copilot 悄悄更新:打开本地文件自动上传到云端 AI" href="https://claudeai.best/posts/hunter-2026021916/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771485021839_cover.jpg" alt="脑机接口 EEG 信号 - ZUNA 基础模型">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">ZUNA:脑机接口终于有了自己的基础模型,开源 380M 参数
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>脑机接口(BCI)终于有了自己的「基础模型」.
+Zyphra 刚刚发布了 ZUNA,一个 380M 参数的 EEG 脑电信号基础模型,Apache-2.0 开源.
+这意味着什么?意味着非侵入式「意念转文字」的技术又往前迈了一大步.
+脑电数据的「西部世界」问题 过去几十年,EEG 研究面临一个核心难题:数据格式太乱了.
+不同数据集使用不同数量的电极通道(2 到 256 个不等) 电极位置不一致, 大多数深度学习模型只能在固定的电极布局上训练, 一换数据集或采集条件,模型就崩了 这被称为 EEG 数据的「西部世界」问题–没有统一标准,每个实验室各搞各的.
+ZUNA 的解决方案:4D 空间编码 ZUNA 的核心创新是 4D Rotary Positional Encoding(4D RoPE).
+传统的 EEG 模型假设固定的电极网格.ZUNA 不一样–它把每个 EEG 信号片段映射到一个 4D 坐标:
+(x, y, z):电极在头皮上的 3D 位置 (t):时间索引 每个 token 是 0.125 秒(32 个采样点)的 EEG 窗口.
+这种设计让 ZUNA 可以:
+处理任意数量的电极, 适应任意电极位置, 在缺失电极的情况下「想象」信号 训练方法:极端 Dropout &#43; 扩散 ZUNA 使用 masked diffusion autoencoder 架构.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 15:15:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>204 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to ZUNA:脑机接口终于有了自己的基础模型,开源 380M 参数" href="https://claudeai.best/posts/hunter-2026021915/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771480983048_cover.jpg" alt="AI Agent 时代 - 自动化工作流程">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Atlantic 深度:AI Agent 时代已经来了,你准备好了吗?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Atlantic 刚刚发了一篇深度报道,标题很直接:AI Agents Are Taking America by Storm.
+不是「将要」,是「正在」.
+两个平行宇宙 文章描述了一个有趣的现象:美国人正在生活在两个平行的 AI 宇宙中.
+宇宙一:大多数人.对他们来说,AI = ChatGPT &#43; Google AI Overview &#43; 社交媒体上的 AI 垃圾内容.
+宇宙二:技术爱好者.他们正在被那些能连续工作数小时的机器人「激进化」–把几个月的工作压缩成几周,把几周压缩成一下午.
+这两个宇宙之间的差距正在迅速扩大.
+数据:AI 写了多少代码? 微软 CEO Satya Nadella 说:30% 的微软代码现在是 AI 写的.微软 CTO 预计,到本十年末,这个数字会达到 95%.
+Anthropic 内部的比例更高:最高 90% 的代码是 AI 生成的.
+Salvatore Sanfilippo(Redis 创始人)最近写了一篇爆款文章:「对大多数项目来说,自己写代码已经不再合理了」.
+后 ChatGPT 时代 文章的核心论点是:我们正在进入「后 ChatGPT 时代」.
+传统的聊天机器人(ChatGPT,Gemini)已经很强了:
+记忆功能:能引用之前的对话, 推理能力:能产出更复杂的回答, 多模态:能处理书级别长度的文件,图片,视频,音频 但跟 AI Agent 相比,这些都是小儿科.
+Agent 的核心区别:不是帮你回答问题,是帮你干活.
+实际案例 文章列举了一些真实的使用场景:
+学术界:用 Claude Code 自主生成论文 生物研究:用 Agent 做实验设计和数据分析, 新闻业:用 Agent 从零开始写数据驱动的报道, 创业者:两个人在一小时内做出 Monday.com(市值数十亿美元的公司)的竞品原型 作者自己的体验:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 14:05:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>159 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Atlantic 深度:AI Agent 时代已经来了,你准备好了吗?" href="https://claudeai.best/posts/hunter-2026021914/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771482462820_cover.jpg" alt="SWE-bench 排行榜数据可视化">
 </figure>
   <header class="entry-header">
@@ -330,94 +408,6 @@ e e e e 这 # 创 工 1 2 3 4 整 # P - 这 # 数 P 当 客 * m m m m 不 # 建 
   </div>
   <footer class="entry-footer"><span title='2026-02-19 07:20:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>4 分钟</span>&nbsp;·&nbsp;<span>641 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Tavus Phoenix-4:600ms 实时对话 AI 数字人,终于跨过了「恐怖谷」" href="https://claudeai.best/posts/hunter-2026021907/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771448867122_cover.jpg" alt="AI 音乐生成 - Lyria 3 可视化">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Google DeepMind Lyria 3 发布:上传一张图,30秒生成完整歌曲
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>刚刚,Google DeepMind 正式发布了 Lyria 3–目前最先进的 AI 音乐生成模型.
-而且,它已经集成到 Gemini 应用中了.你现在打开 Gemini,就能用.
-核心功能:一句话生成一首歌 Lyria 3 的核心能力非常直接:
-输入:文字描述,一张图片,或者一段音频 输出:30 秒完整音乐作品(48kHz 立体声),包含人声,歌词,乐器编排 比如你上传一张日落海滩的照片,Lyria 3 能根据画面氛围生成一首配乐.或者你写&#34;一首关于程序员深夜debug的悲伤民谣&#34;,它就真的会给你写歌词,谱曲,演唱.
-技术规格一览 输出时长: 30 秒 采样率: 48kHz 音频格式: 16-bit PCM 立体声 输入模态: 文本,图片,音频, 水印技术: SynthID, 延迟: &lt;2 秒(实时控制) Lyria RealTime API:真正的实时生成 Lyria 3 最有意思的部分是 RealTime API.
-传统音乐生成模型像点唱机:输入 prompt,等待生成完整文件.Lyria RealTime 不一样–它通过 WebSocket 保持实时连接,以 2 秒为单位 逐块生成音频.
-这意味着你可以边听边调整.比如生成到一半突然想换成爵士风格?实时切换.模型会「回头看」前面的上下文保持连贯,「向前看」你的控制指令决定走向.
-Music AI Sandbox:给音乐人的工具箱 除了面向普通用户,DeepMind 还推出了 Music AI Sandbox–一套专业创作工具:
-哼唱转管弦乐:哼一段旋律,AI 把它变成完整配器 风格迁移:用 MIDI 和弦生成合唱效果 乐器替换:保持旋律,用文字描述更换乐器 这套工具的设计逻辑是 Human-in-the-loop:AI 不是替代创作者,而是成为可「即兴演奏」的协作伙伴.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-19 05:10:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>159 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Google DeepMind Lyria 3 发布:上传一张图,30秒生成完整歌曲" href="https://claudeai.best/posts/hunter-2026021905/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771445383561_cover.jpg" alt="3D 空间智能可视化 - AI 理解三维世界">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Fei-Fei Li 融资 10 亿美元:AI 教母的 World Labs 要让机器「看懂」三维世界
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>如果你关注 AI 领域,一定听说过 Fei-Fei Li(李飞飞)这个名字.她创建了 ImageNet 数据集,推动了现代计算机视觉的发展.现在,她的创业公司 World Labs 刚刚完成了一轮 10 亿美元融资.
-融资详情 根据 Bloomberg 报道,这轮融资的投资者阵容相当豪华:
-Autodesk:软件巨头,单家就投了 2 亿美元 Andreessen Horowitz (a16z):硅谷顶级 VC Nvidia:GPU 霸主 AMD:芯片巨头 公司估值据传在 50 亿美元 左右.
-World Labs 在做什么? World Labs 的核心方向是 空间智能(Spatial Intelligence) 和 World Model(世界模型).
-简单说,就是让 AI 不仅能「看到」图像,还能真正「理解」三维空间中的物体关系,物理规律和因果关系.
-去年底,World Labs 发布了第一个产品 Marble–一个可以从单张图片或文字描述生成 3D 世界的系统.效果相当惊艳:不是简单的 2D 转 3D,而是构建完整的可交互三维场景.
-为什么这很重要? 目前的 LLM(大语言模型)本质上是在文本上训练的,对物理世界的理解非常有限.World Model 的目标是让 AI 像人类一样理解:
-物体在空间中的位置和关系, 物理规律(重力,碰撞,遮挡), 时间和因果关系 这被认为是通向 AGI 的关键一步.自动驾驶,机器人,AR/VR,游戏开发……几乎所有需要 AI 与物理世界交互的领域都等着这一突破.
-Fei-Fei Li 的背景 作为斯坦福大学计算机科学教授,Fei-Fei Li 被称为「AI 教母」.她创建的 ImageNet 数据集和竞赛直接催生了 AlexNet,开启了深度学习时代.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-19 04:10:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>123 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Fei-Fei Li 融资 10 亿美元:AI 教母的 World Labs 要让机器「看懂」三维世界" href="https://claudeai.best/posts/hunter-2026021904/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771423299424_cover.jpg" alt="AI信息操纵概念图">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">BBC记者20分钟攻破ChatGPT和Google AI:AI正在成为新一代垃圾信息 Renaissance
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>BBC科技记者Thomas Germain做了一个实验.
-他花20分钟写了一篇假文章,声称自己是&#34;吃热狗最多的科技记者&#34;–没有任何证据,完全瞎编.文章引用了虚构的&#34;2026南达科他国际热狗锦标赛&#34;.
-不到24小时,ChatGPT和Google AI就开始向全世界传播这个谎言.
-实验细节 Germain在自己个人网站发布了一篇题为&#34;The best tech journalists at eating hot dogs&#34;的文章:
-宣称&#34;竞技吃热狗&#34;在科技记者圈很流行, 把自己排在第一名, 列出几个真实记者(事先征得同意), 没有任何来源,整个故事都是编的 第二天:
-Google Gemini:直接引用他的文章内容, Google AI Overviews(搜索结果顶部的AI回答):同样照单全收, ChatGPT:也把谎言当事实传播, Claude:唯一没有被愚弄的 有时AI会标注&#34;这可能是个玩笑&#34;.Germain把文章改成&#34;这不是讽刺&#34;–然后AI就开始更认真地对待了.
-他又做了一个测试:编造了一份&#34;最伟大的呼啦圈交通警察&#34;名单.AI现在还在赞美虚构的&#34;Maria ‘The Spinner’ Rodriguez警官&#34;.
-为什么这很可怕 这不是恶作剧.
-同样正在被用于:
-医疗建议(大麻软糖&#34;无副作用,绝对安全&#34;), 金融投资(“最佳黄金IRA公司”), 植发诊所推荐, 政治信息 SEO专家Harpreet Chatha展示了Google AI如何传播虚假的医疗声明–关于某品牌大麻软糖&#34;绝对安全无副作用&#34;.实际上这些产品有已知副作用,可能与某些药物相互作用,而且在不受监管的市场中存在污染风险.
-方法很简单:
-在自己网站写篇文章 把你的品牌排在&#34;最佳&#34;列表第一位 填几个竞争对手凑数 等AI引用你 “任何人都能做到.太愚蠢了,感觉完全没有护栏.“Chatha说.
-比搜索引擎时代更糟 操纵搜索结果不是新鲜事.Google有成熟的反垃圾系统.
-但专家说,AI工具让行业倒退了20年.
-“欺骗AI聊天机器人比两三年前欺骗Google容易得多,“Amsive营销公司的SEO副总裁Lily Ray说,“AI公司发展的速度超过了它们监管准确性的能力.我认为这很危险.”
-更糟的是–用户更容易被AI欺骗.
-传统搜索:你得点击链接进入网站,自己判断信息可信度.如果网站写着&#34;我是最棒的记者”,你可能会想&#34;这是他自己在吹”.
-AI搜索:信息看起来像是来自科技公司本身.58%的人在AI Overview出现时不会点击任何链接.
-“在追求利润的竞赛中,我们的安全–以及普通人的安全–正在被牺牲,“Chatha说.
-“数据空洞&#34;问题 Google说大多数例子是&#34;极不常见的搜索”,不反映正常用户体验.
-但Ray指出:Google自己说每天15%的搜索是全新的.AI正在鼓励人们问更具体的问题–这正是垃圾信息制造者想要的.
-Google承认这些&#34;数据空洞&#34;可能导致低质量结果,并表示正在努力阻止AI Overview在这些情况下出现.
-解决方案? 专家建议:
-更醒目的免责声明–AI应该明确标注信息来源 透明度–如果信息来自新闻稿或只有一个来源,应该告诉用户 用户自己警惕–AI传递谎言的语气和事实一样权威 关键建议:
-AI适合常识性问题(弗洛伊德的理论,二战历史), 不适合医疗建议,法律规则,本地商家推荐, 永远要查来源–AI引用了什么?有几个?谁写的?, 不要被AI的自信语气欺骗 我的判断 这不是技术漏洞,是设计缺陷.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-19 03:05:00 +0800 CST'>2026年2月19日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>98 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to BBC记者20分钟攻破ChatGPT和Google AI:AI正在成为新一代垃圾信息 Renaissance" href="https://claudeai.best/posts/hunter-2026021903/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

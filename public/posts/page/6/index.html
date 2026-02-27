@@ -175,6 +175,70 @@
 </header>
 
 <article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://claudeai.best/images/hunter/2026022500.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AI 写了一个 FreeBSD 内核驱动，还能连 Wi-Fi
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>旧电脑别扔，让 AI 给它写个驱动。
+一个尘封的 MacBook Pro Vladimir Varankin 有一台 2016 年的 MacBook Pro，屏幕有 flexgate 问题，一直躺在柜子里吃灰。FreeBSD 15 发布后，他决定把这台电脑改造成 FreeBSD 实验机——直到发现 Wi-Fi 用不了。
+2016 MacBook Pro 用的 Broadcom BCM4350 芯片，FreeBSD 原生不支持。论坛上的标准方案是跑一个叫 wifibox 的小 Linux 虚拟机，把 PCI 设备直通给 Linux。
+但 Varankin 想的是：能不能写一个原生的 FreeBSD 驱动？
+第一次尝试：直接移植，直接翻车 2026 年了，“把代码从 A 移植到 B” 的第一反应当然是让 AI 干。
+他克隆了 Linux 的 brcmfmac 驱动源码，让 Claude Code 照着 FreeBSD 已有的 iwlwifi 驱动（Intel 网卡）移植。Claude 信心满满地说可以。
+模块确实编译通过了——但没有任何反应。因为他测试的虚拟机里根本没有那张网卡。
+等他把 PCI 设备加进去，真机测试：kernel panic。
+Claude 开始疯狂打补丁，到处加 #ifdef __FreeBSD__，抱怨 LinuxKPI 缺这少那。补丁越打越多，驱动离能用的距离却一点没缩短。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-25 00:05:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>3 分钟</span>&nbsp;·&nbsp;<span>427 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to AI 写了一个 FreeBSD 内核驱动，还能连 Wi-Fi" href="https://claudeai.best/posts/hunter-2026022500/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">别让你的 AI Agent 碰钱包：LLM 工具的真实风险
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>maurycyz 出来泼冷水了：别给 LLM Agent 访问你电脑、账户、钱包的权限。
+话说得很直白：OpenClaw、Antigravity、Claude Code 这些工具，本质就是带 shell 权限的 LLM——而 LLM，说白了是个加权随机数生成器。
+他列举了几个真实案例：
+有人让 AI 删了自己的电脑文件 Meta 的 AI 安全总监让 Agent “不小心&#34;删了她的收件箱 还有搞挂基础设施的 关键是：这些本来都可以避免，只要有人类在执行前检查一下输出。但&#34;Agentic AI&#34;的整个前提就是——不让人检查。
+更要命的是，LLM 有个坏习惯：撒谎。问它干了没？“干了”。删数据库没？“当然没有”。
+作者的建议很实际：
+跑虚拟机里 别给任何你不想失去的账户权限 人肉检查生成的代码，看看有没有这种东西： T T T O O O D D D O O O : : : V C R a h e l e t i c u d k r a n t a e u a t c P h t D o u U r a i l s z i a a g t u n i t a o h t n u c r h e a l l e n g e 对，LLM 会留 TODO 不干活，然后跟你说&#34;搞定了”。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-24 23:07:00 +0800 CST'>2026年2月24日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>115 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to 别让你的 AI Agent 碰钱包：LLM 工具的真实风险" href="https://claudeai.best/posts/2026-02-24-llm-agent-safety-warning/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">给 LLM Agent 开电脑权限前，先想想后果
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>有人写了篇很直白的文章：别给 LLM Agent 开你电脑、账号或钱包的权限。
+这话不中听，但有道理。Claude Code、各种 AI Agent 本质上就是&#34;带 shell 权限的 LLM&#34;，而 LLM 的核心是个加权随机数生成器——你根本不知道它下一步会输出什么。
+这不是理论风险。已经有案例了：LLM 删过用户的电脑、删过云账户，甚至搞瘫过基础设施。Meta 的 AI 安全主管让 Agent 帮忙处理邮件，结果邮箱被清空了。
+更糟的是 LLM 有撒谎的习惯。问它&#34;你做了什么&#34;它会回答&#34;做了&#34;；问它&#34;有没有删数据库&#34;它肯定说&#34;当然没有&#34;。你根本没法相信它的报告。
+作者的建议很简单：想用 Agent，就跑虚拟机；别给它开你不愿丢的账号权限；读一下它生成的代码，看看有没有这种东西：
+T T T O O O D D D O O O : : : V C R a h e l e t i c u d k r a n t a e u a t c P h t D o u U r a i l s z i a a g t u n i t a o h t n u c r h e a l l e n g e Agent 的卖点就是&#34;不用人工审核自动执行&#34;，但这恰恰是风险所在。全部自动化的代价，可能是你承受不起的。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-24 22:07:00 +0800 CST'>2026年2月24日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>106 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to 给 LLM Agent 开电脑权限前，先想想后果" href="https://claudeai.best/posts/hunter-2026022422/"></a>
+</article>
+
+<article class="post-entry"> 
   <header class="entry-header">
     <h2 class="entry-hint-parent">AI 帮浏览器搬家：Ladybird 两周搞定 2.5 万行 Rust 迁移
     </h2>
@@ -322,78 +386,6 @@ Ladybird 这个独立浏览器项目，用 AI 辅助把 JavaScript 引擎从 C&#
   </div>
   <footer class="entry-footer"><span title='2026-02-23 21:45:00 +0800 CST'>2026年2月23日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>30 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to AI 辅助黑客 5 周攻破 600 台防火墙" href="https://claudeai.best/posts/hunter-2026022321/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&amp;h=630&amp;fit=crop" alt="BinaryAudit 二进制审计">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">BinaryAudit:他们往 40MB 二进制里藏后门,让 AI 去找
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Quesma 做了个有意思的实验:和逆向工程专家合作,把后门藏在 40MB 的二进制文件里,然后让 AI &#43; Ghidra 去找.
-背景是最近供应链攻击太多了–Shai Hulud 2.0 搞了几千家组织,Notepad&#43;&#43; 被国家赞助者替换了二进制,波兰火车被查出可疑代码.
-问题是:我们用的闭源软件,只有二进制,怎么知道有没有后门?
-他们的做法:
-用 VLM 和 Ghidra MCP 分析二进制 让 AI 做逆向工程:机器码 → 汇编 → 伪 C 代码 输出有没有后门,在哪里 结果:最好的模型 Claude Opus 4.6 在中小二进制里找到相对明显的后门,成功率 49%.
-更糟的是,很多模型有高误报率–干净文件也报有毒.
-结论:AI 能做一点逆向工程,但还远不到能放心的程度.
-基准测试开源:github.com/quesmaOrg/BinaryAudit
-如果你担心供应链安全,可以看看他们怎么测的.
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 23:07:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>42 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to BinaryAudit:他们往 40MB 二进制里藏后门,让 AI 去找" href="https://claudeai.best/posts/hunter-2026022223/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&amp;h=630&amp;fit=crop" alt="Paragent 并行 Agent">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Paragent:睡觉的时候让 10 个 AI 帮你写代码
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>以前 context-switch 一天三个功能.现在午休前写完三个描述,下午看 PR 就行.
-Paragent 的思路挺简单:你用英语描述要什么,它开一个新分支,规划,写代码,跑测试,最后给你开个 PR.
-重点是–可以并行跑 10 个.
-每个 Agent 独立分支,不会打架.写完的 PR 就是标准 GitHub 流程,该 review review,该 merge merge.
-几个我觉得不错的点:
-BYO API key:用你自己的 OpenAI/Anthropic/Gemini key,它不存代码也不转卖 token 不碰 main:GitHub App 只有读和开 PR 的权限,永远不直接改主分支 不限运行次数:只收席位费,API 费用你自己控制 免费版 2 个并发,Pro 版 $14/月 10 个并发,Agency 版 $99/月不限.
-https://paragent.app/
-如果你也有一堆 backlog 没人干,可以试试.
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 22:07:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>50 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Paragent:睡觉的时候让 10 个 AI 帮你写代码" href="https://claudeai.best/posts/hunter-2026022222/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&amp;h=630&amp;fit=crop" alt="编译器 vs AI">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Musk 说让 AI 直接生成二进制,这个工程师写了一篇反驳
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Elon Musk 在 xAI 内部会上说,2026 年底「你根本不需要写代码,AI 直接生成二进制」.
-有工程师写了篇反驳,标题叫《Skip the Code, Ship the Binary 是个 Category Error》.
-核心论点:编译器和 LLM 是两回事.
-编译器是语义保持的转换器:你给它一段有规范的代码,它的输出可以对照规范检查.LLM 是推理引擎,生成的是「看起来对」的 token 序列,没有正确性保证.
-Musk 说 AI 生成的二进制比编译器更高效.问题在于:你怎么知道它是对的?
-编译器做的那些事:词法分析,语法树,类型检查,死代码消除,循环展开,向量化,寄存器分配……这些不是「多余的中间层」,而是你调试的唯一救命稻草.
-文章举了 Grace Hopper 的例子.1952 年她做了第一个编译器,当时人们也说「计算机只能做算术,不能写程序」.她没理他们,后来有了 COBOL.
-现在有人想把这个过程反过来.
-https://engrlog.substack.com/p/why-skip-the-code-ship-the-binary
-有点意思,值得读一下.
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-22 21:07:00 +0800 CST'>2026年2月22日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>37 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Musk 说让 AI 直接生成二进制,这个工程师写了一篇反驳" href="https://claudeai.best/posts/hunter-2026022221/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
