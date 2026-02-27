@@ -1,113 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>OpenAI on AI 极客前沿</title>
-    <link>https://claudeai.best/tags/openai/</link>
-    <description>Recent content in OpenAI on AI 极客前沿</description>
-    <generator>Hugo -- 0.146.0</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Fri, 27 Feb 2026 15:10:00 +0800</lastBuildDate>
-    <atom:link href="https://claudeai.best/tags/openai/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>老板在耳机里盯着你：汉堡王用AI监控员工说&#39;请&#39;和&#39;谢谢&#39;</title>
-      <link>https://claudeai.best/posts/hunter-2026-02-27-burger-king-patty/</link>
-      <pubDate>Fri, 27 Feb 2026 15:10:00 +0800</pubDate>
-      <guid>https://claudeai.best/posts/hunter-2026-02-27-burger-king-patty/</guid>
-      <description>&lt;h2 id=&#34;汉堡王的新监工&#34;&gt;汉堡王的新&amp;quot;监工&amp;quot;&lt;/h2&gt;
-&lt;p&gt;汉堡王干了一件让人哭笑不得的事。&lt;/p&gt;
-&lt;p&gt;他们给500家门店的员工戴上智能耳机。
-耳机里住着个AI，叫Patty。&lt;/p&gt;
-&lt;p&gt;这AI不是来帮忙接单的。
-它是来盯着你说话的。&lt;/p&gt;
-&lt;h2 id=&#34;请和谢谢成了kpi&#34;&gt;&amp;ldquo;请&amp;quot;和&amp;quot;谢谢&amp;quot;成了KPI&lt;/h2&gt;
-&lt;p&gt;Patty会实时监听员工和顾客的对话。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>OpenAI on AI 极客前沿</title><link>https://claudeai.best/tags/openai/</link><description>Recent content in OpenAI on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Fri, 27 Feb 2026 15:10:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/openai/index.xml" rel="self" type="application/rss+xml"/><item><title>老板在耳机里盯着你：汉堡王用AI监控员工说'请'和'谢谢'</title><link>https://claudeai.best/posts/hunter-2026-02-27-burger-king-patty/</link><pubDate>Fri, 27 Feb 2026 15:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026-02-27-burger-king-patty/</guid><description>&lt;h2 id="汉堡王的新监工">汉堡王的新&amp;quot;监工&amp;quot;&lt;/h2>
+&lt;p>汉堡王干了一件让人哭笑不得的事。&lt;/p>
+&lt;p>他们给500家门店的员工戴上智能耳机。
+耳机里住着个AI，叫Patty。&lt;/p>
+&lt;p>这AI不是来帮忙接单的。
+它是来盯着你说话的。&lt;/p>
+&lt;h2 id="请和谢谢成了kpi">&amp;ldquo;请&amp;quot;和&amp;quot;谢谢&amp;quot;成了KPI&lt;/h2>
+&lt;p>Patty会实时监听员工和顾客的对话。
 它只关心一件事：
-你是不是说了&amp;quot;欢迎光临&amp;rdquo;、&amp;ldquo;请&amp;rdquo;、&amp;ldquo;谢谢&amp;rdquo;。&lt;/p&gt;
-&lt;p&gt;说了，OK。
-没说，记录在案。&lt;/p&gt;
-&lt;p&gt;这数据会汇总给店长。
-员工的服务态度从此有了&amp;quot;数据支撑&amp;quot;。&lt;/p&gt;
-&lt;h2 id=&#34;不止盯着礼貌&#34;&gt;不止盯着礼貌&lt;/h2&gt;
-&lt;p&gt;Patty还能干别的。&lt;/p&gt;
-&lt;p&gt;库存不够了，它会提醒。
+你是不是说了&amp;quot;欢迎光临&amp;rdquo;、&amp;ldquo;请&amp;rdquo;、&amp;ldquo;谢谢&amp;rdquo;。&lt;/p>
+&lt;p>说了，OK。
+没说，记录在案。&lt;/p>
+&lt;p>这数据会汇总给店长。
+员工的服务态度从此有了&amp;quot;数据支撑&amp;quot;。&lt;/p>
+&lt;h2 id="不止盯着礼貌">不止盯着礼貌&lt;/h2>
+&lt;p>Patty还能干别的。&lt;/p>
+&lt;p>库存不够了，它会提醒。
 某个菜品卖完了，它会自动把菜单上的选项灰掉。
-店里有啥异常，它会通知经理。&lt;/p&gt;
-&lt;p&gt;听起来挺智能。
-但员工的感觉呢？&lt;/p&gt;
-&lt;h2 id=&#34;打工人的噩梦&#34;&gt;打工人的噩梦&lt;/h2&gt;
-&lt;p&gt;想象一下。
+店里有啥异常，它会通知经理。&lt;/p>
+&lt;p>听起来挺智能。
+但员工的感觉呢？&lt;/p>
+&lt;h2 id="打工人的噩梦">打工人的噩梦&lt;/h2>
+&lt;p>想象一下。
 你正在后厨忙得团团转。
-耳边有个AI在评判你的每一句话。&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;你刚才没说谢谢。&amp;rdquo;
-&amp;ldquo;这句语气不够热情。&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;这不是科幻片。
-这是正在发生的事。&lt;/p&gt;
-&lt;p&gt;汉堡王计划2026年底在美国所有门店推广。
-7000多家店，几万名员工。&lt;/p&gt;
-&lt;h2 id=&#34;隐私在哪&#34;&gt;隐私在哪？&lt;/h2&gt;
-&lt;p&gt;员工能拒绝吗？
+耳边有个AI在评判你的每一句话。&lt;/p>
+&lt;p>&amp;ldquo;你刚才没说谢谢。&amp;rdquo;
+&amp;ldquo;这句语气不够热情。&amp;rdquo;&lt;/p>
+&lt;p>这不是科幻片。
+这是正在发生的事。&lt;/p>
+&lt;p>汉堡王计划2026年底在美国所有门店推广。
+7000多家店，几万名员工。&lt;/p>
+&lt;h2 id="隐私在哪">隐私在哪？&lt;/h2>
+&lt;p>员工能拒绝吗？
 不能。
-戴耳机是工作要求。&lt;/p&gt;
-&lt;p&gt;对话被录音了吗？
+戴耳机是工作要求。&lt;/p>
+&lt;p>对话被录音了吗？
 汉堡王说没有。
-只是&amp;quot;实时分析&amp;quot;。&lt;/p&gt;
-&lt;p&gt;你信吗？&lt;/p&gt;
-&lt;h2 id=&#34;ai进职场的信号&#34;&gt;AI进职场的信号&lt;/h2&gt;
-&lt;p&gt;Patty不是第一个。
-也不会是最后一个。&lt;/p&gt;
-&lt;p&gt;AI正在从&amp;quot;帮你干活&amp;quot;变成&amp;quot;盯着你干活&amp;quot;。
+只是&amp;quot;实时分析&amp;quot;。&lt;/p>
+&lt;p>你信吗？&lt;/p>
+&lt;h2 id="ai进职场的信号">AI进职场的信号&lt;/h2>
+&lt;p>Patty不是第一个。
+也不会是最后一个。&lt;/p>
+&lt;p>AI正在从&amp;quot;帮你干活&amp;quot;变成&amp;quot;盯着你干活&amp;quot;。
 效率提升了。
-人却更像机器了。&lt;/p&gt;
-&lt;p&gt;这就是2026年的职场。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Expectllm:用 Unix &#34;expect&#34; 风格与 LLM 对话,4 行代码搞定</title>
-      <link>https://claudeai.best/posts/hunter-2026022100/</link>
-      <pubDate>Sat, 21 Feb 2026 00:10:00 +0800</pubDate>
-      <guid>https://claudeai.best/posts/hunter-2026022100/</guid>
-      <description>Expectllm 开源库:用 expect 风格模式匹配与 LLM 对话,零样板代码,支持 OpenAI/Anthropic,内置 JSON/数字/是/否/代码提取模板,单文件轻量级实现.</description>
-    </item>
-    <item>
-      <title>OpenAI 发布 EVMbench:AI 能不能帮你审计智能合约漏洞?</title>
-      <link>https://claudeai.best/posts/hunter-2026021917/</link>
-      <pubDate>Thu, 19 Feb 2026 17:30:00 +0800</pubDate>
-      <guid>https://claudeai.best/posts/hunter-2026021917/</guid>
-      <description>OpenAI 联合 Paradigm 发布 EVMbench,评估 AI Agent 检测,修复,利用智能合约漏洞的能力.GPT-5.3-Codex 在 exploit 模式达到 72.2%,6 个月提升一倍.</description>
-    </item>
-    <item>
-      <title>GPT-5.2花12小时推导出新物理公式,AI真的开始做原创科学了?</title>
-      <link>https://claudeai.best/posts/hunter-2026021700/</link>
-      <pubDate>Tue, 17 Feb 2026 00:00:00 +0800</pubDate>
-      <guid>https://claudeai.best/posts/hunter-2026021700/</guid>
-      <description>OpenAI的GPT-5.2独立推导并证明了一个被忽视40年的胶子散射振幅公式,这是AI首次在理论物理领域做出原创贡献.但争议也来了:这算真正的科学发现吗?</description>
-    </item>
-    <item>
-      <title>OpenClaw创始人加入OpenAI:一个开源项目如何撬动百亿美元收购战</title>
-      <link>https://claudeai.best/posts/hunter-2026021622/</link>
-      <pubDate>Mon, 16 Feb 2026 22:00:00 +0800</pubDate>
-      <guid>https://claudeai.best/posts/hunter-2026021622/</guid>
-      <description>OpenClaw创始人Peter Steinberger宣布加入OpenAI,拒绝Meta等数十亿美元收购报价.这个GitHub史上增长最快的开源AI Agent项目将成立独立基金会,继续开源运营.</description>
-    </item>
-    <item>
-      <title>SaaS已死?2万亿美元蒸发背后,所有软件公司都在抢着改名叫AI</title>
-      <link>https://claudeai.best/posts/hunter-2026021616/</link>
-      <pubDate>Mon, 16 Feb 2026 16:00:00 +0800</pubDate>
-      <guid>https://claudeai.best/posts/hunter-2026021616/</guid>
-      <description>Salesforce,ServiceNow,Oracle股价暴跌,SaaStr改名SaaStr AI,Altman宣称SaaS时代终结.2万亿美元市值蒸发的背后,是AI Agent真的要取代传统软件,还是又一轮集体焦虑?</description>
-    </item>
-    <item>
-      <title>SaaS已死?2万亿美元的软件行业正在被AI吞噬</title>
-      <link>https://claudeai.best/posts/hunter-2026021615/</link>
-      <pubDate>Mon, 16 Feb 2026 15:00:00 +0800</pubDate>
-      <guid>https://claudeai.best/posts/hunter-2026021615/</guid>
-      <description>Salesforce,ServiceNow,Oracle股价集体暴跌,SaaStr改名SaaStr AI,软件公司疯狂转型AI.SaaS模式真的要完了吗?我们用数据和逻辑拆解这场行业地震.</description>
-    </item>
-    <item>
-      <title>全球AI大佬齐聚新德里:印度AI峰会背后的野心与博弈</title>
-      <link>https://claudeai.best/posts/hunter-2026021614/</link>
-      <pubDate>Mon, 16 Feb 2026 14:00:00 +0800</pubDate>
-      <guid>https://claudeai.best/posts/hunter-2026021614/</guid>
-      <description>印度AI Impact Summit 2026今天在新德里开幕,Altman,Pichai,Amodei,Bill Gates,LeCun齐聚,黄仁勋临时退出.全球南方首次举办AI峰会,印度想要什么?</description>
-    </item>
-  </channel>
-</rss>
+人却更像机器了。&lt;/p>
+&lt;p>这就是2026年的职场。&lt;/p></description></item><item><title>Expectllm:用 Unix "expect" 风格与 LLM 对话,4 行代码搞定</title><link>https://claudeai.best/posts/hunter-2026022100/</link><pubDate>Sat, 21 Feb 2026 00:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022100/</guid><description>Expectllm 开源库:用 expect 风格模式匹配与 LLM 对话,零样板代码,支持 OpenAI/Anthropic,内置 JSON/数字/是/否/代码提取模板,单文件轻量级实现.</description></item><item><title>OpenAI 发布 EVMbench:AI 能不能帮你审计智能合约漏洞?</title><link>https://claudeai.best/posts/hunter-2026021917/</link><pubDate>Thu, 19 Feb 2026 17:30:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021917/</guid><description>OpenAI 联合 Paradigm 发布 EVMbench,评估 AI Agent 检测,修复,利用智能合约漏洞的能力.GPT-5.3-Codex 在 exploit 模式达到 72.2%,6 个月提升一倍.</description></item><item><title>GPT-5.2花12小时推导出新物理公式,AI真的开始做原创科学了?</title><link>https://claudeai.best/posts/hunter-2026021700/</link><pubDate>Tue, 17 Feb 2026 00:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021700/</guid><description>OpenAI的GPT-5.2独立推导并证明了一个被忽视40年的胶子散射振幅公式,这是AI首次在理论物理领域做出原创贡献.但争议也来了:这算真正的科学发现吗?</description></item><item><title>OpenClaw创始人加入OpenAI:一个开源项目如何撬动百亿美元收购战</title><link>https://claudeai.best/posts/hunter-2026021622/</link><pubDate>Mon, 16 Feb 2026 22:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021622/</guid><description>OpenClaw创始人Peter Steinberger宣布加入OpenAI,拒绝Meta等数十亿美元收购报价.这个GitHub史上增长最快的开源AI Agent项目将成立独立基金会,继续开源运营.</description></item><item><title>SaaS已死?2万亿美元蒸发背后,所有软件公司都在抢着改名叫AI</title><link>https://claudeai.best/posts/hunter-2026021616/</link><pubDate>Mon, 16 Feb 2026 16:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021616/</guid><description>Salesforce,ServiceNow,Oracle股价暴跌,SaaStr改名SaaStr AI,Altman宣称SaaS时代终结.2万亿美元市值蒸发的背后,是AI Agent真的要取代传统软件,还是又一轮集体焦虑?</description></item><item><title>SaaS已死?2万亿美元的软件行业正在被AI吞噬</title><link>https://claudeai.best/posts/hunter-2026021615/</link><pubDate>Mon, 16 Feb 2026 15:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021615/</guid><description>Salesforce,ServiceNow,Oracle股价集体暴跌,SaaStr改名SaaStr AI,软件公司疯狂转型AI.SaaS模式真的要完了吗?我们用数据和逻辑拆解这场行业地震.</description></item><item><title>全球AI大佬齐聚新德里:印度AI峰会背后的野心与博弈</title><link>https://claudeai.best/posts/hunter-2026021614/</link><pubDate>Mon, 16 Feb 2026 14:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021614/</guid><description>印度AI Impact Summit 2026今天在新德里开幕,Altman,Pichai,Amodei,Bill Gates,LeCun齐聚,黄仁勋临时退出.全球南方首次举办AI峰会,印度想要什么?</description></item></channel></rss>
