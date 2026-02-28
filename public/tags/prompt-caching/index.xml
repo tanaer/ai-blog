@@ -1,126 +1,105 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Prompt Caching on AI 极客前沿</title>
-    <link>https://claudeai.best/tags/prompt-caching/</link>
-    <description>Recent content in Prompt Caching on AI 极客前沿</description>
-    <generator>Hugo -- 0.146.0</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sat, 28 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://claudeai.best/tags/prompt-caching/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>你的 AI 账单可能多付了一倍！OpenAI 这个隐藏功能帮你省钱</title>
-      <link>https://claudeai.best/posts/hunter-20260228-prompt-caching/</link>
-      <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://claudeai.best/posts/hunter-20260228-prompt-caching/</guid>
-      <description>&lt;h1 id=&#34;你的-ai-账单可能多付了一倍openai-这个隐藏功能帮你省钱&#34;&gt;你的 AI 账单可能多付了一倍！OpenAI 这个隐藏功能帮你省钱&lt;/h1&gt;
-&lt;p&gt;昨天我看了一眼账单。&lt;/p&gt;
-&lt;p&gt;差点没晕过去。&lt;/p&gt;
-&lt;p&gt;一个月调用了 50 万次 API。&lt;/p&gt;
-&lt;p&gt;系统提示词都是一样的。&lt;/p&gt;
-&lt;p&gt;每次都要重新算一遍。&lt;/p&gt;
-&lt;p&gt;这不是在烧钱吗？&lt;/p&gt;
-&lt;p&gt;然后我发现了一个秘密。&lt;/p&gt;
-&lt;p&gt;OpenAI 有个功能叫 Prompt Caching。&lt;/p&gt;
-&lt;p&gt;能帮你省下一大笔钱。&lt;/p&gt;
-&lt;h2 id=&#34;啥是-prompt-caching&#34;&gt;啥是 Prompt Caching？&lt;/h2&gt;
-&lt;p&gt;简单说。&lt;/p&gt;
-&lt;p&gt;就是把算过的东西存起来。&lt;/p&gt;
-&lt;p&gt;下次遇到一样的。&lt;/p&gt;
-&lt;p&gt;直接拿来用。&lt;/p&gt;
-&lt;p&gt;不用再算一遍。&lt;/p&gt;
-&lt;p&gt;举个例子。&lt;/p&gt;
-&lt;p&gt;你每次调用 API。&lt;/p&gt;
-&lt;p&gt;都要传系统提示词。&lt;/p&gt;
-&lt;p&gt;比如&amp;quot;你是一个助手&amp;quot;。&lt;/p&gt;
-&lt;p&gt;这句话模型要处理一遍。&lt;/p&gt;
-&lt;p&gt;消耗算力。&lt;/p&gt;
-&lt;p&gt;消耗钱。&lt;/p&gt;
-&lt;p&gt;如果你一天调用 1 万次。&lt;/p&gt;
-&lt;p&gt;这句话就处理了 1 万次。&lt;/p&gt;
-&lt;p&gt;但其实只需要处理一次。&lt;/p&gt;
-&lt;p&gt;剩下的 9999 次。&lt;/p&gt;
-&lt;p&gt;都是浪费。&lt;/p&gt;
-&lt;p&gt;Prompt Caching 就是解决这个问题的。&lt;/p&gt;
-&lt;p&gt;它会记住处理过的内容。&lt;/p&gt;
-&lt;p&gt;下次遇到一样的。&lt;/p&gt;
-&lt;p&gt;直接跳过。&lt;/p&gt;
-&lt;p&gt;原理其实很简单。&lt;/p&gt;
-&lt;p&gt;系统会对提示词做 hash。&lt;/p&gt;
-&lt;p&gt;算出一个唯一标识。&lt;/p&gt;
-&lt;p&gt;下次遇到同样的 hash。&lt;/p&gt;
-&lt;p&gt;就知道是老熟人。&lt;/p&gt;
-&lt;p&gt;直接从缓存拿结果。&lt;/p&gt;
-&lt;p&gt;不用重新算。&lt;/p&gt;
-&lt;p&gt;所以差一个字都不行。&lt;/p&gt;
-&lt;p&gt;hash 值就变了。&lt;/p&gt;
-&lt;h2 id=&#34;这玩意儿有啥用&#34;&gt;这玩意儿有啥用？&lt;/h2&gt;
-&lt;p&gt;三个字。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;省大钱&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;数据说话。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;成本降低 50-90%&lt;/li&gt;
-&lt;li&gt;速度提升最高 80%&lt;/li&gt;
-&lt;li&gt;不用改代码&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;真的假的？&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>你的 AI 账单可能多付了一倍！OpenAI 这个隐藏功能帮你省钱</title>
-      <link>https://claudeai.best/posts/hunter-2026022811/</link>
-      <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://claudeai.best/posts/hunter-2026022811/</guid>
-      <description>&lt;h1 id=&#34;你的-ai-账单可能多付了一倍openai-这个隐藏功能帮你省钱&#34;&gt;你的 AI 账单可能多付了一倍！OpenAI 这个隐藏功能帮你省钱&lt;/h1&gt;
-&lt;p&gt;昨天我看了一眼账单。&lt;/p&gt;
-&lt;p&gt;差点没晕过去。&lt;/p&gt;
-&lt;p&gt;一个月调用了 50 万次 API。&lt;/p&gt;
-&lt;p&gt;系统提示词都是一样的。&lt;/p&gt;
-&lt;p&gt;每次都要重新算一遍。&lt;/p&gt;
-&lt;p&gt;这不是在烧钱吗？&lt;/p&gt;
-&lt;p&gt;然后我发现了一个秘密。&lt;/p&gt;
-&lt;p&gt;OpenAI 有个功能叫 Prompt Caching。&lt;/p&gt;
-&lt;p&gt;能帮你省下一大笔钱。&lt;/p&gt;
-&lt;h2 id=&#34;啥是-prompt-caching&#34;&gt;啥是 Prompt Caching？&lt;/h2&gt;
-&lt;p&gt;简单说。&lt;/p&gt;
-&lt;p&gt;就是把算过的东西存起来。&lt;/p&gt;
-&lt;p&gt;下次遇到一样的。&lt;/p&gt;
-&lt;p&gt;直接拿来用。&lt;/p&gt;
-&lt;p&gt;不用再算一遍。&lt;/p&gt;
-&lt;p&gt;举个例子。&lt;/p&gt;
-&lt;p&gt;你每次调用 API。&lt;/p&gt;
-&lt;p&gt;都要传系统提示词。&lt;/p&gt;
-&lt;p&gt;比如&amp;quot;你是一个助手&amp;quot;。&lt;/p&gt;
-&lt;p&gt;这句话模型要处理一遍。&lt;/p&gt;
-&lt;p&gt;消耗算力。&lt;/p&gt;
-&lt;p&gt;消耗钱。&lt;/p&gt;
-&lt;p&gt;如果你一天调用 1 万次。&lt;/p&gt;
-&lt;p&gt;这句话就处理了 1 万次。&lt;/p&gt;
-&lt;p&gt;但其实只需要处理一次。&lt;/p&gt;
-&lt;p&gt;剩下的 9999 次。&lt;/p&gt;
-&lt;p&gt;都是浪费。&lt;/p&gt;
-&lt;p&gt;Prompt Caching 就是解决这个问题的。&lt;/p&gt;
-&lt;p&gt;它会记住处理过的内容。&lt;/p&gt;
-&lt;p&gt;下次遇到一样的。&lt;/p&gt;
-&lt;p&gt;直接跳过。&lt;/p&gt;
-&lt;p&gt;原理其实很简单。&lt;/p&gt;
-&lt;p&gt;系统会对提示词做 hash。&lt;/p&gt;
-&lt;p&gt;算出一个唯一标识。&lt;/p&gt;
-&lt;p&gt;下次遇到同样的 hash。&lt;/p&gt;
-&lt;p&gt;就知道是老熟人。&lt;/p&gt;
-&lt;p&gt;直接从缓存拿结果。&lt;/p&gt;
-&lt;p&gt;不用重新算。&lt;/p&gt;
-&lt;p&gt;所以差一个字都不行。&lt;/p&gt;
-&lt;p&gt;hash 值就变了。&lt;/p&gt;
-&lt;h2 id=&#34;这玩意儿有啥用&#34;&gt;这玩意儿有啥用？&lt;/h2&gt;
-&lt;p&gt;三个字。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;省大钱&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;数据说话。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;成本降低 50-90%&lt;/li&gt;
-&lt;li&gt;速度提升最高 80%&lt;/li&gt;
-&lt;li&gt;不用改代码&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;真的假的？&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Prompt Caching on AI 极客前沿</title><link>https://claudeai.best/tags/prompt-caching/</link><description>Recent content in Prompt Caching on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Sat, 28 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://claudeai.best/tags/prompt-caching/index.xml" rel="self" type="application/rss+xml"/><item><title>你的 AI 账单可能多付了一倍</title><link>https://claudeai.best/posts/hunter-20260228-prompt-caching/</link><pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/hunter-20260228-prompt-caching/</guid><description>&lt;h1 id="你的-ai-账单可能多付了一倍">你的 AI 账单可能多付了一倍&lt;/h1>
+&lt;p>昨晚睡得晚。&lt;/p>
+&lt;p>躺在床上刷手机。&lt;/p>
+&lt;p>看到一条推送。&lt;/p>
+&lt;p>差点没睡着。&lt;/p>
+&lt;p>OpenAI 有个功能。&lt;/p>
+&lt;p>叫 Prompt Caching。&lt;/p>
+&lt;p>能帮你省 90% 的钱。&lt;/p>
+&lt;p>我寻思。&lt;/p>
+&lt;p>我这天天调 API。&lt;/p>
+&lt;p>是不是亏大了？&lt;/p>
+&lt;p>爬起来算了算账。&lt;/p>
+&lt;p>还真亏了不少。&lt;/p>
+&lt;p>这事儿得说说。&lt;/p>
+&lt;h2 id="啥是缓存">啥是缓存？&lt;/h2>
+&lt;p>其实原理挺简单。&lt;/p>
+&lt;p>就是你问模型的问题。&lt;/p>
+&lt;p>它会记下来。&lt;/p>
+&lt;p>下次再问一样的。&lt;/p>
+&lt;p>直接给你答案。&lt;/p>
+&lt;p>不用重新算。&lt;/p>
+&lt;p>打个比方。&lt;/p>
+&lt;p>你去饭店点菜。&lt;/p>
+&lt;p>每次都说&amp;quot;不要葱姜蒜&amp;quot;。&lt;/p>
+&lt;p>服务员记住了。&lt;/p>
+&lt;p>下次你去。&lt;/p>
+&lt;p>不用再说。&lt;/p>
+&lt;p>直接就给你做了。&lt;/p>
+&lt;p>模型也一样。&lt;/p>
+&lt;p>你每次传的系统提示词。&lt;/p>
+&lt;p>&amp;ldquo;你是一个助手，用中文回答&amp;hellip;&amp;rdquo;&lt;/p>
+&lt;p>这几千个字。&lt;/p>
+&lt;p>每次都要重新处理一遍。&lt;/p>
+&lt;p>但其实都是一样的。&lt;/p>
+&lt;p>多浪费啊。&lt;/p>
+&lt;p>Prompt Caching 就是让模型记住。&lt;/p>
+&lt;p>下次遇到同样的。&lt;/p>
+&lt;p>直接跳过。&lt;/p>
+&lt;p>说到这儿。&lt;/p>
+&lt;p>我想起前两年。&lt;/p>
+&lt;p>我刚接触 AI 的时候。&lt;/p>
+&lt;p>根本不知道这个。&lt;/p>
+&lt;p>写了个客服机器人。&lt;/p>
+&lt;p>每天调用好几万次。&lt;/p>
+&lt;p>系统提示词三千字。&lt;/p>
+&lt;p>每次都原封不动传过去。&lt;/p>
+&lt;p>现在想想。&lt;/p>
+&lt;p>那钱烧得。&lt;/p>
+&lt;p>心都在滴血。&lt;/p>
+&lt;h2 id="能省多少">能省多少？&lt;/h2>
+&lt;p>我给你算笔账。&lt;/p>
+&lt;p>你就明白了。&lt;/p>
+&lt;p>假设你的系统提示词。&lt;/p>
+&lt;p>2000 tokens。&lt;/p>
+&lt;p>调用 10 万次。&lt;/p></description></item><item><title>你的 AI 账单可能多付了一倍！OpenAI 这个隐藏功能帮你省钱</title><link>https://claudeai.best/posts/hunter-2026022811/</link><pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/hunter-2026022811/</guid><description>&lt;h1 id="你的-ai-账单可能多付了一倍openai-这个隐藏功能帮你省钱">你的 AI 账单可能多付了一倍！OpenAI 这个隐藏功能帮你省钱&lt;/h1>
+&lt;p>昨天我看了一眼账单。&lt;/p>
+&lt;p>差点没晕过去。&lt;/p>
+&lt;p>一个月调用了 50 万次 API。&lt;/p>
+&lt;p>系统提示词都是一样的。&lt;/p>
+&lt;p>每次都要重新算一遍。&lt;/p>
+&lt;p>这不是在烧钱吗？&lt;/p>
+&lt;p>然后我发现了一个秘密。&lt;/p>
+&lt;p>OpenAI 有个功能叫 Prompt Caching。&lt;/p>
+&lt;p>能帮你省下一大笔钱。&lt;/p>
+&lt;h2 id="啥是-prompt-caching">啥是 Prompt Caching？&lt;/h2>
+&lt;p>简单说。&lt;/p>
+&lt;p>就是把算过的东西存起来。&lt;/p>
+&lt;p>下次遇到一样的。&lt;/p>
+&lt;p>直接拿来用。&lt;/p>
+&lt;p>不用再算一遍。&lt;/p>
+&lt;p>举个例子。&lt;/p>
+&lt;p>你每次调用 API。&lt;/p>
+&lt;p>都要传系统提示词。&lt;/p>
+&lt;p>比如&amp;quot;你是一个助手&amp;quot;。&lt;/p>
+&lt;p>这句话模型要处理一遍。&lt;/p>
+&lt;p>消耗算力。&lt;/p>
+&lt;p>消耗钱。&lt;/p>
+&lt;p>如果你一天调用 1 万次。&lt;/p>
+&lt;p>这句话就处理了 1 万次。&lt;/p>
+&lt;p>但其实只需要处理一次。&lt;/p>
+&lt;p>剩下的 9999 次。&lt;/p>
+&lt;p>都是浪费。&lt;/p>
+&lt;p>Prompt Caching 就是解决这个问题的。&lt;/p>
+&lt;p>它会记住处理过的内容。&lt;/p>
+&lt;p>下次遇到一样的。&lt;/p>
+&lt;p>直接跳过。&lt;/p>
+&lt;p>原理其实很简单。&lt;/p>
+&lt;p>系统会对提示词做 hash。&lt;/p>
+&lt;p>算出一个唯一标识。&lt;/p>
+&lt;p>下次遇到同样的 hash。&lt;/p>
+&lt;p>就知道是老熟人。&lt;/p>
+&lt;p>直接从缓存拿结果。&lt;/p>
+&lt;p>不用重新算。&lt;/p>
+&lt;p>所以差一个字都不行。&lt;/p>
+&lt;p>hash 值就变了。&lt;/p>
+&lt;h2 id="这玩意儿有啥用">这玩意儿有啥用？&lt;/h2>
+&lt;p>三个字。&lt;/p>
+&lt;p>&lt;strong>省大钱&lt;/strong>。&lt;/p>
+&lt;p>数据说话。&lt;/p>
+&lt;ul>
+&lt;li>成本降低 50-90%&lt;/li>
+&lt;li>速度提升最高 80%&lt;/li>
+&lt;li>不用改代码&lt;/li>
+&lt;/ul>
+&lt;p>真的假的？&lt;/p></description></item></channel></rss>
