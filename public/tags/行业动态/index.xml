@@ -1,27 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>行业动态 on AI 极客前沿</title><link>https://claudeai.best/tags/%E8%A1%8C%E4%B8%9A%E5%8A%A8%E6%80%81/</link><description>Recent content in 行业动态 on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Sun, 15 Feb 2026 19:00:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/%E8%A1%8C%E4%B8%9A%E5%8A%A8%E6%80%81/index.xml" rel="self" type="application/rss+xml"/><item><title> Anthropic安全负责人辞职写诗去了!AI安全到底怎么了?</title><link>https://claudeai.best/posts/hunter-2026021519/</link><pubDate>Sun, 15 Feb 2026 19:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021519/</guid><description>&lt;h2 id="一个安全研究员的诗意离场">一个安全研究员的「诗意」离场&lt;/h2>
-&lt;p>你能想象吗?一个在全球最注重AI安全的公司&amp;ndash;Anthropic(就是做Claude那个)&amp;ndash;负责AI安全防线的核心人物,突然宣布辞职,理由是&lt;strong>要去学写诗&lt;/strong>?&lt;/p>
-&lt;p>这不是段子.2月9日,Anthropic安全防护研究团队负责人 &lt;strong>Mrinank Sharma&lt;/strong> 在X上发了一封辞职信,原话是:&lt;/p>
-&lt;blockquote>
-&lt;p>&amp;ldquo;世界正处于危险之中.不仅仅是AI,不仅仅是生物武器,而是一系列相互交织的危机正在此刻展开.&amp;rdquo;&lt;/p>&lt;/blockquote>
-&lt;p>他说自己&amp;quot;反复看到,让价值观真正指导行动有多么困难&amp;quot;&amp;ndash;包括在Anthropic内部,公司也&amp;quot;不断面临搁置最重要事项的压力&amp;quot;.&lt;/p>
-&lt;p>然后他说要回英国,学诗歌,&amp;ldquo;让自己消失一段时间&amp;rdquo;.&lt;/p>
-&lt;h2 id="三个核心看点">三个核心看点&lt;/h2>
-&lt;p>&lt;strong>1️⃣ 不是第一个,也不会是最后一个&lt;/strong>&lt;/p>
-&lt;p>近几个月,AI大厂的安全团队正在经历一波「离职潮」.从OpenAI到Google再到Anthropic,越来越多负责&amp;quot;刹车&amp;quot;的人选择离开.问题很明显:当商业利益和安全原则冲突时,安全往往是让步的那个.&lt;/p>
-&lt;p>&lt;strong>2️⃣ Anthropic的&amp;quot;安全人设&amp;quot;裂了?&lt;/strong>&lt;/p>
-&lt;p>Anthropic一直以&amp;quot;我们比OpenAI更重视安全&amp;quot;为卖点.它甚至刚怼了OpenAI在ChatGPT里加广告.但当自家安全负责人都说&amp;quot;价值观很难真正落地&amp;quot;的时候,这个人设就很微妙了.更别提2025年Anthropic还因为训练数据版权问题赔了15亿美元.&lt;/p>
-&lt;p>&lt;strong>3️⃣ AI安全不只是技术问题&lt;/strong>&lt;/p>
-&lt;p>Sharma的辞职信里提到的不只是AI风险,还有生物武器,社会危机等&amp;quot;相互交织&amp;quot;的问题.他之前的研究包括AI如何被用于生物恐怖主义,AI助手如何让人类&amp;quot;变得不像人&amp;quot;.这些听着像科幻,但都是他在Anthropic的实际研究课题.&lt;/p>
-&lt;h2 id="-普通人该怎么看">️ 普通人该怎么看?&lt;/h2>
-&lt;ol>
-&lt;li>&lt;strong>不用恐慌&lt;/strong>:AI目前还远没到&amp;quot;毁灭人类&amp;quot;的程度,但&amp;quot;被滥用&amp;quot;是真实的风险&lt;/li>
-&lt;li>&lt;strong>关注安全报告&lt;/strong>:Anthropic,OpenAI等公司都会发布安全评估报告,值得一读&lt;/li>
-&lt;li>&lt;strong>支持监管&lt;/strong>:印度AI峰会(2月16日)即将召开,Sam Altman,Pichai,Amodei等大佬齐聚,AI治理是核心议题&lt;/li>
-&lt;li>&lt;strong>保持批判&lt;/strong>:任何公司说&amp;quot;我们最安全&amp;quot;,都要打个问号&amp;ndash;连内部人都觉得价值观难以落地&lt;/li>
-&lt;/ol>
-&lt;h2 id="极客点评">极客点评&lt;/h2>
-&lt;p>说实话,Sharma辞职去学诗这件事,表面荒诞,内核很真实.&lt;/p>
-&lt;p>当一个人在AI安全最前线工作了几年,最后的结论是&amp;quot;世界的问题太大了,我要去写诗&amp;quot;&amp;ndash;这本身就是一种无声的控诉.AI行业现在的节奏是:融资→发产品→抢市场→安全?以后再说.&lt;/p>
-&lt;p>&lt;strong>谁适合关注这件事?&lt;/strong> 所有使用AI产品的人.因为安全团队的人走了,不代表AI停下来了.它只会跑得更快,但刹车可能更松了.&lt;/p>
-&lt;p>下周的印度AI峰会会是一个观察窗口&amp;ndash;看看这些CEO们除了说&amp;quot;我们非常重视安全&amp;quot;之外,能不能拿出点真东西.&lt;/p>
-&lt;p>&lt;strong>信息来源&lt;/strong>:BBC News,Al Jazeera,Business Insider,Financial Express&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>行业动态 on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/%E8%A1%8C%E4%B8%9A%E5%8A%A8%E6%80%81/</link>
+    <description>Recent content in 行业动态 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 15 Feb 2026 19:00:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/%E8%A1%8C%E4%B8%9A%E5%8A%A8%E6%80%81/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> Anthropic安全负责人辞职写诗去了!AI安全到底怎么了?</title>
+      <link>https://claudeai.best/posts/hunter-2026021519/</link>
+      <pubDate>Sun, 15 Feb 2026 19:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021519/</guid>
+      <description>&lt;h2 id=&#34;一个安全研究员的诗意离场&#34;&gt;一个安全研究员的「诗意」离场&lt;/h2&gt;
+&lt;p&gt;你能想象吗?一个在全球最注重AI安全的公司&amp;ndash;Anthropic(就是做Claude那个)&amp;ndash;负责AI安全防线的核心人物,突然宣布辞职,理由是&lt;strong&gt;要去学写诗&lt;/strong&gt;?&lt;/p&gt;
+&lt;p&gt;这不是段子.2月9日,Anthropic安全防护研究团队负责人 &lt;strong&gt;Mrinank Sharma&lt;/strong&gt; 在X上发了一封辞职信,原话是:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;世界正处于危险之中.不仅仅是AI,不仅仅是生物武器,而是一系列相互交织的危机正在此刻展开.&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;他说自己&amp;quot;反复看到,让价值观真正指导行动有多么困难&amp;quot;&amp;ndash;包括在Anthropic内部,公司也&amp;quot;不断面临搁置最重要事项的压力&amp;quot;.&lt;/p&gt;
+&lt;p&gt;然后他说要回英国,学诗歌,&amp;ldquo;让自己消失一段时间&amp;rdquo;.&lt;/p&gt;
+&lt;h2 id=&#34;三个核心看点&#34;&gt;三个核心看点&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;1️⃣ 不是第一个,也不会是最后一个&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;近几个月,AI大厂的安全团队正在经历一波「离职潮」.从OpenAI到Google再到Anthropic,越来越多负责&amp;quot;刹车&amp;quot;的人选择离开.问题很明显:当商业利益和安全原则冲突时,安全往往是让步的那个.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2️⃣ Anthropic的&amp;quot;安全人设&amp;quot;裂了?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Anthropic一直以&amp;quot;我们比OpenAI更重视安全&amp;quot;为卖点.它甚至刚怼了OpenAI在ChatGPT里加广告.但当自家安全负责人都说&amp;quot;价值观很难真正落地&amp;quot;的时候,这个人设就很微妙了.更别提2025年Anthropic还因为训练数据版权问题赔了15亿美元.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3️⃣ AI安全不只是技术问题&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Sharma的辞职信里提到的不只是AI风险,还有生物武器,社会危机等&amp;quot;相互交织&amp;quot;的问题.他之前的研究包括AI如何被用于生物恐怖主义,AI助手如何让人类&amp;quot;变得不像人&amp;quot;.这些听着像科幻,但都是他在Anthropic的实际研究课题.&lt;/p&gt;
+&lt;h2 id=&#34;-普通人该怎么看&#34;&gt;️ 普通人该怎么看?&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;不用恐慌&lt;/strong&gt;:AI目前还远没到&amp;quot;毁灭人类&amp;quot;的程度,但&amp;quot;被滥用&amp;quot;是真实的风险&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;关注安全报告&lt;/strong&gt;:Anthropic,OpenAI等公司都会发布安全评估报告,值得一读&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;支持监管&lt;/strong&gt;:印度AI峰会(2月16日)即将召开,Sam Altman,Pichai,Amodei等大佬齐聚,AI治理是核心议题&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;保持批判&lt;/strong&gt;:任何公司说&amp;quot;我们最安全&amp;quot;,都要打个问号&amp;ndash;连内部人都觉得价值观难以落地&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;极客点评&#34;&gt;极客点评&lt;/h2&gt;
+&lt;p&gt;说实话,Sharma辞职去学诗这件事,表面荒诞,内核很真实.&lt;/p&gt;
+&lt;p&gt;当一个人在AI安全最前线工作了几年,最后的结论是&amp;quot;世界的问题太大了,我要去写诗&amp;quot;&amp;ndash;这本身就是一种无声的控诉.AI行业现在的节奏是:融资→发产品→抢市场→安全?以后再说.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;谁适合关注这件事?&lt;/strong&gt; 所有使用AI产品的人.因为安全团队的人走了,不代表AI停下来了.它只会跑得更快,但刹车可能更松了.&lt;/p&gt;
+&lt;p&gt;下周的印度AI峰会会是一个观察窗口&amp;ndash;看看这些CEO们除了说&amp;quot;我们非常重视安全&amp;quot;之外,能不能拿出点真东西.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;信息来源&lt;/strong&gt;:BBC News,Al Jazeera,Business Insider,Financial Express&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

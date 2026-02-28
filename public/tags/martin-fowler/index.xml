@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Martin Fowler on AI 极客前沿</title><link>https://claudeai.best/tags/martin-fowler/</link><description>Recent content in Martin Fowler on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Thu, 19 Feb 2026 01:00:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/martin-fowler/index.xml" rel="self" type="application/rss+xml"/><item><title>Martin Fowler:LLM正在吞噬专业技能,专家型通才的时代来了</title><link>https://claudeai.best/posts/hunter-2026021901/</link><pubDate>Thu, 19 Feb 2026 01:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021901/</guid><description>Thoughtworks软件未来大会核心洞察:LLM正在替代前后端专家技能,TDD成为最强的prompt engineering,AI是加速器而非救世主--如果你的工程实践一团糟,AI只会加速崩溃.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Martin Fowler on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/martin-fowler/</link>
+    <description>Recent content in Martin Fowler on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 19 Feb 2026 01:00:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/martin-fowler/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Martin Fowler:LLM正在吞噬专业技能,专家型通才的时代来了</title>
+      <link>https://claudeai.best/posts/hunter-2026021901/</link>
+      <pubDate>Thu, 19 Feb 2026 01:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021901/</guid>
+      <description>Thoughtworks软件未来大会核心洞察:LLM正在替代前后端专家技能,TDD成为最强的prompt engineering,AI是加速器而非救世主--如果你的工程实践一团糟,AI只会加速崩溃.</description>
+    </item>
+  </channel>
+</rss>

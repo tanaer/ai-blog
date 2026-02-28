@@ -1,14 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>World Labs on AI 极客前沿</title><link>https://claudeai.best/tags/world-labs/</link><description>Recent content in World Labs on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Sat, 28 Feb 2026 04:00:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/world-labs/index.xml" rel="self" type="application/rss+xml"/><item><title>2026年AI大趋势：世界模型来了</title><link>https://claudeai.best/posts/2026-02-28-world-models-2026/</link><pubDate>Sat, 28 Feb 2026 04:00:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-28-world-models-2026/</guid><description>&lt;h1 id="2026年ai大趋势世界模型来了">2026年AI大趋势：世界模型来了&lt;/h1>
-&lt;p>2026年刚开始，AI圈就炸了。&lt;/p>
-&lt;p>Yann LeCun在Meta待了12年，说走就走。带着5亿欧元创立AMI Labs，估值30亿美元。他觉得大语言模型不够聪明，真正的AI得靠世界模型。&lt;/p>
-&lt;p>Fei-Fei Li的World Labs推出Marble，输入文字或图片，直接生成3D世界。游戏开发者和电影制作人都用上了。今年2月又拿到10亿融资。&lt;/p>
-&lt;p>Google DeepMind的Genie 3在1月底上线。输入几句话，AI就造个可互动的虚拟世界。&lt;/p>
-&lt;p>游戏行业最兴奋。以前做3D场景要几周，现在几分钟搞定。图灵奖得主和AI教母都押注这个方向，信号很明显了。&lt;/p>
-&lt;p>2026年，世界模型要火。&lt;/p>
-&lt;hr>
-&lt;p>&lt;strong>参考来源：&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://techcrunch.com/2026/01/23/whos-behind-ami-labs-yann-lecuns-world-model-startup/">TechCrunch: Who&amp;rsquo;s behind AMI Labs&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://techcrunch.com/2026/02/18/world-labs-lands-200m-from-autodesk-to-bring-world-models-into-3d-workflows/">TechCrunch: World Labs lands $1B&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://deepmind.google/models/genie/">Google DeepMind: Genie 3&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>World Labs on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/world-labs/</link>
+    <description>Recent content in World Labs on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 28 Feb 2026 04:00:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/world-labs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026年AI大趋势：世界模型来了</title>
+      <link>https://claudeai.best/posts/2026-02-28-world-models-2026/</link>
+      <pubDate>Sat, 28 Feb 2026 04:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/2026-02-28-world-models-2026/</guid>
+      <description>&lt;h1 id=&#34;2026年ai大趋势世界模型来了&#34;&gt;2026年AI大趋势：世界模型来了&lt;/h1&gt;
+&lt;p&gt;2026年刚开始，AI圈就炸了。&lt;/p&gt;
+&lt;p&gt;Yann LeCun在Meta待了12年，说走就走。带着5亿欧元创立AMI Labs，估值30亿美元。他觉得大语言模型不够聪明，真正的AI得靠世界模型。&lt;/p&gt;
+&lt;p&gt;Fei-Fei Li的World Labs推出Marble，输入文字或图片，直接生成3D世界。游戏开发者和电影制作人都用上了。今年2月又拿到10亿融资。&lt;/p&gt;
+&lt;p&gt;Google DeepMind的Genie 3在1月底上线。输入几句话，AI就造个可互动的虚拟世界。&lt;/p&gt;
+&lt;p&gt;游戏行业最兴奋。以前做3D场景要几周，现在几分钟搞定。图灵奖得主和AI教母都押注这个方向，信号很明显了。&lt;/p&gt;
+&lt;p&gt;2026年，世界模型要火。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;参考来源：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://techcrunch.com/2026/01/23/whos-behind-ami-labs-yann-lecuns-world-model-startup/&#34;&gt;TechCrunch: Who&amp;rsquo;s behind AMI Labs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://techcrunch.com/2026/02/18/world-labs-lands-200m-from-autodesk-to-bring-world-models-into-3d-workflows/&#34;&gt;TechCrunch: World Labs lands $1B&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://deepmind.google/models/genie/&#34;&gt;Google DeepMind: Genie 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Standard Intelligence on AI 极客前沿</title><link>https://claudeai.best/tags/standard-intelligence/</link><description>Recent content in Standard Intelligence on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Sat, 28 Feb 2026 03:10:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/standard-intelligence/index.xml" rel="self" type="application/rss+xml"/><item><title>FDM-1: 1100 万小时视频喂出来的 AI,会自己开电脑干活了</title><link>https://claudeai.best/posts/2026-02-28-standard-intelligence-fdm1/</link><pubDate>Sat, 28 Feb 2026 03:10:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-28-standard-intelligence-fdm1/</guid><description>Standard Intelligence 发布 FDM-1,从 1100 万小时视频学习操作电脑。能做 CAD 设计、测试软件、甚至开真车。2 小时视频压缩到 100 万 tokens,比 GPT/Gemini 高效 50 倍。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Standard Intelligence on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/standard-intelligence/</link>
+    <description>Recent content in Standard Intelligence on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 28 Feb 2026 03:10:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/standard-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FDM-1: 1100 万小时视频喂出来的 AI,会自己开电脑干活了</title>
+      <link>https://claudeai.best/posts/2026-02-28-standard-intelligence-fdm1/</link>
+      <pubDate>Sat, 28 Feb 2026 03:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/2026-02-28-standard-intelligence-fdm1/</guid>
+      <description>Standard Intelligence 发布 FDM-1,从 1100 万小时视频学习操作电脑。能做 CAD 设计、测试软件、甚至开真车。2 小时视频压缩到 100 万 tokens,比 GPT/Gemini 高效 50 倍。</description>
+    </item>
+  </channel>
+</rss>

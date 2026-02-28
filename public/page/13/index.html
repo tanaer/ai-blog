@@ -1,50 +1,371 @@
-<!doctype html><html lang=zh dir=auto data-theme=auto><head><meta name=generator content="Hugo 0.146.0"><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>AI 极客前沿</title>
-<meta name=keywords content="AI,人工智能,AI Agent,大模型,LLM,开源,技术趋势,Claude,GPT,OpenAI,DeepMind,开发者工具"><meta name=description content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态"><meta name=author content="AI 极客前沿"><link rel=canonical href=https://claudeai.best/><link crossorigin=anonymous href=/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css integrity="sha256-2jIR5e+Ge/K3X9WmUVz+1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as=style><link rel=icon href=https://claudeai.best/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://claudeai.best/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://claudeai.best/favicon-32x32.png><link rel=apple-touch-icon href=https://claudeai.best/apple-touch-icon.png><link rel=mask-icon href=https://claudeai.best/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://claudeai.best/index.xml title=rss><link rel=alternate type=application/json href=https://claudeai.best/index.json title=json><link rel=alternate hreflang=zh href=https://claudeai.best/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51);color-scheme:dark}.list{background:var(--theme)}.toc{background:var(--entry)}}@media(prefers-color-scheme:light){.list::-webkit-scrollbar-thumb{border-color:var(--code-bg)}}</style></noscript><script>localStorage.getItem("pref-theme")==="dark"?document.querySelector("html").dataset.theme="dark":localStorage.getItem("pref-theme")==="light"?document.querySelector("html").dataset.theme="light":window.matchMedia("(prefers-color-scheme: dark)").matches?document.querySelector("html").dataset.theme="dark":document.querySelector("html").dataset.theme="light"</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"WebSite","name":"AI 极客前沿","url":"https:\/\/claudeai.best\/","description":"每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态","publisher":{"@type":"Organization","name":"AI 极客前沿"}}</script><meta property="og:url" content="https://claudeai.best/"><meta property="og:site_name" content="AI 极客前沿"><meta property="og:title" content="AI 极客前沿"><meta property="og:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态"><meta property="og:locale" content="zh-cn"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="AI 极客前沿"><meta name=twitter:description content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态"><script type=application/ld+json>{"@context":"https://schema.org","@type":"Organization","name":"AI 极客前沿","url":"https://claudeai.best/","description":"每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态","logo":"https://claudeai.best/favicon.ico","sameAs":["https://t.me/TgTechMsgBot"]}</script></head><body class=list id=top><header class=header><nav class=nav><div class=logo><a href=https://claudeai.best/ accesskey=h title="AI 极客前沿 (Alt + H)">AI 极客前沿</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://claudeai.best/posts/ title=文章><span>文章</span></a></li><li><a href=https://claudeai.best/tags/ title=标签><span>标签</span></a></li><li><a href=https://claudeai.best/categories/ title=分类><span>分类</span></a></li><li><a href=https://claudeai.best/search/ title=搜索><span>搜索</span></a></li><li><a href=https://claudeai.best/about/ title=关于><span>关于</span></a></li><li><a href=https://t.me/TgTechMsgBot title=联系><span>联系</span>&nbsp;<svg fill="none" shape-rendering="geometricPrecision" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></li></ul></nav></header><main class=main><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771614961962_cover.jpg alt=数据分析与AI></figure><header class=entry-header><h2 class=entry-hint-parent>LLMWise:一个 API Key 调用 36+ 模型,还能对比,融合,评判输出</h2></header><div class=entry-content><p>ChatGPT Plus + Claude Pro + Gemini Advanced = $60/月.三个 dashboard,三个 API key,三个账单.
-如果有一个服务,一个 API Key 就能调用 36+ 模型,还能对比输出,融合答案,让 AI 评判 AI,自动故障转移呢?
+<!DOCTYPE html>
+<html lang="zh" dir="auto" data-theme="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.146.0"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>AI 极客前沿</title>
+<meta name="keywords" content="AI, 人工智能, AI Agent, 大模型, LLM, 开源, 技术趋势, Claude, GPT, OpenAI, DeepMind, 开发者工具">
+<meta name="description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
+<meta name="author" content="AI 极客前沿">
+<link rel="canonical" href="https://claudeai.best/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://claudeai.best/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://claudeai.best/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://claudeai.best/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://claudeai.best/apple-touch-icon.png">
+<link rel="mask-icon" href="https://claudeai.best/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://claudeai.best/index.xml" title="rss">
+<link rel="alternate" type="application/json" href="https://claudeai.best/index.json" title="json">
+<link rel="alternate" hreflang="zh" href="https://claudeai.best/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "AI 极客前沿",
+  "url": "https:\/\/claudeai.best\/",
+  "description": "每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态",
+  "publisher": {
+    "@type": "Organization",
+    "name": "AI 极客前沿"
+  }
+}
+</script>
+
+
+<meta property="og:url" content="https://claudeai.best/">
+  <meta property="og:site_name" content="AI 极客前沿">
+  <meta property="og:title" content="AI 极客前沿">
+  <meta property="og:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AI 极客前沿">
+<meta name="twitter:description" content="每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "AI 极客前沿",
+  "url": "https://claudeai.best/",
+  "description": "每日精选 AI 与技术趋势深度解读，聚焦 AI Agent、大模型、开源工具与开发者生态",
+  "logo": "https://claudeai.best/favicon.ico",
+  "sameAs": [
+      "https://t.me/TgTechMsgBot"
+  ]
+}
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://claudeai.best/" accesskey="h" title="AI 极客前沿 (Alt + H)">AI 极客前沿</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://claudeai.best/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://claudeai.best/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://t.me/TgTechMsgBot" title="联系">
+                    <span>联系</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771618872030_cover.jpg" alt="Ember MCP - AI持久记忆">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Ember MCP:给 Claude 装上永久记忆,告别每次重复交代背景
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>一句话总结 Ember MCP 让你的 Claude/Cursor 拥有真正的长期记忆–关闭电脑周五下班,周一打开新对话,AI 依然记得你上周的技术决策,而且不会把已经废弃的架构方案混进新建议里.
+痛点:AI 的&#34;金鱼记忆&#34; 用过 Claude Desktop 或 Cursor 的开发者都懂这个痛:
+每次新开对话窗口,都要重新交代项目背景 三个月前说好用 PostgreSQL,现在迁移到 MongoDB 了,AI 还在给 PostgreSQL 的代码建议 上周刚决定弃用 Redux 改用 Zustand,这周 AI 还在生成 Redux boilerplate 传统向量数据库的问题在于:它只看语义相似度,不看信息时效性.旧记忆和新查询语义相近,AI 就傻傻地检索出来用,结果就是–幻觉.
+Ember MCP 的解法:时间感知 &#43; 漂移检测 Ember MCP 的核心创新是 Drift Detection(漂移检测).
+怎么工作的? Voronoi 分区:把向量空间划分成 16 个固定区域(比如&#34;数据库&#34;,“前端框架”,“业务逻辑”) 时间智能评分:记忆按重要程度赋予半衰期,越老的记忆权重越低 统计漂移检测:监控每个知识区域的分布变化,发现显著偏移时自动标记旧记忆为&#34;过期&#34; 实际场景 1 月份:你告诉 Claude 项目用 PostgreSQL → Ember 在&#34;数据库&#34;区域存储相关记忆
+4 月份:你迁移到 MongoDB,产生大量新记忆
+传统向量库:PostgreSQL 和 MongoDB 都语义相似于&#34;数据库查询&#34;,AI 可能给出混合建议
+Ember:检测到&#34;数据库&#34;区域的向量分布发生显著漂移,自动将 PostgreSQL 记忆标记为过期,查询时只返回 MongoDB 相关内容
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 04:21:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>243 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Ember MCP:给 Claude 装上永久记忆,告别每次重复交代背景" href="https://claudeai.best/posts/hunter-2026022104/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771614961962_cover.jpg" alt="数据分析与AI">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">LLMWise:一个 API Key 调用 36&#43; 模型,还能对比,融合,评判输出
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>ChatGPT Plus &#43; Claude Pro &#43; Gemini Advanced = $60/月.三个 dashboard,三个 API key,三个账单.
+如果有一个服务,一个 API Key 就能调用 36&#43; 模型,还能对比输出,融合答案,让 AI 评判 AI,自动故障转移呢?
 这就是 LLMWise – 一个多模型 LLM API 服务,刚刚上线.
 五种模式,五种用法 1. Chat(1 credit) 标准聊天,但带智能路由.设置 cost_saver: true,简单问题自动路由到便宜模型.
-from llmwise import LLMWise client = LLMWise("mm_sk_...") resp = client.chat( model="auto", # 自动选择 cost_saver=True, messages=[{"role": "user", "content": "Explain quantum computing"}], stream=True ) 2. Compare(3 credits) 同一问题,多个模型并行回答,对比输出.
+from llmwise import LLMWise client = LLMWise(&#34;mm_sk_...&#34;) resp = client.chat( model=&#34;auto&#34;, # 自动选择 cost_saver=True, messages=[{&#34;role&#34;: &#34;user&#34;, &#34;content&#34;: &#34;Explain quantum computing&#34;}], stream=True ) 2. Compare(3 credits) 同一问题,多个模型并行回答,对比输出.
 resp = client.compare( models=[“gpt-5.2”, “claude-sonnet-4.5”, “gemini-3-flash”], messages=[{“role”: “user”, “content”: “Explain eventual consistency”}],
-for r in resp[“responses”]: print(f"{r[‘model’]}: {r[’latency_ms’]}ms")
-...</p></div><footer class=entry-footer><span title='2026-02-21 03:10:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>273 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to LLMWise:一个 API Key 调用 36+ 模型,还能对比,融合,评判输出" href=https://claudeai.best/posts/hunter-2026022103/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771610836429_cover.jpg alt=移动应用与AI></figure><header class=entry-header><h2 class=entry-hint-parent>Expo-OpenClaw-chat:在 React Native 应用里内置 AI 聊天,边聊边改代码</h2></header><div class=entry-content><p>想象一下:用户在用你的产品时遇到问题,直接在应用里打开聊天,AI 不仅回答问题,还能实时修改应用代码解决问题.
+for r in resp[“responses”]: print(f&#34;{r[‘model’]}: {r[’latency_ms’]}ms&#34;)
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 03:10:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>273 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to LLMWise:一个 API Key 调用 36&#43; 模型,还能对比,融合,评判输出" href="https://claudeai.best/posts/hunter-2026022103/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771610836429_cover.jpg" alt="移动应用与AI">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Expo-OpenClaw-chat:在 React Native 应用里内置 AI 聊天,边聊边改代码
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>想象一下:用户在用你的产品时遇到问题,直接在应用里打开聊天,AI 不仅回答问题,还能实时修改应用代码解决问题.
 这就是 Expo-OpenClaw-chat – 一个为 Expo/React Native 应用打造的 OpenClaw 聊天 SDK.
 核心特性 最小化集成
-import { createChat } from "expo-openclaw-chat"; const chat = createChat({ gatewayUrl: "wss://your-gateway.example.com", token: "your-auth-token", }); // 在应用任何地方打开聊天 chat.open(); 实时修改应用
+import { createChat } from &#34;expo-openclaw-chat&#34;; const chat = createChat({ gatewayUrl: &#34;wss://your-gateway.example.com&#34;, token: &#34;your-auth-token&#34;, }); // 在应用任何地方打开聊天 chat.open(); 实时修改应用
 AI 通过聊天理解用户需求, 直接修改应用代码(类似 vibecoding), 用户无需离开应用即可获得修复 完整聊天功能
 图片附件(支持 expo-image-picker), Markdown 渲染(支持 react-native-marked), 消息历史, 打字指示器 安全认证
-自动 Ed25519 密钥对生成 支持 expo-secure-store(iOS Keychain/Secure Enclave) 设备身份持久化(支持 react-native-mmkv) 快速开始 npm install expo-openclaw-chat # 可选依赖 npm install expo-image-picker # 图片附件 npm install react-native-marked # Markdown 渲染 npm install expo-secure-store # 安全密钥存储 npm install react-native-mmkv # 持久化存储 import { MMKV } from "react-native-mmkv"; import { setStorage } from "expo-openclaw-chat"; // 配置持久化存储 const storage = new MMKV({ id: "my-app" }); setStorage(storage); // 创建聊天实例 gatewayUrl: "wss://gateway.example.com", token: "your-token", title: "AI 助手", placeholder: "描述你遇到的问题...", showImagePicker: true, onOpen: () => console.log("聊天已打开"), onClose: () => console.log("聊天已关闭"), // 包装应用 function App() { return ( &lt;chat.ChatProvider> &lt;YourApp /> &lt;/chat.ChatProvider> ); } // 从任何地方打开聊天 ## 配置选项 ```typescript interface ChatConfig { // 必需 gatewayUrl: string; // WebSocket URL (wss:// or ws://) // 认证(三选一) token?: string; // 简单 auth token password?: string; // 密码认证 deviceToken?: string; // 配对设备 token // 可选 sessionKey?: string; // 会话 key(自动生成) title?: string; // 弹窗标题 placeholder?: string; // 输入框占位符 showImagePicker?: boolean; // 显示图片选择按钮 clientId?: string; // 客户端 ID // 回调 onOpen?: () => void; // 打开回调 onClose?: () => void; // 关闭回调 // 存储 storage?: Storage; // 自定义存储 ## 高级用法 **手动控制组件** import { GatewayClient, ChatEngine, ChatModal, ChatList, ChatBubble, ChatInput } from "expo-openclaw-chat"; // 手动创建客户端 const client = new GatewayClient("wss://gateway.example.com", { await client.connect(); // 创建聊天引擎 const engine = new ChatEngine(client, "session-key"); // 监听消息更新 engine.on("update", () => { console.log("Messages:", engine.messages); // 发送消息 await engine.send("Hello!"); // 获取可用模型列表 const models = await client.modelsList(); console.log(models.models); // [{ key, name, available, ... }] ## 实际应用场景 **场景一:应用内客服** 用户在购物 App 里遇到支付问题,打开内置聊天: - 用户:"支付按钮点不了", AI:诊断发现是表单验证 bug, AI:实时修改代码修复问题, 用户:刷新后问题解决 **场景二:个性化配置** 用户想要深色模式: - 用户:"我要深色模式", AI:修改主题配置代码, 应用:实时切换主题, 用户:无需等待更新 **场景三:功能请求** 用户想要一个新功能: - 用户:"希望能导出 PDF", AI:生成导出功能代码, 应用:动态加载新功能, 用户:立即可用 ## 安全设计 **Ed25519 密钥对** - 自动生成设备密钥对 - 私钥存储在 iOS Keychain(有 expo-secure-store 时) - 或使用 MMKV 持久化 **认证方式** - Token 认证, 密码认证, 设备配对 token **一句话**:Expo-OpenClaw-chat 让 AI 从"聊天工具"变成"应用的一部分",用户边聊边改,体验无缝. GitHub: [github.com/aight-cool/expo-openclaw-chat](https://github.com/aight-cool/expo-openclaw-chat)</p></div><footer class=entry-footer><span title='2026-02-21 02:05:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>334 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Expo-OpenClaw-chat:在 React Native 应用里内置 AI 聊天,边聊边改代码" href=https://claudeai.best/posts/hunter-2026022102/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771607298753_cover.jpg alt=数据分析与对比></figure><header class=entry-header><h2 class=entry-hint-parent>LLM Compare:250+ 模型的 side-by-side 基准对比工具,纯静态无后端</h2></header><div class=entry-content><p>选模型像选手机一样难.GPT-4o 还是 Claude 3.7?DeepSeek-R1 值不值得?Gemini 1.5 Pro 的上下文真的有用吗?
+自动 Ed25519 密钥对生成 支持 expo-secure-store(iOS Keychain/Secure Enclave) 设备身份持久化(支持 react-native-mmkv) 快速开始 npm install expo-openclaw-chat # 可选依赖 npm install expo-image-picker # 图片附件 npm install react-native-marked # Markdown 渲染 npm install expo-secure-store # 安全密钥存储 npm install react-native-mmkv # 持久化存储 import { MMKV } from &#34;react-native-mmkv&#34;; import { setStorage } from &#34;expo-openclaw-chat&#34;; // 配置持久化存储 const storage = new MMKV({ id: &#34;my-app&#34; }); setStorage(storage); // 创建聊天实例 gatewayUrl: &#34;wss://gateway.example.com&#34;, token: &#34;your-token&#34;, title: &#34;AI 助手&#34;, placeholder: &#34;描述你遇到的问题...&#34;, showImagePicker: true, onOpen: () =&gt; console.log(&#34;聊天已打开&#34;), onClose: () =&gt; console.log(&#34;聊天已关闭&#34;), // 包装应用 function App() { return ( &lt;chat.ChatProvider&gt; &lt;YourApp /&gt; &lt;/chat.ChatProvider&gt; ); } // 从任何地方打开聊天 ## 配置选项 ```typescript interface ChatConfig { // 必需 gatewayUrl: string; // WebSocket URL (wss:// or ws://) // 认证(三选一) token?: string; // 简单 auth token password?: string; // 密码认证 deviceToken?: string; // 配对设备 token // 可选 sessionKey?: string; // 会话 key(自动生成) title?: string; // 弹窗标题 placeholder?: string; // 输入框占位符 showImagePicker?: boolean; // 显示图片选择按钮 clientId?: string; // 客户端 ID // 回调 onOpen?: () =&gt; void; // 打开回调 onClose?: () =&gt; void; // 关闭回调 // 存储 storage?: Storage; // 自定义存储 ## 高级用法 **手动控制组件** import { GatewayClient, ChatEngine, ChatModal, ChatList, ChatBubble, ChatInput } from &#34;expo-openclaw-chat&#34;; // 手动创建客户端 const client = new GatewayClient(&#34;wss://gateway.example.com&#34;, { await client.connect(); // 创建聊天引擎 const engine = new ChatEngine(client, &#34;session-key&#34;); // 监听消息更新 engine.on(&#34;update&#34;, () =&gt; { console.log(&#34;Messages:&#34;, engine.messages); // 发送消息 await engine.send(&#34;Hello!&#34;); // 获取可用模型列表 const models = await client.modelsList(); console.log(models.models); // [{ key, name, available, ... }] ## 实际应用场景 **场景一:应用内客服** 用户在购物 App 里遇到支付问题,打开内置聊天: - 用户:&#34;支付按钮点不了&#34;, AI:诊断发现是表单验证 bug, AI:实时修改代码修复问题, 用户:刷新后问题解决 **场景二:个性化配置** 用户想要深色模式: - 用户:&#34;我要深色模式&#34;, AI:修改主题配置代码, 应用:实时切换主题, 用户:无需等待更新 **场景三:功能请求** 用户想要一个新功能: - 用户:&#34;希望能导出 PDF&#34;, AI:生成导出功能代码, 应用:动态加载新功能, 用户:立即可用 ## 安全设计 **Ed25519 密钥对** - 自动生成设备密钥对 - 私钥存储在 iOS Keychain(有 expo-secure-store 时) - 或使用 MMKV 持久化 **认证方式** - Token 认证, 密码认证, 设备配对 token **一句话**:Expo-OpenClaw-chat 让 AI 从&#34;聊天工具&#34;变成&#34;应用的一部分&#34;,用户边聊边改,体验无缝. GitHub: [github.com/aight-cool/expo-openclaw-chat](https://github.com/aight-cool/expo-openclaw-chat) </p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 02:05:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>334 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Expo-OpenClaw-chat:在 React Native 应用里内置 AI 聊天,边聊边改代码" href="https://claudeai.best/posts/hunter-2026022102/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771607298753_cover.jpg" alt="数据分析与对比">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">LLM Compare:250&#43; 模型的 side-by-side 基准对比工具,纯静态无后端
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>选模型像选手机一样难.GPT-4o 还是 Claude 3.7?DeepSeek-R1 值不值得?Gemini 1.5 Pro 的上下文真的有用吗?
 每个模型厂商都吹自己的 benchmark,但横向对比才是选模型的关键.
-刚在 HN 上看到一个新项目 LLM Compare – 一个纯静态的 side-by-side 基准对比工具,250+ 模型,无后端,数据每周自动更新.
+刚在 HN 上看到一个新项目 LLM Compare – 一个纯静态的 side-by-side 基准对比工具,250&#43; 模型,无后端,数据每周自动更新.
 核心特性 纯静态,无后端
-所有数据预取为静态 JSON 通过 GitHub Actions 每周从 api.zeroeval.com 自动更新 托管在 GitHub Pages 上 零服务器成本,零延迟 250+ 模型覆盖
+所有数据预取为静态 JSON 通过 GitHub Actions 每周从 api.zeroeval.com 自动更新 托管在 GitHub Pages 上 零服务器成本,零延迟 250&#43; 模型覆盖
 OpenAI: GPT-4o, o1, o3-mini… Anthropic: Claude 3.5/3.7 Sonnet, Claude Opus 4/4.5/4.6… DeepSeek: V2.5, V3, R1, R1-0528… Google: Gemini 1.0/1.5 Pro/Flash… Mistral, Cohere, Baidu ERNIE… 丰富的基准指标
 AIME 2025(数学推理), GPQA(科学问答), SWE-bench Verified(代码), MMMU(多模态理解), MMLU(知识广度), Humanity’s Last Exam(前沿知识), ARC-AGI v2(抽象推理), 价格,吞吐量,延迟,上下文长度 可分享 URL
-...</p></div><footer class=entry-footer><span title='2026-02-21 01:10:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>249 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to LLM Compare:250+ 模型的 side-by-side 基准对比工具,纯静态无后端" href=https://claudeai.best/posts/hunter-2026022101/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771603732102_cover.jpg alt=代码与编程></figure><header class=entry-header><h2 class=entry-hint-parent>Expectllm:用 Unix "expect" 风格与 LLM 对话,4 行代码搞定</h2></header><div class=entry-content><p>和 LLM 对话时,最烦的是什么?写一堆样板代码:设置 chains,定义 schemas,处理输出解析器……
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 01:10:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>249 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to LLM Compare:250&#43; 模型的 side-by-side 基准对比工具,纯静态无后端" href="https://claudeai.best/posts/hunter-2026022101/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771603732102_cover.jpg" alt="代码与编程">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Expectllm:用 Unix &#34;expect&#34; 风格与 LLM 对话,4 行代码搞定
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>和 LLM 对话时,最烦的是什么?写一堆样板代码:设置 chains,定义 schemas,处理输出解析器……
 刚在 HN 上看到一个新项目 Expectllm,思路很清爽:Agent 就是 expect 脚本.发消息,等模式,根据匹配分支.就这么简单.
 核心洞察 “Agents are just expect scripts. Send a message, expect a pattern, branch on the match.”
 不需要复杂的框架,不需要输出解析器.用正则模式(你本来就会)让 LLM 适应你的格式,而不是反过来.
-4 行代码示例 from expectllm import Conversation c = Conversation() c.send("Is Python dynamically typed? Reply YES or NO") if c.expect_yesno(): print("Correct!") 对比传统做法(20+ 行):
+4 行代码示例 from expectllm import Conversation c = Conversation() c.send(&#34;Is Python dynamically typed? Reply YES or NO&#34;) if c.expect_yesno(): print(&#34;Correct!&#34;) 对比传统做法(20&#43; 行):
 from langchain.chat_models import ChatOpenAI from langchain.output_parsers import PydanticOutputParser from pydantic import BaseModel, Field
 … 设置,chains,错误处理 … 核心特性 零样板代码 — 没有 chains,没有 schemas,没有输出解析器.直接发消息,等待,匹配.
-...</p></div><footer class=entry-footer><span title='2026-02-21 00:10:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>393 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label='post link to Expectllm:用 Unix "expect" 风格与 LLM 对话,4 行代码搞定' href=https://claudeai.best/posts/hunter-2026022100/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771600176601_cover.jpg alt=知识图谱与数据连接></figure><header class=entry-header><h2 class=entry-hint-parent>Session-graph:把分散的 AI 编码会话变成可查询的知识图谱</h2></header><div class=entry-content><p>你每天用 Claude Code,ChatGPT,DeepSeek,Grok,Warp……每个会话都是孤立的信息孤岛.上周在 Claude Code 里解决的 Supabase auth 问题,今天又在 ChatGPT 里问了一遍.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 00:10:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>393 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Expectllm:用 Unix &#34;expect&#34; 风格与 LLM 对话,4 行代码搞定" href="https://claudeai.best/posts/hunter-2026022100/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771600176601_cover.jpg" alt="知识图谱与数据连接">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Session-graph:把分散的 AI 编码会话变成可查询的知识图谱
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>你每天用 Claude Code,ChatGPT,DeepSeek,Grok,Warp……每个会话都是孤立的信息孤岛.上周在 Claude Code 里解决的 Supabase auth 问题,今天又在 ChatGPT 里问了一遍.
 Session-graph 解决这个问题:把分散的 AI 编码会话转化为可查询的知识图谱.
-核心问题 开发者每天用 5+ 个 AI 工具,每个会话都是:
+核心问题 开发者每天用 5&#43; 个 AI 工具,每个会话都是:
 孤立的 silo, 标签页一关,知识就消失, grep 会话日志只能得到文本墙,没有结构 现有方案的问题:单平台,平面文件.只能搜索一个工具的历史,不能跨平台关联.grep 不能告诉你 “FastAPI 使用 Pydantic” 或 “Neo4j 是图数据库”.
 Session-graph 的解决方案 从所有 AI 编码会话中提取结构化知识三元组 – (subject, predicate, object):
-" → " → # - - 组 - - - - 每 - S ` # S # 5 - - # C D G W 1 2 3 4 # 封 # ` # g c # c # p p # d # p # p # p # # > 没 G H W # * * 合 * * 个 * P ` E ? r o S ? F } # 2 # l e r a A S * . . . . # 闭 # ` i d p y i o y y y # 有 * i o F h 3 # 1 C C 2 P 3 实 " 跨 4 三 具 5 A ` 本 L e d w E w I F 6 a e o r p P 实 世 类 依 能 结 分 基 关 ` 1 t 2 3 t p 4 c 5 t 6 t 7 t 8 " 关 一 t w a a . l h . 5 R . 体 k 语 . 元 体 . R s 地 E n f l R d L 实 个 u 0 处 u p k p a A 体 通 检 未 置 2 界 别 赖 力 构 类 础 系 快 b . s . . . h . k . h . h . h . 核 A 系 句 H s t s 技 a a O 链 8 言 组 消 Q p 图 C t s : V T 际 真 s 0 理 d S c R 链 过 查 命 信 4 设 设 速 a c e e o i e o o o 心 的 话 u d t e 术 多 u t 正 个 V W 接 s 去 完 都 息 联 L a 谱 T i : s I s E 数 实 e 流 e e ( h Q 接 中 度 计 施 | 开 s 克 l s 配 n 安 n n 启 r 处 n 链 n 加 n 查 洞 k 知 * b o A s s 亮 平 d G 式 - i 到 " 重 整 能 内 邦 r 中 t l a C c R 据 会 k 会 程 e . S e L * e S 阈 个 , 始 h 隆 o s 置 v 装 s 动 理 接 载 询 察 n 识 * : e P e s 点 台 e P 本 W O k , : 来 追 容 查 的 q 的 ? y a m E h ( 话 i 话 C k j Q * n Q → 值 精 L 谓 u e i i | i n i . - t r 单 - 实 - 到 - o 图 : s I s i 支 T 体 3 : i 1 " " 源 溯 , 询 l 实 l b e e L 的 成 o s L J 查 ( t L 选 L 词 s n s s n e o e m a F u 个 m 体 m m h w 谱 S [ s o 持 C 论 C 来 d k m 追 到 * S 体 o a e A &lt; m A 处 中 本 d o i e 询 上 i i L 0 谓 M e a P T d t n x l u n 会 到 F t l 只 e g F i n * o / * 源 a 亿 u e 溯 : 所 * E , c l s h a N 理 总 : e . n t n 下 t t a . 词 | s b a y e e h - a v l s 话 p p u p t e 是 s i a - o s * d I 追 t + b d * 属 R W a d t : G 结 三 j ) e a 文 y e n 7 只 , l r p p g t g m e e - i W i s i p d 标 s t s u n e C S 溯 a e i * 会 V i l e ? ? t d ( 果 元 ~ s ) 感 _ g 能 e t e l r t r p n - k d p i p e p : g 签 i h t s s a u O , W r c 话 I k L v l w p e ? : 组 $ . o F 知 a 缓 G → 用 d s O O o a p a l v r i e k e k e / e 云 o u A e c ( r 链 i n a , C i a k o d s s w : 0 j n u , l 存 r 这 e , f f y t s p e l i l i l / . n b P s d r J s 标 S 接 k e t E d b g c : c i . s s A i a o 些 p , , e e : h r - i d i i l g 最 - . I - i o S o 准 I * i t i 平 a e : a . / r k 1 6 o z e g a p w 谓 e p d s / . v e n n a n n o r 小 g c - s s O r , O * d e o 台 关 t l E l / i i 3 0 n i k e s h l 词 n r h b O W / e e q a e t e e c a 可 r o r > c s N 不 C a s n 来 键 a n L q p d 8 l p i n e : : d o a r n i g n n u m . a . . a p 行 a m e u L ( 造 : t " " 源 字 ? t a u t a , ( ) ) t s R s s v s o , t i v v i e j l l l h 的 p / l P s C ) 计 轮 对 a , , 让 的 w i b e i t 8 V i . e a O i P a h t r s i o h 提 h r a y s l , 划 子 话 " 和 你 描 i t e r o a 0 e c j A m n d a d s , h & e f o n a o w 取 o t d e a 中 : 结 条 K 磁 同 述 k y l y n D 2 r ) s c e , e r e t u & m u n k d s i 单 让 b e a d u D ) 构 目 8 " 盘 时 i . e , t : o t A s t r o c b e s l _ _ t t 元 你 e n d e , s m 文 查 d ; ; w ? s e ( n s r , , , r o . s n e _ e f : h 是 的 r t t a e e " e 件 询 a i w c 索 x 2 a e e m c o t k t n u 3 o t o i u p S d 路 本 t k i r 引 4 标 g 链 q s e n s p o u s i o t s 0 u ( A o c t C S K 都 i 径 地 a i k i 会 A 准 e 接 u o x a I o m r . _ i e 3 t 主 I s P h o e O 解 c 图 D d i p 话 I 解 个 化 n i l t r n s / c t - r t k 0 语 h y e d e S 析 a 谱 e a d t 数 析 精 ( t r v e r , e r e x p d i i r , 编 i d n e k : 到 m 和 s t a i : b 为 选 1 e e n o s o t f e e 码 m a t 分 e c a t o a 谓 6 ( s s d w q W b 3 s o l 谓 会 i n i + ( 类 Q n W r . a n 5 t R 词 1 L , , s e u i e v 0 p u a 词 话 z t c J 体 2 t i i o D ) 2 c D ) L , r e t r e 3 a t t , 不 u i a D S 系 2 o k p r e , h F 个 M b p r h t n 0 t - p i 再 / c t e O , 6 " i t g s = ) 映 u r i | i , o v : h i u o 宾 是 s ? i e N 6 d i / c 提 射 + i o m e s / 3 / n t n 语 一 e " o p D 1 都 a o s r " 取 ) l d p d a h b 0 t p / s ) 次 s n S z u 3 映 t n p i e 知 W t u l W l i i 3 o u * h , 性 s ? e i b 0 射 a a p n 识 i W c e i t m n 0 / t . i 不 的 i " e p l 6 到 : W r t " 三 L k i e m t e i / s t p 是 , o k ) i H q i ) 元 L i t s e h r z a s e o t s 而 n , n Q E l o 组 M d h n , n u c t s u l [ 是 - 1 R > n : a | t a / t a s t i 主 可 g G C 2 E 提 t | s c t s i i i p s 题 查 r r o 1 { . ~ 取 a o i e v n o u 1 询 a o r 4 { 2 | n v s a / n t j , , p k e 0 , ( A f e s t j . / u 可 h : 5 s P i T i e e j * s 主 关 ] ( 元 0 , I g o o n s . t 题 联 ( J 数 0 p ) u , n a o t 2 , h S 据 + , r - - n t a , 可 t O , , o e s g f l l 扩 t N ) s e r u t 主 展 p ) S 不 r a s o a 题 的 s , c 同 | p e u g 3 知 : h 实 e h k t o ] 识 / W e 体 s . i p u c . 资 / a m : A g u t l 产 g r a s i t p o . i p . ~ , t / u u t o 4 s t d h ( r , r e . u S g 6 e s o b Q : 0 l s u T . L 代 0 a i t h c i 码 + t o p e o t 实 , e n u m e 体 d . t m / ) W T t / i r i o t w n o k l i i b i k m e d i u r a d m t t a o a t v s a i h 链 _ a i 接 l b m 实 i l i 体 n e z : k u s e / ~ . x s 3 t t e 3 t r s % l a s , c i t o 支 i n 持 o - 平 n g 台 r : u a n p 4 i h t ) i s ( s u b j e c t , p r e d i c a t e , o b j e c t ) , n o t [ t o p i c 1 , t o p i c 2 , t o p i c 3 ] . "</p></div><footer class=entry-footer><span title='2026-02-20 23:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>11 分钟</span>&nbsp;·&nbsp;<span>2330 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Session-graph:把分散的 AI 编码会话变成可查询的知识图谱" href=https://claudeai.best/posts/hunter-2026022023/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771596516927_cover.jpg alt=AI与开源社区></figure><header class=entry-header><h2 class=entry-hint-parent>重磅:ggml.ai 创始团队加入 Hugging Face,llama.cpp 迎来新篇章</h2></header><div class=entry-content><p>本地 AI 领域迎来重大消息:ggml.ai 创始团队正式加入 Hugging Face.
-Georgi Gerganov 和他的团队–llama.cpp 的创造者–现在成为 Hugging Face 的全职员工.这不是收购,而是一次战略合作,目标是"确保未来 AI 真正开放".
+&#34; → &#34; → # - - 组 - - - - 每 - S ` # S # 5 - - # C D G W 1 2 3 4 # 封 # ` # g c # c # p p # d # p # p # p # # &gt; 没 G H W # * * 合 * * 个 * P ` E ? r o S ? F } # 2 # l e r a A S * . . . . # 闭 # ` i d p y i o y y y # 有 * i o F h 3 # 1 C C 2 P 3 实 &#34; 跨 4 三 具 5 A ` 本 L e d w E w I F 6 a e o r p P 实 世 类 依 能 结 分 基 关 ` 1 t 2 3 t p 4 c 5 t 6 t 7 t 8 &#34; 关 一 t w a a . l h . 5 R . 体 k 语 . 元 体 . R s 地 E n f l R d L 实 个 u 0 处 u p k p a A 体 通 检 未 置 2 界 别 赖 力 构 类 础 系 快 b . s . . . h . k . h . h . h . 核 A 系 句 H s t s 技 a a O 链 8 言 组 消 Q p 图 C t s : V T 际 真 s 0 理 d S c R 链 过 查 命 信 4 设 设 速 a c e e o i e o o o 心 的 话 u d t e 术 多 u t 正 个 V W 接 s 去 完 都 息 联 L a 谱 T i : s I s E 数 实 e 流 e e ( h Q 接 中 度 计 施 | 开 s 克 l s 配 n 安 n n 启 r 处 n 链 n 加 n 查 洞 k 知 * b o A s s 亮 平 d G 式 - i 到 &#34; 重 整 能 内 邦 r 中 t l a C c R 据 会 k 会 程 e . S e L * e S 阈 个 , 始 h 隆 o s 置 v 装 s 动 理 接 载 询 察 n 识 * : e P e s 点 台 e P 本 W O k , : 来 追 容 查 的 q 的 ? y a m E h ( 话 i 话 C k j Q * n Q → 值 精 L 谓 u e i i | i n i . - t r 单 - 实 - 到 - o 图 : s I s i 支 T 体 3 : i 1 &#34; &#34; 源 溯 , 询 l 实 l b e e L 的 成 o s L J 查 ( t L 选 L 词 s n s s n e o e m a F u 个 m 体 m m h w 谱 S [ s o 持 C 论 C 来 d k m 追 到 * S 体 o a e A &lt; m A 处 中 本 d o i e 询 上 i i L 0 谓 M e a P T d t n x l u n 会 到 F t l 只 e g F i n * o / * 源 a 亿 u e 溯 : 所 * E , c l s h a N 理 总 : e . n t n 下 t t a . 词 | s b a y e e h - a v l s 话 p p u p t e 是 s i a - o s * d I 追 t &#43; b d * 属 R W a d t : G 结 三 j ) e a 文 y e n 7 只 , l r p p g t g m e e - i W i s i p d 标 s t s u n e C S 溯 a e i * 会 V i l e ? ? t d ( 果 元 ~ s ) 感 _ g 能 e t e l r t r p n - k d p i p e p : g 签 i h t s s a u O , W r c 话 I k L v l w p e ? : 组 $ . o F 知 a 缓 G → 用 d s O O o a p a l v r i e k e k e / e 云 o u A e c ( r 链 i n a , C i a k o d s s w : 0 j n u , l 存 r 这 e , f f y t s p e l i l i l / . n b P s d r J s 标 S 接 k e t E d b g c : c i . s s A i a o 些 p , , e e : h r - i d i i l g 最 - . I - i o S o 准 I * i t i 平 a e : a . / r k 1 6 o z e g a p w 谓 e p d s / . v e n n a n n o r 小 g c - s s O r , O * d e o 台 关 t l E l / i i 3 0 n i k e s h l 词 n r h b O W / e e q a e t e e c a 可 r o r &gt; c s N 不 C a s n 来 键 a n L q p d 8 l p i n e : : d o a r n i g n n u m . a . . a p 行 a m e u L ( 造 : t &#34; &#34; 源 字 ? t a u t a , ( ) ) t s R s s v s o , t i v v i e j l l l h 的 p / l P s C ) 计 轮 对 a , , 让 的 w i b e i t 8 V i . e a O i P a h t r s i o h 提 h r a y s l , 划 子 话 &#34; 和 你 描 i t e r o a 0 e c j A m n d a d s , h &amp; e f o n a o w 取 o t d e a 中 : 结 条 K 磁 同 述 k y l y n D 2 r ) s c e , e r e t u &amp; m u n k d s i 单 让 b e a d u D ) 构 目 8 &#34; 盘 时 i . e , t : o t A s t r o c b e s l _ _ t t 元 你 e n d e , s m 文 查 d ; ; w ? s e ( n s r , , , r o . s n e _ e f : h 是 的 r t t a e e &#34; e 件 询 a i w c 索 x 2 a e e m c o t k t n u 3 o t o i u p S d 路 本 t k i r 引 4 标 g 链 q s e n s p o u s i o t s 0 u ( A o c t C S K 都 i 径 地 a i k i 会 A 准 e 接 u o x a I o m r . _ i e 3 t 主 I s P h o e O 解 c 图 D d i p 话 I 解 个 化 n i l t r n s / c t - r t k 0 语 h y e d e S 析 a 谱 e a d t 数 析 精 ( t r v e r , e r e x p d i i r , 编 i d n e k : 到 m 和 s t a i : b 为 选 1 e e n o s o t f e e 码 m a t 分 e c a t o a 谓 6 ( s s d w q W b 3 s o l 谓 会 i n i &#43; ( 类 Q n W r . a n 5 t R 词 1 L , , s e u i e v 0 p u a 词 话 z t c J 体 2 t i i o D ) 2 c D ) L , r e t r e 3 a t t , 不 u i a D S 系 2 o k p r e , h F 个 M b p r h t n 0 t - p i 再 / c t e O , 6 &#34; i t g s = ) 映 u r i | i , o v : h i u o 宾 是 s ? i e N 6 d i / c 提 射 &#43; i o m e s / 3 / n t n 语 一 e &#34; o p D 1 都 a o s r &#34; 取 ) l d p d a h b 0 t p / s ) 次 s n S z u 3 映 t n p i e 知 W t u l W l i i 3 o u * h , 性 s ? e i b 0 射 a a p n 识 i W c e i t m n 0 / t . i 不 的 i &#34; e p l 6 到 : W r t &#34; 三 L k i e m t e i / s t p 是 , o k ) i H q i ) 元 L i t s e h r z a s e o t s 而 n , n Q E l o 组 M d h n , n u c t s u l [ 是 - 1 R &gt; n : a | t a / t a s t i 主 可 g G C 2 E 提 t | s c t s i i i p s 题 查 r r o 1 { . ~ 取 a o i e v n o u 1 询 a o r 4 { 2 | n v s a / n t j , , p k e 0 , ( A f e s t j . / u 可 h : 5 s P i T i e e j * s 主 关 ] ( 元 0 , I g o o n s . t 题 联 ( J 数 0 p ) u , n a o t 2 , h S 据 &#43; , r - - n t a , 可 t O , , o e s g f l l 扩 t N ) s e r u t 主 展 p ) S 不 r a s o a 题 的 s , c 同 | p e u g 3 知 : h 实 e h k t o ] 识 / W e 体 s . i p u c . 资 / a m : A g u t l 产 g r a s i t p o . i p . ~ , t / u u t o 4 s t d h ( r , r e . u S g 6 e s o b Q : 0 l s u T . L 代 0 a i t h c i 码 &#43; t o p e o t 实 , e n u m e 体 d . t m / ) W T t / i r i o t w n o k l i i b i k m e d i u r a d m t t a o a t v s a i h 链 _ a i 接 l b m 实 i l i 体 n e z : k u s e / ~ . x s 3 t t e 3 t r s % l a s , c i t o 支 i n 持 o - 平 n g 台 r : u a n p 4 i h t ) i s ( s u b j e c t , p r e d i c a t e , o b j e c t ) , n o t [ t o p i c 1 , t o p i c 2 , t o p i c 3 ] . &#34; </p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-20 23:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>11 分钟</span>&nbsp;·&nbsp;<span>2330 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Session-graph:把分散的 AI 编码会话变成可查询的知识图谱" href="https://claudeai.best/posts/hunter-2026022023/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771596516927_cover.jpg" alt="AI与开源社区">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">重磅:ggml.ai 创始团队加入 Hugging Face,llama.cpp 迎来新篇章
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>本地 AI 领域迎来重大消息:ggml.ai 创始团队正式加入 Hugging Face.
+Georgi Gerganov 和他的团队–llama.cpp 的创造者–现在成为 Hugging Face 的全职员工.这不是收购,而是一次战略合作,目标是&#34;确保未来 AI 真正开放&#34;.
 关键信息 不会改变:
 ggml-org 项目保持开源和社区驱动 Georgi 和团队继续 100% 时间维护 ggml/llama.cpp 社区保持完全自治,技术和架构决策不变 项目继续 100% 开源 会改变:
 Hugging Face 提供长期可持续资源, 更快的模型支持(你最喜欢的量化模型会更快上线), 更好的 transformers 库集成, 改善用户体验和包装 为什么是 Hugging Face? 过去几年,Hugging Face 一直是 ggml 最坚定的支持者:
 贡献了多个 ggml/llama.cpp 核心功能 构建了 solid 的推理服务器和精美 UI 为 llama.cpp 引入多模态支持 将 llama.cpp 集成到 Hugging Face Inference Endpoints 改进了 GGUF 格式与 HF 平台的兼容性 实现了多种模型架构 帮助日常维护和 PR 审查 Georgi 说:“双方合作一直很顺畅高效,社区也从中受益.正式化这个合作,未来会更强.”
-...</p></div><footer class=entry-footer><span title='2026-02-20 22:08:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>141 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to 重磅:ggml.ai 创始团队加入 Hugging Face,llama.cpp 迎来新篇章" href=https://claudeai.best/posts/hunter-2026022022/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771586901524_cover.jpg alt="Stripe Minions AI 编码代理"></figure><header class=entry-header><h2 class=entry-hint-parent>Stripe Minions:每周 1300+ PR 全由 AI 写代码,人类只管 Review</h2></header><div class=entry-content><p>Stripe 刚发了第二篇 Minions 博客,披露了一个数字:每周 1300+ 个 AI 写的 PR 被合并.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-20 22:08:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>141 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to 重磅:ggml.ai 创始团队加入 Hugging Face,llama.cpp 迎来新篇章" href="https://claudeai.best/posts/hunter-2026022022/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771586901524_cover.jpg" alt="Stripe Minions AI 编码代理">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Stripe Minions:每周 1300&#43; PR 全由 AI 写代码,人类只管 Review
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Stripe 刚发了第二篇 Minions 博客,披露了一个数字:每周 1300&#43; 个 AI 写的 PR 被合并.
 不是 AI 辅助,是 AI 全程写代码,跑测试,修 bug,提 PR,人类只做最后的 Code Review.
 Minions 是什么? Stripe 的内部 AI 编码代理系统,特点:
 完全无人值守:给定任务后,从写代码到提 PR 全程自主, 运行在 devbox:和人类工程师用一样的云开发环境, 安全隔离:每个 devbox 独立,不接触敏感系统或客户数据, 可并行:同时跑多个 minion,像管理多个团队成员 能做什么? 修复 flaky 测试: 自动定位问题,修复,验证 实现功能: 根据需求文档写完整功能代码, 代码迁移: 批量重构,API 升级, 小型改进: 性能优化,代码清理 限制:大方向决策,系统架构设计,安全风险评估仍需人类.
-工作流程 任 # # # - # S - 结 # # # S - - # S # 当 - # - - S 务 ↓ 写 提 # # # # t 果 # # # t # t * # # t 分 代 交 # # 失 # r 云 发 # r A 人 # r 结 # A 判 [ [ r 配 码 关 * 败 i 端 现 数 * * * 对 i I 类 i 论 I 断 相 S I i P 键 1 固 2 测 3 p 开 对 据 每 代 应 开 1 p 擅 2 p * 3 代 关 t n p → → R 设 . 定 . 试 . e 发 周 码 用 发 . e 擅 长 . e * . 能 码 链 r d e 计 步 通 环 A 质 范 者 长 : : 写 是 接 i i m 跑 → 蓝 骤 重 常 复 的 境 I P 量 围 的 A 强 : 架 基 能 先 R 代 否 p a 展 i 测 图 * 试 只 用 , R * * 启 I 调 执 构 础 快 把 e 码 正 e 示 n 试 人 系 * 限 给 现 d 代 * * 示 : 行 , 设 速 开 v , 确 T 了 i 类 统 : 制 有 e 预 理 数 : : 不 m , 安 施 落 发 i 人 , 博 o 一 o → ( l 1 基 v 装 也 * 与 从 是 i 重 全 先 地 者 e 类 客 d 个 n R B i - 础 b 代 一 * 人 测 替 n 复 , 于 体 w 的 评 a 成 修 e l n 2 设 o 码 样 : 类 试 代 i , 边 m 验 价 估 P y 熟 在 v u t 施 x 和 好 1 工 修 , o 已 缘 A i 搞 比 值 长 a 公 b i e , 次 工 用 3 程 复 是 n 知 情 I n 好 就 期 r 报 司 d u e p 格 重 本 具 - 0 师 到 放 s 问 况 i , C 转 影 t 道 的 e g w r 式 试 来 , - 0 相 功 大 题 o A o 移 响 ] v ( i 化 机 是 * + 同 能 写 n I d 到 , 2 ( A b 1 → n , 会 给 易 * ( 标 实 代 s i : ] h I o - t p , 人 于 为 全 准 现 码 , 自 n 把 ( t x 2 合 s u 类 替 人 部 , 是 然 g 控 h t 编 次 并 ) s 超 工 换 类 由 人 因 能 安 t p 码 中 重 h 过 程 和 设 类 为 复 更 全 t s 实 工 试 限 师 扩 计 A 做 用 重 边 p : 践 作 ) 等 制 用 展 的 I 决 d . 要 界 s / : 按 就 的 工 策 e : 不 固 交 : 具 写 . v w 是 定 给 , , b / w 追 流 人 恰 人 o s w 求 程 类 好 类 x t . 炫 执 , 也 r i 技 行 适 R 基 i n , , 合 e 础 p d 而 * v 设 e i 是 目 A i 施 . a 把 * 的 I e 早 d t 灵 * * w 就 e o A 活 * * ) 建 v d I 步 : . 好 / a 骤 控 了 b y 嵌 * 制 . l . 入 * 成 o i 现 : 本 g n 有 A , / / 工 I 防 m t 作 止 i e 流 自 无 n c , 主 限 i h 让 决 循 o n 它 定 环 n o 干 如 s l 脏 何 - o 活 解 s g 累 决 t y 活 问 r / , 题 i n 人 , p e 类 e w 专 s s 注 * - 于 平 s 真 衡 n t 正 * e o 重 * - r 要 : s y 的 减 h 事 少 s . 错 t t 每 误 - r 周 e i + n p 1 d e 3 保 - - 0 持 t r 0 灵 o e 活 - v 个 性 e e n a P d l R - s c - 背 o a 后 d i , i - 是 n i 多 g s 年 - - 基 a w 础 g r 设 e i 施 n t 建 t i 设 s n 的 - g 结 p - 果 a a . r - t l - o 2 t ) - ( o 2 f 0 - 2 i 6 t . s 2 - . s 1 o 9 f ) t w a r e - c o d e - b u t - h u m a n s - s t i l l - r e v i e w - 2 8 7 1 3 6 5 - 2 0 2 6 - 0 2 - 2 0 )</p></div><footer class=entry-footer><span title='2026-02-20 19:22:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>5 分钟</span>&nbsp;·&nbsp;<span>1003 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Stripe Minions:每周 1300+ PR 全由 AI 写代码,人类只管 Review" href=https://claudeai.best/posts/hunter-2026022019/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771582691818_cover.jpg alt=语音识别与AI></figure><header class=entry-header><h2 class=entry-hint-parent>17MB 发音评分器超越人类专家:语言学习的新思路</h2></header><div class=entry-content><p>语言学习 App 最大的痛点之一是发音反馈.录一段音,等几秒,告诉用户"不错"或"再练练"–但具体哪里错了?很难说清楚.
+工作流程 任 # # # - # S - 结 # # # S - - # S # 当 - # - - S 务 ↓ 写 提 # # # # t 果 # # # t # t * # # t 分 代 交 # # 失 # r 云 发 # r A 人 # r 结 # A 判 [ [ r 配 码 关 * 败 i 端 现 数 * * * 对 i I 类 i 论 I 断 相 S I i P 键 1 固 2 测 3 p 开 对 据 每 代 应 开 1 p 擅 2 p * 3 代 关 t n p → → R 设 . 定 . 试 . e 发 周 码 用 发 . e 擅 长 . e * . 能 码 链 r d e 计 步 通 环 A 质 范 者 长 : : 写 是 接 i i m 跑 → 蓝 骤 重 常 复 的 境 I P 量 围 的 A 强 : 架 基 能 先 R 代 否 p a 展 i 测 图 * 试 只 用 , R * * 启 I 调 执 构 础 快 把 e 码 正 e 示 n 试 人 系 * 限 给 现 d 代 * * 示 : 行 , 设 速 开 v , 确 T 了 i 类 统 : 制 有 e 预 理 数 : : 不 m , 安 施 落 发 i 人 , 博 o 一 o → ( l 1 基 v 装 也 * 与 从 是 i 重 全 先 地 者 e 类 客 d 个 n R B i - 础 b 代 一 * 人 测 替 n 复 , 于 体 w 的 评 a 成 修 e l n 2 设 o 码 样 : 类 试 代 i , 边 m 验 价 估 P y 熟 在 v u t 施 x 和 好 1 工 修 , o 已 缘 A i 搞 比 值 长 a 公 b i e , 次 工 用 3 程 复 是 n 知 情 I n 好 就 期 r 报 司 d u e p 格 重 本 具 - 0 师 到 放 s 问 况 i , C 转 影 t 道 的 e g w r 式 试 来 , - 0 相 功 大 题 o A o 移 响 ] v ( i 化 机 是 * &#43; 同 能 写 n I d 到 , 2 ( A b 1 → n , 会 给 易 * ( 标 实 代 s i : ] h I o - t p , 人 于 为 全 准 现 码 , 自 n 把 ( t x 2 合 s u 类 替 人 部 , 是 然 g 控 h t 编 次 并 ) s 超 工 换 类 由 人 因 能 安 t p 码 中 重 h 过 程 和 设 类 为 复 更 全 t s 实 工 试 限 师 扩 计 A 做 用 重 边 p : 践 作 ) 等 制 用 展 的 I 决 d . 要 界 s / : 按 就 的 工 策 e : 不 固 交 : 具 写 . v w 是 定 给 , , b / w 追 流 人 恰 人 o s w 求 程 类 好 类 x t . 炫 执 , 也 r i 技 行 适 R 基 i n , , 合 e 础 p d 而 * v 设 e i 是 目 A i 施 . a 把 * 的 I e 早 d t 灵 * * w 就 e o A 活 * * ) 建 v d I 步 : . 好 / a 骤 控 了 b y 嵌 * 制 . l . 入 * 成 o i 现 : 本 g n 有 A , / / 工 I 防 m t 作 止 i e 流 自 无 n c , 主 限 i h 让 决 循 o n 它 定 环 n o 干 如 s l 脏 何 - o 活 解 s g 累 决 t y 活 问 r / , 题 i n 人 , p e 类 e w 专 s s 注 * - 于 平 s 真 衡 n t 正 * e o 重 * - r 要 : s y 的 减 h 事 少 s . 错 t t 每 误 - r 周 e i &#43; n p 1 d e 3 保 - - 0 持 t r 0 灵 o e 活 - v 个 性 e e n a P d l R - s c - 背 o a 后 d i , i - 是 n i 多 g s 年 - - 基 a w 础 g r 设 e i 施 n t 建 t i 设 s n 的 - g 结 p - 果 a a . r - t l - o 2 t ) - ( o 2 f 0 - 2 i 6 t . s 2 - . s 1 o 9 f ) t w a r e - c o d e - b u t - h u m a n s - s t i l l - r e v i e w - 2 8 7 1 3 6 5 - 2 0 2 6 - 0 2 - 2 0 ) </p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-20 19:22:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>5 分钟</span>&nbsp;·&nbsp;<span>1003 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Stripe Minions:每周 1300&#43; PR 全由 AI 写代码,人类只管 Review" href="https://claudeai.best/posts/hunter-2026022019/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771582691818_cover.jpg" alt="语音识别与AI">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">17MB 发音评分器超越人类专家:语言学习的新思路
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>语言学习 App 最大的痛点之一是发音反馈.录一段音,等几秒,告诉用户&#34;不错&#34;或&#34;再练练&#34;–但具体哪里错了?很难说清楚.
 刚在 HN 上看到一个新项目:17MB 的英语发音评估引擎,能在 CPU 上 300ms 内给出音素级别的评分,而且准确率超过了人类专家.
 技术架构 没有 wav2vec2 或其他大型自监督模型,整个管道的核心是 quantized NeMo Citrinet-256:
-CTC Forced Alignment:把音频对齐到音素级别 GOP Scoring(Goodness of Pronunciation):计算每个音素的发音质量分数 Ensemble Heads:MLP + XGBoost 组合打分 整个模型只有 17MB,比 wav2vec2-based SOTA 小 70 倍.
+CTC Forced Alignment:把音频对齐到音素级别 GOP Scoring(Goodness of Pronunciation):计算每个音素的发音质量分数 Ensemble Heads:MLP &#43; XGBoost 组合打分 整个模型只有 17MB,比 wav2vec2-based SOTA 小 70 倍.
 基准测试结果 在 speechocean762(标准学术基准,2500 条语音)上:
 音素准确率 (PCC), 模型得分=0.580, 人类一致性=0.555 句子准确率, 模型得分=0.710, 人类一致性=0.675
 是的,模型在两个指标上都超过了人类评分者之间的一致性.
@@ -52,30 +373,123 @@ CTC Forced Alignment:把音频对齐到音素级别 GOP Scoring(Goodness of Pron
 但对于实时语言学习反馈这个场景,这个权衡是值得的:
 用户不想等 5 秒听到反馈 App 不想在每次评分时烧掉几 GB 的 GPU 内存 音素级别的精确反馈比高几个点的总体准确率更有用 部署方式 提供了三种方式:
 REST API:传统 HTTP 调用 MCP Server:可以直接让 AI Agent 调用(OpenClaw 等) Azure Marketplace:企业级部署 实际应用场景 场景一:语言学习 App 集成
-...</p></div><footer class=entry-footer><span title='2026-02-20 18:20:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>123 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to 17MB 发音评分器超越人类专家:语言学习的新思路" href=https://claudeai.best/posts/hunter-2026022018/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771578618828_cover.jpg alt=全球网络与数据中心></figure><header class=entry-header><h2 class=entry-hint-parent>Made in EU:用欧洲基础设施搭初创公司,比我想的难多了</h2></header><div class=entry-content><p>有人决定把初创公司完全搭建在欧洲基础设施上.以为就是换个云服务商的事–AWS 换成欧盟供应商,搞定.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-20 18:20:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>123 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to 17MB 发音评分器超越人类专家:语言学习的新思路" href="https://claudeai.best/posts/hunter-2026022018/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771578618828_cover.jpg" alt="全球网络与数据中心">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Made in EU:用欧洲基础设施搭初创公司,比我想的难多了
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>有人决定把初创公司完全搭建在欧洲基础设施上.以为就是换个云服务商的事–AWS 换成欧盟供应商,搞定.
 结果是:比想象中难多了.不是做不成,而是没人告诉你那些奇怪的摩擦点.
 为什么要折腾? 数据主权, GDPR 简化, 不想让整个业务依赖三个美国超大规模厂商, 有点倔,想证明这事儿能干 欧盟有真正的基础设施公司在做严肃产品,它们配得上这些流量.
 最终选定的技术栈 Hetzner:核心计算 负载均衡器,VM,S3 兼容对象存储.价格跟 AWS 比简直离谱地便宜,性能也很稳.如果你从没在 Hetzner 开过机器,你在云计算上多花了冤枉钱.
 Scaleway:补充 Hetzner 不覆盖的 Transactional Email (TEM), Container Registry, 第二个 S3 bucket, 可观测性栈, 甚至域名注册 一个供应商搞定多个服务,至少账单简单.
 Bunny.net:无名英雄 Slovenia 公司,提供:
-CDN + 分布式存储, DNS, 图片优化 WAF + DDoS 保护 边缘网络真的很强,dashboard 好用到飞.从 Cloudflare 迁移过来很快就适应了.
+CDN &#43; 分布式存储, DNS, 图片优化 WAF &#43; DDoS 保护 边缘网络真的很强,dashboard 好用到飞.从 Cloudflare 迁移过来很快就适应了.
 Nebius:AI 推理 如果你需要欧洲的 GPU 计算,又不想把请求发到 us-east-1,这是少数几个真正的选项.
 Hanko:认证和身份 德国供应商,提供 passkeys,社交登录,用户管理.不需要 Auth0 或 Clerk.
 自托管:Rancher 我的爱 自托管了一大堆东西:
 Gitea: 源代码管理, Plausible: 隐私友好分析, Twenty CRM: 客户管理, Infisical: 密钥管理, Bugsink: 错误追踪 全部跑在 Kubernetes 上,Rancher 是保持集群清醒的胶水.
-...</p></div><footer class=entry-footer><span title='2026-02-20 17:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>159 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Made in EU:用欧洲基础设施搭初创公司,比我想的难多了" href=https://claudeai.best/posts/hunter-2026022017/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771574981348_cover.jpg alt="markdown.new AI Markdown 转换工具"></figure><header class=entry-header><h2 class=entry-hint-parent>markdown.new:Cloudflare 出品,任何 URL 转 Markdown,给 AI 省下 80% Token</h2></header><div class=entry-content><p>刚在 HN 上看到个神器:markdown.new,Cloudflare 出的免费服务,把任何网页转成干净的 Markdown.
-核心卖点:相比原始 HTML,能省下 80% 的 Token.
-解决什么问题? AI Agent 浏览网页有个痛点:HTML 太臃肿了.
-一篇博客文章:
-原始 HTML:16,180 tokens, 转成 Markdown:3,150 tokens, 省下 80% 这 80% 省的不是广告和脚本,是真正能被 AI 理解的内容.Token 就是钱,省 Token 就是省钱.
-三层转换机制 markdown.new 用了三层回退,保证每次都能拿到最好的结果:
-Tier 1: Markdown for Agents(最快) fetch(url, {headers: {Accept: "text/markdown"}}) 直接请求 Cloudflare 支持的站点,返回原生 Markdown.零解析,最快速度.
-Tier 2: Workers AI 如果返回的是 HTML,直接丢给 Cloudflare Workers AI 的 toMarkdown() 函数.不需要重新请求.
-Tier 3: Browser Rendering JS 重型页面(SPA),用 Cloudflare Browser Rendering API 渲染完整页面后再提取.
-怎么用? 方式 1:浏览器直接访问 https://markdown.new/https://example.com 在任意 URL 前面加 markdown.new/ 就行.
-...</p></div><footer class=entry-footer><span title='2026-02-20 16:05:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>257 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to markdown.new:Cloudflare 出品,任何 URL 转 Markdown,给 AI 省下 80% Token" href=https://claudeai.best/posts/hunter-2026022016/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://claudeai.best/page/12/>«&nbsp;上一页&nbsp;
-</a><a class=next href=https://claudeai.best/page/14/>下一页&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><span>&copy; 2026 <a href=https://claudeai.best/>AI 极客前沿</a></span> ·
-<span>Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
-</a><script>let menu=document.getElementById("menu");if(menu){const e=localStorage.getItem("menu-scroll-position");e&&(menu.scrollLeft=parseInt(e,10)),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}}document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{const e=document.querySelector("html");e.dataset.theme==="dark"?(e.dataset.theme="light",localStorage.setItem("pref-theme","light")):(e.dataset.theme="dark",localStorage.setItem("pref-theme","dark"))})</script></body></html>
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-20 17:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>159 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Made in EU:用欧洲基础设施搭初创公司,比我想的难多了" href="https://claudeai.best/posts/hunter-2026022017/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://claudeai.best/page/12/">
+      «&nbsp;上一页&nbsp;
+    </a>
+    <a class="next" href="https://claudeai.best/page/14/">下一页&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://claudeai.best/">AI 极客前沿</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

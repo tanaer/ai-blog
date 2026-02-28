@@ -48,6 +48,9 @@
 - **Chain of Thought** (Every.to, AI前沿论文+实验, 深度技术文章): https://every.to/chain-of-thought/feed.xml
 - **Data Machina** (每周AI/ML研究+项目+代码库, 深度挖掘): https://datamachina.substack.com/feed
 - **Generational** (AI趋势与公司分析, 1000+投资者与运营者阅读): https://www.generational.pub/feed
+- **Understanding AI** (Timothy B. Lee, 深度技术+经济学视角, 184K订阅): https://www.understandingai.org/feed
+- **Luiza's Newsletter** (Luiza Jarovsky, PhD, AI政策与治理, 91K订阅): https://www.luizasnewsletter.com/feed
+- **Artificial Intelligence Made Simple** (Devansh, 技术/社会/经济全角度, 200+国家读者): https://www.artificialintelligencemadesimple.com/feed
 
 ### 研究实验室官方博客
 - **OpenAI Blog** (一手发布): https://openai.com/blog/rss.xml
@@ -279,10 +282,10 @@
 - **The Batch** (DeepLearning.AI周报, Andrew Ng): https://www.deeplearning.ai/the-batch/ — ️ 无RSS, Newsletter订阅
 
 ## 数据源统计
-**当前已验证: 135+ 核心数据源**
-- Newsletter: 31+, 个人博客: 14+, 研究机构: 20+ (新增 Microsoft AI News), 科技媒体: 32+, 开发者社区: 8, 中文源: 17, 学术源: 17+ (新增 O'Reilly AI & ML), AI工具与开发: 11, AI播客(RSS): 3, AI专业媒体: 24+ (新增 AI 2 People, Marketing AI Institute)
+**当前已验证: 138+ 核心数据源**
+- Newsletter: 34+ (新增 Understanding AI, Luiza's Newsletter, Artificial Intelligence Made Simple), 个人博客: 14+, 研究机构: 20+, 科技媒体: 32+, 开发者社区: 8, 中文源: 17, 学术源: 17+, AI工具与开发: 11, AI播客(RSS): 3, AI专业媒体: 24+
 - 待验证潜力源: 53+ (其中16个为高质量Newsletter, 9个为AI播客, 3个为技术博客与资源)
 
-**目标: 30+ 高质量源** 已超额达成 (135+)
+**目标: 30+ 高质量源** 已超额达成 (138+)
 
-**最后更新**: 2026-02-27 (晚上 21:00)
+**最后更新**: 2026-02-28 (上午 09:07)

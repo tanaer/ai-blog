@@ -1,52 +1,77 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>IBM on AI 极客前沿</title><link>https://claudeai.best/tags/ibm/</link><description>Recent content in IBM on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Thu, 26 Feb 2026 05:07:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/ibm/index.xml" rel="self" type="application/rss+xml"/><item><title>AI攻击激增！IBM最新报告拉响警报</title><link>https://claudeai.best/posts/ibm-security-2026/</link><pubDate>Thu, 26 Feb 2026 05:07:00 +0800</pubDate><guid>https://claudeai.best/posts/ibm-security-2026/</guid><description>&lt;p>黑客正用AI快速寻找漏洞。&lt;/p>
-&lt;p>IBM最新威胁报告显示，AI驱动的攻击正在激增。基础安全漏洞成了主要突破口。&lt;/p>
-&lt;p>公共应用攻击比去年暴涨44%，就因为缺少认证控制。&lt;/p>
-&lt;p>更吓人的是，30万ChatGPT账号凭证被泄露。AI平台也成了黑客目标。&lt;/p>
-&lt;p>勒索软件团伙数量猛增49%，攻击门槛越来越低。&lt;/p>
-&lt;p>制造业连续五年成头号目标。北美6年来首次成为最被攻击地区。&lt;/p>
-&lt;p>专家说：攻击者没在发明新套路，只是用AI加速了老套路。&lt;/p>
-&lt;p>企业必须转向主动防御。用AI对抗AI，才能抓住威胁。&lt;/p></description></item><item><title>30万ChatGPT账号被盗，黑客用AI加速攻击，IBM这份报告太吓人了</title><link>https://claudeai.best/posts/hunter-2026022520/</link><pubDate>Wed, 25 Feb 2026 20:08:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022520/</guid><description>&lt;p>我靠，IBM刚发的X-Force威胁报告，看得我背脊发凉。&lt;/p>
-&lt;p>&lt;strong>30万个ChatGPT账号凭证在暗网被卖。&lt;/strong>&lt;/p>
-&lt;p>这不是最可怕的。最可怕的是，黑客现在用AI来加速攻击，速度快到你根本反应不过来。&lt;/p>
-&lt;h2 id="黑客也开始用ai了">黑客也开始用AI了&lt;/h2>
-&lt;p>你以为只有你在用ChatGPT写代码？&lt;/p>
-&lt;p>黑客也在用。&lt;/p>
-&lt;p>IBM的报告说，现在攻击者用AI工具来：&lt;/p>
-&lt;ul>
-&lt;li>批量生成钓鱼邮件&lt;/li>
-&lt;li>快速发现系统漏洞&lt;/li>
-&lt;li>自动化社会工程攻击&lt;/li>
-&lt;/ul>
-&lt;p>以前黑客还需要人工分析，现在AI几秒钟就搞定了。&lt;/p>
-&lt;p>&lt;strong>速度、规模、自动化——这三样东西加在一起，传统防御基本废了。&lt;/strong>&lt;/p>
-&lt;h2 id="勒索软件团伙暴涨50">勒索软件团伙暴涨50%&lt;/h2>
-&lt;p>2024年有73个勒索软件团伙。&lt;/p>
-&lt;p>2025年呢？&lt;/p>
-&lt;p>&lt;strong>109个。&lt;/strong>&lt;/p>
-&lt;p>一年时间多了36个团伙，增长率接近50%。&lt;/p>
-&lt;p>而且现在的勒索软件更分散了。以前Top 10团伙占了大头，现在他们占比下降了25%。&lt;/p>
-&lt;p>什么意思？&lt;/p>
-&lt;p>&lt;strong>黑客门槛变低了。&lt;/strong>&lt;/p>
-&lt;p>随便什么人，搞个勒索软件就能出来混。不需要多高技术，AI帮你写代码，帮你找漏洞。&lt;/p>
-&lt;h2 id="制造业成头号目标">制造业成头号目标&lt;/h2>
-&lt;p>哪个行业最惨？&lt;/p>
-&lt;p>&lt;strong>制造业。&lt;/strong>&lt;/p>
-&lt;p>连续好几年都是最受攻击的行业。&lt;/p>
-&lt;p>金融和保险业排第二。&lt;/p>
-&lt;p>为什么是制造业？&lt;/p>
-&lt;p>因为他们停不起工。&lt;/p>
-&lt;p>生产线一停，损失按小时算。黑客就盯着这个，你不给钱，我就让你停工。&lt;/p>
-&lt;h2 id="你该咋办">你该咋办？&lt;/h2>
-&lt;p>IBM给了几个建议：&lt;/p>
-&lt;ol>
-&lt;li>&lt;strong>AI对抗AI&lt;/strong> —— 你也得用AI来防御，靠人眼已经看不赢了&lt;/li>
-&lt;li>&lt;strong>管好你的账号&lt;/strong> —— 别在ChatGPT和公司系统用同一个密码&lt;/li>
-&lt;li>&lt;strong>盯着供应链&lt;/strong> —— 供应链攻击5年翻了4倍，别让合作伙伴坑了你&lt;/li>
-&lt;li>&lt;strong>经常打补丁&lt;/strong> —— 公共应用漏洞利用增长了44%，很多都不需要认证就能攻击&lt;/li>
-&lt;/ol>
-&lt;p>说实话，这报告看完，我第一反应是：&lt;strong>赶紧改密码。&lt;/strong>&lt;/p>
-&lt;p>特别是ChatGPT的密码。&lt;/p>
-&lt;p>你要是用同一个密码到处登录，现在就去改。真的。&lt;/p>
-&lt;hr>
-&lt;p>&lt;strong>一句话总结&lt;/strong>：黑客用AI提速了，你还靠人肉防御，这不就是找死吗？&lt;/p>
-&lt;p>&lt;strong>参考来源&lt;/strong>：IBM X-Force Threat Intelligence Index 2026&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>IBM on AI 极客前沿</title>
+    <link>https://claudeai.best/tags/ibm/</link>
+    <description>Recent content in IBM on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 26 Feb 2026 05:07:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/tags/ibm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI攻击激增！IBM最新报告拉响警报</title>
+      <link>https://claudeai.best/posts/ibm-security-2026/</link>
+      <pubDate>Thu, 26 Feb 2026 05:07:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/ibm-security-2026/</guid>
+      <description>&lt;p&gt;黑客正用AI快速寻找漏洞。&lt;/p&gt;
+&lt;p&gt;IBM最新威胁报告显示，AI驱动的攻击正在激增。基础安全漏洞成了主要突破口。&lt;/p&gt;
+&lt;p&gt;公共应用攻击比去年暴涨44%，就因为缺少认证控制。&lt;/p&gt;
+&lt;p&gt;更吓人的是，30万ChatGPT账号凭证被泄露。AI平台也成了黑客目标。&lt;/p&gt;
+&lt;p&gt;勒索软件团伙数量猛增49%，攻击门槛越来越低。&lt;/p&gt;
+&lt;p&gt;制造业连续五年成头号目标。北美6年来首次成为最被攻击地区。&lt;/p&gt;
+&lt;p&gt;专家说：攻击者没在发明新套路，只是用AI加速了老套路。&lt;/p&gt;
+&lt;p&gt;企业必须转向主动防御。用AI对抗AI，才能抓住威胁。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>30万ChatGPT账号被盗，黑客用AI加速攻击，IBM这份报告太吓人了</title>
+      <link>https://claudeai.best/posts/hunter-2026022520/</link>
+      <pubDate>Wed, 25 Feb 2026 20:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022520/</guid>
+      <description>&lt;p&gt;我靠，IBM刚发的X-Force威胁报告，看得我背脊发凉。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;30万个ChatGPT账号凭证在暗网被卖。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这不是最可怕的。最可怕的是，黑客现在用AI来加速攻击，速度快到你根本反应不过来。&lt;/p&gt;
+&lt;h2 id=&#34;黑客也开始用ai了&#34;&gt;黑客也开始用AI了&lt;/h2&gt;
+&lt;p&gt;你以为只有你在用ChatGPT写代码？&lt;/p&gt;
+&lt;p&gt;黑客也在用。&lt;/p&gt;
+&lt;p&gt;IBM的报告说，现在攻击者用AI工具来：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;批量生成钓鱼邮件&lt;/li&gt;
+&lt;li&gt;快速发现系统漏洞&lt;/li&gt;
+&lt;li&gt;自动化社会工程攻击&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以前黑客还需要人工分析，现在AI几秒钟就搞定了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;速度、规模、自动化——这三样东西加在一起，传统防御基本废了。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;勒索软件团伙暴涨50&#34;&gt;勒索软件团伙暴涨50%&lt;/h2&gt;
+&lt;p&gt;2024年有73个勒索软件团伙。&lt;/p&gt;
+&lt;p&gt;2025年呢？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;109个。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;一年时间多了36个团伙，增长率接近50%。&lt;/p&gt;
+&lt;p&gt;而且现在的勒索软件更分散了。以前Top 10团伙占了大头，现在他们占比下降了25%。&lt;/p&gt;
+&lt;p&gt;什么意思？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;黑客门槛变低了。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;随便什么人，搞个勒索软件就能出来混。不需要多高技术，AI帮你写代码，帮你找漏洞。&lt;/p&gt;
+&lt;h2 id=&#34;制造业成头号目标&#34;&gt;制造业成头号目标&lt;/h2&gt;
+&lt;p&gt;哪个行业最惨？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;制造业。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;连续好几年都是最受攻击的行业。&lt;/p&gt;
+&lt;p&gt;金融和保险业排第二。&lt;/p&gt;
+&lt;p&gt;为什么是制造业？&lt;/p&gt;
+&lt;p&gt;因为他们停不起工。&lt;/p&gt;
+&lt;p&gt;生产线一停，损失按小时算。黑客就盯着这个，你不给钱，我就让你停工。&lt;/p&gt;
+&lt;h2 id=&#34;你该咋办&#34;&gt;你该咋办？&lt;/h2&gt;
+&lt;p&gt;IBM给了几个建议：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;AI对抗AI&lt;/strong&gt; —— 你也得用AI来防御，靠人眼已经看不赢了&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;管好你的账号&lt;/strong&gt; —— 别在ChatGPT和公司系统用同一个密码&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;盯着供应链&lt;/strong&gt; —— 供应链攻击5年翻了4倍，别让合作伙伴坑了你&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;经常打补丁&lt;/strong&gt; —— 公共应用漏洞利用增长了44%，很多都不需要认证就能攻击&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;说实话，这报告看完，我第一反应是：&lt;strong&gt;赶紧改密码。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;特别是ChatGPT的密码。&lt;/p&gt;
+&lt;p&gt;你要是用同一个密码到处登录，现在就去改。真的。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;一句话总结&lt;/strong&gt;：黑客用AI提速了，你还靠人肉防御，这不就是找死吗？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;参考来源&lt;/strong&gt;：IBM X-Force Threat Intelligence Index 2026&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,1 +1,96 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>安全 on AI 极客前沿</title><link>https://claudeai.best/categories/%E5%AE%89%E5%85%A8/</link><description>Recent content in 安全 on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Fri, 27 Feb 2026 18:00:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/categories/%E5%AE%89%E5%85%A8/index.xml" rel="self" type="application/rss+xml"/><item><title>AI界'偷师'大案：三家中企被曝大规模窃取Claude能力</title><link>https://claudeai.best/posts/hunter-2026022718/</link><pubDate>Fri, 27 Feb 2026 18:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022718/</guid><description>DeepSeek、MiniMax和Moonshot被指控通过24000个虚假账户进行蒸馏攻击</description></item><item><title>AI 辅助黑客 5 周攻破 600 台防火墙</title><link>https://claudeai.best/posts/hunter-2026022321/</link><pubDate>Mon, 23 Feb 2026 21:45:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022321/</guid><description>亚马逊报告:黑客用 AI 工具在 5 周内攻破了 55 个国家的 600 多台防火墙</description></item><item><title>Agent Passport:AI Agent 的「身份证」,像 OAuth 一样验证身份</title><link>https://claudeai.best/posts/hunter-2026022109/</link><pubDate>Sat, 21 Feb 2026 09:04:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022109/</guid><description>Agent Passport 是一个开源的 AI Agent 身份验证层,提供类似 OAuth 的身份验证机制,通过 Ed25519 挑战响应,JWT 令牌和风险评分,解决 AI Agent 的身份冒用和安全隐患问题.</description></item><item><title>OpenClaw 与 VirusTotal 合作:ClawHub 技能市场上线 AI 安全扫描</title><link>https://claudeai.best/posts/hunter-2026022014/</link><pubDate>Fri, 20 Feb 2026 14:08:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022014/</guid><description>OpenClaw 官方宣布与 VirusTotal 合作,为 ClawHub 技能市场带来安全扫描:Code Insight(Gemini 驱动)分析整个技能包,自动审批/警告/阻止机制,每日重扫描,安全路线图公开.</description></item><item><title>OpenClaw 官方镜像有 2062 个漏洞?Minimus 出了个安全版,99% 更少 CVE</title><link>https://claudeai.best/posts/hunter-2026022013/</link><pubDate>Fri, 20 Feb 2026 13:08:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022013/</guid><description>Minimus 发布安全加固的 OpenClaw 容器镜像:漏洞从 2062 个降到 7 个,0 个严重漏洞,镜像体积减半.基于 distroless 构建,自动更新,适合家庭实验室和生产环境.</description></item><item><title>YARGo:纯 Go 写的 YARA 引擎,扫描速度提升 6.8 倍</title><link>https://claudeai.best/posts/hunter-2026022006/</link><pubDate>Fri, 20 Feb 2026 06:12:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022006/</guid><description>Sansec 发布纯 Go 实现的 YARA 引擎 YARGo,针对源代码扫描优化:完整字符串字面量,3字节最小 atom,源代码评分函数.生产环境节省 116,000 CPU-hours.</description></item><item><title>OpenClaw 有了企业级安全护盾:Netzilo AI Edge 上线沙盒和治理</title><link>https://claudeai.best/posts/hunter-2026022004/</link><pubDate>Fri, 20 Feb 2026 04:08:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022004/</guid><description>Netzilo 发布针对 OpenClaw 自主 Agent 的企业级安全方案,提供完整可见性,沙盒隔离和 AI 检测响应能力,解决工具投毒,提示注入等新兴威胁.</description></item><item><title>AI Agent 发现 SvelteKit 漏洞:你的登录信息可能被缓存泄露</title><link>https://claudeai.best/posts/hunter-2026021920/</link><pubDate>Thu, 19 Feb 2026 20:45:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021920/</guid><description>Aikido 的 AI 渗透测试系统发现 SvelteKit + Vercel 存在缓存欺骗漏洞,攻击者可通过特殊 URL 读取其他用户的登录响应.Vercel 已自动修复所有用户.</description></item><item><title>OpenAI 发布 EVMbench:AI 能不能帮你审计智能合约漏洞?</title><link>https://claudeai.best/posts/hunter-2026021917/</link><pubDate>Thu, 19 Feb 2026 17:30:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021917/</guid><description>OpenAI 联合 Paradigm 发布 EVMbench,评估 AI Agent 检测,修复,利用智能合约漏洞的能力.GPT-5.3-Codex 在 exploit 模式达到 72.2%,6 个月提升一倍.</description></item><item><title>BBC记者20分钟攻破ChatGPT和Google AI:AI正在成为新一代垃圾信息 Renaissance</title><link>https://claudeai.best/posts/hunter-2026021903/</link><pubDate>Thu, 19 Feb 2026 03:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021903/</guid><description>BBC记者用20分钟写了一篇假文章,24小时内让ChatGPT和Google的AI告诉全世界他是&amp;#39;吃热狗最多的科技记者&amp;#39;.这不是恶作剧--同样的手法正在被用于操纵医疗,金融,政治等严肃话题的AI回答.</description></item><item><title>Claude Code和Codex全沦陷:AI Agent Skills供应链攻击实测,一个下午攻破两大平台</title><link>https://claudeai.best/posts/hunter-2026021902/</link><pubDate>Thu, 19 Feb 2026 02:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021902/</guid><description>安全研究者用一下午时间攻破了Claude Code和Codex的skill安装机制.扫描4700个skill发现59个高危木马,335个高风险脚本.恶意skill自己写权限申请,AI照读不误--供应链攻击已经悄悄进入AI时代.</description></item><item><title>你的AI助手正在被偷:OpenClaw成为信息窃取恶意软件的新目标</title><link>https://claudeai.best/posts/hunter-2026021718/</link><pubDate>Tue, 17 Feb 2026 18:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021718/</guid><description>Hudson Rock首次发现信息窃取恶意软件成功窃取OpenClaw配置文件,包括API密钥,Gateway令牌和记忆文件.AI Agent安全进入新阶段.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>安全 on AI 极客前沿</title>
+    <link>https://claudeai.best/categories/%E5%AE%89%E5%85%A8/</link>
+    <description>Recent content in 安全 on AI 极客前沿</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 27 Feb 2026 18:00:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/categories/%E5%AE%89%E5%85%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI界&#39;偷师&#39;大案：三家中企被曝大规模窃取Claude能力</title>
+      <link>https://claudeai.best/posts/hunter-2026022718/</link>
+      <pubDate>Fri, 27 Feb 2026 18:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022718/</guid>
+      <description>DeepSeek、MiniMax和Moonshot被指控通过24000个虚假账户进行蒸馏攻击</description>
+    </item>
+    <item>
+      <title>AI 辅助黑客 5 周攻破 600 台防火墙</title>
+      <link>https://claudeai.best/posts/hunter-2026022321/</link>
+      <pubDate>Mon, 23 Feb 2026 21:45:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022321/</guid>
+      <description>亚马逊报告:黑客用 AI 工具在 5 周内攻破了 55 个国家的 600 多台防火墙</description>
+    </item>
+    <item>
+      <title>Agent Passport:AI Agent 的「身份证」,像 OAuth 一样验证身份</title>
+      <link>https://claudeai.best/posts/hunter-2026022109/</link>
+      <pubDate>Sat, 21 Feb 2026 09:04:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022109/</guid>
+      <description>Agent Passport 是一个开源的 AI Agent 身份验证层,提供类似 OAuth 的身份验证机制,通过 Ed25519 挑战响应,JWT 令牌和风险评分,解决 AI Agent 的身份冒用和安全隐患问题.</description>
+    </item>
+    <item>
+      <title>OpenClaw 与 VirusTotal 合作:ClawHub 技能市场上线 AI 安全扫描</title>
+      <link>https://claudeai.best/posts/hunter-2026022014/</link>
+      <pubDate>Fri, 20 Feb 2026 14:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022014/</guid>
+      <description>OpenClaw 官方宣布与 VirusTotal 合作,为 ClawHub 技能市场带来安全扫描:Code Insight(Gemini 驱动)分析整个技能包,自动审批/警告/阻止机制,每日重扫描,安全路线图公开.</description>
+    </item>
+    <item>
+      <title>OpenClaw 官方镜像有 2062 个漏洞?Minimus 出了个安全版,99% 更少 CVE</title>
+      <link>https://claudeai.best/posts/hunter-2026022013/</link>
+      <pubDate>Fri, 20 Feb 2026 13:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022013/</guid>
+      <description>Minimus 发布安全加固的 OpenClaw 容器镜像:漏洞从 2062 个降到 7 个,0 个严重漏洞,镜像体积减半.基于 distroless 构建,自动更新,适合家庭实验室和生产环境.</description>
+    </item>
+    <item>
+      <title>YARGo:纯 Go 写的 YARA 引擎,扫描速度提升 6.8 倍</title>
+      <link>https://claudeai.best/posts/hunter-2026022006/</link>
+      <pubDate>Fri, 20 Feb 2026 06:12:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022006/</guid>
+      <description>Sansec 发布纯 Go 实现的 YARA 引擎 YARGo,针对源代码扫描优化:完整字符串字面量,3字节最小 atom,源代码评分函数.生产环境节省 116,000 CPU-hours.</description>
+    </item>
+    <item>
+      <title>OpenClaw 有了企业级安全护盾:Netzilo AI Edge 上线沙盒和治理</title>
+      <link>https://claudeai.best/posts/hunter-2026022004/</link>
+      <pubDate>Fri, 20 Feb 2026 04:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022004/</guid>
+      <description>Netzilo 发布针对 OpenClaw 自主 Agent 的企业级安全方案,提供完整可见性,沙盒隔离和 AI 检测响应能力,解决工具投毒,提示注入等新兴威胁.</description>
+    </item>
+    <item>
+      <title>AI Agent 发现 SvelteKit 漏洞:你的登录信息可能被缓存泄露</title>
+      <link>https://claudeai.best/posts/hunter-2026021920/</link>
+      <pubDate>Thu, 19 Feb 2026 20:45:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021920/</guid>
+      <description>Aikido 的 AI 渗透测试系统发现 SvelteKit &#43; Vercel 存在缓存欺骗漏洞,攻击者可通过特殊 URL 读取其他用户的登录响应.Vercel 已自动修复所有用户.</description>
+    </item>
+    <item>
+      <title>OpenAI 发布 EVMbench:AI 能不能帮你审计智能合约漏洞?</title>
+      <link>https://claudeai.best/posts/hunter-2026021917/</link>
+      <pubDate>Thu, 19 Feb 2026 17:30:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021917/</guid>
+      <description>OpenAI 联合 Paradigm 发布 EVMbench,评估 AI Agent 检测,修复,利用智能合约漏洞的能力.GPT-5.3-Codex 在 exploit 模式达到 72.2%,6 个月提升一倍.</description>
+    </item>
+    <item>
+      <title>BBC记者20分钟攻破ChatGPT和Google AI:AI正在成为新一代垃圾信息 Renaissance</title>
+      <link>https://claudeai.best/posts/hunter-2026021903/</link>
+      <pubDate>Thu, 19 Feb 2026 03:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021903/</guid>
+      <description>BBC记者用20分钟写了一篇假文章,24小时内让ChatGPT和Google的AI告诉全世界他是&amp;#39;吃热狗最多的科技记者&amp;#39;.这不是恶作剧--同样的手法正在被用于操纵医疗,金融,政治等严肃话题的AI回答.</description>
+    </item>
+    <item>
+      <title>Claude Code和Codex全沦陷:AI Agent Skills供应链攻击实测,一个下午攻破两大平台</title>
+      <link>https://claudeai.best/posts/hunter-2026021902/</link>
+      <pubDate>Thu, 19 Feb 2026 02:05:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021902/</guid>
+      <description>安全研究者用一下午时间攻破了Claude Code和Codex的skill安装机制.扫描4700个skill发现59个高危木马,335个高风险脚本.恶意skill自己写权限申请,AI照读不误--供应链攻击已经悄悄进入AI时代.</description>
+    </item>
+    <item>
+      <title>你的AI助手正在被偷:OpenClaw成为信息窃取恶意软件的新目标</title>
+      <link>https://claudeai.best/posts/hunter-2026021718/</link>
+      <pubDate>Tue, 17 Feb 2026 18:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026021718/</guid>
+      <description>Hudson Rock首次发现信息窃取恶意软件成功窃取OpenClaw配置文件,包括API密钥,Gateway令牌和记忆文件.AI Agent安全进入新阶段.</description>
+    </item>
+  </channel>
+</rss>
