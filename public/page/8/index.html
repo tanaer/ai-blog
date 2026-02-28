@@ -185,6 +185,63 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://claudeai.best/images/hunter/2026022504.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AI 编程工具 15 分钟开发应用，免费工具时代要结束了？
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>一个不懂编程的人，用 AI 工具 15 分钟做出了自己想要的 Mac 应用。这不仅是个人效率的提升，更预示着整个单用途应用市场的崩塌。
+15 分钟开发一个 Mac 应用 9to5Mac 的编辑 Benj Edwards 讲了一个亲身经历。
+他想找一个简单的 Mac 应用解决一个生产力问题。免费的应用充满低质量广告，付费的应用虽然能用，但功能永远差点意思——不是多了一些不需要的功能，就是缺少某个关键细节。
+于是他试了 OpenAI 的 Codex。
+从一个空文件夹开始，15 分钟后，核心功能已经跑起来了。
+接下来的几周，他不断给 Codex 提需求：加个按钮、接入 Apple 的 Foundation Models、某个事件发生时通知我……每次修改，Codex 10 秒钟搞定。
+最后得到的应用：完全符合他的需求，没有广告，没有多余功能，代码还能随时调整。
+Vibe Coding：2025 年的年度词汇 这种开发方式有个名字：Vibe Coding。
+2025 年，Collins 词典把它选为年度词汇。维基百科的定义是：用自然语言向大语言模型描述任务，让 AI 生成代码——关键是接受 AI 生成的代码而不仔细审查内部结构，只看结果，通过后续 prompt 调整。
+Andrej Karpathy 的描述更直接：“完全沉浸到氛围里，拥抱指数增长，忘记代码的存在。”
+听起来很危险？批评者确实指出：缺乏问责制、可维护性差、安全漏洞风险高。
+但对于非程序员来说，这是第一次软件真正为他们服务，而不是他们去适应软件。
+单用途应用市场的丧钟 Benj 的观点很明确：单用途应用的商业模式正在瓦解。
+过去，独立开发者靠做出一个好用的单功能应用赚钱。用户愿意付费，因为自己开发成本太高。
+但现在：
+免费应用：充满广告，体验差，用户忍着用 付费应用：功能固定，永远差点意思，用户妥协着用 AI 开发的应用：完全定制，随时调整，代码归你 当第三种选择的门槛降到&#34;会说话就行&#34;，谁还愿意忍受前两种？
+Xcode 集成：苹果的官方背书 更重要的事情发生在苹果生态。
+2026 年 2 月，苹果宣布 Xcode 26.4 将原生集成 Claude Agent 和 OpenAI Codex。这意味着：
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-25 04:05:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>181 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to AI 编程工具 15 分钟开发应用，免费工具时代要结束了？" href="https://claudeai.best/posts/hunter-2026022504/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">go-size-analyzer：浏览器里分析 Go 二进制文件大小，还能生成树状图
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Go 工具链生态又添新成员。go-size-analyzer 是一个分析编译后 Go 二进制文件大小的工具，支持跨平台格式（ELF、Mach-O、PE、WebAssembly），并提供树状图可视化。
+最酷的是，它编译成了 WebAssembly，托管在 gsa.zxilly.dev，你可以直接在浏览器中打开编译好的二进制文件进行分析——无需安装任何东西。
+功能亮点：
+详细分解：按包、按段展示大小占比 多种输出：text、json、html、svg 交互式界面：Web UI 和终端 UI 都支持 Diff 模式：对比两个二进制文件的大小变化 安装也很简单：
+# Homebrew brew install go-size-analyzer # Scoop scoop install go-size-analyzer # Go install go install github.com/Zxilly/go-size-analyzer/cmd/gsa@latest 本地使用：
+gsa --web your-binary Simon Willison 试用了这个工具，发现 Datadog 团队用它把 Agent 二进制体积减少了 77%。对于微服务和容器化部署场景，这个工具能帮你快速定位体积膨胀的源头。
+项目地址：github.com/Zxilly/go-size-analyzer
+推文草稿 Go 二进制文件太大了？试试 go-size-analyzer。
+最酷的是它能编译成 WebAssembly，在浏览器里直接分析二进制——不需要安装任何东西。
+Datadog 团队用它把 Agent 体积砍了 77%。
+在线体验：https://gsa.zxilly.dev
+#Go #WebAssembly #性能优化
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-25 03:04:00 +0800 CST'>2026年2月25日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>63 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to go-size-analyzer：浏览器里分析 Go 二进制文件大小，还能生成树状图" href="https://claudeai.best/posts/hunter-2026022503/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://claudeai.best/images/hunter/2026022502.jpg" alt="">
 </figure>
   <header class="entry-header">
@@ -343,55 +400,6 @@ T T T O O O D D D O O O : : : V C C a h h l e e i c c d k k a t a p e u e t r P 
   </div>
   <footer class="entry-footer"><span title='2026-02-24 19:05:00 +0800 CST'>2026年2月24日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>34 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to Ladybird 两周移植 25000 行代码到 Rust，AI 辅助的教科书级案例" href="https://claudeai.best/posts/ladybird-rust-ai/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1200" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Simon Willison 的新项目：用智能体工程对抗 Vibe Coding
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Simon Willison 又开新坑了——这次是&#34;Agentic Engineering Patterns&#34;，专门收集编码智能体的最佳实践。
-他把现在 AI 编程分成两派：一派是&#34;vibe coding&#34;，完全不看代码让 AI 乱写；另一派是&#34;Agentic Engineering&#34;，专业工程师用 AI 放大自己的能力。很明显，他站后者。
-这个项目的定位很有意思：不是博客文章，也不是传统书籍，而是&#34;Guide &#43; Chapter&#34;格式。Guide 是主题集合，Chapter 是可以持续更新的章节——解决了博客内容容易过时的问题。
-前两章已经上线：
-“Writing code is cheap now” 探讨代码成本归零后，我们的工作直觉该怎么调整 “Red/green TDD” 讲测试驱动开发怎么让智能体写得更稳 Willison 还特意强调：内容全是他自己写的，LLM 只负责校对和生成示例代码。这态度挺硬核的，但也说明他对这事儿多认真。
-最骚的是，整个 Guide/Chapter 的技术实现，几乎都是 Claude Opus 4.6 在 Claude Code 里写的。用智能体搭建智能体工程指南，这递归玩得溜。
-他说打算每周更新 1-2 章，没说什么时候结束——因为这领域本身就还在快速演化。值得关注。
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-24 18:04:00 +0800 CST'>2026年2月24日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>45 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Simon Willison 的新项目：用智能体工程对抗 Vibe Coding" href="https://claudeai.best/posts/2026-02-24-agentic-engineering-patterns/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771228959026_cover.jpg" alt="AI模型三巨头混战的概念图">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">没人打招呼,三大AI巨头却在同一天掀桌子
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>说实话,有点离谱.
-没人打招呼,没人协调,但Anthropic、OpenAI、DeepSeek偏偏选在2026年2月同一天掀桌子.
-这不是什么发布会撞车,这是一场没有硝烟的模型战争.
-发生了什么? 2月5号,Anthropic丢出Claude Opus 4.6,主打一个Agent Teams——不再是单个AI干活,而是多个Agent并行协作.写代码、做分析、搞研究,原来两小时的活现在二十分钟搞定.十二天后,Sonnet 4.6跟上,直接把Opus级别的性能塞进中端价位.
-同一天,OpenAI掏出GPT-5.3-Codex.最骚的是这玩意儿参与了自身的开发——调试、部署、诊断测试结果,AI写AI,递归进化开始了.
-然后DeepSeek V4的预发布信号也出来了:上下文窗口从128K飙到100万token,知识库更新到2025年5月. Nomura的分析师说,正式版随时可能落地.
-有意思的点 其实这次混战暴露了一个趋势:大家都不再比谁更会聊天了,比的是谁能真正干活.
-Claude的Excel和PowerPoint集成,Opus的Agent Teams,都在冲着&#34;知识工作者&#34;去.GPT-5.3-Codex死磕编程,DeepSeek继续打性价比和开源牌.
-Benchmark已经不重要了,重要的是谁能当你的同事.
-该怎么选? 说实话,日常用的话差距没你想的大.真正拉开距离的是长任务、复杂编排、Agent自主运行这些场景.
-知识工作、办公自动化 → Claude Opus/Sonnet 4.6 纯编程 → GPT-5.3-Codex 要省钱或数据不能出墙 → DeepSeek 这场仗才刚开始,谁的优势都是暂时的. 但有一点可以确定:2026年2月,是AI从&#34;会说话&#34;变成&#34;会干活&#34;的分水岭.
-🔗 完整分析
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-24 17:04:00 +0800 CST'>2026年2月24日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>35 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to 没人打招呼,三大AI巨头却在同一天掀桌子" href="https://claudeai.best/posts/hunter-2026022417/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

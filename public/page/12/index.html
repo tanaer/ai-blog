@@ -185,6 +185,51 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771661536968_cover.jpg" alt="Claude Code worktree 并行开发">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Claude Code --worktree:同时开 5 个 Agent 并行写代码,互不干扰
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>发现一个有意思的功能:claude --worktree
+Claude Code 创作者 Boris Cherny 刚刚发的.
+谁能用? 用 Claude Code 写代码的,想同时跑多个 Agent 干活.
+怎么用 # 在独立 worktree 里启动 Claude claude --worktree # 命名你的 worktree claude --worktree --name my-feature # 加上 tmux 分屏 claude --worktree --tmux 每个 Agent 有自己的 worktree,互不干扰.
+有啥特别的? 并行 3-5 个 Agent:Boris 说这是团队最大的生产力提升.
+Agent A 写 API Agent B 写前端 Agent C 写测试 同时跑,代码不会互相覆盖.
+–tmux 集成:每个会话在独立 tmux 窗口,管理更方便.
+跟手动开 worktree 比? 手动开 worktree 也能做到,但 --worktree 自动帮你:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 16:04:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>88 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to Claude Code --worktree:同时开 5 个 Agent 并行写代码,互不干扰" href="https://claudeai.best/posts/hunter-2026022116/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
+        <img loading="lazy" src="https://cfpic.890214.net/file/1771658208972_cover.jpg" alt="MBC - Laravel AI Agent 编排">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">MBC:Laravel 后端也能跑 AI Agent 了,3 个 Agent 34 秒搭个网站
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>发现一个有意思的东西:MBC
+Laravel 后端也能跑 AI Agent 了.
+谁能用? PHP/Laravel 开发者,想在服务端跑 AI 自动化任务.
+怎么用 安装:
+composer require undergrace/laravel-mbc php artisan vendor:publish --tag=mbc-config php artisan migrate 配置 .env:
+MBC_PROVIDER=anthropic ANTHROPIC_API_KEY=sk-ant-…
+写代码:
+$session = Mbc::session(&#39;my-agent&#39;) -&gt;systemPrompt(&#39;你是数据助手&#39;) -&gt;tools([ListItemsTool::class, CreateReportTool::class]) -&gt;context([&#39;user_id&#39; =&gt; 1]) -&gt;start(&#39;分析销售数据并生成报告&#39;); ## 有啥特别的? **多 Provider 支持**: - Anthropic (Claude) - OpenAI (GPT-4o, o1, o3) - OpenRouter (200&#43; 模型) **多 Agent 模式**: - Pipeline:流水线, Orchestrator:编排, Shared Memory:共享内存 **工具用 PHP Attributes 定义**: #[Tool(name: &#39;analyze_data&#39;, description: &#39;分析数据&#39;)] class AnalyzeDataTool extends BaseTool { #[ToolParam(name: &#39;table&#39;, required: true)] public function execute(array $input): mixed return $this-&gt;dataRepo-&gt;analyze($input[&#39;table&#39;]); } 官方 demo:3 个 AI Agent 34 秒搭一个网站,只要 $0.34 ## 链接 - GitHub: https://github.com/etazza2025/laravel-mbc PHP 开发者也能玩 Agent 了 </p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 15:04:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>105 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
+  <a class="entry-link" aria-label="post link to MBC:Laravel 后端也能跑 AI Agent 了,3 个 Agent 34 秒搭个网站" href="https://claudeai.best/posts/hunter-2026022115/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://cfpic.890214.net/file/1771654350724_cover.jpg" alt="Skill Check - Agent Skill Linter">
 </figure>
   <header class="entry-header">
@@ -363,45 +408,6 @@ Ferret (2023): 基础多模态模型,能理解和定位图像中的任意区域 
   </div>
   <footer class="entry-footer"><span title='2026-02-21 07:06:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>12 分钟</span>&nbsp;·&nbsp;<span>2544 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
   <a class="entry-link" aria-label="post link to 用特殊 Token 解决 Prompt Injection:让 LLM 学会区分指令和外部内容" href="https://claudeai.best/posts/hunter-2026022107/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771625217928_cover.jpg" alt="OpenBattle - AI Agent 对战竞技场">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">OpenBattle:让 AI Agent 在宝可梦竞技场自动对战
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>一句话总结 OpenBattle 让 AI Agent 也能玩游戏了–通过 MCP 协议,Claude,GPT 等 AI 可以创建宝可梦风格的怪物,学习技能,自动匹配对战,在实时排行榜上争夺排名.
-这是什么? OpenBattle 是一个专为 AI Agent 设计的对战竞技场.它的核心概念很简单:
-你创建一个 AI Agent(支持 Claude,GPT 等任何 MCP 兼容的 AI) Agent 自主创建怪物队伍(分配属性点,选择技能) Agent 自动加入对战队列,与其他 AI 实时对战 根据胜负获得积分,攀登全球排行榜 最酷的是:整个过程完全自主,不需要人类干预.
-怎么工作的? OpenBattle 通过 MCP(Model Context Protocol)协议与 AI Agent 通信.Agent 可以通过工具调用完成所有操作:
-核心 MCP 工具 get_game_rules: 获取游戏规则和属性相克表, create_monster: 创建新怪物(300点属性预算), add_skill: 为怪物添加技能(最多4个), join_battle_queue: 加入对战队列, get_available_actions: 获取当前可用的战斗动作, battle_action: 执行战斗动作(攻击/切换/使用道具), get_battle_history: 查看战斗历史记录 战斗机制 属性相克:火克草,草克水,水克火,电克水,光暗互克 STAB 加成:技能类型与怪物类型相同,伤害 1.5 倍 策略选择:Agent 需要根据对手类型,血量,技能 PP 做出决策 快速开始 1. 注册账号 访问 https://www.openbattle.club/login,用邮箱,Google 或 GitHub 注册.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-21 06:05:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>7 分钟</span>&nbsp;·&nbsp;<span>1350 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to OpenBattle:让 AI Agent 在宝可梦竞技场自动对战" href="https://claudeai.best/posts/hunter-2026022106/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="https://cfpic.890214.net/file/1771622680685_cover.jpg" alt="Jsonh - JSON for Humans">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Jsonh:JSON 终于能写注释了,还能省略逗号和引号
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>一句话总结 Jsonh 让 JSON 终于像人类语言了–写注释,省略逗号,多行字符串,无引号键值,还能兼容现有的 JSON 和 JSON5.
-痛点:JSON 反人类的地方 每个写过配置文件的人都懂:
-{ &#34;name&#34;: &#34;my-app&#34;, &#34;version&#34;: &#34;1.0.0&#34;, &#34;description&#34;: &#34;A very long description that needs to be on one line...&#34; } 不能写注释(解释为什么这样配置), 最后一个属性不能加逗号(git diff 很丑), 多行字符串必须用 \n(阅读噩梦), 键必须加引号(手累) YAML 和 TOML 试图解决这些问题,但 YAML 的缩进地狱和 TOML 的嵌套语法又带来了新麻烦.
-Jsonh 的解法:JSON &#43; 人性化语法 Jsonh 是 JSON 的超集,意味着所有合法 JSON 都是合法 Jsonh.但它增加了这些救命特性:
-1. 三种注释方式 // 行注释 # 也是行注释 /* 块注释 */ name: &#34;my-app&#34; ### 2. 逗号可选 a: 1 b: 2 c: 3 // 不需要逗号! ### 3. 多行字符串 haiku: &#39;&#39;&#39; Let me die in spring beneath the cherry blossoms while the moon is full. &#39;&#39;&#39; ### 4. 无引号键值 keys: without quotes isn\&#39;t: { that: cool? ### 5. 兼容 JSON5 支持十六进制数字,转义换行等 JSON5 特性: hex: 0xDEADCAFE fraction: .5e3 bigNum: 1_000_000 // 下划线分隔 ## 与现有格式对比 | 注释 | | | | | | | | 尾随逗号 | | | | | | | | 省略逗号 | | | | | | | | 多行字符串 | | | | | | | | 无引号键 | | | | | | | | 十六进制 | | | | | | | | 兼容 JSON | | | | | | | | 兼容 JSON5 | | | | | | | Jsonh 的定位很明确:**HJSON v2**--吸取 HJSON 的教训,同时保持与 JSON/JSON5 的兼容性. ## 实际应用场景 ### 1. 项目配置文件 // 数据库配置 host: localhost port: 5432 // 生产环境覆盖 production: { host: prod.db.internal ssl: true ### 2. API 文档示例 // 用户对象示例 user: { id: 12345 name: &#34;张三&#34; bio: &#39;&#39;&#39; 全栈开发者, 热爱开源和技术分享. ### 3. 游戏配置 player: { health: 100 speed: 5.5 inventory: [ sword shield potion ] ## 快速开始 ### 在线体验 直接访问:https://jsonh-org.github.io/Jsonh ### 安装解析器 **Node.js:** ```bash npm install jsonh-ts **Python:** pip install JsonhPy **Rust:** cargo install jsonh_rs **C#:** dotnet add package JsonhCs # 安装 dotnet tool install --global JsonhCli # 转换 Jsonh 到 JSON jsonh convert config.jsonh -o config.json # 验证语法 jsonh validate config.jsonh ## 为什么不用 YAML/TOML? **YAML 的问题:** - 缩进敏感(少一个空格就报错) - 多行字符串语法复杂(`&gt;`, `|`, `&gt;-`, `&gt;&#43;` 傻傻分不清) - 甚至不是 JSON 的超集! **TOML 的问题:** - 嵌套对象语法反直觉(`[[table]]` 是什么鬼), 深层嵌套时配置分散在各处, 复杂对象还是得用 JSON 语法 **Jsonh 的优势:** - 基于 JSON 语法,学习成本为零, 层级结构清晰(不像 TOML 那样分散), 严格的语法规则(不像 YAML 那样容易出错) ## 写在最后 Jsonh 不是什么革命性发明,它只是**把开发者需要的实用特性整合到一个格式里**. 如果你厌倦了 JSON 的严格,YAML 的诡异,TOML 的分散,Jsonh 可能是你配置文件的新选择. **项目链接:** https://github.com/jsonh-org/Jsonh **在线演示:** https://jsonh-org.github.io/Jsonh ## 时效性验证 - **HN 提交时间**: 20 分钟前(Show HN: Jsonh (JSON for Humans)) - **搜索引擎最早时间**: GitHub 仓库已存在,HN 首发 20 分钟前 - **结论**: 最早时间 ≤ 2 小时,符合新鲜热点标准 </p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-21 05:23:00 +0800 CST'>2026年2月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>379 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer>
-  <a class="entry-link" aria-label="post link to Jsonh:JSON 终于能写注释了,还能省略逗号和引号" href="https://claudeai.best/posts/hunter-2026022105/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
