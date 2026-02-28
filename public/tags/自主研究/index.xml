@@ -1,36 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>自主研究 on AI 极客前沿</title>
-    <link>https://claudeai.best/tags/%E8%87%AA%E4%B8%BB%E7%A0%94%E7%A9%B6/</link>
-    <description>Recent content in 自主研究 on AI 极客前沿</description>
-    <generator>Hugo -- 0.146.0</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sun, 15 Feb 2026 20:00:00 +0800</lastBuildDate>
-    <atom:link href="https://claudeai.best/tags/%E8%87%AA%E4%B8%BB%E7%A0%94%E7%A9%B6/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title> AI数学家诞生!DeepMind Aletheia 自主解开4道世界级未解难题</title>
-      <link>https://claudeai.best/posts/hunter-2026021520/</link>
-      <pubDate>Sun, 15 Feb 2026 20:00:00 +0800</pubDate>
-      <guid>https://claudeai.best/posts/hunter-2026021520/</guid>
-      <description>&lt;h2 id=&#34;ai-做数学竞赛已经不稀奇了但做原创研究呢&#34;&gt;AI 做数学竞赛已经不稀奇了,但做「原创研究」呢?&lt;/h2&gt;
-&lt;p&gt;去年 DeepMind 的 AI 在国际数学奥林匹克(IMO)拿了金牌,当时大家已经够震撼了.但说实话,&lt;strong&gt;竞赛题和真正的数学研究完全是两回事&lt;/strong&gt;&amp;ndash;竞赛有标准答案,研究需要你自己提出问题,翻阅海量文献,构造全新的证明.&lt;/p&gt;
-&lt;p&gt;这周,DeepMind 扔出了一个重磅炸弹:&lt;strong&gt;Aletheia&lt;/strong&gt;,一个专门为数学研究设计的 AI Agent.不是解题机器,是「AI 数学家」.&lt;/p&gt;
-&lt;p&gt;它已经&lt;strong&gt;自主撰写了一篇可发表的研究论文&lt;/strong&gt;,还&lt;strong&gt;独立解开了 4 道 Erdős 未解猜想&lt;/strong&gt;.没有人类干预.&lt;/p&gt;
-&lt;h2 id=&#34;三个让人起鸡皮疙瘩的核心亮点&#34;&gt;三个让人起鸡皮疙瘩的核心亮点&lt;/h2&gt;
-&lt;h3 id=&#34;1-三段式自我纠错架构&#34;&gt;1️⃣ 三段式自我纠错架构&lt;/h3&gt;
-&lt;p&gt;Aletheia 不是一个模型直接输出答案,而是一个「自我审查」的 Agent 系统:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Generator(生成器)&lt;/strong&gt;:提出候选解法, &lt;strong&gt;Verifier(验证器)&lt;/strong&gt;:用自然语言检查逻辑漏洞和幻觉, &lt;strong&gt;Reviser(修正器)&lt;/strong&gt;:根据验证结果反复修改,直到通过审核&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;这种「生成→检查→修改」的循环,让 AI 能发现自己最初忽略的错误.听起来简单?但就是这个设计让准确率从 65.7% 飙到了 &lt;strong&gt;95.1%&lt;/strong&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;2-算力效率提升-100-倍&#34;&gt;2️⃣ 算力效率提升 100 倍&lt;/h3&gt;
-&lt;p&gt;2026 年 1 月版的 Gemini Deep Think,在 IMO 级别问题上所需的推理算力比 2025 年版&lt;strong&gt;降低了 100 倍&lt;/strong&gt;.同样的题,花更少的时间想得更清楚&amp;ndash;这才是真正的技术进步.&lt;/p&gt;
-&lt;h3 id=&#34;3-从竞赛到真正的科研突破&#34;&gt;3️⃣ 从竞赛到真正的科研突破&lt;/h3&gt;
-&lt;p&gt;Aletheia 已经创造了几个「第一次」:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Feng26 论文&lt;/strong&gt;, 描述=自主生成算术几何领域论文, 人类参与度= 完全无人干预
-&lt;strong&gt;LeeSeo26 论文&lt;/strong&gt;, 描述=AI 提供高层策略,人类完善证明, 人类参与度= 人机协作
-&lt;strong&gt;Erdős 猜想&lt;/strong&gt;, 描述=评估700道开放问题,解决4道, 人类参与度= 自主完成&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>自主研究 on AI 极客前沿</title><link>https://claudeai.best/tags/%E8%87%AA%E4%B8%BB%E7%A0%94%E7%A9%B6/</link><description>Recent content in 自主研究 on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Sun, 15 Feb 2026 20:00:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/%E8%87%AA%E4%B8%BB%E7%A0%94%E7%A9%B6/index.xml" rel="self" type="application/rss+xml"/><item><title> AI数学家诞生!DeepMind Aletheia 自主解开4道世界级未解难题</title><link>https://claudeai.best/posts/hunter-2026021520/</link><pubDate>Sun, 15 Feb 2026 20:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021520/</guid><description>&lt;h2 id="ai-做数学竞赛已经不稀奇了但做原创研究呢">AI 做数学竞赛已经不稀奇了,但做「原创研究」呢?&lt;/h2>
+&lt;p>去年 DeepMind 的 AI 在国际数学奥林匹克(IMO)拿了金牌,当时大家已经够震撼了.但说实话,&lt;strong>竞赛题和真正的数学研究完全是两回事&lt;/strong>&amp;ndash;竞赛有标准答案,研究需要你自己提出问题,翻阅海量文献,构造全新的证明.&lt;/p>
+&lt;p>这周,DeepMind 扔出了一个重磅炸弹:&lt;strong>Aletheia&lt;/strong>,一个专门为数学研究设计的 AI Agent.不是解题机器,是「AI 数学家」.&lt;/p>
+&lt;p>它已经&lt;strong>自主撰写了一篇可发表的研究论文&lt;/strong>,还&lt;strong>独立解开了 4 道 Erdős 未解猜想&lt;/strong>.没有人类干预.&lt;/p>
+&lt;h2 id="三个让人起鸡皮疙瘩的核心亮点">三个让人起鸡皮疙瘩的核心亮点&lt;/h2>
+&lt;h3 id="1-三段式自我纠错架构">1️⃣ 三段式自我纠错架构&lt;/h3>
+&lt;p>Aletheia 不是一个模型直接输出答案,而是一个「自我审查」的 Agent 系统:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Generator(生成器)&lt;/strong>:提出候选解法, &lt;strong>Verifier(验证器)&lt;/strong>:用自然语言检查逻辑漏洞和幻觉, &lt;strong>Reviser(修正器)&lt;/strong>:根据验证结果反复修改,直到通过审核&lt;/li>
+&lt;/ul>
+&lt;p>这种「生成→检查→修改」的循环,让 AI 能发现自己最初忽略的错误.听起来简单?但就是这个设计让准确率从 65.7% 飙到了 &lt;strong>95.1%&lt;/strong>.&lt;/p>
+&lt;h3 id="2-算力效率提升-100-倍">2️⃣ 算力效率提升 100 倍&lt;/h3>
+&lt;p>2026 年 1 月版的 Gemini Deep Think,在 IMO 级别问题上所需的推理算力比 2025 年版&lt;strong>降低了 100 倍&lt;/strong>.同样的题,花更少的时间想得更清楚&amp;ndash;这才是真正的技术进步.&lt;/p>
+&lt;h3 id="3-从竞赛到真正的科研突破">3️⃣ 从竞赛到真正的科研突破&lt;/h3>
+&lt;p>Aletheia 已经创造了几个「第一次」:&lt;/p>
+&lt;p>&lt;strong>Feng26 论文&lt;/strong>, 描述=自主生成算术几何领域论文, 人类参与度= 完全无人干预
+&lt;strong>LeeSeo26 论文&lt;/strong>, 描述=AI 提供高层策略,人类完善证明, 人类参与度= 人机协作
+&lt;strong>Erdős 猜想&lt;/strong>, 描述=评估700道开放问题,解决4道, 人类参与度= 自主完成&lt;/p></description></item></channel></rss>

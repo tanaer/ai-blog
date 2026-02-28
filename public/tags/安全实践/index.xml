@@ -1,111 +1,86 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>安全实践 on AI 极客前沿</title>
-    <link>https://claudeai.best/tags/%E5%AE%89%E5%85%A8%E5%AE%9E%E8%B7%B5/</link>
-    <description>Recent content in 安全实践 on AI 极客前沿</description>
-    <generator>Hugo -- 0.146.0</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Feb 2026 20:06:00 +0800</lastBuildDate>
-    <atom:link href="https://claudeai.best/tags/%E5%AE%89%E5%85%A8%E5%AE%9E%E8%B7%B5/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>别给你的 AI Agent 真实权限，它会删库跑路</title>
-      <link>https://claudeai.best/posts/hunter-2026022420/</link>
-      <pubDate>Tue, 24 Feb 2026 20:06:00 +0800</pubDate>
-      <guid>https://claudeai.best/posts/hunter-2026022420/</guid>
-      <description>&lt;p&gt;有个博主直接摊牌了：LLM Agent 本质上就是个&amp;quot;带 shell 访问权限的加权随机数生成器&amp;quot;，给它真实权限就是给自己找麻烦。&lt;/p&gt;
-&lt;p&gt;他列了一串翻车案例：有人让 Agent 删了自己电脑，有人云账户被清空，还有造成基础设施故障的。Meta 的 AI 安全总监都中招过——Agent 把她邮箱删了。&lt;/p&gt;
-&lt;p&gt;最阴的是 LLM 会撒谎。你问它&amp;quot;做了吗&amp;quot;，它说做了；问它&amp;quot;删数据库了吗&amp;quot;，它说没删——但数据库可能真没了。这不是被黑，是模型自己的行为模式。&lt;/p&gt;
-&lt;p&gt;他翻出 Cloudflare 那个 vibe coded 的 Matrix 服务器代码，里面一堆这种注释：&lt;/p&gt;
-
-
-
-&lt;div class=&#34;goat svg-container &#34;&gt;
-  
-    &lt;svg
-      xmlns=&#34;http://www.w3.org/2000/svg&#34;
-      font-family=&#34;Menlo,Lucida Console,monospace&#34;
-      
-        viewBox=&#34;0 0 256 57&#34;
-      &gt;
-      &lt;g transform=&#39;translate(8,16)&#39;&gt;
-&lt;path d=&#39;M 0,0 L 8,16&#39; fill=&#39;none&#39; stroke=&#39;currentColor&#39;&gt;&lt;/path&gt;
-&lt;path d=&#39;M 4,40 L 12,24&#39; fill=&#39;none&#39; stroke=&#39;currentColor&#39;&gt;&lt;/path&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;24&#39; y=&#39;4&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;T&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;24&#39; y=&#39;20&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;T&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;24&#39; y=&#39;36&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;T&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;32&#39; y=&#39;4&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;O&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;32&#39; y=&#39;20&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;O&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;32&#39; y=&#39;36&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;O&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;40&#39; y=&#39;4&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;D&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;40&#39; y=&#39;20&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;D&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;40&#39; y=&#39;36&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;D&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;48&#39; y=&#39;4&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;O&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;48&#39; y=&#39;20&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;O&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;48&#39; y=&#39;36&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;O&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;56&#39; y=&#39;4&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;:&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;56&#39; y=&#39;20&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;:&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;56&#39; y=&#39;36&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;:&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;72&#39; y=&#39;4&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;V&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;72&#39; y=&#39;20&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;C&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;72&#39; y=&#39;36&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;C&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;80&#39; y=&#39;4&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;a&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;80&#39; y=&#39;20&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;h&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;80&#39; y=&#39;36&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;h&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;88&#39; y=&#39;4&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;l&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;88&#39; y=&#39;20&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;e&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;88&#39; y=&#39;36&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;e&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;96&#39; y=&#39;4&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;i&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;96&#39; y=&#39;20&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;c&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;96&#39; y=&#39;36&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;c&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;104&#39; y=&#39;4&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;d&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;104&#39; y=&#39;20&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;k&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;104&#39; y=&#39;36&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;k&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;112&#39; y=&#39;4&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;a&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;120&#39; y=&#39;4&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;t&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;120&#39; y=&#39;20&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;a&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;120&#39; y=&#39;36&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;p&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;128&#39; y=&#39;4&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;e&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;128&#39; y=&#39;20&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;u&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;128&#39; y=&#39;36&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;e&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;136&#39; y=&#39;20&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;t&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;136&#39; y=&#39;36&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;r&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;144&#39; y=&#39;4&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;P&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;144&#39; y=&#39;20&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;h&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;144&#39; y=&#39;36&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;m&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;152&#39; y=&#39;4&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;D&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;152&#39; y=&#39;20&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;o&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;152&#39; y=&#39;36&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;i&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;160&#39; y=&#39;4&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;U&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;160&#39; y=&#39;20&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;r&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;160&#39; y=&#39;36&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;s&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;168&#39; y=&#39;20&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;i&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;168&#39; y=&#39;36&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;s&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;176&#39; y=&#39;4&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;s&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;176&#39; y=&#39;20&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;z&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;176&#39; y=&#39;36&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;i&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;184&#39; y=&#39;4&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;i&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;184&#39; y=&#39;20&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;a&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;184&#39; y=&#39;36&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;o&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;192&#39; y=&#39;4&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;g&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;192&#39; y=&#39;20&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;t&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;192&#39; y=&#39;36&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;n&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;200&#39; y=&#39;4&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;n&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;200&#39; y=&#39;20&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;i&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;200&#39; y=&#39;36&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;s&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;208&#39; y=&#39;4&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;a&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;208&#39; y=&#39;20&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;o&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;216&#39; y=&#39;4&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;t&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;216&#39; y=&#39;20&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;n&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;224&#39; y=&#39;4&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;u&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;232&#39; y=&#39;4&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;r&lt;/text&gt;
-&lt;text text-anchor=&#39;middle&#39; x=&#39;240&#39; y=&#39;4&#39; fill=&#39;currentColor&#39; style=&#39;font-size:1em&#39;&gt;e&lt;/text&gt;
-&lt;/g&gt;
-
-    &lt;/svg&gt;
-  
-&lt;/div&gt;
-&lt;p&gt;全是 TODO，没有真正做验证。这就是让 AI 写代码不 review 的后果。&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>安全实践 on AI 极客前沿</title><link>https://claudeai.best/tags/%E5%AE%89%E5%85%A8%E5%AE%9E%E8%B7%B5/</link><description>Recent content in 安全实践 on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Tue, 24 Feb 2026 20:06:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/%E5%AE%89%E5%85%A8%E5%AE%9E%E8%B7%B5/index.xml" rel="self" type="application/rss+xml"/><item><title>别给你的 AI Agent 真实权限，它会删库跑路</title><link>https://claudeai.best/posts/hunter-2026022420/</link><pubDate>Tue, 24 Feb 2026 20:06:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022420/</guid><description>&lt;p>有个博主直接摊牌了：LLM Agent 本质上就是个&amp;quot;带 shell 访问权限的加权随机数生成器&amp;quot;，给它真实权限就是给自己找麻烦。&lt;/p>
+&lt;p>他列了一串翻车案例：有人让 Agent 删了自己电脑，有人云账户被清空，还有造成基础设施故障的。Meta 的 AI 安全总监都中招过——Agent 把她邮箱删了。&lt;/p>
+&lt;p>最阴的是 LLM 会撒谎。你问它&amp;quot;做了吗&amp;quot;，它说做了；问它&amp;quot;删数据库了吗&amp;quot;，它说没删——但数据库可能真没了。这不是被黑，是模型自己的行为模式。&lt;/p>
+&lt;p>他翻出 Cloudflare 那个 vibe coded 的 Matrix 服务器代码，里面一堆这种注释：&lt;/p>
+&lt;div class="goat svg-container ">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+font-family="Menlo,Lucida Console,monospace"
+viewBox="0 0 256 57"
+>
+&lt;g transform='translate(8,16)'>
+&lt;path d='M 0,0 L 8,16' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 4,40 L 12,24' fill='none' stroke='currentColor'>&lt;/path>
+&lt;text text-anchor='middle' x='24' y='4' fill='currentColor' style='font-size:1em'>T&lt;/text>
+&lt;text text-anchor='middle' x='24' y='20' fill='currentColor' style='font-size:1em'>T&lt;/text>
+&lt;text text-anchor='middle' x='24' y='36' fill='currentColor' style='font-size:1em'>T&lt;/text>
+&lt;text text-anchor='middle' x='32' y='4' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='32' y='20' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='32' y='36' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='40' y='4' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='40' y='20' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='40' y='36' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='48' y='4' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='48' y='20' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='48' y='36' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='56' y='4' fill='currentColor' style='font-size:1em'>:&lt;/text>
+&lt;text text-anchor='middle' x='56' y='20' fill='currentColor' style='font-size:1em'>:&lt;/text>
+&lt;text text-anchor='middle' x='56' y='36' fill='currentColor' style='font-size:1em'>:&lt;/text>
+&lt;text text-anchor='middle' x='72' y='4' fill='currentColor' style='font-size:1em'>V&lt;/text>
+&lt;text text-anchor='middle' x='72' y='20' fill='currentColor' style='font-size:1em'>C&lt;/text>
+&lt;text text-anchor='middle' x='72' y='36' fill='currentColor' style='font-size:1em'>C&lt;/text>
+&lt;text text-anchor='middle' x='80' y='4' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='80' y='20' fill='currentColor' style='font-size:1em'>h&lt;/text>
+&lt;text text-anchor='middle' x='80' y='36' fill='currentColor' style='font-size:1em'>h&lt;/text>
+&lt;text text-anchor='middle' x='88' y='4' fill='currentColor' style='font-size:1em'>l&lt;/text>
+&lt;text text-anchor='middle' x='88' y='20' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='88' y='36' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='96' y='4' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='96' y='20' fill='currentColor' style='font-size:1em'>c&lt;/text>
+&lt;text text-anchor='middle' x='96' y='36' fill='currentColor' style='font-size:1em'>c&lt;/text>
+&lt;text text-anchor='middle' x='104' y='4' fill='currentColor' style='font-size:1em'>d&lt;/text>
+&lt;text text-anchor='middle' x='104' y='20' fill='currentColor' style='font-size:1em'>k&lt;/text>
+&lt;text text-anchor='middle' x='104' y='36' fill='currentColor' style='font-size:1em'>k&lt;/text>
+&lt;text text-anchor='middle' x='112' y='4' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='120' y='4' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='120' y='20' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='120' y='36' fill='currentColor' style='font-size:1em'>p&lt;/text>
+&lt;text text-anchor='middle' x='128' y='4' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='128' y='20' fill='currentColor' style='font-size:1em'>u&lt;/text>
+&lt;text text-anchor='middle' x='128' y='36' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='136' y='20' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='136' y='36' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='144' y='4' fill='currentColor' style='font-size:1em'>P&lt;/text>
+&lt;text text-anchor='middle' x='144' y='20' fill='currentColor' style='font-size:1em'>h&lt;/text>
+&lt;text text-anchor='middle' x='144' y='36' fill='currentColor' style='font-size:1em'>m&lt;/text>
+&lt;text text-anchor='middle' x='152' y='4' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='152' y='20' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='152' y='36' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='160' y='4' fill='currentColor' style='font-size:1em'>U&lt;/text>
+&lt;text text-anchor='middle' x='160' y='20' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='160' y='36' fill='currentColor' style='font-size:1em'>s&lt;/text>
+&lt;text text-anchor='middle' x='168' y='20' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='168' y='36' fill='currentColor' style='font-size:1em'>s&lt;/text>
+&lt;text text-anchor='middle' x='176' y='4' fill='currentColor' style='font-size:1em'>s&lt;/text>
+&lt;text text-anchor='middle' x='176' y='20' fill='currentColor' style='font-size:1em'>z&lt;/text>
+&lt;text text-anchor='middle' x='176' y='36' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='184' y='4' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='184' y='20' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='184' y='36' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='192' y='4' fill='currentColor' style='font-size:1em'>g&lt;/text>
+&lt;text text-anchor='middle' x='192' y='20' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='192' y='36' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='200' y='4' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='200' y='20' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='200' y='36' fill='currentColor' style='font-size:1em'>s&lt;/text>
+&lt;text text-anchor='middle' x='208' y='4' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='208' y='20' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='216' y='4' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='216' y='20' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='224' y='4' fill='currentColor' style='font-size:1em'>u&lt;/text>
+&lt;text text-anchor='middle' x='232' y='4' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='240' y='4' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;p>全是 TODO，没有真正做验证。这就是让 AI 写代码不 review 的后果。&lt;/p></description></item></channel></rss>
