@@ -3841,6 +3841,59 @@ Qwen 靠功能留人。
     </item>
     <item>
       <title></title>
+      <link>https://claudeai.best/posts/2026-02-28-claude-code-mobile-remote/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://claudeai.best/posts/2026-02-28-claude-code-mobile-remote/</guid>
+      <description>&lt;h1 id=&#34;claude-code-移动端来了躺着也能写代码&#34;&gt;Claude Code 移动端来了，躺着也能写代码&lt;/h1&gt;
+&lt;p&gt;cover:
+url: &lt;a href=&#34;https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&#34;&gt;https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&lt;/a&gt;
+alt: 手机控制编程界面&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;手机当遥控器电脑干活&#34;&gt;手机当遥控器，电脑干活&lt;/h2&gt;
+&lt;p&gt;Anthropic 刚给 Claude Code 加了个新功能。&lt;/p&gt;
+&lt;p&gt;用手机就能控制电脑上的代码会话。&lt;/p&gt;
+&lt;p&gt;不是把计算搬到云端。&lt;/p&gt;
+&lt;p&gt;是你的电脑在跑，手机只是遥控器。&lt;/p&gt;
+&lt;p&gt;打开 Claude 移动应用，就能看到电脑上的终端。&lt;/p&gt;
+&lt;p&gt;在哪都能接着干活。&lt;/p&gt;
+&lt;p&gt;地铁上、咖啡馆、甚至躺着。&lt;/p&gt;
+&lt;p&gt;代码不会停。&lt;/p&gt;
+&lt;h2 id=&#34;安全吗人家想过了&#34;&gt;安全吗？人家想过了&lt;/h2&gt;
+&lt;p&gt;很多人第一反应：会不会不安全？&lt;/p&gt;
+&lt;p&gt;Anthropic 说不会暴露本地系统。&lt;/p&gt;
+&lt;p&gt;没有入站连接。&lt;/p&gt;
+&lt;p&gt;你的电脑不用对外开门。&lt;/p&gt;
+&lt;p&gt;所有同步都走官方通道。&lt;/p&gt;
+&lt;p&gt;就像你用手机看家里的监控。&lt;/p&gt;
+&lt;p&gt;监控在你家，你只是远程看。&lt;/p&gt;
+&lt;p&gt;不过这功能现在只给 Claude Max 用户。&lt;/p&gt;
+&lt;p&gt;订阅费一个月 100-200 美元。&lt;/p&gt;
+&lt;p&gt;贵是贵了点，但重度用户可能觉得值。&lt;/p&gt;
+&lt;h2 id=&#34;25-亿年化说明有人买单&#34;&gt;25 亿年化，说明有人买单&lt;/h2&gt;
+&lt;p&gt;Claude Code 这个产品挺能打。&lt;/p&gt;
+&lt;p&gt;报道说年化运行率已经 25 亿美元。&lt;/p&gt;
+&lt;p&gt;什么概念？&lt;/p&gt;
+&lt;p&gt;就是用户愿意付钱。&lt;/p&gt;
+&lt;p&gt;这次加移动控制，明显是想让用户更离不开。&lt;/p&gt;
+&lt;p&gt;以前写代码得坐在电脑前。&lt;/p&gt;
+&lt;p&gt;现在随时能接上。&lt;/p&gt;
+&lt;p&gt;改个 bug、推个代码，手机点几下就行。&lt;/p&gt;
+&lt;p&gt;不需要回到办公桌。&lt;/p&gt;
+&lt;p&gt;对独立开发者和小团队尤其友好。&lt;/p&gt;
+&lt;h2 id=&#34;营销人也要关注这件事&#34;&gt;营销人也要关注这件事&lt;/h2&gt;
+&lt;p&gt;表面上看是程序员工具。&lt;/p&gt;
+&lt;p&gt;但背后的趋势值得所有人注意。&lt;/p&gt;
+&lt;p&gt;移动端 AI 代理来了。&lt;/p&gt;
+&lt;p&gt;时间和位置的限制在瓦解。&lt;/p&gt;
+&lt;p&gt;营销人想想看。&lt;/p&gt;
+&lt;p&gt;以前做内容、搞活动，得在电脑前。&lt;/p&gt;
+&lt;p&gt;以后可能手机上就能跑完整流程。&lt;/p&gt;
+&lt;p&gt;AI 在电脑上干活，你在外面盯进度。&lt;/p&gt;
+&lt;p&gt;白天开会，晚上手机上审稿。&lt;/p&gt;
+&lt;p&gt;创作和迭代的周期会被压缩。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://claudeai.best/posts/hunter-2026022612/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://claudeai.best/posts/hunter-2026022612/</guid>
