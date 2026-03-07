@@ -1,92 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AI技术 on AI 极客前沿</title><link>https://claudeai.best/categories/ai%E6%8A%80%E6%9C%AF/</link><description>Recent content in AI技术 on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Sat, 28 Feb 2026 02:04:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/categories/ai%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>AI记忆系统2026：从向量数据库到智能记忆管理</title><link>https://claudeai.best/posts/hunter-2026022802/</link><pubDate>Sat, 28 Feb 2026 02:04:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022802/</guid><description>&lt;h1 id="ai记忆系统2026从向量数据库到智能记忆管理">AI记忆系统2026：从向量数据库到智能记忆管理&lt;/h1>
-&lt;p>2026年，AI记忆系统正在经历一场深刻的变革。&lt;/p>
-&lt;p>RAG已经不够用了。简单的向量检索无法满足复杂AI代理的长期记忆需求。&lt;/p>
-&lt;h2 id="记忆不再只是检索">记忆不再只是&amp;quot;检索&amp;quot;&lt;/h2>
-&lt;p>传统的RAG就像基础搜索。它只能回答特定时间点的特定问题。&lt;/p>
-&lt;p>但真正的AI代理需要：&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AI技术 on AI 极客前沿</title><link>https://claudeai.best/categories/ai%E6%8A%80%E6%9C%AF/</link><description>Recent content in AI技术 on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Wed, 25 Feb 2026 16:05:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/categories/ai%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>Spider 2.0-DBT 榜首揭秘:Databao 的秘诀不是更强模型,而是把 AI 当 junior 带</title><link>https://claudeai.best/posts/hunter-2026022516/</link><pubDate>Wed, 25 Feb 2026 16:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022516/</guid><description>JetBrains Databao Agent 在 Spider 2.0-DBT 基准测试排名第一,关键不是模型升级,而是工程方法论:像带初级工程师一样设计 Agent 工作流.</description></item><item><title>Mercury 2 发布:首个商用 Diffusion LLM,推理速度碾压传统模型</title><link>https://claudeai.best/posts/2026-02-25-mercury-2-diffusion-llm/</link><pubDate>Wed, 25 Feb 2026 14:05:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-25-mercury-2-diffusion-llm/</guid><description>&lt;h2 id="打字员-vs-编辑">打字员 vs 编辑&lt;/h2>
+&lt;p>传统大模型生成文本,就像打字员&amp;ndash;一个字一个字敲,手速再快也有天花板.&lt;/p>
+&lt;p>Mercury 2 不一样.它像编辑&amp;ndash;拿到初稿,然后整篇整篇地改,几轮下来就成型了.&lt;/p>
+&lt;p>&lt;strong>结果?每秒 1,009 个 token.&lt;/strong>&lt;/p>
+&lt;p>这是 Inception Labs 今天发布的 Mercury 2,全球首个商用的 diffusion 大语言模型.比 GPT-5.2 至少快 2 倍,比 Claude 4.5 Haiku 快 5 倍,成本却只有四分之一.&lt;/p>
+&lt;h2 id="diffusion-架构从图像搬到文本">Diffusion 架构:从图像搬到文本&lt;/h2>
+&lt;p>你可能用过 Stable Diffusion 或 DALL-E 生成图片.它们用的就是 diffusion&amp;ndash;从噪声开始,一步步&amp;quot;去噪&amp;quot;,最后得到清晰的图像.&lt;/p>
+&lt;p>Mercury 2 把这个思路搬到了文本.&lt;/p>
+&lt;p>传统 LLM(GPT,Claude,Gemini)都是 autoregressive(自回归):生成第一个词,等它出来,再生成第二个&amp;hellip;&amp;hellip;永远在等.GPU 再快也没用,瓶颈是&amp;quot;必须按顺序&amp;quot;.&lt;/p>
+&lt;p>Diffusion 不一样.它从一堆&amp;quot;噪声文本&amp;quot;开始,并行地 refining(精炼),几轮之后就是完整回答.&lt;strong>并行处理 vs 串行等待,这是架构层面的碾压.&lt;/strong>&lt;/p>
+&lt;p>创始人 Stefano Ermon 是斯坦福计算机教授,正是他把 diffusion 技术带进 Stable Diffusion 和 DALL-E 的男人.现在他赌的是:&lt;strong>同样的 trick 对文本也管用.&lt;/strong>&lt;/p>
+&lt;h2 id="为什么速度这么重要">为什么速度这么重要?&lt;/h2>
+&lt;p>你可能觉得:快几秒有什么大不了?&lt;/p>
+&lt;p>对于聊天机器人,确实.但对于:&lt;/p>
 &lt;ul>
-&lt;li>记住过去的交互&lt;/li>
-&lt;li>随时间更新信息&lt;/li>
-&lt;li>忘记过时的数据&lt;/li>
-&lt;li>基于历史上下文推理&lt;/li>
+&lt;li>&lt;strong>Agent 工作流&lt;/strong>:一个任务可能要调 30 次模型,每次慢 1 秒,整体就慢 30 秒&lt;/li>
+&lt;li>&lt;strong>语音 AI&lt;/strong>:用户说话后等 2 秒才回复,对话感直接崩&lt;/li>
+&lt;li>&lt;strong>代码补全&lt;/strong>:打字停顿等建议,思路断了&lt;/li>
 &lt;/ul>
-&lt;p>这催生了全新的记忆原生产品类别。&lt;/p>
-&lt;h2 id="三大记忆架构流派">三大记忆架构流派&lt;/h2>
-&lt;h3 id="1-向量记忆派">1. 向量记忆派&lt;/h3>
-&lt;p>以Supermemory为代表，专注于大规模语义记忆。&lt;/p>
-&lt;ul>
-&lt;li>优势：时间感知的语义检索&lt;/li>
-&lt;li>适用：需要时效性的长期代理&lt;/li>
-&lt;/ul>
-&lt;h3 id="2-状态记忆派">2. 状态记忆派&lt;/h3>
-&lt;p>Letta（MemGPT）将记忆作为代理状态的一等公民。&lt;/p>
-&lt;ul>
-&lt;li>优势：显式、可控的记忆块&lt;/li>
-&lt;li>适用：持久化助手，本地LLM栈&lt;/li>
-&lt;/ul>
-&lt;h3 id="3-关系记忆派">3. 关系记忆派&lt;/h3>
-&lt;p>Memori采用SQL原生方法，将记忆视为结构化数据。&lt;/p>
-&lt;ul>
-&lt;li>优势：确定性查询，可审计性&lt;/li>
-&lt;li>适用：企业级代理，合规场景&lt;/li>
-&lt;/ul>
-&lt;h2 id="为什么postgresql突然火了">为什么PostgreSQL突然火了？&lt;/h2>
-&lt;p>2025年，各大巨头疯狂投资PostgreSQL：&lt;/p>
-&lt;ul>
-&lt;li>Snowflake花2.5亿美金收购Crunchy Data&lt;/li>
-&lt;li>Databricks豪掷10亿美金收购Neon&lt;/li>
-&lt;li>Supabase融资1亿美金，估值50亿&lt;/li>
-&lt;/ul>
-&lt;p>原因很简单：PostgreSQL成了AI应用的默认数据库。&lt;/p>
-&lt;p>配合pgvector扩展，它既能处理传统事务，又能支持向量搜索。&lt;/p>
-&lt;h2 id="向量数据库的未来">向量数据库的未来&lt;/h2>
-&lt;p>专用向量数据库（如Pinecone、Milvus）不会消失，但使用场景会变得更精准。&lt;/p>
-&lt;p>AWS等云厂商已经将向量能力集成到现有服务中：&lt;/p>
-&lt;ul>
-&lt;li>Aurora PostgreSQL + pgvector：中小规模RAG&lt;/li>
-&lt;li>OpenSearch：混合关键词+语义搜索&lt;/li>
-&lt;li>MemoryDB：超低延迟代理记忆&lt;/li>
-&lt;li>Neptune Analytics：图+向量工作负载&lt;/li>
-&lt;/ul>
-&lt;h2 id="智能记忆管理新范式">智能记忆管理新范式&lt;/h2>
-&lt;p>最前沿的记忆系统开始采用多层架构：&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>KV存储&lt;/strong>：显式事实（偏好、配置）&lt;/li>
-&lt;li>&lt;strong>向量存储&lt;/strong>：非结构化记忆的语义召回&lt;/li>
-&lt;li>&lt;strong>图层&lt;/strong>：记忆间的关系（谁/什么/何时）&lt;/li>
-&lt;/ul>
-&lt;p>这种组合让AI代理既能精确记住事实，又能理解语义关联。&lt;/p>
-&lt;h2 id="企业ai的记忆要求">企业AI的记忆要求&lt;/h2>
-&lt;p>在受监管和多租户环境中，记忆必须：&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>确定性&lt;/strong>：查询结果可预测&lt;/li>
-&lt;li>&lt;strong>可审计&lt;/strong>：记忆演进有迹可循&lt;/li>
-&lt;li>&lt;strong>隔离性&lt;/strong>：不同租户数据完全分离&lt;/li>
-&lt;li>&lt;strong>可治理&lt;/strong>：支持策略和权限控制&lt;/li>
-&lt;/ul>
-&lt;p>这就是为什么关系型方法在企业场景中越来越受欢迎。&lt;/p>
-&lt;h2 id="结语">结语&lt;/h2>
-&lt;p>模型产生智能，记忆维持智能。&lt;/p>
-&lt;p>随着AI系统从实验走向真实产品，记忆将成为差异化、信任和长期价值的构建层。&lt;/p>
-&lt;p>那些早期投资记忆架构的团队，将构建出真正持久的AI代理。&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;strong>Models generate intelligence. Memory sustains it.&lt;/strong>&lt;/p>&lt;/blockquote></description></item><item><title>Spider 2.0-DBT 榜首揭秘：Databao 的秘诀不是更强模型，而是把 AI 当 junior 带</title><link>https://claudeai.best/posts/hunter-2026022516/</link><pubDate>Wed, 25 Feb 2026 16:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022516/</guid><description>JetBrains Databao Agent 在 Spider 2.0-DBT 基准测试排名第一，关键不是模型升级，而是工程方法论：像带初级工程师一样设计 Agent 工作流。</description></item><item><title>Mercury 2 发布：首个商用 Diffusion LLM，推理速度碾压传统模型</title><link>https://claudeai.best/posts/2026-02-25-mercury-2-diffusion-llm/</link><pubDate>Wed, 25 Feb 2026 14:05:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-25-mercury-2-diffusion-llm/</guid><description>&lt;h2 id="打字员-vs-编辑">打字员 vs 编辑&lt;/h2>
-&lt;p>传统大模型生成文本，就像打字员——一个字一个字敲，手速再快也有天花板。&lt;/p>
-&lt;p>Mercury 2 不一样。它像编辑——拿到初稿，然后整篇整篇地改，几轮下来就成型了。&lt;/p>
-&lt;p>&lt;strong>结果？每秒 1,009 个 token。&lt;/strong>&lt;/p>
-&lt;p>这是 Inception Labs 今天发布的 Mercury 2，全球首个商用的 diffusion 大语言模型。比 GPT-5.2 至少快 2 倍，比 Claude 4.5 Haiku 快 5 倍，成本却只有四分之一。&lt;/p>
-&lt;h2 id="diffusion-架构从图像搬到文本">Diffusion 架构：从图像搬到文本&lt;/h2>
-&lt;p>你可能用过 Stable Diffusion 或 DALL-E 生成图片。它们用的就是 diffusion——从噪声开始，一步步&amp;quot;去噪&amp;quot;，最后得到清晰的图像。&lt;/p>
-&lt;p>Mercury 2 把这个思路搬到了文本。&lt;/p>
-&lt;p>传统 LLM（GPT、Claude、Gemini）都是 autoregressive（自回归）：生成第一个词，等它出来，再生成第二个……永远在等。GPU 再快也没用，瓶颈是&amp;quot;必须按顺序&amp;quot;。&lt;/p>
-&lt;p>Diffusion 不一样。它从一堆&amp;quot;噪声文本&amp;quot;开始，并行地 refining（精炼），几轮之后就是完整回答。&lt;strong>并行处理 vs 串行等待，这是架构层面的碾压。&lt;/strong>&lt;/p>
-&lt;p>创始人 Stefano Ermon 是斯坦福计算机教授，正是他把 diffusion 技术带进 Stable Diffusion 和 DALL-E 的男人。现在他赌的是：&lt;strong>同样的 trick 对文本也管用。&lt;/strong>&lt;/p>
-&lt;h2 id="为什么速度这么重要">为什么速度这么重要？&lt;/h2>
-&lt;p>你可能觉得：快几秒有什么大不了？&lt;/p>
-&lt;p>对于聊天机器人，确实。但对于：&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Agent 工作流&lt;/strong>：一个任务可能要调 30 次模型，每次慢 1 秒，整体就慢 30 秒&lt;/li>
-&lt;li>&lt;strong>语音 AI&lt;/strong>：用户说话后等 2 秒才回复，对话感直接崩&lt;/li>
-&lt;li>&lt;strong>代码补全&lt;/strong>：打字停顿等建议，思路断了&lt;/li>
-&lt;/ul>
-&lt;p>Zed 编辑器联合创始人 Max Brunsfeld 的原话：&lt;/p></description></item></channel></rss>
+&lt;p>Zed 编辑器联合创始人 Max Brunsfeld 的原话:&lt;/p></description></item></channel></rss>

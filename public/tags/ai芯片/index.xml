@@ -1,10 +1,64 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AI芯片 on AI 极客前沿</title><link>https://claudeai.best/tags/ai%E8%8A%AF%E7%89%87/</link><description>Recent content in AI芯片 on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Fri, 27 Feb 2026 09:10:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/ai%E8%8A%AF%E7%89%87/index.xml" rel="self" type="application/rss+xml"/><item><title>Meta砸数十亿租Google芯片：不想把鸡蛋都放Nvidia篮子里</title><link>https://claudeai.best/posts/hunter-2026-02-27-3/</link><pubDate>Fri, 27 Feb 2026 09:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026-02-27-3/</guid><description>Meta与Google签署数十亿美元协议租用TPU芯片，同时谈判购买用于数据中心。这是Meta芯片多元化战略的重要一步，Google TPU正在挑战Nvidia GPU的霸主地位。</description></item><item><title>Taalas 把 AI 模型直接烧进芯片,速度暴涨 10 倍</title><link>https://claudeai.best/posts/2026-02-25-taalas-hc1-silicon-ai/</link><pubDate>Wed, 25 Feb 2026 21:10:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-25-taalas-hc1-silicon-ai/</guid><description>Taalas 用 2 个月把 Llama 3.1 8B 烧进芯片,17K tokens/秒,比 GPU 快 10 倍,成本降 20 倍。24 人团队,3000 万美元,春季发推理模型,冬季发前沿 LLM。</description></item><item><title>AMD 复制粘贴给 OpenAI 的合同，这次签约 Meta：6GW 算力 + 10% 股权</title><link>https://claudeai.best/posts/hunter-2026022515/</link><pubDate>Wed, 25 Feb 2026 15:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022515/</guid><description>&lt;h2 id="amd-的复制粘贴策略奏效了">AMD 的&amp;quot;复制粘贴&amp;quot;策略奏效了&lt;/h2>
-&lt;p>说实话，看到这条新闻的时候我笑了——AMD 真的把给 OpenAI 的合同模板改了个名字就发给了 Meta。&lt;/p>
-&lt;p>6GW 算力，10% 股权认股权，多代产品供应……这些条款跟 AMD-OpenAI 的协议几乎一模一样。但你知道什么？这招管用。&lt;/p>
-&lt;p>Meta 在 2 月 24 日宣布与 AMD 达成一项多年期协议，AMD 将供应高达 &lt;strong>6GW（吉瓦）&lt;/strong> 的 Instinct GPU，首批 1GW 将在 2026 年下半年交付。据 &lt;a href="https://www.reuters.com/business/amd-clinches-second-mega-chip-supply-deal-this-time-with-meta-2026-02-24/">路透社报道&lt;/a>，这笔交易总价值约 &lt;strong>600 亿美元&lt;/strong>。&lt;/p>
-&lt;h2 id="为什么-meta-需要-amd">为什么 Meta 需要 AMD？&lt;/h2>
-&lt;p>答案很简单：&lt;strong>议价能力&lt;/strong>。&lt;/p>
-&lt;p>还记得那个传闻吗？OpenAI 只是在谈判桌上放了 Google TPU 的备选方案，Nvidia 就乖乖降价 30%。现在 Meta 也学会了这招——就在几天前，Meta 刚宣布扩展与 Nvidia 的 AI 芯片合作，转头就签了 AMD 的大单。&lt;/p>
-&lt;p>这不是 Meta 第一次搞&amp;quot;多供应商策略&amp;quot;。他们自己也在开发 &lt;a href="https://the-decoder.com/meta-deploys-its-artemis-ai-chip-to-reduce-reliance-on-nvidia-gpus/">Artemis 芯片&lt;/a>，目的就是减少对 Nvidia 的依赖。现在加上 AMD，Meta 手里有三张牌可以打。&lt;/p>
-&lt;h2 id="10-股权是什么操作">10% 股权是什么操作？&lt;/h2>
-&lt;p>这是整个交易最有趣的部分。Meta 获得了最多 1.6 亿股 AMD 股票的认股权，约占 AMD 总股本的 &lt;strong>10%&lt;/strong>。&lt;/p></description></item><item><title>Arm不想只卖图纸了:从芯片设计师到AI芯片玩家的豪赌</title><link>https://claudeai.best/posts/hunter-2026021613/</link><pubDate>Mon, 16 Feb 2026 13:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021613/</guid><description>Arm正从芯片IP授权模式转型,押注AI自研芯片和子系统方案,这场豪赌将重塑半导体产业格局</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AI芯片 on AI 极客前沿</title><link>https://claudeai.best/tags/ai%E8%8A%AF%E7%89%87/</link><description>Recent content in AI芯片 on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Thu, 05 Mar 2026 19:50:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/ai%E8%8A%AF%E7%89%87/index.xml" rel="self" type="application/rss+xml"/><item><title>英伟达30亿砸向OpenAI：从100亿缩水的背后真相</title><link>https://claudeai.best/posts/hunter-2026-03-05-nvidia-openai-investment/</link><pubDate>Thu, 05 Mar 2026 19:50:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026-03-05-nvidia-openai-investment/</guid><description>&lt;!-- [配图：黄仁勋在Morgan Stanley科技峰会上宣布投资，背景是Nvidia绿色logo和OpenAI彩色神经网络] -->
+&lt;h2 id="突发30亿到位但缩水了">突发！30亿到位，但缩水了&lt;/h2>
+&lt;p>昨天晚上，英伟达CEO黄仁勋在Morgan Stanley科技峰会上扔了个炸弹。&lt;/p>
+&lt;p>30亿美元。&lt;/p>
+&lt;p>这是英伟达最终砸给OpenAI的钱。&lt;/p>
+&lt;p>听起来很多？&lt;/p>
+&lt;p>问题是，原本说的是100亿。&lt;/p>
+&lt;!-- [配图：100亿美元vs30亿美元对比图，用柱状图展示差距] -->
+&lt;p>去年9月英伟达宣布投资计划时，口气很大。&lt;/p>
+&lt;p>&amp;ldquo;最高100亿美元。&amp;rdquo;&lt;/p>
+&lt;p>当时整个硅谷都炸了。&lt;/p>
+&lt;p>结果现在落地的，只有30亿。&lt;/p>
+&lt;p>整整砍掉了70%。&lt;/p>
+&lt;h2 id="为什么突然变卦">为什么突然变卦？&lt;/h2>
+&lt;p>黄仁勋的解释很简单。&lt;/p>
+&lt;p>&amp;ldquo;OpenAI要上市了。&amp;rdquo;&lt;/p>
+&lt;p>就这么一句话。&lt;/p>
+&lt;!-- [配图：OpenAI IPO概念图，股票代码、钟声、华尔街元素] -->
+&lt;p>听起来有道理。&lt;/p>
+&lt;p>公司一旦IPO，股价就会按市场价走。&lt;/p>
+&lt;p>你作为投资方，拿不到pre-IPO的优惠价了。&lt;/p>
+&lt;p>所以投资窗口关闭。&lt;/p>
+&lt;p>逻辑上说得通。&lt;/p>
+&lt;p>但仔细想想，有点奇怪。&lt;/p>
+&lt;p>&lt;strong>奇怪点1：timing不对&lt;/strong>&lt;/p>
+&lt;p>OpenAI上市的消息传了很久。&lt;/p>
+&lt;p>去年就在传。&lt;/p>
+&lt;p>英伟达不可能不知道。&lt;/p>
+&lt;p>为什么当初还说100亿？&lt;/p>
+&lt;p>&lt;strong>奇怪点2：Anthropic也投了&lt;/strong>&lt;/p>
+&lt;p>不只是OpenAI。&lt;/p>
+&lt;p>英伟达还给Anthropic投了10亿。&lt;/p>
+&lt;p>同样，黄仁勋说&amp;quot;这也可能是最后一次&amp;quot;。&lt;/p>
+&lt;p>Anthropic也要上市？&lt;/p>
+&lt;p>没听说。&lt;/p>
+&lt;!-- [配图：英伟达投资版图，OpenAI 30亿、Anthropic 10亿、其他AI公司] -->
+&lt;p>所以IPO这个解释，感觉只是表面理由。&lt;/p>
+&lt;p>背后应该有别的考量。&lt;/p>
+&lt;h2 id="真正的原因可能是什么">真正的原因可能是什么？&lt;/h2>
+&lt;p>我分析了三个可能性。&lt;/p>
+&lt;h3 id="可能性1估值太高">可能性1：估值太高&lt;/h3>
+&lt;p>OpenAI现在的估值，已经是天价了。&lt;/p>
+&lt;p>1500亿美元。&lt;/p>
+&lt;p>还是保守估计。&lt;/p>
+&lt;p>有些分析师说可能到2000亿。&lt;/p>
+&lt;!-- [配图：OpenAI估值增长曲线图，从2023年到2026年] -->
+&lt;p>投100亿进去，可能连10%股份都拿不到。&lt;/p>
+&lt;p>30亿换2%？&lt;/p>
+&lt;p>这回报率值得吗？&lt;/p>
+&lt;p>英伟达可能算了一笔账，发现不划算。&lt;/p>
+&lt;h3 id="可能性2监管压力">可能性2：监管压力&lt;/h3>
+&lt;p>别忘了，英伟达是GPU垄断者。&lt;/p>
+&lt;p>90%的AI芯片市场都是它的。&lt;/p>
+&lt;p>现在又要控制最大的AI公司？&lt;/p>
+&lt;p>美国反垄断局不会坐视不管。&lt;/p></description></item><item><title>Meta砸数十亿租Google芯片:不想把鸡蛋都放Nvidia篮子里</title><link>https://claudeai.best/posts/hunter-2026-02-27-3/</link><pubDate>Fri, 27 Feb 2026 09:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026-02-27-3/</guid><description>Meta与Google签署数十亿美元协议租用TPU芯片,同时谈判购买用于数据中心.这是Meta芯片多元化战略的重要一步,Google TPU正在挑战Nvidia GPU的霸主地位.</description></item><item><title>Taalas 把 AI 模型直接烧进芯片,速度暴涨 10 倍</title><link>https://claudeai.best/posts/2026-02-25-taalas-hc1-silicon-ai/</link><pubDate>Wed, 25 Feb 2026 21:10:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-25-taalas-hc1-silicon-ai/</guid><description>Taalas 用 2 个月把 Llama 3.1 8B 烧进芯片,17K tokens/秒,比 GPU 快 10 倍,成本降 20 倍.24 人团队,3000 万美元,春季发推理模型,冬季发前沿 LLM.</description></item><item><title>AMD 复制粘贴给 OpenAI 的合同,这次签约 Meta:6GW 算力 + 10% 股权</title><link>https://claudeai.best/posts/hunter-2026022515/</link><pubDate>Wed, 25 Feb 2026 15:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022515/</guid><description>&lt;h2 id="amd-的复制粘贴策略奏效了">AMD 的&amp;quot;复制粘贴&amp;quot;策略奏效了&lt;/h2>
+&lt;p>说实话,看到这条新闻的时候我笑了&amp;ndash;AMD 真的把给 OpenAI 的合同模板改了个名字就发给了 Meta.&lt;/p>
+&lt;p>6GW 算力,10% 股权认股权,多代产品供应&amp;hellip;&amp;hellip;这些条款跟 AMD-OpenAI 的协议几乎一模一样.但你知道什么?这招管用.&lt;/p>
+&lt;p>Meta 在 2 月 24 日宣布与 AMD 达成一项多年期协议,AMD 将供应高达 &lt;strong>6GW(吉瓦)&lt;/strong> 的 Instinct GPU,首批 1GW 将在 2026 年下半年交付.据 &lt;a href="https://www.reuters.com/business/amd-clinches-second-mega-chip-supply-deal-this-time-with-meta-2026-02-24/">路透社报道&lt;/a>,这笔交易总价值约 &lt;strong>600 亿美元&lt;/strong>.&lt;/p>
+&lt;h2 id="为什么-meta-需要-amd">为什么 Meta 需要 AMD?&lt;/h2>
+&lt;p>答案很简单:&lt;strong>议价能力&lt;/strong>.&lt;/p>
+&lt;p>还记得那个传闻吗?OpenAI 只是在谈判桌上放了 Google TPU 的备选方案,Nvidia 就乖乖降价 30%.现在 Meta 也学会了这招&amp;ndash;就在几天前,Meta 刚宣布扩展与 Nvidia 的 AI 芯片合作,转头就签了 AMD 的大单.&lt;/p>
+&lt;p>这不是 Meta 第一次搞&amp;quot;多供应商策略&amp;quot;.他们自己也在开发 &lt;a href="https://the-decoder.com/meta-deploys-its-artemis-ai-chip-to-reduce-reliance-on-nvidia-gpus/">Artemis 芯片&lt;/a>,目的就是减少对 Nvidia 的依赖.现在加上 AMD,Meta 手里有三张牌可以打.&lt;/p>
+&lt;h2 id="10-股权是什么操作">10% 股权是什么操作?&lt;/h2>
+&lt;p>这是整个交易最有趣的部分.Meta 获得了最多 1.6 亿股 AMD 股票的认股权,约占 AMD 总股本的 &lt;strong>10%&lt;/strong>.&lt;/p></description></item><item><title>Arm不想只卖图纸了:从芯片设计师到AI芯片玩家的豪赌</title><link>https://claudeai.best/posts/hunter-2026021613/</link><pubDate>Mon, 16 Feb 2026 13:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021613/</guid><description>Arm正从芯片IP授权模式转型,押注AI自研芯片和子系统方案,这场豪赌将重塑半导体产业格局</description></item></channel></rss>

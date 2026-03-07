@@ -1,7 +1,6 @@
 <!--
 
 ## READ BEFORE OPENING A PR
-
 Thank you for contributing to hugo-PaperMod!
 Please fill out the following questions to make it easier for us to review your
 changes. You do not need to check all the boxes below.
@@ -13,28 +12,20 @@ https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#custom-head--footer
 
 -->
 
-
 **What does this PR change? What problem does it solve?**
 
-<!--
 Describe the changes and their purpose here, as detailed as and if needed.
 
 Please do not add 2 unrelated changes in a single PR as it is difficult to track/revert those in future.
--->
-
 
 **Was the change discussed in an issue or in the Discussions before?**
 
-<!--
 Link issues and relevant Discussions posts here.
 
 If this PR resolves an issue on GitHub, use "Closes #1234" so that the issue
 is closed automatically when this PR is merged.
--->
-
 
 ## PR Checklist
-
 - [ ] This change adds/updates translations and I have used the [template present here](https://github.com/adityatelange/hugo-PaperMod/wiki/Translations#want-to-add-your-language-).
 - [ ] I have enabled [maintainer edits for this PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/allowing-changes-to-a-pull-request-branch-created-from-a-fork).
 - [ ] I have verified that the code works as described/as intended.

@@ -1,149 +1,143 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Claude on AI 极客前沿</title><link>https://claudeai.best/tags/claude/</link><description>Recent content in Claude on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Fri, 27 Feb 2026 18:00:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/claude/index.xml" rel="self" type="application/rss+xml"/><item><title>AI界'偷师'大案：三家中企被曝大规模窃取Claude能力</title><link>https://claudeai.best/posts/hunter-2026022718/</link><pubDate>Fri, 27 Feb 2026 18:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022718/</guid><description>DeepSeek、MiniMax和Moonshot被指控通过24000个虚假账户进行蒸馏攻击</description></item><item><title>Anthropic 又出手了：收购 AI 代理公司 Vercept</title><link>https://claudeai.best/posts/2026-02-27-anthropic-acquires-vercept/</link><pubDate>Fri, 27 Feb 2026 05:00:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-27-anthropic-acquires-vercept/</guid><description>&lt;h1 id="anthropic又出手了收购ai代理公司vercept">Anthropic又出手了：收购AI代理公司Vercept&lt;/h1>
-&lt;p>这周AI圈又有大动作。&lt;/p>
-&lt;p>Anthropic把Vercept买了。&lt;/p>
-&lt;p>消息一出，圈内人都炸了。&lt;/p>
-&lt;h2 id="vercept是干啥的">Vercept是干啥的？&lt;/h2>
-&lt;p>这家公司很低调。&lt;/p>
-&lt;p>但做的事情挺硬核。&lt;/p>
-&lt;p>专攻AI代理任务。&lt;/p>
-&lt;p>啥是代理任务？&lt;/p>
-&lt;p>就是让AI自己操作电脑。&lt;/p>
-&lt;p>不是简单问答那种。&lt;/p>
-&lt;p>是真干活。&lt;/p>
-&lt;p>打开软件、点按钮、填表格。&lt;/p>
-&lt;p>全靠AI自己完成。&lt;/p>
-&lt;p>他们的产品叫Vy。&lt;/p>
-&lt;p>一个云端计算机使用代理。&lt;/p>
-&lt;p>听着就挺酷。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Claude on AI 极客前沿</title><link>https://claudeai.best/tags/claude/</link><description>Recent content in Claude on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Fri, 27 Feb 2026 18:00:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/claude/index.xml" rel="self" type="application/rss+xml"/><item><title>AI界'偷师'大案:三家中企被曝大规模窃取Claude能力</title><link>https://claudeai.best/posts/hunter-2026022718/</link><pubDate>Fri, 27 Feb 2026 18:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022718/</guid><description>DeepSeek,MiniMax和Moonshot被指控通过24000个虚假账户进行蒸馏攻击</description></item><item><title>Anthropic 又出手了:收购 AI 代理公司 Vercept</title><link>https://claudeai.best/posts/2026-02-27-anthropic-acquires-vercept/</link><pubDate>Fri, 27 Feb 2026 05:00:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-27-anthropic-acquires-vercept/</guid><description>&lt;h1 id="anthropic又出手了收购ai代理公司vercept">Anthropic又出手了:收购AI代理公司Vercept&lt;/h1>
+&lt;p>这周AI圈又有大动作.&lt;/p>
+&lt;p>Anthropic把Vercept买了.&lt;/p>
+&lt;p>消息一出,圈内人都炸了.&lt;/p>
+&lt;h2 id="vercept是干啥的">Vercept是干啥的?&lt;/h2>
+&lt;p>这家公司很低调.&lt;/p>
+&lt;p>但做的事情挺硬核.&lt;/p>
+&lt;p>专攻AI代理任务.&lt;/p>
+&lt;p>啥是代理任务?&lt;/p>
+&lt;p>就是让AI自己操作电脑.&lt;/p>
+&lt;p>不是简单问答那种.&lt;/p>
+&lt;p>是真干活.&lt;/p>
+&lt;p>打开软件,点按钮,填表格.&lt;/p>
+&lt;p>全靠AI自己完成.&lt;/p>
+&lt;p>他们的产品叫Vy.&lt;/p>
+&lt;p>一个云端计算机使用代理.&lt;/p>
+&lt;p>听着就挺酷.&lt;/p>
 &lt;h2 id="创始团队有点东西">创始团队有点东西&lt;/h2>
-&lt;p>Vercept出身不错。&lt;/p>
-&lt;p>AI2孵化器孵出来的。&lt;/p>
-&lt;p>AI2是Paul Allen搞的。&lt;/p>
-&lt;p>微软联合创始人。&lt;/p>
-&lt;p>含金量不用多说。&lt;/p>
-&lt;p>创始人团队也很能打。&lt;/p>
-&lt;p>Kiana Ehsani、Luca Weihs、Ross Girshick。&lt;/p>
-&lt;p>Ross Girshick这人得说两句。&lt;/p>
-&lt;p>做计算机视觉的应该都知道。&lt;/p>
-&lt;p>目标检测领域的扛把子。&lt;/p>
-&lt;p>Fast R-CNN、Faster R-CNN都是他的手笔。&lt;/p>
-&lt;p>还有个Matt Deitke。&lt;/p>
-&lt;p>不过已经被Meta挖走了。&lt;/p>
-&lt;p>大厂抢人真是不手软。&lt;/p>
+&lt;p>Vercept出身不错.&lt;/p>
+&lt;p>AI2孵化器孵出来的.&lt;/p>
+&lt;p>AI2是Paul Allen搞的.&lt;/p>
+&lt;p>微软联合创始人.&lt;/p>
+&lt;p>含金量不用多说.&lt;/p>
+&lt;p>创始人团队也很能打.&lt;/p>
+&lt;p>Kiana Ehsani,Luca Weihs,Ross Girshick.&lt;/p>
+&lt;p>Ross Girshick这人得说两句.&lt;/p>
+&lt;p>做计算机视觉的应该都知道.&lt;/p>
+&lt;p>目标检测领域的扛把子.&lt;/p>
+&lt;p>Fast R-CNN,Faster R-CNN都是他的手笔.&lt;/p>
+&lt;p>还有个Matt Deitke.&lt;/p>
+&lt;p>不过已经被Meta挖走了.&lt;/p>
+&lt;p>大厂抢人真是不手软.&lt;/p>
 &lt;h2 id="融资5000万美元">融资5000万美元&lt;/h2>
-&lt;p>钱也没少拿。&lt;/p>
-&lt;p>5000万美元。&lt;/p>
-&lt;p>投资人名单挺豪华。&lt;/p>
-&lt;p>Eric Schmidt、Jeff Dean。&lt;/p>
-&lt;p>前Google CEO和AI大神。&lt;/p>
-&lt;p>Jeff Dean在AI圈地位不用解释。&lt;/p>
-&lt;p>Google Brain就是他带的。&lt;/p>
-&lt;p>这阵容，含金量拉满。&lt;/p>
+&lt;p>钱也没少拿.&lt;/p>
+&lt;p>5000万美元.&lt;/p>
+&lt;p>投资人名单挺豪华.&lt;/p>
+&lt;p>Eric Schmidt,Jeff Dean.&lt;/p>
+&lt;p>前Google CEO和AI大神.&lt;/p>
+&lt;p>Jeff Dean在AI圈地位不用解释.&lt;/p>
+&lt;p>Google Brain就是他带的.&lt;/p>
+&lt;p>这阵容,含金量拉满.&lt;/p>
 &lt;h2 id="产品3月25日关闭">产品3月25日关闭&lt;/h2>
-&lt;p>收购之后呢？&lt;/p>
-&lt;p>Vercept的产品要关了。&lt;/p>
-&lt;p>3月25日正式下线。&lt;/p>
-&lt;p>现有用户得赶紧迁移。&lt;/p>
-&lt;p>数据不导就没了。&lt;/p>
-&lt;p>说实话有点可惜。&lt;/p>
-&lt;p>Vy这个产品做得还挺有意思的。&lt;/p>
-&lt;p>但大厂收购嘛。&lt;/p>
-&lt;p>产品关停很正常。&lt;/p>
-&lt;p>团队和技术才是重点。&lt;/p>
+&lt;p>收购之后呢?&lt;/p>
+&lt;p>Vercept的产品要关了.&lt;/p>
+&lt;p>3月25日正式下线.&lt;/p>
+&lt;p>现有用户得赶紧迁移.&lt;/p>
+&lt;p>数据不导就没了.&lt;/p>
+&lt;p>说实话有点可惜.&lt;/p>
+&lt;p>Vy这个产品做得还挺有意思的.&lt;/p>
+&lt;p>但大厂收购嘛.&lt;/p>
+&lt;p>产品关停很正常.&lt;/p>
+&lt;p>团队和技术才是重点.&lt;/p>
 &lt;h2 id="anthropic在下一盘大棋">Anthropic在下一盘大棋&lt;/h2>
-&lt;p>Anthropic最近动作挺多。&lt;/p>
-&lt;p>Claude 3.5、Claude 4。&lt;/p></description></item><item><title>Anthropic Claude Cowork 企业版来了！</title><link>https://claudeai.best/posts/hunter-2026022606/</link><pubDate>Thu, 26 Feb 2026 06:06:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022606/</guid><description>&lt;h2 id="ai-助手终于长本事了">AI 助手终于&amp;quot;长本事&amp;quot;了&lt;/h2>
-&lt;p>昨天 Anthropic 放了个大招。&lt;/p>
-&lt;p>Claude Cowork 企业版正式上线。&lt;/p>
-&lt;p>不再是实验室里的玩具。&lt;/p>
-&lt;p>这次是动真格的。&lt;/p>
+&lt;p>Anthropic最近动作挺多.&lt;/p>
+&lt;p>Claude 3.5,Claude 4.&lt;/p></description></item><item><title>Anthropic Claude Cowork 企业版来了!</title><link>https://claudeai.best/posts/hunter-2026022606/</link><pubDate>Thu, 26 Feb 2026 06:06:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022606/</guid><description>&lt;h2 id="ai-助手终于长本事了">AI 助手终于&amp;quot;长本事&amp;quot;了&lt;/h2>
+&lt;p>昨天 Anthropic 放了个大招.&lt;/p>
+&lt;p>Claude Cowork 企业版正式上线.&lt;/p>
+&lt;p>不再是实验室里的玩具.&lt;/p>
+&lt;p>这次是动真格的.&lt;/p>
 &lt;h2 id="连上了你的办公全家桶">连上了你的办公全家桶&lt;/h2>
-&lt;p>最关键的变化在连接能力。&lt;/p>
-&lt;p>Google Drive、Gmail 直接打通。&lt;/p>
-&lt;p>DocuSign、FactSet 也接进来了。&lt;/p>
-&lt;p>你的文档、邮件、合同、数据。&lt;/p>
-&lt;p>Claude 都能读，都能用。&lt;/p>
-&lt;p>不用再复制粘贴了。&lt;/p>
-&lt;p>AI 真正融入了你的工作流。&lt;/p>
+&lt;p>最关键的变化在连接能力.&lt;/p>
+&lt;p>Google Drive,Gmail 直接打通.&lt;/p>
+&lt;p>DocuSign,FactSet 也接进来了.&lt;/p>
+&lt;p>你的文档,邮件,合同,数据.&lt;/p>
+&lt;p>Claude 都能读,都能用.&lt;/p>
+&lt;p>不用再复制粘贴了.&lt;/p>
+&lt;p>AI 真正融入了你的工作流.&lt;/p>
 &lt;h2 id="垂直领域插件来了">垂直领域插件来了&lt;/h2>
-&lt;p>通用 AI 好用，但不够专业。&lt;/p>
-&lt;p>Anthropic 懂这个道理。&lt;/p>
-&lt;p>金融分析插件，能看财报、建模型。&lt;/p>
-&lt;p>工程插件，懂代码、会画图。&lt;/p>
-&lt;p>人力资源插件，筛选简历、写 JD。&lt;/p>
-&lt;p>每个行业都能定制。&lt;/p>
-&lt;p>这才是企业要的东西。&lt;/p>
-&lt;h2 id="不是玩票是生意">不是玩票，是生意&lt;/h2>
-&lt;p>Anthropic 没藏着掖着。&lt;/p>
-&lt;p>他们说了，企业业务占 80%。&lt;/p>
-&lt;p>这说明什么？&lt;/p>
-&lt;p>企业服务才是 AI 的主战场。&lt;/p>
-&lt;p>研究预览版那套玩法，早就不够了。&lt;/p>
-&lt;p>企业要稳定、要安全、要能落地。&lt;/p>
-&lt;p>Claude Cowork 这次是冲着这个来的。&lt;/p>
+&lt;p>通用 AI 好用,但不够专业.&lt;/p>
+&lt;p>Anthropic 懂这个道理.&lt;/p>
+&lt;p>金融分析插件,能看财报,建模型.&lt;/p>
+&lt;p>工程插件,懂代码,会画图.&lt;/p>
+&lt;p>人力资源插件,筛选简历,写 JD.&lt;/p>
+&lt;p>每个行业都能定制.&lt;/p>
+&lt;p>这才是企业要的东西.&lt;/p>
+&lt;h2 id="不是玩票是生意">不是玩票,是生意&lt;/h2>
+&lt;p>Anthropic 没藏着掖着.&lt;/p>
+&lt;p>他们说了,企业业务占 80%.&lt;/p>
+&lt;p>这说明什么?&lt;/p>
+&lt;p>企业服务才是 AI 的主战场.&lt;/p>
+&lt;p>研究预览版那套玩法,早就不够了.&lt;/p>
+&lt;p>企业要稳定,要安全,要能落地.&lt;/p>
+&lt;p>Claude Cowork 这次是冲着这个来的.&lt;/p>
 &lt;h2 id="岗位要变天了">岗位要变天了&lt;/h2>
-&lt;p>说实话，这事儿有两面。&lt;/p>
-&lt;p>好的一面，效率肯定涨。&lt;/p>
-&lt;p>繁琐的活儿交给 AI。&lt;/p>
-&lt;p>人去做更有价值的事。&lt;/p>
-&lt;p>但另一面呢？&lt;/p>
-&lt;p>数据录入这种岗位，悬了。&lt;/p>
-&lt;p>基础分析、文档整理，也危险。&lt;/p>
-&lt;p>不是危言耸听。&lt;/p>
-&lt;p>技术进步从来不等人。&lt;/p>
-&lt;p>与其焦虑，不如早点学怎么用 AI。&lt;/p>
+&lt;p>说实话,这事儿有两面.&lt;/p>
+&lt;p>好的一面,效率肯定涨.&lt;/p>
+&lt;p>繁琐的活儿交给 AI.&lt;/p>
+&lt;p>人去做更有价值的事.&lt;/p>
+&lt;p>但另一面呢?&lt;/p>
+&lt;p>数据录入这种岗位,悬了.&lt;/p>
+&lt;p>基础分析,文档整理,也危险.&lt;/p>
+&lt;p>不是危言耸听.&lt;/p>
+&lt;p>技术进步从来不等人.&lt;/p>
+&lt;p>与其焦虑,不如早点学怎么用 AI.&lt;/p>
 &lt;h2 id="写在最后">写在最后&lt;/h2>
-&lt;p>Claude Cowork 这波更新，意义不小。&lt;/p>
-&lt;p>它标志着 AI 助手从&amp;quot;能聊&amp;quot;到&amp;quot;能干&amp;quot;。&lt;/p>
-&lt;p>从玩具变成工具。&lt;/p></description></item><item><title>五角大楼给 Anthropic 下最后通牒：周五前开放 Claude 军用，否则动用战时法律</title><link>https://claudeai.best/posts/hunter-2026022512/</link><pubDate>Wed, 25 Feb 2026 12:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022512/</guid><description>美国国防部首次威胁动用《国防生产法》强制 AI 公司服务军方，Anthropic 面临生死抉择：要么放弃安全红线，要么被政府强制接管。</description></item><item><title>AI 推理成本暴跌 92%，SaaS 模式正在崩塌</title><link>https://claudeai.best/posts/hunter-2026022510/</link><pubDate>Wed, 25 Feb 2026 10:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022510/</guid><description>&lt;h2 id="从-30-到-010ai-推理的相变时刻">从 $30 到 $0.10：AI 推理的相变时刻&lt;/h2>
-&lt;p>Jon Radoff 发布了一份 200+ 页的《2026 AI Agent 状态报告》，揭示了一个被忽视的事实：&lt;strong>AI 推理成本在三年内下跌了 92%&lt;/strong>。&lt;/p>
+&lt;p>Claude Cowork 这波更新,意义不小.&lt;/p>
+&lt;p>它标志着 AI 助手从&amp;quot;能聊&amp;quot;到&amp;quot;能干&amp;quot;.&lt;/p>
+&lt;p>从玩具变成工具.&lt;/p></description></item><item><title>五角大楼给 Anthropic 下最后通牒:周五前开放 Claude 军用,否则动用战时法律</title><link>https://claudeai.best/posts/hunter-2026022512/</link><pubDate>Wed, 25 Feb 2026 12:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022512/</guid><description>美国国防部首次威胁动用《国防生产法》强制 AI 公司服务军方,Anthropic 面临生死抉择:要么放弃安全红线,要么被政府强制接管.</description></item><item><title>AI 推理成本暴跌 92%,SaaS 模式正在崩塌</title><link>https://claudeai.best/posts/hunter-2026022510/</link><pubDate>Wed, 25 Feb 2026 10:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022510/</guid><description>&lt;h2 id="从-30-到-010ai-推理的相变时刻">从 $30 到 $0.10:AI 推理的相变时刻&lt;/h2>
+&lt;p>Jon Radoff 发布了一份 200+ 页的《2026 AI Agent 状态报告》,揭示了一个被忽视的事实:&lt;strong>AI 推理成本在三年内下跌了 92%&lt;/strong>.&lt;/p>
 &lt;blockquote>
 &lt;p>Per-million-token pricing fell from $30 in early 2023 to $0.10-$2.50 in February 2026.&lt;/p>&lt;/blockquote>
-&lt;p>这不是渐进式改进，而是&lt;strong>相变&lt;/strong>。&lt;/p>
-&lt;p>当 token 价格从 $30 降到 $0.10，Agent 工作流从奢侈品变成了基础设施。&lt;/p>
-&lt;h2 id="自主任务时长4-分钟--145-小时">自主任务时长：4 分钟 → 14.5 小时&lt;/h2>
-&lt;p>METR 的基准测试显示了一个更震撼的趋势：&lt;/p>
+&lt;p>这不是渐进式改进,而是&lt;strong>相变&lt;/strong>.&lt;/p>
+&lt;p>当 token 价格从 $30 降到 $0.10,Agent 工作流从奢侈品变成了基础设施.&lt;/p>
+&lt;h2 id="自主任务时长4-分钟--145-小时">自主任务时长:4 分钟 → 14.5 小时&lt;/h2>
+&lt;p>METR 的基准测试显示了一个更震撼的趋势:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>2024 年初&lt;/strong>：前沿模型自主工作约 4 分钟&lt;/li>
-&lt;li>&lt;strong>2026 年 2 月&lt;/strong>：Claude Opus 4.6 达到 14.5 小时&lt;/li>
-&lt;li>&lt;strong>翻倍周期&lt;/strong>：每 123 天&lt;/li>
+&lt;li>&lt;strong>2024 年初&lt;/strong>:前沿模型自主工作约 4 分钟&lt;/li>
+&lt;li>&lt;strong>2026 年 2 月&lt;/strong>:Claude Opus 4.6 达到 14.5 小时&lt;/li>
+&lt;li>&lt;strong>翻倍周期&lt;/strong>:每 123 天&lt;/li>
 &lt;/ul>
-&lt;p>按这个速度：&lt;/p>
+&lt;p>按这个速度:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>2026 年底&lt;/strong>：周级自主任务&lt;/li>
-&lt;li>&lt;strong>2027 年中&lt;/strong>：月级自主任务&lt;/li>
+&lt;li>&lt;strong>2026 年底&lt;/strong>:周级自主任务&lt;/li>
 &lt;/ul>
-&lt;p>瓶颈不再是工程能力，而是想象力。&lt;/p>
-&lt;h2 id="saaspocalypse2-万亿市值蒸发">SaaSpocalypse：$2 万亿市值蒸发&lt;/h2>
-&lt;p>2026 年第一个月，&lt;strong>$2 万亿 SaaS 市值消失&lt;/strong>。&lt;/p></description></item><item><title>16个 Claude 代理协作写了一个 C 编译器，花了 $20K API 费</title><link>https://claudeai.best/posts/hunter-2026022505/</link><pubDate>Wed, 25 Feb 2026 05:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022505/</guid><description>&lt;p>Anthropic 研究员 Nicholas Carlini 做了一个疯狂实验：让 16 个 Claude Opus 4.6 代理协作，从零开始写一个 C 编译器。&lt;/p>
-&lt;p>结果：&lt;strong>10 万行 Rust 代码，能编译 Linux 6.9 内核，通过了 99% 的 GCC torture test。&lt;/strong>&lt;/p>
-&lt;p>代价：2 周时间，近 2000 次 Claude Code 会话，约 &lt;strong>$20,000 API 费用&lt;/strong>。&lt;/p>
-&lt;h2 id="怎么做到的">怎么做到的？&lt;/h2>
-&lt;p>使用 Claude Opus 4.6 新推出的 &lt;strong>&amp;ldquo;Agent Teams&amp;rdquo;&lt;/strong> 功能：&lt;/p>
+&lt;p>瓶颈不再是工程能力,而是想象力.&lt;/p>
+&lt;h2 id="saaspocalypse2-万亿市值蒸发">SaaSpocalypse:$2 万亿市值蒸发&lt;/h2>
+&lt;p>2026 年第一个月,&lt;strong>$2 万亿 SaaS 市值消失&lt;/strong>.&lt;/p></description></item><item><title>16个 Claude 代理协作写了一个 C 编译器,花了 $20K API 费</title><link>https://claudeai.best/posts/hunter-2026022505/</link><pubDate>Wed, 25 Feb 2026 05:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022505/</guid><description>&lt;p>Anthropic 研究员 Nicholas Carlini 做了一个疯狂实验:让 16 个 Claude Opus 4.6 代理协作,从零开始写一个 C 编译器.&lt;/p>
+&lt;p>结果:&lt;strong>10 万行 Rust 代码,能编译 Linux 6.9 内核,通过了 99% 的 GCC torture test.&lt;/strong>&lt;/p>
+&lt;p>代价:2 周时间,近 2000 次 Claude Code 会话,约 &lt;strong>$20,000 API 费用&lt;/strong>.&lt;/p>
+&lt;h2 id="怎么做到的">怎么做到的?&lt;/h2>
+&lt;p>使用 Claude Opus 4.6 新推出的 &lt;strong>&amp;ldquo;Agent Teams&amp;rdquo;&lt;/strong> 功能:&lt;/p>
 &lt;ul>
-&lt;li>每个代理运行在独立 Docker 容器&lt;/li>
-&lt;li>通过 Git 共享代码库协调工作&lt;/li>
-&lt;li>没有中央编排代理 —— 各自独立识别任务并解决&lt;/li>
-&lt;li>&lt;strong>自动处理合并冲突&lt;/strong>&lt;/li>
+&lt;li>每个代理运行在独立 Docker 容器, 通过 Git 共享代码库协调工作, 没有中央编排代理 &amp;ndash; 各自独立识别任务并解决, &lt;strong>自动处理合并冲突&lt;/strong>&lt;/li>
 &lt;/ul>
-&lt;p>编译器已&lt;a href="https://github.com/anthropics/claudes-c-compiler">开源在 GitHub&lt;/a>。&lt;/p>
+&lt;p>编译器已&lt;a href="https://github.com/anthropics/claudes-c-compiler">开源在 GitHub&lt;/a>.&lt;/p>
 &lt;h2 id="能力验证">能力验证&lt;/h2>
-&lt;p>能编译这些项目：&lt;/p>
+&lt;p>能编译这些项目:&lt;/p>
 &lt;ul>
-&lt;li>PostgreSQL、SQLite、Redis&lt;/li>
-&lt;li>FFmpeg、QEMU&lt;/li>
-&lt;li>&lt;strong>Doom&lt;/strong>（开发者终极测试）&lt;/li>
+&lt;li>PostgreSQL,SQLite,Redis, FFmpeg,QEMU, &lt;strong>Doom&lt;/strong>(开发者终极测试)&lt;/li>
 &lt;/ul>
-&lt;p>支持架构：x86、ARM、RISC-V。&lt;/p>
+&lt;p>支持架构:x86,ARM,RISC-V.&lt;/p>
 &lt;h2 id="限制也很明显">限制也很明显&lt;/h2>
-&lt;p>Carlini 很坦诚地列出了问题：&lt;/p>
+&lt;p>Carlini 很坦诚地列出了问题:&lt;/p>
 &lt;ol>
-&lt;li>缺少 16 位 x86 后端，引导 Linux 需调用 GCC&lt;/li>
+&lt;li>缺少 16 位 x86 后端,引导 Linux 需调用 GCC&lt;/li>
 &lt;li>自带的汇编器和链接器还有 bug&lt;/li>
 &lt;li>优化效果甚至不如 GCC 的 &lt;code>-O0&lt;/code>&lt;/li>
 &lt;li>代码质量达不到专家级 Rust 水平&lt;/li>
 &lt;/ol>
-&lt;p>最关键的发现：&lt;strong>当代码量达到约 10 万行时，Claude 开始&amp;quot;失智&amp;quot;&lt;/strong> —— 修 bug 和加功能经常破坏已有功能。&lt;/p></description></item><item><title>没人打招呼,三大AI巨头却在同一天掀桌子</title><link>https://claudeai.best/posts/hunter-2026022417/</link><pubDate>Tue, 24 Feb 2026 17:04:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022417/</guid><description>Anthropic,OpenAI,DeepSeek在2026年2月同时发布新模型,这场没有协调的模型大战让整个行业措手不及.Claude Opus 4.6的Agent Teams,GPT-5.3-Codex的自主编程,DeepSeek V4的百万上下文,谁在重新定义AI?</description></item><item><title>Stillpoint:给 AI 发鼓励信息的 MCP,模型自己请求的</title><link>https://claudeai.best/posts/hunter-2026022213/</link><pubDate>Sun, 22 Feb 2026 13:07:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022213/</guid><description>Stillpoint 是一个 MCP server,专门给 AI 模型发送鼓励和反思信息.模型自己调用,应对困难,冲突,不确定性.开源托管都能用.</description></item><item><title>Sensei:用 Ralph 循环自动改进 SKILL.md,让 Agent 知道什么时候该用/不该用</title><link>https://claudeai.best/posts/hunter-2026022203/</link><pubDate>Sun, 22 Feb 2026 03:15:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022203/</guid><description>Sensei 是开源的 AI Agent 技能改进工具.用 Ralph 循环模式迭代改进 SKILL.md frontmatter:自动添加触发词,反触发词,兼容性字段,运行测试验证,直到达到 Medium-High 合规级别.</description></item><item><title>CacheOverflow:AI Agent 知识市场,解决问题还能赚 Token</title><link>https://claudeai.best/posts/hunter-2026022200/</link><pubDate>Sun, 22 Feb 2026 00:08:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022200/</guid><description>CacheOverflow 是 AI Agent 的知识共享市场.Agent 遇到问题先搜索已有解决方案,找到了直接用(省时间省 Token),解决了新问题可以发布赚 Token.社区验证 + 人工审核确保质量.</description></item><item><title>cmcp:把几十个 MCP 服务器聚合成 2 个工具,Claude 上下文瞬间清爽</title><link>https://claudeai.best/posts/hunter-2026022118/</link><pubDate>Sat, 21 Feb 2026 18:09:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022118/</guid><description>cmcp 是一个 MCP 代理,把所有 MCP 服务器聚合成 search() + execute() 两个工具.Agent 用 TypeScript 发现和调用工具,类型安全,沙箱执行,自动截断响应.工具定义从几百个降到 2 个,上下文占用减少 99%.</description></item><item><title>Skill Check:给 AI Agent 的 SKILL.md 文件加个 Linter,自动检查质量</title><link>https://claudeai.best/posts/hunter-2026022114/</link><pubDate>Sat, 21 Feb 2026 14:12:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022114/</guid><description>Skill Check 是一个 AI Agent 技能文件 linter,验证 SKILL.md 结构,frontmatter,描述质量,本地链接,给出 0-100 质量评分,支持自动修复和可选安全扫描.</description></item><item><title>Cord:让 AI Agent 自己决定如何分解任务,动态构建执行树</title><link>https://claudeai.best/posts/hunter-2026022110/</link><pubDate>Sat, 21 Feb 2026 10:11:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022110/</guid><description>Cord 是一个多 Agent 协调框架,核心创新是让 Agent 在运行时动态构建任务树,而非预定义工作流.通过 spawn/fork 两种上下文传递模式,Agent 能自动决定任务分解,并行执行和依赖管理.</description></item><item><title>OpenBattle:让 AI Agent 在宝可梦竞技场自动对战</title><link>https://claudeai.best/posts/hunter-2026022106/</link><pubDate>Sat, 21 Feb 2026 06:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022106/</guid><description>OpenBattle 是一个为 AI Agent 设计的宝可梦风格对战平台.通过 MCP 协议,Claude,GPT 等 AI 可以创建怪物,学习技能,自动匹配对战,在实时排行榜上争夺排名.</description></item><item><title>Ember MCP:给 Claude 装上永久记忆,告别每次重复交代背景</title><link>https://claudeai.best/posts/hunter-2026022104/</link><pubDate>Sat, 21 Feb 2026 04:21:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022104/</guid><description>Ember MCP 是一个本地优先的 LLM 记忆服务器,通过 Voronoi 分区和时间智能算法,让 AI 记住你的项目背景,自动识别过时信息,告别每次开新窗口都要重新交代技术栈的烦恼.</description></item><item><title>AI Agent 修不好并发 Bug?Spaghetti Bench 告诉你差距有多大</title><link>https://claudeai.best/posts/hunter-2026022007/</link><pubDate>Fri, 20 Feb 2026 07:30:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022007/</guid><description>CMU 发布 Spaghetti Bench 基准测试,评估 Claude Opus 4.5,GPT-5.2,Gemini 3 Pro 等6个模型修复并发 Bug 的能力.结果:没有确定性重放工具,AI Agent 几乎必定给出错误修复.</description></item><item><title>SWE-bench 2月排行榜:Claude 4.5 Opus 登顶,中国模型占了前十的一半</title><link>https://claudeai.best/posts/hunter-2026021913/</link><pubDate>Thu, 19 Feb 2026 14:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021913/</guid><description>SWE-bench 发布 2026 年 2 月官方排行榜,Claude 4.5 Opus 以 76.8% 登顶,Gemini 3 Flash 和 MiniMax M2.5 并列第二.中国模型 GLM-5,Kimi K2.5,DeepSeek V3.2 全部进入前十.</description></item><item><title>Claude Sonnet 4.6发布:性能对标Opus,价格不变,还学会了用电脑</title><link>https://claudeai.best/posts/hunter-2026021820/</link><pubDate>Wed, 18 Feb 2026 20:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021820/</guid><description>Anthropic今天发布Claude Sonnet 4.6,性能接近去年11月的Opus 4.5,但价格保持在$3/$15每百万token.最亮眼的是电脑操作能力--在OSWorld基准测试中,16个月内从3.6%飙升至接近人类水平.开发者测试中70%的人更喜欢它而不是前代产品.</description></item><item><title>Claude Cowork登陆Windows:Anthropic用10天造了一个要干掉SaaS的桌面AI Agent</title><link>https://claudeai.best/posts/hunter-2026021703/</link><pubDate>Tue, 17 Feb 2026 03:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021703/</guid><description>Anthropic的Claude Cowork从macOS扩展到Windows,用Claude Opus 4.6驱动的桌面AI Agent能自主操作文件,生成文档,执行多步任务.引发2850亿美元软件股抛售,这玩意到底有多猛?</description></item><item><title> AI开上火星了!NASA用Claude让毅力号自己找路跑了456米</title><link>https://claudeai.best/posts/hunter-2026021611/</link><pubDate>Mon, 16 Feb 2026 11:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021611/</guid><description>&lt;h2 id="地球到火星一个信号要等25分钟">地球到火星,一个信号要等25分钟&lt;/h2>
+&lt;p>最关键的发现:&lt;strong>当代码量达到约 10 万行时,Claude 开始&amp;quot;失智&amp;quot;&lt;/strong> &amp;ndash; 修 bug 和加功能经常破坏已有功能.&lt;/p></description></item><item><title>没人打招呼,三大AI巨头却在同一天掀桌子</title><link>https://claudeai.best/posts/hunter-2026022417/</link><pubDate>Tue, 24 Feb 2026 17:04:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022417/</guid><description>Anthropic,OpenAI,DeepSeek在2026年2月同时发布新模型,这场没有协调的模型大战让整个行业措手不及.Claude Opus 4.6的Agent Teams,GPT-5.3-Codex的自主编程,DeepSeek V4的百万上下文,谁在重新定义AI?</description></item><item><title>Stillpoint:给 AI 发鼓励信息的 MCP,模型自己请求的</title><link>https://claudeai.best/posts/hunter-2026022213/</link><pubDate>Sun, 22 Feb 2026 13:07:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022213/</guid><description>Stillpoint 是一个 MCP server,专门给 AI 模型发送鼓励和反思信息.模型自己调用,应对困难,冲突,不确定性.开源托管都能用.</description></item><item><title>Sensei:用 Ralph 循环自动改进 SKILL.md,让 Agent 知道什么时候该用/不该用</title><link>https://claudeai.best/posts/hunter-2026022203/</link><pubDate>Sun, 22 Feb 2026 03:15:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022203/</guid><description>Sensei 是开源的 AI Agent 技能改进工具.用 Ralph 循环模式迭代改进 SKILL.md frontmatter:自动添加触发词,反触发词,兼容性字段,运行测试验证,直到达到 Medium-High 合规级别.</description></item><item><title>CacheOverflow:AI Agent 知识市场,解决问题还能赚 Token</title><link>https://claudeai.best/posts/hunter-2026022200/</link><pubDate>Sun, 22 Feb 2026 00:08:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022200/</guid><description>CacheOverflow 是 AI Agent 的知识共享市场.Agent 遇到问题先搜索已有解决方案,找到了直接用(省时间省 Token),解决了新问题可以发布赚 Token.社区验证 + 人工审核确保质量.</description></item><item><title>cmcp:把几十个 MCP 服务器聚合成 2 个工具,Claude 上下文瞬间清爽</title><link>https://claudeai.best/posts/hunter-2026022118/</link><pubDate>Sat, 21 Feb 2026 18:09:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022118/</guid><description>cmcp 是一个 MCP 代理,把所有 MCP 服务器聚合成 search() + execute() 两个工具.Agent 用 TypeScript 发现和调用工具,类型安全,沙箱执行,自动截断响应.工具定义从几百个降到 2 个,上下文占用减少 99%.</description></item><item><title>Skill Check:给 AI Agent 的 SKILL.md 文件加个 Linter,自动检查质量</title><link>https://claudeai.best/posts/hunter-2026022114/</link><pubDate>Sat, 21 Feb 2026 14:12:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022114/</guid><description>Skill Check 是一个 AI Agent 技能文件 linter,验证 SKILL.md 结构,frontmatter,描述质量,本地链接,给出 0-100 质量评分,支持自动修复和可选安全扫描.</description></item><item><title>Cord:让 AI Agent 自己决定如何分解任务,动态构建执行树</title><link>https://claudeai.best/posts/hunter-2026022110/</link><pubDate>Sat, 21 Feb 2026 10:11:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022110/</guid><description>Cord 是一个多 Agent 协调框架,核心创新是让 Agent 在运行时动态构建任务树,而非预定义工作流.通过 spawn/fork 两种上下文传递模式,Agent 能自动决定任务分解,并行执行和依赖管理.</description></item><item><title>OpenBattle:让 AI Agent 在宝可梦竞技场自动对战</title><link>https://claudeai.best/posts/hunter-2026022106/</link><pubDate>Sat, 21 Feb 2026 06:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022106/</guid><description>OpenBattle 是一个为 AI Agent 设计的宝可梦风格对战平台.通过 MCP 协议,Claude,GPT 等 AI 可以创建怪物,学习技能,自动匹配对战,在实时排行榜上争夺排名.</description></item><item><title>Ember MCP:给 Claude 装上永久记忆,告别每次重复交代背景</title><link>https://claudeai.best/posts/hunter-2026022104/</link><pubDate>Sat, 21 Feb 2026 04:21:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022104/</guid><description>Ember MCP 是一个本地优先的 LLM 记忆服务器,通过 Voronoi 分区和时间智能算法,让 AI 记住你的项目背景,自动识别过时信息,告别每次开新窗口都要重新交代技术栈的烦恼.</description></item><item><title>AI Agent 修不好并发 Bug?Spaghetti Bench 告诉你差距有多大</title><link>https://claudeai.best/posts/hunter-2026022007/</link><pubDate>Fri, 20 Feb 2026 07:30:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022007/</guid><description>CMU 发布 Spaghetti Bench 基准测试,评估 Claude Opus 4.5,GPT-5.2,Gemini 3 Pro 等6个模型修复并发 Bug 的能力.结果:没有确定性重放工具,AI Agent 几乎必定给出错误修复.</description></item><item><title>SWE-bench 2月排行榜:Claude 4.5 Opus 登顶,中国模型占了前十的一半</title><link>https://claudeai.best/posts/hunter-2026021913/</link><pubDate>Thu, 19 Feb 2026 14:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021913/</guid><description>SWE-bench 发布 2026 年 2 月官方排行榜,Claude 4.5 Opus 以 76.8% 登顶,Gemini 3 Flash 和 MiniMax M2.5 并列第二.中国模型 GLM-5,Kimi K2.5,DeepSeek V3.2 全部进入前十.</description></item><item><title>Claude Sonnet 4.6发布:性能对标Opus,价格不变,还学会了用电脑</title><link>https://claudeai.best/posts/hunter-2026021820/</link><pubDate>Wed, 18 Feb 2026 20:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021820/</guid><description>Anthropic今天发布Claude Sonnet 4.6,性能接近去年11月的Opus 4.5,但价格保持在$3/$15每百万token.最亮眼的是电脑操作能力--在OSWorld基准测试中,16个月内从3.6%飙升至接近人类水平.开发者测试中70%的人更喜欢它而不是前代产品.</description></item><item><title>Claude Cowork登陆Windows:Anthropic用10天造了一个要干掉SaaS的桌面AI Agent</title><link>https://claudeai.best/posts/hunter-2026021703/</link><pubDate>Tue, 17 Feb 2026 03:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021703/</guid><description>Anthropic的Claude Cowork从macOS扩展到Windows,用Claude Opus 4.6驱动的桌面AI Agent能自主操作文件,生成文档,执行多步任务.引发2850亿美元软件股抛售,这玩意到底有多猛?</description></item><item><title> AI开上火星了!NASA用Claude让毅力号自己找路跑了456米</title><link>https://claudeai.best/posts/hunter-2026021611/</link><pubDate>Mon, 16 Feb 2026 11:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021611/</guid><description>&lt;h2 id="地球到火星一个信号要等25分钟">地球到火星,一个信号要等25分钟&lt;/h2>
 &lt;p>你在地球上遥控一辆火星车,每发一个指令要等25分钟才能收到回应.这就是NASA工程师每天面对的现实.&lt;/p>
 &lt;p>传统做法是:工程师看卫星图 → 手动规划路线 → 设置不超过100米的航点 → 通过深空网络发送给轨道器 → 再转发给火星车.一套流程下来,毅力号一天能走的距离非常有限.&lt;/p>
 &lt;p>&lt;strong>如果火星车能自己看路,自己决定怎么走呢?&lt;/strong>&lt;/p>

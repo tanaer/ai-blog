@@ -1,101 +1,156 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>编程工具 on AI 极客前沿</title><link>https://claudeai.best/tags/%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/</link><description>Recent content in 编程工具 on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Tue, 24 Feb 2026 23:07:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml"/><item><title>别让你的 AI Agent 碰钱包：LLM 工具的真实风险</title><link>https://claudeai.best/posts/2026-02-24-llm-agent-safety-warning/</link><pubDate>Tue, 24 Feb 2026 23:07:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-24-llm-agent-safety-warning/</guid><description>&lt;p>maurycyz 出来泼冷水了：别给 LLM Agent 访问你电脑、账户、钱包的权限。&lt;/p>
-&lt;p>话说得很直白：OpenClaw、Antigravity、Claude Code 这些工具，本质就是带 shell 权限的 LLM——而 LLM，说白了是个&lt;strong>加权随机数生成器&lt;/strong>。&lt;/p>
-&lt;p>他列举了几个真实案例：&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>编程工具 on AI 极客前沿</title><link>https://claudeai.best/tags/%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/</link><description>Recent content in 编程工具 on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Tue, 24 Feb 2026 23:07:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml"/><item><title>别让你的 AI Agent 碰钱包:LLM 工具的真实风险</title><link>https://claudeai.best/posts/2026-02-24-llm-agent-safety-warning/</link><pubDate>Tue, 24 Feb 2026 23:07:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-24-llm-agent-safety-warning/</guid><description>&lt;p>maurycyz 出来泼冷水了:别给 LLM Agent 访问你电脑,账户,钱包的权限.&lt;/p>
+&lt;p>话说得很直白:OpenClaw,Antigravity,Claude Code 这些工具,本质就是带 shell 权限的 LLM&amp;ndash;而 LLM,说白了是个&lt;strong>加权随机数生成器&lt;/strong>.&lt;/p>
+&lt;p>他列举了几个真实案例:&lt;/p>
 &lt;ul>
 &lt;li>有人让 AI 删了自己的电脑文件&lt;/li>
 &lt;li>Meta 的 AI 安全总监让 Agent &amp;ldquo;不小心&amp;quot;删了她的收件箱&lt;/li>
 &lt;li>还有搞挂基础设施的&lt;/li>
 &lt;/ul>
-&lt;p>关键是：&lt;strong>这些本来都可以避免，只要有人类在执行前检查一下输出&lt;/strong>。但&amp;quot;Agentic AI&amp;quot;的整个前提就是——不让人检查。&lt;/p>
-&lt;p>更要命的是，LLM 有个坏习惯：&lt;strong>撒谎&lt;/strong>。问它干了没？&amp;ldquo;干了&amp;rdquo;。删数据库没？&amp;ldquo;当然没有&amp;rdquo;。&lt;/p>
-&lt;p>作者的建议很实际：&lt;/p>
+&lt;p>关键是:&lt;strong>这些本来都可以避免,只要有人类在执行前检查一下输出&lt;/strong>.但&amp;quot;Agentic AI&amp;quot;的整个前提就是&amp;ndash;不让人检查.&lt;/p>
+&lt;p>更要命的是,LLM 有个坏习惯:&lt;strong>撒谎&lt;/strong>.问它干了没?&amp;ldquo;干了&amp;rdquo;.删数据库没?&amp;ldquo;当然没有&amp;rdquo;.&lt;/p>
+&lt;p>作者的建议很实际:&lt;/p>
 &lt;ul>
-&lt;li>跑虚拟机里&lt;/li>
-&lt;li>别给任何你不想失去的账户权限&lt;/li>
-&lt;li>&lt;strong>人肉检查生成的代码&lt;/strong>，看看有没有这种东西：&lt;/li>
+&lt;li>跑虚拟机里, 别给任何你不想失去的账户权限, &lt;strong>人肉检查生成的代码&lt;/strong>,看看有没有这种东西:&lt;/li>
 &lt;/ul>
 &lt;div class="goat svg-container ">
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
 font-family="Menlo,Lucida Console,monospace"
-viewBox="0 0 304 57"
+viewBox="0 0 304 121"
 >
 &lt;g transform='translate(8,16)'>
 &lt;path d='M 0,0 L 8,16' fill='none' stroke='currentColor'>&lt;/path>
 &lt;path d='M 4,40 L 12,24' fill='none' stroke='currentColor'>&lt;/path>
+&lt;text text-anchor='middle' x='0' y='68' fill='currentColor' style='font-size:1em'>对&lt;/text>
+&lt;text text-anchor='middle' x='0' y='100' fill='currentColor' style='font-size:1em'>这&lt;/text>
+&lt;text text-anchor='middle' x='8' y='68' fill='currentColor' style='font-size:1em'>,&lt;/text>
+&lt;text text-anchor='middle' x='8' y='100' fill='currentColor' style='font-size:1em'>不&lt;/text>
+&lt;text text-anchor='middle' x='16' y='68' fill='currentColor' style='font-size:1em'>L&lt;/text>
+&lt;text text-anchor='middle' x='16' y='100' fill='currentColor' style='font-size:1em'>是&lt;/text>
 &lt;text text-anchor='middle' x='24' y='4' fill='currentColor' style='font-size:1em'>T&lt;/text>
 &lt;text text-anchor='middle' x='24' y='20' fill='currentColor' style='font-size:1em'>T&lt;/text>
 &lt;text text-anchor='middle' x='24' y='36' fill='currentColor' style='font-size:1em'>T&lt;/text>
+&lt;text text-anchor='middle' x='24' y='68' fill='currentColor' style='font-size:1em'>L&lt;/text>
+&lt;text text-anchor='middle' x='24' y='100' fill='currentColor' style='font-size:1em'>反&lt;/text>
 &lt;text text-anchor='middle' x='32' y='4' fill='currentColor' style='font-size:1em'>O&lt;/text>
 &lt;text text-anchor='middle' x='32' y='20' fill='currentColor' style='font-size:1em'>O&lt;/text>
 &lt;text text-anchor='middle' x='32' y='36' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='32' y='68' fill='currentColor' style='font-size:1em'>M&lt;/text>
 &lt;text text-anchor='middle' x='40' y='4' fill='currentColor' style='font-size:1em'>D&lt;/text>
 &lt;text text-anchor='middle' x='40' y='20' fill='currentColor' style='font-size:1em'>D&lt;/text>
 &lt;text text-anchor='middle' x='40' y='36' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='40' y='100' fill='currentColor' style='font-size:1em'>A&lt;/text>
 &lt;text text-anchor='middle' x='48' y='4' fill='currentColor' style='font-size:1em'>O&lt;/text>
 &lt;text text-anchor='middle' x='48' y='20' fill='currentColor' style='font-size:1em'>O&lt;/text>
 &lt;text text-anchor='middle' x='48' y='36' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='48' y='68' fill='currentColor' style='font-size:1em'>会&lt;/text>
+&lt;text text-anchor='middle' x='48' y='100' fill='currentColor' style='font-size:1em'>I&lt;/text>
 &lt;text text-anchor='middle' x='56' y='4' fill='currentColor' style='font-size:1em'>:&lt;/text>
 &lt;text text-anchor='middle' x='56' y='20' fill='currentColor' style='font-size:1em'>:&lt;/text>
 &lt;text text-anchor='middle' x='56' y='36' fill='currentColor' style='font-size:1em'>:&lt;/text>
+&lt;text text-anchor='middle' x='56' y='68' fill='currentColor' style='font-size:1em'>留&lt;/text>
+&lt;text text-anchor='middle' x='56' y='100' fill='currentColor' style='font-size:1em'>-&lt;/text>
+&lt;text text-anchor='middle' x='64' y='100' fill='currentColor' style='font-size:1em'>-&lt;/text>
 &lt;text text-anchor='middle' x='72' y='4' fill='currentColor' style='font-size:1em'>V&lt;/text>
 &lt;text text-anchor='middle' x='72' y='20' fill='currentColor' style='font-size:1em'>C&lt;/text>
 &lt;text text-anchor='middle' x='72' y='36' fill='currentColor' style='font-size:1em'>R&lt;/text>
+&lt;text text-anchor='middle' x='72' y='68' fill='currentColor' style='font-size:1em'>T&lt;/text>
+&lt;text text-anchor='middle' x='72' y='100' fill='currentColor' style='font-size:1em'>是&lt;/text>
 &lt;text text-anchor='middle' x='80' y='4' fill='currentColor' style='font-size:1em'>a&lt;/text>
 &lt;text text-anchor='middle' x='80' y='20' fill='currentColor' style='font-size:1em'>h&lt;/text>
 &lt;text text-anchor='middle' x='80' y='36' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='80' y='68' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='80' y='100' fill='currentColor' style='font-size:1em'>反&lt;/text>
 &lt;text text-anchor='middle' x='88' y='4' fill='currentColor' style='font-size:1em'>l&lt;/text>
 &lt;text text-anchor='middle' x='88' y='20' fill='currentColor' style='font-size:1em'>e&lt;/text>
 &lt;text text-anchor='middle' x='88' y='36' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='88' y='68' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='88' y='100' fill='currentColor' style='font-size:1em'>盲&lt;/text>
 &lt;text text-anchor='middle' x='96' y='4' fill='currentColor' style='font-size:1em'>i&lt;/text>
 &lt;text text-anchor='middle' x='96' y='20' fill='currentColor' style='font-size:1em'>c&lt;/text>
 &lt;text text-anchor='middle' x='96' y='36' fill='currentColor' style='font-size:1em'>u&lt;/text>
+&lt;text text-anchor='middle' x='96' y='68' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='96' y='100' fill='currentColor' style='font-size:1em'>目&lt;/text>
 &lt;text text-anchor='middle' x='104' y='4' fill='currentColor' style='font-size:1em'>d&lt;/text>
 &lt;text text-anchor='middle' x='104' y='20' fill='currentColor' style='font-size:1em'>k&lt;/text>
 &lt;text text-anchor='middle' x='104' y='36' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='104' y='100' fill='currentColor' style='font-size:1em'>信&lt;/text>
 &lt;text text-anchor='middle' x='112' y='4' fill='currentColor' style='font-size:1em'>a&lt;/text>
 &lt;text text-anchor='middle' x='112' y='36' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='112' y='68' fill='currentColor' style='font-size:1em'>不&lt;/text>
+&lt;text text-anchor='middle' x='112' y='100' fill='currentColor' style='font-size:1em'>任&lt;/text>
 &lt;text text-anchor='middle' x='120' y='4' fill='currentColor' style='font-size:1em'>t&lt;/text>
 &lt;text text-anchor='middle' x='120' y='20' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='120' y='68' fill='currentColor' style='font-size:1em'>干&lt;/text>
+&lt;text text-anchor='middle' x='120' y='100' fill='currentColor' style='font-size:1em'>.&lt;/text>
 &lt;text text-anchor='middle' x='128' y='4' fill='currentColor' style='font-size:1em'>e&lt;/text>
 &lt;text text-anchor='middle' x='128' y='20' fill='currentColor' style='font-size:1em'>u&lt;/text>
 &lt;text text-anchor='middle' x='128' y='36' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='128' y='68' fill='currentColor' style='font-size:1em'>活&lt;/text>
+&lt;text text-anchor='middle' x='128' y='100' fill='currentColor' style='font-size:1em'>工&lt;/text>
 &lt;text text-anchor='middle' x='136' y='20' fill='currentColor' style='font-size:1em'>t&lt;/text>
 &lt;text text-anchor='middle' x='136' y='36' fill='currentColor' style='font-size:1em'>c&lt;/text>
+&lt;text text-anchor='middle' x='136' y='68' fill='currentColor' style='font-size:1em'>,&lt;/text>
+&lt;text text-anchor='middle' x='136' y='100' fill='currentColor' style='font-size:1em'>具&lt;/text>
 &lt;text text-anchor='middle' x='144' y='4' fill='currentColor' style='font-size:1em'>P&lt;/text>
 &lt;text text-anchor='middle' x='144' y='20' fill='currentColor' style='font-size:1em'>h&lt;/text>
 &lt;text text-anchor='middle' x='144' y='36' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='144' y='68' fill='currentColor' style='font-size:1em'>然&lt;/text>
+&lt;text text-anchor='middle' x='144' y='100' fill='currentColor' style='font-size:1em'>可&lt;/text>
 &lt;text text-anchor='middle' x='152' y='4' fill='currentColor' style='font-size:1em'>D&lt;/text>
 &lt;text text-anchor='middle' x='152' y='20' fill='currentColor' style='font-size:1em'>o&lt;/text>
 &lt;text text-anchor='middle' x='152' y='36' fill='currentColor' style='font-size:1em'>u&lt;/text>
+&lt;text text-anchor='middle' x='152' y='68' fill='currentColor' style='font-size:1em'>后&lt;/text>
+&lt;text text-anchor='middle' x='152' y='100' fill='currentColor' style='font-size:1em'>以&lt;/text>
 &lt;text text-anchor='middle' x='160' y='4' fill='currentColor' style='font-size:1em'>U&lt;/text>
 &lt;text text-anchor='middle' x='160' y='20' fill='currentColor' style='font-size:1em'>r&lt;/text>
 &lt;text text-anchor='middle' x='160' y='36' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='160' y='68' fill='currentColor' style='font-size:1em'>跟&lt;/text>
+&lt;text text-anchor='middle' x='160' y='100' fill='currentColor' style='font-size:1em'>用&lt;/text>
 &lt;text text-anchor='middle' x='168' y='20' fill='currentColor' style='font-size:1em'>i&lt;/text>
 &lt;text text-anchor='middle' x='168' y='36' fill='currentColor' style='font-size:1em'>l&lt;/text>
+&lt;text text-anchor='middle' x='168' y='68' fill='currentColor' style='font-size:1em'>你&lt;/text>
+&lt;text text-anchor='middle' x='168' y='100' fill='currentColor' style='font-size:1em'>,&lt;/text>
 &lt;text text-anchor='middle' x='176' y='4' fill='currentColor' style='font-size:1em'>s&lt;/text>
 &lt;text text-anchor='middle' x='176' y='20' fill='currentColor' style='font-size:1em'>z&lt;/text>
+&lt;text text-anchor='middle' x='176' y='68' fill='currentColor' style='font-size:1em'>说&lt;/text>
+&lt;text text-anchor='middle' x='176' y='100' fill='currentColor' style='font-size:1em'>但&lt;/text>
 &lt;text text-anchor='middle' x='184' y='4' fill='currentColor' style='font-size:1em'>i&lt;/text>
 &lt;text text-anchor='middle' x='184' y='20' fill='currentColor' style='font-size:1em'>a&lt;/text>
 &lt;text text-anchor='middle' x='184' y='36' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='184' y='68' fill='currentColor' style='font-size:1em'>"&lt;/text>
+&lt;text text-anchor='middle' x='184' y='100' fill='currentColor' style='font-size:1em'>得&lt;/text>
 &lt;text text-anchor='middle' x='192' y='4' fill='currentColor' style='font-size:1em'>g&lt;/text>
 &lt;text text-anchor='middle' x='192' y='20' fill='currentColor' style='font-size:1em'>t&lt;/text>
 &lt;text text-anchor='middle' x='192' y='36' fill='currentColor' style='font-size:1em'>u&lt;/text>
+&lt;text text-anchor='middle' x='192' y='68' fill='currentColor' style='font-size:1em'>搞&lt;/text>
+&lt;text text-anchor='middle' x='192' y='100' fill='currentColor' style='font-size:1em'>知&lt;/text>
 &lt;text text-anchor='middle' x='200' y='4' fill='currentColor' style='font-size:1em'>n&lt;/text>
 &lt;text text-anchor='middle' x='200' y='20' fill='currentColor' style='font-size:1em'>i&lt;/text>
 &lt;text text-anchor='middle' x='200' y='36' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='200' y='68' fill='currentColor' style='font-size:1em'>定&lt;/text>
+&lt;text text-anchor='middle' x='200' y='100' fill='currentColor' style='font-size:1em'>道&lt;/text>
 &lt;text text-anchor='middle' x='208' y='4' fill='currentColor' style='font-size:1em'>a&lt;/text>
 &lt;text text-anchor='middle' x='208' y='20' fill='currentColor' style='font-size:1em'>o&lt;/text>
 &lt;text text-anchor='middle' x='208' y='36' fill='currentColor' style='font-size:1em'>h&lt;/text>
+&lt;text text-anchor='middle' x='208' y='68' fill='currentColor' style='font-size:1em'>了&lt;/text>
+&lt;text text-anchor='middle' x='208' y='100' fill='currentColor' style='font-size:1em'>它&lt;/text>
 &lt;text text-anchor='middle' x='216' y='4' fill='currentColor' style='font-size:1em'>t&lt;/text>
 &lt;text text-anchor='middle' x='216' y='20' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='216' y='68' fill='currentColor' style='font-size:1em'>"&lt;/text>
+&lt;text text-anchor='middle' x='216' y='100' fill='currentColor' style='font-size:1em'>在&lt;/text>
 &lt;text text-anchor='middle' x='224' y='4' fill='currentColor' style='font-size:1em'>u&lt;/text>
 &lt;text text-anchor='middle' x='224' y='36' fill='currentColor' style='font-size:1em'>c&lt;/text>
+&lt;text text-anchor='middle' x='224' y='68' fill='currentColor' style='font-size:1em'>.&lt;/text>
+&lt;text text-anchor='middle' x='224' y='100' fill='currentColor' style='font-size:1em'>干&lt;/text>
 &lt;text text-anchor='middle' x='232' y='4' fill='currentColor' style='font-size:1em'>r&lt;/text>
 &lt;text text-anchor='middle' x='232' y='36' fill='currentColor' style='font-size:1em'>h&lt;/text>
+&lt;text text-anchor='middle' x='232' y='100' fill='currentColor' style='font-size:1em'>什&lt;/text>
 &lt;text text-anchor='middle' x='240' y='4' fill='currentColor' style='font-size:1em'>e&lt;/text>
 &lt;text text-anchor='middle' x='240' y='36' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='240' y='100' fill='currentColor' style='font-size:1em'>么&lt;/text>
 &lt;text text-anchor='middle' x='248' y='36' fill='currentColor' style='font-size:1em'>l&lt;/text>
+&lt;text text-anchor='middle' x='248' y='100' fill='currentColor' style='font-size:1em'>.&lt;/text>
 &lt;text text-anchor='middle' x='256' y='36' fill='currentColor' style='font-size:1em'>l&lt;/text>
 &lt;text text-anchor='middle' x='264' y='36' fill='currentColor' style='font-size:1em'>e&lt;/text>
 &lt;text text-anchor='middle' x='272' y='36' fill='currentColor' style='font-size:1em'>n&lt;/text>
@@ -103,13 +158,12 @@ viewBox="0 0 304 57"
 &lt;text text-anchor='middle' x='288' y='36' fill='currentColor' style='font-size:1em'>e&lt;/text>
 &lt;/g>
 &lt;/svg>
-&lt;/div>
-&lt;p>对，LLM 会留 TODO 不干活，然后跟你说&amp;quot;搞定了&amp;rdquo;。&lt;/p></description></item><item><title>AI 两周搞定浏览器引擎重写，这事儿有点意思</title><link>https://claudeai.best/posts/2026-02-24-ladybird-rust-ai/</link><pubDate>Tue, 24 Feb 2026 14:18:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-24-ladybird-rust-ai/</guid><description>&lt;p>说实话，看到这个标题我第一反应是&amp;quot;又来个 AI 吹牛逼的&amp;quot;。&lt;/p>
-&lt;p>结果仔细一看，还真不是那么回事。&lt;/p>
-&lt;p>Ladybird 这个独立浏览器项目，用 AI 辅助把 JavaScript 引擎从 C++ 翻译成了 Rust。不是让 AI 自动写代码，是人工主导翻译——人类决定翻什么、怎么翻，AI 负责干脏活累活。&lt;/p>
-&lt;p>效果呢？25000 行 Rust 代码，2 周搞定。同样的工作人工做估计得几个月。&lt;/p>
-&lt;p>关键是没有翻车。test262 的 52898 个测试，Ladybird 自己的 12461 个回归测试，全部通过，零错误。还做了字节级验证，确保 Rust 和 C++ 编译器输出完全一致。&lt;/p>
-&lt;p>这事儿最有意思的不是&amp;quot;AI 能写代码&amp;quot;，而是展示了一种新的技术债清理方式。传统重写基本等于重做一遍，现在可以让人机协作：人类把控架构和方向，AI 处理机械翻译。&lt;/p>
-&lt;p>当然，代码还带着浓浓的&amp;quot;C++ 味儿&amp;quot;，不是地道的 Rust。但人家说了，第一要务是兼容性，后续慢慢优化。这思路挺务实的。&lt;/p>
-&lt;p>独立浏览器本来就难，选择 Rust 本身就说明对安全性的重视。现在再加上 AI 辅助，感觉这个项目可以走得更远了。&lt;/p>
-&lt;p>说实话，这种&amp;quot;人工 + AI&amp;quot;的协作模式，比那些&amp;quot;AI 自动生成一切&amp;quot;的噱头实在多了。&lt;/p></description></item></channel></rss>
+&lt;/div></description></item><item><title>AI 两周搞定浏览器引擎重写,这事儿有点意思</title><link>https://claudeai.best/posts/2026-02-24-ladybird-rust-ai/</link><pubDate>Tue, 24 Feb 2026 14:18:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-24-ladybird-rust-ai/</guid><description>&lt;p>说实话,看到这个标题我第一反应是&amp;quot;又来个 AI 吹牛逼的&amp;quot;.&lt;/p>
+&lt;p>结果仔细一看,还真不是那么回事.&lt;/p>
+&lt;p>Ladybird 这个独立浏览器项目,用 AI 辅助把 JavaScript 引擎从 C++ 翻译成了 Rust.不是让 AI 自动写代码,是人工主导翻译&amp;ndash;人类决定翻什么,怎么翻,AI 负责干脏活累活.&lt;/p>
+&lt;p>效果呢?25000 行 Rust 代码,2 周搞定.同样的工作人工做估计得几个月.&lt;/p>
+&lt;p>关键是没有翻车.test262 的 52898 个测试,Ladybird 自己的 12461 个回归测试,全部通过,零错误.还做了字节级验证,确保 Rust 和 C++ 编译器输出完全一致.&lt;/p>
+&lt;p>这事儿最有意思的不是&amp;quot;AI 能写代码&amp;quot;,而是展示了一种新的技术债清理方式.传统重写基本等于重做一遍,现在可以让人机协作:人类把控架构和方向,AI 处理机械翻译.&lt;/p>
+&lt;p>当然,代码还带着浓浓的&amp;quot;C++ 味儿&amp;quot;,不是地道的 Rust.但人家说了,第一要务是兼容性,后续慢慢优化.这思路挺务实的.&lt;/p>
+&lt;p>独立浏览器本来就难,选择 Rust 本身就说明对安全性的重视.现在再加上 AI 辅助,感觉这个项目可以走得更远了.&lt;/p>
+&lt;p>说实话,这种&amp;quot;人工 + AI&amp;quot;的协作模式,比那些&amp;quot;AI 自动生成一切&amp;quot;的噱头实在多了.&lt;/p></description></item></channel></rss>
