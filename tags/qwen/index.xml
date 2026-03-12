@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Qwen on AI 极客前沿</title><link>https://claudeai.best/tags/qwen/</link><description>Recent content in Qwen on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Fri, 27 Feb 2026 12:04:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/qwen/index.xml" rel="self" type="application/rss+xml"/><item><title>硅谷产品开始用中国大模型</title><link>https://claudeai.best/posts/2026-02-27-silicon-valley-chinese-llms/</link><pubDate>Fri, 27 Feb 2026 12:04:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-27-silicon-valley-chinese-llms/</guid><description>&lt;p>2025年1月,硅谷炸了.&lt;/p>
+&lt;p>一个叫DeepSeek的中国团队发布了R1模型.这个模型有多强?性能媲美OpenAI的o1,价格却只有2.19美元/百万tokens.o1要60美元.&lt;/p>
+&lt;p>消息一出,英伟达股价暴跌.美国科技股市值蒸发1万亿美元.DeepSeek冲上美国App Store下载榜第一.&lt;/p>
+&lt;p>美国人才发现:原来不用OpenAI,也能用上顶级AI.&lt;/p>
+&lt;h2 id="中国模型凭什么">中国模型凭什么?&lt;/h2>
+&lt;p>便宜.&lt;/p>
+&lt;p>Qwen2.5-1.5B-Instruct这个模型,在Hugging Face上有885万次下载.它是阿里开源的.阿里已经开源了近400个Qwen模型.全球开发者基于Qwen做出了18万个衍生版本.&lt;/p>
+&lt;p>Qwen在2024年占Hugging Face所有模型下载量的30%.今年,它的累计下载量已经超过Meta的Llama.&lt;/p>
+&lt;p>中国模型不仅便宜,还开源.&lt;/p>
+&lt;p>你下载模型,跑在自己服务器上.想怎么改就怎么改.不用给OpenAI交钱,不用担心数据泄露.&lt;/p>
+&lt;p>硅谷创业公司精得很.a16z的合伙人Martin Casado说,用开源栈的创业公司里,80%在用中国模型.&lt;/p>
+&lt;h2 id="谁在用">谁在用?&lt;/h2>
+&lt;p>Airbnb在用Qwen.&lt;/p>
+&lt;p>Perplexity在用Qwen.&lt;/p>
+&lt;p>连英伟达都在用Qwen.&lt;/p>
+&lt;p>OpenRouter是个API中间商.他们的数据显示,中国开源模型的使用率从2024年底的0%,涨到了现在某些周的30%.&lt;/p>
+&lt;p>这些公司不傻.同样的性能,为什么要花30倍的钱?&lt;/p>
+&lt;h2 id="为什么中国做出来了">为什么中国做出来了?&lt;/h2>
+&lt;p>美国制裁中国,限制高端芯片出口.&lt;/p>
+&lt;p>结果呢?中国被逼出来了.&lt;/p>
+&lt;p>DeepSeek用很少的算力,做出了顶级模型.他们发论文,公开训练方法.所有人都能下载模型权重.&lt;/p>
+&lt;p>中国AI圈反应很快.DeepSeek之后,Z.ai,MiniMax,腾讯,月之暗面,一家接一家发布开源模型.&lt;/p>
+&lt;p>Kimi K2.5是月之暗面刚发的.性能接近Claude Opus,价格只要七分之一.&lt;/p>
+&lt;p>清华教授刘知远说:&amp;ldquo;在中国程序员社区,开源已经政治正确了.&amp;rdquo;&lt;/p>
+&lt;p>中国国务院8月出了政策.学生在GitHub上的开源贡献,可以算学分.&lt;/p>
+&lt;h2 id="这意味着什么">这意味着什么?&lt;/h2>
+&lt;p>以前,标准都是美国定的.Windows,iOS,Android,都是美国系统.&lt;/p>
+&lt;p>现在不一样了.&lt;/p>
+&lt;p>中国开源模型正在成为全球AI的基础设施.你在美国做的AI产品,底层可能跑的是阿里的Qwen.&lt;/p>
+&lt;p>这事儿有点魔幻.美国制裁中国芯片,中国做出了更高效的AI.美国封闭模型,中国开源抢市场.&lt;/p>
+&lt;p>Anthropic的CEO Dario Amodei坐不住了.他说,出口管制&amp;quot;不是逃避竞争的方式&amp;quot;.美国AI公司&amp;quot;必须做出更好的模型&amp;quot;才能赢.&lt;/p>
+&lt;h2 id="2026年会怎样">2026年会怎样?&lt;/h2>
+&lt;p>硅谷会有更多产品用中国模型.&lt;/p>
+&lt;p>不是因为他们想用.是因为真香.&lt;/p>
+&lt;p>性能差不多,价格便宜30倍,还开源.商业公司要赚钱,没理由不用.&lt;/p>
+&lt;p>MIT Technology Review预测,2026年,中国模型和西方前沿模型的差距会从几个月缩短到几周.&lt;/p>
+&lt;p>有时候,甚至更短.&lt;/p>
+&lt;h2 id="写在最后">写在最后&lt;/h2>
+&lt;p>30年前,没人相信中国能做出世界级技术.&lt;/p>
+&lt;p>现在,DeepSeek证明了可以.&lt;/p>
+&lt;p>这不是终点.这只是开始.&lt;/p>
+&lt;p>开源的好处是,好东西会传播.中国做的模型,美国人在用.美国做的芯片,中国人在用.&lt;/p>
+&lt;p>技术没有国界.市场也是.&lt;/p>
+&lt;p>硅谷已经用脚投票了.&lt;/p>
+&lt;p>&lt;em>你用过中国开源模型吗?感觉怎么样?&lt;/em>&lt;/p></description></item><item><title>中国 AI 新突破:Qwen 3.5 和 DeepSeek V4 蓄势待发</title><link>https://claudeai.best/posts/hunter-2026-02-26/</link><pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/hunter-2026-02-26/</guid><description>阿里巴巴 Qwen 3.5 已正式发布,强化数学编码能力;DeepSeek V4 即将推出,中国 AI 以开源和低成本策略挑战硅谷巨头.运行成本仅为美国同类系统的 1/6 到 1/4(数据来源:RAND 研究报告).</description></item><item><title>Qwen3.5横空出世:397B参数只激活17B,阿里这次真的打到GPT-5.2脸上了</title><link>https://claudeai.best/posts/hunter-2026021621/</link><pubDate>Mon, 16 Feb 2026 21:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021621/</guid><description>阿里今天发布Qwen3.5,397B参数MoE架构仅激活17B,支持201种语言和100万token上下文,benchmark全面超越GPT-5.2和Claude Opus 4.5.开源模型正式进入Agent时代.</description></item></channel></rss>

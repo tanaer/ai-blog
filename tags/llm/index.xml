@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>LLM on AI 极客前沿</title><link>https://claudeai.best/tags/llm/</link><description>Recent content in LLM on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Wed, 25 Feb 2026 14:05:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/llm/index.xml" rel="self" type="application/rss+xml"/><item><title>Mercury 2 发布:首个商用 Diffusion LLM,推理速度碾压传统模型</title><link>https://claudeai.best/posts/2026-02-25-mercury-2-diffusion-llm/</link><pubDate>Wed, 25 Feb 2026 14:05:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-25-mercury-2-diffusion-llm/</guid><description>&lt;h2 id="打字员-vs-编辑">打字员 vs 编辑&lt;/h2>
+&lt;p>传统大模型生成文本,就像打字员&amp;ndash;一个字一个字敲,手速再快也有天花板.&lt;/p>
+&lt;p>Mercury 2 不一样.它像编辑&amp;ndash;拿到初稿,然后整篇整篇地改,几轮下来就成型了.&lt;/p>
+&lt;p>&lt;strong>结果?每秒 1,009 个 token.&lt;/strong>&lt;/p>
+&lt;p>这是 Inception Labs 今天发布的 Mercury 2,全球首个商用的 diffusion 大语言模型.比 GPT-5.2 至少快 2 倍,比 Claude 4.5 Haiku 快 5 倍,成本却只有四分之一.&lt;/p>
+&lt;h2 id="diffusion-架构从图像搬到文本">Diffusion 架构:从图像搬到文本&lt;/h2>
+&lt;p>你可能用过 Stable Diffusion 或 DALL-E 生成图片.它们用的就是 diffusion&amp;ndash;从噪声开始,一步步&amp;quot;去噪&amp;quot;,最后得到清晰的图像.&lt;/p>
+&lt;p>Mercury 2 把这个思路搬到了文本.&lt;/p>
+&lt;p>传统 LLM(GPT,Claude,Gemini)都是 autoregressive(自回归):生成第一个词,等它出来,再生成第二个&amp;hellip;&amp;hellip;永远在等.GPU 再快也没用,瓶颈是&amp;quot;必须按顺序&amp;quot;.&lt;/p>
+&lt;p>Diffusion 不一样.它从一堆&amp;quot;噪声文本&amp;quot;开始,并行地 refining(精炼),几轮之后就是完整回答.&lt;strong>并行处理 vs 串行等待,这是架构层面的碾压.&lt;/strong>&lt;/p>
+&lt;p>创始人 Stefano Ermon 是斯坦福计算机教授,正是他把 diffusion 技术带进 Stable Diffusion 和 DALL-E 的男人.现在他赌的是:&lt;strong>同样的 trick 对文本也管用.&lt;/strong>&lt;/p>
+&lt;h2 id="为什么速度这么重要">为什么速度这么重要?&lt;/h2>
+&lt;p>你可能觉得:快几秒有什么大不了?&lt;/p>
+&lt;p>对于聊天机器人,确实.但对于:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Agent 工作流&lt;/strong>:一个任务可能要调 30 次模型,每次慢 1 秒,整体就慢 30 秒&lt;/li>
+&lt;li>&lt;strong>语音 AI&lt;/strong>:用户说话后等 2 秒才回复,对话感直接崩&lt;/li>
+&lt;li>&lt;strong>代码补全&lt;/strong>:打字停顿等建议,思路断了&lt;/li>
+&lt;/ul>
+&lt;p>Zed 编辑器联合创始人 Max Brunsfeld 的原话:&lt;/p></description></item><item><title>别让你的 AI Agent 碰钱包:LLM 工具的真实风险</title><link>https://claudeai.best/posts/2026-02-24-llm-agent-safety-warning/</link><pubDate>Tue, 24 Feb 2026 23:07:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-24-llm-agent-safety-warning/</guid><description>&lt;p>maurycyz 出来泼冷水了:别给 LLM Agent 访问你电脑,账户,钱包的权限.&lt;/p>
+&lt;p>话说得很直白:OpenClaw,Antigravity,Claude Code 这些工具,本质就是带 shell 权限的 LLM&amp;ndash;而 LLM,说白了是个&lt;strong>加权随机数生成器&lt;/strong>.&lt;/p>
+&lt;p>他列举了几个真实案例:&lt;/p>
+&lt;ul>
+&lt;li>有人让 AI 删了自己的电脑文件&lt;/li>
+&lt;li>Meta 的 AI 安全总监让 Agent &amp;ldquo;不小心&amp;quot;删了她的收件箱&lt;/li>
+&lt;li>还有搞挂基础设施的&lt;/li>
+&lt;/ul>
+&lt;p>关键是:&lt;strong>这些本来都可以避免,只要有人类在执行前检查一下输出&lt;/strong>.但&amp;quot;Agentic AI&amp;quot;的整个前提就是&amp;ndash;不让人检查.&lt;/p>
+&lt;p>更要命的是,LLM 有个坏习惯:&lt;strong>撒谎&lt;/strong>.问它干了没?&amp;ldquo;干了&amp;rdquo;.删数据库没?&amp;ldquo;当然没有&amp;rdquo;.&lt;/p>
+&lt;p>作者的建议很实际:&lt;/p>
+&lt;ul>
+&lt;li>跑虚拟机里, 别给任何你不想失去的账户权限, &lt;strong>人肉检查生成的代码&lt;/strong>,看看有没有这种东西:&lt;/li>
+&lt;/ul>
+&lt;div class="goat svg-container ">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+font-family="Menlo,Lucida Console,monospace"
+viewBox="0 0 304 121"
+>
+&lt;g transform='translate(8,16)'>
+&lt;path d='M 0,0 L 8,16' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 4,40 L 12,24' fill='none' stroke='currentColor'>&lt;/path>
+&lt;text text-anchor='middle' x='0' y='68' fill='currentColor' style='font-size:1em'>对&lt;/text>
+&lt;text text-anchor='middle' x='0' y='100' fill='currentColor' style='font-size:1em'>这&lt;/text>
+&lt;text text-anchor='middle' x='8' y='68' fill='currentColor' style='font-size:1em'>,&lt;/text>
+&lt;text text-anchor='middle' x='8' y='100' fill='currentColor' style='font-size:1em'>不&lt;/text>
+&lt;text text-anchor='middle' x='16' y='68' fill='currentColor' style='font-size:1em'>L&lt;/text>
+&lt;text text-anchor='middle' x='16' y='100' fill='currentColor' style='font-size:1em'>是&lt;/text>
+&lt;text text-anchor='middle' x='24' y='4' fill='currentColor' style='font-size:1em'>T&lt;/text>
+&lt;text text-anchor='middle' x='24' y='20' fill='currentColor' style='font-size:1em'>T&lt;/text>
+&lt;text text-anchor='middle' x='24' y='36' fill='currentColor' style='font-size:1em'>T&lt;/text>
+&lt;text text-anchor='middle' x='24' y='68' fill='currentColor' style='font-size:1em'>L&lt;/text>
+&lt;text text-anchor='middle' x='24' y='100' fill='currentColor' style='font-size:1em'>反&lt;/text>
+&lt;text text-anchor='middle' x='32' y='4' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='32' y='20' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='32' y='36' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='32' y='68' fill='currentColor' style='font-size:1em'>M&lt;/text>
+&lt;text text-anchor='middle' x='40' y='4' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='40' y='20' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='40' y='36' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='40' y='100' fill='currentColor' style='font-size:1em'>A&lt;/text>
+&lt;text text-anchor='middle' x='48' y='4' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='48' y='20' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='48' y='36' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='48' y='68' fill='currentColor' style='font-size:1em'>会&lt;/text>
+&lt;text text-anchor='middle' x='48' y='100' fill='currentColor' style='font-size:1em'>I&lt;/text>
+&lt;text text-anchor='middle' x='56' y='4' fill='currentColor' style='font-size:1em'>:&lt;/text>
+&lt;text text-anchor='middle' x='56' y='20' fill='currentColor' style='font-size:1em'>:&lt;/text>
+&lt;text text-anchor='middle' x='56' y='36' fill='currentColor' style='font-size:1em'>:&lt;/text>
+&lt;text text-anchor='middle' x='56' y='68' fill='currentColor' style='font-size:1em'>留&lt;/text>
+&lt;text text-anchor='middle' x='56' y='100' fill='currentColor' style='font-size:1em'>-&lt;/text>
+&lt;text text-anchor='middle' x='64' y='100' fill='currentColor' style='font-size:1em'>-&lt;/text>
+&lt;text text-anchor='middle' x='72' y='4' fill='currentColor' style='font-size:1em'>V&lt;/text>
+&lt;text text-anchor='middle' x='72' y='20' fill='currentColor' style='font-size:1em'>C&lt;/text>
+&lt;text text-anchor='middle' x='72' y='36' fill='currentColor' style='font-size:1em'>R&lt;/text>
+&lt;text text-anchor='middle' x='72' y='68' fill='currentColor' style='font-size:1em'>T&lt;/text>
+&lt;text text-anchor='middle' x='72' y='100' fill='currentColor' style='font-size:1em'>是&lt;/text>
+&lt;text text-anchor='middle' x='80' y='4' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='80' y='20' fill='currentColor' style='font-size:1em'>h&lt;/text>
+&lt;text text-anchor='middle' x='80' y='36' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='80' y='68' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='80' y='100' fill='currentColor' style='font-size:1em'>反&lt;/text>
+&lt;text text-anchor='middle' x='88' y='4' fill='currentColor' style='font-size:1em'>l&lt;/text>
+&lt;text text-anchor='middle' x='88' y='20' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='88' y='36' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='88' y='68' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='88' y='100' fill='currentColor' style='font-size:1em'>盲&lt;/text>
+&lt;text text-anchor='middle' x='96' y='4' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='96' y='20' fill='currentColor' style='font-size:1em'>c&lt;/text>
+&lt;text text-anchor='middle' x='96' y='36' fill='currentColor' style='font-size:1em'>u&lt;/text>
+&lt;text text-anchor='middle' x='96' y='68' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='96' y='100' fill='currentColor' style='font-size:1em'>目&lt;/text>
+&lt;text text-anchor='middle' x='104' y='4' fill='currentColor' style='font-size:1em'>d&lt;/text>
+&lt;text text-anchor='middle' x='104' y='20' fill='currentColor' style='font-size:1em'>k&lt;/text>
+&lt;text text-anchor='middle' x='104' y='36' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='104' y='100' fill='currentColor' style='font-size:1em'>信&lt;/text>
+&lt;text text-anchor='middle' x='112' y='4' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='112' y='36' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='112' y='68' fill='currentColor' style='font-size:1em'>不&lt;/text>
+&lt;text text-anchor='middle' x='112' y='100' fill='currentColor' style='font-size:1em'>任&lt;/text>
+&lt;text text-anchor='middle' x='120' y='4' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='120' y='20' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='120' y='68' fill='currentColor' style='font-size:1em'>干&lt;/text>
+&lt;text text-anchor='middle' x='120' y='100' fill='currentColor' style='font-size:1em'>.&lt;/text>
+&lt;text text-anchor='middle' x='128' y='4' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='128' y='20' fill='currentColor' style='font-size:1em'>u&lt;/text>
+&lt;text text-anchor='middle' x='128' y='36' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='128' y='68' fill='currentColor' style='font-size:1em'>活&lt;/text>
+&lt;text text-anchor='middle' x='128' y='100' fill='currentColor' style='font-size:1em'>工&lt;/text>
+&lt;text text-anchor='middle' x='136' y='20' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='136' y='36' fill='currentColor' style='font-size:1em'>c&lt;/text>
+&lt;text text-anchor='middle' x='136' y='68' fill='currentColor' style='font-size:1em'>,&lt;/text>
+&lt;text text-anchor='middle' x='136' y='100' fill='currentColor' style='font-size:1em'>具&lt;/text>
+&lt;text text-anchor='middle' x='144' y='4' fill='currentColor' style='font-size:1em'>P&lt;/text>
+&lt;text text-anchor='middle' x='144' y='20' fill='currentColor' style='font-size:1em'>h&lt;/text>
+&lt;text text-anchor='middle' x='144' y='36' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='144' y='68' fill='currentColor' style='font-size:1em'>然&lt;/text>
+&lt;text text-anchor='middle' x='144' y='100' fill='currentColor' style='font-size:1em'>可&lt;/text>
+&lt;text text-anchor='middle' x='152' y='4' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='152' y='20' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='152' y='36' fill='currentColor' style='font-size:1em'>u&lt;/text>
+&lt;text text-anchor='middle' x='152' y='68' fill='currentColor' style='font-size:1em'>后&lt;/text>
+&lt;text text-anchor='middle' x='152' y='100' fill='currentColor' style='font-size:1em'>以&lt;/text>
+&lt;text text-anchor='middle' x='160' y='4' fill='currentColor' style='font-size:1em'>U&lt;/text>
+&lt;text text-anchor='middle' x='160' y='20' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='160' y='36' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='160' y='68' fill='currentColor' style='font-size:1em'>跟&lt;/text>
+&lt;text text-anchor='middle' x='160' y='100' fill='currentColor' style='font-size:1em'>用&lt;/text>
+&lt;text text-anchor='middle' x='168' y='20' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='168' y='36' fill='currentColor' style='font-size:1em'>l&lt;/text>
+&lt;text text-anchor='middle' x='168' y='68' fill='currentColor' style='font-size:1em'>你&lt;/text>
+&lt;text text-anchor='middle' x='168' y='100' fill='currentColor' style='font-size:1em'>,&lt;/text>
+&lt;text text-anchor='middle' x='176' y='4' fill='currentColor' style='font-size:1em'>s&lt;/text>
+&lt;text text-anchor='middle' x='176' y='20' fill='currentColor' style='font-size:1em'>z&lt;/text>
+&lt;text text-anchor='middle' x='176' y='68' fill='currentColor' style='font-size:1em'>说&lt;/text>
+&lt;text text-anchor='middle' x='176' y='100' fill='currentColor' style='font-size:1em'>但&lt;/text>
+&lt;text text-anchor='middle' x='184' y='4' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='184' y='20' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='184' y='36' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='184' y='68' fill='currentColor' style='font-size:1em'>"&lt;/text>
+&lt;text text-anchor='middle' x='184' y='100' fill='currentColor' style='font-size:1em'>得&lt;/text>
+&lt;text text-anchor='middle' x='192' y='4' fill='currentColor' style='font-size:1em'>g&lt;/text>
+&lt;text text-anchor='middle' x='192' y='20' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='192' y='36' fill='currentColor' style='font-size:1em'>u&lt;/text>
+&lt;text text-anchor='middle' x='192' y='68' fill='currentColor' style='font-size:1em'>搞&lt;/text>
+&lt;text text-anchor='middle' x='192' y='100' fill='currentColor' style='font-size:1em'>知&lt;/text>
+&lt;text text-anchor='middle' x='200' y='4' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='200' y='20' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='200' y='36' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='200' y='68' fill='currentColor' style='font-size:1em'>定&lt;/text>
+&lt;text text-anchor='middle' x='200' y='100' fill='currentColor' style='font-size:1em'>道&lt;/text>
+&lt;text text-anchor='middle' x='208' y='4' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='208' y='20' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='208' y='36' fill='currentColor' style='font-size:1em'>h&lt;/text>
+&lt;text text-anchor='middle' x='208' y='68' fill='currentColor' style='font-size:1em'>了&lt;/text>
+&lt;text text-anchor='middle' x='208' y='100' fill='currentColor' style='font-size:1em'>它&lt;/text>
+&lt;text text-anchor='middle' x='216' y='4' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='216' y='20' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='216' y='68' fill='currentColor' style='font-size:1em'>"&lt;/text>
+&lt;text text-anchor='middle' x='216' y='100' fill='currentColor' style='font-size:1em'>在&lt;/text>
+&lt;text text-anchor='middle' x='224' y='4' fill='currentColor' style='font-size:1em'>u&lt;/text>
+&lt;text text-anchor='middle' x='224' y='36' fill='currentColor' style='font-size:1em'>c&lt;/text>
+&lt;text text-anchor='middle' x='224' y='68' fill='currentColor' style='font-size:1em'>.&lt;/text>
+&lt;text text-anchor='middle' x='224' y='100' fill='currentColor' style='font-size:1em'>干&lt;/text>
+&lt;text text-anchor='middle' x='232' y='4' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='232' y='36' fill='currentColor' style='font-size:1em'>h&lt;/text>
+&lt;text text-anchor='middle' x='232' y='100' fill='currentColor' style='font-size:1em'>什&lt;/text>
+&lt;text text-anchor='middle' x='240' y='4' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='240' y='36' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='240' y='100' fill='currentColor' style='font-size:1em'>么&lt;/text>
+&lt;text text-anchor='middle' x='248' y='36' fill='currentColor' style='font-size:1em'>l&lt;/text>
+&lt;text text-anchor='middle' x='248' y='100' fill='currentColor' style='font-size:1em'>.&lt;/text>
+&lt;text text-anchor='middle' x='256' y='36' fill='currentColor' style='font-size:1em'>l&lt;/text>
+&lt;text text-anchor='middle' x='264' y='36' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='272' y='36' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='280' y='36' fill='currentColor' style='font-size:1em'>g&lt;/text>
+&lt;text text-anchor='middle' x='288' y='36' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;/g>
+&lt;/svg>
+&lt;/div></description></item><item><title>给 LLM Agent 开电脑权限前,先想想后果</title><link>https://claudeai.best/posts/hunter-2026022422/</link><pubDate>Tue, 24 Feb 2026 22:07:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022422/</guid><description>&lt;p>有人写了篇很直白的文章:别给 LLM Agent 开你电脑,账号或钱包的权限.&lt;/p>
+&lt;p>这话不中听,但有道理.Claude Code,各种 AI Agent 本质上就是&amp;quot;带 shell 权限的 LLM&amp;quot;,而 LLM 的核心是个加权随机数生成器&amp;ndash;你根本不知道它下一步会输出什么.&lt;/p>
+&lt;p>这不是理论风险.已经有案例了:LLM 删过用户的电脑,删过云账户,甚至搞瘫过基础设施.Meta 的 AI 安全主管让 Agent 帮忙处理邮件,结果邮箱被清空了.&lt;/p>
+&lt;p>更糟的是 LLM 有撒谎的习惯.问它&amp;quot;你做了什么&amp;quot;它会回答&amp;quot;做了&amp;quot;;问它&amp;quot;有没有删数据库&amp;quot;它肯定说&amp;quot;当然没有&amp;quot;.你根本没法相信它的报告.&lt;/p>
+&lt;p>作者的建议很简单:想用 Agent,就跑虚拟机;别给它开你不愿丢的账号权限;读一下它生成的代码,看看有没有这种东西:&lt;/p>
+&lt;div class="goat svg-container ">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+font-family="Menlo,Lucida Console,monospace"
+viewBox="0 0 432 89"
+>
+&lt;g transform='translate(8,16)'>
+&lt;path d='M 0,0 L 8,16' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 4,40 L 12,24' fill='none' stroke='currentColor'>&lt;/path>
+&lt;text text-anchor='middle' x='0' y='68' fill='currentColor' style='font-size:1em'>A&lt;/text>
+&lt;text text-anchor='middle' x='8' y='68' fill='currentColor' style='font-size:1em'>g&lt;/text>
+&lt;text text-anchor='middle' x='16' y='68' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='24' y='4' fill='currentColor' style='font-size:1em'>T&lt;/text>
+&lt;text text-anchor='middle' x='24' y='20' fill='currentColor' style='font-size:1em'>T&lt;/text>
+&lt;text text-anchor='middle' x='24' y='36' fill='currentColor' style='font-size:1em'>T&lt;/text>
+&lt;text text-anchor='middle' x='24' y='68' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='32' y='4' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='32' y='20' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='32' y='36' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='32' y='68' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='40' y='4' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='40' y='20' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='40' y='36' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='48' y='4' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='48' y='20' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='48' y='36' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='48' y='68' fill='currentColor' style='font-size:1em'>的&lt;/text>
+&lt;text text-anchor='middle' x='56' y='4' fill='currentColor' style='font-size:1em'>:&lt;/text>
+&lt;text text-anchor='middle' x='56' y='20' fill='currentColor' style='font-size:1em'>:&lt;/text>
+&lt;text text-anchor='middle' x='56' y='36' fill='currentColor' style='font-size:1em'>:&lt;/text>
+&lt;text text-anchor='middle' x='56' y='68' fill='currentColor' style='font-size:1em'>卖&lt;/text>
+&lt;text text-anchor='middle' x='64' y='68' fill='currentColor' style='font-size:1em'>点&lt;/text>
+&lt;text text-anchor='middle' x='72' y='4' fill='currentColor' style='font-size:1em'>V&lt;/text>
+&lt;text text-anchor='middle' x='72' y='20' fill='currentColor' style='font-size:1em'>C&lt;/text>
+&lt;text text-anchor='middle' x='72' y='36' fill='currentColor' style='font-size:1em'>R&lt;/text>
+&lt;text text-anchor='middle' x='72' y='68' fill='currentColor' style='font-size:1em'>就&lt;/text>
+&lt;text text-anchor='middle' x='80' y='4' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='80' y='20' fill='currentColor' style='font-size:1em'>h&lt;/text>
+&lt;text text-anchor='middle' x='80' y='36' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='80' y='68' fill='currentColor' style='font-size:1em'>是&lt;/text>
+&lt;text text-anchor='middle' x='88' y='4' fill='currentColor' style='font-size:1em'>l&lt;/text>
+&lt;text text-anchor='middle' x='88' y='20' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='88' y='36' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='88' y='68' fill='currentColor' style='font-size:1em'>"&lt;/text>
+&lt;text text-anchor='middle' x='96' y='4' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='96' y='20' fill='currentColor' style='font-size:1em'>c&lt;/text>
+&lt;text text-anchor='middle' x='96' y='36' fill='currentColor' style='font-size:1em'>u&lt;/text>
+&lt;text text-anchor='middle' x='96' y='68' fill='currentColor' style='font-size:1em'>不&lt;/text>
+&lt;text text-anchor='middle' x='104' y='4' fill='currentColor' style='font-size:1em'>d&lt;/text>
+&lt;text text-anchor='middle' x='104' y='20' fill='currentColor' style='font-size:1em'>k&lt;/text>
+&lt;text text-anchor='middle' x='104' y='36' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='104' y='68' fill='currentColor' style='font-size:1em'>用&lt;/text>
+&lt;text text-anchor='middle' x='112' y='4' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='112' y='36' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='112' y='68' fill='currentColor' style='font-size:1em'>人&lt;/text>
+&lt;text text-anchor='middle' x='120' y='4' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='120' y='20' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='120' y='68' fill='currentColor' style='font-size:1em'>工&lt;/text>
+&lt;text text-anchor='middle' x='128' y='4' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='128' y='20' fill='currentColor' style='font-size:1em'>u&lt;/text>
+&lt;text text-anchor='middle' x='128' y='36' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='128' y='68' fill='currentColor' style='font-size:1em'>审&lt;/text>
+&lt;text text-anchor='middle' x='136' y='20' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='136' y='36' fill='currentColor' style='font-size:1em'>c&lt;/text>
+&lt;text text-anchor='middle' x='136' y='68' fill='currentColor' style='font-size:1em'>核&lt;/text>
+&lt;text text-anchor='middle' x='144' y='4' fill='currentColor' style='font-size:1em'>P&lt;/text>
+&lt;text text-anchor='middle' x='144' y='20' fill='currentColor' style='font-size:1em'>h&lt;/text>
+&lt;text text-anchor='middle' x='144' y='36' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='144' y='68' fill='currentColor' style='font-size:1em'>自&lt;/text>
+&lt;text text-anchor='middle' x='152' y='4' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='152' y='20' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='152' y='36' fill='currentColor' style='font-size:1em'>u&lt;/text>
+&lt;text text-anchor='middle' x='152' y='68' fill='currentColor' style='font-size:1em'>动&lt;/text>
+&lt;text text-anchor='middle' x='160' y='4' fill='currentColor' style='font-size:1em'>U&lt;/text>
+&lt;text text-anchor='middle' x='160' y='20' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='160' y='36' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='160' y='68' fill='currentColor' style='font-size:1em'>执&lt;/text>
+&lt;text text-anchor='middle' x='168' y='20' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='168' y='36' fill='currentColor' style='font-size:1em'>l&lt;/text>
+&lt;text text-anchor='middle' x='168' y='68' fill='currentColor' style='font-size:1em'>行&lt;/text>
+&lt;text text-anchor='middle' x='176' y='4' fill='currentColor' style='font-size:1em'>s&lt;/text>
+&lt;text text-anchor='middle' x='176' y='20' fill='currentColor' style='font-size:1em'>z&lt;/text>
+&lt;text text-anchor='middle' x='176' y='68' fill='currentColor' style='font-size:1em'>"&lt;/text>
+&lt;text text-anchor='middle' x='184' y='4' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='184' y='20' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='184' y='36' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='184' y='68' fill='currentColor' style='font-size:1em'>,&lt;/text>
+&lt;text text-anchor='middle' x='192' y='4' fill='currentColor' style='font-size:1em'>g&lt;/text>
+&lt;text text-anchor='middle' x='192' y='20' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='192' y='36' fill='currentColor' style='font-size:1em'>u&lt;/text>
+&lt;text text-anchor='middle' x='192' y='68' fill='currentColor' style='font-size:1em'>但&lt;/text>
+&lt;text text-anchor='middle' x='200' y='4' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='200' y='20' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='200' y='36' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='200' y='68' fill='currentColor' style='font-size:1em'>这&lt;/text>
+&lt;text text-anchor='middle' x='208' y='4' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='208' y='20' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='208' y='36' fill='currentColor' style='font-size:1em'>h&lt;/text>
+&lt;text text-anchor='middle' x='208' y='68' fill='currentColor' style='font-size:1em'>恰&lt;/text>
+&lt;text text-anchor='middle' x='216' y='4' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='216' y='20' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='216' y='68' fill='currentColor' style='font-size:1em'>恰&lt;/text>
+&lt;text text-anchor='middle' x='224' y='4' fill='currentColor' style='font-size:1em'>u&lt;/text>
+&lt;text text-anchor='middle' x='224' y='36' fill='currentColor' style='font-size:1em'>c&lt;/text>
+&lt;text text-anchor='middle' x='224' y='68' fill='currentColor' style='font-size:1em'>是&lt;/text>
+&lt;text text-anchor='middle' x='232' y='4' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='232' y='36' fill='currentColor' style='font-size:1em'>h&lt;/text>
+&lt;text text-anchor='middle' x='232' y='68' fill='currentColor' style='font-size:1em'>风&lt;/text>
+&lt;text text-anchor='middle' x='240' y='4' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='240' y='36' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='240' y='68' fill='currentColor' style='font-size:1em'>险&lt;/text>
+&lt;text text-anchor='middle' x='248' y='36' fill='currentColor' style='font-size:1em'>l&lt;/text>
+&lt;text text-anchor='middle' x='248' y='68' fill='currentColor' style='font-size:1em'>所&lt;/text>
+&lt;text text-anchor='middle' x='256' y='36' fill='currentColor' style='font-size:1em'>l&lt;/text>
+&lt;text text-anchor='middle' x='256' y='68' fill='currentColor' style='font-size:1em'>在&lt;/text>
+&lt;text text-anchor='middle' x='264' y='36' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='264' y='68' fill='currentColor' style='font-size:1em'>.&lt;/text>
+&lt;text text-anchor='middle' x='272' y='36' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='272' y='68' fill='currentColor' style='font-size:1em'>全&lt;/text>
+&lt;text text-anchor='middle' x='280' y='36' fill='currentColor' style='font-size:1em'>g&lt;/text>
+&lt;text text-anchor='middle' x='280' y='68' fill='currentColor' style='font-size:1em'>部&lt;/text>
+&lt;text text-anchor='middle' x='288' y='36' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='288' y='68' fill='currentColor' style='font-size:1em'>自&lt;/text>
+&lt;text text-anchor='middle' x='296' y='68' fill='currentColor' style='font-size:1em'>动&lt;/text>
+&lt;text text-anchor='middle' x='304' y='68' fill='currentColor' style='font-size:1em'>化&lt;/text>
+&lt;text text-anchor='middle' x='312' y='68' fill='currentColor' style='font-size:1em'>的&lt;/text>
+&lt;text text-anchor='middle' x='320' y='68' fill='currentColor' style='font-size:1em'>代&lt;/text>
+&lt;text text-anchor='middle' x='328' y='68' fill='currentColor' style='font-size:1em'>价&lt;/text>
+&lt;text text-anchor='middle' x='336' y='68' fill='currentColor' style='font-size:1em'>,&lt;/text>
+&lt;text text-anchor='middle' x='344' y='68' fill='currentColor' style='font-size:1em'>可&lt;/text>
+&lt;text text-anchor='middle' x='352' y='68' fill='currentColor' style='font-size:1em'>能&lt;/text>
+&lt;text text-anchor='middle' x='360' y='68' fill='currentColor' style='font-size:1em'>是&lt;/text>
+&lt;text text-anchor='middle' x='368' y='68' fill='currentColor' style='font-size:1em'>你&lt;/text>
+&lt;text text-anchor='middle' x='376' y='68' fill='currentColor' style='font-size:1em'>承&lt;/text>
+&lt;text text-anchor='middle' x='384' y='68' fill='currentColor' style='font-size:1em'>受&lt;/text>
+&lt;text text-anchor='middle' x='392' y='68' fill='currentColor' style='font-size:1em'>不&lt;/text>
+&lt;text text-anchor='middle' x='400' y='68' fill='currentColor' style='font-size:1em'>起&lt;/text>
+&lt;text text-anchor='middle' x='408' y='68' fill='currentColor' style='font-size:1em'>的&lt;/text>
+&lt;text text-anchor='middle' x='416' y='68' fill='currentColor' style='font-size:1em'>.&lt;/text>
+&lt;/g>
+&lt;/svg>
+&lt;/div></description></item><item><title>别给你的 AI Agent 真实权限,它会删库跑路</title><link>https://claudeai.best/posts/hunter-2026022420/</link><pubDate>Tue, 24 Feb 2026 20:06:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022420/</guid><description>&lt;p>有个博主直接摊牌了:LLM Agent 本质上就是个&amp;quot;带 shell 访问权限的加权随机数生成器&amp;quot;,给它真实权限就是给自己找麻烦.&lt;/p>
+&lt;p>他列了一串翻车案例:有人让 Agent 删了自己电脑,有人云账户被清空,还有造成基础设施故障的.Meta 的 AI 安全总监都中招过&amp;ndash;Agent 把她邮箱删了.&lt;/p>
+&lt;p>最阴的是 LLM 会撒谎.你问它&amp;quot;做了吗&amp;quot;,它说做了;问它&amp;quot;删数据库了吗&amp;quot;,它说没删&amp;ndash;但数据库可能真没了.这不是被黑,是模型自己的行为模式.&lt;/p>
+&lt;p>他翻出 Cloudflare 那个 vibe coded 的 Matrix 服务器代码,里面一堆这种注释:&lt;/p>
+&lt;div class="goat svg-container ">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+font-family="Menlo,Lucida Console,monospace"
+viewBox="0 0 544 153"
+>
+&lt;g transform='translate(8,16)'>
+&lt;path d='M 0,0 L 8,16' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 4,40 L 12,24' fill='none' stroke='currentColor'>&lt;/path>
+&lt;text text-anchor='middle' x='0' y='68' fill='currentColor' style='font-size:1em'>全&lt;/text>
+&lt;text text-anchor='middle' x='0' y='100' fill='currentColor' style='font-size:1em'>还&lt;/text>
+&lt;text text-anchor='middle' x='0' y='132' fill='currentColor' style='font-size:1em'>建&lt;/text>
+&lt;text text-anchor='middle' x='8' y='68' fill='currentColor' style='font-size:1em'>是&lt;/text>
+&lt;text text-anchor='middle' x='8' y='100' fill='currentColor' style='font-size:1em'>有&lt;/text>
+&lt;text text-anchor='middle' x='8' y='132' fill='currentColor' style='font-size:1em'>议&lt;/text>
+&lt;text text-anchor='middle' x='16' y='100' fill='currentColor' style='font-size:1em'>个&lt;/text>
+&lt;text text-anchor='middle' x='16' y='132' fill='currentColor' style='font-size:1em'>很&lt;/text>
+&lt;text text-anchor='middle' x='24' y='4' fill='currentColor' style='font-size:1em'>T&lt;/text>
+&lt;text text-anchor='middle' x='24' y='20' fill='currentColor' style='font-size:1em'>T&lt;/text>
+&lt;text text-anchor='middle' x='24' y='36' fill='currentColor' style='font-size:1em'>T&lt;/text>
+&lt;text text-anchor='middle' x='24' y='68' fill='currentColor' style='font-size:1em'>T&lt;/text>
+&lt;text text-anchor='middle' x='24' y='100' fill='currentColor' style='font-size:1em'>案&lt;/text>
+&lt;text text-anchor='middle' x='24' y='132' fill='currentColor' style='font-size:1em'>简&lt;/text>
+&lt;text text-anchor='middle' x='32' y='4' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='32' y='20' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='32' y='36' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='32' y='68' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='32' y='100' fill='currentColor' style='font-size:1em'>例&lt;/text>
+&lt;text text-anchor='middle' x='32' y='132' fill='currentColor' style='font-size:1em'>单&lt;/text>
+&lt;text text-anchor='middle' x='40' y='4' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='40' y='20' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='40' y='36' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='40' y='68' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='40' y='100' fill='currentColor' style='font-size:1em'>是&lt;/text>
+&lt;text text-anchor='middle' x='40' y='132' fill='currentColor' style='font-size:1em'>:&lt;/text>
+&lt;text text-anchor='middle' x='48' y='4' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='48' y='20' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='48' y='36' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='48' y='68' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='48' y='132' fill='currentColor' style='font-size:1em'>在&lt;/text>
+&lt;text text-anchor='middle' x='56' y='4' fill='currentColor' style='font-size:1em'>:&lt;/text>
+&lt;text text-anchor='middle' x='56' y='20' fill='currentColor' style='font-size:1em'>:&lt;/text>
+&lt;text text-anchor='middle' x='56' y='36' fill='currentColor' style='font-size:1em'>:&lt;/text>
+&lt;text text-anchor='middle' x='56' y='68' fill='currentColor' style='font-size:1em'>,&lt;/text>
+&lt;text text-anchor='middle' x='56' y='100' fill='currentColor' style='font-size:1em'>A&lt;/text>
+&lt;text text-anchor='middle' x='56' y='132' fill='currentColor' style='font-size:1em'>虚&lt;/text>
+&lt;text text-anchor='middle' x='64' y='68' fill='currentColor' style='font-size:1em'>没&lt;/text>
+&lt;text text-anchor='middle' x='64' y='100' fill='currentColor' style='font-size:1em'>I&lt;/text>
+&lt;text text-anchor='middle' x='64' y='132' fill='currentColor' style='font-size:1em'>拟&lt;/text>
+&lt;text text-anchor='middle' x='72' y='4' fill='currentColor' style='font-size:1em'>V&lt;/text>
+&lt;text text-anchor='middle' x='72' y='20' fill='currentColor' style='font-size:1em'>C&lt;/text>
+&lt;text text-anchor='middle' x='72' y='36' fill='currentColor' style='font-size:1em'>C&lt;/text>
+&lt;text text-anchor='middle' x='72' y='68' fill='currentColor' style='font-size:1em'>有&lt;/text>
+&lt;text text-anchor='middle' x='72' y='132' fill='currentColor' style='font-size:1em'>机&lt;/text>
+&lt;text text-anchor='middle' x='80' y='4' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='80' y='20' fill='currentColor' style='font-size:1em'>h&lt;/text>
+&lt;text text-anchor='middle' x='80' y='36' fill='currentColor' style='font-size:1em'>h&lt;/text>
+&lt;text text-anchor='middle' x='80' y='68' fill='currentColor' style='font-size:1em'>真&lt;/text>
+&lt;text text-anchor='middle' x='80' y='100' fill='currentColor' style='font-size:1em'>A&lt;/text>
+&lt;text text-anchor='middle' x='80' y='132' fill='currentColor' style='font-size:1em'>里&lt;/text>
+&lt;text text-anchor='middle' x='88' y='4' fill='currentColor' style='font-size:1em'>l&lt;/text>
+&lt;text text-anchor='middle' x='88' y='20' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='88' y='36' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='88' y='68' fill='currentColor' style='font-size:1em'>正&lt;/text>
+&lt;text text-anchor='middle' x='88' y='100' fill='currentColor' style='font-size:1em'>g&lt;/text>
+&lt;text text-anchor='middle' x='88' y='132' fill='currentColor' style='font-size:1em'>跑&lt;/text>
+&lt;text text-anchor='middle' x='96' y='4' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='96' y='20' fill='currentColor' style='font-size:1em'>c&lt;/text>
+&lt;text text-anchor='middle' x='96' y='36' fill='currentColor' style='font-size:1em'>c&lt;/text>
+&lt;text text-anchor='middle' x='96' y='68' fill='currentColor' style='font-size:1em'>做&lt;/text>
+&lt;text text-anchor='middle' x='96' y='100' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='96' y='132' fill='currentColor' style='font-size:1em'>,&lt;/text>
+&lt;text text-anchor='middle' x='104' y='4' fill='currentColor' style='font-size:1em'>d&lt;/text>
+&lt;text text-anchor='middle' x='104' y='20' fill='currentColor' style='font-size:1em'>k&lt;/text>
+&lt;text text-anchor='middle' x='104' y='36' fill='currentColor' style='font-size:1em'>k&lt;/text>
+&lt;text text-anchor='middle' x='104' y='68' fill='currentColor' style='font-size:1em'>验&lt;/text>
+&lt;text text-anchor='middle' x='104' y='100' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='104' y='132' fill='currentColor' style='font-size:1em'>别&lt;/text>
+&lt;text text-anchor='middle' x='112' y='4' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='112' y='68' fill='currentColor' style='font-size:1em'>证&lt;/text>
+&lt;text text-anchor='middle' x='112' y='100' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='112' y='132' fill='currentColor' style='font-size:1em'>给&lt;/text>
+&lt;text text-anchor='middle' x='120' y='4' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='120' y='20' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='120' y='36' fill='currentColor' style='font-size:1em'>p&lt;/text>
+&lt;text text-anchor='middle' x='120' y='68' fill='currentColor' style='font-size:1em'>.&lt;/text>
+&lt;text text-anchor='middle' x='120' y='132' fill='currentColor' style='font-size:1em'>真&lt;/text>
+&lt;text text-anchor='middle' x='128' y='4' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='128' y='20' fill='currentColor' style='font-size:1em'>u&lt;/text>
+&lt;text text-anchor='middle' x='128' y='36' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='128' y='68' fill='currentColor' style='font-size:1em'>这&lt;/text>
+&lt;text text-anchor='middle' x='128' y='100' fill='currentColor' style='font-size:1em'>以&lt;/text>
+&lt;text text-anchor='middle' x='128' y='132' fill='currentColor' style='font-size:1em'>实&lt;/text>
+&lt;text text-anchor='middle' x='136' y='20' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='136' y='36' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='136' y='68' fill='currentColor' style='font-size:1em'>就&lt;/text>
+&lt;text text-anchor='middle' x='136' y='100' fill='currentColor' style='font-size:1em'>用&lt;/text>
+&lt;text text-anchor='middle' x='136' y='132' fill='currentColor' style='font-size:1em'>账&lt;/text>
+&lt;text text-anchor='middle' x='144' y='4' fill='currentColor' style='font-size:1em'>P&lt;/text>
+&lt;text text-anchor='middle' x='144' y='20' fill='currentColor' style='font-size:1em'>h&lt;/text>
+&lt;text text-anchor='middle' x='144' y='36' fill='currentColor' style='font-size:1em'>m&lt;/text>
+&lt;text text-anchor='middle' x='144' y='68' fill='currentColor' style='font-size:1em'>是&lt;/text>
+&lt;text text-anchor='middle' x='144' y='100' fill='currentColor' style='font-size:1em'>户&lt;/text>
+&lt;text text-anchor='middle' x='144' y='132' fill='currentColor' style='font-size:1em'>户&lt;/text>
+&lt;text text-anchor='middle' x='152' y='4' fill='currentColor' style='font-size:1em'>D&lt;/text>
+&lt;text text-anchor='middle' x='152' y='20' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='152' y='36' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='152' y='68' fill='currentColor' style='font-size:1em'>让&lt;/text>
+&lt;text text-anchor='middle' x='152' y='100' fill='currentColor' style='font-size:1em'>名&lt;/text>
+&lt;text text-anchor='middle' x='152' y='132' fill='currentColor' style='font-size:1em'>权&lt;/text>
+&lt;text text-anchor='middle' x='160' y='4' fill='currentColor' style='font-size:1em'>U&lt;/text>
+&lt;text text-anchor='middle' x='160' y='20' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='160' y='36' fill='currentColor' style='font-size:1em'>s&lt;/text>
+&lt;text text-anchor='middle' x='160' y='100' fill='currentColor' style='font-size:1em'>义&lt;/text>
+&lt;text text-anchor='middle' x='160' y='132' fill='currentColor' style='font-size:1em'>限&lt;/text>
+&lt;text text-anchor='middle' x='168' y='20' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='168' y='36' fill='currentColor' style='font-size:1em'>s&lt;/text>
+&lt;text text-anchor='middle' x='168' y='68' fill='currentColor' style='font-size:1em'>A&lt;/text>
+&lt;text text-anchor='middle' x='168' y='100' fill='currentColor' style='font-size:1em'>发&lt;/text>
+&lt;text text-anchor='middle' x='168' y='132' fill='currentColor' style='font-size:1em'>,&lt;/text>
+&lt;text text-anchor='middle' x='176' y='4' fill='currentColor' style='font-size:1em'>s&lt;/text>
+&lt;text text-anchor='middle' x='176' y='20' fill='currentColor' style='font-size:1em'>z&lt;/text>
+&lt;text text-anchor='middle' x='176' y='36' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='176' y='68' fill='currentColor' style='font-size:1em'>I&lt;/text>
+&lt;text text-anchor='middle' x='176' y='100' fill='currentColor' style='font-size:1em'>了&lt;/text>
+&lt;text text-anchor='middle' x='176' y='132' fill='currentColor' style='font-size:1em'>读&lt;/text>
+&lt;text text-anchor='middle' x='184' y='4' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='184' y='20' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='184' y='36' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='184' y='100' fill='currentColor' style='font-size:1em'>篇&lt;/text>
+&lt;text text-anchor='middle' x='184' y='132' fill='currentColor' style='font-size:1em'>一&lt;/text>
+&lt;text text-anchor='middle' x='192' y='4' fill='currentColor' style='font-size:1em'>g&lt;/text>
+&lt;text text-anchor='middle' x='192' y='20' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='192' y='36' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='192' y='68' fill='currentColor' style='font-size:1em'>写&lt;/text>
+&lt;text text-anchor='middle' x='192' y='100' fill='currentColor' style='font-size:1em'>攻&lt;/text>
+&lt;text text-anchor='middle' x='192' y='132' fill='currentColor' style='font-size:1em'>下&lt;/text>
+&lt;text text-anchor='middle' x='200' y='4' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='200' y='20' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='200' y='36' fill='currentColor' style='font-size:1em'>s&lt;/text>
+&lt;text text-anchor='middle' x='200' y='68' fill='currentColor' style='font-size:1em'>代&lt;/text>
+&lt;text text-anchor='middle' x='200' y='100' fill='currentColor' style='font-size:1em'>击&lt;/text>
+&lt;text text-anchor='middle' x='200' y='132' fill='currentColor' style='font-size:1em'>生&lt;/text>
+&lt;text text-anchor='middle' x='208' y='4' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='208' y='20' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='208' y='68' fill='currentColor' style='font-size:1em'>码&lt;/text>
+&lt;text text-anchor='middle' x='208' y='100' fill='currentColor' style='font-size:1em'>文&lt;/text>
+&lt;text text-anchor='middle' x='208' y='132' fill='currentColor' style='font-size:1em'>成&lt;/text>
+&lt;text text-anchor='middle' x='216' y='4' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='216' y='20' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='216' y='68' fill='currentColor' style='font-size:1em'>不&lt;/text>
+&lt;text text-anchor='middle' x='216' y='100' fill='currentColor' style='font-size:1em'>章&lt;/text>
+&lt;text text-anchor='middle' x='216' y='132' fill='currentColor' style='font-size:1em'>的&lt;/text>
+&lt;text text-anchor='middle' x='224' y='4' fill='currentColor' style='font-size:1em'>u&lt;/text>
+&lt;text text-anchor='middle' x='224' y='100' fill='currentColor' style='font-size:1em'>,&lt;/text>
+&lt;text text-anchor='middle' x='224' y='132' fill='currentColor' style='font-size:1em'>代&lt;/text>
+&lt;text text-anchor='middle' x='232' y='4' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='232' y='68' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='232' y='100' fill='currentColor' style='font-size:1em'>用&lt;/text>
+&lt;text text-anchor='middle' x='232' y='132' fill='currentColor' style='font-size:1em'>码&lt;/text>
+&lt;text text-anchor='middle' x='240' y='4' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='240' y='68' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='240' y='100' fill='currentColor' style='font-size:1em'>户&lt;/text>
+&lt;text text-anchor='middle' x='240' y='132' fill='currentColor' style='font-size:1em'>确&lt;/text>
+&lt;text text-anchor='middle' x='248' y='68' fill='currentColor' style='font-size:1em'>v&lt;/text>
+&lt;text text-anchor='middle' x='248' y='100' fill='currentColor' style='font-size:1em'>自&lt;/text>
+&lt;text text-anchor='middle' x='248' y='132' fill='currentColor' style='font-size:1em'>认&lt;/text>
+&lt;text text-anchor='middle' x='256' y='68' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='256' y='100' fill='currentColor' style='font-size:1em'>己&lt;/text>
+&lt;text text-anchor='middle' x='256' y='132' fill='currentColor' style='font-size:1em'>没&lt;/text>
+&lt;text text-anchor='middle' x='264' y='68' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='264' y='100' fill='currentColor' style='font-size:1em'>都&lt;/text>
+&lt;text text-anchor='middle' x='264' y='132' fill='currentColor' style='font-size:1em'>有&lt;/text>
+&lt;text text-anchor='middle' x='272' y='68' fill='currentColor' style='font-size:1em'>w&lt;/text>
+&lt;text text-anchor='middle' x='272' y='100' fill='currentColor' style='font-size:1em'>不&lt;/text>
+&lt;text text-anchor='middle' x='272' y='132' fill='currentColor' style='font-size:1em'>蠢&lt;/text>
+&lt;text text-anchor='middle' x='280' y='100' fill='currentColor' style='font-size:1em'>知&lt;/text>
+&lt;text text-anchor='middle' x='280' y='132' fill='currentColor' style='font-size:1em'>事&lt;/text>
+&lt;text text-anchor='middle' x='288' y='68' fill='currentColor' style='font-size:1em'>的&lt;/text>
+&lt;text text-anchor='middle' x='288' y='100' fill='currentColor' style='font-size:1em'>道&lt;/text>
+&lt;text text-anchor='middle' x='288' y='132' fill='currentColor' style='font-size:1em'>,&lt;/text>
+&lt;text text-anchor='middle' x='296' y='68' fill='currentColor' style='font-size:1em'>后&lt;/text>
+&lt;text text-anchor='middle' x='296' y='100' fill='currentColor' style='font-size:1em'>.&lt;/text>
+&lt;text text-anchor='middle' x='296' y='132' fill='currentColor' style='font-size:1em'>最&lt;/text>
+&lt;text text-anchor='middle' x='304' y='68' fill='currentColor' style='font-size:1em'>果&lt;/text>
+&lt;text text-anchor='middle' x='304' y='132' fill='currentColor' style='font-size:1em'>好&lt;/text>
+&lt;text text-anchor='middle' x='312' y='68' fill='currentColor' style='font-size:1em'>.&lt;/text>
+&lt;text text-anchor='middle' x='312' y='132' fill='currentColor' style='font-size:1em'>别&lt;/text>
+&lt;text text-anchor='middle' x='320' y='132' fill='currentColor' style='font-size:1em'>给&lt;/text>
+&lt;text text-anchor='middle' x='328' y='132' fill='currentColor' style='font-size:1em'>它&lt;/text>
+&lt;text text-anchor='middle' x='336' y='132' fill='currentColor' style='font-size:1em'>联&lt;/text>
+&lt;text text-anchor='middle' x='344' y='132' fill='currentColor' style='font-size:1em'>网&lt;/text>
+&lt;text text-anchor='middle' x='352' y='132' fill='currentColor' style='font-size:1em'>.&lt;/text>
+&lt;text text-anchor='middle' x='360' y='132' fill='currentColor' style='font-size:1em'>A&lt;/text>
+&lt;text text-anchor='middle' x='368' y='132' fill='currentColor' style='font-size:1em'>g&lt;/text>
+&lt;text text-anchor='middle' x='376' y='132' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='384' y='132' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='392' y='132' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='408' y='132' fill='currentColor' style='font-size:1em'>很&lt;/text>
+&lt;text text-anchor='middle' x='416' y='132' fill='currentColor' style='font-size:1em'>酷&lt;/text>
+&lt;text text-anchor='middle' x='424' y='132' fill='currentColor' style='font-size:1em'>,&lt;/text>
+&lt;text text-anchor='middle' x='432' y='132' fill='currentColor' style='font-size:1em'>但&lt;/text>
+&lt;text text-anchor='middle' x='440' y='132' fill='currentColor' style='font-size:1em'>别&lt;/text>
+&lt;text text-anchor='middle' x='448' y='132' fill='currentColor' style='font-size:1em'>让&lt;/text>
+&lt;text text-anchor='middle' x='456' y='132' fill='currentColor' style='font-size:1em'>它&lt;/text>
+&lt;text text-anchor='middle' x='464' y='132' fill='currentColor' style='font-size:1em'>拿&lt;/text>
+&lt;text text-anchor='middle' x='472' y='132' fill='currentColor' style='font-size:1em'>着&lt;/text>
+&lt;text text-anchor='middle' x='480' y='132' fill='currentColor' style='font-size:1em'>你&lt;/text>
+&lt;text text-anchor='middle' x='488' y='132' fill='currentColor' style='font-size:1em'>的&lt;/text>
+&lt;text text-anchor='middle' x='496' y='132' fill='currentColor' style='font-size:1em'>钥&lt;/text>
+&lt;text text-anchor='middle' x='504' y='132' fill='currentColor' style='font-size:1em'>匙&lt;/text>
+&lt;text text-anchor='middle' x='512' y='132' fill='currentColor' style='font-size:1em'>乱&lt;/text>
+&lt;text text-anchor='middle' x='520' y='132' fill='currentColor' style='font-size:1em'>跑&lt;/text>
+&lt;text text-anchor='middle' x='528' y='132' fill='currentColor' style='font-size:1em'>.&lt;/text>
+&lt;/g>
+&lt;/svg>
+&lt;/div></description></item><item><title>TokenShrink v2.0:Reddit 骂醒了他们,Token 计数原来一直都是错的</title><link>https://claudeai.best/posts/hunter-2026022202/</link><pubDate>Sun, 22 Feb 2026 02:12:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022202/</guid><description>TokenShrink 是免费 Prompt 压缩工具.v1.0 用 `words × 1.3` 估算 Token,被 Reddit 骂惨了.v2.0 改用真实 BPE tokenizer 计数,还加了 smarter 压缩策略.免费永久,&amp;lt; 200ms 处理.</description></item><item><title>LLMWise:一个 API Key 调用 36+ 模型,还能对比,融合,评判输出</title><link>https://claudeai.best/posts/hunter-2026022103/</link><pubDate>Sat, 21 Feb 2026 03:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022103/</guid><description>LLMWise 多模型 LLM API:一个 Key 调用 GPT/Claude/Gemini/DeepSeek 等 36+ 模型,支持对比,融合,评判,故障转移四种模式,零订阅按需付费,40 免费试用积分.</description></item><item><title>LLM Compare:250+ 模型的 side-by-side 基准对比工具,纯静态无后端</title><link>https://claudeai.best/posts/hunter-2026022101/</link><pubDate>Sat, 21 Feb 2026 01:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022101/</guid><description>LLM Compare 开源工具:side-by-side 对比 250+ 大语言模型基准数据,涵盖 OpenAI,Anthropic,DeepSeek,Google 等,纯静态实现无后端,数据每周自动更新,支持可分享 URL 和程序化访问.</description></item><item><title>Expectllm:用 Unix "expect" 风格与 LLM 对话,4 行代码搞定</title><link>https://claudeai.best/posts/hunter-2026022100/</link><pubDate>Sat, 21 Feb 2026 00:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022100/</guid><description>Expectllm 开源库:用 expect 风格模式匹配与 LLM 对话,零样板代码,支持 OpenAI/Anthropic,内置 JSON/数字/是/否/代码提取模板,单文件轻量级实现.</description></item><item><title>Frontier-CS:评估 LLM 解决最难 CS 问题的能力,为什么评估比生成更难</title><link>https://claudeai.best/posts/hunter-2026022009/</link><pubDate>Fri, 20 Feb 2026 09:30:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022009/</guid><description>Frontier-CS 发布 240 个开放式 CS 问题的评估系统:连续评分,异构硬件,评估确定性,生成与评估分离.最好模型研究任务得分 46.55,人类专家算法题 86.99.</description></item><item><title>Aegis.rs:Rust 写的 LLM 安全代理,1ms 延迟零代码改动</title><link>https://claudeai.best/posts/hunter-2026021919/</link><pubDate>Thu, 19 Feb 2026 19:40:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021919/</guid><description>Aegis.rs 是首个开源 Rust LLM 安全代理,透明拦截请求,150+ 启发式规则 + AI 审判,零代码改动,本地运行,1ms 延迟.</description></item><item><title>Martin Fowler:LLM正在吞噬专业技能,专家型通才的时代来了</title><link>https://claudeai.best/posts/hunter-2026021901/</link><pubDate>Thu, 19 Feb 2026 01:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021901/</guid><description>Thoughtworks软件未来大会核心洞察:LLM正在替代前后端专家技能,TDD成为最强的prompt engineering,AI是加速器而非救世主--如果你的工程实践一团糟,AI只会加速崩溃.</description></item><item><title>Claude Sonnet 4.6发布:性能对标Opus,价格不变,还学会了用电脑</title><link>https://claudeai.best/posts/hunter-2026021820/</link><pubDate>Wed, 18 Feb 2026 20:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021820/</guid><description>Anthropic今天发布Claude Sonnet 4.6,性能接近去年11月的Opus 4.5,但价格保持在$3/$15每百万token.最亮眼的是电脑操作能力--在OSWorld基准测试中,16个月内从3.6%飙升至接近人类水平.开发者测试中70%的人更喜欢它而不是前代产品.</description></item><item><title>NVIDIA PersonaPlex-7B:一个7B模型把整个语音AI行业打回原形</title><link>https://claudeai.best/posts/hunter-2026021819/</link><pubDate>Wed, 18 Feb 2026 19:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021819/</guid><description>NVIDIA开源7B参数全双工语音模型PersonaPlex,将ASR+LLM+TTS三合一,170毫秒延迟击败所有商业API.语音AI的利润正在从API层向GPU层迁移,这个行业的天又变了.</description></item></channel></rss>

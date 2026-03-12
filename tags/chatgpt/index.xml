@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>ChatGPT on AI 极客前沿</title><link>https://claudeai.best/tags/chatgpt/</link><description>Recent content in ChatGPT on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Wed, 25 Feb 2026 20:08:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/chatgpt/index.xml" rel="self" type="application/rss+xml"/><item><title>30万ChatGPT账号被盗,黑客用AI加速攻击,IBM这份报告太吓人了</title><link>https://claudeai.best/posts/hunter-2026022520/</link><pubDate>Wed, 25 Feb 2026 20:08:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022520/</guid><description>&lt;p>我靠,IBM刚发的X-Force威胁报告,看得我背脊发凉.&lt;/p>
+&lt;p>&lt;strong>30万个ChatGPT账号凭证在暗网被卖.&lt;/strong>&lt;/p>
+&lt;p>这不是最可怕的.最可怕的是,黑客现在用AI来加速攻击,速度快到你根本反应不过来.&lt;/p>
+&lt;h2 id="黑客也开始用ai了">黑客也开始用AI了&lt;/h2>
+&lt;p>你以为只有你在用ChatGPT写代码?&lt;/p>
+&lt;p>黑客也在用.&lt;/p>
+&lt;p>IBM的报告说,现在攻击者用AI工具来:&lt;/p>
+&lt;ul>
+&lt;li>批量生成钓鱼邮件, 快速发现系统漏洞, 自动化社会工程攻击&lt;/li>
+&lt;/ul>
+&lt;p>以前黑客还需要人工分析,现在AI几秒钟就搞定了.&lt;/p>
+&lt;p>&lt;strong>速度,规模,自动化&amp;ndash;这三样东西加在一起,传统防御基本废了.&lt;/strong>&lt;/p>
+&lt;h2 id="勒索软件团伙暴涨50">勒索软件团伙暴涨50%&lt;/h2>
+&lt;p>2024年有73个勒索软件团伙.&lt;/p>
+&lt;p>2025年呢?&lt;/p>
+&lt;p>&lt;strong>109个.&lt;/strong>&lt;/p>
+&lt;p>一年时间多了36个团伙,增长率接近50%.&lt;/p>
+&lt;p>而且现在的勒索软件更分散了.以前Top 10团伙占了大头,现在他们占比下降了25%.&lt;/p>
+&lt;p>什么意思?&lt;/p>
+&lt;p>&lt;strong>黑客门槛变低了.&lt;/strong>&lt;/p>
+&lt;p>随便什么人,搞个勒索软件就能出来混.不需要多高技术,AI帮你写代码,帮你找漏洞.&lt;/p>
+&lt;h2 id="制造业成头号目标">制造业成头号目标&lt;/h2>
+&lt;p>哪个行业最惨?&lt;/p>
+&lt;p>&lt;strong>制造业.&lt;/strong>&lt;/p>
+&lt;p>连续好几年都是最受攻击的行业.&lt;/p>
+&lt;p>金融和保险业排第二.&lt;/p>
+&lt;p>为什么是制造业?&lt;/p>
+&lt;p>因为他们停不起工.&lt;/p>
+&lt;p>生产线一停,损失按小时算.黑客就盯着这个,你不给钱,我就让你停工.&lt;/p>
+&lt;h2 id="你该咋办">你该咋办?&lt;/h2>
+&lt;p>IBM给了几个建议:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>AI对抗AI&lt;/strong> &amp;ndash; 你也得用AI来防御,靠人眼已经看不赢了&lt;/li>
+&lt;li>&lt;strong>管好你的账号&lt;/strong> &amp;ndash; 别在ChatGPT和公司系统用同一个密码&lt;/li>
+&lt;li>&lt;strong>盯着供应链&lt;/strong> &amp;ndash; 供应链攻击5年翻了4倍,别让合作伙伴坑了你&lt;/li>
+&lt;li>&lt;strong>经常打补丁&lt;/strong> &amp;ndash; 公共应用漏洞利用增长了44%,很多都不需要认证就能攻击&lt;/li>
+&lt;/ol>
+&lt;p>说实话,这报告看完,我第一反应是:&lt;strong>赶紧改密码.&lt;/strong>&lt;/p>
+&lt;p>特别是ChatGPT的密码.&lt;/p>
+&lt;p>你要是用同一个密码到处登录,现在就去改.真的.&lt;/p>
+&lt;p>&lt;strong>一句话总结&lt;/strong>:黑客用AI提速了,你还靠人肉防御,这不就是找死吗?&lt;/p>
+&lt;p>&lt;strong>参考来源&lt;/strong>:IBM X-Force Threat Intelligence Index 2026&lt;/p></description></item><item><title>BBC记者20分钟攻破ChatGPT和Google AI:AI正在成为新一代垃圾信息 Renaissance</title><link>https://claudeai.best/posts/hunter-2026021903/</link><pubDate>Thu, 19 Feb 2026 03:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021903/</guid><description>BBC记者用20分钟写了一篇假文章,24小时内让ChatGPT和Google的AI告诉全世界他是&amp;#39;吃热狗最多的科技记者&amp;#39;.这不是恶作剧--同样的手法正在被用于操纵医疗,金融,政治等严肃话题的AI回答.</description></item></channel></rss>

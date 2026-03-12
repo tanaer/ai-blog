@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>多Agent on AI 极客前沿</title><link>https://claudeai.best/tags/%E5%A4%9Aagent/</link><description>Recent content in 多Agent on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Wed, 25 Feb 2026 17:05:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/%E5%A4%9Aagent/index.xml" rel="self" type="application/rss+xml"/><item><title>Samsung 搞事情!Galaxy S26 直接把 Perplexity AI 装进系统了</title><link>https://claudeai.best/posts/2026-02-25-samsung-perplexity-multi-agent/</link><pubDate>Wed, 25 Feb 2026 17:05:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-25-samsung-perplexity-multi-agent/</guid><description>&lt;p>我靠,三星这次真敢玩.&lt;/p>
+&lt;p>今天在旧金山的 Galaxy Unpacked,三星直接把 Perplexity AI 塞进了 Galaxy AI.&lt;/p>
+&lt;p>不是 app,是&lt;strong>系统级集成&lt;/strong>.&lt;/p>
+&lt;h2 id="多-agent-时代来了">多 Agent 时代来了&lt;/h2>
+&lt;p>三星说,现在大部分人手机里都不止一个 AI 助手.&lt;/p>
+&lt;p>一个聊天用 ChatGPT.&lt;/p>
+&lt;p>一个搜索用 Perplexity.&lt;/p>
+&lt;p>一个日常用 Bixby.&lt;/p>
+&lt;p>换来换去,烦死了.&lt;/p>
+&lt;p>所以三星搞了个&amp;quot;多 Agent 平台&amp;quot;.&lt;/p>
+&lt;p>Galaxy AI 可以直接管理不同的 AI 助手,不用切 app.&lt;/p>
+&lt;p>牛逼的是,Perplexity AI 是第一个加入的第三方 Agent.&lt;/p>
+&lt;h2 id="hey-plex-直接唤醒">&amp;ldquo;Hey Plex&amp;rdquo; 直接唤醒&lt;/h2>
+&lt;p>以后用 Perplexity,直接说&amp;quot;Hey Plex&amp;quot;就行.&lt;/p>
+&lt;p>或者按一下侧边键.&lt;/p>
+&lt;p>Plex 会直接嵌入到三星的核心 app 里.&lt;/p>
+&lt;p>部分第三方 app 也支持.&lt;/p>
+&lt;p>这就是系统级集成的威力.&lt;/p>
+&lt;p>不像我们还得打开 app,输入问题,等回复.&lt;/p>
+&lt;p>Galaxy S26 用户直接唤醒,秒回.&lt;/p>
+&lt;h2 id="bixby-也没闲着">Bixby 也没闲着&lt;/h2>
+&lt;p>Bixby 这次也升级了.&lt;/p>
+&lt;p>One UI 8.5 beta 里,Bixby 支持自然语言控制系统设置了.&lt;/p>
+&lt;p>以前得说&amp;quot;打开 WiFi&amp;quot;.&lt;/p>
+&lt;p>现在可以说&amp;quot;我想连网&amp;quot;.&lt;/p></description></item><item><title>Claude Code Open:开源版 Claude Code,带 Web IDE 和多 Agent 系统</title><link>https://claudeai.best/posts/hunter-2026022119/</link><pubDate>Sat, 21 Feb 2026 19:09:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022119/</guid><description>Claude Code Open 是开源 AI 编程平台,基于 Claude Code 逆向工程.内置 37+ 工具,Web UI IDE,Blueprint 多 Agent 系统,定时任务守护进程,支持自演化,检查点回滚,MCP 协议.MIT 许可证.</description></item><item><title>Cord:让 AI Agent 自己决定如何分解任务,动态构建执行树</title><link>https://claudeai.best/posts/hunter-2026022110/</link><pubDate>Sat, 21 Feb 2026 10:11:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022110/</guid><description>Cord 是一个多 Agent 协调框架,核心创新是让 Agent 在运行时动态构建任务树,而非预定义工作流.通过 spawn/fork 两种上下文传递模式,Agent 能自动决定任务分解,并行执行和依赖管理.</description></item><item><title>Grok 4.20 Beta炸场:8个AI Agent并行写代码,xAI要把Cursor们逼到墙角</title><link>https://claudeai.best/posts/hunter-2026021801/</link><pubDate>Wed, 18 Feb 2026 01:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021801/</guid><description>xAI发布Grok 4.20 Beta,首次引入多Agent并行编程和竞技场模式.8个Agent同时写代码,自动评分择优,配合X平台6800万条推文实时数据流,Grok正在从聊天机器人进化为全栈AI开发平台.</description></item></channel></rss>

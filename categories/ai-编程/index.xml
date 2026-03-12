@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AI 编程 on AI 极客前沿</title><link>https://claudeai.best/categories/ai-%E7%BC%96%E7%A8%8B/</link><description>Recent content in AI 编程 on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Wed, 25 Feb 2026 05:05:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/categories/ai-%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>16个 Claude 代理协作写了一个 C 编译器,花了 $20K API 费</title><link>https://claudeai.best/posts/hunter-2026022505/</link><pubDate>Wed, 25 Feb 2026 05:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022505/</guid><description>&lt;p>Anthropic 研究员 Nicholas Carlini 做了一个疯狂实验:让 16 个 Claude Opus 4.6 代理协作,从零开始写一个 C 编译器.&lt;/p>
+&lt;p>结果:&lt;strong>10 万行 Rust 代码,能编译 Linux 6.9 内核,通过了 99% 的 GCC torture test.&lt;/strong>&lt;/p>
+&lt;p>代价:2 周时间,近 2000 次 Claude Code 会话,约 &lt;strong>$20,000 API 费用&lt;/strong>.&lt;/p>
+&lt;h2 id="怎么做到的">怎么做到的?&lt;/h2>
+&lt;p>使用 Claude Opus 4.6 新推出的 &lt;strong>&amp;ldquo;Agent Teams&amp;rdquo;&lt;/strong> 功能:&lt;/p>
+&lt;ul>
+&lt;li>每个代理运行在独立 Docker 容器, 通过 Git 共享代码库协调工作, 没有中央编排代理 &amp;ndash; 各自独立识别任务并解决, &lt;strong>自动处理合并冲突&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>编译器已&lt;a href="https://github.com/anthropics/claudes-c-compiler">开源在 GitHub&lt;/a>.&lt;/p>
+&lt;h2 id="能力验证">能力验证&lt;/h2>
+&lt;p>能编译这些项目:&lt;/p>
+&lt;ul>
+&lt;li>PostgreSQL,SQLite,Redis, FFmpeg,QEMU, &lt;strong>Doom&lt;/strong>(开发者终极测试)&lt;/li>
+&lt;/ul>
+&lt;p>支持架构:x86,ARM,RISC-V.&lt;/p>
+&lt;h2 id="限制也很明显">限制也很明显&lt;/h2>
+&lt;p>Carlini 很坦诚地列出了问题:&lt;/p>
+&lt;ol>
+&lt;li>缺少 16 位 x86 后端,引导 Linux 需调用 GCC&lt;/li>
+&lt;li>自带的汇编器和链接器还有 bug&lt;/li>
+&lt;li>优化效果甚至不如 GCC 的 &lt;code>-O0&lt;/code>&lt;/li>
+&lt;li>代码质量达不到专家级 Rust 水平&lt;/li>
+&lt;/ol>
+&lt;p>最关键的发现:&lt;strong>当代码量达到约 10 万行时,Claude 开始&amp;quot;失智&amp;quot;&lt;/strong> &amp;ndash; 修 bug 和加功能经常破坏已有功能.&lt;/p></description></item><item><title>AI 编程工具 15 分钟开发应用,免费工具时代要结束了?</title><link>https://claudeai.best/posts/hunter-2026022504/</link><pubDate>Wed, 25 Feb 2026 04:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022504/</guid><description>&lt;p>一个不懂编程的人,用 AI 工具 15 分钟做出了自己想要的 Mac 应用.这不仅是个人效率的提升,更预示着整个单用途应用市场的崩塌.&lt;/p>
+&lt;h2 id="15-分钟开发一个-mac-应用">15 分钟开发一个 Mac 应用&lt;/h2>
+&lt;p>9to5Mac 的编辑 Benj Edwards 讲了一个亲身经历.&lt;/p>
+&lt;p>他想找一个简单的 Mac 应用解决一个生产力问题.免费的应用充满低质量广告,付费的应用虽然能用,但功能永远差点意思&amp;ndash;不是多了一些不需要的功能,就是缺少某个关键细节.&lt;/p>
+&lt;p>于是他试了 OpenAI 的 Codex.&lt;/p>
+&lt;p>&lt;strong>从一个空文件夹开始,15 分钟后,核心功能已经跑起来了.&lt;/strong>&lt;/p>
+&lt;p>接下来的几周,他不断给 Codex 提需求:加个按钮,接入 Apple 的 Foundation Models,某个事件发生时通知我&amp;hellip;&amp;hellip;每次修改,Codex 10 秒钟搞定.&lt;/p>
+&lt;p>最后得到的应用:&lt;strong>完全符合他的需求,没有广告,没有多余功能,代码还能随时调整.&lt;/strong>&lt;/p>
+&lt;h2 id="vibe-coding2025-年的年度词汇">Vibe Coding:2025 年的年度词汇&lt;/h2>
+&lt;p>这种开发方式有个名字:&lt;strong>Vibe Coding&lt;/strong>.&lt;/p>
+&lt;p>2025 年,Collins 词典把它选为年度词汇.维基百科的定义是:用自然语言向大语言模型描述任务,让 AI 生成代码&amp;ndash;关键是&lt;strong>接受 AI 生成的代码而不仔细审查内部结构&lt;/strong>,只看结果,通过后续 prompt 调整.&lt;/p>
+&lt;p>Andrej Karpathy 的描述更直接:&amp;ldquo;完全沉浸到氛围里,拥抱指数增长,忘记代码的存在.&amp;rdquo;&lt;/p>
+&lt;p>听起来很危险?批评者确实指出:缺乏问责制,可维护性差,安全漏洞风险高.&lt;/p>
+&lt;p>但对于非程序员来说,这是第一次&lt;strong>软件真正为他们服务&lt;/strong>,而不是他们去适应软件.&lt;/p>
+&lt;h2 id="单用途应用市场的丧钟">单用途应用市场的丧钟&lt;/h2>
+&lt;p>Benj 的观点很明确:&lt;strong>单用途应用的商业模式正在瓦解.&lt;/strong>&lt;/p>
+&lt;p>过去,独立开发者靠做出一个好用的单功能应用赚钱.用户愿意付费,因为自己开发成本太高.&lt;/p>
+&lt;p>但现在:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>免费应用&lt;/strong>:充满广告,体验差,用户忍着用, &lt;strong>付费应用&lt;/strong>:功能固定,永远差点意思,用户妥协着用, &lt;strong>AI 开发的应用&lt;/strong>:完全定制,随时调整,代码归你&lt;/li>
+&lt;/ul>
+&lt;p>当第三种选择的门槛降到&amp;quot;会说话就行&amp;quot;,谁还愿意忍受前两种?&lt;/p>
+&lt;h2 id="xcode-集成苹果的官方背书">Xcode 集成:苹果的官方背书&lt;/h2>
+&lt;p>更重要的事情发生在苹果生态.&lt;/p>
+&lt;p>2026 年 2 月,苹果宣布 Xcode 26.4 将原生集成 Claude Agent 和 OpenAI Codex.这意味着:&lt;/p></description></item><item><title>AI 写了一个 FreeBSD 内核驱动,还能连 Wi-Fi</title><link>https://claudeai.best/posts/hunter-2026022500/</link><pubDate>Wed, 25 Feb 2026 00:05:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022500/</guid><description>&lt;p>旧电脑别扔,让 AI 给它写个驱动.&lt;/p>
+&lt;h2 id="一个尘封的-macbook-pro">一个尘封的 MacBook Pro&lt;/h2>
+&lt;p>Vladimir Varankin 有一台 2016 年的 MacBook Pro,屏幕有 flexgate 问题,一直躺在柜子里吃灰.FreeBSD 15 发布后,他决定把这台电脑改造成 FreeBSD 实验机&amp;ndash;直到发现 Wi-Fi 用不了.&lt;/p>
+&lt;p>2016 MacBook Pro 用的 Broadcom BCM4350 芯片,FreeBSD 原生不支持.论坛上的标准方案是跑一个叫 wifibox 的小 Linux 虚拟机,把 PCI 设备直通给 Linux.&lt;/p>
+&lt;p>但 Varankin 想的是:能不能写一个原生的 FreeBSD 驱动?&lt;/p>
+&lt;h2 id="第一次尝试直接移植直接翻车">第一次尝试:直接移植,直接翻车&lt;/h2>
+&lt;p>2026 年了,&amp;ldquo;把代码从 A 移植到 B&amp;rdquo; 的第一反应当然是让 AI 干.&lt;/p>
+&lt;p>他克隆了 Linux 的 brcmfmac 驱动源码,让 Claude Code 照着 FreeBSD 已有的 iwlwifi 驱动(Intel 网卡)移植.Claude 信心满满地说可以.&lt;/p>
+&lt;p>模块确实编译通过了&amp;ndash;但没有任何反应.因为他测试的虚拟机里根本没有那张网卡.&lt;/p>
+&lt;p>等他把 PCI 设备加进去,真机测试:&lt;strong>kernel panic&lt;/strong>.&lt;/p>
+&lt;p>Claude 开始疯狂打补丁,到处加 &lt;code>#ifdef __FreeBSD__&lt;/code>,抱怨 LinuxKPI 缺这少那.补丁越打越多,驱动离能用的距离却一点没缩短.&lt;/p></description></item></channel></rss>
