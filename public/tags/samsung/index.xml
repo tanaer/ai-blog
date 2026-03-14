@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Samsung on AI 极客前沿</title><link>https://claudeai.best/tags/samsung/</link><description>Recent content in Samsung on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Fri, 27 Feb 2026 04:10:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/samsung/index.xml" rel="self" type="application/rss+xml"/><item><title>三星新机搞无感 AI,这才是手机该有的样子</title><link>https://claudeai.best/posts/2026-02-27-samsung-invisible-ai/</link><pubDate>Fri, 27 Feb 2026 04:10:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-27-samsung-invisible-ai/</guid><description>&lt;p>三星最近有点不一样.&lt;/p>
+&lt;p>新发的 Galaxy 不再吹 AI 有多牛.反而说 AI 应该&amp;quot;看不见&amp;quot;.&lt;/p>
+&lt;p>啥意思?就是 AI 得像水龙头一样.你拧开就有水,不需要知道它怎么来的.&lt;/p>
+&lt;p>手机也是一样.&lt;/p>
+&lt;p>打电话听不懂外语?AI 帮你实时翻译.拍的照片有点糊?AI 自动给你修好.想找某个文件但忘了在哪?直接问手机,它帮你搜.&lt;/p>
+&lt;p>最关键的是&amp;ndash;这些都不用联网.&lt;/p>
+&lt;p>全在手机本地跑.隐私不用担心,速度也快.&lt;/p>
+&lt;p>想想以前的手机 AI.动不动就&amp;quot;你好小助手&amp;quot;,跟喊保姆似的.现在呢?你根本感觉不到 AI 的存在.但它一直在帮你.&lt;/p>
+&lt;p>这才是对的.&lt;/p>
+&lt;p>现在手机市场已经卷不动了.参数大家都差不多,快充都快赶上电饭煲了.能拉开差距的,就是体验.&lt;/p>
+&lt;p>三星这波思路挺清醒.与其炫技,不如让用户觉得&amp;quot;好用&amp;quot;.不用天天喊着&amp;quot;我有 AI&amp;quot;,而是让你用着用着发现:哎,这事原来可以这么省心.&lt;/p>
+&lt;p>其他厂商估计也快跟进了.&lt;/p>
+&lt;p>以后手机就是 AI 的最大分发渠道.你每天用得最多的设备,也是 AI 离你最近的地方.&lt;/p></description></item><item><title>你的屏幕,只有你能看</title><link>https://claudeai.best/posts/2026-02-26-samsung-s26-ultra-privacy-display/</link><pubDate>Thu, 26 Feb 2026 11:10:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-26-samsung-s26-ultra-privacy-display/</guid><description>&lt;p>昨天三星发了 S26 Ultra.这次最大的亮点?不是相机,不是性能.&lt;/p>
+&lt;p>是 Privacy Display.&lt;/p>
+&lt;p>简单说:你旁边的人看不见你的屏幕了.&lt;/p>
+&lt;p>这是手机圈头一个自带防窥屏.从侧面看,屏幕是暗的.你可以选择隐藏整个屏幕,或者只藏某些 App,通知,密码.通勤族应该会爱死这个功能.&lt;/p>
+&lt;p>AI 方面,三星换了思路&amp;ndash;不炫耀,而是让 AI 躲在后台默默干活.&lt;/p>
+&lt;p>新的 Now Nudge 功能会主动给你建议.AI 在后台偷偷干活,你干别的它也能搞定复杂任务.相机也升级了,夜拍更强,视频更稳.Photo Assist 现在支持自然语言编辑,你说&amp;quot;把白天改成晚上&amp;quot;,它就帮你改.&lt;/p>
+&lt;p>机器比上一代薄了 0.3 毫米,轻了 4 克.芯片是骁龙 8 Elite Gen 5,CPU 快 19%,NPU 快 39%.&lt;/p>
+&lt;p>充电 30 分钟能到 75%.&lt;/p>
+&lt;p>定价还没出,但估计不会便宜.&lt;/p>
+&lt;p>&lt;em>参考来源:Tom&amp;rsquo;s Guide 直播报道,三星官方发布会&lt;/em>&lt;/p></description></item><item><title>Samsung 搞事情!Galaxy S26 直接把 Perplexity AI 装进系统了</title><link>https://claudeai.best/posts/2026-02-25-samsung-perplexity-multi-agent/</link><pubDate>Wed, 25 Feb 2026 17:05:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-25-samsung-perplexity-multi-agent/</guid><description>&lt;p>我靠,三星这次真敢玩.&lt;/p>
+&lt;p>今天在旧金山的 Galaxy Unpacked,三星直接把 Perplexity AI 塞进了 Galaxy AI.&lt;/p>
+&lt;p>不是 app,是&lt;strong>系统级集成&lt;/strong>.&lt;/p>
+&lt;h2 id="多-agent-时代来了">多 Agent 时代来了&lt;/h2>
+&lt;p>三星说,现在大部分人手机里都不止一个 AI 助手.&lt;/p>
+&lt;p>一个聊天用 ChatGPT.&lt;/p>
+&lt;p>一个搜索用 Perplexity.&lt;/p>
+&lt;p>一个日常用 Bixby.&lt;/p>
+&lt;p>换来换去,烦死了.&lt;/p>
+&lt;p>所以三星搞了个&amp;quot;多 Agent 平台&amp;quot;.&lt;/p>
+&lt;p>Galaxy AI 可以直接管理不同的 AI 助手,不用切 app.&lt;/p>
+&lt;p>牛逼的是,Perplexity AI 是第一个加入的第三方 Agent.&lt;/p>
+&lt;h2 id="hey-plex-直接唤醒">&amp;ldquo;Hey Plex&amp;rdquo; 直接唤醒&lt;/h2>
+&lt;p>以后用 Perplexity,直接说&amp;quot;Hey Plex&amp;quot;就行.&lt;/p>
+&lt;p>或者按一下侧边键.&lt;/p>
+&lt;p>Plex 会直接嵌入到三星的核心 app 里.&lt;/p>
+&lt;p>部分第三方 app 也支持.&lt;/p>
+&lt;p>这就是系统级集成的威力.&lt;/p>
+&lt;p>不像我们还得打开 app,输入问题,等回复.&lt;/p>
+&lt;p>Galaxy S26 用户直接唤醒,秒回.&lt;/p>
+&lt;h2 id="bixby-也没闲着">Bixby 也没闲着&lt;/h2>
+&lt;p>Bixby 这次也升级了.&lt;/p>
+&lt;p>One UI 8.5 beta 里,Bixby 支持自然语言控制系统设置了.&lt;/p>
+&lt;p>以前得说&amp;quot;打开 WiFi&amp;quot;.&lt;/p>
+&lt;p>现在可以说&amp;quot;我想连网&amp;quot;.&lt;/p></description></item></channel></rss>

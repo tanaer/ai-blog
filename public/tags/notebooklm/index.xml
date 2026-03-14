@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>NotebookLM on AI 极客前沿</title><link>https://claudeai.best/tags/notebooklm/</link><description>Recent content in NotebookLM on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Mon, 16 Feb 2026 06:00:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/notebooklm/index.xml" rel="self" type="application/rss+xml"/><item><title>️ NPR主播起诉谷歌:NotebookLM的AI播客声音是偷来的?</title><link>https://claudeai.best/posts/hunter-2026021522/</link><pubDate>Mon, 16 Feb 2026 06:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021522/</guid><description>&lt;h2 id="你的声音被ai偷了你会怎么办">你的声音被AI偷了,你会怎么办?&lt;/h2>
+&lt;p>想象一下:你是一位拥有几十年经验的广播主持人,某天打开一个AI工具,发现里面的&amp;quot;AI主播&amp;quot;听起来&lt;strong>跟你一模一样&lt;/strong>.&lt;/p>
+&lt;p>这不是科幻电影,这是NPR前《Morning Edition》主持人,现《Left, Right &amp;amp; Center》主播 &lt;strong>David Greene&lt;/strong> 正在经历的真实噩梦.2026年2月15日,他正式起诉谷歌,指控Google的NotebookLM工具&lt;strong>未经许可复制了他的声音&lt;/strong>.&lt;/p>
+&lt;p>Greene说:&amp;ldquo;我的声音是我最重要的一部分.&amp;rdquo; 他的朋友和同事们听了NotebookLM的AI播客后,都说这个相似度&amp;quot;令人毛骨悚然&amp;quot;(uncanny).&lt;/p>
+&lt;h2 id="三个核心看点">三个核心看点&lt;/h2>
+&lt;h3 id="1-notebooklm到底是什么">1. NotebookLM到底是什么?&lt;/h3>
+&lt;p>Google NotebookLM 是一款AI研究助手,其杀手级功能是&amp;quot;Audio Overview&amp;quot;&amp;ndash;你上传文档,它会自动生成一段&lt;strong>两人对话式播客&lt;/strong>,用自然的声音讨论你的材料.这个功能自2024年推出后爆火,被无数人用来&amp;quot;听&amp;quot;论文和报告.&lt;/p>
+&lt;p>但问题来了:&lt;strong>这些&amp;quot;自然的声音&amp;quot;是怎么来的?&lt;/strong>&lt;/p>
+&lt;h3 id="2-我的声音被偷了">2. &amp;ldquo;我的声音被偷了&amp;rdquo;&lt;/h3>
+&lt;p>Greene在诉讼中指控:&lt;/p>
+&lt;ul>
+&lt;li>谷歌&lt;strong>非法复制&lt;/strong>了他的声音特征用于NotebookLM的男性AI主播, &lt;strong>没有获得许可&lt;/strong>,也没有支付任何费用, AI可以被用户操控,让&amp;quot;他的声音&amp;quot;说出他本人绝不会说的话&lt;/li>
+&lt;/ul>
+&lt;p>谷歌方面否认了这一指控,但目前尚未公开回应声音的具体来源.&lt;/p>
+&lt;h3 id="3-这不只是一个人的事">3. 这不只是一个人的事&lt;/h3>
+&lt;p>这场诉讼的意义远超个案.如果Greene胜诉,意味着:&lt;/p>
+&lt;ul>
+&lt;li>AI公司必须为&lt;strong>训练数据中的声音特征&lt;/strong>付费, 声音权利可能获得与肖像权类似的法律保护, 所有AI语音合成产品都需要重新审视其数据来源&lt;/li>
+&lt;/ul>
+&lt;h2 id="-如果你也在用notebooklm">️ 如果你也在用NotebookLM&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>继续用没问题&lt;/strong>&amp;ndash;这是用户侧的合法使用,官司是Google和Greene之间的事&lt;/li>
+&lt;li>&lt;strong>注意生成内容的声明&lt;/strong>&amp;ndash;Google自己也标注&amp;quot;声音是AI生成的,可能包含不准确之处&amp;quot;&lt;/li>
+&lt;li>&lt;strong>关注后续判决&lt;/strong>&amp;ndash;这可能成为AI声音版权的标志性案例,影响未来所有TTS产品&lt;/li>
+&lt;/ol>
+&lt;h2 id="极客点评">极客点评&lt;/h2>
+&lt;p>这件事让我想到一个根本问题:&lt;strong>AI模型学习人类作品和&amp;quot;偷窃&amp;quot;之间的界限到底在哪?&lt;/strong>&lt;/p>
+&lt;p>画家学习梵高的笔触不算抄袭,但AI直接复制一个人的声音纹路呢?Greene的遭遇就像照镜子&amp;ndash;镜子里的人长得跟你一样,但说的话完全不受你控制.这种&amp;quot;数字身份被劫持&amp;quot;的恐惧是非常真实的.&lt;/p>
+&lt;p>从实用角度看,NotebookLM依然是目前最好的&amp;quot;文档转播客&amp;quot;工具,功能本身无可指摘.但这场诉讼提醒我们:&lt;strong>便利的背后,总有人在承担代价.&lt;/strong>&lt;/p>
+&lt;p>适用场景:关注AI伦理,版权法律,语音技术发展的读者.如果你是内容创作者,这个案例值得密切跟踪&amp;ndash;下一个被&amp;quot;借鉴&amp;quot;的可能就是你.&lt;/p>
+&lt;p>&lt;strong>信息来源&lt;/strong>:&lt;a href="https://www.theverge.com/ai-artificial-intelligence/879610/nprs-david-greene-suing-google-ai-podcast">The Verge&lt;/a>,&lt;a href="https://www.washingtonpost.com/technology/2026/02/15/david-greene-google-ai-podcast/">Washington Post&lt;/a>&lt;/p></description></item></channel></rss>

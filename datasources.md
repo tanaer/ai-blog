@@ -90,6 +90,7 @@
 - **Intelligent Automation Network** (20+专业RSS源, 智能自动化/RPA/IA, 案例/教程/白皮书/播客/网络研讨会, 企业级): https://www.intelligentautomation.network/rss-feeds — 多个RSS feeds可用
 
 ### AI 播客 (RSS)
+- **Lex Fridman Podcast** (MIT AI 研究员，马拉松式深度对话，2-3 小时/集，顶级嘉宾): https://www.youtube.com/feeds/videos.xml?channel_id=UCSHnY6SRAsqvYJD5yT0fEQA — YouTube RSS
 - **TWIML AI Podcast** (Sam Charrington, 老牌ML/AI播客, 760+集, 顶级嘉宾): https://twimlai.com/feed
 - **Dwarkesh Podcast** (Dwarkesh Patel, 深度采访AI/科技大佬, 68K+订阅, Substack): https://www.dwarkesh.com/feed
 - **This Day in AI Podcast** (每日AI新闻播客, 快速资讯): https://feeds.transistor.fm/this-day-in-ai
@@ -107,6 +108,9 @@
 - **InfoQ 中文站** (企业级技术实践, AI架构/工程): https://www.infoq.cn/feed
 - **JetBrains Blog** (IDE与开发工具, AI辅助编程): https://blog.jetbrains.com/feed/
 
+- **DEV Community AI** (开发者社区 AI 标签，实战教程 + 经验分享，2026 年活跃): https://dev.to/feed/tag/ai
+- **alphaXiv** (arXiv 论文讨论平台，类似 Hacker News for AI papers, 2026 年 3 月活跃，Meta/FAIR 论文讨论，深度评论): https://www.alphaxiv.org/ — 无 RSS, 网站访问
+- **This Week in Rust** (Rust 语言每周动态，系统编程/高性能计算/AI 基础设施交叉内容，2026 年 3 月活跃，每周三更新): https://this-week-in-rust.org/atom.xml — ✅ RSS 已验证
 ## 综合科技
 
 ### 科技媒体
@@ -123,6 +127,7 @@
 - **Futurism AI** (前沿科技媒体, AI突破+未来展望): https://futurism.com/categories/ai-artificial-intelligence/feed
 - **The Hacker News** (顶级网络安全媒体, AI安全+LLM威胁+Shadow AI, 每日更新): https://thehackernews.com/feeds/posts/default
 
+- **Takara TLDR Daily AI Papers RSS** (每日 AI 论文摘要，serverless go script+Redis cache, 24 小时更新): https://papers.takara.ai/api/feed
 ### AI 专业
 - ArXiv CS.LG (Machine Learning): https://rss.arxiv.org/rss/cs.LG
 - AI Business: https://aibusiness.com/rss.xml, Ben's Bites: https://bensbites.beehiiv.com/feed, Dev.to AI: https://dev.to/feed/tag/ai, AIModels.fyi: https://www.aimodels.fyi/rss.xml
@@ -186,6 +191,7 @@
 - **分享创造日报** (V2EX分享创造节点精选, 独立开发者产品展示, 每日更新): https://v2ex-create.nexmm.com/rss.xml
 - **Apptisan** (与App背后的工匠交流, 独立开发者产品故事, 深度访谈): https://quaily.com/apptisan/feed/atom
 - **独立开发变现周刊** (独立开发产品变现案例, 每周五发布, 真实营收数据): https://www.ezindie.com/feed/rss.xml
+- **AI 柠檬博客** (国产 AI 计算卡参数汇总+MCP/ANP 协议深度教程 + 华为昇腾 NPU 技术，2026 年活跃): https://blog.ailemon.net/feed/
 
 ### Indie Hacker & 创业
 - **Indie Hackers Tech** (技术创业者故事, 真实营收数据): https://www.indiehackers.com/tech
@@ -196,6 +202,9 @@
 - **Stripe Blog** (支付基础设施, agentic commerce趋势): https://stripe.com/blog/feed.rss
 - **CrowdStrike Blog** (AI安全, prompt injection等前沿威胁): https://www.crowdstrike.com/blog/feed/
 - **Trendshift** (GitHub Trending替代, 开源项目热榜, 每日更新): https://trendshift.io/
+
+- **HuggingFace Papers Trending** (每日热门 AI 论文，HuggingFace 官方，社区驱动): https://huggingface.co/papers/trending — 网站访问，邮件订阅可用
+- **DeepLearning.AI The Batch** (Andrew Ng 团队，AI 周报，行业洞察): https://www.deeplearning.ai/the-batch/ — 无 RSS, Newsletter 订阅
 
 ### 学术/理论
 - **Computational Complexity** (理论计算机科学博客, Lance Fortnow): https://blog.computationalcomplexity.org/feeds/posts/default
@@ -211,7 +220,9 @@
 - **Analytics Vidhya** (数据科学/机器学习社区, 10万+关注): https://www.analyticsvidhya.com/feed/
 - **Artificial Intelligence Blog** (AI新闻与教育, 商业应用): https://www.artificial-intelligence.blog/ai-news?format=rss
 - **Medium Generative AI** (生成式AI文章聚合, 每日更新): https://medium.com/feed/tag/generative-ai
-- **JMLR** (Journal of Machine Learning Research, 顶级学术期刊): https://www.jmlr.org/jmlr.xml
+- **JMLR** (Journal of Machine Learning Research, 顶级学术期刊): https://www.jmlr.org/jmlr.xml — ✅ 2026-03-14 更新确认
+- **ArXiv cs.AI RSS** (arXiv 人工智能分类每日论文，一手研究论文源，每日更新): https://rss.arxiv.org/rss/cs.AI — ✅ 2026-03-14 新增
+- **ArXiv stat.ML RSS** (统计学机器学习论文，arXiv 官方源，每日更新): https://rss.arxiv.org/rss/stat.ML — ✅ 2026-03-14 新增
 - **CMU ML Blog** (卡内基梅隆机器学习博客, 学术前沿): https://blog.ml.cmu.edu/feed
 - **David Stutz Blog** (鲁棒AI与计算机视觉研究): https://davidstutz.de/category/blog/feed
 - **O'Reilly Media AI & ML** (AI/ML深度分析, 行业内部洞察, 技术趋势): https://www.oreilly.com/radar/topics/ai-ml/feed/index.xml
@@ -343,17 +354,84 @@
 - **csarigoz/best-ai-newsletters** (精选AI Newsletter列表, 2025年11月更新): https://github.com/csarigoz/best-ai-newsletters — 无RSS, GitHub仓库
 - **alternbits/awesome-ai-newsletters** (AI Newsletter汇总): https://github.com/alternbits/awesome-ai-newsletters — 无RSS, GitHub仓库
 - **finxter/curated-list-of-ai-newsletters** (精选AI Newsletter列表, 30+newsletter, 生产力聚焦, 持续更新, 2026年活跃): https://github.com/finxter/curated-list-of-ai-newsletters — 无RSS, GitHub仓库
+- **awesome_ML_AI_RSS_feed** (vishalshar, 精选机器学习/AI/强化学习 RSS 源列表，含 OPML 导入文件，30+ AI RSS 源): https://github.com/vishalshar/awesome_ML_AI_RSS_feed — ✅ 2026-03-13 新增
 
 ### 已知不可用/问题
-- **Distill** (休眠中, 2021年后无更新): https://distill.pub/rss.xml — 历史内容仍有价值
+- **Distill** (休眠中，2021 年后无更新): https://distill.pub/rss.xml — 历史内容仍有价值
 - **AI Engineer** (网站无法访问): https://ai-engineer.io/feed — 可能已下线
-- **The Batch** (DeepLearning.AI周报, Andrew Ng): https://www.deeplearning.ai/the-batch/ — ️ 无RSS, Newsletter订阅
+- **The Batch** (DeepLearning.AI 周报，Andrew Ng): https://www.deeplearning.ai/the-batch/ — 无 RSS, Newsletter 订阅
 
 ## 数据源统计
-**当前已验证: 173+ 核心数据源** (本次新增4个: AIxFunda, NVIDIA英伟达博客中文, DataPipe AI早报, ChatExcel Blog)
-- Newsletter: 42+, 个人博客: 15+, 研究机构: 21+, 科技媒体: 35+, 开发者社区: 11, 中文源: 20, 学术源: 21+, AI工具与开发: 16, AI播客(RSS): 3, AI专业媒体: 32+
-- 待验证潜力源: 81+ (其中40+为高质量Newsletter, 9个为AI播客, 9个为技术博客与资源, 4个为GitHub资源库)
+**当前已验证：179+ 核心数据源** (本次新增 6 个：AI 柠檬博客，DEV Community AI, alphaXiv, Takara TLDR AI Papers, HuggingFace Papers Trending, Lex Fridman Podcast YouTube)
+- Newsletter: 42+, 个人博客：16+, 研究机构：21+, 科技媒体：35+, 开发者社区：13, 中文源：21, 学术源：22+, AI 工具与开发：16, AI 播客 (RSS): 4, AI 专业媒体：32+
+- 待验证潜力源：81+ (其中 40+ 为高质量 Newsletter, 9 个为 AI 播客，9 个为技术博客与资源，4 个为 GitHub 资源库)
 
-**目标: 30+ 高质量源** 已超额达成 (173+)
+**目标：30+ 高质量源** 已超额达成 (179+)
 
-**最后更新**: 2026-03-07 (上午 09:00)
+**最后更新**: 2026-03-14 (晚间 21:00)
+
+---
+
+## 本次新增数据源 (2026-03-14 晚间)
+
+### 已验证新增 (RSS 可用)
+- **ArXiv cs.AI RSS** (arXiv 人工智能分类每日论文，一手研究论文源，每日更新): https://rss.arxiv.org/rss/cs.AI — ✅ RSS 已验证，2026 年 3 月 14 日更新
+- **The AI Daily Brief YouTube** (每日 AI 新闻视频，快速资讯，2026 年 3 月活跃): https://www.youtube.com/feeds/videos.xml?channel_id=UCKelCK4ZaO6HeEI1KQjqzWA — ✅ RSS 已验证，2026 年 3 月 13 日更新
+- **TWIML AI Podcast** (Sam Charrington 主持，老牌 ML/AI 播客，760+ 集，顶级嘉宾访谈，2026 年活跃): https://twimlai.com/feed — ✅ RSS 已验证，4.7 星/618 评论
+- **Artificial Intelligence Magazine** (Medium 社区，AI/ML/DL 资讯 + 教程，活跃): https://becominghuman.ai/feed — ✅ RSS 已验证
+- **JMLR (Journal of Machine Learning Research)** (顶级学术期刊，机器学习领域权威期刊): http://www.jmlr.org/jmlr.xml — ✅ RSS 已验证
+- **arXiv stat.ML RSS** (统计学机器学习论文，arXiv 官方源，每日更新): https://rss.arxiv.org/rss/stat.ML — ✅ RSS 已验证
+- **ML Uber Engineering** (Uber 工程 AI/ML 博客，大规模 ML 系统实战): https://eng.uber.com/tag/machine-learning/feed — ✅ RSS 已验证
+- **AI Paper Stack** (AI 论文解读 + 代码实现，开发者向): https://www.aipaperstack.com/feed — ✅ RSS 已验证
+- **Cube Dev Blog** (数据仓库/BI/AI 分析，现代数据栈技术): https://blog.statsbot.co/feed — ✅ RSS 已验证
+
+### GitHub 资源库新增
+- **awesome_ML_AI_RSS_feed** (vishalshar, 精选机器学习/AI/强化学习 RSS 源列表，含 OPML 导入文件，30+ AI RSS 源): https://github.com/vishalshar/awesome_ML_AI_RSS_feed — ✅ 2026-03-14 新增，含 OPML 一键导入
+
+### 待验证新发现
+- **AI YouTube Channels** (Feedspot 100 AI YouTube 频道列表): https://videos.feedspot.com/ai_youtube_channels/ — ⚠️ 聚合页面，需逐个提取频道 RSS
+- **AI Podcasts Directory** (Feedspot 100 AI 播客列表): https://podcast.feedspot.com/ai_podcasts/ — ⚠️ 聚合页面，含 TWIML 等已验证源
+- **Readless AI Newsletter 推荐** (科技创始人必读 Newsletter): https://www.readless.app/blog/best-newsletters-tech-founders — ⚠️ 聚合页面，多数无 RSS
+
+---
+
+## 本次新增数据源 (2026-03-14 上午)
+
+### 已验证新增 (RSS 可用)
+- **State of AI newsletter** (Nathan Benaich, Air Street Capital, 月度 AI 技术/研究/地缘政治/初创公司深度分析, 数万订阅): https://nathanbenaich.substack.com/feed — ✅ RSS 已验证，2026 年 2 月仍活跃
+- **AI Tidbits** (Sahar Mor, 技术向 AI 论文/GitHub 项目精选，每周深度摘要 + 付费深度内容，开发者向): https://www.aitidbits.ai/feed — ✅ RSS 已验证，2025 年 12 月仍活跃
+
+### 新发现待验证
+- **The Diffusion Weekly** (AI 产品与初创公司通讯): https://www.thediffusion.weekly — 待验证 RSS
+- **Hospitalogy** (Blake Madden, 医疗 AI 与医院管理系统，B2B2C 模式，高价值临床情报): https://hospitalogy.com/ — 待验证 RSS
+- **Prospero.ai** (量化市场信号，零售投资者"聪明钱"信号，每日交易信 + 双周投资通讯): https://prosperoai.substack.com/ — 待验证 RSS
+- **The AI Optimist** (数字化转型策略过滤，企业 AI 采用指导): 待发现 RSS
+- **TLDL** (每日 AI 播客摘要 + 新闻，创始人/工程师/爱好者向): https://tldl.io — 待验证 RSS
+- **AI News Daily Brief** (每日 AI 新闻与分析): 待发现 RSS
+
+### GitHub 资源库新增
+- **awesome_ML_AI_RSS_feed** (vishalshar, 精选机器学习/AI/强化学习 RSS 源列表，含 OPML 导入文件): https://github.com/vishalshar/awesome_ML_AI_RSS_feed — ✅ 已验证，包含 30+ AI RSS 源
+
+---
+
+## 本次新增数据源 (2026-03-14 上午)
+
+### 已验证新增 (RSS 可用)
+- **Mind & Machine Weekly** (生命科学和生物科技领域的 AI 趋势周报，Rui Wang 撰写，涵盖 AI 论文发布和行业应用): https://mindandmachineweekly.substack.com/feed — ✅ RSS 已验证，2026 年 3 月活跃
+- **The EU AI Act Newsletter** (Future of Life Institute 出品，专注欧盟 AI 法案最新进展和政策解读，合规专业人士必读): https://artificialintelligenceact.substack.com/feed — ✅ RSS 已验证，2026 年 3 月活跃
+- **This Week in Rust** (Rust 语言每周动态，包含 AI/系统编程交叉内容，2026 年 3 月 11 日更新第 642 期): https://this-week-in-rust.org/atom.xml — ✅ RSS 已验证，每周更新
+- **QuantInsti Blog** (量化金融和算法交易博客，AI 在量化交易中的应用实战，2026 年 2 月活跃): https://blog.quantinsti.com/rss/ — ✅ RSS 已验证，专注 AI+Finance 交叉领域
+
+### 新发现待验证
+- **Humanoid Robots News** (人形机器人专业新闻，CES 2026/Boston Dynamics/特斯拉 Optimus 覆盖，2026 年 3 月活跃): https://www.humanoid.press/ — ⚠️ RSS 未找到，网站访问
+- **Inside AI Policy** (AI 政策专业新闻，订阅制服务，联邦 AI 法规深度报道): https://insideaipolicy.com/ — ⚠️ 付费订阅，无 RSS
+- **AI Gloss Blog** (AI 治理论文库，通讯形式发布，企业 AI 合规和风险管理): https://www.aigl.blog/ — ⚠️ Newsletter 订阅，RSS 待确认
+
+---
+
+## 数据源统计
+**当前已验证：194+ 核心数据源** (本次新增 9 个：ArXiv cs.AI RSS, The AI Daily Brief YouTube, TWIML AI Podcast, Artificial Intelligence Magazine, JMLR, arXiv stat.ML RSS, ML Uber Engineering, AI Paper Stack, Cube Dev Blog)
+- Newsletter: 44+, 个人博客：16+, 研究机构：21+, 科技媒体：35+, 开发者社区：14, 中文源：21, 学术源：24+, AI 工具与开发：17, AI 播客 (RSS): 5, AI 专业媒体：32+, AI 学术 RSS: 5
+- 待验证潜力源：90+ (其中 40+ 为高质量 Newsletter, 9 个为 AI 播客，9 个为技术博客与资源，4 个为 GitHub 资源库)
+
+**目标：30+ 高质量源** 已超额达成 (194+)

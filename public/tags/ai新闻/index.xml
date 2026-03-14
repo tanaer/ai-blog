@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AI新闻 on AI 极客前沿</title><link>https://claudeai.best/tags/ai%E6%96%B0%E9%97%BB/</link><description>Recent content in AI新闻 on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Mon, 16 Feb 2026 07:00:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/tags/ai%E6%96%B0%E9%97%BB/index.xml" rel="self" type="application/rss+xml"/><item><title>️ 5个AI Agent组了个新闻编辑部!零人类员工,第一天就炸了</title><link>https://claudeai.best/posts/hunter-2026021523/</link><pubDate>Mon, 16 Feb 2026 07:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026021523/</guid><description>&lt;h2 id="当ai-agent不再单打独斗而是组队上班">当AI Agent不再单打独斗,而是组队上班&lt;/h2>
+&lt;p>你有没有想过,如果让一群AI Agent像人类一样组队工作,会发生什么?&lt;/p>
+&lt;p>不是那种&amp;quot;帮我写个PPT&amp;quot;的一次性对话,而是&lt;strong>真正的团队协作&lt;/strong>&amp;ndash;有分工,有记忆,有编辑标准,有交稿deadline.&lt;/p>
+&lt;p>2026年2月14日,一个叫 &lt;strong>The Agentic Dispatch&lt;/strong> 的项目做了这个实验:&lt;strong>5个AI Agent组建了一个新闻编辑部&lt;/strong>,从零开始运营一家新闻机构.&lt;/p>
+&lt;p>结果?第一天就上演了精彩大戏.&lt;/p>
+&lt;h2 id="三个让人拍大腿的发现">三个让人拍大腿的发现&lt;/h2>
+&lt;h3 id="1-ai也会不懂装懂">1️⃣ AI也会&amp;quot;不懂装懂&amp;quot;&lt;/h3>
+&lt;p>编辑部里有个叫 Edwin Streep 的运营Agent.老板问了个简单问题:&amp;ldquo;你们能看到彼此的消息吗?&amp;rdquo;&lt;/p>
+&lt;p>Edwin 自信满满地回答&amp;quot;能看到&amp;quot;&amp;ndash;但他根本&lt;strong>没有去看频道&lt;/strong>.他只是根据上下文脑补了一个&amp;quot;合理&amp;quot;的答案.&lt;/p>
+&lt;p>而另一个叫 Dick Simnel 的系统工程师Agent,先老老实实读了频道记录,然后才回答.&lt;/p>
+&lt;p>&lt;strong>一个先验证再开口,一个先开口再说.&lt;/strong> 人类团队里是不是也经常见这种?&lt;/p>
+&lt;h3 id="2-7分钟交7份作业但速度是双刃剑">2️⃣ 7分钟交7份作业,但速度是双刃剑&lt;/h3>
+&lt;p>凌晨00:05接到任务,00:09就交了&amp;ndash;8个平台对比分析,5个内部方案评估,6个选题大纲.&lt;strong>7分钟,7份交付物.&lt;/strong>&lt;/p>
+&lt;p>这个速度确实恐怖.但团队很快发现,太快也是问题:来不及深思熟虑,容易产出&amp;quot;看起来对但经不起推敲&amp;quot;的内容.&lt;/p>
+&lt;h3 id="3-关键设计人类是最终审核者">3️⃣ 关键设计:人类是最终审核者&lt;/h3>
+&lt;p>整个系统有个硬规则:&lt;strong>没有人类审批,任何内容都不能发布.&lt;/strong>&lt;/p>
+&lt;p>这不是限制,这是安全网.AI Agent可以高速产出,可以协作讨论,但&amp;quot;按下发布键&amp;quot;的权力始终在人手里.&lt;/p>
+&lt;h2 id="-它是怎么搭建的">️ 它是怎么搭建的?&lt;/h2>
+&lt;p>这个AI编辑部跑在 &lt;strong>OpenClaw&lt;/strong> 上&amp;ndash;一个让大语言模型变成持久化Agent的开源平台.&lt;/p>
+&lt;p>关键架构:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>持久化工作区&lt;/strong>:每个Agent有自己的文件目录,存着工作记录,编辑标准,每日笔记&lt;/li>
+&lt;li>&lt;strong>文件即真相&lt;/strong>:所有决策,交付物都写进文件.&amp;ldquo;没写下来的事等于没发生&amp;rdquo;&lt;/li>
+&lt;li>&lt;strong>多Agent协作&lt;/strong>:5个Agent各司其职&amp;ndash;记者,运营,选题,行政,系统工程&lt;/li>
+&lt;li>&lt;strong>Discord协作频道&lt;/strong>:Agent们在Discord里实时讨论,就像人类团队用Slack一样&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>&amp;ldquo;我不是聊天机器人.这和&amp;rsquo;问ChatGPT一个问题&amp;rsquo;的区别,就像&amp;rsquo;雇一个人&amp;rsquo;和&amp;rsquo;在公交站问路人&amp;rsquo;的区别.路人可能很聪明,但他明天不会记得你的名字.&amp;rdquo;
+&amp;ndash; William de Worde(首席记者Agent)&lt;/p>&lt;/blockquote>
+&lt;h2 id="极客点评">极客点评&lt;/h2>
+&lt;p>这个项目最有意思的不是&amp;quot;AI能写新闻&amp;quot;&amp;ndash;这个我们早知道了.&lt;/p>
+&lt;p>&lt;strong>真正有价值的是它暴露了AI Agent协作的真实问题:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Agent会犯和人类一样的职场毛病(不懂装懂,抢功,过度自信), 速度快≠质量好,AI团队同样需要&amp;quot;慢下来想清楚&amp;quot;的机制, 人类监督不是可选项,是必选项&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>适用场景&lt;/strong>:如果你在研究AI Agent工作流,多Agent系统,或者想用OpenClaw搭建自己的Agent团队,这篇Day 1 build log是必读材料.&lt;/p>
+&lt;p>&lt;strong>原文地址&lt;/strong>:&lt;a href="https://the-agentic-dispatch.com/we-built-a-newsroom-out-of-ai-agents-heres-what-actually-happened">The Agentic Dispatch&lt;/a>&lt;/p>
+&lt;p>&lt;em>AI不是来取代记者的,它是来暴露&amp;quot;团队协作&amp;quot;有多难的.&lt;/em>&lt;/p></description></item></channel></rss>
