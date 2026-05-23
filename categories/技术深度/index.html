@@ -15,7 +15,7 @@ AlphaProof(Google DeepMind):2024 IMO 银牌 Aristotle(Harmonic):2025 IMO 金牌 
 自动化 = 游戏招式 一个有用的思维方式:每个 tactic 或决策过程是一个游戏招式.
 只有基本招式的系统:需要数百步才能完成例行推理 有强大自动化的系统:一步完成本来要几百步的工作 这对 AI 特别重要.用语言模型处理数百个底层证明步骤,就像用 LLM 算长算术表达式–能做,但远不如用对工具.强大的 tactic 让 AI 跳过程序性工作,专注于数学上有趣的决策.
 每一个你添加的强大 tactic,都是 AI 可以利用的新能力.
-...</p></div><footer class=entry-footer><span title='2026-02-20 15:10:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>104 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Lean 作者谈 AI 时代的证明助手:选对基础比 AI 更重要" href=https://claudeai.best/posts/hunter-2026022015/></a></article><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771551041810_cover.jpg alt=计算机科学与算法></figure><header class=entry-header><h2 class=entry-hint-parent>Frontier-CS:评估 LLM 解决最难 CS 问题的能力,为什么评估比生成更难</h2></header><div class=entry-content><p>传统的编程基准测试很简单:运行代码,检查输出,通过或失败.
+...</p></div><footer class=entry-footer><span title='2026-02-20 15:10:00 +0800 +0800'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>104 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Lean 作者谈 AI 时代的证明助手:选对基础比 AI 更重要" href=https://claudeai.best/posts/hunter-2026022015/></a></article><article class="post-entry tag-entry"><figure class=entry-cover><img loading=lazy src=https://cfpic.890214.net/file/1771551041810_cover.jpg alt=计算机科学与算法></figure><header class=entry-header><h2 class=entry-hint-parent>Frontier-CS:评估 LLM 解决最难 CS 问题的能力,为什么评估比生成更难</h2></header><div class=entry-content><p>传统的编程基准测试很简单:运行代码,检查输出,通过或失败.
 但 Frontier-CS 不一样.它的 240 个问题是开放式,连续评分的:
 优化一个 CUDA kernel 让它尽可能快 设计一个缓存淘汰策略让 miss rate 最小 实现一个跨核并行的排序算法 没有"正确答案",只有从"编译失败"到"超越参考实现"的光谱.
 问题是:评估比生成本身更难.
@@ -24,7 +24,7 @@ AlphaProof(Google DeepMind):2024 IMO 银牌 Aristotle(Harmonic):2025 IMO 金牌 
 解决方案:基于 hash 的断点续跑.每个结果记录 solution 文件和 problem 目录的 SHA hash.恢复时自动重跑变更的,保留未变的.
 2. 异构硬件规模化 一次批量跑可能包含:
 需要 A100 GPU 的 CUDA 优化题 需要 c7i.4xlarge(16 vCPU)的 HPC 负载 只需要普通 CPU 的算法题 解决方案:ResourceSignature 分组.把题目按 (cloud, accelerators, instance type) 分类,每组分配专属的 SkyPilot 集群池.CPU-only 跑便宜实例,GPU 题跑 GPU 实例.
-...</p></div><footer class=entry-footer><span title='2026-02-20 09:30:00 +0800 CST'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>204 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Frontier-CS:评估 LLM 解决最难 CS 问题的能力,为什么评估比生成更难" href=https://claudeai.best/posts/hunter-2026022009/></a></article></main><footer class=footer><span>&copy; 2026 <a href=https://claudeai.best/>AI 极客前沿</a></span> ·
+...</p></div><footer class=entry-footer><span title='2026-02-20 09:30:00 +0800 +0800'>2026年2月20日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>204 字</span>&nbsp;·&nbsp;<span>AI 极客前沿</span></footer><a class=entry-link aria-label="post link to Frontier-CS:评估 LLM 解决最难 CS 问题的能力,为什么评估比生成更难" href=https://claudeai.best/posts/hunter-2026022009/></a></article></main><footer class=footer><span>&copy; 2026 <a href=https://claudeai.best/>AI 极客前沿</a></span> ·
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
         <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>

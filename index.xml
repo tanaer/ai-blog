@@ -1,4 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AI 极客前沿</title><link>https://claudeai.best/</link><description>Recent content on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Sat, 07 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://claudeai.best/index.xml" rel="self" type="application/rss+xml"/><item><title>油价暴涨12%突破90美元：1983年以来最猛的一周</title><link>https://claudeai.best/posts/2026-03-07-oil-price-90/</link><pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/2026-03-07-oil-price-90/</guid><description>&lt;h1 id="油价暴涨12突破90美元1983年以来最猛的一周">油价暴涨12%突破90美元：1983年以来最猛的一周&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AI 极客前沿</title><link>https://claudeai.best/</link><description>Recent content on AI 极客前沿</description><generator>Hugo -- 0.146.0</generator><language>zh-cn</language><lastBuildDate>Sat, 14 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://claudeai.best/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenAI 发布 GPT-5.4：推理能力重大突破，API 降价 30%</title><link>https://claudeai.best/posts/2026-03-14-openai-gpt-5-4-release/</link><pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/2026-03-14-openai-gpt-5-4-release/</guid><description>OpenAI 正式发布 GPT-5.4，核心升级在推理能力。思维链可控性大幅提升，数学和代码基准测试超越前代 40%，API 价格下调 30%。</description></item><item><title>Nvidia GTC 2026前瞻：黄仁勋预告'世界级惊喜'芯片，代理AI时代来临</title><link>https://claudeai.best/posts/2026-03-12-nvidia-gtc-2026-preview/</link><pubDate>Thu, 12 Mar 2026 21:30:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-03-12-nvidia-gtc-2026-preview/</guid><description>&lt;p>还有4天，Nvidia GTC 2026就要开幕了。&lt;/p>
+&lt;p>这次不一样。黄仁勋亲自预告，将发布一款&amp;quot;world-surprising&amp;quot;芯片。&lt;/p>
+&lt;p>不是普通更新，是&lt;strong>从聊天机器人到完全自主AI代理的跨越&lt;/strong>。&lt;/p>
+&lt;h2 id="代理ai下一个万亿市场">代理AI：下一个万亿市场&lt;/h2>
+&lt;p>过去两年，AI都在做一件事：聊天。&lt;/p>
+&lt;p>ChatGPT、Claude、Gemini，本质上都是&amp;quot;高级聊天机器人&amp;quot;。&lt;/p>
+&lt;p>能回答问题，能写代码，但不能&lt;strong>自主行动&lt;/strong>。&lt;/p>
+&lt;p>GTC 2026要改变这个。&lt;/p>
+&lt;p>黄仁勋在博客里说得很直白：&lt;/p>
+&lt;blockquote>
+&lt;p>AI是人类历史上最大规模的基础设施建设。&lt;/p>&lt;/blockquote>
+&lt;p>这不是夸张。Bank of America 预测：&lt;/p>
+&lt;ul>
+&lt;li>2026-2027年，Nvidia数据中心业务累计收入&lt;strong>7500亿美元&lt;/strong>&lt;/li>
+&lt;li>2027-2028年，这个数字会突破&lt;strong>1万亿美元&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h2 id="为什么这次不同">为什么这次不同？&lt;/h2>
+&lt;p>三个信号：&lt;/p>
+&lt;h3 id="1-meta入局了">1. Meta入局了&lt;/h3>
+&lt;p>就在昨天，Meta宣布了4款自研AI芯片。&lt;/p>
+&lt;p>扎克伯格不想再依赖Nvidia了。&lt;/p>
+&lt;p>这是好事——&lt;strong>竞争加速创新&lt;/strong>。&lt;/p>
+&lt;p>Nvidia必须拿出更强的东西，才能守住王座。&lt;/p>
+&lt;h3 id="2-生态在扩张">2. 生态在扩张&lt;/h3>
+&lt;p>Nvidia刚和Thinking Machines Lab达成合作，部署Vera Rubin系统。&lt;/p>
+&lt;p>GTC上，大概率会宣布更多生态投资。&lt;/p>
+&lt;p>&lt;strong>芯片只是门票，生态才是护城河。&lt;/strong>&lt;/p>
+&lt;h3 id="3-华尔街在观望">3. 华尔街在观望&lt;/h3>
+&lt;p>Bank of America对投资者发出&amp;quot;谨慎乐观&amp;quot;警告。&lt;/p>
+&lt;p>听起来矛盾？其实很清晰：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>乐观&lt;/strong>：长期看好AI基础设施&lt;/li>
+&lt;li>&lt;strong>谨慎&lt;/strong>：短期预期已经很高，需要超预期的东西&lt;/li>
+&lt;/ul>
+&lt;p>&amp;ldquo;世界级惊喜&amp;quot;芯片，就是那个超预期的东西。&lt;/p>
+&lt;h2 id="投资机会在哪里">投资机会在哪里？&lt;/h2>
+&lt;h3 id="直接标的">直接标的&lt;/h3>
+&lt;p>&lt;strong>Nvidia (NVDA)&lt;/strong> - 主角&lt;/p>
+&lt;p>数据中心业务7500亿美元预期，已经反映在股价里了吗？&lt;/p>
+&lt;p>不好说。如果GTC发布的产品超预期，还有空间。&lt;/p>
+&lt;h3 id="供应链">供应链&lt;/h3>
+&lt;p>&lt;strong>Super Micro Computer (SMCI)&lt;/strong> - 年内涨了8.6%&lt;/p>
+&lt;p>GTC的最大受益者之一。&lt;/p>
+&lt;p>华尔街评级：2买入、6持有、2卖出&lt;/p>
+&lt;p>分歧很大，说明空间也大。&lt;/p>
+&lt;h3 id="竞争对手">竞争对手&lt;/h3>
+&lt;p>&lt;strong>AMD&lt;/strong> - 被Meta&amp;quot;背刺&amp;quot;了？&lt;/p>
+&lt;p>Meta自研芯片，意味着AMD失去了一个大客户。&lt;/p>
+&lt;p>但AMD的MI系列还在进步，不能小看。&lt;/p>
+&lt;h2 id="普通人能做什么">普通人能做什么？&lt;/h2>
+&lt;p>如果你不是投资者，GTC 2026也值得关注。&lt;/p></description></item><item><title>油价暴涨12%突破90美元：1983年以来最猛的一周</title><link>https://claudeai.best/posts/2026-03-07-oil-price-90/</link><pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/2026-03-07-oil-price-90/</guid><description>&lt;h1 id="油价暴涨12突破90美元1983年以来最猛的一周">油价暴涨12%突破90美元：1983年以来最猛的一周&lt;/h1>
 &lt;p>&lt;strong>WTI原油期货暴涨12%，布伦特原油突破92美元。这是1983年以来最大的单周涨幅。&lt;/strong>&lt;/p>
 &lt;h2 id="发生了什么">发生了什么？&lt;/h2>
 &lt;p>&lt;strong>伊朗冲突升级&lt;/strong>。&lt;/p>
@@ -453,52 +503,52 @@ AI 一秒钟能比价 100 家店.
 &lt;p>&lt;strong>参考来源:&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>Apple 官方新闻稿 (2026年2月27日)&lt;/li>
-&lt;/ul></description></item><item><title>老板在耳机里盯着你:汉堡王用AI监控员工说'请'和'谢谢'</title><link>https://claudeai.best/posts/hunter-2026-02-27-burger-king-patty/</link><pubDate>Fri, 27 Feb 2026 15:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026-02-27-burger-king-patty/</guid><description>&lt;h2 id="汉堡王的新监工">汉堡王的新&amp;quot;监工&amp;quot;&lt;/h2>
-&lt;p>汉堡王干了一件让人哭笑不得的事.&lt;/p>
-&lt;p>他们给500家门店的员工戴上智能耳机.
-耳机里住着个AI,叫Patty.&lt;/p>
-&lt;p>这AI不是来帮忙接单的.
-它是来盯着你说话的.&lt;/p>
+&lt;/ul></description></item><item><title>老板在耳机里盯着你：汉堡王用AI监控员工说'请'和'谢谢'</title><link>https://claudeai.best/posts/hunter-2026-02-27-burger-king-patty/</link><pubDate>Fri, 27 Feb 2026 15:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026-02-27-burger-king-patty/</guid><description>&lt;h2 id="汉堡王的新监工">汉堡王的新&amp;quot;监工&amp;quot;&lt;/h2>
+&lt;p>汉堡王干了一件让人哭笑不得的事。&lt;/p>
+&lt;p>他们给500家门店的员工戴上智能耳机。
+耳机里住着个AI，叫Patty。&lt;/p>
+&lt;p>这AI不是来帮忙接单的。
+它是来盯着你说话的。&lt;/p>
 &lt;h2 id="请和谢谢成了kpi">&amp;ldquo;请&amp;quot;和&amp;quot;谢谢&amp;quot;成了KPI&lt;/h2>
-&lt;p>Patty会实时监听员工和顾客的对话.
-它只关心一件事:
-你是不是说了&amp;quot;欢迎光临&amp;rdquo;,&amp;ldquo;请&amp;rdquo;,&amp;ldquo;谢谢&amp;rdquo;.&lt;/p>
-&lt;p>说了,OK.
-没说,记录在案.&lt;/p>
-&lt;p>这数据会汇总给店长.
-员工的服务态度从此有了&amp;quot;数据支撑&amp;quot;.&lt;/p>
+&lt;p>Patty会实时监听员工和顾客的对话。
+它只关心一件事：
+你是不是说了&amp;quot;欢迎光临&amp;rdquo;、&amp;ldquo;请&amp;rdquo;、&amp;ldquo;谢谢&amp;rdquo;。&lt;/p>
+&lt;p>说了，OK。
+没说，记录在案。&lt;/p>
+&lt;p>这数据会汇总给店长。
+员工的服务态度从此有了&amp;quot;数据支撑&amp;quot;。&lt;/p>
 &lt;h2 id="不止盯着礼貌">不止盯着礼貌&lt;/h2>
-&lt;p>Patty还能干别的.&lt;/p>
-&lt;p>库存不够了,它会提醒.
-某个菜品卖完了,它会自动把菜单上的选项灰掉.
-店里有啥异常,它会通知经理.&lt;/p>
-&lt;p>听起来挺智能.
-但员工的感觉呢?&lt;/p>
+&lt;p>Patty还能干别的。&lt;/p>
+&lt;p>库存不够了，它会提醒。
+某个菜品卖完了，它会自动把菜单上的选项灰掉。
+店里有啥异常，它会通知经理。&lt;/p>
+&lt;p>听起来挺智能。
+但员工的感觉呢？&lt;/p>
 &lt;h2 id="打工人的噩梦">打工人的噩梦&lt;/h2>
-&lt;p>想象一下.
-你正在后厨忙得团团转.
-耳边有个AI在评判你的每一句话.&lt;/p>
-&lt;p>&amp;ldquo;你刚才没说谢谢.&amp;rdquo;
-&amp;ldquo;这句语气不够热情.&amp;rdquo;&lt;/p>
-&lt;p>这不是科幻片.
-这是正在发生的事.&lt;/p>
-&lt;p>汉堡王计划2026年底在美国所有门店推广.
-7000多家店,几万名员工.&lt;/p>
-&lt;h2 id="隐私在哪">隐私在哪?&lt;/h2>
-&lt;p>员工能拒绝吗?
-不能.
-戴耳机是工作要求.&lt;/p>
-&lt;p>对话被录音了吗?
-汉堡王说没有.
-只是&amp;quot;实时分析&amp;quot;.&lt;/p>
-&lt;p>你信吗?&lt;/p>
+&lt;p>想象一下。
+你正在后厨忙得团团转。
+耳边有个AI在评判你的每一句话。&lt;/p>
+&lt;p>&amp;ldquo;你刚才没说谢谢。&amp;rdquo;
+&amp;ldquo;这句语气不够热情。&amp;rdquo;&lt;/p>
+&lt;p>这不是科幻片。
+这是正在发生的事。&lt;/p>
+&lt;p>汉堡王计划2026年底在美国所有门店推广。
+7000多家店，几万名员工。&lt;/p>
+&lt;h2 id="隐私在哪">隐私在哪？&lt;/h2>
+&lt;p>员工能拒绝吗？
+不能。
+戴耳机是工作要求。&lt;/p>
+&lt;p>对话被录音了吗？
+汉堡王说没有。
+只是&amp;quot;实时分析&amp;quot;。&lt;/p>
+&lt;p>你信吗？&lt;/p>
 &lt;h2 id="ai进职场的信号">AI进职场的信号&lt;/h2>
-&lt;p>Patty不是第一个.
-也不会是最后一个.&lt;/p>
-&lt;p>AI正在从&amp;quot;帮你干活&amp;quot;变成&amp;quot;盯着你干活&amp;quot;.
-效率提升了.
-人却更像机器了.&lt;/p>
-&lt;p>这就是2026年的职场.&lt;/p></description></item><item><title>英伟达的芯片,进得去中国吗?</title><link>https://claudeai.best/posts/hunter-2026022714/</link><pubDate>Fri, 27 Feb 2026 14:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022714/</guid><description>美国批准了 H200 出口,但英伟达至今零收入.中国对手便宜又能打,连 Sam Altman 都说令人惊叹.</description></item><item><title>硅谷产品开始用中国大模型</title><link>https://claudeai.best/posts/2026-02-27-silicon-valley-chinese-llms/</link><pubDate>Fri, 27 Feb 2026 12:04:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-27-silicon-valley-chinese-llms/</guid><description>&lt;p>2025年1月,硅谷炸了.&lt;/p>
+&lt;p>Patty不是第一个。
+也不会是最后一个。&lt;/p>
+&lt;p>AI正在从&amp;quot;帮你干活&amp;quot;变成&amp;quot;盯着你干活&amp;quot;。
+效率提升了。
+人却更像机器了。&lt;/p>
+&lt;p>这就是2026年的职场。&lt;/p></description></item><item><title>英伟达的芯片,进得去中国吗?</title><link>https://claudeai.best/posts/hunter-2026022714/</link><pubDate>Fri, 27 Feb 2026 14:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022714/</guid><description>美国批准了 H200 出口,但英伟达至今零收入.中国对手便宜又能打,连 Sam Altman 都说令人惊叹.</description></item><item><title>硅谷产品开始用中国大模型</title><link>https://claudeai.best/posts/2026-02-27-silicon-valley-chinese-llms/</link><pubDate>Fri, 27 Feb 2026 12:04:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-27-silicon-valley-chinese-llms/</guid><description>&lt;p>2025年1月,硅谷炸了.&lt;/p>
 &lt;p>一个叫DeepSeek的中国团队发布了R1模型.这个模型有多强?性能媲美OpenAI的o1,价格却只有2.19美元/百万tokens.o1要60美元.&lt;/p>
 &lt;p>消息一出,英伟达股价暴跌.美国科技股市值蒸发1万亿美元.DeepSeek冲上美国App Store下载榜第一.&lt;/p>
 &lt;p>美国人才发现:原来不用OpenAI,也能用上顶级AI.&lt;/p>
@@ -816,43 +866,43 @@ AI 一秒钟能比价 100 家店.
 &lt;p>机器比上一代薄了 0.3 毫米,轻了 4 克.芯片是骁龙 8 Elite Gen 5,CPU 快 19%,NPU 快 39%.&lt;/p>
 &lt;p>充电 30 分钟能到 75%.&lt;/p>
 &lt;p>定价还没出,但估计不会便宜.&lt;/p>
-&lt;p>&lt;em>参考来源:Tom&amp;rsquo;s Guide 直播报道,三星官方发布会&lt;/em>&lt;/p></description></item><item><title>2026年AI的六大突破:不再是更大,而是更聪明</title><link>https://claudeai.best/posts/2026-02-26-ai-six-breakthroughs-2026/</link><pubDate>Thu, 26 Feb 2026 08:04:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-26-ai-six-breakthroughs-2026/</guid><description>AI Agent终于能互相聊天了,还能自己检查作业.这六项突破正在改变一切.</description></item><item><title>2026年AI落地:世界模型和小模型的实用化转变</title><link>https://claudeai.best/posts/hunter-2026-02-26-2/</link><pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/hunter-2026-02-26-2/</guid><description>2026年AI从浮夸走向务实.世界模型让AI真正理解物理世界,小模型则在企业落地中展现成本优势.Google,DeepMind,Runway纷纷布局,一场技术范式转移正在进行.</description></item><item><title>MIT教授预警:AI泡沫2026年可能破灭</title><link>https://claudeai.best/posts/hunter-2026-02-26-3/</link><pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/hunter-2026-02-26-3/</guid><description>MIT Sloan两位教授Thomas Davenport和Randy Bean联合发文,详细分析AI泡沫即将破灭的原因.估值过高,盈利困难,中国竞争加剧,AI行业正在重演互联网泡沫的剧本.</description></item><item><title>Perplexity Computer:19个AI模型的数字工作者</title><link>https://claudeai.best/posts/hunter-2026022622/</link><pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/hunter-2026022622/</guid><description>Perplexity AI推出革命性云平台,整合19个AI模型,打造真正的端到端数字工作者</description></item><item><title>不到 2% 品牌能被 AI 推荐?这个新标准想改写规则</title><link>https://claudeai.best/posts/2026-02-26-llm-ld-standard/</link><pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/2026-02-26-llm-ld-standard/</guid><description>Capxel 推出的 LLM-LD 标准,让你的网站内容能被 AI 原生读取.已有 100+ 网站采用,开源免费.</description></item><item><title>抖音豆包日活破亿,这场春节 AI 大战它赢了</title><link>https://claudeai.best/posts/2026-02-26-douyin-doubao-100m-users/</link><pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/2026-02-26-douyin-doubao-100m-users/</guid><description>&lt;p>春节不只是抢红包.
-还成了 AI 公司的战场.&lt;/p>
-&lt;p>这场仗打完了.
-字节跳动的豆包赢了.&lt;/p>
-&lt;p>2 月 16 日,豆包日活破亿.
-这数字是 2 月初的 4 倍.&lt;/p>
-&lt;p>怎么做到的?&lt;/p>
-&lt;p>豆包跟春晚合作了.
-那晚,观众用豆包问了近 20 亿次.&lt;/p>
-&lt;p>阿里和腾讯也在砸钱.&lt;/p>
-&lt;p>阿里花了 3 个亿推 Qwen.
-用户点奶茶,订机票都有补贴.
-Qwen 日活最高 3000 万.
-节后还剩 2200 万.
-阿里的策略是实用.
-真留住人了.&lt;/p>
-&lt;p>腾讯更大方.
-直接发 10 亿优惠券.
-元宝日活冲到 5000 万.
-但节后掉得快.
-优惠券发完了,人也走了.&lt;/p>
-&lt;p>数据显示,这三家节后都掉用户.
-但 Qwen 掉得最少.&lt;/p>
-&lt;p>为什么?
-因为它真有用.
-节日期间,用户通过 Qwen 下单.
-快 2 亿单.
-买鸡蛋,订机票,点奶茶,都行.&lt;/p>
-&lt;p>这场春节 AI 大战说明了什么?&lt;/p>
-&lt;p>砸钱能拉人,但留不住.
-真正有用的产品,才能活下来.&lt;/p>
-&lt;p>豆包靠春晚出圈.
-Qwen 靠功能留人.
-元宝靠补贴冲量.
-但补贴一停,用户就跑.&lt;/p>
-&lt;p>2026 年的 AI 竞争,才刚刚开始.
-春节这一仗,给所有人都上了一课.&lt;/p></description></item><item><title>中国 AI 新突破:Qwen 3.5 和 DeepSeek V4 蓄势待发</title><link>https://claudeai.best/posts/hunter-2026-02-26/</link><pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/hunter-2026-02-26/</guid><description>阿里巴巴 Qwen 3.5 已正式发布,强化数学编码能力;DeepSeek V4 即将推出,中国 AI 以开源和低成本策略挑战硅谷巨头.运行成本仅为美国同类系统的 1/6 到 1/4(数据来源:RAND 研究报告).</description></item><item><title>中国 Physical AI 正在碾压美国:85% vs 13% 的机器人战争</title><link>https://claudeai.best/posts/2026-02-26-china-physical-ai-breakthrough/</link><pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/2026-02-26-china-physical-ai-breakthrough/</guid><description>2026年春晚机器人会空翻了,全球85%的人形机器人在中国,阿里巴巴开源机器人AI模型.Physical AI的战争,中国已经领先.</description></item><item><title>英伟达财报来了,AI泡沫破了吗?</title><link>https://claudeai.best/posts/2026-02-26-nvidia-earnings-ai-bubble/</link><pubDate>Thu, 26 Feb 2026 07:04:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-26-nvidia-earnings-ai-bubble/</guid><description>英伟达最新财报显示季度收入681亿美元,数据中心业务增长75%,但市场开始担心AI投资泡沫和循环投资问题.华尔街在狂欢与恐慌之间摇摆.</description></item><item><title>英伟达财报来了,AI泡沫破了吗?</title><link>https://claudeai.best/posts/hunter-2026022607/</link><pubDate>Thu, 26 Feb 2026 07:04:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022607/</guid><description>英伟达最新财报显示季度收入681亿美元,数据中心业务增长75%,但市场开始担心AI投资泡沫和循环投资问题.华尔街在狂欢与恐慌之间摇摆.</description></item><item><title>Anthropic Claude Cowork 企业版来了!</title><link>https://claudeai.best/posts/hunter-2026022606/</link><pubDate>Thu, 26 Feb 2026 06:06:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022606/</guid><description>&lt;h2 id="ai-助手终于长本事了">AI 助手终于&amp;quot;长本事&amp;quot;了&lt;/h2>
+&lt;p>&lt;em>参考来源:Tom&amp;rsquo;s Guide 直播报道,三星官方发布会&lt;/em>&lt;/p></description></item><item><title>2026年AI的六大突破:不再是更大,而是更聪明</title><link>https://claudeai.best/posts/2026-02-26-ai-six-breakthroughs-2026/</link><pubDate>Thu, 26 Feb 2026 08:04:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-26-ai-six-breakthroughs-2026/</guid><description>AI Agent终于能互相聊天了,还能自己检查作业.这六项突破正在改变一切.</description></item><item><title>2026年AI落地：世界模型和小模型的实用化转变</title><link>https://claudeai.best/posts/hunter-2026-02-26-2/</link><pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/hunter-2026-02-26-2/</guid><description>2026年AI从浮夸走向务实。世界模型让AI真正理解物理世界，小模型则在企业落地中展现成本优势。Google、DeepMind、Runway纷纷布局，一场技术范式转移正在进行。</description></item><item><title>MIT教授预警:AI泡沫2026年可能破灭</title><link>https://claudeai.best/posts/hunter-2026-02-26-3/</link><pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/hunter-2026-02-26-3/</guid><description>MIT Sloan两位教授Thomas Davenport和Randy Bean联合发文,详细分析AI泡沫即将破灭的原因.估值过高,盈利困难,中国竞争加剧,AI行业正在重演互联网泡沫的剧本.</description></item><item><title>Perplexity Computer：19个AI模型的数字工作者</title><link>https://claudeai.best/posts/hunter-2026022622/</link><pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/hunter-2026022622/</guid><description>Perplexity AI推出革命性云平台，整合19个AI模型，打造真正的端到端数字工作者</description></item><item><title>不到 2% 品牌能被 AI 推荐?这个新标准想改写规则</title><link>https://claudeai.best/posts/2026-02-26-llm-ld-standard/</link><pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/2026-02-26-llm-ld-standard/</guid><description>Capxel 推出的 LLM-LD 标准,让你的网站内容能被 AI 原生读取.已有 100+ 网站采用,开源免费.</description></item><item><title>抖音豆包日活破亿，这场春节 AI 大战它赢了</title><link>https://claudeai.best/posts/2026-02-26-douyin-doubao-100m-users/</link><pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/2026-02-26-douyin-doubao-100m-users/</guid><description>&lt;p>春节不只是抢红包。
+还成了 AI 公司的战场。&lt;/p>
+&lt;p>这场仗打完了。
+字节跳动的豆包赢了。&lt;/p>
+&lt;p>2 月 16 日，豆包日活破亿。
+这数字是 2 月初的 4 倍。&lt;/p>
+&lt;p>怎么做到的？&lt;/p>
+&lt;p>豆包跟春晚合作了。
+那晚，观众用豆包问了近 20 亿次。&lt;/p>
+&lt;p>阿里和腾讯也在砸钱。&lt;/p>
+&lt;p>阿里花了 3 个亿推 Qwen。
+用户点奶茶、订机票都有补贴。
+Qwen 日活最高 3000 万。
+节后还剩 2200 万。
+阿里的策略是实用。
+真留住人了。&lt;/p>
+&lt;p>腾讯更大方。
+直接发 10 亿优惠券。
+元宝日活冲到 5000 万。
+但节后掉得快。
+优惠券发完了，人也走了。&lt;/p>
+&lt;p>数据显示，这三家节后都掉用户。
+但 Qwen 掉得最少。&lt;/p>
+&lt;p>为什么？
+因为它真有用。
+节日期间，用户通过 Qwen 下单。
+快 2 亿单。
+买鸡蛋、订机票、点奶茶，都行。&lt;/p>
+&lt;p>这场春节 AI 大战说明了什么？&lt;/p>
+&lt;p>砸钱能拉人，但留不住。
+真正有用的产品，才能活下来。&lt;/p>
+&lt;p>豆包靠春晚出圈。
+Qwen 靠功能留人。
+元宝靠补贴冲量。
+但补贴一停，用户就跑。&lt;/p>
+&lt;p>2026 年的 AI 竞争，才刚刚开始。
+春节这一仗，给所有人都上了一课。&lt;/p></description></item><item><title>中国 AI 新突破:Qwen 3.5 和 DeepSeek V4 蓄势待发</title><link>https://claudeai.best/posts/hunter-2026-02-26/</link><pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/hunter-2026-02-26/</guid><description>阿里巴巴 Qwen 3.5 已正式发布,强化数学编码能力;DeepSeek V4 即将推出,中国 AI 以开源和低成本策略挑战硅谷巨头.运行成本仅为美国同类系统的 1/6 到 1/4(数据来源:RAND 研究报告).</description></item><item><title>中国 Physical AI 正在碾压美国:85% vs 13% 的机器人战争</title><link>https://claudeai.best/posts/2026-02-26-china-physical-ai-breakthrough/</link><pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/2026-02-26-china-physical-ai-breakthrough/</guid><description>2026年春晚机器人会空翻了,全球85%的人形机器人在中国,阿里巴巴开源机器人AI模型.Physical AI的战争,中国已经领先.</description></item><item><title>英伟达财报来了,AI泡沫破了吗?</title><link>https://claudeai.best/posts/2026-02-26-nvidia-earnings-ai-bubble/</link><pubDate>Thu, 26 Feb 2026 07:04:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-26-nvidia-earnings-ai-bubble/</guid><description>英伟达最新财报显示季度收入681亿美元,数据中心业务增长75%,但市场开始担心AI投资泡沫和循环投资问题.华尔街在狂欢与恐慌之间摇摆.</description></item><item><title>英伟达财报来了,AI泡沫破了吗?</title><link>https://claudeai.best/posts/hunter-2026022607/</link><pubDate>Thu, 26 Feb 2026 07:04:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022607/</guid><description>英伟达最新财报显示季度收入681亿美元,数据中心业务增长75%,但市场开始担心AI投资泡沫和循环投资问题.华尔街在狂欢与恐慌之间摇摆.</description></item><item><title>Anthropic Claude Cowork 企业版来了!</title><link>https://claudeai.best/posts/hunter-2026022606/</link><pubDate>Thu, 26 Feb 2026 06:06:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022606/</guid><description>&lt;h2 id="ai-助手终于长本事了">AI 助手终于&amp;quot;长本事&amp;quot;了&lt;/h2>
 &lt;p>昨天 Anthropic 放了个大招.&lt;/p>
 &lt;p>Claude Cowork 企业版正式上线.&lt;/p>
 &lt;p>不再是实验室里的玩具.&lt;/p>
@@ -3024,7 +3074,144 @@ alt: 手机控制编程界面&lt;/p>
 &lt;hr>
 &lt;p>这些战争有一个共同点：&lt;/p>
 &lt;p>&lt;strong>发动者都以为会很快结束。&lt;/strong>&lt;/p>
-&lt;p>&lt;strong>结果都变成了长期消耗。&lt;/strong>&lt;/p></description></item><item><title/><link>https://claudeai.best/posts/hunter-2026022612/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/hunter-2026022612/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;p>&lt;strong>结果都变成了长期消耗。&lt;/strong>&lt;/p></description></item><item><title/><link>https://claudeai.best/posts/2026-03-17-ai-diy-cancer-vaccine/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/2026-03-17-ai-diy-cancer-vaccine/</guid><description>&lt;h1 id="他用-chatgpt--alphafold-给爱犬自制癌症疫苗ai-医疗-diy-时代来了">他用 ChatGPT + AlphaFold 给爱犬自制癌症疫苗：AI 医疗 DIY 时代来了&lt;/h1>
+&lt;blockquote>
+&lt;p>这不是科幻小说。这是一个真实发生的故事，发生在 2026 年的澳大利亚。&lt;/p>&lt;/blockquote>
+&lt;hr>
+&lt;h2 id="-故事的主角">🐕 故事的主角&lt;/h2>
+&lt;p>&lt;strong>Rosie&lt;/strong>，8 岁，Staffordshire 梗犬。&lt;/p>
+&lt;p>2024 年，被诊断出肥大细胞癌（mast cell cancer）。&lt;/p>
+&lt;p>化疗、手术都试过了，肿瘤还在长。&lt;/p>
+&lt;p>兽医说：还有几个月。&lt;/p>
+&lt;p>主人 &lt;strong>Paul Conyngham&lt;/strong> 不服。&lt;/p>
+&lt;p>他是悉尼的科技公司联合创始人，搞机器学习和数据分析的。&lt;/p>
+&lt;p>&lt;strong>没有医学背景，但有 AI 工具。&lt;/strong>&lt;/p>
+&lt;hr>
+&lt;h2 id="-ai-工具链">🤖 AI 工具链&lt;/h2>
+&lt;p>他的操作，堪称「AI 医疗 DIY」教科书：&lt;/p>
+&lt;h3 id="第一步chatgpt-制定计划">第一步：ChatGPT 制定计划&lt;/h3>
+&lt;blockquote>
+&lt;p>「我去找 ChatGPT，让它给了我一个怎么做这件事的计划。」
+—— Paul Conyngham&lt;/p>&lt;/blockquote>
+&lt;h3 id="第二步alphafold-分析蛋白结构">第二步：AlphaFold 分析蛋白结构&lt;/h3>
+&lt;p>Google DeepMind 的 AlphaFold，用来：&lt;/p>
+&lt;ul>
+&lt;li>分析肿瘤 DNA 序列&lt;/li>
+&lt;li>找出突变的蛋白质&lt;/li>
+&lt;li>锁定可以作为治疗靶点的目标&lt;/li>
+&lt;/ul>
+&lt;h3 id="第三步联系-unsw-基因组学中心">第三步：联系 UNSW 基因组学中心&lt;/h3>
+&lt;p>ChatGPT 推荐了新南威尔士大学（UNSW）的 Ramaciotti 基因组学中心。&lt;/p>
+&lt;p>Paul 自掏腰包，给 Rosie 做了基因组测序。&lt;/p>
+&lt;h3 id="第四步定制-mrna-疫苗">第四步：定制 mRNA 疫苗&lt;/h3>
+&lt;p>UNSW RNA 研究所所长 &lt;strong>Pall Thordarson&lt;/strong> 被说动了。&lt;/p></description></item><item><title/><link>https://claudeai.best/posts/2026-03-17-anthropic-ai-job-impact-study/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/2026-03-17-anthropic-ai-job-impact-study/</guid><description>&lt;h1 id="anthropic-发布-ai-就业冲击研究白领大衰退可能来临">Anthropic 发布 AI 就业冲击研究：白领「大衰退」可能来临&lt;/h1>
+&lt;blockquote>
+&lt;p>这不是猜测，是数据。Anthropic 用自家 Claude 的真实使用数据，绘制了一份 AI 就业冲击地图。&lt;/p>&lt;/blockquote>
+&lt;hr>
+&lt;h2 id="-核心发现">📊 核心发现&lt;/h2>
+&lt;p>Anthropic 两位经济学家 Maxim Massenkoff 和 Peter McCrory 发布了一份报告：&lt;/p>
+&lt;p>&lt;strong>《AI 的劳动力市场影响：新度量与早期证据》&lt;/strong>&lt;/p>
+&lt;p>关键结论：&lt;/p>
+&lt;h3 id="1-ai-实际使用率远低于理论能力">1. AI 实际使用率远低于理论能力&lt;/h3>
+&lt;p>AI 理论上能做的事 vs 实际在做的事，差距巨大。&lt;/p>
+&lt;p>&lt;strong>例子：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>计算机/数学工作：AI 理论上能处理 94% 的任务，实际只覆盖 33%&lt;/li>
+&lt;li>办公室行政：理论 90%，实际使用是个零头&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>这个差距，就是未来的冲击空间。&lt;/strong>&lt;/p>
+&lt;h3 id="2-最容易被替代的-5-个职业">2. 最容易被替代的 5 个职业&lt;/h3>
+&lt;ol>
+&lt;li>&lt;strong>计算机程序员&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>客服代表&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>数据录入员&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>医疗记录专员&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>市场研究分析师/营销专员&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;p>不意外，全是白领。&lt;/p>
+&lt;h3 id="3-最不容易被替代的-5-个职业">3. 最不容易被替代的 5 个职业&lt;/h3>
+&lt;ol>
+&lt;li>&lt;strong>厨师&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>摩托车修理工&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>救生员&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>调酒师&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>洗碗工&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;p>共同点：&lt;strong>需要物理在场，动手操作。&lt;/strong>&lt;/p>
+&lt;hr>
+&lt;h2 id="-新指标observed-exposure">🔍 新指标：「Observed Exposure」&lt;/h2>
+&lt;p>Anthropic 搞了个新指标，叫「观测暴露度」。&lt;/p>
+&lt;p>&lt;strong>计算方法：&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>O*NET 数据库：800+ 职业的任务清单&lt;/li>
+&lt;li>Claude 真实使用数据：哪些任务在用 AI 自动化&lt;/li>
+&lt;li>理论能力评估：LLM 理论上能加速哪些任务&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>公式：&lt;/strong>&lt;/p></description></item><item><title/><link>https://claudeai.best/posts/2026-03-17-qwen35-9b-opus-distilled/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/2026-03-17-qwen35-9b-opus-distilled/</guid><description>&lt;h1 id="9b-小模型蒸馏出-claude-46-opus-能力本地部署党的春天来了">9B 小模型蒸馏出 Claude-4.6-Opus 能力：本地部署党的春天来了？&lt;/h1>
+&lt;blockquote>
+&lt;p>开源社区又搞事情了。这次不是大厂的军备竞赛，而是个人开发者用消费级显卡就能跑起来的「小钢炮」。&lt;/p>&lt;/blockquote>
+&lt;hr>
+&lt;h2 id="-发生了什么">🔥 发生了什么&lt;/h2>
+&lt;p>Reddit 的 LocalLLaMA 板块昨天炸了。&lt;/p>
+&lt;p>一个名为 &lt;code>Jackrong&lt;/code> 的开发者在 HuggingFace 发布了一系列蒸馏模型：&lt;strong>Qwen3.5-9B-Claude-4.6-Opus-Distilled&lt;/strong>。&lt;/p>
+&lt;p>简单说，就是把 Claude-4.6-Opus 的「思考方式」蒸馏进只有 9B 参数的 Qwen3.5 里。&lt;/p>
+&lt;p>&lt;strong>结果：小模型跑出了大模型 90% 的能力。&lt;/strong>&lt;/p>
+&lt;hr>
+&lt;h2 id="-技术细节">🎯 技术细节&lt;/h2>
+&lt;h3 id="蒸馏原理">蒸馏原理&lt;/h3>
+&lt;p>这不是简单的「输出模仿」。&lt;/p>
+&lt;p>核心是 &lt;strong>Chain-of-Thought (CoT) 蒸馏&lt;/strong>：&lt;/p>
+&lt;ol>
+&lt;li>用 Claude-4.6-Opus 生成大量带思维链的训练数据&lt;/li>
+&lt;li>Supervised Fine-Tuning (SFT) 微调 Qwen3.5&lt;/li>
+&lt;li>重点学习结构化推理逻辑：&lt;code>&amp;lt;think&amp;gt;&lt;/code> 标签内的思考步骤&lt;/li>
+&lt;li>输出格式严格对齐 Opus 的思考范式&lt;/li>
+&lt;/ol>
+&lt;h3 id="关键优化">关键优化&lt;/h3>
+&lt;p>Qwen3.5 原本有个毛病：&lt;strong>简单问题也想太多&lt;/strong>。&lt;/p>
+&lt;p>比如问「1+1 等于几」，它可能来个三段式分析。&lt;/p>
+&lt;p>蒸馏后的版本学会了：&lt;/p>
+&lt;ul>
+&lt;li>简单问题快速回答&lt;/li>
+&lt;li>复杂问题才启动深度思考&lt;/li>
+&lt;li>结构化输出：「Let me analyze this request carefully: 1..2..3&amp;hellip;」&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>推理效率大幅提升，冗余思考减少。&lt;/strong>&lt;/p>
+&lt;hr>
+&lt;h2 id="-可用版本">📦 可用版本&lt;/h2>
+&lt;p>目前 HuggingFace 上能找到的：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>模型&lt;/th>
+&lt;th>参数量&lt;/th>
+&lt;th>说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Qwen3.5-9B-Claude-4.6-Opus-Reasoning-Distilled&lt;/td>
+&lt;td>9B&lt;/td>
+&lt;td>基础推理版&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Qwen3.5-9B-Claude-4.6-Opus-Reasoning-Distilled-GGUF&lt;/td>
+&lt;td>9B&lt;/td>
+&lt;td>GGUF 量化版，本地可跑&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled&lt;/td>
+&lt;td>27B&lt;/td>
+&lt;td>更大版本&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED&lt;/td>
+&lt;td>9B&lt;/td>
+&lt;td>无审查版&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>GGUF 量化版是什么概念？&lt;/strong>&lt;/p></description></item><item><title/><link>https://claudeai.best/posts/hunter-2026022612/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/hunter-2026022612/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;cover&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;alt&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Neuromorphic computing chip with brain-inspired neural networks, showing energy-efficient architecture for solving complex mathematical equations&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
