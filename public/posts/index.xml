@@ -1,132 +1,185 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on AI 极客前沿</title><link>https://claudeai.best/posts/</link><description>Recent content in Posts on AI 极客前沿</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Fri, 27 Feb 2026 18:00:00 +0800</lastBuildDate><atom:link href="https://claudeai.best/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>AI界'偷师'大案：三家中企被曝大规模窃取Claude能力</title><link>https://claudeai.best/posts/hunter-2026022718/</link><pubDate>Fri, 27 Feb 2026 18:00:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026022718/</guid><description>DeepSeek、MiniMax和Moonshot被指控通过24000个虚假账户进行蒸馏攻击</description></item><item><title>老板在耳机里盯着你：汉堡王用AI监控员工说'请'和'谢谢'</title><link>https://claudeai.best/posts/hunter-2026-02-27-burger-king-patty/</link><pubDate>Fri, 27 Feb 2026 15:10:00 +0800</pubDate><guid>https://claudeai.best/posts/hunter-2026-02-27-burger-king-patty/</guid><description>&lt;h2 id="汉堡王的新监工">汉堡王的新&amp;quot;监工&amp;quot;&lt;/h2>
-&lt;p>汉堡王干了一件让人哭笑不得的事。&lt;/p>
-&lt;p>他们给500家门店的员工戴上智能耳机。
-耳机里住着个AI，叫Patty。&lt;/p>
-&lt;p>这AI不是来帮忙接单的。
-它是来盯着你说话的。&lt;/p>
-&lt;h2 id="请和谢谢成了kpi">&amp;ldquo;请&amp;quot;和&amp;quot;谢谢&amp;quot;成了KPI&lt;/h2>
-&lt;p>Patty会实时监听员工和顾客的对话。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on AI 极客前沿</title>
+    <link>https://claudeai.best/posts/</link>
+    <description>Recent content in Posts on AI 极客前沿</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 27 Feb 2026 18:00:00 +0800</lastBuildDate>
+    <atom:link href="https://claudeai.best/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI界&#39;偷师&#39;大案：三家中企被曝大规模窃取Claude能力</title>
+      <link>https://claudeai.best/posts/hunter-2026022718/</link>
+      <pubDate>Fri, 27 Feb 2026 18:00:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022718/</guid>
+      <description>DeepSeek、MiniMax和Moonshot被指控通过24000个虚假账户进行蒸馏攻击</description>
+    </item>
+    <item>
+      <title>老板在耳机里盯着你：汉堡王用AI监控员工说&#39;请&#39;和&#39;谢谢&#39;</title>
+      <link>https://claudeai.best/posts/hunter-2026-02-27-burger-king-patty/</link>
+      <pubDate>Fri, 27 Feb 2026 15:10:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026-02-27-burger-king-patty/</guid>
+      <description>&lt;h2 id=&#34;汉堡王的新监工&#34;&gt;汉堡王的新&amp;quot;监工&amp;quot;&lt;/h2&gt;
+&lt;p&gt;汉堡王干了一件让人哭笑不得的事。&lt;/p&gt;
+&lt;p&gt;他们给500家门店的员工戴上智能耳机。
+耳机里住着个AI，叫Patty。&lt;/p&gt;
+&lt;p&gt;这AI不是来帮忙接单的。
+它是来盯着你说话的。&lt;/p&gt;
+&lt;h2 id=&#34;请和谢谢成了kpi&#34;&gt;&amp;ldquo;请&amp;quot;和&amp;quot;谢谢&amp;quot;成了KPI&lt;/h2&gt;
+&lt;p&gt;Patty会实时监听员工和顾客的对话。
 它只关心一件事：
-你是不是说了&amp;quot;欢迎光临&amp;rdquo;、&amp;ldquo;请&amp;rdquo;、&amp;ldquo;谢谢&amp;rdquo;。&lt;/p>
-&lt;p>说了，OK。
-没说，记录在案。&lt;/p>
-&lt;p>这数据会汇总给店长。
-员工的服务态度从此有了&amp;quot;数据支撑&amp;quot;。&lt;/p>
-&lt;h2 id="不止盯着礼貌">不止盯着礼貌&lt;/h2>
-&lt;p>Patty还能干别的。&lt;/p>
-&lt;p>库存不够了，它会提醒。
+你是不是说了&amp;quot;欢迎光临&amp;rdquo;、&amp;ldquo;请&amp;rdquo;、&amp;ldquo;谢谢&amp;rdquo;。&lt;/p&gt;
+&lt;p&gt;说了，OK。
+没说，记录在案。&lt;/p&gt;
+&lt;p&gt;这数据会汇总给店长。
+员工的服务态度从此有了&amp;quot;数据支撑&amp;quot;。&lt;/p&gt;
+&lt;h2 id=&#34;不止盯着礼貌&#34;&gt;不止盯着礼貌&lt;/h2&gt;
+&lt;p&gt;Patty还能干别的。&lt;/p&gt;
+&lt;p&gt;库存不够了，它会提醒。
 某个菜品卖完了，它会自动把菜单上的选项灰掉。
-店里有啥异常，它会通知经理。&lt;/p>
-&lt;p>听起来挺智能。
-但员工的感觉呢？&lt;/p>
-&lt;h2 id="打工人的噩梦">打工人的噩梦&lt;/h2>
-&lt;p>想象一下。
+店里有啥异常，它会通知经理。&lt;/p&gt;
+&lt;p&gt;听起来挺智能。
+但员工的感觉呢？&lt;/p&gt;
+&lt;h2 id=&#34;打工人的噩梦&#34;&gt;打工人的噩梦&lt;/h2&gt;
+&lt;p&gt;想象一下。
 你正在后厨忙得团团转。
-耳边有个AI在评判你的每一句话。&lt;/p>
-&lt;p>&amp;ldquo;你刚才没说谢谢。&amp;rdquo;
-&amp;ldquo;这句语气不够热情。&amp;rdquo;&lt;/p>
-&lt;p>这不是科幻片。
-这是正在发生的事。&lt;/p>
-&lt;p>汉堡王计划2026年底在美国所有门店推广。
-7000多家店，几万名员工。&lt;/p>
-&lt;h2 id="隐私在哪">隐私在哪？&lt;/h2>
-&lt;p>员工能拒绝吗？
+耳边有个AI在评判你的每一句话。&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;你刚才没说谢谢。&amp;rdquo;
+&amp;ldquo;这句语气不够热情。&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;这不是科幻片。
+这是正在发生的事。&lt;/p&gt;
+&lt;p&gt;汉堡王计划2026年底在美国所有门店推广。
+7000多家店，几万名员工。&lt;/p&gt;
+&lt;h2 id=&#34;隐私在哪&#34;&gt;隐私在哪？&lt;/h2&gt;
+&lt;p&gt;员工能拒绝吗？
 不能。
-戴耳机是工作要求。&lt;/p>
-&lt;p>对话被录音了吗？
+戴耳机是工作要求。&lt;/p&gt;
+&lt;p&gt;对话被录音了吗？
 汉堡王说没有。
-只是&amp;quot;实时分析&amp;quot;。&lt;/p>
-&lt;p>你信吗？&lt;/p>
-&lt;h2 id="ai进职场的信号">AI进职场的信号&lt;/h2>
-&lt;p>Patty不是第一个。
-也不会是最后一个。&lt;/p>
-&lt;p>AI正在从&amp;quot;帮你干活&amp;quot;变成&amp;quot;盯着你干活&amp;quot;。
+只是&amp;quot;实时分析&amp;quot;。&lt;/p&gt;
+&lt;p&gt;你信吗？&lt;/p&gt;
+&lt;h2 id=&#34;ai进职场的信号&#34;&gt;AI进职场的信号&lt;/h2&gt;
+&lt;p&gt;Patty不是第一个。
+也不会是最后一个。&lt;/p&gt;
+&lt;p&gt;AI正在从&amp;quot;帮你干活&amp;quot;变成&amp;quot;盯着你干活&amp;quot;。
 效率提升了。
-人却更像机器了。&lt;/p>
-&lt;p>这就是2026年的职场。&lt;/p></description></item><item><title>LinkedIn 放弃传统 SEO：B2B 流量暴跌 60% 后的转型</title><link>https://claudeai.best/posts/2026-02-27-linkedin-seo-shift/</link><pubDate>Fri, 27 Feb 2026 02:08:00 +0800</pubDate><guid>https://claudeai.best/posts/2026-02-27-linkedin-seo-shift/</guid><description>&lt;h2 id="60-的流量说没就没了">60% 的流量说没就没了&lt;/h2>
-&lt;p>这个数字挺吓人的。&lt;/p>
-&lt;p>LinkedIn 的 B2B 流量跌了 60%。&lt;/p>
-&lt;p>直接腰斩。&lt;/p>
-&lt;p>原因？AI 搜索。&lt;/p>
-&lt;p>以前搜东西，你会点开一堆链接。&lt;/p>
-&lt;p>现在问 ChatGPT，它直接告诉你答案。&lt;/p>
-&lt;p>没人再点进去了。&lt;/p>
-&lt;h2 id="linkedin-的应对不玩传统-seo-了">LinkedIn 的应对：不玩传统 SEO 了&lt;/h2>
-&lt;p>LinkedIn 做了个大决定。&lt;/p>
-&lt;p>放弃传统 SEO 指标。&lt;/p>
-&lt;p>排名、点击量、流量来源，都不看了。&lt;/p>
-&lt;p>&lt;strong>那看什么？&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>AI 回答里有没有提到你&lt;/li>
-&lt;li>有没有被引用&lt;/li>
-&lt;li>在 AI 生成的内容里是否存在&lt;/li>
-&lt;/ul>
-&lt;p>说白了，从&amp;quot;有人点我&amp;quot;变成&amp;quot;有人提我&amp;quot;。&lt;/p>
-&lt;h2 id="新玩法为-ai-优化内容">新玩法：为 AI 优化内容&lt;/h2>
-&lt;p>LinkedIn 团队搞了套新指南。&lt;/p>
-&lt;p>教你让 AI 更容易引用你的内容。&lt;/p>
-&lt;p>核心思路变了：&lt;/p>
-&lt;p>以前写文章想的是&amp;quot;搜索引擎能找到吗&amp;quot;。&lt;/p>
-&lt;p>现在要想&amp;quot;AI 能理解并引用吗&amp;quot;。&lt;/p>
-&lt;p>这是两码事。&lt;/p>
-&lt;p>搜索引擎要关键词匹配。&lt;/p>
-&lt;p>AI 要的是语义理解、权威性、可引用的价值。&lt;/p>
-&lt;h2 id="从流量到影响力">从流量到影响力&lt;/h2>
-&lt;p>这才是最本质的转变。&lt;/p>
-&lt;p>过去十年我们都在追流量。&lt;/p>
-&lt;p>PV、UV、点击率，天天盯着看。&lt;/p>
-&lt;p>但 AI 时代，流量可能越来越少。&lt;/p>
-&lt;p>因为用户不需要点进来了。&lt;/p>
-&lt;p>&lt;strong>那怎么办？&lt;/strong>&lt;/p>
-&lt;p>得换个思路。&lt;/p>
-&lt;p>不再是&amp;quot;让他们来找我&amp;quot;。&lt;/p>
-&lt;p>而是&amp;quot;让他们在答案里看到我&amp;quot;。&lt;/p>
-&lt;p>这叫影响力，不是流量。&lt;/p>
-&lt;h2 id="对营销人意味着什么">对营销人意味着什么&lt;/h2>
-&lt;p>还在按老套路做 SEO？&lt;/p>
-&lt;p>可能要想想了。&lt;/p>
-&lt;p>关键词堆砌？没用了。&lt;/p>
-&lt;p>外链轰炸？效果越来越差。&lt;/p>
-&lt;p>真正重要的是：&lt;/p>
-&lt;ul>
-&lt;li>内容有没有价值&lt;/li>
-&lt;li>是不是足够权威&lt;/li>
-&lt;li>能不能被 AI 理解和提取&lt;/li>
-&lt;/ul>
-&lt;p>未来的竞争不是抢排名。&lt;/p></description></item><item><title>2026年AI落地：世界模型和小模型的实用化转变</title><link>https://claudeai.best/posts/hunter-2026-02-26-2/</link><pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/hunter-2026-02-26-2/</guid><description>2026年AI从浮夸走向务实。世界模型让AI真正理解物理世界，小模型则在企业落地中展现成本优势。Google、DeepMind、Runway纷纷布局，一场技术范式转移正在进行。</description></item><item><title>Perplexity Computer：19个AI模型的数字工作者</title><link>https://claudeai.best/posts/hunter-2026022622/</link><pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/hunter-2026022622/</guid><description>Perplexity AI推出革命性云平台，整合19个AI模型，打造真正的端到端数字工作者</description></item><item><title>抖音豆包日活破亿，这场春节 AI 大战它赢了</title><link>https://claudeai.best/posts/2026-02-26-douyin-doubao-100m-users/</link><pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate><guid>https://claudeai.best/posts/2026-02-26-douyin-doubao-100m-users/</guid><description>&lt;p>春节不只是抢红包。
-还成了 AI 公司的战场。&lt;/p>
-&lt;p>这场仗打完了。
-字节跳动的豆包赢了。&lt;/p>
-&lt;p>2 月 16 日，豆包日活破亿。
-这数字是 2 月初的 4 倍。&lt;/p>
-&lt;p>怎么做到的？&lt;/p>
-&lt;p>豆包跟春晚合作了。
-那晚，观众用豆包问了近 20 亿次。&lt;/p>
-&lt;p>阿里和腾讯也在砸钱。&lt;/p>
-&lt;p>阿里花了 3 个亿推 Qwen。
+人却更像机器了。&lt;/p&gt;
+&lt;p&gt;这就是2026年的职场。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LinkedIn 放弃传统 SEO：B2B 流量暴跌 60% 后的转型</title>
+      <link>https://claudeai.best/posts/2026-02-27-linkedin-seo-shift/</link>
+      <pubDate>Fri, 27 Feb 2026 02:08:00 +0800</pubDate>
+      <guid>https://claudeai.best/posts/2026-02-27-linkedin-seo-shift/</guid>
+      <description>&lt;h2 id=&#34;60-的流量说没就没了&#34;&gt;60% 的流量说没就没了&lt;/h2&gt;
+&lt;p&gt;这个数字挺吓人的。&lt;/p&gt;
+&lt;p&gt;LinkedIn 的 B2B 流量跌了 60%。&lt;/p&gt;
+&lt;p&gt;直接腰斩。&lt;/p&gt;
+&lt;p&gt;原因？AI 搜索。&lt;/p&gt;
+&lt;p&gt;以前搜东西，你会点开一堆链接。&lt;/p&gt;
+&lt;p&gt;现在问 ChatGPT，它直接告诉你答案。&lt;/p&gt;
+&lt;p&gt;没人再点进去了。&lt;/p&gt;
+&lt;h2 id=&#34;linkedin-的应对不玩传统-seo-了&#34;&gt;LinkedIn 的应对：不玩传统 SEO 了&lt;/h2&gt;
+&lt;p&gt;LinkedIn 做了个大决定。&lt;/p&gt;
+&lt;p&gt;放弃传统 SEO 指标。&lt;/p&gt;
+&lt;p&gt;排名、点击量、流量来源，都不看了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;那看什么？&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AI 回答里有没有提到你&lt;/li&gt;
+&lt;li&gt;有没有被引用&lt;/li&gt;
+&lt;li&gt;在 AI 生成的内容里是否存在&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;说白了，从&amp;quot;有人点我&amp;quot;变成&amp;quot;有人提我&amp;quot;。&lt;/p&gt;
+&lt;h2 id=&#34;新玩法为-ai-优化内容&#34;&gt;新玩法：为 AI 优化内容&lt;/h2&gt;
+&lt;p&gt;LinkedIn 团队搞了套新指南。&lt;/p&gt;
+&lt;p&gt;教你让 AI 更容易引用你的内容。&lt;/p&gt;
+&lt;p&gt;核心思路变了：&lt;/p&gt;
+&lt;p&gt;以前写文章想的是&amp;quot;搜索引擎能找到吗&amp;quot;。&lt;/p&gt;
+&lt;p&gt;现在要想&amp;quot;AI 能理解并引用吗&amp;quot;。&lt;/p&gt;
+&lt;p&gt;这是两码事。&lt;/p&gt;
+&lt;p&gt;搜索引擎要关键词匹配。&lt;/p&gt;
+&lt;p&gt;AI 要的是语义理解、权威性、可引用的价值。&lt;/p&gt;
+&lt;h2 id=&#34;从流量到影响力&#34;&gt;从流量到影响力&lt;/h2&gt;
+&lt;p&gt;这才是最本质的转变。&lt;/p&gt;
+&lt;p&gt;过去十年我们都在追流量。&lt;/p&gt;
+&lt;p&gt;PV、UV、点击率，天天盯着看。&lt;/p&gt;
+&lt;p&gt;但 AI 时代，流量可能越来越少。&lt;/p&gt;
+&lt;p&gt;因为用户不需要点进来了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;那怎么办？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;得换个思路。&lt;/p&gt;
+&lt;p&gt;不再是&amp;quot;让他们来找我&amp;quot;。&lt;/p&gt;
+&lt;p&gt;而是&amp;quot;让他们在答案里看到我&amp;quot;。&lt;/p&gt;
+&lt;p&gt;这叫影响力，不是流量。&lt;/p&gt;
+&lt;h2 id=&#34;对营销人意味着什么&#34;&gt;对营销人意味着什么&lt;/h2&gt;
+&lt;p&gt;还在按老套路做 SEO？&lt;/p&gt;
+&lt;p&gt;可能要想想了。&lt;/p&gt;
+&lt;p&gt;关键词堆砌？没用了。&lt;/p&gt;
+&lt;p&gt;外链轰炸？效果越来越差。&lt;/p&gt;
+&lt;p&gt;真正重要的是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;内容有没有价值&lt;/li&gt;
+&lt;li&gt;是不是足够权威&lt;/li&gt;
+&lt;li&gt;能不能被 AI 理解和提取&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;未来的竞争不是抢排名。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2026年AI落地：世界模型和小模型的实用化转变</title>
+      <link>https://claudeai.best/posts/hunter-2026-02-26-2/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026-02-26-2/</guid>
+      <description>2026年AI从浮夸走向务实。世界模型让AI真正理解物理世界，小模型则在企业落地中展现成本优势。Google、DeepMind、Runway纷纷布局，一场技术范式转移正在进行。</description>
+    </item>
+    <item>
+      <title>Perplexity Computer：19个AI模型的数字工作者</title>
+      <link>https://claudeai.best/posts/hunter-2026022622/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://claudeai.best/posts/hunter-2026022622/</guid>
+      <description>Perplexity AI推出革命性云平台，整合19个AI模型，打造真正的端到端数字工作者</description>
+    </item>
+    <item>
+      <title>抖音豆包日活破亿，这场春节 AI 大战它赢了</title>
+      <link>https://claudeai.best/posts/2026-02-26-douyin-doubao-100m-users/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://claudeai.best/posts/2026-02-26-douyin-doubao-100m-users/</guid>
+      <description>&lt;p&gt;春节不只是抢红包。
+还成了 AI 公司的战场。&lt;/p&gt;
+&lt;p&gt;这场仗打完了。
+字节跳动的豆包赢了。&lt;/p&gt;
+&lt;p&gt;2 月 16 日，豆包日活破亿。
+这数字是 2 月初的 4 倍。&lt;/p&gt;
+&lt;p&gt;怎么做到的？&lt;/p&gt;
+&lt;p&gt;豆包跟春晚合作了。
+那晚，观众用豆包问了近 20 亿次。&lt;/p&gt;
+&lt;p&gt;阿里和腾讯也在砸钱。&lt;/p&gt;
+&lt;p&gt;阿里花了 3 个亿推 Qwen。
 用户点奶茶、订机票都有补贴。
 Qwen 日活最高 3000 万。
 节后还剩 2200 万。
 阿里的策略是实用。
-真留住人了。&lt;/p>
-&lt;p>腾讯更大方。
+真留住人了。&lt;/p&gt;
+&lt;p&gt;腾讯更大方。
 直接发 10 亿优惠券。
 元宝日活冲到 5000 万。
 但节后掉得快。
-优惠券发完了，人也走了。&lt;/p>
-&lt;p>数据显示，这三家节后都掉用户。
-但 Qwen 掉得最少。&lt;/p>
-&lt;p>为什么？
+优惠券发完了，人也走了。&lt;/p&gt;
+&lt;p&gt;数据显示，这三家节后都掉用户。
+但 Qwen 掉得最少。&lt;/p&gt;
+&lt;p&gt;为什么？
 因为它真有用。
 节日期间，用户通过 Qwen 下单。
 快 2 亿单。
-买鸡蛋、订机票、点奶茶，都行。&lt;/p>
-&lt;p>这场春节 AI 大战说明了什么？&lt;/p>
-&lt;p>砸钱能拉人，但留不住。
-真正有用的产品，才能活下来。&lt;/p>
-&lt;p>豆包靠春晚出圈。
+买鸡蛋、订机票、点奶茶，都行。&lt;/p&gt;
+&lt;p&gt;这场春节 AI 大战说明了什么？&lt;/p&gt;
+&lt;p&gt;砸钱能拉人，但留不住。
+真正有用的产品，才能活下来。&lt;/p&gt;
+&lt;p&gt;豆包靠春晚出圈。
 Qwen 靠功能留人。
 元宝靠补贴冲量。
-但补贴一停，用户就跑。&lt;/p>
-&lt;p>2026 年的 AI 竞争，才刚刚开始。
-春节这一仗，给所有人都上了一课。&lt;/p></description></item></channel></rss>
+但补贴一停，用户就跑。&lt;/p&gt;
+&lt;p&gt;2026 年的 AI 竞争，才刚刚开始。
+春节这一仗，给所有人都上了一课。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
